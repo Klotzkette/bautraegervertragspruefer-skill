@@ -1,12 +1,12 @@
 ---
 name: bautraegervertrag-pruefer
-description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, Abnahme Gemeinschaftseigentum, Schlussrate, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar- und Verhandlungsstrategie. Erzeugt im Regelfall ein Drei-Dokumente-Paket: Mandantenanschreiben, ausführliches Gutachten und bestimmtes Schreiben an Bauträger/Notar. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
-version: "2.1.0"
+description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, Abnahme Gemeinschaftseigentum, Schlussrate, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar- und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt im Regelfall ein Drei-Dokumente-Paket: Mandantenanschreiben, ausführliches Gutachten und bestimmtes Schreiben an Bauträger/Notar. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
+version: "2.2.0"
 ---
 
-# Bauträgervertrag-Prüfer 2.0
+# Bauträgervertrag-Prüfer 2.2
 
-Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung und sauberer Vertragsauslegung.
+Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
 **Befunde werden mit Ampelsymbolen ausgegeben:** 🔴 / 🟠 / 🟢. Keine Farbwörter als Ersatz.
 
@@ -26,7 +26,7 @@ Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitig
 - [Sofortstart](#sofortstart)
 - [Aktuelle Rechtsprechungsanker](#aktuelle-rechtsprechungsanker)
 - [Normenkarte](#normenkarte)
-- [20-Prüfschleifen](#20-prüfschleifen)
+- [30-Prüfschleifen](#30-prüfschleifen)
 - [Pflicht-Prüfblock](#pflicht-prüfblock)
 - [Workflow](#workflow)
 - [Antwortformate](#antwortformate)
@@ -43,6 +43,7 @@ Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitig
 - [Teil K — Vertiefte Dogmatik](#teil-k--vertiefte-dogmatik)
 - [Teil L — Drei-Dokumente-Paket](#teil-l--drei-dokumente-paket)
 - [Teil M — Vertiefte Dogmatik II](#teil-m--vertiefte-dogmatik-ii)
+- [Teil N — Wirtschaft, Organisation, HOAI und Technik](#teil-n--wirtschaft-organisation-hoai-und-technik)
 - [Bug-Hunt vor Ausgabe](#bug-hunt-vor-ausgabe)
 
 ## Sofortstart
@@ -88,6 +89,8 @@ Diese Anker sind besonders stark, weil sie direkt Bauträgerrecht, AGB-Kontrolle
 | § 650k Abs. 2/3 BGB | Unklare oder unvollständige Baubeschreibung wird unter allen Umständen ausgelegt; Zweifel gehen zulasten des Unternehmers. Fertigstellungsdatum oder Bauzeit muss verbindlich sein. |
 | § 650k Abs. 1 BGB | Wird durch § 650u Abs. 2 ausgeschlossen. Nicht behaupten, die vorvertragliche Baubeschreibung werde bei Bauträgern automatisch über Abs. 1 Vertragsinhalt. Vertragsinhalt muss über Beurkundung/Einbeziehung gesichert werden. |
 | § 650n BGB | Planungs- und Nachweisunterlagen vor Ausführung und spätestens mit Fertigstellung; auch bei Finanzierung/KfW/GEG-Nachweisen relevant. |
+| § 650p BGB | Architekten-/Ingenieurvertrag schuldet die Leistungen, die nach Stand der Planung und Ausführung erforderlich sind, um vereinbarte Planungs- und Überwachungsziele zu erreichen. Beim Bauträger nicht automatisch Anspruch des Erwerbers gegen den Planer, aber starke Systematik für Planung, Überwachung und Dokumentation. |
+| § 34 HOAI i. V. m. Anlage 10.1 HOAI | Leistungsbild Gebäude und Innenräume: neun Leistungsphasen; LPH 8 ist Objektüberwachung, Bauüberwachung und Dokumentation. HOAI ist primär Honorarrecht, liefert aber eine praxisfeste Checkliste, welche Planungs- und Überwachungsleistungen im Projekt organisatorisch abgesichert sein müssen. |
 | § 309 Nr. 12 BGB | Beweislaständerungen zulasten des Kunden, insbesondere Verantwortungsbereich des Verwenders oder pauschale Tatsachenbestätigungen, sind unwirksam. Ausnahme für gesondert unterschriebene Empfangsbekenntnisse. |
 | § 309 Nr. 15 BGB | Werkvertrags-AGB sind unwirksam, wenn sie wesentlich überhöhte Abschlagszahlungen erlauben oder die 5 %-Sicherheit nach § 650m Abs. 2 nicht/zu niedrig leisten lassen. |
 | § 3 MaBV | Vor jeder Geldannahme: wirksamer Vertrag ohne vertragliche Rücktrittsrechte des Bauträgers, Vormerkung, Freistellung, Baugenehmigung/Bestätigung. Danach nur bis zu sieben Teilbeträge nach Bauablauf. |
@@ -96,7 +99,7 @@ Diese Anker sind besonders stark, weil sie direkt Bauträgerrecht, AGB-Kontrolle
 | § 306 BGB | Regelfolge unwirksamer AGB: Klausel fällt weg, Vertrag bleibt bestehen, Gesetz tritt an die Stelle. Nicht vorschnell Gesamtnichtigkeit behaupten. |
 | § 311b BGB | Grundstücks-/Bauträgervertrag braucht notarielle Beurkundung. Nicht mitbeurkundete Kernbestandteile können Formrisiken auslösen. |
 
-## 20-Prüfschleifen
+## 30-Prüfschleifen
 
 Bei jeder Vollanalyse durchlaufe diese Schleifen intern. Im Ergebnis nur die relevanten Befunde ausgeben.
 
@@ -120,6 +123,16 @@ Bei jeder Vollanalyse durchlaufe diese Schleifen intern. Im Ergebnis nur die rel
 18. Vormerkung/Lastenfreistellung: keine Löschungsdruckmittel, Rang sauber?
 19. Verjährung/Mängelrechte: fünf Jahre Bauwerk, keine Ausschlussfristen?
 20. Verhandlungsfähigkeit: jedes 🔴 mit gesetzlicher Grundlage, Fallanker, Gegenargument und gewünschter Neufassung?
+21. HOAI-/Planungslogik: Sind LPH 1 bis 9, insbesondere Ausführungsplanung und Objektüberwachung, organisatorisch nachvollziehbar beauftragt, dokumentiert und nachweisbar?
+22. Private Bauüberwachung: Darf der Erwerber eigene Sachverständige zu Bautenstand, Sonderwünschen, Abnahme und Mängeln hinzuziehen?
+23. Baugrund/Baugrube: Liegen Baugrundgutachten, Grundwasser-, Altlasten-, Kampfmittel- und Baugrubenkonzepte vor; wer trägt das Restrisiko?
+24. Standsicherheit/Brandschutz/Schall/Feuchte/Wärme: Sind Nachweise, Ausführungskontrollen und Herausgabeunterlagen konkret geregelt?
+25. Technische Ausrüstung: Heizung, Lüftung, Trinkwasser, Elektro, PV, Aufzug, Tiefgarage, Entwässerung, Gebäudeautomation und Wartung prüfen.
+26. Bauablauf/Qualitätsgates: Sind Terminplan, Bautenstandsprüfung, Mängeltracking und Schlussdokumentation prüfbar?
+27. Wirtschaftliche Tragfähigkeit: Projektgesellschaft, Globalfinanzierung, Freistellung, Nachunternehmer-/Generalunternehmerrisiko, Reservierungs-/Sonderwunschzahlungen.
+28. WEG-Organisation: Erstverwalter, Untergemeinschaften, Kostenverteilung, Wartungsverträge, Instandhaltungsrücklage, Übergang der Kontrolle auf Erwerber.
+29. Betriebs- und Lebenszykluskosten: Energie, Wartung, Ersatzteile, Tiefgarage, Pumpen, Lüftung, Aufzug, Außenanlagen, Gemeinschaftseinrichtungen.
+30. Gesamtbild: Ergibt die Summe aus Recht, Technik, Wirtschaft und Organisation ein beurkundungsfähiges, finanzierbares und baulich kontrollierbares Projekt?
 
 ## Pflicht-Prüfblock
 
@@ -135,6 +148,9 @@ Dieser Block steht in jeder Vollanalyse ganz oben.
 | Schlussrate | Wird Schlussrate trotz offener protokollierter Mängel oder Restarbeiten fällig gestellt? | 🔴/🟠; BGH VII ZR 88/25 nutzen. |
 | Teilungserklärung | Darf Bauträger nachträglich beliebig ändern oder Zustimmung verlangen? | 🔴, § 308 Nr. 4 BGB und BGH V ZR 91/25. |
 | Bausoll | Baubeschreibung konkret, vollständig, datiert und mitbeurkundet? | Lücken: 🔴/🟠; Zweifel zulasten Unternehmer (§ 650k Abs. 2 BGB). |
+| Planung/Objektüberwachung | Ist erkennbar, wer LPH 5 Ausführungsplanung, LPH 8 Objektüberwachung/Bauüberwachung und technische Fachüberwachung schuldet? | Fehlt oder nur interne Verkäuferkontrolle: 🟠/🔴; Herausgabe-/Einsichts- und Bautenstandsrechte verlangen. |
+| Private Sachverständige | Verhindert der Vertrag eigene Baukontrolle, Fotos, Abnahmebegleitung oder Bautenstandsnachweis? | 🔴, wenn MaBV-/Abnahme-/Mängelprüfung praktisch leerläuft. |
+| Baugrund/Technik | Werden Baugrund, Grundwasser, Altlasten, Kampfmittel, Schallschutz, Feuchteschutz, Brandschutz, GEG/KfW oder Haustechnik nur pauschal oder risikoverlagernd geregelt? | 🟠/🔴; technische Unterlagen, Nachweise und Risikoallokation verlangen. |
 
 ## Workflow
 
@@ -148,7 +164,7 @@ Erfasse knapp:
 | Status | Entwurf, Beurkundung terminiert, beurkundet, Bauphase, Abnahme, Mängelstreit, Insolvenz |
 | Objekt | Wohnung, Teileigentum, Reihenhaus, Sanierung, Erbbaurecht |
 | Preis | Gesamtpreis, Sonderwünsche, Finanzierungs-/KfW-Bezug |
-| Unterlagen | Vertrag, Anlagen, Teilungserklärung, Gemeinschaftsordnung, Baubeschreibung, Freistellung, Ratenplan |
+| Unterlagen | Vertrag, Anlagen, Teilungserklärung, Gemeinschaftsordnung, Baubeschreibung, Freistellung, Ratenplan, Baugrundgutachten, Baugenehmigung, Fachplaner-/Nachweisunterlagen |
 | Eilbedarf | Beurkundungstermin, Zahlungsfrist, Abnahmefrist, Klagefrist |
 
 ### 2 — Quellenrefresh
@@ -183,6 +199,8 @@ Wenn kein Bauträgervertrag:
 | Ratenplan/Sicherheit | § 3 oder § 7 MaBV | 🔴 |
 | Abnahme | persönliche Rechte, Protokoll, Vorbehalte | 🔴/🟠 |
 | Mängelrechte | gesetzlich, fünf Jahre Bauwerk | 🔴 bei Verkürzung |
+| Objektüberwachung | LPH-8-/Bauüberwachungslogik, Bautenstand, Dokumentation | 🟠/🔴 bei rein interner Verkäuferbestätigung |
+| Technische Nachweise | Baugrund, Statik, Brandschutz, Schall, Feuchte, Energie, Haustechnik | 🟠/🔴 bei Pauschalverweis oder Risikoverlagerung |
 
 ### 5 — Klauselmatrix
 
@@ -234,9 +252,11 @@ Kurzbild
 5. AGB-Klauselmatrix
 6. Baubeschreibung/Bausoll
 7. Abnahme, Schlussrate, Mängelrechte
-8. Eigentumsschutz/Insolvenz
-9. Verhandlungspaket
-10. Restfragen
+8. HOAI/Objektüberwachung/technische Projektrisiken
+9. Wirtschaft/Organisation/WEG-Betrieb
+10. Eigentumsschutz/Insolvenz
+11. Verhandlungspaket
+12. Restfragen
 ```
 
 ### Streitstellen-Tabelle
@@ -845,10 +865,11 @@ E. MaBV und Zahlungsplan
 F. AGB-Klauselmatrix
 G. Baubeschreibung/Bausoll
 H. Abnahme, Schlussrate, Mängelrechte
-I. Teilungserklärung/WEG
-J. Eigentumsschutz/Insolvenz
-K. Gesamteinschätzung
-L. Konkrete Änderungsfassung
+I. HOAI/Objektüberwachung/technische Projektrisiken
+J. Wirtschaft/Organisation/WEG
+K. Eigentumsschutz/Insolvenz
+L. Gesamteinschätzung
+M. Konkrete Änderungsfassung
 ```
 
 Jeder rote Befund braucht Norm, Fundstelle oder klare Argumentationslinie.
@@ -893,6 +914,9 @@ Ton:
 | `Der Erwerber hat alles bestätigt.` | Pauschale Tatsachenbestätigungen sind nach § 309 Nr. 12 lit. b BGB unwirksam. |
 | `Das Projekt braucht Flexibilität.` | Flexibilität braucht konkret benannte triftige Gründe und darf Wert/Nutzung/Kosten nicht verschlechtern. |
 | `Die Schlussrate ist wegen Abnahme fällig.` | Bei `vollständiger Fertigstellung` und offenen Protokollmängeln zuerst Fälligkeit nach Vertrag und BGH VII ZR 88/25 prüfen. |
+| `Der Käufer kann keinen eigenen Bauüberwacher auf die Baustelle schicken.` | Freier Baustellenzutritt ist nicht geschuldet; eine sicherheitskonforme Begleitung eigener Sachverständiger zu Bautenstand, Abnahme und Mängelprüfung darf aber nicht formularmäßig ausgehöhlt werden. |
+| `Die HOAI gilt nur für den Architektenvertrag.` | Richtig, aber die HOAI-Leistungsphasen sind ein fachlich anerkanntes Organisationsraster. Der Bauträger muss ein prüfbares Bausoll, Bauüberwachung und Dokumentation sicherstellen. |
+| `Baugrund und Grundwasser sind Projektumstände.` | Gerade deshalb müssen Gutachten, Auflagen, Kosten- und Verzugsfolgen offengelegt und beim Bauträger als Herstellungsverpflichtetem verortet werden, soweit nichts konkret anderes vereinbart ist. |
 
 ### L.5 — Qualitätsgate für das Paket
 
@@ -944,7 +968,7 @@ Für die Klauselmatrix folgt: Jede vom Bauträger formulierte Verengung der aner
 
 Die letzte Rate (3,5 %) wird nicht schon bei Bezugsfertigkeit fällig, sondern erst bei vollständiger Fertigstellung. Vollständige Fertigstellung bedeutet: sämtliche vertraglich geschuldeten Leistungen erbracht — einschließlich der **Außenanlagen**, sonstiger Restarbeiten am Gemeinschaftseigentum und aller Bestandteile des Bausolls. Eine vertragliche Verengung des Begriffs (z. B. „Außenanlagen gehören nicht zur Fertigstellung") ist mit dem Schutzzweck der MaBV unvereinbar.
 
-Wesentliche Mängel stehen der vollständigen Fertigstellung entgegen. Unwesentliche Mängel und Protokollmängel begründen kein Verbot der Ratenanforderung, aber ein Zurückbehaltungsrecht des Erwerbers in Höhe des Doppelten der voraussichtlichen Mängelbeseitigungskosten (§ 641 Abs. 3 BGB).
+Wesentliche Mängel stehen der vollständigen Fertigstellung entgegen. Bei unwesentlichen Mängeln und Protokollmängeln zuerst den Vertrag auslegen: Bindet der Vertrag die letzte Rate an die Beseitigung protokollierter Mängel/Restarbeiten, kann bereits die Fälligkeit fehlen (BGH VII ZR 88/25). Fehlt eine solche Fälligkeitsbindung, bleibt jedenfalls das Zurückbehaltungsrecht des Erwerbers in Höhe des Doppelten der voraussichtlichen Mängelbeseitigungskosten (§ 641 Abs. 3 BGB) zu prüfen.
 
 Zentrale Praxisaussagen:
 
@@ -954,11 +978,11 @@ Zentrale Praxisaussagen:
 | „Außenanlagen außerhalb der Fertigstellungsrate" | 🔴; Außenanlagen gehören zur Fertigstellung, soweit vertraglich geschuldet |
 | „Vollständig fertiggestellt" wenn Bezugsfertigkeit + Schlüsselübergabe vorliegt | 🔴; Fertigstellung ≠ Bezugsfertigkeit |
 | Wesentliche Mängel am Gemeinschaftseigentum noch offen | Fertigstellungsrate nicht fällig, Rückforderbarkeit gegebener Zahlungen |
-| Nur unwesentliche Protokollmängel | Fertigstellung kann vorliegen; Erwerber behält das Zurückbehaltungsrecht nach § 641 Abs. 3 BGB |
+| Nur unwesentliche Protokollmängel | Vertrag zuerst auslegen: bei ausdrücklicher Beseitigungspflicht kann die Schlussrate noch nicht fällig sein; sonst mindestens Zurückbehaltungsrecht nach § 641 Abs. 3 BGB |
 | Aufspaltung der Fertigstellungsrate in zwei Stufen (z. B. 2 % + 1,5 %) zur Sicherung definierter Restarbeiten | grundsätzlich denkbar; in einem klar abgegrenzten Sieben-Raten-Plan zulässig, wenn jede Stufe einem konkreten Bauablauf entspricht |
 | Schlussrate-Klausel bindet Fälligkeit an einseitige Bauträgerbestätigung | 🔴; Empfängerhorizont, § 305c Abs. 2 BGB |
 
-Praxisregel für das Mandat: Zahlungen auf die Fertigstellungsrate **nicht** leisten, solange Restarbeiten am Gemeinschaftseigentum offen sind oder wesentliche Mängel beanstandet wurden. Ein Bautenstands-Vermerk eines bauträgerunabhängigen Sachverständigen ist die saubere Grundlage. Bei bereits gezahlten Beträgen ist die Rückforderung über § 817 Satz 1 BGB i. V. m. § 818 Abs. 2 BGB zu prüfen; ein Mängelbeseitigungs-/Restarbeitsbudget begrenzt die Rückforderung nicht starr, ist aber argumentativ relevant.
+Praxisregel für das Mandat: Zahlungen auf die Fertigstellungsrate **nicht** leisten, solange Restarbeiten am Gemeinschaftseigentum offen sind, wesentliche Mängel beanstandet wurden oder der Vertrag die Schlussrate an die Erledigung protokollierter Punkte knüpft. Ein Bautenstands-Vermerk eines bauträgerunabhängigen Sachverständigen ist die saubere Grundlage. Bei bereits gezahlten Beträgen ist die Rückforderung über § 817 Satz 1 BGB i. V. m. § 818 Abs. 2 BGB zu prüfen; ein Mängelbeseitigungs-/Restarbeitsbudget begrenzt die Rückforderung nicht starr, ist aber argumentativ relevant.
 
 ### M.3 — Preisanpassungsklauseln und Krisenrisiko
 
@@ -1030,7 +1054,7 @@ Rechtsfolgen einer unwirksamen Abnahmeklausel und einer auf ihr beruhenden fakti
 | „Abnahme" auf der Grundlage dieser Klausel | regelmäßig ebenfalls unwirksam; der Bauträger kann sich als Verwender der Klausel auf die Unwirksamkeit der von ihm gestellten Regel nicht berufen (Grundsatz der personalen Teilunwirksamkeit) |
 | Konkludente Abnahme durch rügelose Nutzung oder Zahlung | regelmäßig nicht ausreichend, solange der Erwerber von einer wirksamen Abnahmeerklärung Dritter ausging |
 | Verjährungsbeginn der Mängelrechte | nicht angelaufen; der Bauträger kann sich gegenüber dem Erwerber nicht auf den Beginn der fünfjährigen Mängelverjährung berufen |
-| Höchstgrenze | **30 Jahre ab dem Zeitpunkt der vermeintlichen (tatsächlich unwirksamen) Abnahme**; danach steht der Geltendmachung von Mängelrechten der Einwand institutionellen Rechtsmissbrauchs entgegen |
+| Höchstgrenze | In den aktuellen BGH-Konstellationen zu unwirksamen Abnahmeklauseln wurde für die Durchsetzung von Kostenvorschussansprüchen eine 30-Jahres-Obergrenze herangezogen. Nicht pauschal auf jede Anspruchsart übertragen; Anspruch, Zeitpunkt, Rechtsstand und Verhalten der Parteien prüfen. |
 | Verwirkung | nur in engen Ausnahmefällen; ein schutzwürdiges Vertrauen des Bauträgers liegt typisch nicht vor, weil er die Lage durch die unwirksame Klausel selbst herbeigeführt hat |
 
 Folgerung für die Nachholung der Abnahme: Der Bauträger kann die Erwerber nachträglich zur Abnahme auffordern. Für die Frage der Abnahmereife gilt dann eine **ergänzende Vertragsauslegung**: Maßstab ist nicht mehr der ursprünglich vereinbarte Neuzustand, sondern das, was redliche Parteien bei Berücksichtigung von Zeitablauf und bestimmungsgemäßer Nutzung vereinbart hätten. Alters- und nutzungsbedingte Verschleißerscheinungen stehen der Abnahmereife dann nicht entgegen.
@@ -1039,7 +1063,7 @@ Strategische Konsequenzen für Mandate:
 
 | Mandantenrolle | Hebel |
 | --- | --- |
-| Erwerber mit alter Anlage (Abnahme über bauträgernahe Person erfolgt) | Mängel der letzten Jahre noch geltend machen; Verjährungsbeginn ungeklärt, Höchstgrenze 30 Jahre |
+| Erwerber mit alter Anlage (Abnahme über bauträgernahe Person erfolgt) | Mängel der letzten Jahre noch prüfen; Verjährungsbeginn und 30-Jahres-Obergrenze anspruchsbezogen bewerten |
 | Gemeinschaft der Wohnungseigentümer | Vergemeinschaftungsbeschluss; Mängelrügen wirken erst ab Beschluss verjährungshemmend, nicht rückwirkend |
 | Bauträger mit Altprojekten | Erwerber zur Nachholung der Abnahme auffordern; selbständiges Beweisverfahren gegen Nachunternehmer einleiten, um Verjährung der eigenen Regressansprüche zu hemmen; Abgeltungsvergleich mit der Gemeinschaft prüfen |
 
@@ -1049,7 +1073,7 @@ Wichtige Differenzierungen:
 - **Berechtigte vorläufige Abnahmeverweigerung**: Wenn der Erwerber die Abnahme zu Recht verweigert, weil das Werk nicht abnahmereif ist, gelten die Grundsätze der personalen Teilunwirksamkeit nicht. Hier kann die regelmäßige Verjährung von Ansprüchen wegen Schlechtleistung schon vor der fünfjährigen Mängelverjährungsfrist eintreten — eine systematische Asymmetrie, die im Schrifttum offen umstritten ist. Praxis: Erwerber sollte parallel die nachträgliche Abnahme erklären, um die fünfjährige Frist mit dem Sicherheitsanker zu eröffnen.
 - **„Vergessene" Abnahme**: Ist die Abnahme schlicht unterblieben (kein Klauseldefekt, keine konkludente Abnahme, keine berechtigte Verweigerung), gilt für die Abnahmereife ebenfalls die ergänzende Vertragsauslegung; Anknüpfungspunkt ist regelmäßig der Zeitpunkt der Übergabe.
 
-Für den Klauselmatrix-Output: Jede AGB-Abnahmeklausel zugunsten einer im Lager des Bauträgers stehenden Person oder mit einer kollektiven Bindung der Erwerber ist 🔴 zu führen, mit Hinweis auf die Höchstgrenzen-Logik und die personale Teilunwirksamkeit. Im Schreiben an Bauträger und Notar (Teil L) ist die Klausel zur Streichung zu verlangen, hilfsweise so umzuformulieren, dass jeder Erwerber das ausdrückliche Recht behält, das Gemeinschaftseigentum selbst zu prüfen und die Abnahme persönlich zu erklären.
+Für den Klauselmatrix-Output: Jede AGB-Abnahmeklausel zugunsten einer im Lager des Bauträgers stehenden Person oder mit einer kollektiven Bindung der Erwerber ist 🔴 zu führen, mit Hinweis auf die aktuelle BGH-Linie, die mögliche personale Teilunwirksamkeit und die anspruchsbezogen zu prüfende Höchstgrenzen-Logik. Im Schreiben an Bauträger und Notar (Teil L) ist die Klausel zur Streichung zu verlangen, hilfsweise so umzuformulieren, dass jeder Erwerber das ausdrückliche Recht behält, das Gemeinschaftseigentum selbst oder durch eine Person seines Vertrauens zu prüfen und die Abnahme persönlich zu erklären.
 
 ### M.6 — Bauablaufbezogene Darlegung bei Verzug
 
@@ -1115,6 +1139,10 @@ Die folgenden Punkte ergänzen die Klauselmatrix in Teil B um aktuelle Streitfel
 | Bauträgerklausel zur Bauablauf-„Höhere Gewalt"-Vermutung | 🔴 | konkrete Darlegung erforderlich, sonst Verzug ab Termin |
 | Abnahme durch Erstverwalter / Tochtergesellschaft / Bauträger-Sachverständigen | 🔴 | streichen oder Eigenrecht des Erwerbers ausdrücklich sichern |
 | Baugruppen-GbR-Vertrag ohne Beurkundung der Eigentumsbezüge | 🔴 | Vollbeurkundung oder Bruchteilsmodell mit nachgelagerter Teilung |
+| Interne Projektsteuerung ersetzt Bauüberwachung | 🔴 | Nachweis LPH 8/technische Fachüberwachung und eigene Kontrollrechte des Erwerbers sichern |
+| Baustellenzutritt nur mit Verkäufergenehmigung, keine Fotos, keine Sachverständigen | 🔴 | Begleiteter Zutritt zu Qualitätsgates, MaBV-Bautenstandsprüfung und Abnahme muss möglich sein |
+| Baugrund-/Grundwasser-/Altlastenrisiko pauschal beim Erwerber | 🔴 | Gutachten offenlegen; Restrisiken und Mehrkosten beim Bauträger, soweit nicht konkret aufgeklärt und bepreist |
+| Schallschutz/Feuchteschutz/Lüftung nur als Nutzerverhalten definiert | 🟠/🔴 | konkrete Nachweise, Wartungs-/Bedienkonzept und Mindestparameter verlangen |
 
 Für die drei Dokumente aus Teil L gelten zusätzlich:
 
@@ -1127,11 +1155,162 @@ Ergänzungen zum Bug-Hunt (vor jeder Ausgabe):
 - DIN-Norm nicht als anerkannte Regel der Technik behandeln; richtig ist die Einzelfallprüfung.
 - Vollständige Fertigstellung nicht mit Bezugsfertigkeit gleichsetzen.
 - Preisanpassung nicht ohne Lösungsrecht akzeptieren.
-- Unwirksame Abnahmeklauseln nicht als bloßes „Beratungsproblem" abhandeln; sie schalten die Fünf-Jahres-Verjährung des § 634a Abs. 1 Nr. 2 BGB im Ergebnis auf die 30-Jahres-Höchstgrenze um.
+- Unwirksame Abnahmeklauseln nicht als bloßes „Beratungsproblem" abhandeln; Verjährungsbeginn und 30-Jahres-Obergrenze aber anspruchsbezogen prüfen, nicht pauschal behaupten.
 - Bauablauf-Argumente der Bauträgerseite nicht ungeprüft als höhere Gewalt durchgehen lassen.
 - § 650l BGB nicht für beurkundete Bauträgerverträge in Anspruch nehmen; das Widerrufsrecht greift dort nicht.
 - Bauhandwerkersicherung (§ 650f BGB) nicht vom Verbraucher-Erwerber fordern; § 650f Abs. 6 Nr. 2 BGB privilegiert ihn.
 - Baugruppen-GbR nicht mit Bauträgervertrag-Maßstäben prüfen; die MaBV greift nicht.
+
+## Teil N — Wirtschaft, Organisation, HOAI und Technik
+
+Teil N verhindert den häufigsten Praxisfehler: Ein Vertrag kann juristisch bearbeitet sein und trotzdem ein schlechtes Bauprojekt absichern. Die Analyse muss deshalb neben AGB/MaBV immer prüfen, ob Planung, Bauüberwachung, Baugrund, technische Qualität, Wirtschaft und WEG-Organisation real kontrollierbar sind.
+
+### N.1 — Rollenmodell
+
+Erstelle bei jeder Vollanalyse ein Rollenbild:
+
+| Rolle | Mindestprüfung |
+| --- | --- |
+| Bauträger/Projektgesellschaft | Eigenkapital, Konzernbindung, Globalfinanzierung, Freistellung, Bauherreneigenschaft |
+| Architekt/Objektplaner | Welche Leistungsphasen beauftragt? Wer schuldet Ausführungsplanung, Objektüberwachung und Dokumentation? |
+| Fachplaner | Tragwerk, Brandschutz, Schall, Wärme/Feuchte, technische Ausrüstung, Außenanlagen, Tiefgarage |
+| Bauleiter/Objektüberwacher | Unabhängigkeit, Qualifikation, Berichtswesen, Mängelverfolgung, Haftpflichtdeckung |
+| Prüfingenieur/Prüfsachverständige | Statik, Brandschutz, ggf. Sonderbau-/Garagenanforderungen |
+| Bodengutachter | Baugrund, Grundwasser, Altlasten, Kampfmittel, Versickerung, Baugrubenverbau |
+| Generalunternehmer/Nachunternehmer | Vertragliche Schnittstellen, Insolvenz-/Austauschrisiko, Gewährleistungsdurchgriff |
+| Erstverwalter/WEG | Interessenkonflikt, Abnahme, Wartungsverträge, Mängelverfolgung, Dokumentationsübergabe |
+
+Kernfrage: Wer kontrolliert wen, wer berichtet an wen und welche Unterlagen bekommt der Erwerber oder später die GdWE? Eine rein interne Verkäuferkontrolle ist kein Ersatz für prüfbare Qualitätssicherung.
+
+### N.2 — HOAI-Leistungsphasen als Prüfraster
+
+Die HOAI ist primär Honorarrecht. Sie begründet nicht automatisch einen Direktanspruch des Erwerbers gegen den Architekten des Bauträgers. Sie ist aber ein belastbares Organisationsraster. § 34 HOAI nennt für Gebäude und Innenräume neun Leistungsphasen; Anlage 10.1 beschreibt die Grundleistungen.
+
+| LPH | Inhalt | Verbrauchercheck |
+| --- | --- | --- |
+| 1 Grundlagenermittlung | Aufgabenstellung, Bedarf, Untersuchungsbedarf | Wurde Bedarf/Qualitätsziel dokumentiert oder nur Vertriebssprache? |
+| 2 Vorplanung | Varianten, Zielkonflikte, Kostenschätzung, Terminplan | Gibt es belastbare Planungsgrundlagen, Baugrund-/Genehmigungsrisiken, Terminlogik? |
+| 3 Entwurfsplanung | System- und Integrationsplanung, Kostenberechnung | Passt Baubeschreibung zu Plänen, Technik, Kosten und Prospekt? |
+| 4 Genehmigungsplanung | Bauantrag, öffentlich-rechtliche Nachweise | Liegt die Baugenehmigung für das konkrete Haus vor? Sind Auflagen eingepreist? |
+| 5 Ausführungsplanung | ausführungsreife Details | Ohne LPH-5-Logik sind Schall, Abdichtung, Brandschutz, Haustechnik und Details nicht prüfbar. |
+| 6/7 Vergabe | Leistungsverzeichnisse, Angebotsprüfung, Vergabe | Unklare GU-/Nachunternehmer-Schnittstellen sind Insolvenz- und Qualitätsrisiko. |
+| 8 Objektüberwachung | Bauüberwachung und Dokumentation | Zentral: Bautenstand, Mängeltracking, Rechnungs-/Ratenfreigabe, technische Abnahmen. |
+| 9 Objektbetreuung | Mängelverfolgung nach Fertigstellung | WEG braucht geordneten Übergang, Gewährleistungsmanagement und Unterlagen. |
+
+Gewünschte Vertragsposition: Der Bauträger muss bestätigen, dass fachlich geeignete Objekt- und Fachplaner für die erforderlichen Planungs- und Überwachungsleistungen eingesetzt werden, und der Erwerber/GdWE erhält die zur Prüfung, Abnahme, Finanzierung, Förderung und Unterhaltung erforderlichen Unterlagen.
+
+### N.3 — Private Bauüberwachung und Sachverständige
+
+Der Erwerber darf die Baustelle nicht beliebig betreten und keine Anweisungen an Unternehmer geben. Verkehrssicherung, Arbeitsschutz, Bauablauf und Hausrecht sind real. Daraus folgt aber nicht, dass der Bauträger jede unabhängige Kontrolle ausschließen darf.
+
+Verhandlungsfähige Mindestlösung:
+
+- begleiteter Baustellenzutritt zu definierten Qualitätsgates: Rohbau, Fenster/Dach, Rohinstallation, Estrich, Abdichtung/Tiefgarage, Bezugsfertigkeit, Abnahme.
+- Teilnahme eines eigenen Architekten, Bauingenieurs oder Sachverständigen des Erwerbers.
+- Einsicht in prüfbare Bautenstands- und Mängelberichte vor MaBV-Raten.
+- Fotos der eigenen Einheit und relevanter Gemeinschaftsbereiche, soweit keine Persönlichkeits-/Sicherheitsinteressen entgegenstehen.
+- keine Weisungen an Handwerker; Kommunikation über Bauträger/Objektüberwachung.
+- Abnahmebegleitung für Sondereigentum und Gemeinschaftseigentum.
+
+Klauseln, die `eigene Bautenstandskontrollen`, `private Sachverständige`, `Fotodokumentation` oder `Teilnahme an Abnahmen` pauschal ausschließen, sind als 🔴 zu führen, weil sie MaBV-Fälligkeit, Abnahmeprüfung und Mängelrechte praktisch entwerten.
+
+### N.4 — Baugrund, Baugrube und Grundstücksrealität
+
+Baugrundrisiken zerstören die schönste Vertragsprüfung. Der Skill prüft deshalb immer:
+
+| Thema | Zu verlangende Unterlagen/Angaben |
+| --- | --- |
+| Baugrund | geotechnischer Bericht, Gründungsempfehlung, Setzungsprognose, Bodenklassen, Tragfähigkeit |
+| Grundwasser | Bemessungswasserstand, Dränage-/Wannen-Konzept, temporäre Wasserhaltung, Auftriebssicherheit |
+| Baugrube | Verbau, Nachbarbebauung, Erschütterung, Beweissicherung, Bauzustände |
+| Altlasten | orientierende/Detailuntersuchung, Entsorgungskonzept, Deponieklassen, Kostenrisiko |
+| Kampfmittel | Auskunft/Sondierung, Freigabe, Bauverzugs- und Kostenfolge |
+| Niederschlagswasser | Versickerung, Rückhaltung, Überflutungsschutz, Notwasserwege |
+| Tiefgarage | Abdichtung, Entwässerung, Gefälle, Chloridbelastung, Lüftung, Brandschutz |
+
+Rote Klauselmuster:
+
+- `Der Käufer übernimmt alle Risiken aus Baugrund, Grundwasser oder Altlasten`.
+- `Gutachten dienen nur internen Zwecken und begründen kein Bausoll`.
+- `Wasserhaltung, Verbau oder Entsorgung können als Mehrkosten umgelegt werden`.
+- `Verzögerungen wegen Baugrund/Altlasten verlängern die Frist ohne Nachweis`.
+
+Antwort: Baugrund und Baugrube liegen im Verantwortungsbereich des Bauträgers als Bauherrn und Herstellungsverpflichteten. Eine Risikoverlagerung ist nur denkbar, wenn der konkrete Umstand offen, verständlich, bepreist und vertraglich eng geregelt ist.
+
+### N.5 — Technische Kernmatrix
+
+In jeder Vollanalyse mindestens diese technischen Themen scannen:
+
+| Bereich | Typische harte Frage |
+| --- | --- |
+| Tragwerk | geprüfte Statik, Prüfbericht, Ausführungsplanung, Durchbrüche/Sonderwünsche |
+| Brandschutz | Konzept, Auflagen, Tiefgarage, Rettungswege, Abschottungen, Dokumentation |
+| Schallschutz | Mindeststandard oder erhöhter Schallschutz? Trittschall, Installationsschall, Aufzug/Tiefgarage |
+| Wärmeschutz/Energie | GEG, KfW-/Effizienzhausversprechen, Wärmebrücken, Luftdichtheit, Förderbedingungen |
+| Feuchte/Abdichtung | Keller/Tiefgarage, Balkone, Flachdach, Sockel, Bäder, Duschen, Anschlüsse |
+| Lüftung | Lüftungskonzept, Nutzerpflichten, Schimmelrisiko, Wartung, Nachströmung |
+| Trinkwasser/Heizung | Hygiene, Zirkulation, Wärmepumpe/Fernwärme, Abrechnung, Betriebsrisiko |
+| Elektro/PV/Smart Home | Zählerkonzept, Ladeinfrastruktur, Reserven, Wartung, Datenschutz |
+| Aufzug/Tiefgarage | Betriebskosten, Wartung, Ersatzteile, Brandschutz, Barrierefreiheit |
+| Außenanlagen | Entwässerung, Beleuchtung, Spielplatz, Pflanzung, Erhaltungspflichten |
+
+Pauschale Verkäuferklauseln wie `Funktionsfähigkeit nur bei ordnungsgemäßem Nutzerverhalten`, `Schimmel ist kein Mangel bei falschem Lüften` oder `technische Anlagen sind keine Beschaffenheitsvereinbarung` sind nie isoliert zu akzeptieren. Sie brauchen Bedienkonzept, Nachweis, Übergabeunterlagen und dürfen das Bausoll nicht verschieben.
+
+### N.6 — Wirtschaftliche und organisatorische Prüfung
+
+Der Erwerber kauft nicht nur Mauerwerk, sondern ein langfristiges Organisations- und Kostenpaket.
+
+| Thema | Prüffrage |
+| --- | --- |
+| Projektgesellschaft | Ist sie substanzarm? Gibt es Patronat, Muttergesellschaft, Gewährleistungsreserve? |
+| Finanzierung | Globalgrundschuld, Freistellung, Auszahlungsvoraussetzungen, Bankfreigaben |
+| GU-/Nachunternehmerstruktur | Wer baut tatsächlich? Austauschrecht? Insolvenz eines GU? |
+| Sonderwünsche | Vorauszahlung, Schnittstellen, Gewährleistung, Terminrisiko, MaBV-Einordnung |
+| Betriebskosten | Fernwärme, Contracting, Aufzug, Tiefgarage, Lüftung, Wasserhaltung, Gemeinschaftseinrichtungen |
+| Wartungsverträge | Laufzeit, Kündbarkeit, Preisanpassung, Erstverwalter-Interessenkonflikt |
+| Instandhaltungsrücklage | realistisch für Technik/Tiefgarage/Aufzug/Pumpen? |
+| Untergemeinschaften | Kostenverteilung, Stimmrechte, Sondernutzungen, spätere Bauabschnitte |
+
+Rote Linie: Keine Klausel darf wirtschaftliche Risiken verstecken, die den Gesamtpreis faktisch erhöhen oder die WEG über lange Wartungs-, Verwaltungs- oder Betriebspflichten an bauträgernahe Unternehmen bindet.
+
+### N.7 — Dokumentations- und Übergabepaket
+
+Mindestens verlangen:
+
+- Baugenehmigung mit Auflagen für das konkrete Haus.
+- geprüfte Statik/Prüfberichte, Brandschutznachweise, Schallschutz-/Wärmeschutznachweise.
+- Energieausweis, GEG-/KfW-/Fördernachweise, Luftdichtheits-/Inbetriebnahmeprotokolle soweit geschuldet.
+- Revisionspläne, Wartungs- und Bedienungsanleitungen, Fachunternehmererklärungen.
+- Protokolle zu technischen Inbetriebnahmen: Heizung, Lüftung, Trinkwasser, Aufzug, Brandmelde-/Rauchabzugstechnik, Tiefgarage.
+- Mängel- und Restarbeitenliste für Sonder- und Gemeinschaftseigentum.
+- Gewährleistungs-/Ansprechpartnerliste für Gewerke.
+
+§ 650n BGB ist der gesetzliche Anker für Planungs- und Nachweisunterlagen. Bei Bauträgern ist die Norm nicht durch § 650u Abs. 2 ausgeschlossen. Für reine Komfortunterlagen kann die Anspruchsgrundlage anders liegen; für öffentlich-rechtliche Nachweise, Förder-/Finanzierungsbedingungen und berechtigt geweckte Erwartungen ist § 650n aktiv zu prüfen.
+
+### N.8 — Ausgabe in den drei Dokumenten
+
+**Mandantenanschreiben:** Technik/Wirtschaft in Klartext: `Das größte Risiko ist nicht nur Klausel X, sondern dass Sie vor Zahlung und Abnahme keine unabhängige Kontrolle von Baugrund, Bautenstand und technischen Nachweisen erhalten.`
+
+**Gutachten:** Eigener Abschnitt `HOAI/Objektüberwachung/Technik/Wirtschaft`. Jede technische rote Ampel braucht: Vertragswortlaut, praktisches Risiko, fehlende Unterlage, gewünschte Änderung.
+
+**Schreiben an Bauträger und Notar:** Keine Fachsimpelei. Forderungen konkret:
+
+```text
+Bitte ergänzen Sie eine Regelung, wonach der Erwerber nach angemessener Voranmeldung und unter Beachtung der Sicherheitsvorgaben einen eigenen Sachverständigen zu den Bautenstands- und Abnahmeterminen hinzuziehen darf. Die Fälligkeit von MaBV-Raten darf nicht allein durch eine interne Bauleiterbestätigung des Verkäufers ausgelöst werden, sondern muss durch objektiv nachvollziehbaren Baufortschritt prüfbar sein.
+```
+
+### N.9 — Scoring
+
+| Befund | Gewicht |
+| --- | --- |
+| Keine eigene/private Bautenstandskontrolle vor Raten | 🔴 |
+| LPH 8/Bauüberwachung nur intern und ohne Dokumentation | 🔴 |
+| Baugrund-/Grundwasser-/Altlastenrisiko beim Erwerber | 🔴 |
+| Baugenehmigung oder Auflagen für das konkrete Objekt fehlen | 🔴 |
+| Keine konkreten Schall-/Energie-/Feuchteschutzparameter | 🟠/🔴 |
+| Erstverwalter kontrolliert Abnahme, Wartung und Mängelmanagement | 🔴 |
+| Lange Wartungs-/Contractingbindung an Verkäuferumfeld | 🟠/🔴 |
+| Technische Unterlagen erst `nach Ermessen` oder gar nicht | 🔴 |
 
 ## Bug-Hunt vor Ausgabe
 
@@ -1149,5 +1328,9 @@ Vor jeder finalen Analyse diese Fehler ausschließen:
 - Keine BGH-Entscheidung ohne zulässige URL und Liveprüfung.
 - Keine schrillen Drohungen ohne Tatbestand; Verhandlungsposition soll streng, aber glaubwürdig sein.
 - Jede rote Ampel muss eine konkrete gewünschte Änderung haben.
+- Technik nicht hinter Jura verstecken: Baugrund, Baugrube, Objektüberwachung, private Sachverständige, LPH 8, Unterlagen, Wartung und Betriebskosten immer mitprüfen.
+- HOAI nicht als Direktanspruch des Erwerbers gegen den Bauträger-Architekten ausgeben; als Organisations- und Plausibilitätsraster verwenden.
+- Keine MaBV-Rate allein aufgrund interner Bauleiterbestätigung akzeptieren, wenn dem Erwerber jede objektive Bautenstandskontrolle abgeschnitten wird.
+- Private Bauüberwachung nicht mit freiem Baustellenzutritt verwechseln; sachgerechte Lösung ist angemeldeter, sicherheitskonformer Zutritt mit eigenem Sachverständigen.
 
-> **Ende des Skills.** Bei Anwendung: Vertrag einfügen. Der Skill startet mit Pflicht-Prüfblock, arbeitet die 20 Prüfschleifen ab, zitiert nur zulässige Quellen und liefert ein verhandlungsfähiges Verbraucherpaket.
+> **Ende des Skills.** Bei Anwendung: Vertrag einfügen. Der Skill startet mit Pflicht-Prüfblock, arbeitet die 30 Prüfschleifen ab, zitiert nur zulässige Quellen und liefert ein verhandlungsfähiges Verbraucherpaket.

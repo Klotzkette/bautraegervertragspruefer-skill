@@ -51,19 +51,19 @@ Diese Regelung verstößt gegen § 650m BGB. Bei einem Verbraucherbauträgervert
 
 Befund: 🔴 schwerwiegender Verstoß. Klausel unwirksam. Berichtigungsverlangen: ersatzlose Streichung des § 3.3 und Aufnahme einer Belehrung über das Recht auf den 5-Prozent-Einbehalt.
 
-## 2. § 309 Nr. 15 lit. a BGB — Beweislastumkehr
+## 2. § 309 Nr. 12 lit. a BGB — Beweislastumkehr
 
 § 3.2 letzter Absatz bestimmt: „Im Verzugsfall trägt der Käufer die Beweislast dafür, dass den Verkäufer ein Verschulden an der Verzögerung trifft."
 
-Diese Klausel verstößt unmittelbar gegen § 309 Nr. 15 lit. a BGB. Sie ist unwirksam.
+Diese Klausel verstößt unmittelbar gegen § 309 Nr. 12 lit. a BGB. Sie ist unwirksam.
 
 Befund: 🔴 unwirksam.
 
-## 3. § 309 Nr. 15 lit. b BGB — Empfangsbestätigung als Tatsachenerklärung
+## 3. § 309 Nr. 12 lit. b BGB — Empfangsbestätigung als Tatsachenerklärung
 
 § 0.2 letzter Absatz bestimmt: „Der Käufer bestätigt mit Unterzeichnung dieses Vertrages, dass er die Baubeschreibung sowie sämtliche Bezugsurkunden in vollem Umfang erhalten, gelesen, verstanden und mit fachkundiger Hilfe geprüft hat …"
 
-Die Klausel umfasst nicht nur den Empfang, sondern auch die Kenntnisnahme und das Verständnis. Sie verstößt damit unmittelbar gegen § 309 Nr. 15 lit. b BGB.
+Die Klausel umfasst nicht nur den Empfang, sondern auch die Kenntnisnahme und das Verständnis. Sie verstößt damit unmittelbar gegen § 309 Nr. 12 lit. b BGB.
 
 Befund: 🔴 unwirksam.
 
@@ -89,13 +89,13 @@ Befund: 🔴 Bausoll nicht hinreichend konkretisiert.
 
 # Weitere klauselgenaue Beanstandungen
 
-## 7. § 3.2 — MaBV-Ratenplan nicht konform (8 statt 7 Raten, 56-Prozent-Vorabrate)
+## 7. § 3.1/§ 3.2 — äußerlich MaBV-naher Ratenplan, verdeckte Fälligkeitsmängel
 
-Der Ratenplan in § 3.2 sieht acht Ratenstufen vor. § 3 Abs. 2 MaBV lässt maximal sieben zusammengefasste Raten zu. Damit ist der Ratenplan schon aus formalen Gründen nicht MaBV-konform.
+Der Ratenplan in § 3.2 sieht nun sieben Ratenstufen vor und übernimmt die MaBV-Prozentbausteine auf den ersten Blick plausibel. Gerade deshalb liegt der Schwerpunkt nicht mehr bei der bloßen Anzahl der Raten, sondern bei den verdeckten Fälligkeitsvoraussetzungen.
 
-Gravierender ist die erste Rate von 56 Prozent. Sie ist nach dem Wortlaut „mit Wirksamkeit des Vertrages und Vorliegen der Voraussetzungen nach § 3.1, jedoch vor Beginn der Erdarbeiten" fällig — und damit ohne MaBV-Stichmonat. § 3 Abs. 2 MaBV verlangt für jede Rate einen konkreten Baufortschritt; eine Rate vor Beginn der Erdarbeiten ist mit der Verordnung nicht vereinbar.
+§ 3.1 lässt genügen, dass die Auflassungsvormerkung nur „eintragungsbereit beantragt" ist und die Lastenfreistellung lediglich zugesichert wurde. § 3 Abs. 1 MaBV verlangt demgegenüber eine rechtlich gesicherte Position vor Geldannahme. Hinzu kommt, dass die Baugenehmigung für Haus 4 nach § 0.5 nur erwartet wird und die Rate allein durch eine interne Bauleiter- oder Projektcontrollerbestätigung ausgelöst werden soll.
 
-Folge: Der Ratenplan ist insgesamt nicht MaBV-konform. Die Forderung der ersten Rate vom 18. März 2026 ist nicht fällig.
+Folge: Die erste Rate von 30 Prozent ist nur dann fällig, wenn echte Erdarbeiten begonnen haben und sämtliche Voraussetzungen des § 3 Abs. 1 MaBV tatsächlich vorliegen. Die Forderung vom 18. März 2026 ist ohne Vormerkungsnachweis, belastbare Freistellung, Baugenehmigung und objektiv prüfbaren Bautenstand nicht fällig.
 
 Befund: 🔴 schwerwiegender Verstoß.
 
@@ -165,6 +165,30 @@ Befund: 🔴.
 
 Befund: 🔴.
 
+## 17a. § 5.2 — Interne Projektsteuerung statt prüfbarer Objektüberwachung
+
+§ 5.2 organisiert Planung, Fachplanung, Projektsteuerung und Objektüberwachung ausschließlich im Lager des Verkäufers. HOAI-Leistungsphasen sollen nur das Innenverhältnis des Verkäufers zu seinen Planern betreffen; Bautagebücher, Prüfvermerke, Mängellisten, Terminfortschreibungen und Berichte bleiben interne Arbeitsunterlagen.
+
+Das ist die unauffällige technische Hauptfalle. Ein Erwerber hat keinen Direktanspruch gegen den Bauträgerarchitekten allein aus der HOAI. Trotzdem darf der Bauträger die praktische Kontrolle über Bautenstand, Qualität, Mängelverfolgung und Nachweisunterlagen nicht so abschneiden, dass MaBV-Raten und Abnahme nur noch auf Verkäuferbestätigungen beruhen.
+
+Befund: 🔴. Berichtigungsverlangen: Herausgabe/Einsicht in die zur Prüfung von Baufortschritt, Abnahme, Finanzierung/Förderung und öffentlich-rechtlichen Nachweisen erforderlichen Unterlagen; Recht zur sachverständigen Begleitung.
+
+## 17b. § 5.11 — Baugrund, Grundwasser, Baugrube, Altlasten
+
+§ 5.11 stellt Baugrund- und Gründungsunterlagen als orientierend dar und entzieht Abweichungen des tatsächlichen Baugrunds, Grundwasserstände, Wasserhaltung, Kampfmittel, Altlasten und Entsorgung weitgehend dem Mangel- und Verzugsregime.
+
+Das ist technisch und wirtschaftlich erheblich. Baugrund, Baugrube, Wasserhaltung, Verbau, Altlasten und Kampfmittel liegen im Verantwortungsbereich des Bauträgers als Bauherrn und Herstellungsverpflichteten, soweit der konkrete Sachverhalt nicht offen, verständlich, bepreist und eng geregelt ist. Die Klausel verschiebt unbestimmte Risiken auf den Erwerber und macht Verzögerungen pauschal nicht vertretbar.
+
+Befund: 🔴. Verlangen: Baugrundgutachten, Wasserhaltungs-/Baugrubenkonzept, Altlasten-/Kampfmittelstatus und klare Risikoallokation beim Verkäufer.
+
+## 17c. § 5.12/§ 5.13 — Technische Mindestqualität und WEG-Betriebskosten
+
+§ 5.12 beschränkt Schall-, Wärme-, Feuchte- und Brandschutz auf öffentlich-rechtliche Nachweise bzw. ausdrücklich bezifferte Baubeschreibungswerte. § 5.13 erlaubt Wartungs-, Betriebsführungs-, Mess- und Energielieferungsverträge mit bis zu sieben Jahren Laufzeit.
+
+Damit werden technische Qualität und spätere Betriebskosten aus dem sichtbaren Kaufpreis herausgelöst. Der Käufer braucht konkrete Parameter zu Schallschutz, Lüftung, Feuchte, Energie, Tiefgarage, Aufzug, Pumpen und sonstiger Haustechnik sowie eine Begrenzung langfristiger Wartungs- und Contractingbindungen durch den Erstverwalter.
+
+Befund: 🟠 bis 🔴.
+
 ## 18. § 6.1 — „Ohne Geld keine Schlüssel"
 
 Bereits unter Pflichtpunkt 5 behandelt. Befund: 🔴.
@@ -193,11 +217,15 @@ Befund: 🔴.
 
 § 7.1 lastet sämtliche Erschließungskosten dem Käufer an. Die Schätzung von 28 000,00 EUR bis 42 000,00 EUR ist so weit gefasst, dass sie das Transparenzgebot verletzt.
 
+Hinzu kommt § 13.5: Die Kosten der Erstverwaltung, technischen Betriebsführung, Einweisung und der Wartungs- und Dienstleistungsverträge werden auf die Erwerber verlagert, ohne dass einzelne Erwerber vor Übergabe die Wirtschaftlichkeit prüfen können. Das ist insbesondere in Verbindung mit § 5.13 problematisch, weil die WEG für bis zu sieben Jahre an Betriebs- und Wartungsverträge gebunden werden kann.
+
 Befund: 🔴.
 
-## 23. § 8 — Zutrittsverbot zur Baustelle, Vertragsstrafe
+## 23. § 8 — Baustellenzutritt und private Bauüberwachung nur scheinbar erlaubt
 
-§ 8.1 untersagt dem Käufer den Zutritt zur Baustelle ohne ausdrückliche Zustimmung und sieht eine Vertragsstrafe von 2 500,00 EUR pro Vorfall vor. Eigene Bautenstandskontrollen — die der Käufer nach der MaBV-Logik gerade vornehmen sollte — werden damit faktisch ausgeschlossen.
+§ 8 klingt professioneller als ein schlichtes Zutrittsverbot: Verkehrssicherheit, Arbeitsschutz, zwei begleitete Termine und Sachverständigenmitnahme. In der Wirkung bleibt die Kontrolle aber weitgehend beim Verkäufer. Weitergehende Termine können aus breiten Gründen abgelehnt werden; der private Sachverständige darf praktisch nur beobachten; seine Feststellungen hemmen die Fälligkeit angeforderter Raten nicht; eine Vertragsstrafe flankiert das Ganze.
+
+Das ist angreifbar, weil der Erwerber vor MaBV-Zahlungen, vor Abnahme und bei Mängeln eine realistische Möglichkeit zur sachverständigen Prüfung braucht. Freier Baustellenzutritt ist nicht geschuldet, aber eine sicherheitskonforme, angemeldete Kontrolle darf nicht formularmäßig leerlaufen.
 
 Befund: 🔴.
 
@@ -232,7 +260,7 @@ Befund: 🔴.
 
 ## 28. § 14 — Notarbelehrung ohne AGB-Prüfung
 
-§ 14 stellt ausdrücklich klar, dass eine inhaltliche Kontrolle der Vertragsklauseln durch den Notar nicht erfolgt ist und auch nicht geschuldet sei. Dies steht im Spannungsverhältnis zur Belehrungspflicht des Notars nach § 17 BeurkG.
+§ 14 stellt ausdrücklich klar, dass eine inhaltliche Kontrolle der Vertragsklauseln durch den Notar nicht erfolgt ist und auch nicht geschuldet sei. Zusätzlich wird die technische Prüfung von Baugrund, Bauüberwachung, Fachplanung und Wirtschaftlichkeit von Wartungsverträgen ausgenommen. Dies steht im Spannungsverhältnis zur Belehrungspflicht des Notars nach § 17 BeurkG, soweit die Urkunde selbst erkennbar riskante Mechanismen enthält.
 
 Befund: 🟠.
 
@@ -244,21 +272,21 @@ Pflicht-Prüfblock: 🔴 6 von 6.
 
 Beanstandete Klauseln in Zahlen:
 
-- 🔴 rot, klar unwirksam oder schwerwiegend: 22
-- 🟠 orange, Verhandlungspunkt: 4
+- 🔴 rot, klar unwirksam oder schwerwiegend: 25
+- 🟠 orange, Verhandlungspunkt: 5
 - 🟢 grün, unbedenklich: keine im Bereich der geprüften Vorschriften
 
-Strukturelle Wertung: Der Vertrag ist in der vorgelegten Fassung nicht verbraucherrechtskonform. Die Klauselhäufung ist so umfangreich, dass eine Teil- oder Gesamtnichtigkeit nach § 139 BGB in Betracht kommt.
+Strukturelle Wertung: Der Vertrag ist in der vorgelegten Fassung nicht verbraucherrechtskonform. Regelfolge einzelner AGB-Verstöße ist § 306 BGB: Die Klausel fällt weg, der Vertrag bleibt im Übrigen bestehen. Eine Gesamtunwirksamkeit ist nicht das Standardargument, sondern nur bei gesondertem Form-, Sittenwidrigkeits- oder Gesamtgefügeproblem zu prüfen.
 
 # Empfehlung an den Mandanten
 
-1. Ratenzahlung aussetzen. Die erste Rate von 56 Prozent ist nach § 3 Abs. 2 MaBV nicht fällig.
+1. Ratenzahlung aussetzen. Die erste Rate von 30 Prozent ist nur nach echtem Erdarbeitsbeginn und vollständigem Nachweis der Voraussetzungen des § 3 Abs. 1 MaBV fällig. Interne Bauleiter-/Projektcontrollerbestätigung genügt als alleinige Prüfgrundlage nicht.
 
-2. Anwaltliches Korrekturschreiben mit den vorstehenden 28 Punkten an die Bauträgerin. Frist zur Stellungnahme: vier Wochen.
+2. Anwaltliches Korrekturschreiben mit den vorstehenden rechtlichen und technischen Punkten an die Bauträgerin. Frist zur Stellungnahme: vier Wochen.
 
 3. Notarbeteiligung. Übermittlung des Korrekturschreibens auch an den beurkundenden Notar mit Bitte um Stellungnahme zur Belehrungspraxis.
 
-4. Bautenstandskontrolle. Eigene Inaugenscheinnahme oder durch Dipl.-Ing. Bockhusen, bevor irgendeine Rate gezahlt wird.
+4. Bautenstandskontrolle und technische Unterlagen. Eigene Inaugenscheinnahme oder durch Dipl.-Ing. Bockhusen, bevor irgendeine Rate gezahlt wird; zusätzlich Baugrund, Baugrube/Wasserhaltung, Statik/Brandschutz/Schallschutz, Energie-/Lüftungsnachweise und Wartungsverträge anfordern.
 
 5. Sicherheit nach § 650m BGB einfordern. Schriftliche Aufforderung an die Bauträgerin zur Stellung einer 5-Prozent-Sicherheit; alternativ Einbehalt von 5 Prozent der ersten Rate.
 

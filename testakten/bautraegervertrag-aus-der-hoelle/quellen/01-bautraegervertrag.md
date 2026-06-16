@@ -83,6 +83,8 @@ Der Käufer bestätigt mit Unterzeichnung dieses Vertrages, dass er die Baubesch
 
 **0.6** Der Verkäufer weist darauf hin, dass die Erschließung des Grundstücks teilweise noch nicht abgeschlossen ist.
 
+**0.7** Der Verkäufer hat für das Bauvorhaben interne Projektunterlagen, insbesondere Baugrund- und Planungsgutachten, Fachplanernachweise, Terminpläne, Kostenverfolgungen sowie Berichte der Projektsteuerung und Objektüberwachung erstellen lassen. Diese Unterlagen dienen ausschließlich der internen Steuerung des Gesamtprojekts. Sie werden dem Käufer nur insoweit zugänglich gemacht, als dies nach zwingenden gesetzlichen Vorschriften erforderlich ist oder der Verkäufer dies zur zweckmäßigen Vertragsdurchführung für angezeigt hält.
+
 \newpage
 
 # § 1 Kaufgegenstand
@@ -129,20 +131,19 @@ c) die Lastenfreistellungserklärung der Pommersche Hypotheken-Bank AG für den 
 
 3.1.2 sowie die Baugenehmigung für Haus 4 vorliegt oder, wenn eine Baugenehmigung nicht oder nicht rechtzeitig erforderlich ist, mit dem Bau begonnen werden darf.
 
-**3.2** Der Käufer hat den Kaufpreis nach folgendem Ratenplan zu zahlen, wobei der Verkäufer die Raten entsprechend dem tatsächlichen Bauablauf in acht Teilbeträgen anfordern wird:
+**3.2** Der Käufer hat den Kaufpreis nach folgendem Ratenplan zu zahlen, wobei der Verkäufer die Raten entsprechend dem tatsächlichen Bauablauf in sieben Teilbeträgen anfordern wird:
 
 | Rate | Stichmonat | Anteil |
 | --- | --- | --- |
-| 1. Rate | mit Wirksamkeit des Vertrages und Vorliegen der Voraussetzungen nach § 3.1, jedoch vor Beginn der Erdarbeiten | 56,0 % |
-| 2. Rate | nach Beginn der Erdarbeiten | 9,0 % |
-| 3. Rate | nach Rohbaufertigstellung einschließlich Zimmererarbeiten | 8,0 % |
-| 4. Rate | nach Ausführung der Rohinstallation der Heizungs-, Sanitär- und Elektroanlagen sowie nach Fenstereinbau | 7,5 % |
-| 5. Rate | nach Innenputz und Estrich | 6,0 % |
-| 6. Rate | nach Herstellung der Dachflächen, Fassadenarbeiten und Fliesenarbeiten | 5,0 % |
-| 7. Rate | nach Bezugsfertigkeit | 5,5 % |
-| 8. Rate | nach vollständiger Fertigstellung und Übergabe sämtlicher Außenanlagen | 3,0 % |
+| 1. Rate | nach Beginn der Erdarbeiten | 30,0 % |
+| 2. Rate | nach Rohbaufertigstellung einschließlich Zimmererarbeiten | 28,0 % |
+| 3. Rate | nach Herstellung der Dachflächen und Dachrinnen, Ausführung der Rohinstallation der Heizungs-, Sanitär- und Elektroanlagen sowie Fenstereinbau einschließlich Verglasung | 18,9 % |
+| 4. Rate | nach Innenputz, Estrich und Fliesenarbeiten im Sanitärbereich | 9,1 % |
+| 5. Rate | nach Bezugsfertigkeit Zug um Zug gegen Besitzübergabe | 8,4 % |
+| 6. Rate | nach Fassadenarbeiten | 2,1 % |
+| 7. Rate | nach vollständiger Fertigstellung | 3,5 % |
 
-Die Raten sind jeweils zur Zahlung fällig, wenn der Verkäufer den Käufer unter Vorlage einer Bestätigung des Bauleiters über den Baufortschritt schriftlich zur Zahlung aufgefordert hat. Eine Vor-Ort-Prüfung des Bautenstandes durch den Käufer oder eine von ihm beauftragte Person ist nicht erforderlich; der Käufer erkennt die Bauleiterbestätigung als ausreichenden Nachweis an.
+Die Raten sind jeweils zur Zahlung fällig, wenn der Verkäufer den Käufer unter Vorlage einer Bestätigung des vom Verkäufer beauftragten Bauleiters oder Projektcontrollers über den Baufortschritt schriftlich zur Zahlung aufgefordert hat. Eine eigene Prüfung des Bautenstandes durch den Käufer oder eine von ihm beauftragte Person bleibt nach Maßgabe von § 8 möglich, hemmt die Fälligkeit der jeweiligen Rate jedoch nicht, sofern der Käufer nicht binnen fünf Bankarbeitstagen nach Zugang der Zahlungsaufforderung einen gegenteiligen, prüffähigen Sachverständigenbericht vorlegt.
 
 Der Käufer kommt in Verzug, sobald der Verkäufer ihn nach Fälligkeit der Rate schriftlich unter Einhaltung einer Frist von 30 Kalendertagen per Einwurf-Einschreiben gemahnt hat und die Frist erfolglos verstrichen ist. Der Zugang einer bloßen Rechnung oder einer einfachen E-Mail begründet keinen Verzug.
 
@@ -171,6 +172,12 @@ Der Verkäufer hat dem Käufer keine Sicherheit nach § 650m Abs. 2 BGB zu stell
 # § 5 Baupflicht, Baubeschreibung
 
 **5.1** Der Verkäufer verpflichtet sich, den Kaufgegenstand nach Maßgabe der Baubeschreibung in der Fassung Februar 2026, Version 7.2, der Bezugsurkunden und der diesem Vertrag zugrunde liegenden Pläne herzustellen.
+
+**5.2** Planung, Projektsteuerung und Objektüberwachung
+
+Der Verkäufer organisiert die Planung, Fachplanung, Projektsteuerung und Objektüberwachung des Bauvorhabens in eigener Verantwortung. Soweit für das Bauvorhaben Leistungen erbracht werden, die ihrer Art nach Leistungsphasen der Honorarordnung für Architekten und Ingenieure entsprechen, dienen diese Leistungen ausschließlich dem Verhältnis des Verkäufers zu seinen Planern und Fachplanern. Aus der Beauftragung oder Nichtbeauftragung einzelner Leistungsphasen, insbesondere der Ausführungsplanung, der Mitwirkung bei der Vergabe, der Objektüberwachung oder der Objektbetreuung, werden keine eigenen Rechte des Käufers gegen Planer, Fachplaner, Projektsteuerer, Bauleiter oder sonstige Baubeteiligte begründet.
+
+Die laufenden Berichte der Objektüberwachung, Bautagebücher, Prüfvermerke, Mängellisten, Kostenberichte und Terminfortschreibungen sind interne Arbeitsunterlagen des Verkäufers. Der Käufer erhält hieraus Auszüge nur, soweit sie nach zwingendem Recht zur Finanzierung, Förderung, öffentlich-rechtlichen Nachweisführung oder Abnahme erforderlich sind. Der Käufer erkennt an, dass die technische Qualitätssicherung des Verkäufers im Interesse einer einheitlichen Projektdurchführung zentralisiert erfolgt.
 
 **5.3** Soweit die Baubeschreibung Wahlmöglichkeiten bei Material, Farbe oder Form vorsieht, erhält der Käufer im Rahmen einer Bemusterung die Möglichkeit, sofern der Baufortschritt es noch zulässt, eine entsprechende Auswahl zu treffen.
 
@@ -202,7 +209,13 @@ Behinderungen bei der Herstellung des Bauvorhabens aus Umständen, die vom Verk�
 
 **5.10** Energiestandard. Das Bauvorhaben wird nach den zum Tag der Baugenehmigung geltenden energetischen Anforderungen errichtet. Eine bestimmte KfW-Effizienzhausklasse oder ein bestimmter GEG-Standard wird nicht geschuldet.
 
-**5.11** Der Käufer erklärt, dass ihm von Vertriebsmitarbeitern oder anderen Beauftragten oder Mitarbeitern des Verkäufers keinerlei Zusagen zur Ausgestaltung des Kaufgegenstandes gemacht wurden, die nicht Gegenstand des vorliegenden Vertrages oder der diesem Vertrag in Bezug genommenen Urkunden sind.
+**5.11** Baugrund, Grundwasser und Baugrube. Dem Verkäufer liegen orientierende Baugrund- und Gründungsempfehlungen vor. Die darin enthaltenen Annahmen beruhen auf punktuellen Aufschlüssen und werden im Zuge der weiteren Ausführung fortgeschrieben. Abweichungen des tatsächlichen Baugrunds, Grundwasserstände, Wasserhaltungsmaßnahmen, Kampfmittel-, Altlasten- oder Entsorgungsbefunde sowie hierdurch erforderliche technische Anpassungen gelten nicht als Abweichung von der vereinbarten Beschaffenheit, sofern die Gebrauchstauglichkeit der Wohnung nach Fertigstellung nicht wesentlich beeinträchtigt wird. Die hierdurch verursachten Bauzeitverlängerungen gelten als vom Verkäufer nicht zu vertreten.
+
+**5.12** Schall-, Wärme-, Feuchte- und Brandschutz. Die öffentlich-rechtlich erforderlichen Nachweise werden durch den Verkäufer eingeholt. Eine darüberhinausgehende Beschaffenheit, insbesondere ein erhöhter Schallschutz, eine bestimmte Behaglichkeitsklasse, eine bestimmte Raumluftqualität oder eine bestimmte sommerliche Kühlleistung, wird nur geschuldet, soweit dies in der Baubeschreibung ausdrücklich mit Zahlenwerten vereinbart ist. Kondensat-, Schimmel- oder Feuchteschäden, die auf ein nicht den jeweiligen Nutzungshinweisen entsprechendes Heizungs-, Lüftungs- oder Möblierungsverhalten zurückzuführen sind, stellen keinen Mangel dar.
+
+**5.13** Technische Anlagen, Wartung, Betrieb. Der Käufer nimmt zur Kenntnis, dass Aufzüge, Lüftungsanlagen, Entwässerungsanlagen, Pumpen, Tiefgaragenentlüftung, Brandmelde- und Rauchabzugseinrichtungen, Heizungs- und Warmwassertechnik sowie etwaige Lade- oder Photovoltaikinfrastruktur regelmäßiger Wartung bedürfen. Der Verkäufer oder der Erstverwalter ist berechtigt, zur Sicherstellung der Erstbetriebsphase Wartungs-, Betriebsführungs-, Mess- und Energielieferungsverträge mit einer anfänglichen Laufzeit von bis zu sieben Jahren abzuschließen. Die daraus entstehenden Kosten tragen die Eigentümer nach Maßgabe der Teilungserklärung.
+
+**5.14** Der Käufer erklärt, dass ihm von Vertriebsmitarbeitern oder anderen Beauftragten oder Mitarbeitern des Verkäufers keinerlei Zusagen zur Ausgestaltung des Kaufgegenstandes gemacht wurden, die nicht Gegenstand des vorliegenden Vertrages oder der diesem Vertrag in Bezug genommenen Urkunden sind.
 
 \newpage
 
@@ -238,7 +251,11 @@ Erscheint der Käufer zum mitgeteilten Termin nicht oder verweigert er die Unter
 
 # § 8 Zutritt zur Baustelle
 
-**8.1** Der Käufer darf das Grundstück während der Bauzeit nicht ohne ausdrückliche schriftliche Zustimmung des Verkäufers betreten. Eigene Bautenstandskontrollen sind nicht zulässig. Verstöße gegen diese Regelung berechtigen den Verkäufer zur Geltendmachung einer Vertragsstrafe in Höhe von 2 500,00 EUR pro Vorfall.
+**8.1** Der Käufer darf das Grundstück während der Bauzeit aus Gründen der Verkehrssicherheit, des Arbeitsschutzes und der geordneten Bauabwicklung nur nach vorheriger Abstimmung mit dem Verkäufer betreten. Der Verkäufer bietet dem Käufer nach billigem Ermessen bis zu zwei begleitete Besichtigungstermine vor Bezugsfertigkeit sowie einen Termin zur Abnahme der Sondereigentumseinheit an. Weitergehende Besichtigungen können abgelehnt werden, wenn sie den Bauablauf, Sicherheitsvorgaben, Nachunternehmerinteressen oder den Vertrieb anderer Einheiten beeinträchtigen.
+
+**8.2** Der Käufer kann zu den nach § 8.1 zugelassenen Terminen einen privaten Sachverständigen hinzuziehen, sofern dieser dem Verkäufer spätestens fünf Bankarbeitstage vor dem Termin benannt wird, einen geeigneten Versicherungsschutz nachweist und sich verpflichtet, keine Weisungen an Baubeteiligte zu erteilen, keine Bauteilöffnungen vorzunehmen und keine Fotos von fremden Einheiten, Beschäftigten, Nachunternehmerleistungen oder sicherheitsrelevanten Einrichtungen anzufertigen. Feststellungen des privaten Sachverständigen entfalten keine Bindungswirkung für die Objektüberwachung des Verkäufers und hemmen nicht die Fälligkeit angeforderter Raten.
+
+**8.3** Verstöße gegen die Zutritts- und Verhaltensregelungen berechtigen den Verkäufer zur Geltendmachung einer Vertragsstrafe in Höhe von 2 500,00 EUR pro Vorfall. Weitergehende Ansprüche bleiben unberührt.
 
 \newpage
 
@@ -300,6 +317,8 @@ Verkäufer und Käufer sind über den Eigentumsübergang einig. Sie bewilligen u
 
 **13.4** Die Kosten dieser Urkunde und ihres Vollzugs trägt der Käufer.
 
+**13.5** Der Käufer trägt die auf seine Einheit entfallenden Kosten der erstmaligen Einrichtung und Übergabe der WEG-Verwaltung, der technischen Betriebsführung, der Einweisung in gemeinschaftliche Anlagen sowie der für die Erstbetriebsphase abgeschlossenen Wartungs- und Dienstleistungsverträge. Eine Überprüfung der Wirtschaftlichkeit dieser Verträge durch einzelne Erwerber ist vor Übergabe des Gemeinschaftseigentums nicht geschuldet.
+
 \newpage
 
 # § 14 Belehrungen
@@ -311,7 +330,8 @@ Der Notar hat die Beteiligten belehrt über:
 - die Eigentumsübertragung erst mit Eintragung im Grundbuch,
 - die Bedeutung der Auflassungsvormerkung,
 - die Bedeutung der Belastungsvollmacht,
-- die gesetzliche Verjährungsfrist für Mängelansprüche im Werkvertragsrecht.
+- die gesetzliche Verjährungsfrist für Mängelansprüche im Werkvertragsrecht,
+- die Möglichkeit, eigene technische Berater hinzuzuziehen, wobei der Notar keine technische Prüfung des Baugrunds, der Bauüberwachung, der Fachplanung oder der Wirtschaftlichkeit von Betriebs- und Wartungsverträgen vorgenommen hat.
 
 Der Notar hat nicht über die Wirksamkeit einzelner Klauseln dieses Vertrages belehrt; eine inhaltliche Kontrolle der Vertragsklauseln durch den Notar ist nicht erfolgt und auch nicht geschuldet.
 
