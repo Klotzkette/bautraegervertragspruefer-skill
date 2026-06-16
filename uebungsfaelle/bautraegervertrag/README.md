@@ -8,9 +8,9 @@ Dieses Verzeichnis enthält ein eigenständiges Vertragsdokument in drei Fassung
 
 ## Wichtiger Hinweis
 
-Dieser Bauträgervertrag ist ein bewusst schlechtes, risikoreiches Übungs- und Vorführdokument. Er darf nicht als Vorlage in der Praxis verwendet, nicht übernommen und nicht gegenüber echten Käuferinnen, Käufern, Bauträgern, Notariaten oder Behörden eingesetzt werden.
+Dieser Bauträgervertrag ist kein Mustervertrag und darf nicht als Vorlage in der Praxis verwendet, nicht übernommen und nicht gegenüber echten Käuferinnen, Käufern, Bauträgern, Notariaten oder Behörden eingesetzt werden.
 
-Das Dokument enthält keine vorgelagerte Auswertung und keine Hinweise im Vertragstext selbst. Es soll als freistehender Vertrag geprüft werden: Markdown, Word und PDF enthalten denselben Vertragsstoff einschließlich der Baubeschreibung als Anlage.
+Markdown, Word und PDF enthalten denselben Vertragsstoff einschließlich der Baubeschreibung als Anlage. Für jede fachliche Bewertung ist eine eigenständige rechtliche und technische Prüfung erforderlich.
 
 ## Verwendung mit dem Skill
 
@@ -23,7 +23,6 @@ Das Dokument enthält keine vorgelagerte Auswertung und keine Hinweise im Vertra
 Nach Änderungen an `bautraegervertrag.md` werden Word- und PDF-Fassung so erzeugt:
 
 ```bash
-cd uebungsfaelle/bautraegervertrag
 ./build.sh
 ```
 
