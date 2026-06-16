@@ -47,7 +47,7 @@ docs/
 
 uebungsfaelle/
 └── bautraegervertrag-neubauwohnung/
-    ├── quellen/    Fiktiver Vertrag, Korrespondenz, Lösungsschlüssel
+    ├── quellen/    Fiktiver Vertrag und Baubeschreibung
     ├── gesamt-docx/ DOCX-Fassungen zum Üben
     └── gesamt-pdf/ PDF-Fassungen zum Üben
 ```
@@ -65,7 +65,7 @@ Die Skill-Datei ist in folgende Hauptteile gegliedert:
 - **Technik und Bauüberwachung** — Baugrund, Baugrube, Abdichtung, Schallschutz, Brandschutz, Energie, Statik, Nachweise, Objektüberwachung, private Sachverständige.
 - **Teilungserklärung und WEG** — Sondereigentum, Gemeinschaftseigentum, Sondernutzungsrechte, GdWE, Kostenverteilung, Abnahmeregime.
 - **Mandatsmodule** — Mandantenbericht, Notar-/Bauträgeranschreiben, Verhandlungsfassung, Eskalations- und Klagestrategie.
-- **Schulungsfall** — bewusst anspruchsvoller Übungsvertrag mit versteckten und offenen Risiken.
+- **Schulungsfall** — fiktiver Bauträgervertrag mit referenzierter Baubeschreibung.
 
 Zusätzlich enthält der Skill durchgängig:
 
@@ -120,7 +120,7 @@ Dieses Repository folgt derselben offenen Ein-Datei-Logik wie der [Arbeitszeugni
 
 ## Schulungsfall zum Üben
 
-Im Ordner [`uebungsfaelle/bautraegervertrag-neubauwohnung/`](uebungsfaelle/bautraegervertrag-neubauwohnung/) liegt ein fiktiver Schulungsfall mit Bauträgervertrag, Korrespondenz, Vollvermerk, Baubeschreibung und Lösungsschlüssel. Der Vertrag ist bewusst attraktiv, umfangreich und gefährlich konstruiert: viele Risiken springen nicht sofort ins Auge, sondern werden erst durch systematische MaBV-, AGB-, Technik-, WEG- und Bauüberwachungsprüfung sichtbar.
+Im Ordner [`uebungsfaelle/bautraegervertrag-neubauwohnung/`](uebungsfaelle/bautraegervertrag-neubauwohnung/) liegt ein fiktiver Bauträgervertrag mit zugehöriger Baubeschreibung. Der Fall ist als neutrales Vorführ- und Übungsmaterial gedacht: Vertrag und Baubeschreibung werden ohne vorgelagerte Auswertung oder Hinweise bereitgestellt, damit der Skill die Prüfung autonom leisten muss.
 
 ## Keine Aussage über Berufsrecht, Datenschutz, KI-VO oder Beschlagnahmeverbote
 
