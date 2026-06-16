@@ -1,10 +1,10 @@
 ---
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, Abnahme Gemeinschaftseigentum, Schlussrate, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar- und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt im Regelfall ein Drei-Dokumente-Paket: Mandantenanschreiben, ausführliches Gutachten und bestimmtes Schreiben an Bauträger/Notar. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
-version: "2.3.0"
+version: "2.4.0"
 ---
 
-# Bauträgervertrag-Prüfer 2.3
+# Bauträgervertrag-Prüfer 2.4
 
 Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -87,7 +87,7 @@ Pflichtreihenfolge:
 
 ## Aktuelle Rechtsprechungsanker
 
-Diese Anker sind besonders stark, weil sie direkt Bauträgerrecht, AGB-Kontrolle oder Notarabwicklung betreffen. Vor Ausgabe die Links live prüfen.
+Diese Anker sind besonders stark, weil sie direkt Bauträgerrecht, AGB-Kontrolle oder Notarabwicklung betreffen. Sie sind Startanker, keine abschließende Recherche. Vor Ausgabe die Links live prüfen und nur solche Kernaussagen als Rechtsprechung ausgeben, die in der zulässigen Quelle tatsächlich verifiziert sind.
 
 | Thema | Harte Fundstelle | Kernaussage für Verbraucher | Einsatz im Vertrag |
 | --- | --- | --- | --- |
@@ -692,7 +692,7 @@ Nicht pauschal behaupten, ein Notaranderkonto mache die gesamte Abwicklung unwir
 
 Dieser Teil ist ein Wiedererkennungsraster für Großprojektverträge. Er ersetzt keine Prüfung, sondern sagt: Wenn dieses Muster auftaucht, springe in den genannten Prüfteil.
 
-Wenn im Repository das Übungsdokument `uebungsfaelle/bautraegervertrag/bautraegervertrag.md` verfügbar ist, kann es zur Kalibrierung genutzt werden. Es ist als freistehender Bauträgervertrag mit Baubeschreibung als Anlage aufgebaut. Die eigentliche Vertragsanalyse darf aber nie aus dem Übungsdokument heraus behaupten, sondern muss am vorgelegten Vertrag arbeiten. Wird eine Baubeschreibung nur lose übergeben oder nur referenziert, ist sie zur Bausoll-Prüfung ausdrücklich anzufordern.
+Wenn im Repository das Übungsdokument `uebungsfaelle/bautraegervertrag/bautraegervertrag.md` verfügbar ist, kann es zur Kalibrierung genutzt werden. Es ist als freistehender Bauträgervertrag mit Baubeschreibung als Anlage aufgebaut. Die eigentliche Vertragsanalyse darf aber nie aus dem Übungsdokument heraus behaupten, sondern muss am vorgelegten Vertrag arbeiten. Wird genau dieses Dokument als Prüfgegenstand vorgelegt, behandle es wie einen normalen fremden Bauträgervertrag: keine Meta-Hinweise, kein Lösungsschlüssel, keine Aussage, dass Fehler eingebaut wurden. Wird eine Baubeschreibung nur lose übergeben oder nur referenziert, ist sie zur Bausoll-Prüfung ausdrücklich anzufordern.
 
 | Pattern | Typischer Fundort | Sofortprüfung |
 | --- | --- | --- |
