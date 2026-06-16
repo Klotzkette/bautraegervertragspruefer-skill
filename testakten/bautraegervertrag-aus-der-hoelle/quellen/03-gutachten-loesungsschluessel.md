@@ -47,9 +47,9 @@ Der Vertrag enthält eine Häufung von Klauseln, die nach unserer Einschätzung 
 
 § 3.3 des Vertrages bestimmt, dass der Verkäufer keine Sicherheit nach § 650m Abs. 2 BGB zu stellen hat. Der Käufer verzichte ausdrücklich auf etwaige weitergehende gesetzliche Sicherungsrechte.
 
-Diese Regelung verstößt gegen § 650m BGB. Bei einem Verbraucherbauträgervertrag — und ein solcher liegt nach § 650u BGB unstreitig vor — hat der Erwerber das Recht, bei der ersten Abschlagszahlung 5 Prozent der Gesamtvergütung als Sicherheit einzubehalten oder vom Bauträger eine Sicherheitsleistung in entsprechender Höhe zu verlangen. Dieses Recht ist zwingend; ein vorab erklärter Verzicht ist unwirksam.
+Diese Regelung verstößt gegen § 650m Abs. 2 BGB. Bei einem Bauträgervertrag — und ein solcher liegt nach § 650u BGB unstreitig vor — ist die 5-Prozent-Sicherheit nach § 650m Abs. 2 BGB durch § 650u Abs. 2 BGB gerade *nicht* ausgeschlossen; der Erwerber erhält bei der ersten Abschlagszahlung eine Sicherheit für die rechtzeitige Herstellung ohne wesentliche Mängel. Die formularmäßige Abbedingung dieser Sicherheit ist zusätzlich nach § 309 Nr. 15 lit. b BGB unwirksam, und nach § 12 MaBV sind Abweichungen zulasten des Erwerbers ohnehin unzulässig. Der vorab erklärte Verzicht in § 3.3 ist damit gleich dreifach unwirksam.
 
-Befund: 🔴 schwerwiegender Verstoß. Klausel unwirksam. Berichtigungsverlangen: ersatzlose Streichung des § 3.3 und Aufnahme einer Belehrung über das Recht auf den 5-Prozent-Einbehalt.
+Befund: 🔴 schwerwiegender Verstoß. Klausel unwirksam. Berichtigungsverlangen: ersatzlose Streichung des § 3.3 und Aufnahme einer Belehrung über das Recht auf die 5-Prozent-Sicherheit nach § 650m Abs. 2 BGB.
 
 ## 2. § 309 Nr. 12 lit. a BGB — Beweislastumkehr
 
@@ -81,7 +81,7 @@ Befund: 🔴 schwerwiegende Aushöhlung des Verbraucherschutzes.
 
 ## 6. § 650k BGB — Leistungsbeschreibung lückenhaft
 
-Die Baubeschreibung wird in § 0.2 als Vertragsbestandteil bezeichnet, ist jedoch nicht mitbeurkundet. Sie enthält keine konkreten Hersteller- oder Klassenangaben zu Sanitärobjekten, Bodenbelägen, Innentüren, Elektroinstallation, Heizungstechnik. Der Energiestandard wird in § 5.10 nur als „die zum Tag der Baugenehmigung geltenden energetischen Anforderungen" angegeben. Die Lücken-Schließungs-Klausel in § 5.5 verweist auf § 315 BGB und auf eine Leistung „von einfacher Art und Güte" — was den verbreiteten Maßstab „mittlerer Art und Güte" gezielt unterläuft.
+Die Baubeschreibung (Fassung Februar 2026, Version 7.2; vgl. den Auszug in `04-baubeschreibung-auszug.md`) wird in § 0.2 als maßgeblich bezeichnet, ist jedoch nicht mitbeurkundet, sondern nur lose übergeben. Sie enthält keine konkreten Hersteller- oder Klassenangaben zu Sanitärobjekten, Bodenbelägen, Innentüren, Elektroinstallation, Heizungstechnik. Der Energiestandard wird in § 5.10 des Vertrages bzw. Abschnitt 17.1 der Baubeschreibung nur als „die zum Tag der Baugenehmigung geltenden energetischen Anforderungen" angegeben. Die Lücken-Schließungs-Klausel in § 5.5 verweist auf § 315 BGB und auf eine Leistung „von einfacher Art und Güte" — was den verbreiteten Maßstab „mittlerer Art und Güte" gezielt unterläuft. Konkrete Belege im Auszug siehe Nr. 17d.
 
 Befund: 🔴 Bausoll nicht hinreichend konkretisiert.
 
@@ -189,6 +189,20 @@ Damit werden technische Qualität und spätere Betriebskosten aus dem sichtbaren
 
 Befund: 🟠 bis 🔴.
 
+## 17d. Baubeschreibung Version 7.2 — konkrete Bausoll-Lücken im Auszug
+
+Der lose übergebene Baubeschreibungs-Auszug bestätigt und konkretisiert die unter Nr. 6, 12 und 17 nur benannten Lücken. Beanstandungsfähig sind insbesondere:
+
+- **Abschnitt V.2/V.3 — Eigenbestimmungsrecht und „einfache Art und Güte".** Der Verkäufer darf Fabrikate frei durch „gleichwertige" ersetzen und Unbestimmtes nach billigem Ermessen mit „einfacher Art und Güte" füllen. Das unterläuft das gesetzliche Mindestmaß und verschiebt die Konkretisierung des Bausolls in das Belieben des Verwenders.
+- **Abschnitte 8.1, 9.1, 10.1, 11.1, 14.1 — durchgehende „nach Wahl des Verkäufers"-Technik.** Bodenbeläge „in gehobener Qualität nach Wahl", Sanitärobjekte „in Standardausführung", Heizungssystem „nach Wahl des Verkäufers", Aufzug „handelsüblich" — kein konkretes Bausoll, kein Hersteller, keine Klasse, kein Mindeststandard.
+- **Abschnitt 16.2 — leerer Schallschutzwert.** Erhöhter Schallschutz wird nur geschuldet, „soweit nachstehend mit Zahlenwerten ausdrücklich vereinbart" — die Zahlenwerte sind aber ausdrücklich „in dieser Fassung nicht eingetragen". Damit läuft der gesamte erhöhte Schallschutz leer.
+- **Abschnitt 17.1 — kein konkreter Energiestandard.** Keine KfW-Effizienzhausklasse, kein Primärenergiebedarf, keine GEG-Stufe — finanzierungs- und förderrelevant.
+- **Abschnitt 19.1 — Wohnfläche „keine zugesicherte Eigenschaft", DIN 277.** In Verbindung mit der 8-Prozent-Toleranz in § 5.9.2 des Vertrages (Nr. 16) wird die Flächenangabe praktisch entwertet.
+- **Abschnitt S.1 — Widerspruchsregel zugunsten des Verkäufers.** Bei Widersprüchen zwischen Baubeschreibung, Plänen und Vertrag soll die vom Verkäufer „für sachgerecht gehaltene" Regelung gelten. Das verstößt gegen § 305c Abs. 2 BGB (Zweifel zulasten des Verwenders) und § 650k Abs. 2 BGB.
+- **Schaufenster-Drift.** Abschnitt 1.2 bewirbt „gehobenen Standard", während Vertrag (§ 5.5) und Baubeschreibung (V.3) nur „einfache Art und Güte" schulden und Verkaufsunterlagen nach § 5.4 ausdrücklich unverbindlich sind. Der Prospekt-Eindruck ist nicht durchsetzbar.
+
+Befund: 🔴. Berichtigungsverlangen: Mitbeurkundung einer datierten, versionsfesten Baubeschreibung mit konkreten Klassen-/Mindeststandards je Gewerk, konkretem Energiestandard (KfW/GEG mit Zahlenwert), eingetragenen Schallschutzwerten und einer verbrauchergünstigen Vorrang-/Auslegungsregel.
+
 ## 18. § 6.1 — „Ohne Geld keine Schlüssel"
 
 Bereits unter Pflichtpunkt 5 behandelt. Befund: 🔴.
@@ -270,11 +284,13 @@ Befund: 🟠.
 
 Pflicht-Prüfblock: 🔴 6 von 6.
 
-Beanstandete Klauseln in Zahlen:
+Beanstandete Klauseln in Zahlen (Vertrag und lose übergebene Baubeschreibung Version 7.2 zusammen):
 
-- 🔴 rot, klar unwirksam oder schwerwiegend: 25
-- 🟠 orange, Verhandlungspunkt: 5
+- 🔴 rot, klar unwirksam oder schwerwiegend: 27
+- 🟠 orange, Verhandlungspunkt: 6
 - 🟢 grün, unbedenklich: keine im Bereich der geprüften Vorschriften
+
+Der separat geprüfte Baubeschreibungs-Auszug (Nr. 17d) verschärft das Bild zusätzlich: Das Bausoll ist nicht nur lückenhaft, sondern durch durchgehende „nach Wahl des Verkäufers"-Formulierungen, einen leeren Schallschutzwert, einen fehlenden Energiestandard und eine verkäuferfreundliche Widerspruchsregel systematisch zugunsten des Verkäufers offengehalten.
 
 Strukturelle Wertung: Der Vertrag ist in der vorgelegten Fassung nicht verbraucherrechtskonform. Regelfolge einzelner AGB-Verstöße ist § 306 BGB: Die Klausel fällt weg, der Vertrag bleibt im Übrigen bestehen. Eine Gesamtunwirksamkeit ist nicht das Standardargument, sondern nur bei gesondertem Form-, Sittenwidrigkeits- oder Gesamtgefügeproblem zu prüfen.
 

@@ -337,6 +337,24 @@ Der Notar hat nicht über die Wirksamkeit einzelner Klauseln dieses Vertrages be
 
 \newpage
 
+# Bezugsurkunden, Anlagen und Vollzugshinweise
+
+**Bezugsurkunde 1** — Teilungserklärung einschließlich Gemeinschaftsordnung vom 18. Juli 2024, UR-Nr. 612/2024 W des Notars Egmont Wachtelborn, Berlin, in der Fassung des 1. bis 7. Nachtrags (UR-Nrn. 731/2024 W, 942/2024 W, 28/2025 W, 412/2025 W, 698/2025 W, 1108/2025 W und 187/2026 W). Auf das Verlesen wird gemäß § 13a BeurkG verzichtet (siehe Unterschriftenvermerk).
+
+**Anhang a** — beglaubigte Fotokopie der Vollmacht der Erschienenen zu 1. vom 22.10.2025, UR-Nr. 1402/2025 W des Notars Egmont Wachtelborn, Berlin.
+
+**Lose übergebene Unterlagen (nicht Gegenstand der Beurkundung):** Baubeschreibung in der Fassung Februar 2026, Version 7.2; Abgeschlossenheitsbescheinigung; Aufteilungsplan-Auszug zur Einheit 4.27. Diese Unterlagen wurden dem Käufer mit Vertragsunterzeichnung in Druckfassung ausgehändigt.
+
+Der Notar wird mit dem Vollzug beauftragt. Er soll Anträge erst stellen, wenn die hierfür erforderlichen Erklärungen und Nachweise vorliegen. Mitteilungen über den Eintritt der Fälligkeitsvoraussetzungen nach § 3 erfolgen schriftlich an beide Parteien.
+
+\newpage
+
+# Geschäftswert und Kosten
+
+Der Geschäftswert dieser Urkunde wird mit dem Gesamtkaufpreis von 828.000,00 EUR angegeben. Die Kosten dieser Urkunde und ihres Vollzugs trägt nach § 13.4 der Käufer. Auf die zusätzlich anfallende Grunderwerbsteuer sowie die Erschließungs- und Anschlusskosten nach § 7 wurde hingewiesen.
+
+\newpage
+
 # Unterschriften
 
 Die Erschienenen erklärten, dass sie auf das Verlesen der Bezugsurkunden verzichten, da ihnen deren Inhalt bekannt ist. Diese Niederschrift wurde den Erschienenen vom Notar vorgelesen, von ihnen genehmigt und sodann eigenhändig wie folgt unterschrieben:
