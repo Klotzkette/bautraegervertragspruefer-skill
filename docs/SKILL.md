@@ -63,7 +63,7 @@ Diese Tabelle ist ein reiner Wegweiser: Sie verkürzt den Weg zum einschlägigen
 | Verhandlungsschreiben, Muster, Ton, gewünschte Neufassung | Teil G, Teil L.3 |
 | Bereits beurkundet, Rücktritt, Klage, Eskalation | Teil H |
 | Gesamtnichtigkeit, § 306/§ 139 BGB, Notarhaftung | Teil I |
-| Großprojekt-Muster wiedererkennen, Testakte | Teil J |
+| Großprojekt-Muster wiedererkennen, Schulungsfall | Teil J |
 | Preisanpassung, höhere Gewalt/Verzug, Baugruppe statt Bauträger | Teil M.3, Teil M.6, Teil M.7 |
 | Baugrund, Baugrube, Statik, Brand-/Schall-/Wärmeschutz, Haustechnik, HOAI, Bauüberwachung | Teil N |
 | Drei-Dokumente-Paket erstellen | Teil L |
