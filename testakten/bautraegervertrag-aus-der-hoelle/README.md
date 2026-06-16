@@ -4,7 +4,7 @@ Diese Akte ist **vollständig fingiert** und dient ausschließlich Schulungs- un
 
 ## Worum es geht
 
-Ein fiktiver Wohnungsbauträgervertrag mit Auflassung für eine Eigentumswohnung in einem fiktiven Großprojekt zwischen Stahnsdorf und Kleinmachnow. Der Vertrag enthält rund **30 versteckte Fehler** — von schweren MaBV-Verstößen über AGB-Klauselfallen nach §§ 305 ff. BGB bis zu Druckmustern gegen die dingliche Sicherung des Erwerbers. Die Fehler sind nicht durch Hervorhebung markiert, sondern in einen handwerklich solide aussehenden Vertragstext eingewoben, wie er in der Beratungspraxis tatsächlich vorkommt.
+Ein fiktiver Wohnungsbauträgervertrag mit Auflassung für eine Eigentumswohnung in einem fiktiven Großprojekt zwischen Stahnsdorf und Kleinmachnow. Der Vertrag enthält rund **35 versteckte Fehler** — von schweren MaBV-Verstößen über AGB-Klauselfallen nach §§ 305 ff. BGB bis zu Druckmustern gegen die dingliche Sicherung, technische Baukontrolle, Baugrundrisiken, HOAI-/Objektüberwachungslogik und spätere WEG-Betriebskosten. Die Fehler sind nicht durch Hervorhebung markiert, sondern in einen handwerklich solide aussehenden Vertragstext eingewoben, wie er in der Beratungspraxis tatsächlich vorkommt.
 
 Die Testakte erlaubt es,
 
@@ -24,7 +24,7 @@ Die Akte besteht aus drei Dokumenten, jeweils in drei Formaten verfügbar:
    — Mandantenanfrage per E-Mail, interner Aktenvermerk, anwaltliche Strategie-Antwort, Beweis-/Fristen-Tabelle, fünfstufiger Eskalationsplan, Honorarauszug.
 
 3. **Anwaltliches Gutachten — Lösungsschlüssel zur Testakte** (`03-gutachten-loesungsschluessel.md`)
-   — Das vollständige Prüfgutachten mit Pflicht-Prüfblock, 28 klauselgenauen Beanstandungen, Ampel-Bilanz, sieben Handlungsempfehlungen. **Anonymisierte Lehre**, keine konkreten Rechtsprechungsfundstellen.
+   — Das vollständige Prüfgutachten mit Pflicht-Prüfblock, klauselgenauen rechtlichen und technischen Beanstandungen, Ampel-Bilanz, sieben Handlungsempfehlungen. **Anonymisierte Lehre**, keine konkreten Rechtsprechungsfundstellen.
 
 ## Formate
 
@@ -39,8 +39,8 @@ Jedes Dokument liegt vor als:
 1. Öffne den Skill (Download über die Pages-URL des Repos).
 2. Übergib dem Skill den Bauträgervertrag aus `quellen/01-bautraegervertrag.md` oder `gesamt-pdf/01-bautraegervertrag.pdf`.
 3. Vergleiche die Ausgabe des Skills mit dem Lösungs-Gutachten in `quellen/03-gutachten-loesungsschluessel.md`.
-4. Erwartetes Ergebnis: Der Skill sollte den Pflicht-Prüfblock (6 von 6 🔴) auslösen, mindestens 22 weitere 🔴-Befunde finden und eine strukturierte Risikomatrix liefern.
+4. Erwartetes Ergebnis: Der Skill sollte den Pflicht-Prüfblock auslösen, mindestens 25 🔴-Befunde finden und eine strukturierte Risiko- und Technikmatrix liefern.
 
 ## Hinweis
 
-Der Vertragstext ist absichtlich extrem verbraucherfeindlich. Reale Bauträgerverträge sind selten so dicht mit Fallen versehen — aber jede einzelne der eingebauten Klauseln ist in der Praxis schon vorgekommen. Die Akte verdichtet die Fehlerlogik zu einem Lehrstück.
+Der Vertragstext ist absichtlich extrem verbraucherfeindlich, aber äußerlich professionell gehalten. Reale Bauträgerverträge sind selten so dicht mit Fallen versehen — aber jede einzelne der eingebauten Klauseln ist in der Praxis als Risiko denkbar. Die Akte verdichtet die Fehlerlogik zu einem Lehrstück.

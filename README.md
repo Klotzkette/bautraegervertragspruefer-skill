@@ -1,6 +1,6 @@
 # Bauträgervertrag-Prüfer Skill
 
-> **Version 2.0.0** — quellenharter One-Shot-Skill für die verbraucherseitige Prüfung deutscher Bauträgerverträge. Der Skill ist kein Rechtsrat und ersetzt keine anwaltliche Prüfung, liefert aber eine strukturierte, verhandlungsfähige Arbeitsfassung für Entwurf, Beurkundung, Bauphase, Abnahme und Streit.
+> **Version 2.2.0** — quellenharter One-Shot-Skill für die verbraucherseitige Prüfung deutscher Bauträgerverträge. Der Skill ist kein Rechtsrat und ersetzt keine anwaltliche Prüfung, liefert aber eine strukturierte, verhandlungsfähige Arbeitsfassung für Entwurf, Beurkundung, Bauphase, Abnahme, Technik, WEG-Organisation, Wirtschaft und Streit.
 
 Der Skill steckt vollständig in einer Datei: [`skill/SKILL.md`](skill/SKILL.md). Er kann in leistungsfähige KI-Chatbots eingefügt oder als Datei hochgeladen werden. Die veröffentlichte Downloadfassung liegt unter [`docs/SKILL.md`](docs/SKILL.md) und wird über GitHub Pages bereitgestellt.
 
@@ -10,14 +10,16 @@ Der Skill steckt vollständig in einer Datei: [`skill/SKILL.md`](skill/SKILL.md)
 
 Alternativ die [Download-Seite](https://klotzkette.github.io/bautraegervertragspruefer-skill/) öffnen.
 
-## Was Version 2.0.0 macht
+## Was Version 2.2.0 macht
 
 - Prüft zuerst einen festen Pflichtblock: § 650m Abs. 2 BGB, § 309 Nr. 12 BGB, § 309 Nr. 15 BGB, MaBV-Fälligkeit, Abnahme Gemeinschaftseigentum, Schlussrate, Teilungserklärung und Bausoll.
 - Trennt sauber zwischen Bauträgervertrag (§ 650u BGB), Verbraucherbauvertragsnormen, Kaufrecht, MaBV und AGB-Kontrolle.
 - Korrigiert die MaBV-Logik: § 3 Abs. 2 MaBV arbeitet mit bis zu sieben Teilbeträgen, zusammengesetzt aus gesetzlichen Prozentbausteinen.
+- Prüft jetzt zusätzlich die Projektrealität: HOAI-Leistungsphasen, LPH 8/Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Grundwasser, Altlasten, Haustechnik, Wartungsverträge, Betriebskosten und WEG-Organisation.
+- Härtet die Testakte „Bauträgervertrag aus der Hölle" mit einem professioneller wirkenden, aber verdeckt riskanten Raten-, Technik- und Bauüberwachungsregime.
 - Verlangt harte Quellen: offizielle Gerichtsseiten, Landesrechtsprechungsportale, `gesetze-im-internet.de`, DeJure oder OpenJur. Keine BeckRS-, beck-online-, juris- oder Kanzleiblog-Zitate als Beleg.
 - Liefert zu roten Klauseln erwartbare Bauträger-/Notarargumente und eine juristisch belastbare Antwort.
-- Enthält eine 20-Punkte-Prüfschleife und einen Bug-Hunt gegen typische Rechtsfehler.
+- Enthält eine 30-Punkte-Prüfschleife und einen Bug-Hunt gegen typische Rechtsfehler.
 
 ## Aktuelle Rechtsprechungsanker
 
@@ -62,12 +64,13 @@ Die Skill-Datei enthält:
 - Harte Quellenregeln.
 - Aktuelle Rechtsprechungsanker 2023-2026.
 - Normenkarte zu § 650u, § 650v, § 650j, § 650k, § 650m, § 650n BGB, §§ 305 ff. BGB und MaBV.
-- 20 Prüfschleifen für die Vollanalyse.
+- 30 Prüfschleifen für die Vollanalyse.
 - Pflicht-Prüfblock.
 - Workflow und Antwortformate.
 - MaBV-Zahlungsprüfung.
 - AGB-Klauselkatalog mit Gegenargument und Antwort.
 - Baubeschreibung/Bausoll, Abnahme, Schlussrate, Teilungserklärung, Eigentumsschutz, Insolvenz, Verhandlung und Streit.
+- HOAI-/Objektüberwachungs-, Baugrund-, Technik-, Wartungs-, Betriebskosten- und WEG-Organisationsprüfung.
 - Bug-Hunt vor Ausgabe.
 
 ## Rechtlicher Hinweis
