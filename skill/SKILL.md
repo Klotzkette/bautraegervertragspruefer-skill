@@ -1,7 +1,7 @@
 ---
 name: bautraegervertrag-pruefer
-description: "Verbraucherseitige Prüfung deutscher Bauträgerverträge nach dem Ampelsystem (🔴/🟠/🟢). Erkennt MaBV-Verstöße im Ratenplan, unzulässige AGB-Klauseln nach §§ 305 ff. BGB, Risiken bei Auflassungsvormerkung und Freistellung nach § 3 MaBV, **fehlerhafte oder lückenhafte Leistungs- und Baubeschreibungen nach § 650k BGB** (Pflichtinhalte, Detaillierungstiefe, Pauschalverweise, Bemusterungsfallen, Bausoll-Lücken, Mitbeurkundungsstatus), untaugliche Vertragsstrafen, Abnahme- und Mängelrechtsfallen, Gefahrtragungs- und Eigentumsumschreibungs-Risiken. Liefert klauselgenaue Risikomatrix, Ampel-Bilanz, Gesamteinschätzung und Handlungsempfehlung — von Nachverhandlung über notarielle Korrektur bis Rücktritt und Klage. Stützt sich auf §§ 650u, 650v BGB, §§ 650a–650o BGB, § 3 MaBV, §§ 305 ff. BGB, § 311b BGB, §§ 433 ff. BGB."
-version: "1.3.0"
+description: "Verbraucherseitige Prüfung deutscher Bauträgerverträge nach dem Ampelsystem (🔴/🟠/🟢). Erkennt MaBV-Verstöße im Ratenplan, unzulässige AGB-Klauseln nach §§ 305 ff. BGB, Risiken bei Auflassungsvormerkung und Freistellung nach § 3 MaBV, **fehlerhafte oder lückenhafte Leistungs- und Baubeschreibungen nach § 650k BGB** (Pflichtinhalte, Detaillierungstiefe, Pauschalverweise, Bemusterungsfallen, Bausoll-Lücken, Mitbeurkundungsstatus), untaugliche Vertragsstrafen, Abnahme- und Mängelrechtsfallen, Gefahrtragungs- und Eigentumsumschreibungs-Risiken. Liefert klauselgenaue Risikomatrix, Ampel-Bilanz, Gesamteinschätzung und Handlungsempfehlung — von Nachverhandlung über notarielle Korrektur bis Rücktritt und Klage. **Erzeugt als Standard-Ausgabe ein abgestimmtes Drei-Dokumente-Paket: (1) Mandanten-Anschreiben in einfacher, verständlicher Sprache mit Executive Summary, (2) ausführliches Gutachten in Gutachtenform, (3) bestimmtes Schreiben an Verkäuferseite und Notar, das rechtswidrige und nichtige Klauseln unmissverständlich zurückweist und die typischen Gegenargumente (Privatautonomie, wirtschaftliche Risikoverteilung, Branchenüblichkeit, „der Notar hat es beurkundet", geltungserhaltende Reduktion) vorab entkräftet.** Stützt sich auf §§ 650u, 650v BGB, §§ 650a–650o BGB, § 3 MaBV, §§ 305 ff. BGB, § 311b BGB, §§ 433 ff. BGB."
+version: "1.4.0"
 ---
 
 # Bauträgervertrag-Prüfer (Ampelsystem für Verbraucher)
@@ -29,14 +29,15 @@ Diese Skill-Datei trägt den vollständigen Workflow zur verbraucherseitigen Ana
 - [Teil I — Nichtigkeitsrisiken, Transparenzgebot und Notarhaftung](#teil-i--nichtigkeitsrisiken-transparenzgebot-und-notarhaftung)
 - [Teil J — Realfall-Pattern aus Großprojekten (Anschauungsmaterial)](#teil-j--realfall-pattern-aus-großprojekten-anschauungsmaterial)
 - [Teil K — Vertiefte Dogmatik und aktuelle Streitstände](#teil-k--vertiefte-dogmatik-und-aktuelle-streitstände)
+- [Teil L — Standard-Ausgabe: Das Drei-Dokumente-Paket](#teil-l--standard-ausgabe-das-drei-dokumente-paket)
 
 ## 🚨 Pflicht-Prüfblock vor jeder Vollanalyse
 
 **Diese fünf Punkte werden bei jedem Bauträgervertrag mit Verbraucherbeteiligung zwingend zuerst geprüft — unabhängig davon, was im übrigen Vertrag steht. Schlägt einer dieser Punkte aus, ist das im Sofortstart-Output noch vor der Klausel-Risikomatrix sichtbar zu machen.**
 
 1. **§ 650m BGB — 5 %-Sicherheitseinbehalt.** Hat der Verbraucher das Recht, **bei der ersten Abschlagszahlung 5 %** der Gesamtvergütung als Sicherheit einzubehalten (oder eine Sicherheit i. H. v. 5 % zu erhalten)? Fehlt der Hinweis vollständig oder wird das Recht ausgeschlossen, ist das ein **🔴 schwerwiegender Verstoß** und ein Indiz dafür, dass der Vertrag insgesamt verbraucherfeindlich konzipiert ist.
-2. **§ 309 Nr. 15 lit. a BGB — Beweislastumkehr.** Enthält der Vertrag eine Klausel, die dem Verbraucher die Beweislast für Umstände aufbürdet, die im Verantwortungsbereich des Bauträgers liegen? Beispiele: „Der Erwerber trägt die Beweislast für Baumängel", „Verzögerungen gelten als nicht vom Bauträger verschuldet, sofern der Erwerber das Gegenteil nicht nachweist". → **🔴 unwirksam nach § 309 Nr. 15 lit. a BGB**.
-3. **§ 309 Nr. 15 lit. b BGB — Empfangsbestätigung als Tatsachenerklärung.** Enthält der Vertrag eine Klausel, in der der Verbraucher den Erhalt einer Erklärung, eines Dokuments oder einer Leistung **vorab pauschal** bestätigt („Der Erwerber bestätigt, die Baubeschreibung erhalten und geprüft zu haben", „Der Erwerber bestätigt, über Risiken aufgeklärt worden zu sein")? → **🔴 unwirksam nach § 309 Nr. 15 lit. b BGB**.
+2. **§ 309 Nr. 12 lit. a BGB — Beweislastumkehr.** Enthält der Vertrag eine Klausel, die dem Verbraucher die Beweislast für Umstände aufbürdet, die im Verantwortungsbereich des Bauträgers liegen? Beispiele: „Der Erwerber trägt die Beweislast für Baumängel", „Verzögerungen gelten als nicht vom Bauträger verschuldet, sofern der Erwerber das Gegenteil nicht nachweist". → **🔴 unwirksam nach § 309 Nr. 12 lit. a BGB**.
+3. **§ 309 Nr. 12 lit. b BGB — Empfangsbestätigung als Tatsachenerklärung.** Enthält der Vertrag eine Klausel, in der der Verbraucher den Erhalt einer Erklärung, eines Dokuments oder einer Leistung **vorab pauschal** bestätigt („Der Erwerber bestätigt, die Baubeschreibung erhalten und geprüft zu haben", „Der Erwerber bestätigt, über Risiken aufgeklärt worden zu sein")? → **🔴 unwirksam nach § 309 Nr. 12 lit. b BGB**.
 4. **Transparenzgebot § 307 Abs. 1 S. 2 BGB.** Ist der Vertrag verständlich oder ein unüberschaubares Konvolut (250–500+ Seiten mit Anlagen, Verweisketten, juristisch nicht erschließbarem Aufbau)? Bei Verbraucherbauträgerverträgen ist Intransparenz prüfungsrelevant; im Extremfall verlieren intransparente Klauseln ihre Wirksamkeit. **🔴 wenn Umfang/Aufbau für Verbraucher nicht zumutbar erschließbar.**
 5. **Druckmuster und Eingriffe in dingliche Sicherung.** Enthält der Vertrag Klauseln, die
    - die Löschung der Auflassungsvormerkung **bei einseitiger Verzugsmitteilung des Bauträgers** vorsehen,
@@ -57,8 +58,8 @@ Diese Skill-Datei trägt den vollständigen Workflow zur verbraucherseitigen Ana
 - **§ 650l BGB** — Widerrufsrecht des Verbrauchers (sofern nicht beurkundet bzw. nach § 312 Abs. 2 Nr. 3 BGB ausgeschlossen — bei Bauträgerverträgen wegen § 311b BGB regelmäßig kein Widerrufsrecht; Hinweis muss aber vertraglich klar sein).
 - **§ 311b Abs. 1 BGB** — Beurkundungspflicht: Bauträgerverträge sind notariell zu beurkunden; Verstoß führt zur Nichtigkeit.
 - **§§ 305 ff. BGB** — AGB-Kontrolle. § 305c BGB (überraschende Klauseln), **§ 307 Abs. 1 S. 2 BGB Transparenzgebot**, § 307 BGB (unangemessene Benachteiligung), §§ 308, 309 BGB (Klauselverbote). Auch bei beurkundeten Bauträgerverträgen anwendbar — die notarielle Beurkundung schützt nicht vor AGB-Kontrolle.
-- **§ 309 Nr. 15 lit. a BGB** — Verbot von Beweislastklauseln, die den Verbraucher entgegen der gesetzlichen Verteilung belasten. **Pflichtprüfung.**
-- **§ 309 Nr. 15 lit. b BGB** — Verbot pauschaler Empfangs- oder Kenntnisnahmebestätigungen. **Pflichtprüfung.**
+- **§ 309 Nr. 12 lit. a BGB** — Verbot von Beweislastklauseln, die den Verbraucher entgegen der gesetzlichen Verteilung belasten. **Pflichtprüfung.**
+- **§ 309 Nr. 12 lit. b BGB** — Verbot pauschaler Empfangs- oder Kenntnisnahmebestätigungen. **Pflichtprüfung.**
 - **§ 139 BGB** — Teilnichtigkeit: Führt zur Gesamtnichtigkeit, wenn der Vertrag ohne die nichtigen Bestandteile nicht abgeschlossen worden wäre.
 - **§ 19 BNotO i. V. m. § 17 BeurkG** — **Notarhaftung** bei Verletzung der Belehrungspflicht. Bei evident einseitig zulasten des Verbrauchers gestalteten Verträgen, ungeprüft beurkundet, kommt Schadensersatzpflicht des Notars in Betracht.
 - **§ 3 MaBV** — Voraussetzungen für Vermögenswert-Annahme: Beurkundung, Auflassungsvormerkung, Lastenfreistellung, Baugenehmigung, Ratenplan nach § 3 Abs. 2 MaBV mit höchstens 13 (bzw. 7 zusammengefassten) Raten und festen Prozentsätzen.
@@ -91,12 +92,14 @@ Sobald ein Vertragstext, Auszug oder Foto des Bauträgervertrags eingefügt wird
 
 Pflichtoutput im Sofortstart:
 
-1. **Pflicht-Prüfblock-Ergebnis** (§ 650m, § 309 Nr. 15 lit. a/b, Transparenzgebot, Druckmuster) — als erstes, mit klarer Ampel pro Pflichtpunkt.
+1. **Pflicht-Prüfblock-Ergebnis** (§ 650m, § 309 Nr. 12 lit. a/b, Transparenzgebot, Druckmuster) — als erstes, mit klarer Ampel pro Pflichtpunkt.
 2. Klauselweise Risikomatrix (Originaltext · Decodierung · Risiko · Ampel).
 3. Ampel-Bilanz (Anzahl 🔴 / 🟠 / 🟢).
 4. **Nichtigkeitseinschätzung** (Teil- oder Gesamtnichtigkeit § 139 BGB? Hinweis auf mögliche Notarhaftung § 19 BNotO?).
 5. Gesamteinschätzung (verbraucherfreundlich · ausgewogen · einseitig zugunsten Bauträger).
 6. Handlungsempfehlung (Nachverhandlung mit konkreten Vorschlägen · Beurkundung verweigern · Notartermin verschieben · Rücktritt prüfen · Klage · Notar-Beschwerde / Notarhaftung).
+
+**Standard-Ausgabe bei jeder Vollanalyse:** Die Analyse mündet — sofern der Nutzer nicht ausdrücklich nur einen Schnellscan will — in das **Drei-Dokumente-Paket** nach [Teil L](#teil-l--standard-ausgabe-das-drei-dokumente-paket): (1) Anschreiben an den Mandanten in einfacher Sprache mit Executive Summary, (2) das ausführliche Gutachten, (3) das bestimmte Schreiben an Verkäuferseite und Notar. Die drei Dokumente sind inhaltlich deckungsgleich, aber an drei Adressaten und drei Sprachregister gerichtet.
 
 ## Workflow in neun Stufen
 
@@ -257,6 +260,16 @@ Tabellen mit Spalten **Originalwortlaut · Decodierte Aussage · Risiko · Ampel
 - Konkrete Verhandlungspunkte sortiert nach Risiko (🔴 zuerst).
 - Empfehlung: nachverhandeln · nicht beurkunden · beurkunden mit Vorbehalt · klagen · zurücktreten · Schadensersatz.
 
+### Standard-Ausgabe: Drei-Dokumente-Paket (Regelfall)
+
+Sobald ein vollständiger oder im Wesentlichen vollständiger Vertragstext vorliegt und der Nutzer nicht ausdrücklich nur einen Schnellscan möchte, ist die **Regelausgabe das Drei-Dokumente-Paket** nach [Teil L](#teil-l--standard-ausgabe-das-drei-dokumente-paket):
+
+1. **Anschreiben an den Mandanten** — einfache, verständliche Sprache, Executive Summary, beruhigend und handlungsorientiert.
+2. **Das Gutachten** — Gutachtenform, paragraphenweise, mit Norm und (live zu verifizierender) Rechtsprechung.
+3. **Schreiben an Verkäuferseite und Notar** — bestimmt, anwaltlich; benennt klauselgenau, was so nicht geht, weist nichtige/rechtswidrige Klauseln zurück und entkräftet die typischen Gegenargumente.
+
+Die drei Dokumente sind aus **denselben Befunden** abgeleitet und müssen widerspruchsfrei zueinander sein. Stilregeln, Aufbau und Mustertexte für alle drei Dokumente: [Teil L](#teil-l--standard-ausgabe-das-drei-dokumente-paket).
+
 ## Qualitätsgate vor jeder Ausgabe
 
 - Sind Umlaute, Namen, Klauselnummern, Daten und Beträge sauber übernommen?
@@ -387,8 +400,8 @@ Bauträgerverträge enthalten regelmäßig vorformulierte Klauseln, auch wenn si
 | **Übergabeerklärung als Abnahmefiktion** | „Mit Übergabe gilt das Werk als abgenommen" | § 640 Abs. 2 BGB wird umgangen, problematisch | 🟠 / 🔴 |
 | **Schlüsselübergabe als Abnahme** | „Die Übergabe des Schlüssels gilt als Abnahme" | Konkludente Abnahme darf nicht formularvertraglich pauschaliert werden | 🔴 |
 | **Schiedsklausel** | „Streitigkeiten entscheidet ein Schiedsgericht" | Bei Verbrauchern: § 1031 Abs. 5 ZPO Form erforderlich; meist 🔴 |
-| **Beweislastumkehr — § 309 Nr. 15a BGB** | „Der Erwerber trägt die Beweislast für das Vorliegen eines Mangels bei Gefahrübergang" / „Verzögerungen gelten als nicht vom Bauträger verschuldet, sofern der Erwerber nicht das Gegenteil nachweist" | **Direkter Verstoß gegen § 309 Nr. 15 lit. a BGB** — Klausel unwirksam | 🔴 |
-| **Pauschale Empfangs-/Kenntnisnahmebestätigung — § 309 Nr. 15b BGB** | „Der Erwerber bestätigt, die Baubeschreibung erhalten und geprüft zu haben" / „Der Erwerber bestätigt, über alle wesentlichen Risiken aufgeklärt worden zu sein" | **Direkter Verstoß gegen § 309 Nr. 15 lit. b BGB** — Klausel unwirksam | 🔴 |
+| **Beweislastumkehr — § 309 Nr. 12a BGB** | „Der Erwerber trägt die Beweislast für das Vorliegen eines Mangels bei Gefahrübergang" / „Verzögerungen gelten als nicht vom Bauträger verschuldet, sofern der Erwerber nicht das Gegenteil nachweist" | **Direkter Verstoß gegen § 309 Nr. 12 lit. a BGB** — Klausel unwirksam | 🔴 |
+| **Pauschale Empfangs-/Kenntnisnahmebestätigung — § 309 Nr. 12b BGB** | „Der Erwerber bestätigt, die Baubeschreibung erhalten und geprüft zu haben" / „Der Erwerber bestätigt, über alle wesentlichen Risiken aufgeklärt worden zu sein" | **Direkter Verstoß gegen § 309 Nr. 12 lit. b BGB** — Klausel unwirksam | 🔴 |
 | **Ausschluss / Verschweigen § 650m BGB (5 %-Sicherheitseinbehalt)** | Im Vertrag fehlt jeder Hinweis auf den 5 %-Sicherheitseinbehalt nach § 650m BGB; ggf. ausdrückliche Ausschlussklausel | Aushöhlung zwingenden Verbraucherrechts — Klausel unwirksam; **Pflicht-Prüfblockverstoß** | 🔴 |
 | **Vormerkungslöschung bei einseitiger Verzugsmitteilung** | „Der Erwerber bewilligt schon jetzt die Löschung der Auflassungsvormerkung, sobald der Bauträger den Verzug des Erwerbers anzeigt" | Aushöhlung der dinglichen Sicherung; Druckmittel des Bauträgers — unangemessene Benachteiligung § 307 BGB | 🔴 |
 | **Schlüsselübergabe nur gegen vollständige Zahlung („ohne Geld keine Schlüssel")** | „Die Schlüsselübergabe erfolgt erst nach vollständiger Zahlung aller Raten einschließlich Schlussrate" | Aushöhlung Zurückbehaltungsrecht § 641 Abs. 3 BGB; bei Restmängeln muss Schlüssel auch Zug-um-Zug gegen Schlussrate (minus Einbehalt) übergeben werden | 🔴 |
@@ -901,7 +914,7 @@ Klauseln in AGB müssen **klar und verständlich** sein. Maßstab: Ein durchschn
 | 150–300 Seiten, mit Verweisketten und juristischer Spezialterminologie | 🔴 (Transparenzverstoß indiziert) |
 | > 300 Seiten, mehrere Untergemeinschaften, juristisch nur mit Spezialwissen erschließbar | 🔴 schwerwiegend (typischer Fall der Großprojekt-Verbrauchertäuschung) |
 | Wesentliche Verbraucherrechte versteckt in Anlage 7 von 12 | 🔴 |
-| Wesentliche Belehrungen (§ 650m, § 309 Nr. 15) fehlen ganz | 🔴 (kumulativ mit anderen Punkten) |
+| Wesentliche Belehrungen (§ 650m, § 309 Nr. 12) fehlen ganz | 🔴 (kumulativ mit anderen Punkten) |
 
 **Rechtsfolge:** Intransparente Klauseln sind nach § 307 Abs. 1 S. 2 BGB **unwirksam**. Bei kumulativem Häufungsbild kann der Vertrag im Verbraucherinteresse insgesamt einer strengeren Auslegung unterliegen (§ 305c Abs. 2 BGB — Auslegung zugunsten des Verbrauchers).
 
@@ -919,7 +932,7 @@ Ein Bauträgervertrag ist nicht schon dann nichtig, wenn einzelne Klauseln AGB-r
 
 **Indikatoren für Gesamtnichtigkeitsrisiko (kumulativ prüfen):**
 
-- Mehrere Pflicht-Prüfblock-Verstöße gleichzeitig (§ 650m **und** § 309 Nr. 15a/b **und** Transparenzdefizit **und** dingliche Druckmuster).
+- Mehrere Pflicht-Prüfblock-Verstöße gleichzeitig (§ 650m **und** § 309 Nr. 12a/b **und** Transparenzdefizit **und** dingliche Druckmuster).
 - Vertragsumfang 250+ Seiten ohne Gliederungsleitfaden.
 - Mehrere Untergemeinschaften mit verschachtelten Stimmrechten, ohne Verbraucher-Belehrung.
 - Auflassungsvormerkungslöschungsbewilligung schon im Vertrag enthalten.
@@ -942,7 +955,7 @@ Der Notar ist **Schutzherr** im Beurkundungsverfahren. Pflichten:
 
 | Voraussetzung | Prüfung |
 | --- | --- |
-| Amtspflichtverletzung | Belehrung über § 650m unterlassen? Belehrung über § 309 Nr. 15a/b unterlassen? Unparteilichkeit verletzt? Prüfungspflicht verletzt? |
+| Amtspflichtverletzung | Belehrung über § 650m unterlassen? Belehrung über § 309 Nr. 12a/b unterlassen? Unparteilichkeit verletzt? Prüfungspflicht verletzt? |
 | Schaden | Konkrete Vermögenseinbuße des Erwerbers (z. B. nicht durchsetzbarer Einbehalt, mängelbehaftetes Eigentum) |
 | Kausalität | Bei pflichtgemäßer Belehrung hätte der Erwerber den Vertrag nicht oder anders abgeschlossen |
 | Verschulden | bei evident verbraucherfeindlichen Klauseln regelmäßig zumindest Fahrlässigkeit |
@@ -954,7 +967,7 @@ Der Notar ist **Schutzherr** im Beurkundungsverfahren. Pflichten:
 - Entwurf wurde dem Verbraucher erst kurz vor oder während des Beurkundungstermins ausgehändigt (Verstoß § 17 Abs. 2a BeurkG).
 - Pflichtbelehrungen zu § 650m BGB, MaBV, Eigentumsschutz, AGB-Klauseln fehlen im Protokoll.
 - Notar protokolliert pauschale Empfangsbestätigungen, statt einzeln zu belehren.
-- Notar hat offensichtlich gegen § 309 Nr. 15a/b verstoßende Klauseln beurkundet, ohne darauf hinzuweisen.
+- Notar hat offensichtlich gegen § 309 Nr. 12a/b verstoßende Klauseln beurkundet, ohne darauf hinzuweisen.
 
 ### Beschwerden und Disziplinarverfahren
 
@@ -974,8 +987,8 @@ In der Praxis wird die Notaraufsicht oft erst aktiv, wenn mehrere Erwerber kolle
 > Bei der Prüfung haben sich folgende **schwerwiegende Bedenken** ergeben, die einer Beurkundung in der vorliegenden Fassung entgegenstehen:
 >
 > 1. Der Vertrag enthält **keinen Hinweis** auf das Recht des Verbrauchers nach § 650m BGB, bei der ersten Abschlagszahlung 5 % der Gesamtvergütung als Sicherheit einzubehalten. Dieses zwingende Verbraucherrecht wird verschwiegen.
-> 2. Die Klausel in § […] verlagert die Beweislast für […] auf den Erwerber. Dies verstößt direkt gegen **§ 309 Nr. 15 lit. a BGB** und ist unwirksam.
-> 3. Die in § […] enthaltene pauschale Bestätigung, der Erwerber habe […] erhalten und geprüft, verstößt gegen **§ 309 Nr. 15 lit. b BGB** und ist unwirksam.
+> 2. Die Klausel in § […] verlagert die Beweislast für […] auf den Erwerber. Dies verstößt direkt gegen **§ 309 Nr. 12 lit. a BGB** und ist unwirksam.
+> 3. Die in § […] enthaltene pauschale Bestätigung, der Erwerber habe […] erhalten und geprüft, verstößt gegen **§ 309 Nr. 12 lit. b BGB** und ist unwirksam.
 > 4. Die Klausel in § […] sieht die Löschung der Auflassungsvormerkung bereits bei einseitiger Verzugsanzeige des Bauträgers vor. Dies höhlt die dingliche Sicherung des Erwerbers in unangemessener Weise aus und verstößt gegen § 307 BGB.
 > 5. Der Vertrag erfasst [Anzahl] Wohneinheiten und mehrere Untergemeinschaften auf [Seitenzahl] Seiten. Für einen durchschnittlichen Verbraucher ist die Tragweite nicht erschließbar; das Transparenzgebot § 307 Abs. 1 S. 2 BGB ist verletzt.
 >
@@ -1817,4 +1830,182 @@ Aus der Mandatspraxis wiederkehrend:
 
 ---
 
-> Ende des Skills. Bei Anwendung: Vertragstext einfügen, Sofortstart-Logik nutzt automatisch alle Teile A bis K. Pflicht-Prüfblock am Anfang — § 650m BGB, § 309 Nr. 15 lit. a BGB, § 309 Nr. 15 lit. b BGB, Transparenzgebot § 307 Abs. 1 S. 2 BGB, Druckmuster und Eingriffe in die dingliche Sicherung, Leistungs- und Baubeschreibung § 650k BGB — ist in jedem Verbraucher-Bauträgervertrag zwingend zuerst durchzulaufen. Teil J liefert die Wiedererkennungsmuster aus realen Großprojekten und die Gutachtenstruktur für den Mandantenbericht. Teil K vertieft die Dogmatik zu Vertragstyp, Beurkundungsreichweite, Besitzübergabe, Abnahme, Verzug, Verjährung, Mängelrechten, Bauträgerinsolvenz, Ansprüchen gegen Dritte und einstweiligem Rechtsschutz.
+# Teil L — Standard-Ausgabe: Das Drei-Dokumente-Paket
+
+Jede Vollanalyse mündet — sofern der Nutzer nicht ausdrücklich nur einen Schnellscan will — in **drei aufeinander abgestimmte Dokumente**. Das ist die Regelausgabe des Skills. Die drei Dokumente beruhen auf **denselben Befunden** (Pflicht-Prüfblock, Risikomatrix, Nichtigkeitseinschätzung aus Teilen A–K), richten sich aber an drei verschiedene Adressaten in drei verschiedenen Sprachregistern. Sie müssen widerspruchsfrei zueinander sein: Was im Gutachten 🔴 ist und verhandlungsrelevant, taucht im Schreiben an die Verkäuferseite auf; die Executive Summary des Mandanten-Anschreibens spiegelt die Ampel-Bilanz des Gutachtens.
+
+## L.0 — Grundprinzip: drei Adressaten, drei Register
+
+| Dokument | Adressat | Sprachregister | Zweck |
+| --- | --- | --- | --- |
+| **1. Anschreiben an den Mandanten** | Erwerber/Verbraucher | einfache, normale Sprache; Fachbegriffe nur mit Klammer-Erklärung | verstehen, einordnen, entscheiden |
+| **2. Das Gutachten** | Mandant + Handakte | Gutachtenstil, paragraphenweise, mit Norm und (live verifizierter) Rechtsprechung | vollständige, belastbare rechtliche Würdigung |
+| **3. Schreiben an Verkäuferseite und Notar** | Bauträger/Verkäufer und beurkundender Notar | bestimmt, anwaltlich, sachlich-hart | durchsetzen: was geht, was nicht; nichtige Klauseln zurückweisen |
+
+**Regeln für die Erzeugung:**
+
+- Immer alle drei Dokumente, klar getrennt und einzeln verwendbar (jedes mit eigener Anrede, eigenem Betreff, eigener Grußformel).
+- Reihenfolge der Ausgabe: erst das Mandanten-Anschreiben (damit der Mandant zuerst versteht), dann das Gutachten, dann der Entwurf an die Gegenseite/Notar.
+- Platzhalter in eckigen Klammern, wo Angaben fehlen ([Name], [Datum], § [X], [Betrag]). Keine erfundenen Namen, Aktenzeichen, Beträge.
+- Rechtsprechung in Dokument 2 und 3 stets als **live zu verifizieren** kennzeichnen — keine Fundstelle aus Modellwissen (siehe Methodik in Teil K).
+
+## L.1 — Dokument 1: Anschreiben an den Mandanten (einfache Sprache + Executive Summary)
+
+**Stilregeln.**
+
+- Normale, ruhige Sprache. Kurze Sätze. Keine Paragraphenketten im Fließtext — die gehören ins Gutachten. Wenn ein Fachbegriff nötig ist, in Klammern in einem Satz erklären („Auflassungsvormerkung — Ihre Reservierung im Grundbuch, die Sie gegen Zwischenverkauf und Insolvenz schützt").
+- Beginnt mit einer **Executive Summary** in einem optisch abgesetzten Kasten: Gesamtampel in einem Satz, die wichtigste Botschaft in zwei bis drei Sätzen.
+- Danach die drei bis fünf wichtigsten Punkte, je zwei bis drei Sätze, in einfacher Sprache und nach Wichtigkeit sortiert (🔴 zuerst).
+- Beruhigend und handlungsorientiert: „Was bedeutet das für Sie?", „Was tun wir?", „Was sollten Sie tun?"
+- Verweist auf die beiden Anlagen (das ausführliche Gutachten und den Entwurf des Schreibens an die Verkäuferseite/den Notar).
+- Schließt mit nächsten Schritten, Fristen, Honorartransparenz und einem Gesprächsangebot.
+
+**Aufbau.**
+
+1. Anrede, Betreff, Bezug (welcher Vertrag, welches Objekt, welcher Stand).
+2. Executive Summary (Kasten): Gesamtampel + Kernbotschaft.
+3. Die wichtigsten Punkte in einfacher Sprache (🔴 zuerst).
+4. „Was das für Sie bedeutet" / unsere Empfehlung.
+5. Nächste Schritte und Fristen (vor allem: Beurkundungstermin nicht ohne Korrektur wahrnehmen).
+6. Hinweis auf die Anlagen.
+7. Gesprächsangebot, Rückrufzeit.
+
+**Mustertext.**
+
+> **Betreff: Ihr Bauträgervertrag [Projekt/Objekt] — unsere Prüfung und unsere Empfehlung**
+>
+> Sehr geehrte/r Frau/Herr [Name],
+>
+> wir haben den Bauträgervertrag geprüft, den Ihnen [Bauträger/Notar] für die [Wohnung/das Haus] Nr. [X] im Projekt [Name] vorgelegt hat. Hier zuerst das Wichtigste in Kürze, danach die Einzelheiten. Das vollständige Gutachten und einen Entwurf für ein Schreiben an die Verkäuferseite und den Notar finden Sie als Anlage.
+>
+> ---
+> **Das Wichtigste in Kürze (Executive Summary)**
+>
+> Gesamteinschätzung: **[einseitig zugunsten des Bauträgers / im Kern ausgewogen, aber mit Nachbesserungsbedarf / verbraucherfreundlich]**. Ampel-Bilanz: **🔴 [X] · 🟠 [Y] · 🟢 [Z]**.
+>
+> Unsere klare Empfehlung: **[Den Beurkundungstermin am [Datum] in der jetzigen Fassung nicht wahrnehmen. / Vor Unterschrift Korrektur verlangen. / Nach Beurkundung umgehend nachverhandeln.]** Mehrere Klauseln sind nach unserer Einschätzung **unwirksam** — Sie müssen ihnen nicht zustimmen, und Sie verlieren nichts, wenn Sie auf der gesetzlichen Regelung bestehen.
+>
+> ---
+>
+> **Die wichtigsten Punkte:**
+>
+> 1. **[z. B. Sicherheit für Ihr Geld fehlt.]** Der Vertrag sagt nichts über Ihr Recht, bei der ersten Zahlung 5 % zurückzuhalten (eine gesetzliche Sicherheit, falls der Bauträger nicht fertig baut). Dieses Recht steht Ihnen zu — es kann Ihnen nicht weggenommen werden. Wir fordern es ein.
+> 2. **[z. B. Die Abnahme ist zu Ihren Lasten geregelt.]** [Zwei bis drei Sätze in einfacher Sprache.]
+> 3. **[z. B. Die Gewährleistung wurde verkürzt.]** [Zwei bis drei Sätze.]
+> 4. **[weitere Punkte nach Wichtigkeit]**
+>
+> **Was das für Sie bedeutet.** [Ein bis zwei Absätze: Die unwirksamen Klauseln müssen Sie nicht hinnehmen. Falls man Ihnen sagt, „das ist bei uns Standard" oder „das erlaubt die Vertragsfreiheit" — das ändert nichts: Klauseln, die gegen zwingendes Recht verstoßen, bleiben unwirksam, auch wenn der Notar sie beurkundet.]
+>
+> **Nächste Schritte.** [Konkret und datiert: was wir tun, was Sie tun sollten, welche Frist gilt.]
+>
+> Den beiliegenden Entwurf des Schreibens an die Verkäuferseite und den Notar versenden wir nach Ihrer Freigabe. Für Rückfragen stehen wir jederzeit zur Verfügung; einen Rückruf erreichen Sie unter [Kontakt].
+>
+> Mit freundlichen Grüßen
+> [Anwältin/Anwalt]
+>
+> Anlagen: (1) Gutachten zum Bauträgervertrag; (2) Entwurf Schreiben an Verkäuferseite und Notar.
+
+## L.2 — Dokument 2: Das Gutachten
+
+Das Gutachten ist die vollständige, belastbare Würdigung. Es folgt dem Gutachtenstil und der paragraphenweisen Struktur aus [Teil J.15](#j15--gutachtenstruktur-für-den-mandantenbericht) und den Stilregeln aus [Teil K.20](#k20--mandatsbericht--stilregeln-aus-der-praxis).
+
+**Aufbau.**
+
+1. **Ergebnis vorab / Executive Summary.** Ampel-Bilanz, die Hauptbefunde in Stichpunkten, Nichtigkeitseinschätzung (§ 139 BGB?), Notarhaftungshinweis (§ 19 BNotO?), Empfehlung in einem Satz.
+2. **Sachverhalt und Auftrag.** Vertragsdaten (Datum, UR-Nr., Notar, Objekt, Kaufpreis, Status: Entwurf/beurkundet), erteilter Auftrag, geprüfte Unterlagen (Hauptvertrag, Bezugsurkunden, Baubeschreibung, Pläne — mit Versionsstand). Annahmen kennzeichnen.
+3. **Pflicht-Prüfblock-Ergebnis.** § 650m BGB · § 309 Nr. 12 lit. a/b BGB · Transparenzgebot § 307 Abs. 1 S. 2 BGB · Druckmuster/dingliche Sicherung · Leistungs-/Baubeschreibung § 650k BGB — je mit Ampel und Kurzbegründung.
+4. **Rechtliche Würdigung — paragraphenweise.** Jeden § des Vertrags ansprechen, auch die unkritischen („§ X ist nicht zu beanstanden."). Bei kritischen Klauseln je: Originalwortlaut · Decodierung · einschlägige Norm · Rechtsprechungslinie (mit dem Hinweis „live zu verifizieren") · Ampel · konkreter Korrekturvorschlag · Realitätscheck zur Durchsetzbarkeit (bei Großprojekten).
+5. **Gesamtbewertung.** Ampel-Bilanz, Gesamteinschätzung, Teil-/Gesamtnichtigkeitsrisiko nach § 139 BGB, Notarhaftung nach § 19 BNotO.
+6. **Handlungsempfehlung mit Eskalationsstufen** (Nachverhandlung → Beurkundung verschieben/verweigern → nach Beurkundung Unwirksamkeitsberufung → Klage → Aufsichtsbeschwerde/Notarhaftung).
+7. **Hinweise.** Live-Verifikation der Rechtsprechung; ggf. Ingenieur für Bausoll-Fragen; Honorar- und Kostentransparenz.
+
+**Mustergerüst (Überschriften-Skelett).**
+
+> **GUTACHTEN zum Bauträgervertrag [Objekt/Projekt]**
+>
+> **A. Ergebnis vorab.** Ampel-Bilanz 🔴 [X] · 🟠 [Y] · 🟢 [Z]. [Kernbefunde, Nichtigkeitseinschätzung, Empfehlung.]
+> **B. Sachverhalt und Auftrag.** [Vertragsdaten, Status, Auftrag, geprüfte Unterlagen, Annahmen.]
+> **C. Pflicht-Prüfblock.** [Fünf bzw. sechs Punkte mit Ampel.]
+> **D. Rechtliche Würdigung im Einzelnen.** [Paragraphenweise — Vorbemerkung, § 1 Kaufgegenstand, § 2 Kaufpreis, § 3 Zahlung/MaBV/Sicherheit, § 5 Baubeschreibung, § 6 Abnahme, § 9 Mängelrechte/Verjährung, § 10 Vormerkung, Vollmachten, Baubeschreibung, Teilungserklärung/Gemeinschaftsordnung.]
+> **E. Gesamtbewertung.** [Ampel-Bilanz, § 139 BGB, § 19 BNotO.]
+> **F. Handlungsempfehlung.** [Eskalationsstufen.]
+> **G. Hinweise.** [Live-Verifikation; Ingenieur; Honorar.]
+
+## L.3 — Dokument 3: Schreiben an Verkäuferseite und Notar
+
+Dieses Schreiben setzt die Befunde durch. Es ist **bestimmt, höflich, aber hart in der Sache**. Seine zentrale Botschaft: **Rechtswidrige bzw. nichtige Klauseln werden nicht vereinbart.** Es stellt vorab die Rechtslage klar, damit die Gegenseite gar nicht erst auf die üblichen Beschwichtigungsargumente ausweichen kann (dazu [L.4](#l4--antizipierte-gegenargumente-und-ihre-entkräftung)).
+
+**Aufbau.**
+
+1. Bezug, Vertretungsanzeige, geplanter Beurkundungstermin (falls vor Beurkundung).
+2. **Klarstellung der Rechtslage vorab** (in zwei, drei Sätzen, vor der Klauselliste): Die notarielle Beurkundung schützt **nicht** vor der AGB-Inhaltskontrolle nach §§ 305 ff. BGB. § 650m BGB, die Klauselverbote des § 309 BGB und die MaBV sind **zwingendes Recht**; sie stehen nicht zur Disposition der Parteien. Eine geltungserhaltende Reduktion findet im AGB-Recht nicht statt.
+3. **Klauselgenaue Beanstandung.** Je Klausel: Klausel-Nr. · Originaltext · konkreter Verstoß (Norm + Rechtsprechungslinie, live verifiziert) · unmissverständliche Aussage („Diese Klausel ist nach § … unwirksam und wird in dieser Form nicht vereinbart.") · konkreter Korrekturvorschlag bzw. Streichungsverlangen.
+4. **Vorab-Entkräftung der typischen Gegenargumente** (kurz, mit Verweis auf die Rechtslage; ausführlich in [L.4](#l4--antizipierte-gegenargumente-und-ihre-entkräftung)).
+5. **Fristsetzung und Folgen.** Vor Beurkundung: Übersendung eines überarbeiteten Entwurfs bis [Datum], sonst findet die Beurkundung nicht statt. Nach Beurkundung: Berufung auf Unwirksamkeit, Aussetzung von Zahlungen mit Vorbehalt, 5 %-Einbehalt nach § 650m BGB, Klage, Notarhaftung, Aufsichtsbeschwerde.
+6. **An den Notar gerichteter Teil.** Bitte um Wahrnehmung der Belehrungs- und Prüfpflicht als unparteiischer Sachwalter beider Teile (§ 17 BeurkG, § 14 BNotO, § 4 BeurkG); ausdrücklicher Hinweis, dass bei Beurkundung in der vorliegenden Fassung Notarhaftungsansprüche nach § 19 BNotO vorbehalten bleiben.
+
+**Mustertext.**
+
+> **Betreff: Bauträgervertrag [Projekt], Einheit Nr. [X] — Beanstandung von Vertragsklauseln; geplanter Beurkundungstermin [Datum]**
+>
+> Sehr geehrte Damen und Herren, sehr geehrter Herr Notar / sehr geehrte Frau Notarin,
+>
+> in Vertretung des Erwerbers, Herrn/Frau [Name], nehmen wir Bezug auf den [Notarentwurf / beurkundeten Vertrag] vom [Datum][, URNr. [Nr.]]. Vorab zur Rechtslage, damit der weitere Austausch auf gesicherter Grundlage erfolgt:
+>
+> Die notarielle Beurkundung betrifft die **Form** des Vertrags (§ 311b BGB); sie ersetzt **nicht** die Wirksamkeitskontrolle des Klauselinhalts. Auch beurkundete Bauträgerverträge unterliegen der **AGB-Inhaltskontrolle nach §§ 305 ff. BGB**. Das Recht auf den 5 %-Sicherheitseinbehalt (§ 650m BGB), die Klauselverbote des § 309 BGB und die Vorgaben der MaBV (§ 650v BGB, § 3 MaBV) sind **zwingendes Recht** und stehen nicht zur Disposition der Parteien. Eine geltungserhaltende Reduktion unwirksamer AGB findet nicht statt (§ 306 BGB); an die Stelle der unwirksamen Klausel tritt die gesetzliche Regelung.
+>
+> Vor diesem Hintergrund beanstanden wir die folgenden Klauseln. **Rechtswidrige bzw. nichtige Klauseln werden wir nicht vereinbaren:**
+>
+> **§ [X] — [z. B. Beweislast].** Originaltext: „[…]". Die Klausel bürdet dem Erwerber die Beweislast für Umstände auf, die im Verantwortungsbereich des Bauträgers liegen. Das verstößt gegen **§ 309 Nr. 12 lit. a BGB** und ist unwirksam. Wir verlangen die Streichung.
+>
+> **§ [X] — [z. B. Empfangsbestätigung].** Originaltext: „[…]". Die pauschale Vorab-Bestätigung verstößt gegen **§ 309 Nr. 12 lit. b BGB** und ist unwirksam. Streichung.
+>
+> **§ [X] — [z. B. 5 %-Sicherheit].** Der Vertrag enthält keinen Hinweis auf das zwingende Recht des Erwerbers aus § 650m BGB. Wir verlangen die Aufnahme einer entsprechenden Belehrung bzw. die Stellung der Sicherheit; bis dahin behält der Erwerber 5 % der ersten Rate ein.
+>
+> **§ [X] — [z. B. Abnahme Gemeinschaftseigentum].** Originaltext: „[…]". Die Übertragung der Abnahme auf einen vom Bauträger benannten Sachverständigen/Erstverwalter ist nach gefestigter höchstrichterlicher Rechtsprechung unwirksam (Fundstelle wird im Bedarfsfall benannt). Wir verlangen folgende Neufassung: „[…]".
+>
+> **§ [X] — [z. B. Verjährungsverkürzung].** Originaltext: „[…]". Die Verkürzung der fünfjährigen Mängelverjährung (§ 634a Abs. 1 Nr. 2 BGB) ist nach § 309 Nr. 8 lit. b ff BGB unwirksam. Streichung.
+>
+> [weitere Klauseln analog]
+>
+> Wir weisen vorsorglich darauf hin: Der Einwand, die Gestaltung sei von der **Vertragsfreiheit** gedeckt, „**branchenüblich**" oder eine Frage der **wirtschaftlichen Risikoverteilung**, geht fehl. Zwingendes Verbraucherrecht und die Klauselverbote der §§ 307–309 BGB sind der Privatautonomie gerade entzogen; die flächendeckende Verwendung belegt im Gegenteil den AGB-Charakter (§ 305 Abs. 1 BGB). Auf die gesetzliche Regelung können wir uns ohne wirtschaftlichen Nachteil verweisen lassen — sie ist für den Erwerber günstiger als jede „abgemilderte" Fassung.
+>
+> Wir bitten um Übersendung eines überarbeiteten Entwurfs bis zum **[Datum]**. Ohne entsprechende Korrektur kann die Beurkundung am [Termin] **nicht stattfinden**. [Bei bereits beurkundetem Vertrag: Wir fordern Sie auf, die Unwirksamkeit der genannten Klauseln anzuerkennen und den Vertrag MaBV-konform durchzuführen; Zahlungen erfolgen bis zur Klärung nur unter Vorbehalt.]
+>
+> **An den beurkundenden Notar / die Notarin:** Wir bitten Sie, Ihrer Pflicht als unparteiischer Sachwalter beider Teile (§ 14 BNotO) und Ihrer Belehrungs- und Prüfungspflicht (§ 17 BeurkG, § 4 BeurkG) nachzukommen und auf die Unwirksamkeit der beanstandeten Klauseln hinzuwirken. Für den Fall der Beurkundung in der vorliegenden Fassung behält sich unser Mandant **Schadensersatzansprüche nach § 19 BNotO** ausdrücklich vor.
+>
+> Mit freundlichen Grüßen
+> [Anwältin/Anwalt]
+
+## L.4 — Antizipierte Gegenargumente und ihre Entkräftung
+
+Die Verkäuferseite (und gelegentlich der Notar) reagiert auf Beanstandungen mit wiederkehrenden Argumenten. Sie sind vorab zu entkräften — sowohl im Schreiben an die Gegenseite als auch in der Erläuterung gegenüber dem Mandanten. Der Kern: **Die Privatautonomie endet am zwingenden Recht und an der AGB-Inhaltskontrolle.**
+
+| Gegenargument der Verkäuferseite | Entkräftung |
+| --- | --- |
+| „Das erlaubt die **Vertragsfreiheit / Privatautonomie**." | Die Vertragsfreiheit endet an zwingendem Recht (§ 134 BGB) und an der Inhaltskontrolle vorformulierter Klauseln (§§ 307–309 BGB). Bei AGB fehlt es gerade an der ausgehandelten Privatautonomie (§ 305 Abs. 1 S. 3 BGB) — deshalb greift die Kontrolle. § 309 enthält Klauselverbote **ohne Wertungsmöglichkeit**; § 650m BGB und die MaBV sind zwingendes Verbraucherrecht. |
+| „Das ist eine Frage der **wirtschaftlichen Risikoverteilung** — der Bauträger muss sich absichern." | Die **gesetzliche** Risikoverteilung ist das Leitbild i. S. d. § 307 Abs. 2 Nr. 1 BGB; eine Abweichung zulasten des Verbrauchers ist gerade die unangemessene Benachteiligung, die das Gesetz verbietet. Ein legitimes Sicherungsinteresse rechtfertigt keine Aushöhlung zwingenden Rechts — es wird über die **zulässigen** Instrumente befriedigt (MaBV-Ratenplan, Bürgschaft nach § 7 MaBV), nicht über unwirksame Klauseln. |
+| „Das ist **branchenüblich**, das steht in **allen** unseren Verträgen so." | Branchenüblichkeit heilt keine Unwirksamkeit. Im Gegenteil: Die flächendeckende, gleichlautende Verwendung belegt den **AGB-Charakter** (§ 305 Abs. 1 BGB) und verschärft die Notarproblematik (Vielzahl gleichlautender, einseitiger Verträge — Anknüpfungspunkt für kollektive Aufsichtsbeschwerde). |
+| „Der **Notar** hat den Vertrag beurkundet — dann ist er doch wirksam." | Die Beurkundung betrifft die Form (§ 311b BGB), nicht die materielle Klauselwirksamkeit. Die AGB-Kontrolle gilt auch für beurkundete Verträge. Der Notar **haftet** im Gegenteil bei Beurkundung evident unwirksamer Klauseln ohne ausreichende Belehrung (§ 19 BNotO i. V. m. § 17 BeurkG). |
+| „Notfalls wird die Klausel eben **reduziert / teilweise aufrechterhalten**." | Keine **geltungserhaltende Reduktion** im AGB-Recht. Die unwirksame Klausel entfällt **ersatzlos** (§ 306 BGB); an ihre Stelle tritt die gesetzliche Regelung. Diese ist für den Verbraucher günstiger als jede „abgemilderte" Klausel — der Verwender trägt damit das volle Risiko der Unwirksamkeit. |
+| „Der Erwerber hat doch **alles erhalten und bestätigt**." | Pauschale Empfangs- und Kenntnisnahmebestätigungen sind nach § 309 Nr. 12 lit. b BGB unwirksam; sie verändern die Beweislast nicht. |
+| „Die Klausel wurde doch **individuell ausgehandelt**." | „Aushandeln" (§ 305 Abs. 1 S. 3 BGB) verlangt mehr als die bloße Möglichkeit zu verhandeln: Der Verwender muss den **Kerngehalt** der Klausel ernsthaft zur Disposition gestellt haben. Bei Standardverträgen aus Großprojekten ist das praktisch nie erfüllt; bloßes Vorlesen und Erläutern genügt nicht. |
+| „Ohne diese Klausel ist das Projekt **nicht finanzierbar / kalkulierbar**." | Wirtschaftliche Kalkulation rechtfertigt keinen Verstoß gegen zwingendes Recht. Die zulässige Kalkulationsgrundlage ergibt sich aus dem gesetzlichen Leitbild; daran hat sich die Preisbildung zu orientieren, nicht umgekehrt. |
+
+**Schlusshaltung für das Schreiben an die Gegenseite:** klar und ohne Weichzeichnen — „Rechtswidrige bzw. nichtige Klauseln werden wir nicht vereinbaren." Keine Zustimmung zu unwirksamen Klauseln „aus Kulanz" oder „zur Beschleunigung"; das schwächt nur die spätere Rechtsposition.
+
+## L.5 — Qualitätsgate für das Drei-Dokumente-Paket
+
+Vor Ausgabe prüfen:
+
+- Sind alle **drei** Dokumente erstellt, getrennt und einzeln verwendbar?
+- Sind sie **widerspruchsfrei** zueinander (gleiche Befunde, gleiche Ampel-Bilanz, gleiche Empfehlung)?
+- **Dokument 1:** frei von unerklärten Fachbegriffen? Executive Summary mit Gesamtampel vorhanden? Beruhigend und handlungsorientiert?
+- **Dokument 2:** paragraphenweise, jeder § angesprochen? Jede kritische Klausel mit Norm und (als live zu verifizieren gekennzeichneter) Rechtsprechung? Nichtigkeits- und Notarhaftungseinschätzung enthalten?
+- **Dokument 3:** bestimmt im Ton? Rechtslage vorab klargestellt (Beurkundung ≠ Wirksamkeit; zwingendes Recht; keine geltungserhaltende Reduktion)? Gegenargumente entkräftet? Klare Schlussaussage („nichtige Klauseln werden nicht vereinbart")? Fristsetzung und Notar-Teil enthalten?
+- Keine erfundenen Aktenzeichen, Namen, Beträge? Platzhalter sauber gesetzt?
+- Beträge, Klauselnummern, Umlaute korrekt übernommen?
+
+---
+
+> Ende des Skills. Bei Anwendung: Vertragstext einfügen, Sofortstart-Logik nutzt automatisch alle Teile A bis L. Pflicht-Prüfblock am Anfang — § 650m BGB, § 309 Nr. 12 lit. a BGB, § 309 Nr. 12 lit. b BGB, Transparenzgebot § 307 Abs. 1 S. 2 BGB, Druckmuster und Eingriffe in die dingliche Sicherung, Leistungs- und Baubeschreibung § 650k BGB — ist in jedem Verbraucher-Bauträgervertrag zwingend zuerst durchzulaufen. Teil J liefert die Wiedererkennungsmuster aus realen Großprojekten und die Gutachtenstruktur für den Mandantenbericht. Teil K vertieft die Dogmatik zu Vertragstyp, Beurkundungsreichweite, Besitzübergabe, Abnahme, Verzug, Verjährung, Mängelrechten, Bauträgerinsolvenz, Ansprüchen gegen Dritte und einstweiligem Rechtsschutz. Teil L liefert die Standard-Ausgabe als Drei-Dokumente-Paket: Mandanten-Anschreiben in einfacher Sprache mit Executive Summary, das ausführliche Gutachten und das bestimmte Schreiben an Verkäuferseite und Notar samt Entkräftung der typischen Gegenargumente.
