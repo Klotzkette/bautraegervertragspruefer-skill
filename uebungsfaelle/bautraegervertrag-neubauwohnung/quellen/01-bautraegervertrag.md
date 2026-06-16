@@ -1,6 +1,5 @@
 ---
 title: 'Wohnungsbauträgervertrag mit Auflassung — UR-Nr. 188/2026 KQ'
-subtitle: 'Fiktive notarielle Urkunde zu Schulungszwecken'
 ---
 
 \newpage

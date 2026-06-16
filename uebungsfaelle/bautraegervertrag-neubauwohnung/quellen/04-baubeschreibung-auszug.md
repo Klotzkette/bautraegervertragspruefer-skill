@@ -1,6 +1,5 @@
 ---
 title: 'Baubeschreibung — Fassung Februar 2026, Version 7.2 (Auszug)'
-subtitle: 'Fiktive Baubeschreibung zu Schulungszwecken'
 ---
 
 \newpage

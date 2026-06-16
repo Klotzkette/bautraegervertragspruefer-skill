@@ -1,6 +1,5 @@
 ---
 title: 'Korrespondenz, Aktenvermerk und Beweis-/Fristenlogik'
-subtitle: 'Fiktive Mandatsbegleitung zu Schulungszwecken'
 ---
 
 # Akte Hohenwartshofen / Übelacker-Strohmeyer
