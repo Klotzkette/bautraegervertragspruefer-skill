@@ -1,6 +1,12 @@
 # Bauträgervertrag-Prüfer Skill
 
-> **Version 2.2.0** — quellenharter One-Shot-Skill für die verbraucherseitige Prüfung deutscher Bauträgerverträge. Der Skill ist kein Rechtsrat und ersetzt keine anwaltliche Prüfung, liefert aber eine strukturierte, verhandlungsfähige Arbeitsfassung für Entwurf, Beurkundung, Bauphase, Abnahme, Technik, WEG-Organisation, Wirtschaft und Streit.
+> **Experimenteller Agent-Skill** für die verbraucherseitige und anwaltlich geprägte Prüfung deutscher Bauträgerverträge — als Anregung für Kanzlei-, Verbraucher- und Due-Diligence-Arbeitsabläufe. Der Skill orientiert sich an deutschem Bauträgerrecht, MaBV, AGB-Recht, frei überprüfbarer Rechtsprechung und technischen Projektprüfungen. Er ist kein Rechtsrat, kein Fachgutachten und keine notarielle Belehrung; alle Angaben ohne Gewähr. Jede Nutzerin und jeder Nutzer kalibriert den Skill selbst für die eigene Praxis.
+
+> **Transparenz:** Dieser Skill ist strukturierter Markdown-Text — ein umfangreicher, sorgfältig gegliederter Prompt, den ein Sprachmodell bei der Analyse eines Bauträgervertrags als Arbeitsanweisung lädt. Kein eigenes Modell, keine Blackbox, keine versteckte Logik. Der gesamte Inhalt ist offen einsehbar, nachvollziehbar, anpassbar und forkbar.
+>
+> **Eine einzige Datei, modellunabhängig einsetzbar.** Der vollständige Skill steckt in einer Markdown-Datei: [`skill/SKILL.md`](skill/SKILL.md). Er funktioniert in jedem leistungsfähigen KI-Chatbot bzw. Sprachmodell: Claude, ChatGPT, Gemini, Mistral, Perplexity oder lokal betriebene Modelle. Es ist keine Installation, kein Konto und kein zusätzliches Werkzeug erforderlich.
+
+**Version 2.2.0** liefert eine strukturierte, verhandlungsfähige Arbeitsfassung für Entwurf, Beurkundung, Bauphase, Abnahme, Technik, WEG-Organisation, Wirtschaft und Streit.
 
 Der Skill steckt vollständig in einer Datei: [`skill/SKILL.md`](skill/SKILL.md). Er kann in leistungsfähige KI-Chatbots eingefügt oder als Datei hochgeladen werden. Die veröffentlichte Downloadfassung liegt unter [`docs/SKILL.md`](docs/SKILL.md) und wird über GitHub Pages bereitgestellt.
 
@@ -78,6 +84,21 @@ Die Skill-Datei enthält:
 Die anwaltliche Prüfung eines Bauträgervertrags ist Rechtsdienstleistung. Dieser Skill ist eine offene Arbeitsanweisung für KI-Systeme und eine strukturierte Vorbereitung. Er ersetzt keine anwaltliche Beratung, keine notarielle Belehrung und keine Einzelfallprüfung.
 
 Keine konkreten Mandatsunterlagen öffentlich in Issues oder Pull Requests posten.
+
+## Keine Aussage über Berufsrecht, Datenschutz, KI-VO oder Beschlagnahmeverbote
+
+Dieses Repository ist ein technisches und fachliches Experiment. Es trifft **keine Aussage** darüber, ob der Einsatz dieses Skills in einer konkreten Kanzlei-, Unternehmens-, Verbraucher- oder Behördenumgebung berufs-, datenschutz-, geheimnisschutz- oder KI-rechtlich zulässig ist.
+
+Vor produktiver Nutzung muss jede Nutzerin und jeder Nutzer eigenverantwortlich prüfen:
+
+- **Mandatsgeheimnis und Berufsrecht:** Vereinbarkeit mit §§ 203, 204 StGB, § 43e BRAO, § 2 BORA sowie den jeweils einschlägigen Berufsordnungen anderer Berufsgeheimnisträger.
+- **Beschlagnahme- und Zeugnisverweigerungsschutz:** Umgang mit § 53 StPO, § 97 StPO, § 160a StPO und vergleichbaren Schutzmechanismen, insbesondere wenn Entwürfe, Kaufpreise, Finanzierungsdaten, Grundbuchdaten, Gutachten oder Mandantenkommunikation verarbeitet werden.
+- **Datenschutz:** Rechtsgrundlage, Art. 28 DSGVO, TOMs, Löschkonzept, Subunternehmer, Datenresidenz, Drittlandtransfer, Informationspflichten und besondere Risiken bei personenbezogenen Vertrags-, Finanzierungs- und Familiendaten.
+- **KI-VO / EU AI Act:** Ob der konkrete Einsatz unter Pflichten für Betreiber, Transparenzpflichten oder besondere Risikokategorien fällt, hängt von Anwendung, Anbieter, Deployment und Nutzerkreis ab.
+- **Hosting und Anbieterwahl:** Ob ein Modell direkt, über Cloud-Anbieter, über Kanzlei-IT oder lokal betrieben wird, ist für Geheimnisschutz, Datenschutz und Zugriffsbefugnisse zentral. Dieses Repository bestätigt keinen Anbieter.
+- **Auslandsrechtliche Zugriffe:** Risiken aus extraterritorialen Zugriffsrechten wie US Cloud Act, FISA § 702 oder vergleichbaren Regelungen sind nicht bewertet.
+
+Der Skill darf nicht so verstanden werden, als sei die Eingabe echter Mandats-, Vertrags-, Grundbuch-, Finanzierungs-, Bau- oder Gutachtendaten in irgendein Modell automatisch zulässig. Diese Prüfung bleibt vollständig bei der jeweiligen Nutzerin oder dem jeweiligen Nutzer.
 
 ## Lizenz
 
