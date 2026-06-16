@@ -1,105 +1,141 @@
 # Bauträgervertrag-Prüfer Skill
 
-> **Experimenteller Agent-Skill** für die verbraucherseitige und anwaltlich geprägte Prüfung deutscher Bauträgerverträge — als Anregung für Kanzlei-, Verbraucher- und Due-Diligence-Arbeitsabläufe. Der Skill orientiert sich an deutschem Bauträgerrecht, MaBV, AGB-Recht, frei überprüfbarer Rechtsprechung und technischen Projektprüfungen. Er ist kein Rechtsrat, kein Fachgutachten und keine notarielle Belehrung; alle Angaben ohne Gewähr. Jede Nutzerin und jeder Nutzer kalibriert den Skill selbst für die eigene Praxis.
-
+> **Experimenteller Agent-Skill** für die verbraucherseitige und anwaltlich geprägte Prüfung deutscher Bauträgerverträge — als Anregung für Kanzlei-, Verbraucher- und Due-Diligence-Arbeitsabläufe. Orientiert sich an deutschem Bauträgerrecht, MaBV, AGB-Recht, amtlichen Gesetzestexten, frei überprüfbarer Rechtsprechung und technischer Projektprüfung. Enthält keinerlei Fachgutachten oder Rechtsberatung, alle Angaben ohne Gewähr — jede Nutzerin und jeder Nutzer kalibriert den Skill selbst für die eigene Praxis.
+>
 > **Transparenz:** Dieser Skill ist strukturierter Markdown-Text — ein umfangreicher, sorgfältig gegliederter Prompt, den ein Sprachmodell bei der Analyse eines Bauträgervertrags als Arbeitsanweisung lädt. Kein eigenes Modell, keine Blackbox, keine versteckte Logik. Der gesamte Inhalt ist offen einsehbar, nachvollziehbar, anpassbar und forkbar.
 >
-> **Eine einzige Datei, modellunabhängig einsetzbar.** Der vollständige Skill steckt in einer Markdown-Datei: [`skill/SKILL.md`](skill/SKILL.md). Er funktioniert in jedem leistungsfähigen KI-Chatbot bzw. Sprachmodell: Claude, ChatGPT, Gemini, Mistral, Perplexity oder lokal betriebene Modelle. Es ist keine Installation, kein Konto und kein zusätzliches Werkzeug erforderlich.
+> **Eine einzige Datei, modellunabhängig einsetzbar.** Der vollständige Skill steckt in einer einzigen Markdown-Datei: [`skill/SKILL.md`](skill/SKILL.md) — ohne externe Laufzeit, ohne Datenbank, ohne Konto und ohne zusätzliches Werkzeug. Er funktioniert in jedem leistungsfähigen KI-Chatbot bzw. Sprachmodell: Claude, ChatGPT, Gemini, Mistral, Perplexity, lokal betriebene Modelle. Es ist keine Installation erforderlich — siehe [Anwendung](#anwendung-so-einfach-gehts).
 
-**Version 2.2.0** liefert eine strukturierte, verhandlungsfähige Arbeitsfassung für Entwurf, Beurkundung, Bauphase, Abnahme, Technik, WEG-Organisation, Wirtschaft und Streit.
-
-Der Skill steckt vollständig in einer Datei: [`skill/SKILL.md`](skill/SKILL.md). Er kann in leistungsfähige KI-Chatbots eingefügt oder als Datei hochgeladen werden. Die veröffentlichte Downloadfassung liegt unter [`docs/SKILL.md`](docs/SKILL.md) und wird über GitHub Pages bereitgestellt.
+Konsolidierter Skill für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität und Verhandlungsstrategie.
 
 ## Download
 
-➡️ **[SKILL.md direkt herunterladen](https://klotzkette.github.io/bautraegervertragspruefer-skill/SKILL.md)** ⬅️
+**[📥 SKILL.md jetzt herunterladen](https://klotzkette.github.io/bautraegervertragspruefer-skill/SKILL.md)**
 
-Alternativ die [Download-Seite](https://klotzkette.github.io/bautraegervertragspruefer-skill/) öffnen.
+Ein Klick genügt — die Datei lädt sofort als Markdown-Datei in den Downloads-Ordner, egal ob am Computer, iPhone, Android-Gerät oder in der GitHub-App. Kein Rechtsklick, kein "Speichern unter...", kein Umweg über Menüs.
 
-## Was Version 2.2.0 macht
+Wenn der Download-Knopf in einer App nicht direkt funktioniert, wird die Datei statt heruntergeladen angezeigt. Dann den Link gedrückt halten und "Link herunterladen" bzw. "Verknüpfte Datei laden" wählen. Alternativ die [komfortable Download-Seite](https://klotzkette.github.io/bautraegervertragspruefer-skill/) im normalen Browser öffnen — dort funktioniert der Download-Knopf zuverlässig.
 
-- Prüft zuerst einen festen Pflichtblock: § 650m Abs. 2 BGB, § 309 Nr. 12 BGB, § 309 Nr. 15 BGB, MaBV-Fälligkeit, Abnahme Gemeinschaftseigentum, Schlussrate, Teilungserklärung und Bausoll.
-- Trennt sauber zwischen Bauträgervertrag (§ 650u BGB), Verbraucherbauvertragsnormen, Kaufrecht, MaBV und AGB-Kontrolle.
-- Korrigiert die MaBV-Logik: § 3 Abs. 2 MaBV arbeitet mit bis zu sieben Teilbeträgen, zusammengesetzt aus gesetzlichen Prozentbausteinen.
-- Prüft jetzt zusätzlich die Projektrealität: HOAI-Leistungsphasen, LPH 8/Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Grundwasser, Altlasten, Haustechnik, Wartungsverträge, Betriebskosten und WEG-Organisation.
-- Härtet die Testakte „Bauträgervertrag aus der Hölle" mit einem professioneller wirkenden, aber verdeckt riskanten Raten-, Technik- und Bauüberwachungsregime.
-- Verlangt harte Quellen: offizielle Gerichtsseiten, Landesrechtsprechungsportale, `gesetze-im-internet.de`, DeJure oder OpenJur. Keine BeckRS-, beck-online-, juris- oder Kanzleiblog-Zitate als Beleg.
-- Liefert zu roten Klauseln erwartbare Bauträger-/Notarargumente und eine juristisch belastbare Antwort.
-- Enthält eine 30-Punkte-Prüfschleife und einen Bug-Hunt gegen typische Rechtsfehler.
+Wer den Inhalt lieber direkt sehen und kopieren will, öffnet [`skill/SKILL.md`](skill/SKILL.md) — das ist die formatierte Ansicht hier im Repository. Der gesamte Text lässt sich dort mit `Strg+A` / `Cmd+A` markieren und kopieren.
 
-## Aktuelle Rechtsprechungsanker
+## Anwendung: So einfach geht's
 
-Eingebaut sind insbesondere:
+**Weg A — Text kopieren:**
 
-- **BGH, 26.03.2026 - VII ZR 68/24**: Abnahme des Gemeinschaftseigentums durch Erwerbervertreter ohne eigenes Prüf-/Abnahmerecht ist unwirksam.
-- **BGH, 26.03.2026 - VII ZR 108/24**: Sachverständigenabnahme ohne eigenes Erwerberrecht ist unwirksam.
-- **BGH, 22.04.2026 - VII ZR 88/25**: Schlussrate kann bei offenen protokollierten Mängeln trotz Abnahme nicht fällig sein.
-- **BGH, 23.01.2026 - V ZR 91/25**: Pauschale Zustimmungspflichten zu späteren Änderungen der Teilungserklärung sind ohne benannte triftige Gründe unwirksam.
-- **BGH, 09.11.2023 - VII ZR 241/22**: Abnahme durch bauträgernahe Gesellschaft/Person und Folgen unwirksamer Abnahmeklauseln.
-- **BGH, 02.08.2023 - VII ZB 28/20**: Notaranderkonto, Verwahrungsanweisung und MaBV-Fragen getrennt prüfen.
+1. [`skill/SKILL.md`](skill/SKILL.md) öffnen, den gesamten Text mit `Strg+A` / `Cmd+A` markieren und in den Chat einfügen.
+2. Dazuschreiben: _"Bitte halte dich an diesen Skill/Prompt. Gleich kommt ein Bauträgervertrag — bearbeite ihn danach."_ Enter drücken.
+3. Den Vertrag einfügen oder hochladen (Text, PDF, DOCX oder Foto). Die Analyse startet von selbst.
 
-## Anwendung
+**Weg B — Datei hineinziehen (Drag & Drop):**
 
-**Weg A — Text kopieren**
+1. `SKILL.md` über den [Direktdownload oben](#download) auf das Gerät laden.
+2. Die Datei per Drag & Drop in das Chatfenster ziehen und dazuschreiben: _"Bitte halte dich an diesen Skill/Prompt. Gleich kommt ein Bauträgervertrag — bearbeite ihn danach."_ Enter drücken.
+3. Den Vertrag nachreichen — fertig.
 
-1. [`skill/SKILL.md`](skill/SKILL.md) öffnen.
-2. Kompletten Text in den Chat einfügen.
-3. Dazu schreiben: `Bitte halte dich an diesen Skill. Gleich kommt ein Bauträgervertrag.`
-4. Vertrag, Auszug, PDF oder Foto nachreichen.
+**Sofortstart in beiden Wegen:** Der Skill analysiert ohne Rückfragen-Kaskade, kennzeichnet fehlende Angaben als Annahmen, prüft mit Ampelsymbolen, priorisiert verbraucherschützende Einwände und liefert harte Gegenargumente für Bauträger, Notariat, Vertrieb und finanzierende Bank. Eine gebündelte Rückfrage gibt es höchstens dann, wenn die Analyse sonst objektiv falsch oder irreführend würde.
 
-**Weg B — Datei hochladen**
-
-1. `SKILL.md` herunterladen.
-2. Datei in den Chat ziehen.
-3. Vertrag nachreichen.
-
-Der Skill startet ohne Rückfragenkaskade und liefert Pflicht-Prüfblock, Klauselmatrix, MaBV-Prüfung, Rechtsprechungsanker, Verhandlungspaket und Restfragen.
-
-## Aufbau
+## Inhalt
 
 ```text
 skill/
-└── SKILL.md   Arbeitsfassung des Skills
+└── SKILL.md   Alles in einer Datei: Workflow, Quellenregeln, Klauselmatrix,
+               Rechtsanker, Technikmodule, Mandantenbericht, Verhandlungspaket
+
 docs/
-├── SKILL.md   veröffentlichte Downloadfassung
-└── index.html Downloadseite
+├── SKILL.md   Veröffentlichte Downloadfassung
+└── index.html Download-Seite für Browser und Mobilgeräte
+
+testakten/
+└── bautraegervertrag-aus-der-hoelle/
+    ├── quellen/    Fiktiver Vertrag, Korrespondenz, Lösungsschlüssel
+    ├── gesamt-docx/ DOCX-Fassungen zum Üben
+    └── gesamt-pdf/ PDF-Fassungen zum Üben
 ```
 
-Die Skill-Datei enthält:
+Die Skill-Datei ist in folgende Hauptteile gegliedert:
 
-- Harte Quellenregeln.
-- Aktuelle Rechtsprechungsanker 2023-2026.
-- Normenkarte zu § 650u, § 650v, § 650j, § 650k, § 650m, § 650n BGB, §§ 305 ff. BGB und MaBV.
-- 30 Prüfschleifen für die Vollanalyse.
-- Pflicht-Prüfblock.
-- Workflow und Antwortformate.
-- MaBV-Zahlungsprüfung.
-- AGB-Klauselkatalog mit Gegenargument und Antwort.
-- Baubeschreibung/Bausoll, Abnahme, Schlussrate, Teilungserklärung, Eigentumsschutz, Insolvenz, Verhandlung und Streit.
-- HOAI-/Objektüberwachungs-, Baugrund-, Technik-, Wartungs-, Betriebskosten- und WEG-Organisationsprüfung.
-- Bug-Hunt vor Ausgabe.
+- **Sofortstart und Quellenregeln** — Rollenklärung, Annahmendisziplin, Verbot nicht überprüfbarer Zitate.
+- **Rechtsprechungsanker** — quellenharte Anker aus Bundesgerichten, Oberlandesgerichten, Kammergericht, Landgerichten sowie OpenJur und dejure.
+- **Normenkarte** — Bauträgervertrag, Verbraucherbauvertrag, MaBV, AGB-Recht, WEG, HOAI, Abnahme, Mängelrechte, Eigentumssicherung.
+- **Prüfschleifen** — mehrstufige Analyse vom Pflicht-Prüfblock bis zum finalen Bug-Hunt.
+- **Klauselmatrix** — Befund, Risiko, Norm, Rechtsprechungsanker, Verhandlungsziel, erwartbarer Gegeneinwand und Antwort.
+- **MaBV- und Zahlungsprüfung** — Ratenplan, Bezugsfertigkeit, Besitzübergang, Schlussrate, Sicherheiten, Finanzierungskollisionsrisiken.
+- **AGB-Klauselkontrolle** — unangemessene Benachteiligung, Intransparenz, Beweislastverschiebung, Leistungsänderungen, Haftungs- und Fristenregime.
+- **Baubeschreibung und Bausoll** — Vollständigkeit, Standards, Wahlrechte, Bemusterung, Nebenleistungen, Außenanlagen, Stellplätze, Sonderwünsche.
+- **Technik und Bauüberwachung** — Baugrund, Baugrube, Abdichtung, Schallschutz, Brandschutz, Energie, Statik, Nachweise, Objektüberwachung, private Sachverständige.
+- **Teilungserklärung und WEG** — Sondereigentum, Gemeinschaftseigentum, Sondernutzungsrechte, GdWE, Kostenverteilung, Abnahmeregime.
+- **Mandatsmodule** — Mandantenbericht, Notar-/Bauträgeranschreiben, Verhandlungsfassung, Eskalations- und Klagestrategie.
+- **Testakte** — bewusst überladener Übungsvertrag mit versteckten und offenen Risiken.
 
-## Rechtlicher Hinweis
+Zusätzlich enthält der Skill durchgängig:
 
-Die anwaltliche Prüfung eines Bauträgervertrags ist Rechtsdienstleistung. Dieser Skill ist eine offene Arbeitsanweisung für KI-Systeme und eine strukturierte Vorbereitung. Er ersetzt keine anwaltliche Beratung, keine notarielle Belehrung und keine Einzelfallprüfung.
+- **Verbraucherschützende Priorisierung** — der Skill sucht nicht nur formale Fehler, sondern wirtschaftliche, technische und organisatorische Schieflagen.
+- **Überzeugungsdisziplin** — jedes harte Argument soll so formuliert werden, dass es gegenüber Notariat, Bauträger und deren Prozessvertretung belastbar ist.
+- **Kein Blindzitat** — tragende Rechtsprechung wird nicht aus Modellwissen erfunden; Quellen werden als zu verifizieren markiert oder mit frei überprüfbarem Fundort benannt.
+- **Technischer Realitätscheck** — ein juristisch eleganter Vertrag genügt nicht, wenn Baugrund, Baugrube, Abdichtung, Bauüberwachung oder Nachweislage nicht tragen.
+- **Drei-Dokumente-Ausgabe** — Mandantenbericht, Gegenseitenschreiben und Änderungs-/Streichungsliste können in einem Durchgang erzeugt werden.
 
-Keine konkreten Mandatsunterlagen öffentlich in Issues oder Pull Requests posten.
+## Workflow in zwölf Stufen
+
+1. Intake, Rollenklärung und Bearbeitungsstand sichern.
+2. Vertragsart, Verbraucherstatus, Beurkundungs- und Vollzugsstatus bestimmen.
+3. Pflicht-Prüfblock: MaBV, Sicherung, Abnahme, Schlussrate, Verjährung, Eigentumsübergang.
+4. Zahlungsplan, Bautenstand, Ratenfälligkeit und Finanzierungsrisiken prüfen.
+5. AGB-Klauseln satzweise mit Ampelsymbolen und Gegenargumenten bewerten.
+6. Baubeschreibung, Bausoll, Leistungsänderungen und Sonderwünsche absichern.
+7. Abnahme, Besitzübergang, Mängelrechte, Vertragsstrafe und Fertigstellungstermine prüfen.
+8. Teilungserklärung, Gemeinschaftsordnung, Sondereigentum und Gemeinschaftseigentum auswerten.
+9. HOAI-Leistungsphasen, Objektüberwachung, private Baukontrolle und Nachweiskette prüfen.
+10. Baugrund, Baugrube, Abdichtung, Schall, Brand, Energie und technische Mindestnachweise plausibilisieren.
+11. Mandantenbericht, Verhandlungsziele und Gegenseitenschreiben erstellen.
+12. Bug-Hunt, Dublettencheck, Quellencheck, Sanity-Check und finale Priorisierung.
+
+## Rechtlicher Anker
+
+- **Bauträgervertrag** — §§ 650u, 650v BGB; gemischte kauf- und werkvertragliche Struktur mit verbraucherschützender Sonderlogik.
+- **Verbraucherbau- und Bauvertragsrecht** — §§ 650a ff., 650i ff. BGB, insbesondere Baubeschreibung, Abschlagszahlungen, Widerrufs- und Sicherungsfragen nach konkreter Vertragslage.
+- **AGB-Recht** — §§ 305 bis 310 BGB; Transparenzgebot, unangemessene Benachteiligung, Klauselverbote, Beweislast, Leistungsänderungen, Haftungsbegrenzungen.
+- **Makler- und Bauträgerverordnung** — insbesondere §§ 3, 7, 12 MaBV; Ratenplan, Sicherheiten, Entgegennahme von Vermögenswerten, Fälligkeitsvoraussetzungen.
+- **Abnahme und Mängelrechte** — §§ 633 ff., 640, 641, 634a BGB; Trennung von Sonder- und Gemeinschaftseigentum, Verjährungsbeginn, Beweis- und Druckmittel.
+- **Teilungserklärung und WEG** — WEG-Struktur, Gemeinschaftseigentum, Sondernutzungsrechte, Kostenverteilung, GdWE-Rolle, Beschluss- und Durchsetzungsrisiken.
+- **HOAI und Objektüberwachung** — HOAI-Leistungsbilder, insbesondere Leistungsphase 8 als Prüfanker für Bauüberwachung, Rechnungsprüfung, Kostenfeststellung und Mängelverfolgung.
+- **Form und Eigentumssicherung** — § 311b BGB, Auflassungsvormerkung, Lastenfreistellung, Vollzug, Notaranderkonto nur bei tragfähiger rechtlicher Grundlage.
+
+Die `SKILL.md` enthält einen eigenen Rechtsprechungsanker mit überprüfbaren Leitentscheidungen und frei zugänglichen Fundstellen. Grundregel: Keine Zitate aus BeckRS, juris, Fachzeitschriften oder nicht frei überprüfbaren Datenbanken. Tragende Aussagen werden über offizielle Webseiten der Bundesgerichte, Oberlandesgerichte, des Kammergerichts, der Landgerichte oder über OpenJur und dejure verankert; andernfalls werden sie als Prüfhinweis statt als belegte Rechtsprechung ausgegeben.
+
+## Einsatzlagen
+
+- Käuferin oder Käufer will einen Vertragsentwurf vor dem Notartermin verstehen.
+- Kanzlei prüft Verhandlungs-, Rücktritts-, Mängel- oder Klagestrategie.
+- Verbraucherschutz, Baubegleitung oder Sachverständige wollen juristische und technische Risiken bündeln.
+- Finanzierung, Zahlungsplan und Bautenstand passen nicht sauber zusammen.
+- Abnahme, Besitzübergang oder Schlussrate stehen bevor.
+- Teilungserklärung, Gemeinschaftsordnung oder Sondernutzungsrechte sind unklar.
+- Baugrund, Baugrube, Abdichtung, Schallschutz, Brandschutz oder Energieangaben wirken lückenhaft.
+- Notariat oder Bauträger lehnen Änderungen ab und brauchen harte, zitierfähige Gegenargumente.
+
+## Verwandte Projekte
+
+Dieses Repository folgt derselben offenen Ein-Datei-Logik wie der [Arbeitszeugnis-Prüfer Skill](https://github.com/Klotzkette/arbeitszeugnispruefer-skill): Der eigentliche Skill ist eine lesbare Markdown-Datei, nicht ein verborgenes System. Die README beschreibt nicht einzelne Bastelstände, sondern Zweck, Einsatz, Inhalt, Grenzen und Bedienung des Skills.
+
+## Testakte zum Üben
+
+Im Ordner [`testakten/bautraegervertrag-aus-der-hoelle/`](testakten/bautraegervertrag-aus-der-hoelle/) liegt eine fiktive Schulungsakte mit Bauträgervertrag, Korrespondenz, Vollvermerk und Lösungsschlüssel. Der Vertrag ist bewusst attraktiv, umfangreich und gefährlich konstruiert: viele Risiken springen nicht sofort ins Auge, sondern werden erst durch systematische MaBV-, AGB-, Technik-, WEG- und Bauüberwachungsprüfung sichtbar.
 
 ## Keine Aussage über Berufsrecht, Datenschutz, KI-VO oder Beschlagnahmeverbote
 
-Dieses Repository ist ein technisches und fachliches Experiment. Es trifft **keine Aussage** darüber, ob der Einsatz dieses Skills in einer konkreten Kanzlei-, Unternehmens-, Verbraucher- oder Behördenumgebung berufs-, datenschutz-, geheimnisschutz- oder KI-rechtlich zulässig ist.
+**Lesen, bevor irgendetwas davon eingesetzt wird.** Dieses Repository ist ausschließlich ein technisches Experiment. Es trifft keinerlei Aussage darüber, ob der Einsatz dieses Skills in einer konkreten Praxisumgebung berufs-, datenschutz-, urheber-, haftungs-, notar- oder KI-rechtlich zulässig ist. Alle nachstehenden Fragen muss die Nutzerin oder der Nutzer in eigener Verantwortung vor der ersten Nutzung prüfen — das Repository, seine Autorin / sein Autor und alle Mitwirkenden übernehmen dafür keinerlei Verantwortung oder Haftung:
 
-Vor produktiver Nutzung muss jede Nutzerin und jeder Nutzer eigenverantwortlich prüfen:
+- **Strafrechtliches Mandatsgeheimnis — §§ 203, 204 StGB.** Der Skill sagt nichts darüber, ob ein konkreter Einsatz mit dem strafbewehrten Geheimnisschutz des § 203 StGB und § 204 StGB vereinbar ist, auch nicht in Konstellationen mit mitwirkenden Personen, Cloud-Diensten, externen Sachverständigen oder technischen Dienstleistern.
+- **Berufsrecht — § 43e BRAO, § 2 BORA, § 53 StPO.** Es wird nicht geprüft, ob der Einsatz mit anwaltlichen, notariellen, steuerberatenden, wirtschaftsprüfenden, ärztlichen, patentanwaltlichen oder sonstigen berufsrechtlichen Pflichten vereinbar ist. Gleiches gilt für Zeugnisverweigerungsrechte, Beschlagnahmeschutz und die Einschaltung Dritter.
+- **Datenschutz — DSGVO, BDSG.** Es wird nicht beurteilt, ob eine ausreichende Rechtsgrundlage vorliegt, ob ein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO geschlossen werden muss, ob eine Datenschutz-Folgenabschätzung erforderlich ist oder ob Informationspflichten, Löschkonzepte, TOMs, Drittlandtransfers und Betroffenenrechte eingehalten werden.
+- **KI-Verordnung — KI-VO / EU AI Act, VO (EU) 2024/1689.** Es wird nicht entschieden, ob der Einsatz unter Hochrisiko-, Transparenz-, Betreiber- oder General-Purpose-AI-Pflichten fällt und welche Dokumentations-, Kontroll- oder Informationspflichten in einer konkreten Nutzung bestehen.
+- **Beschlagnahmeverbote und auslandsrechtliche Zugriffe.** Es wird nicht geprüft, ob Eingabedaten und Modellantworten gegen Beschlagnahme, Herausgabe, Cloud Act, FISA 702, CLOUD Act warrants, PATRIOT Act oder sonstige ausländische Zugriffsrechte hinreichend geschützt sind.
+- **Zugang, Auftragsverarbeitung, Hosting.** Wie der API-Zugang zum Modell beschafft wird, ob mit dem Anbieter ein berufsrechtskonformer Vertrag besteht, wo Daten verarbeitet werden, welche Subunternehmer beteiligt sind und ob Datenresidenz, Verschwiegenheit, Audit-Rechte und Löschung gesichert sind, bleibt vollständig in der Eigenverantwortung der Nutzerin / des Nutzers.
+- **Notar-, Anwalts- und Sachverständigenrolle.** Der Skill ersetzt keine notarielle Belehrung, keine anwaltliche Beratung, keine technische Bauzustandsprüfung, kein Bodengutachten, keine Objektüberwachung und keine baubegleitende Qualitätskontrolle.
 
-- **Mandatsgeheimnis und Berufsrecht:** Vereinbarkeit mit §§ 203, 204 StGB, § 43e BRAO, § 2 BORA sowie den jeweils einschlägigen Berufsordnungen anderer Berufsgeheimnisträger.
-- **Beschlagnahme- und Zeugnisverweigerungsschutz:** Umgang mit § 53 StPO, § 97 StPO, § 160a StPO und vergleichbaren Schutzmechanismen, insbesondere wenn Entwürfe, Kaufpreise, Finanzierungsdaten, Grundbuchdaten, Gutachten oder Mandantenkommunikation verarbeitet werden.
-- **Datenschutz:** Rechtsgrundlage, Art. 28 DSGVO, TOMs, Löschkonzept, Subunternehmer, Datenresidenz, Drittlandtransfer, Informationspflichten und besondere Risiken bei personenbezogenen Vertrags-, Finanzierungs- und Familiendaten.
-- **KI-VO / EU AI Act:** Ob der konkrete Einsatz unter Pflichten für Betreiber, Transparenzpflichten oder besondere Risikokategorien fällt, hängt von Anwendung, Anbieter, Deployment und Nutzerkreis ab.
-- **Hosting und Anbieterwahl:** Ob ein Modell direkt, über Cloud-Anbieter, über Kanzlei-IT oder lokal betrieben wird, ist für Geheimnisschutz, Datenschutz und Zugriffsbefugnisse zentral. Dieses Repository bestätigt keinen Anbieter.
-- **Auslandsrechtliche Zugriffe:** Risiken aus extraterritorialen Zugriffsrechten wie US Cloud Act, FISA § 702 oder vergleichbaren Regelungen sind nicht bewertet.
-
-Der Skill darf nicht so verstanden werden, als sei die Eingabe echter Mandats-, Vertrags-, Grundbuch-, Finanzierungs-, Bau- oder Gutachtendaten in irgendein Modell automatisch zulässig. Diese Prüfung bleibt vollständig bei der jeweiligen Nutzerin oder dem jeweiligen Nutzer.
+Anwältinnen, Anwälte, Notarinnen, Notare, Sachverständige und andere Berufsgeheimnisträgerinnen/-träger müssen vor jeder produktiven Nutzung selbst prüfen, ob die konkrete Anbieter-, Hosting-, Mandats-, Daten- und Sachverständigenkonstellation mit Berufsrecht, Datenschutz, Mandatsgeheimnis, Beschlagnahmeschutz, KI-Recht und Haftungsrecht vereinbar ist. Dieses Repository bestätigt keinen Anbieter und ersetzt keine Prüfung von § 203 StGB, § 43e BRAO, Art. 28 DSGVO, Kapitel V DSGVO, TOMs, Löschkonzept, Audit-Rechten, Subunternehmern, Datenresidenz, technischer Bauprüfung oder vertraglicher Verschwiegenheit.
 
 ## Lizenz
 
-Doppellizenziert: **Apache-2.0 OR MIT**. Siehe [`LICENSE-APACHE`](LICENSE-APACHE) und [`LICENSE-MIT`](LICENSE-MIT).
+Dieses Repository steht unter der Apache-2.0-Lizenz. Details stehen in [`LICENSE`](LICENSE).
