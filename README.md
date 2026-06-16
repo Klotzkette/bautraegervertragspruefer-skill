@@ -138,4 +138,4 @@ Anwältinnen, Anwälte, Notarinnen, Notare, Sachverständige und andere Berufsge
 
 ## Lizenz
 
-Dieses Repository steht unter der Apache-2.0-Lizenz. Details stehen in [`LICENSE`](LICENSE).
+Dieses Repository steht wahlweise unter der [MIT-Lizenz](LICENSE-MIT) oder der [Apache-2.0-Lizenz](LICENSE-APACHE) (Dual-Lizenz „MIT OR Apache-2.0"). Nutzerinnen und Nutzer dürfen frei zwischen beiden Lizenzen wählen.
