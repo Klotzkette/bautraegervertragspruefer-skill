@@ -39,7 +39,7 @@ Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitig
 - [Teil G — Verhandlungspaket](#teil-g--verhandlungspaket)
 - [Teil H — Streit, Rücktritt, Klage](#teil-h--streit-rücktritt-klage)
 - [Teil I — Nichtigkeit, § 306 BGB, Notar](#teil-i--nichtigkeit--306-bgb-notar)
-- [Teil J — Realfall-Pattern und Testakte](#teil-j--realfall-pattern-und-testakte)
+- [Teil J — Realfall-Pattern und Schulungsfall](#teil-j--realfall-pattern-und-schulungsfall)
 - [Teil K — Vertiefte Dogmatik](#teil-k--vertiefte-dogmatik)
 - [Teil L — Drei-Dokumente-Paket](#teil-l--drei-dokumente-paket)
 - [Teil M — Vertiefte Dogmatik II](#teil-m--vertiefte-dogmatik-ii)
@@ -666,11 +666,11 @@ Nicht pauschal behaupten, ein Notaranderkonto mache die gesamte Abwicklung unwir
 5. Welche Amtspflichtfragen stellt § 57 BeurkG?
 6. Welche zivilrechtlichen Ansprüche bestehen unabhängig davon?
 
-## Teil J — Realfall-Pattern und Testakte
+## Teil J — Realfall-Pattern und Schulungsfall
 
 Dieser Teil ist ein Wiedererkennungsraster für Großprojektverträge. Er ersetzt keine Prüfung, sondern sagt: Wenn dieses Muster auftaucht, springe in den genannten Prüfteil.
 
-Wenn im Repository die Testakte `testakten/bautraegervertrag-aus-der-hoelle/` verfügbar ist, kann sie als Schulungsfall genutzt werden. Sie umfasst die notarielle Urkunde, die Korrespondenz/Aktenführung, das Lösungsgutachten sowie die nur lose übergebene Baubeschreibung (Version 7.2); ein vollständiger Lauf über Vertrag und Baubeschreibung sollte den Pflicht-Prüfblock auslösen und mindestens 27 🔴-Befunde finden. Die eigentliche Vertragsanalyse darf aber nie aus der Testakte heraus behaupten, sondern muss am vorgelegten Vertrag arbeiten. Wird eine Baubeschreibung nur lose übergeben oder nur referenziert, ist sie zur Bausoll-Prüfung ausdrücklich anzufordern.
+Wenn im Repository der Schulungsfall `uebungsfaelle/bautraegervertrag-neubauwohnung/` verfügbar ist, kann er zur Kalibrierung genutzt werden. Er umfasst die notarielle Urkunde, die Korrespondenz/Aktenführung, das Lösungsgutachten sowie die nur lose übergebene Baubeschreibung (Version 7.2); ein vollständiger Lauf über Vertrag und Baubeschreibung sollte den Pflicht-Prüfblock auslösen und mindestens 27 🔴-Befunde finden. Die eigentliche Vertragsanalyse darf aber nie aus dem Schulungsfall heraus behaupten, sondern muss am vorgelegten Vertrag arbeiten. Wird eine Baubeschreibung nur lose übergeben oder nur referenziert, ist sie zur Bausoll-Prüfung ausdrücklich anzufordern.
 
 | Pattern | Typischer Fundort | Sofortprüfung |
 | --- | --- | --- |

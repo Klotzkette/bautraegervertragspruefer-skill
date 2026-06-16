@@ -1,6 +1,6 @@
 ---
 title: 'Baubeschreibung — Fassung Februar 2026, Version 7.2 (Auszug)'
-subtitle: 'Testakte „Bauträgervertrag aus der Hölle" — fiktive Baubeschreibung mit eingebauten Bausoll-Lücken zu Schulungszwecken'
+subtitle: 'Fiktive Baubeschreibung zu Schulungszwecken'
 ---
 
 \newpage
@@ -14,8 +14,6 @@ Bauträgerin: Hohenwartshofen Quartiersentwicklung GmbH & Co. KG, Schloßstraße
 Fassung: Februar 2026 — Version 7.2
 
 Bezug: Haus 4, Wohnung 4.27 (3. Obergeschoss) nebst Kellerabteil K-4.27, Terrasse T-4.27 und Tiefgaragenstellplatz TG-127
-
-> **Hinweis zur Schulungsakte.** Dieser Auszug ist vollständig fingiert. Die Baubeschreibung ist hier — wie in § 0.2 der zugehörigen Urkunde UR-Nr. 188/2026 KQ vorgesehen — *nicht mitbeurkundet*, sondern wird nur lose übergeben. Sie enthält absichtlich die typischen, äußerlich professionell wirkenden Bausoll-Lücken, an denen sich die Prüfung erproben lässt.
 
 ## Vorbemerkungen zur Baubeschreibung
 

@@ -1,6 +1,6 @@
 ---
-title: 'Anwaltliches Gutachten — Lösungsschlüssel zur Testakte'
-subtitle: 'Testakte „Bauträgervertrag aus der Hölle" — fiktives Gutachten zu Schulungszwecken'
+title: 'Anwaltliches Gutachten — Lösungsschlüssel zum Schulungsfall'
+subtitle: 'Fiktives Gutachten zu Schulungszwecken'
 ---
 
 # Anwaltliches Gutachten
@@ -141,9 +141,11 @@ Befund: 🔴.
 
 ## 14. § 5.8.2 — Vertragsstrafe 0,5 Promille pro Tag, Gesamtdeckel 12 Prozent
 
-Die Vertragsstrafe von 0,5 Promille pro Tag mit Gesamtdeckel 12 Prozent liegt nach gängiger BGH-Linie über der zulässigen Höhe (Hinweis: Rechtsprechung vor Schriftsatzverwendung live verifizieren). Die übliche Obergrenze beträgt 0,2 bis 0,3 Promille pro Tag, Gesamtdeckel 5 Prozent.
+Die Vertragsstrafe wirkt auf den ersten Blick verbrauchergünstig, weil sie den Verkäufer bei Verzögerung belastet. Genau deshalb ist nicht die Höhe der Vertragsstrafe der tragende Erwerbereinwand: Der Bauträger kann sich als Verwender seiner eigenen Klausel regelmäßig nicht überzeugend darauf zurückziehen, die selbst formulierte Vertragsstrafe sei zu hoch.
 
-Befund: 🟠 bis 🔴.
+Problematisch ist vielmehr die Kopplung mit § 5.8.1 und dem letzten Satz von § 5.8.2. Der Termin ist nur „voraussichtlich", die Verlängerungsgründe sind weit, die Bezugsgröße ist nur die Sondereigentumsteilbetragssumme und weitergehende Schadensersatzansprüche werden außerhalb von Vorsatz und grober Fahrlässigkeit ausgeschlossen. Damit kann die Klausel eine scheinbar großzügige Vertragsstrafe in eine Haftungsbegrenzung verwandeln.
+
+Befund: 🟠. Berichtigungsverlangen: verbindlicher Fertigstellungstermin, enge Verlängerungstatbestände, keine formularmäßige Sperre weitergehender gesetzlicher Verzugsschäden.
 
 ## 15. § 5.8.1 — Termin als „voraussichtlich"
 

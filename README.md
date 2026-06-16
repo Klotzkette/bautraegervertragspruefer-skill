@@ -45,8 +45,8 @@ docs/
 ├── SKILL.md   Veröffentlichte Downloadfassung
 └── index.html Download-Seite für Browser und Mobilgeräte
 
-testakten/
-└── bautraegervertrag-aus-der-hoelle/
+uebungsfaelle/
+└── bautraegervertrag-neubauwohnung/
     ├── quellen/    Fiktiver Vertrag, Korrespondenz, Lösungsschlüssel
     ├── gesamt-docx/ DOCX-Fassungen zum Üben
     └── gesamt-pdf/ PDF-Fassungen zum Üben
@@ -65,7 +65,7 @@ Die Skill-Datei ist in folgende Hauptteile gegliedert:
 - **Technik und Bauüberwachung** — Baugrund, Baugrube, Abdichtung, Schallschutz, Brandschutz, Energie, Statik, Nachweise, Objektüberwachung, private Sachverständige.
 - **Teilungserklärung und WEG** — Sondereigentum, Gemeinschaftseigentum, Sondernutzungsrechte, GdWE, Kostenverteilung, Abnahmeregime.
 - **Mandatsmodule** — Mandantenbericht, Notar-/Bauträgeranschreiben, Verhandlungsfassung, Eskalations- und Klagestrategie.
-- **Testakte** — bewusst überladener Übungsvertrag mit versteckten und offenen Risiken.
+- **Schulungsfall** — bewusst anspruchsvoller Übungsvertrag mit versteckten und offenen Risiken.
 
 Zusätzlich enthält der Skill durchgängig:
 
@@ -118,9 +118,9 @@ Die `SKILL.md` enthält einen eigenen Rechtsprechungsanker mit überprüfbaren L
 
 Dieses Repository folgt derselben offenen Ein-Datei-Logik wie der [Arbeitszeugnis-Prüfer Skill](https://github.com/Klotzkette/arbeitszeugnispruefer-skill): Der eigentliche Skill ist eine lesbare Markdown-Datei, nicht ein verborgenes System. Die README beschreibt nicht einzelne Bastelstände, sondern Zweck, Einsatz, Inhalt, Grenzen und Bedienung des Skills.
 
-## Testakte zum Üben
+## Schulungsfall zum Üben
 
-Im Ordner [`testakten/bautraegervertrag-aus-der-hoelle/`](testakten/bautraegervertrag-aus-der-hoelle/) liegt eine fiktive Schulungsakte mit Bauträgervertrag, Korrespondenz, Vollvermerk und Lösungsschlüssel. Der Vertrag ist bewusst attraktiv, umfangreich und gefährlich konstruiert: viele Risiken springen nicht sofort ins Auge, sondern werden erst durch systematische MaBV-, AGB-, Technik-, WEG- und Bauüberwachungsprüfung sichtbar.
+Im Ordner [`uebungsfaelle/bautraegervertrag-neubauwohnung/`](uebungsfaelle/bautraegervertrag-neubauwohnung/) liegt ein fiktiver Schulungsfall mit Bauträgervertrag, Korrespondenz, Vollvermerk, Baubeschreibung und Lösungsschlüssel. Der Vertrag ist bewusst attraktiv, umfangreich und gefährlich konstruiert: viele Risiken springen nicht sofort ins Auge, sondern werden erst durch systematische MaBV-, AGB-, Technik-, WEG- und Bauüberwachungsprüfung sichtbar.
 
 ## Keine Aussage über Berufsrecht, Datenschutz, KI-VO oder Beschlagnahmeverbote
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Baut die Testakte „Bauträgervertrag aus der Hölle" aus den maßgeblichen
+# Baut den fiktiven Schulungsfall aus den maßgeblichen
 # Markdown-Quellen in quellen/ in die beiden Ausgabeformate:
 #   * gesamt-docx/<name>.docx  (Word, zum Annotieren)
 #   * gesamt-pdf/<name>.pdf     (PDF, zum Lesen und Versenden)
@@ -9,7 +9,7 @@
 #   * pandoc
 #   * weasyprint  (als PDF-Engine; rendert über HTML/CSS, kein LaTeX nötig)
 #
-# Aufruf aus dem Akten-Verzeichnis:
+# Aufruf aus dem Fall-Verzeichnis:
 #   ./build.sh            # baut alle Quellen
 #   ./build.sh 01 04      # baut nur Quellen, deren Dateiname mit 01 bzw. 04 beginnt
 #

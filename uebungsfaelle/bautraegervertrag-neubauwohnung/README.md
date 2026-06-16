@@ -1,12 +1,12 @@
-# Testakte „Bauträgervertrag aus der Hölle"
+# Schulungsfall Bauträgervertrag Neubauwohnung
 
-Diese Akte ist **vollständig fingiert** und dient ausschließlich Schulungs- und Testzwecken für den Bauträgervertrag-Prüfer-Skill. Alle Namen, Daten, Adressen, Aktenzeichen, UR-Nummern, Banken, Notariate und das Projekt sind frei erfunden. Reale Personen, Unternehmen oder Notariate sind nicht gemeint.
+Diese Akte ist **vollständig fingiert** und dient ausschließlich Schulungszwecken für den Bauträgervertrag-Prüfer-Skill. Alle Namen, Daten, Adressen, Aktenzeichen, UR-Nummern, Banken, Notariate und das Projekt sind frei erfunden. Reale Personen, Unternehmen oder Notariate sind nicht gemeint.
 
 ## Worum es geht
 
 Ein fiktiver Wohnungsbauträgervertrag mit Auflassung für eine Eigentumswohnung in einem fiktiven Großprojekt zwischen Stahnsdorf und Kleinmachnow. Vertrag und die zugehörige (nur lose übergebene) Baubeschreibung enthalten zusammen rund **40 versteckte Fehler** — von schweren MaBV-Verstößen über AGB-Klauselfallen nach §§ 305 ff. BGB bis zu Druckmustern gegen die dingliche Sicherung, technische Baukontrolle, Baugrundrisiken, HOAI-/Objektüberwachungslogik, lückenhaftem Bausoll und späteren WEG-Betriebskosten. Die Fehler sind nicht durch Hervorhebung markiert, sondern in einen handwerklich solide aussehenden Vertragstext eingewoben, wie er in der Beratungspraxis tatsächlich vorkommt.
 
-Die Testakte erlaubt es,
+Der Schulungsfall erlaubt es,
 
 - den Skill an einem realistischen, komplexen Beispielvertrag zu erproben,
 - die eigene Klauselanalyse mit dem mitgelieferten Lösungs-Gutachten zu vergleichen,
@@ -23,7 +23,7 @@ Die Akte besteht aus vier Dokumenten, jeweils in drei Formaten verfügbar:
 2. **Korrespondenz, Aktenvermerk und Beweis-/Fristenlogik** (`02-korrespondenz-und-vollvermerk.md`)
    — Mandantenanfrage per E-Mail, interner Aktenvermerk, anwaltliche Strategie-Antwort, Beweis-/Fristen-Tabelle, fünfstufiger Eskalationsplan, Honorarauszug.
 
-3. **Anwaltliches Gutachten — Lösungsschlüssel zur Testakte** (`03-gutachten-loesungsschluessel.md`)
+3. **Anwaltliches Gutachten — Lösungsschlüssel zum Schulungsfall** (`03-gutachten-loesungsschluessel.md`)
    — Das vollständige Prüfgutachten mit Pflicht-Prüfblock, klauselgenauen rechtlichen und technischen Beanstandungen, Ampel-Bilanz, sieben Handlungsempfehlungen. **Anonymisierte Lehre**, keine konkreten Rechtsprechungsfundstellen.
 
 4. **Baubeschreibung — Fassung Februar 2026, Version 7.2 (Auszug)** (`04-baubeschreibung-auszug.md`)
@@ -40,7 +40,7 @@ Jedes Dokument liegt vor als:
 PDF und DOCX werden aus den Markdown-Quellen erzeugt. Nach einer Änderung in `quellen/` regenerierst du beide Formate mit dem mitgelieferten Build-Skript:
 
 ```bash
-cd testakten/bautraegervertrag-aus-der-hoelle
+cd uebungsfaelle/bautraegervertrag-neubauwohnung
 ./build.sh            # alle Dokumente
 ./build.sh 04         # nur die Baubeschreibung
 ```

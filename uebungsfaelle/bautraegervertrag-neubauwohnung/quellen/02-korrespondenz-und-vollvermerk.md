@@ -1,6 +1,6 @@
 ---
 title: 'Korrespondenz, Aktenvermerk und Beweis-/Fristenlogik'
-subtitle: 'Testakte „Bauträgervertrag aus der Hölle" — fiktive Mandatsbegleitung zu Schulungszwecken'
+subtitle: 'Fiktive Mandatsbegleitung zu Schulungszwecken'
 ---
 
 # Akte Hohenwartshofen / Übelacker-Strohmeyer

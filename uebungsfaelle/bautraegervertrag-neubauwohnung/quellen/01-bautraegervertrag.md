@@ -1,6 +1,6 @@
 ---
 title: 'Wohnungsbauträgervertrag mit Auflassung — UR-Nr. 188/2026 KQ'
-subtitle: 'Testakte „Bauträgervertrag aus der Hölle" — fiktive Urkunde mit eingebauten Mängeln zu Schulungszwecken'
+subtitle: 'Fiktive notarielle Urkunde zu Schulungszwecken'
 ---
 
 \newpage
