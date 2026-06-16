@@ -46,7 +46,7 @@ Auf Befragen des Notars erklärten die Erschienene zu 1. auf Rechnung des von ih
 
 Der Notar hat darauf hingewiesen, dass er vor der Protokollierung die Beteiligten darüber zu befragen hat, ob bei der nachstehend zu beurkundenden Angelegenheit eine der mit ihm zur gemeinsamen Berufsausübung verbundenen Personen oder er selbst außerhalb seiner Amtstätigkeit bereits tätig war oder ist. Die Beteiligten erklärten, dass dies nicht der Fall sei.
 
-Der Käufer erklärte im Hinblick auf § 17 Abs. 2a BeurkG, dass ihm ein Entwurf des nachstehenden Kaufvertrages sowie je eine Kopie der Bezugsurkunden zur Verfügung gestellt wurde. Die Frist von zwei Wochen nach § 17 Abs. 2a S. 2 Nr. 2 BeurkG wurde im Hinblick auf den geplanten Vertriebsabschluss verkürzt; der Käufer erklärt ausdrücklich, mit der Verkürzung einverstanden zu sein und auf die volle zweiwöchige Frist zu verzichten.
+Der Käufer erklärte im Hinblick auf § 17 Abs. 2a BeurkG, dass ihm ein Entwurf des nachstehenden Kaufvertrages über das vom Verkäufer verwendete Unterlagenportal zur Verfügung gestellt wurde und dass ihm der wesentliche wirtschaftliche Inhalt des Geschäfts aufgrund der vorangegangenen Reservierung, der Vertriebsgespräche und der Einsichtnahme in das digitale Datenraumverzeichnis bekannt sei. Auf Wunsch des Käufers und im Hinblick auf die auslaufende Reservierungsbindung soll die heutige Beurkundung gleichwohl durchgeführt werden; der Käufer erklärte, derzeit keine weitere Bedenkzeit zu benötigen.
 
 Die Erschienenen baten sodann um die Beurkundung des nachstehenden
 
@@ -60,17 +60,17 @@ Die Erschienenen baten sodann um die Beurkundung des nachstehenden
 
 12 Mehrfamilienhäuser sowie ein Stadtvilla-Cluster (Häuser 9 bis 12) mit insgesamt 287 Wohneinheiten, 14 Teileigentumseinheiten sowie eine zweigeschossige Tiefgarage mit 198 Kfz-Tiefgaragenstellplätzen und 22 Motorradstellplätzen nebst Gemeinschaftsflächen (insbesondere einem Quartiersplatz, Spielplatz, Wegen, Pflanz- und Wasserflächen, Lounge im Erdgeschoss von Haus 5) zu errichten und hat dieses Grundstück gemäß § 8 WEG aufgeteilt.
 
-Da es sich um den derzeitigen Planungsstand handelt, der noch verändert werden kann, behält sich der Verkäufer das Recht vor, die vorstehende voraussichtliche Anzahl der Wohn- und Teileigentumseinheiten sowie der Stellplätze noch zu ändern. Ebenso behält sich der Verkäufer das Recht vor, einzelne derzeit geplante Mehrfamilienhäuser bzw. Bauabschnitte nicht zu errichten oder sonstige Änderungen der Planung vorzunehmen, die ihm aus wirtschaftlichen, baurechtlichen, statischen oder sonstigen Gründen erforderlich erscheinen. Der Käufer hat insoweit keinerlei Rechte oder Ansprüche.
+Da es sich um ein mehrabschnittiges Quartiersvorhaben handelt, können sich die vorstehende Anzahl der Wohn- und Teileigentumseinheiten, Stellplätze, Bauabschnitte und gemeinschaftlichen Flächen im Zuge der weiteren Abstimmung mit Behörden, Fachplanern, Finanzierungspartnern und Versorgungsunternehmen noch ändern. Änderungen bleiben vorbehalten, soweit der Vertragsgegenstand des Käufers im Kern erhalten bleibt und das Gesamtbild des Quartiers nicht wesentlich verändert wird; eine Anpassung des Kaufpreises erfolgt in diesem Fall nicht.
 
-Der Verkäufer wies den Käufer darauf hin, dass sich aus den vorstehenden Baumaßnahmen sowie aus späteren Bauvorhaben des Verkäufers oder von Konzernunternehmen des Verkäufers auf den unmittelbar nordöstlich und südöstlich angrenzenden Nachbargrundstücken (sog. Baufelder Q2 und Q3) auch noch nach dem Übergabetag gemäß § 6 Beeinträchtigungen für den Käufer (z. B. durch Lärm, Staub, Erschütterungen, Sichteinschränkungen, eingeschränkte Wegeführung und temporäre Stromabschaltungen) ergeben können. Der Käufer ist insoweit zur uneingeschränkten Duldung verpflichtet, ohne dass ihm insoweit Rechte, Ansprüche oder Minderungsmöglichkeiten gegen den Verkäufer und jeweiligen Eigentümer der bezeichneten Nachbargrundstücke zustehen.
+Der Verkäufer wies den Käufer darauf hin, dass sich aus den vorstehenden Baumaßnahmen sowie aus späteren Bauvorhaben des Verkäufers oder von Konzernunternehmen des Verkäufers auf den unmittelbar nordöstlich und südöstlich angrenzenden Nachbargrundstücken (sog. Baufelder Q2 und Q3) auch noch nach dem Übergabetag gemäß § 6 Beeinträchtigungen für den Käufer (z. B. durch Lärm, Staub, Erschütterungen, Sichteinschränkungen, eingeschränkte Wegeführung, Baustellenverkehr und temporäre Abschaltungen technischer Medien) ergeben können. Solche quartiertypischen Einwirkungen gelten als bei der Preisbildung berücksichtigt, soweit sie die gewöhnliche Nutzbarkeit der Sondereigentumseinheit nicht dauerhaft aufheben.
 
 **0.2** Umfang und Beschränkungen des Wohnungs- und Teileigentums, die Rechtsbeziehungen der Wohnungs- und Teileigentümer zueinander und die Verwaltung des gemeinschaftlichen Eigentums werden geregelt in der Teilungserklärung einschließlich Gemeinschaftsordnung vom 18. Juli 2024 zur UR-Nr. 612/2024 W des Notars Egmont Wachtelborn, Berlin, in der Fassung des 1., 2., 3., 4., 5., 6. und 7. Nachtrags zur Teilungserklärung einschließlich Gemeinschaftsordnung vom 04. September 2024 zur UR-Nr. 731/2024 W, vom 12. November 2024 zur UR-Nr. 942/2024 W, vom 09. Januar 2025 zur UR-Nr. 28/2025 W, vom 03. April 2025 zur UR-Nr. 412/2025 W, vom 27. Juni 2025 zur UR-Nr. 698/2025 W, vom 19. September 2025 zur UR-Nr. 1108/2025 W und vom 04. Februar 2026 zur UR-Nr. 187/2026 W jeweils des Notars Egmont Wachtelborn, Berlin.
 
 — nachfolgend zusammen auch „Teilungserklärung" und/oder zusammen „Bezugsurkunde 1" genannt —.
 
-Der Kaufgegenstand wird nach näherer Maßgabe von § 5 grundsätzlich so errichtet, wie er sich aus der Baubeschreibung in der Fassung Februar 2026, Version 7.2 ergibt. Die Baubeschreibung ist nicht Gegenstand der Beurkundung; sie wird dem Käufer mit Vertragsunterzeichnung in einer aktuellen, ungebundenen Druckfassung übergeben.
+Der Kaufgegenstand wird nach näherer Maßgabe von § 5 grundsätzlich so errichtet, wie er sich aus der Baubeschreibung in der Fassung Februar 2026, Version 7.2 ergibt. Die Baubeschreibung wird dem Käufer mit Vertragsunterzeichnung in einer aktuellen, ungebundenen Druckfassung übergeben und war nach Angabe des Verkäufers im Unterlagenportal abrufbar.
 
-Der Käufer bestätigt mit Unterzeichnung dieses Vertrages, dass er die Baubeschreibung sowie sämtliche Bezugsurkunden in vollem Umfang erhalten, gelesen, verstanden und mit fachkundiger Hilfe geprüft hat und dass ihm sämtliche damit verbundenen technischen, rechtlichen und wirtschaftlichen Folgen vollumfänglich bewusst sind.
+Der Käufer bestätigt mit Unterzeichnung dieses Vertrages, dass ihm die Baubeschreibung, die Teilungserklärung mit Nachträgen sowie die im Datenraum bezeichneten Unterlagen zugänglich waren und dass er Gelegenheit hatte, hierzu rechtlichen, technischen und steuerlichen Rat einzuholen. Die Beteiligten sind sich darüber einig, dass die vorgenannten Unterlagen bei der Kaufentscheidung berücksichtigt wurden.
 
 **0.3** Gegenstand dieses Vertrages sind der in § 1 beschriebene Kaufgegenstand sowie die in § 5 beschriebene Herstellungsverpflichtung.
 
@@ -108,7 +108,7 @@ In Abteilung III ist eine Gesamtgrundschuld in Höhe von 92 800 000,00 EUR zugun
 
 zzgl. eines Aufpreises für den Tiefgaragenstellplatz von 38 500,00 EUR. Der Gesamtkaufpreis beträgt damit 828 000,00 EUR.
 
-**2.2** Der Kaufpreis ist ein Fest-Kaufpreis. Er umfasst sämtliche Leistungen entsprechend der Herstellungsverpflichtung in § 5.
+**2.2** Der Kaufpreis ist ein Fest-Kaufpreis. Er umfasst sämtliche Leistungen entsprechend der Herstellungsverpflichtung in § 5, soweit in diesem Vertrag nicht für Sonderwünsche, öffentliche Abgaben, Erschließung, technische Nachsteuerungen oder nachträgliche öffentlich-rechtliche Anforderungen eine gesonderte Kostentragung vorgesehen ist.
 
 **2.3** Nicht im Kaufpreis enthalten sind die bei Notar, Grundbuchamt und Behörden anfallenden Gebühren, die Grunderwerbsteuer, sämtliche Kosten der Erschließung und der erstmaligen Anschlüsse an Ver- und Entsorgungsanlagen (vgl. § 7) sowie Kosten, die durch nachträgliche Sonderwünsche des Käufers veranlasst sind.
 
@@ -140,19 +140,19 @@ c) die Lastenfreistellungserklärung der Pommersche Hypotheken-Bank AG für den 
 | 6. Rate | nach Fassadenarbeiten | 2,1 % |
 | 7. Rate | nach vollständiger Fertigstellung | 3,5 % |
 
-Die Raten sind jeweils zur Zahlung fällig, wenn der Verkäufer den Käufer unter Vorlage einer Bestätigung des vom Verkäufer beauftragten Bauleiters oder Projektcontrollers über den Baufortschritt schriftlich zur Zahlung aufgefordert hat. Eine eigene Prüfung des Bautenstandes durch den Käufer oder eine von ihm beauftragte Person bleibt nach Maßgabe von § 8 möglich, hemmt die Fälligkeit der jeweiligen Rate jedoch nicht, sofern der Käufer nicht binnen fünf Bankarbeitstagen nach Zugang der Zahlungsaufforderung einen gegenteiligen, prüffähigen Sachverständigenbericht vorlegt.
+Die Raten sind jeweils zur Zahlung fällig, wenn der Verkäufer den Käufer unter Vorlage einer Bestätigung des vom Verkäufer beauftragten Bauleiters, Projektcontrollers oder eines mit der Objektüberwachung befassten Planungsbeteiligten über den erreichten Baufortschritt schriftlich zur Zahlung auffordert. Eine ergänzende Prüfung des Bautenstandes durch den Käufer oder eine von ihm beauftragte Person bleibt nach Maßgabe von § 8 möglich. Einwendungen gegen den bestätigten Bautenstand sind innerhalb von fünf Bankarbeitstagen nach Zugang der Zahlungsaufforderung unter Vorlage eines prüffähigen, auf den konkreten Ratenmeilenstein bezogenen Sachverständigenvermerks in Textform geltend zu machen.
 
 Der Käufer kommt in Verzug, sobald der Verkäufer ihn nach Fälligkeit der Rate schriftlich unter Einhaltung einer Frist von 30 Kalendertagen per Einwurf-Einschreiben gemahnt hat und die Frist erfolglos verstrichen ist. Der Zugang einer bloßen Rechnung oder einer einfachen E-Mail begründet keinen Verzug.
 
-Im Verzugsfall trägt der Käufer die Beweislast dafür, dass den Verkäufer ein Verschulden an der Verzögerung trifft. Der Verkäufer ist nach Eintritt des Verzugs berechtigt, die Eintragung der Auflassungsvormerkung gemäß § 10 dieses Vertrages beim Grundbuchamt durch einseitige Erklärung gegenüber dem amtierenden Notar zur Löschung zu bringen; einer Mitwirkung des Käufers bedarf es nicht.
+Im Verzugsfall hat der Käufer diejenigen Umstände darzulegen und nachzuweisen, aus denen sich eine fehlende Verantwortlichkeit für die Nichtzahlung oder ein nicht vom Verkäufer zu vertretendes Ausbleiben der Zahlung ergeben soll. Der Verkäufer ist nach Eintritt eines länger als 45 Kalendertage andauernden Zahlungsverzuges berechtigt, den amtierenden Notar unter Vorlage einer Verzugsaufstellung und einer Rücktritts- oder Aufhebungsanzeige um Vollzug der in § 10 geregelten Vormerkungsfreigabe zu ersuchen.
 
-**3.3** Vertragserfüllungssicherheit
+**3.3** Sicherungsmechanik
 
-Der Verkäufer hat dem Käufer keine Sicherheit nach § 650m Abs. 2 BGB zu stellen. Die Parteien sind sich einig, dass eine Sicherheitsleistung in dieser Form für den vorliegenden Vertrag nicht erforderlich ist. Der Käufer verzichtet ausdrücklich auf etwaige weitergehende gesetzliche Sicherungsrechte, soweit dies rechtlich zulässig ist.
+Die Parteien gehen davon aus, dass die in dieser Urkunde vorgesehene Abwicklung über Auflassungsvormerkung, Lastenfreistellung, MaBV-Ratenplan und Baufortschrittsbestätigung die Interessen des Käufers angemessen wahrt. Eine gesonderte Vertragserfüllungssicherheit wird nicht vereinbart. Soweit zwingende gesetzliche Sicherungsrechte bestehen, bleiben diese unberührt; ihre praktische Abwicklung erfolgt im Rahmen der jeweiligen ersten fälligen Rate nach Abstimmung mit dem Verkäufer und der finanzierenden Bank.
 
-**3.4** Reservierungsgebühr. Die Parteien erklären, dass der Käufer vor der Beurkundung an den Verkäufer eine Reservierungsgebühr in Höhe von 22 000,00 EUR gezahlt hat. Diese Reservierungsgebühr wird mit der 1. Kaufpreisrate nicht verrechnet, sondern verbleibt als Entgelt für die Reservierungsleistung beim Verkäufer.
+**3.4** Reservierungsentgelt. Die Parteien erklären, dass der Käufer vor der Beurkundung an den Verkäufer ein Reservierungsentgelt in Höhe von 22 000,00 EUR gezahlt hat. Das Entgelt betrifft nach Angabe des Verkäufers die zeitweise Herausnahme der Einheit aus dem Vertrieb, die Datenraumbereitstellung, Koordination der Finanzierungsunterlagen und projektbezogene Bearbeitung. Eine Verrechnung mit Kaufpreisraten erfolgt nur, wenn der Verkäufer dies bei Fälligstellung der ersten Rate ausdrücklich bestätigt.
 
-**3.5** Sonderwünsche. Sonderwünsche des Käufers außerhalb der Standardausstattung sind vor Beginn der jeweils betroffenen Bauleistung vollständig und im Voraus zu zahlen. Die Vergütung für individuelle Beratungen durch den Verkäufer beträgt 180,00 EUR netto je angefangener Beratungsstunde. Eine Verrechnung im MaBV-Ratenplan findet nicht statt.
+**3.5** Sonderwünsche. Sonderwünsche des Käufers außerhalb der Standardausstattung sind gesondert zu beauftragen und vor Beginn der jeweils betroffenen Bauleistung auf Grundlage des Nachtragsangebots vollständig zu zahlen, damit Planung, Bestellung und Bauablauf nicht verzögert werden. Die Vergütung für individuelle Beratungen durch den Verkäufer beträgt 180,00 EUR netto je angefangener Beratungsstunde. Die Parteien sind sich einig, dass Sonderwunschentgelte gesonderte Zusatzleistungen betreffen und nicht in den MaBV-Ratenplan einzustellen sind.
 
 \newpage
 
@@ -160,9 +160,9 @@ Der Verkäufer hat dem Käufer keine Sicherheit nach § 650m Abs. 2 BGB zu stell
 
 **4.1** Der Verkäufer bevollmächtigt und ermächtigt hiermit den Käufer, mit der Befugnis zur Erteilung von Untervollmachten, an dem Kaufgegenstand Grundpfandrechte zugunsten von Banken, Sparkassen oder sonstigen Kreditgebern zu bestellen und in das Grundbuch eintragen zu lassen.
 
-**4.2** Eine persönliche Haftung des Käufers darf dabei begründet werden, soweit dies die finanzierende Bank zur Auszahlung der Darlehensvaluta verlangt. Eine betragsmäßige Begrenzung der persönlichen Haftung ist nicht erforderlich.
+**4.2** Eine persönliche Haftung des Käufers darf dabei in dem Umfang begründet werden, den die finanzierende Bank nach ihren Beleihungs- und Auszahlungsvorgaben verlangt. Die Beteiligten gehen davon aus, dass die persönliche Haftungsübernahme banküblich ist und im Innenverhältnis ausschließlich der Finanzierung des Kaufgegenstandes dient.
 
-**4.3** Die Grundpfandrechte können in jeder Höhe und mit jeder gesetzlich zulässigen Verzinsung bestellt werden, ohne dass eine betragsmäßige Obergrenze einzuhalten ist. Der Käufer trägt sämtliche damit verbundenen Kosten.
+**4.3** Die Grundpfandrechte können einschließlich Zinsen, Nebenleistungen und Vollstreckungsunterwerfung in banküblicher Höhe bestellt werden; eine interne Begrenzung auf den Finanzierungszweck bleibt dem Käufer und seiner Bank vorbehalten. Der Käufer trägt sämtliche mit Bestellung, Rangbeschaffung, Treuhandabwicklung und Löschung verbundenen Kosten.
 
 \newpage
 
@@ -174,7 +174,7 @@ Der Verkäufer hat dem Käufer keine Sicherheit nach § 650m Abs. 2 BGB zu stell
 
 Der Verkäufer organisiert die Planung, Fachplanung, Projektsteuerung und Objektüberwachung des Bauvorhabens in eigener Verantwortung. Soweit für das Bauvorhaben Leistungen erbracht werden, die ihrer Art nach Leistungsphasen der Honorarordnung für Architekten und Ingenieure entsprechen, dienen diese Leistungen ausschließlich dem Verhältnis des Verkäufers zu seinen Planern und Fachplanern. Aus der Beauftragung oder Nichtbeauftragung einzelner Leistungsphasen, insbesondere der Ausführungsplanung, der Mitwirkung bei der Vergabe, der Objektüberwachung oder der Objektbetreuung, werden keine eigenen Rechte des Käufers gegen Planer, Fachplaner, Projektsteuerer, Bauleiter oder sonstige Baubeteiligte begründet.
 
-Die laufenden Berichte der Objektüberwachung, Bautagebücher, Prüfvermerke, Mängellisten, Kostenberichte und Terminfortschreibungen sind interne Arbeitsunterlagen des Verkäufers. Der Käufer erhält hieraus Auszüge nur, soweit sie nach zwingendem Recht zur Finanzierung, Förderung, öffentlich-rechtlichen Nachweisführung oder Abnahme erforderlich sind. Der Käufer erkennt an, dass die technische Qualitätssicherung des Verkäufers im Interesse einer einheitlichen Projektdurchführung zentralisiert erfolgt.
+Die laufenden Berichte der Objektüberwachung, Bautagebücher, Prüfvermerke, Mängellisten, Kostenberichte und Terminfortschreibungen sind interne Arbeitsunterlagen des Verkäufers. Der Käufer erhält hieraus Auszüge nur, soweit sie nach zwingendem Recht zur Finanzierung, Förderung, öffentlich-rechtlichen Nachweisführung oder Abnahme erforderlich sind oder der Verkäufer dies aus Gründen einer geordneten Projektkommunikation für zweckmäßig hält. Der Käufer erkennt an, dass die technische Qualitätssicherung des Verkäufers im Interesse einer einheitlichen Projektdurchführung zentralisiert erfolgt und nicht durch Einzelweisungen einzelner Erwerber ersetzt werden kann.
 
 **5.3** Soweit die Baubeschreibung Wahlmöglichkeiten bei Material, Farbe oder Form vorsieht, erhält der Käufer im Rahmen einer Bemusterung die Möglichkeit, sofern der Baufortschritt es noch zulässt, eine entsprechende Auswahl zu treffen.
 
@@ -184,11 +184,13 @@ Die Bemusterung hat spätestens vier Wochen nach Aufforderung des Verkäufers st
 
 **5.4** Auf eine von den Bauplänen, der Baubeschreibung und dem Kaufvertrag abweichende Ausführung und Ausstattung des Vertragsgegenstandes hat der Käufer keinen Anspruch. Visualisierungen, Renderings, Vertriebsbroschüren, die Show-Wohnung sowie sonstige Verkaufsunterlagen sind ausdrücklich nicht Bestandteil dieses Vertrages und begründen keine Beschaffenheitsvereinbarung.
 
-**5.5** Soweit die Baubeschreibung keine oder unbestimmte Angaben hinsichtlich notwendiger Leistungen enthält, ist der Verkäufer gemäß § 315 BGB zur Leistungsbestimmung nach billigem Ermessen berechtigt. Die von dem Verkäufer bestimmte Leistung muss von einfacher Art und Güte sein und der allgemeinen Qualität des Bauvorhabens entsprechen.
+**5.5** Soweit die Baubeschreibung keine oder unbestimmte Angaben hinsichtlich notwendiger Leistungen enthält, ist der Verkäufer gemäß § 315 BGB zur Leistungsbestimmung nach billigem Ermessen berechtigt. Maßgeblich ist eine solide, dem Gesamtcharakter des Bauvorhabens entsprechende Ausführung, wobei technische Zweckmäßigkeit, Lieferbarkeit, Wartbarkeit, Kostenstabilität und ein einheitliches Erscheinungsbild des Quartiers zu berücksichtigen sind.
 
 **5.6** Der Verkäufer hat die Leistungen nach den anerkannten Regeln der Technik **zum Tag der Erteilung der Baugenehmigung** zu errichten. Spätere Änderungen der anerkannten Regeln der Technik wirken sich auf die geschuldete Leistung nicht aus.
 
 **5.7** Änderungen in Planung und Ausführung durch den Verkäufer sind zulässig, wenn sie aufgrund behördlicher Vorgaben oder Auflagen, Gesetzesänderungen, statischer Notwendigkeit, Bauablauf-Erfordernissen oder sonstigen Rechtsgründen erforderlich sind.
+
+Änderungen sind ferner zulässig, wenn sie aufgrund der Fortschreibung der Ausführungsplanung, der Koordination der Fachgewerke, der Verfügbarkeit von Baustoffen oder der wirtschaftlichen Gesamtsteuerung des Quartiers zweckmäßig erscheinen und die gewöhnliche Nutzbarkeit des Kaufgegenstandes nicht wesentlich beeinträchtigen. Gleichwertige Ausführungen gelten nicht als Abweichung vom Bausoll.
 
 **5.8** Termine
 
@@ -212,29 +214,31 @@ Behinderungen bei der Herstellung des Bauvorhabens aus Umständen, die vom Verk�
 
 **5.13** Technische Anlagen, Wartung, Betrieb. Der Käufer nimmt zur Kenntnis, dass Aufzüge, Lüftungsanlagen, Entwässerungsanlagen, Pumpen, Tiefgaragenentlüftung, Brandmelde- und Rauchabzugseinrichtungen, Heizungs- und Warmwassertechnik sowie etwaige Lade- oder Photovoltaikinfrastruktur regelmäßiger Wartung bedürfen. Der Verkäufer oder der Erstverwalter ist berechtigt, zur Sicherstellung der Erstbetriebsphase Wartungs-, Betriebsführungs-, Mess- und Energielieferungsverträge mit einer anfänglichen Laufzeit von bis zu sieben Jahren abzuschließen. Die daraus entstehenden Kosten tragen die Eigentümer nach Maßgabe der Teilungserklärung.
 
-**5.14** Der Käufer erklärt, dass ihm von Vertriebsmitarbeitern oder anderen Beauftragten oder Mitarbeitern des Verkäufers keinerlei Zusagen zur Ausgestaltung des Kaufgegenstandes gemacht wurden, die nicht Gegenstand des vorliegenden Vertrages oder der diesem Vertrag in Bezug genommenen Urkunden sind.
+**5.14** Kostenanpassung bei nachträglichen Anforderungen. Werden nach Beurkundung aufgrund öffentlich-rechtlicher Vorgaben, Förderbedingungen, geänderter technischer Anforderungen, Energie- oder Versorgungskonzepte oder infolge der Fortschreibung der Fachplanung Maßnahmen erforderlich oder zweckmäßig, die in der Kalkulation des Verkäufers nicht enthalten waren, kann der Verkäufer eine angemessene Anpassung der hierdurch betroffenen Kostenpositionen verlangen. Der Verkäufer wird dem Käufer die Anpassung in Textform erläutern; eine Offenlegung der Gesamtkalkulation des Projekts ist nicht geschuldet.
+
+**5.15** Der Käufer erklärt, dass ihm von Vertriebsmitarbeitern oder anderen Beauftragten oder Mitarbeitern des Verkäufers keinerlei Zusagen zur Ausgestaltung des Kaufgegenstandes gemacht wurden, die nicht Gegenstand des vorliegenden Vertrages oder der diesem Vertrag in Bezug genommenen Urkunden sind.
 
 \newpage
 
 # § 6 Wirtschaftlicher Besitzübergang, Abnahme, Schlüsselübergabe
 
-**6.1** Besitz, Nutzen, Lasten, Steuern, Abgaben und Gefahren des Kaufgegenstandes gehen mit dem Tag der Übergabe der Sondereigentumseinheit auf den Käufer über. Die Schlüsselübergabe an den Käufer erfolgt erst nach vollständiger Zahlung des Gesamtkaufpreises einschließlich aller Sonderwunsch- und Mehrkostenbeträge. Bestehende, der Übergabe nicht entgegenstehende Mängel berechtigen den Käufer nicht zur Verweigerung der Zahlung der Schlussrate oder zur Forderung nach Schlüsselübergabe Zug um Zug gegen Sicherheitsleistung.
+**6.1** Besitz, Nutzen, Lasten, Steuern, Abgaben und Gefahren des Kaufgegenstandes gehen mit dem Tag der Übergabe der Sondereigentumseinheit auf den Käufer über. Die Schlüsselübergabe setzt voraus, dass die bis dahin fälligen Kaufpreis- und Sonderwunschbeträge ausgeglichen sind oder eine vom Verkäufer akzeptierte Treuhand- oder Sicherungsabrede vorliegt. Restarbeiten und Mängel, die der Wohnnutzung nicht entgegenstehen, werden im Übergabeprotokoll erfasst und nach Maßgabe der technischen Abläufe beseitigt.
 
 **6.2** Abnahme der Sondereigentumseinheit
 
 6.2.1 Die Sondereigentumseinheit wird vor Bezug nach einer gemeinsamen Begehung abgenommen. Hierzu teilt der Verkäufer dem Käufer schriftlich die bezugsfertige Herstellung mit und fordert ihn unter Setzung einer Frist von zehn Tagen zur Begehung und Abnahme auf.
 
-Erscheint der Käufer zum mitgeteilten Termin nicht oder verweigert er die Unterzeichnung der Niederschrift ohne Angabe eines Grundes, gilt die Sondereigentumseinheit mit Ablauf des Termins als abgenommen. Ein gesonderter Hinweis nach § 640 Abs. 2 S. 2 BGB ist hierfür nicht erforderlich, da der Käufer mit Unterzeichnung dieses Vertrages bereits umfassend belehrt worden ist.
+Erscheint der Käufer zum mitgeteilten Termin nicht oder verweigert er die Unterzeichnung der Niederschrift, ohne in Textform mindestens einen wesentlichen, der Abnahme entgegenstehenden Mangel konkret zu bezeichnen, gilt die Sondereigentumseinheit mit Ablauf des Termins als abgenommen. Die Aufforderung zur Abnahme darf zur Vermeidung von Wiederholungen auf diese Regelung verweisen.
 
-6.2.2 Schönheitsfehler und geringfügige Abweichungen, deren Beseitigung nicht mehr als 3 % der Sondereigentumsteilbetragssumme erfordern würde, sind als gewöhnlich und vertragsgemäß hinzunehmen und begründen keine Mängelrechte.
+6.2.2 Geringfügige Unregelmäßigkeiten, optische Abweichungen im Rahmen handwerklicher Toleranzen und Restpunkte, deren Beseitigung die Gebrauchstauglichkeit nicht spürbar beeinträchtigt, stehen der Abnahme nicht entgegen. Die Parteien gehen davon aus, dass solche Punkte im Rahmen der üblichen Nachlaufbearbeitung abgearbeitet werden.
 
 **6.3** Abnahme des Gemeinschaftseigentums
 
-6.3.1 Die Abnahme des Gemeinschaftseigentums obliegt der WEG-Verwaltung, die vom Verkäufer als Erstverwalter eingesetzt wird. Die WEG-Verwaltung ist berechtigt und verpflichtet, das Gemeinschaftseigentum nach Fertigstellung mit Wirkung für und gegen sämtliche Erwerber abzunehmen.
+6.3.1 Zur Sicherstellung einer einheitlichen und fachlich koordinierten Abnahme des Gemeinschaftseigentums wird die vom Verkäufer bestellte Erstverwaltung die Abnahme organisatorisch vorbereiten und die Erwerber hierüber informieren. Sie ist berechtigt, die Abnahmeerklärung für die Gemeinschaft abzugeben, soweit die Erwerbergemeinschaft nicht vor dem Abnahmetermin einen abweichenden Vertreter benennt.
 
-6.3.2 Der vom Verkäufer eingesetzte Erstverwalter wird die Abnahme nach Begutachtung durch einen vom Verkäufer benannten Sachverständigen erklären. Die Kosten des Sachverständigen tragen Verkäufer und Käufer hälftig.
+6.3.2 Die Erstverwaltung wird hierzu einen öffentlich bestellten und vereidigten oder vergleichbar qualifizierten Sachverständigen hinzuziehen, der aus einer vom Verkäufer vorgeschlagenen Liste beauftragt wird. Die Kosten des Sachverständigen werden als Kosten der erstmaligen Inbetriebnahme des Gemeinschaftseigentums behandelt.
 
-6.3.3 Reicht die Begutachtung durch den Sachverständigen aus, gilt die Abnahme mit Übermittlung der Abnahmeerklärung an die WEG-Verwaltung als erfolgt; einer Mitwirkung der einzelnen Erwerber bedarf es nicht.
+6.3.3 Nach Übermittlung des Sachverständigenprotokolls und der Abnahmeerklärung an die Erstverwaltung gilt die Abnahme des Gemeinschaftseigentums gegenüber den Erwerbern als erfolgt, soweit nicht innerhalb von zehn Bankarbeitstagen schriftlich wesentliche, im Protokoll nicht berücksichtigte Abnahmehindernisse benannt werden.
 
 \newpage
 
@@ -248,11 +252,11 @@ Erscheint der Käufer zum mitgeteilten Termin nicht oder verweigert er die Unter
 
 # § 8 Zutritt zur Baustelle
 
-**8.1** Der Käufer darf das Grundstück während der Bauzeit aus Gründen der Verkehrssicherheit, des Arbeitsschutzes und der geordneten Bauabwicklung nur nach vorheriger Abstimmung mit dem Verkäufer betreten. Der Verkäufer bietet dem Käufer nach billigem Ermessen bis zu zwei begleitete Besichtigungstermine vor Bezugsfertigkeit sowie einen Termin zur Abnahme der Sondereigentumseinheit an. Weitergehende Besichtigungen können abgelehnt werden, wenn sie den Bauablauf, Sicherheitsvorgaben, Nachunternehmerinteressen oder den Vertrieb anderer Einheiten beeinträchtigen.
+**8.1** Der Käufer darf das Grundstück während der Bauzeit aus Gründen der Verkehrssicherheit, des Arbeitsschutzes und der geordneten Bauabwicklung nur nach vorheriger Abstimmung mit dem Verkäufer betreten. Der Verkäufer bietet dem Käufer nach billigem Ermessen bis zu zwei begleitete Besichtigungstermine vor Bezugsfertigkeit sowie einen Termin zur Abnahme der Sondereigentumseinheit an. Weitere Termine können insbesondere bei anstehenden Ratenmeilensteinen ermöglicht werden, sofern Bauablauf, Sicherheitsvorgaben, Nachunternehmerinteressen, Datenschutz und der Vertrieb anderer Einheiten nicht beeinträchtigt werden.
 
-**8.2** Der Käufer kann zu den nach § 8.1 zugelassenen Terminen einen privaten Sachverständigen hinzuziehen, sofern dieser dem Verkäufer spätestens fünf Bankarbeitstage vor dem Termin benannt wird, einen geeigneten Versicherungsschutz nachweist und sich verpflichtet, keine Weisungen an Baubeteiligte zu erteilen, keine Bauteilöffnungen vorzunehmen und keine Fotos von fremden Einheiten, Beschäftigten, Nachunternehmerleistungen oder sicherheitsrelevanten Einrichtungen anzufertigen. Feststellungen des privaten Sachverständigen entfalten keine Bindungswirkung für die Objektüberwachung des Verkäufers und hemmen nicht die Fälligkeit angeforderter Raten.
+**8.2** Der Käufer kann zu den nach § 8.1 zugelassenen Terminen einen privaten Sachverständigen hinzuziehen, sofern dieser dem Verkäufer spätestens fünf Bankarbeitstage vor dem Termin benannt wird, einen geeigneten Versicherungsschutz nachweist und sich verpflichtet, keine Weisungen an Baubeteiligte zu erteilen, keine Bauteilöffnungen vorzunehmen und keine Fotos von fremden Einheiten, Beschäftigten, Nachunternehmerleistungen oder sicherheitsrelevanten Einrichtungen anzufertigen. Feststellungen des privaten Sachverständigen werden vom Verkäufer geprüft, entfalten jedoch keine Bindungswirkung für die Objektüberwachung des Verkäufers und berühren die Fälligkeit angeforderter Raten nur bei rechtzeitigem, prüffähigem und auf den konkreten Ratenmeilenstein bezogenem Gegenvermerk.
 
-**8.3** Verstöße gegen die Zutritts- und Verhaltensregelungen berechtigen den Verkäufer zur Geltendmachung einer Vertragsstrafe in Höhe von 2 500,00 EUR pro Vorfall. Weitergehende Ansprüche bleiben unberührt.
+**8.3** Bei Verstößen gegen die Zutritts- und Verhaltensregelungen kann der Verkäufer weitere Baustellentermine von zusätzlichen Sicherheitsauflagen abhängig machen und für jeden schuldhaften Verstoß eine pauschale Bearbeitungs- und Sicherheitskostenbeteiligung in Höhe von 2 500,00 EUR geltend machen. Dem Käufer bleibt der Nachweis eines geringeren Aufwandes vorbehalten.
 
 \newpage
 
@@ -264,17 +268,17 @@ Erscheint der Käufer zum mitgeteilten Termin nicht oder verweigert er die Unter
 
 **9.3** Alle Ansprüche und Rechte des Käufers wegen eines Sachmangels des Grundstücks sind ausgeschlossen, ausgenommen Schadensersatzansprüche wegen Vorsatzes.
 
-**9.4** Hinsichtlich des herzustellenden Bauwerks gelten die Regelungen des Werkvertragsrechts gem. §§ 633 ff. BGB mit folgender Maßgabe:
+**9.4** Hinsichtlich des herzustellenden Bauwerks gelten die Regelungen des Werkvertragsrechts gem. §§ 633 ff. BGB mit folgender Maßgabe und zur Sicherung einer geordneten Gewährleistungsabwicklung:
 
-- Der Käufer kann zuerst nur Nacherfüllung verlangen. Ist das Verlangen der Nacherfüllung unzumutbar, verweigert der Verkäufer die Nacherfüllung oder schlägt diese dreimal fehl, kann der Käufer — jeweils bei Vorliegen der gesetzlichen Voraussetzungen — den Kaufpreis angemessen mindern oder vom Vertrag zurücktreten.
-- Das Selbstvornahmerecht des Käufers nach § 637 BGB ist ausgeschlossen.
-- Mängel sind binnen einer Ausschlussfrist von 14 Kalendertagen nach Entdeckung schriftlich gegenüber dem Verkäufer per Einwurf-Einschreiben zu rügen. Nach Ablauf dieser Frist sind sämtliche Ansprüche und Rechte wegen des Mangels ausgeschlossen.
-- Die Verjährungsfrist für Mängelansprüche beträgt zwei Jahre ab schriftlicher Abnahmebestätigung durch den Verkäufer.
-- Mängelbeseitigung erfolgt durch vom Verkäufer benannte und beauftragte Handwerker. Die Beauftragung anderer Handwerker durch den Käufer entbindet den Verkäufer von jeder Verpflichtung.
+- Mängelanzeigen sind mit konkreter Beschreibung, Lageangabe, Foto und gewünschter Kontaktaufnahme an die vom Verkäufer benannte Gewährleistungsstelle zu richten.
+- Der Käufer wird dem Verkäufer zunächst Gelegenheit zur Prüfung und Nacherfüllung geben; Ersatzvornahmen vor Abschluss dieser Prüfung sind nur bei Gefahr im Verzug oder nach schriftlicher Freigabe des Verkäufers erstattungsfähig.
+- Zur Vermeidung von Folgeschäden sollen Mängel binnen 14 Kalendertagen nach Entdeckung in Textform angezeigt werden. Später angezeigte Punkte werden im Rahmen der Gewährleistungsbearbeitung berücksichtigt, soweit eine Zuordnung zum Verantwortungsbereich des Verkäufers noch möglich ist.
+- Für Verschleißteile, einstellungsbedürftige Anlagen und wartungsabhängige Bauteile gelten die jeweiligen Wartungs- und Bedienungshinweise. Unterbleibt die nach den Hersteller- oder Betreiberunterlagen vorgesehene Wartung, wird vermutet, dass hierauf beruhende Funktionsstörungen nicht vom Verkäufer zu vertreten sind.
+- Die Verjährungsfrist für Mängelansprüche beträgt zwei Jahre ab der vom Verkäufer dokumentierten Abnahmebestätigung, soweit zwingendes Recht keine längere Frist vorschreibt.
 
 **9.5** Schäden an Gebrauchsteilen und sonstigen Bauteilen, die aufgrund bestimmungsgemäßen Gebrauches über eine nur begrenzte Nutzungsdauer verfügen und/oder ständiger Wartung bedürfen, stellen keinen Mangel dar.
 
-**9.6** Der Verkäufer ist berechtigt, dem Käufer für den Fall, dass bei der Abnahme unwesentliche Mängel und/oder unwesentliche Restarbeiten festgestellt werden, eine unwiderrufliche selbstschuldnerische Bürgschaft eines Bürgen gemäß § 2 Abs. 2 MaBV zur Abwendung des Zurückbehaltungsrechts auszuhändigen. Die Bürgschaft ist vom Käufer mit Unterzeichnung des Abnahmeprotokolls unverzüglich an den Verkäufer zurückzugeben; die Rückgabe ist unabhängig davon zu erklären, ob die Restarbeiten tatsächlich erbracht oder die Mängel tatsächlich beseitigt sind.
+**9.6** Werden bei Übergabe oder Abnahme unwesentliche Mängel oder Restarbeiten festgestellt, kann der Verkäufer zur Beschleunigung der Übergabe einen Restarbeitenplan mit angemessener Kostenbewertung oder eine Bürgschaft eines Bürgen gemäß § 2 Abs. 2 MaBV stellen. Die Parteien werden den Einbehalt auf den nach dem Restarbeitenplan verbleibenden voraussichtlichen Aufwand begrenzen; nach Anzeige der Abarbeitung ist eine gestellte Sicherheit freizugeben, sofern der Käufer nicht binnen zehn Bankarbeitstagen substantiiert widerspricht.
 
 \newpage
 
@@ -282,7 +286,7 @@ Erscheint der Käufer zum mitgeteilten Termin nicht oder verweigert er die Unter
 
 **10.1** Zur Sicherung des Anspruchs des Käufers auf Verschaffung des Eigentums an dem Kaufgegenstand wird die Eintragung einer Eigentumsvormerkung nach § 883 BGB zugunsten des Käufers im Wohnungsgrundbuch durch den Verkäufer bewilligt und durch die Parteien beantragt.
 
-**10.2** Die Vormerkung steht unter der auflösenden Bedingung der Einreichung einer Erklärung des amtierenden Notars beim Grundbuchamt, dass der gesicherte Anspruch nicht (mehr) besteht. Eine inhaltliche Prüfung dieser Erklärung durch das Grundbuchamt findet nicht statt. Der Verkäufer ist berechtigt, eine derartige Erklärung des Notars im Falle des Zahlungsverzuges des Käufers nach § 3.2 letzter Absatz unmittelbar herbeizuführen.
+**10.2** Zur Vermeidung grundbuchlicher Blockaden bewilligt der Käufer bereits heute die Löschung der Vormerkung für den Fall, dass der gesicherte Anspruch infolge Rücktritts, einvernehmlicher Aufhebung, endgültiger Kaufpreisnichtzahlung oder sonstiger Erledigung nicht mehr besteht. Der Notar darf von dieser Bewilligung Gebrauch machen, wenn ihm der Verkäufer die Erledigung des gesicherten Anspruchs in Textform anzeigt und der Käufer nicht binnen zehn Bankarbeitstagen nach notarieller Anhörung widerspricht.
 
 **10.3** Der Käufer beantragt schon heute die Löschung der Eigentumsvormerkung Zug um Zug mit Vollzug der Auflassung.
 
@@ -296,9 +300,9 @@ Verkäufer und Käufer sind über den Eigentumsübergang einig. Sie bewilligen u
 
 # § 12 Vollmachten
 
-**12.1** Der Käufer bevollmächtigt den Verkäufer unwiderruflich, die Teilungserklärung einschließlich Gemeinschaftsordnung jederzeit ohne weitere Mitwirkung des Käufers zu ändern, insbesondere zur Anpassung der Aufteilungspläne, zur Verschiebung von Sondernutzungsrechten und zur Änderung der Kostentragungsregelungen. Die Vollmacht erstreckt sich auch auf die Sondereigentumseinheit des Käufers, soweit dies aus baulichen oder wirtschaftlichen Gründen erforderlich ist.
+**12.1** Der Käufer bevollmächtigt den Verkäufer, die Teilungserklärung einschließlich Gemeinschaftsordnung ohne weitere Mitwirkung des Käufers zu ändern, soweit dies zur Durchführung des Gesamtprojekts, zur Anpassung der Aufteilungspläne, zur Berichtigung offenbarer Unrichtigkeiten, zur Bildung oder Anpassung von Untergemeinschaften, zur Verschiebung oder Konkretisierung von Sondernutzungsrechten, zur Änderung technischer Gemeinschaftsflächen oder zur sachgerechten Kostenverteilung erforderlich oder zweckmäßig ist. Die Vollmacht erstreckt sich auch auf die Sondereigentumseinheit des Käufers, soweit deren wirtschaftlicher Zuschnitt nicht wesentlich verändert wird.
 
-**12.2** Die Vollmacht ist von den Beschränkungen des § 181 BGB befreit. Der Käufer verzichtet auf Widerruf, soweit dies rechtlich zulässig ist.
+**12.2** Die Vollmacht ist im Außenverhältnis unbeschränkt und von den Beschränkungen des § 181 BGB befreit. Im Innenverhältnis soll sie nur projektbezogen und unter Wahrung der berechtigten Interessen des Käufers ausgeübt werden. Ein Widerruf ist nur aus wichtigem Grund zulässig.
 
 **12.3** Der Käufer bevollmächtigt den Verkäufer ferner, sämtliche zur Durchführung dieses Vertrages erforderlichen Anträge, Erklärungen und Verzichte beim Grundbuchamt, bei Behörden und gegenüber Dritten abzugeben.
 
@@ -330,7 +334,7 @@ Der Notar hat die Beteiligten belehrt über:
 - die gesetzliche Verjährungsfrist für Mängelansprüche im Werkvertragsrecht,
 - die Möglichkeit, eigene technische Berater hinzuzuziehen, wobei der Notar keine technische Prüfung des Baugrunds, der Bauüberwachung, der Fachplanung oder der Wirtschaftlichkeit von Betriebs- und Wartungsverträgen vorgenommen hat.
 
-Der Notar hat nicht über die Wirksamkeit einzelner Klauseln dieses Vertrages belehrt; eine inhaltliche Kontrolle der Vertragsklauseln durch den Notar ist nicht erfolgt und auch nicht geschuldet.
+Der Notar hat darauf hingewiesen, dass er als unparteiischer Amtsträger keine wirtschaftliche, steuerliche oder bautechnische Beratung übernimmt und keine Interessenvertretung einer Partei leistet. Fragen der Finanzierung, Rentabilität, technischen Zweckmäßigkeit, Wartungskosten, Förderfähigkeit und individuellen steuerlichen Auswirkungen waren nicht Gegenstand der notariellen Prüfung.
 
 \newpage
 
@@ -394,11 +398,11 @@ Bezug: Haus 4, Wohnung 4.27 (3. Obergeschoss) nebst Kellerabteil K-4.27, Terrass
 
 ## Vorbemerkungen zur Baubeschreibung
 
-**V.1** Diese Baubeschreibung beschreibt das Bausoll abschließend. Verkaufsunterlagen, Exposés, Visualisierungen, Renderings, Grundrissdarstellungen mit Möblierung sowie die Musterwohnung in Haus 5 dienen ausschließlich der Veranschaulichung und sind nicht Vertragsbestandteil.
+**V.1** Diese Baubeschreibung beschreibt das Bausoll für die vertragsgegenständliche Einheit in der für die Kaufentscheidung maßgeblichen Fassung. Verkaufsunterlagen, Exposés, Visualisierungen, Renderings, Grundrissdarstellungen mit Möblierung sowie die Musterwohnung in Haus 5 dienen der Veranschaulichung des Quartiers- und Ausstattungskonzepts und werden nur insoweit Vertragsbestandteil, als diese Baubeschreibung oder der Kaufvertrag ausdrücklich darauf Bezug nehmen.
 
 **V.2** Die in dieser Baubeschreibung genannten Fabrikate, Hersteller, Typen und Modelle sind, soweit überhaupt benannt, beispielhaft zu verstehen. Der Verkäufer ist berechtigt, gleichwertige oder gleichartige Produkte anderer Hersteller einzusetzen, soweit dies aus Gründen der Lieferbarkeit, der Bauablaufplanung, der Wirtschaftlichkeit oder aus technischen Gründen zweckmäßig erscheint. Ein Anspruch auf ein bestimmtes Fabrikat besteht nicht.
 
-**V.3** Soweit Ausführungen, Materialien, Farben oder Oberflächen nicht im Einzelnen festgelegt sind, bestimmt der Verkäufer die Ausführung nach billigem Ermessen; die Ausführung muss von einfacher Art und Güte sein und dem allgemeinen Charakter des Bauvorhabens entsprechen.
+**V.3** Soweit Ausführungen, Materialien, Farben oder Oberflächen nicht im Einzelnen festgelegt sind, bestimmt der Verkäufer die Ausführung nach billigem Ermessen unter Berücksichtigung eines einheitlichen, wertigen Quartiersbildes, der technischen Zweckmäßigkeit, der Lieferbarkeit und der späteren Wartbarkeit.
 
 **V.4** Maßangaben in Plänen sind, soweit nicht ausdrücklich als verbindlich bezeichnet, ca.-Angaben und können sich im Zuge der Ausführungsplanung, der statischen Bemessung und der Haustechniktrassen verändern. Geringfügige Verschiebungen von Wänden, Schächten, Unterzügen, Installationsführungen und abgehängten Decken bleiben vorbehalten und stellen keinen Mangel dar.
 
@@ -408,7 +412,7 @@ Bezug: Haus 4, Wohnung 4.27 (3. Obergeschoss) nebst Kellerabteil K-4.27, Terrass
 
 **1.1** Das Quartier umfasst nach derzeitiger Planung zwölf Mehrfamilienhäuser nebst Stadtvilla-Cluster, eine zweigeschossige Tiefgarage sowie Gemeinschafts- und Freiflächen. Haus 4 ist als Mehrfamilienhaus mit Staffelgeschoss konzipiert.
 
-**1.2** Die Ausstattung entspricht einem zeitgemäßen, gehobenen Standard üblicher Qualität. Die konkrete Ausgestaltung der einzelnen Gewerke ergibt sich aus den nachstehenden Abschnitten.
+**1.2** Die Ausstattung entspricht einem zeitgemäßen, gehobenen Standard üblicher Qualität mit ruhiger, langlebiger Materialanmutung. Die konkrete Ausgestaltung der einzelnen Gewerke ergibt sich aus den nachstehenden Abschnitten und den im Zuge der Ausführungsplanung fortgeschriebenen Detailfestlegungen.
 
 **1.3** Konstruktive und gestalterische Änderungen, die sich aus der Fortschreibung der Ausführungsplanung, aus behördlichen Auflagen, aus der Tragwerksplanung oder aus der Abstimmung der Fachplaner ergeben, bleiben vorbehalten, soweit der Gesamtcharakter des Bauvorhabens gewahrt bleibt.
 
@@ -440,7 +444,7 @@ Bezug: Haus 4, Wohnung 4.27 (3. Obergeschoss) nebst Kellerabteil K-4.27, Terrass
 
 # 6 Fenster, Außentüren, Verglasung
 
-**6.1** Die Fenster werden als Kunststoff- oder Aluminiumfenster mit Mehrscheiben-Isolierverglasung ausgeführt; die Profilwahl trifft der Verkäufer. Die Wohnung erhält Fenster in marktüblicher Ausführung.
+**6.1** Die Fenster werden als Kunststoff-, Kunststoff-Aluminium- oder Aluminiumfenster mit Mehrscheiben-Isolierverglasung ausgeführt; Profilwahl, Beschlag und Farbton trifft der Verkäufer im Rahmen des Fassaden- und Energiekonzepts. Die Wohnung erhält Fenster in marktüblicher Ausführung.
 
 **6.2** Ein Teil der Fenster und Fenstertüren wird mit außenliegendem Sonnenschutz ausgestattet. Welche Öffnungen Sonnenschutz erhalten, legt der Verkäufer fest.
 
@@ -454,7 +458,7 @@ Bezug: Haus 4, Wohnung 4.27 (3. Obergeschoss) nebst Kellerabteil K-4.27, Terrass
 
 # 8 Bodenbeläge
 
-**8.1** Die Wohn- und Schlafräume erhalten einen Bodenbelag in gehobener Qualität nach Wahl aus dem Standardsortiment des Verkäufers. Bad und Gäste-WC erhalten Fliesenbeläge aus dem Standardsortiment.
+**8.1** Die Wohn- und Schlafräume erhalten einen Bodenbelag in gehobener Anmutung nach Wahl aus dem Standardsortiment des Verkäufers. Bad und Gäste-WC erhalten Fliesenbeläge aus dem Standardsortiment; Format, Verlegebild und Fugenfarbe richten sich nach der Bemusterung und den technischen Erfordernissen.
 
 **8.2** Der Käufer kann im Rahmen der Bemusterung aus dem jeweils gültigen Standardsortiment auswählen, soweit der Baufortschritt dies noch zulässt. Eine Auswahl außerhalb des Standardsortiments ist als Sonderwunsch gesondert zu vereinbaren und zu vergüten.
 
@@ -464,7 +468,7 @@ Bezug: Haus 4, Wohnung 4.27 (3. Obergeschoss) nebst Kellerabteil K-4.27, Terrass
 
 # 10 Sanitärobjekte und Sanitärausstattung
 
-**10.1** Die Sanitärräume werden mit Sanitärobjekten in weißer Standardausführung ausgestattet (Waschtisch, WC, Dusche und/oder Badewanne je nach Grundriss). Armaturen werden als Einhebelmischer in marktüblicher Qualität geliefert.
+**10.1** Die Sanitärräume werden mit Sanitärobjekten in weißer, zeitloser Ausführung ausgestattet (Waschtisch, WC, Dusche und/oder Badewanne je nach Grundriss). Armaturen werden als Einhebelmischer in marktüblicher Qualität aus dem Sanitärprogramm des Verkäufers geliefert.
 
 **10.2** Anzahl, Anordnung und Art der Sanitärobjekte ergeben sich aus den Ausführungsplänen. Änderungen der Anordnung infolge der Haustechnik- und Schachtplanung bleiben vorbehalten.
 
@@ -476,7 +480,7 @@ Bezug: Haus 4, Wohnung 4.27 (3. Obergeschoss) nebst Kellerabteil K-4.27, Terrass
 
 # 12 Lüftung
 
-**12.1** Innenliegende Bäder und fensterlose Räume werden be- und entlüftet. Ob und in welchem Umfang eine kontrollierte Wohnraumlüftung mit Wärmerückgewinnung ausgeführt wird, richtet sich nach den energetischen Nachweisen und der Festlegung des Verkäufers. Eine bestimmte Luftwechselrate oder eine bestimmte sommerliche Raumtemperatur wird nicht geschuldet.
+**12.1** Innenliegende Bäder und fensterlose Räume werden be- und entlüftet. Ob und in welchem Umfang eine kontrollierte Wohnraumlüftung mit Wärmerückgewinnung ausgeführt wird, richtet sich nach den energetischen Nachweisen, dem Lüftungskonzept und der Festlegung des Verkäufers. Eine bestimmte Luftwechselrate, ein bestimmter Schallschutzwert der Lüftung oder eine bestimmte sommerliche Raumtemperatur wird nicht geschuldet, soweit diese Werte nicht in einer Übergabeunterlage ausdrücklich genannt sind.
 
 # 13 Elektroinstallation, Medien, Lade- und PV-Infrastruktur
 
@@ -500,11 +504,11 @@ Bezug: Haus 4, Wohnung 4.27 (3. Obergeschoss) nebst Kellerabteil K-4.27, Terrass
 
 **16.1** Schall-, Wärme-, Feuchte- und Brandschutz werden in dem öffentlich-rechtlich erforderlichen Umfang nachgewiesen und ausgeführt. Ein über die Mindestanforderungen hinausgehender, erhöhter Schallschutz wird nur geschuldet, soweit er nachstehend mit Zahlenwerten ausdrücklich vereinbart ist.
 
-**16.2** Konkrete Zahlenwerte zum erhöhten Schallschutz: *(in dieser Fassung nicht eingetragen)*.
+**16.2** Die schallschutztechnische Auslegung richtet sich nach dem projektbezogenen Nachweiskonzept und den öffentlich-rechtlich erforderlichen Mindestanforderungen. Ein erhöhter Schallschutz bedarf einer ausdrücklichen, zahlenmäßig bezeichneten Vereinbarung.
 
 # 17 Energetischer Standard
 
-**17.1** Das Gebäude wird nach den zum Tag der Erteilung der Baugenehmigung geltenden energetischen Anforderungen errichtet. Eine bestimmte KfW-Effizienzhausklasse, ein bestimmter Primärenergiebedarf oder eine bestimmte GEG-Stufe wird nicht geschuldet, soweit nicht ausdrücklich mit Zahlenwert vereinbart.
+**17.1** Das Gebäude wird nach den zum Tag der Erteilung der Baugenehmigung geltenden energetischen Anforderungen errichtet. Energieausweis, Nachweise und etwaige Förderunterlagen werden nach Maßgabe der öffentlich-rechtlichen und finanzierungsbezogenen Erfordernisse erstellt. Eine bestimmte KfW-Effizienzhausklasse, ein bestimmter Primärenergiebedarf oder eine bestimmte GEG-Stufe wird nicht geschuldet, soweit nicht ausdrücklich mit Zahlenwert vereinbart.
 
 # 18 Außenanlagen, Gemeinschaftsflächen
 
@@ -514,7 +518,7 @@ Bezug: Haus 4, Wohnung 4.27 (3. Obergeschoss) nebst Kellerabteil K-4.27, Terrass
 
 # 19 Wohnflächen
 
-**19.1** Die Wohnfläche der Wohnung 4.27 beträgt ca. 118,4 m². Die Ermittlung erfolgt nach DIN 277. Maßgeblich ist die nach Fertigstellung tatsächlich erbrachte Ausführung; die ca.-Angabe ist keine zugesicherte Eigenschaft.
+**19.1** Die Wohnfläche der Wohnung 4.27 beträgt ca. 118,4 m². Die Ermittlung erfolgt nach DIN 277 anhand der Planungsstände. Maßgeblich ist die nach Fertigstellung tatsächlich erbrachte Ausführung; die ca.-Angabe dient der Objektbeschreibung und ist keine selbständige Garantie.
 
 # 20 Bemusterung, Sonderwünsche
 
@@ -528,7 +532,7 @@ Bezug: Haus 4, Wohnung 4.27 (3. Obergeschoss) nebst Kellerabteil K-4.27, Terrass
 
 # Schlussbestimmungen der Baubeschreibung
 
-**S.1** Bei Widersprüchen zwischen dieser Baubeschreibung, den Plänen und dem Kaufvertrag gilt die Regelung, die der Verkäufer im Rahmen seines billigen Ermessens für sachgerecht hält.
+**S.1** Bei Widersprüchen zwischen dieser Baubeschreibung, den Plänen, Bemusterungsunterlagen und dem Kaufvertrag ist zunächst eine technisch und wirtschaftlich sachgerechte Auslegung im Sinne einer einheitlichen Projektausführung vorzunehmen. Der Verkäufer trifft hierzu die erforderlichen Koordinierungsentscheidungen nach billigem Ermessen.
 
 **S.2** Diese Baubeschreibung gilt in der Fassung Februar 2026, Version 7.2. Frühere Fassungen verlieren ihre Gültigkeit. Der Verkäufer behält sich vor, die Baubeschreibung im Zuge der Ausführungsplanung fortzuschreiben, soweit der Gesamtcharakter des Bauvorhabens gewahrt bleibt.
 
