@@ -53,6 +53,7 @@ Die Datei ist in folgende Teile gegliedert (interne Sprungmarken):
 - **Teil G — Mandatsmodule** — Nachverhandlungsbrief, Rücktrittserklärung, Klagestrategie, Vergleichsfenster.
 - **Teil H — Musterklauseln und Sonderfälle** — verbraucherfreundliche Klauselmuster, einseitige Bauträger-AGB, Sanierung im Bestand, Eigentumswohnung, Reihenhaus, Insolvenzfall.
 - **Teil I — Nichtigkeitsrisiken, Transparenzgebot und Notarhaftung** — § 307 Abs. 1 S. 2 BGB Transparenz, § 139 BGB Teil-/Gesamtnichtigkeit, § 19 BNotO Notarhaftung, Eskalationskette von Korrekturbrief bis Aufsichtsbeschwerde.
+- **Teil J — Realfall-Pattern aus Großprojekten** — anonymisierte Wiedererkennungsmuster aus beurkundeten Quartiers- und Mehrhausanlagen: Bezugsurkunden und § 13a BeurkG, Untergemeinschaften, Planungsvorbehalte, Drittwirkungs-Fallen, 7-Raten-MaBV-Plan, pauschalierter Schadensersatz statt Vertragsstrafe, Doppelabnahme mit IHK-Sachverständigem, § 315-BGB-Leistungsbestimmungsrecht, Selbstvornahmeausschluss § 637 BGB, Wohnflächentoleranz, „anerkannte Regeln der Technik"-Stichtag, Verkaufsunterlagen-Disclaimer, Sonderwünsche und Bemusterung, Belastungs- und Änderungsvollmachten. Mit Gutachtenstruktur für den Mandantenbericht und den zehn häufigsten Knackpunkten.
 
 ## 🚨 Pflicht-Prüfblock — wird bei jedem Vertrag zwingend zuerst geprüft
 

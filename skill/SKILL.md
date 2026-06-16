@@ -1,7 +1,7 @@
 ---
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige Prüfung deutscher Bauträgerverträge nach dem Ampelsystem (🔴/🟠/🟢). Erkennt MaBV-Verstöße im Ratenplan, unzulässige AGB-Klauseln nach §§ 305 ff. BGB, Risiken bei Auflassungsvormerkung und Freistellung nach § 3 MaBV, **fehlerhafte oder lückenhafte Leistungs- und Baubeschreibungen nach § 650k BGB** (Pflichtinhalte, Detaillierungstiefe, Pauschalverweise, Bemusterungsfallen, Bausoll-Lücken, Mitbeurkundungsstatus), untaugliche Vertragsstrafen, Abnahme- und Mängelrechtsfallen, Gefahrtragungs- und Eigentumsumschreibungs-Risiken. Liefert klauselgenaue Risikomatrix, Ampel-Bilanz, Gesamteinschätzung und Handlungsempfehlung — von Nachverhandlung über notarielle Korrektur bis Rücktritt und Klage. Stützt sich auf §§ 650u, 650v BGB, §§ 650a–650o BGB, § 3 MaBV, §§ 305 ff. BGB, § 311b BGB, §§ 433 ff. BGB."
-version: "1.1.0"
+version: "1.2.0"
 ---
 
 # Bauträgervertrag-Prüfer (Ampelsystem für Verbraucher)
@@ -27,6 +27,7 @@ Diese Skill-Datei trägt den vollständigen Workflow zur verbraucherseitigen Ana
 - [Teil G — Mandatsmodule: Nachverhandlung, Rücktritt, Klage](#teil-g--mandatsmodule-nachverhandlung-rücktritt-klage)
 - [Teil H — Musterklauseln und Sonderfälle](#teil-h--musterklauseln-und-sonderfälle)
 - [Teil I — Nichtigkeitsrisiken, Transparenzgebot und Notarhaftung](#teil-i--nichtigkeitsrisiken-transparenzgebot-und-notarhaftung)
+- [Teil J — Realfall-Pattern aus Großprojekten (Anschauungsmaterial)](#teil-j--realfall-pattern-aus-großprojekten-anschauungsmaterial)
 
 ## 🚨 Pflicht-Prüfblock vor jeder Vollanalyse
 
@@ -483,7 +484,19 @@ Pauschalverweise auf „branchenüblich" oder „allgemein anerkannte Regeln der
 | „bezugsfertig 18 Monate nach Baubeginn" | Brauchbar, wenn Baubeginn konkret | 🟢 |
 | Vorbehaltsklausel „höhere Gewalt, Witterung, Baustoffknappheit" weit gefasst | Aushebelung der Verbindlichkeit | 🔴 |
 
-## D.2 — Vertragsstrafen
+## D.2 — Vertragsstrafen und pauschalierter Schadensersatz
+
+**Begriffsabgrenzung.** Bauträgerverträge umgehen die strenge Vertragsstrafen-Rechtsprechung häufig, indem statt einer Vertragsstrafe ein **pauschalierter Schadensersatz** vereinbart wird (typisch: ein fester Betrag pro Tag und pro m² Wohnfläche). Unterschiede:
+
+| Merkmal | Vertragsstrafe | Pauschalierter Schadensersatz |
+| --- | --- | --- |
+| Schädigungsnachweis nötig | nein | nein (gerade das ist der Sinn der Pauschale) |
+| Weitergehender Schaden zusätzlich | nein (Anrechnung) | **ja**, wenn höher und nachgewiesen — Pauschale wird angerechnet |
+| BGH-Obergrenze pro Tag | 0,2–0,3 ‰ | (nicht direkt übertragbar; AGB-Kontrolle nach § 309 Nr. 5 BGB) |
+| Gesamtkappung | max. 5 % der Vertragssumme | wird in Bauträgerverträgen typischerweise ebenfalls auf 5 % gedeckelt |
+| Mahnung nötig | nein (mit Terminüberschreitung) | **ja**, sobald der Termin durch nicht zu vertretende Umstände nach hinten verschoben wurde — sonst Verzugsschaden verloren |
+
+**Praxisregel für Mandanten:** Bei pauschaliertem Schadensersatz immer mahnen, sobald der verschobene Termin verstrichen ist. Ohne Mahnung kein Verzug, ohne Verzug auch keine weitergehenden Schadensersatzansprüche (§ 286 BGB). Siehe auch [Teil J.6](#j6--vertragsstrafe-vs-pauschalierter-schadensersatz-realfall).
 
 Wirksamkeit einer Vertragsstrafe (BGH-Linie, live verifizieren):
 
@@ -579,6 +592,19 @@ Bei Eigentumswohnungen sind **zwei Abnahmen** zu unterscheiden:
 | „Mängelrechte erlöschen bei Veräußerung der Wohnung" | 🔴 |
 | „Geringfügige Mängel werden nicht beseitigt" | 🔴 (Aushöhlung Nacherfüllungsanspruch) |
 | „Mängelbeseitigung erfolgt durch vom Bauträger benannten Handwerker" | 🟠 |
+
+## E.4a — Selbstvornahmeausschluss § 637 BGB
+
+In vielen Bauträgerverträgen ist das Selbstvornahmerecht des Erwerbers nach § 637 BGB **formularvertraglich ausgeschlossen**. Die Wirksamkeit dieser Klausel ist höchstrichterlich nicht abschließend geklärt; der Streit ist offen — und damit für den Erwerber **angreifbar**, weil eine wirksamkeitsfreundliche Auslegung die unangemessene Benachteiligung nach § 307 BGB nähert.
+
+| Klausel | Befund |
+| --- | --- |
+| „Selbstvornahmerecht nach § 637 BGB ausgeschlossen" | 🟠–🔴 (Rechtslage offen, im Streitfall angreifbar) |
+| „Selbstvornahme erst nach zweimaligem Fehlschlagen der Nacherfüllung" | 🟠 |
+| Selbstvornahme nur mit vorheriger schriftlicher Zustimmung des Bauträgers | 🔴 (Aushöhlung) |
+| Selbstvornahme im Rahmen der gesetzlichen Voraussetzungen offen | 🟢 |
+
+**Argumentationslinie für den Erwerber:** Bei Verzug des Bauträgers mit der Nacherfüllung darf der Besteller nach allgemeinen werkvertraglichen Grundsätzen auf Kosten des Unternehmers Mängel beseitigen lassen. Dies vor Schriftsatzverwendung mit konkreter, live verifizierter BGH-Entscheidung zu § 637 BGB und zur neueren Schadensersatzlinie unterlegen. Praktische Vertiefung: [Teil J.9](#j9--selbstvornahmeausschluss--6374-realfall).
 
 ## E.5 — Schlussrate und Zurückbehaltungsrecht
 
@@ -971,4 +997,348 @@ In der Praxis wird die Notaraufsicht oft erst aktiv, wenn mehrere Erwerber kolle
 
 ---
 
-> **Ende des Skills.** Bei Anwendung: Vertragstext einfügen, Sofortstart-Logik nutzt automatisch alle Teile A bis I. **Pflicht-Prüfblock am Anfang — § 650m, § 309 Nr. 15a/b, Transparenz, Druckmuster — ist in jedem Verbraucher-Bauträgervertrag zwingend zuerst durchzulaufen.**
+# Teil J — Realfall-Pattern aus Großprojekten (Anschauungsmaterial)
+
+Dieser Teil sammelt die wiederkehrenden Klausel- und Verhandlungsmuster, die in realen, beurkundeten Bauträgerverträgen aus Berliner Großprojekten (Quartiers- und Mehrhausanlagen mit 100+ Einheiten, Untergemeinschaften, Bezugsurkunden-Technik) beobachtet wurden — zusammen mit den Punkten, die anwaltliche Gutachten an solchen Verträgen typischerweise beanstanden. Die Muster sind anonymisiert (kein realer Verkäufer-, Notar- oder Erwerbername). Sie dienen als Lernmaterial: So sieht ein handwerklich solider, aber verbraucher-ungleichgewichtiger Bauträgervertrag aus, und so liest sich die strukturierte Prüfung dazu.
+
+Teil J ersetzt keinen Prüfungsschritt aus Teilen A–I, sondern liefert die Wiedererkennungs-Muster: Wenn dir eines dieser Patterns im Vertrag begegnet, springst du in den dort genannten Prüfteil und arbeitest die konkreten Befunde aus.
+
+## J.0 — Strukturmerkmale eines Großprojekts-Bauträgervertrags
+
+| Strukturmerkmal | Was du im Vertrag siehst | Wo geprüft |
+| --- | --- | --- |
+| Wohnungsbauträgervertrag mit Auflassung in einer Urkunde | Überschrift; §§ zu Kaufgegenstand, Bauleistung, Auflassung im selben Dokument | Pflicht-Prüfblock; [Teil F](#teil-f--eigentumsschutz-auflassungsvormerkung-freistellung-insolvenz) |
+| Bezugsurkunden (Teilungserklärung mit mehreren Nachträgen, separate Baubeschreibung) per § 13a BeurkG | § 0.2/0.3 verweist auf weitere UR-Nrn., „auf Vorlesen wurde verzichtet" | [Teil C](#teil-c--leistungsbeschreibung-baubeschreibung-und-bausoll); J.1 |
+| Untergemeinschaften in der Gemeinschaftsordnung | Teil 3 der Teilungserklärung: pro Haus eine Untergemeinschaft, eigene Kostentragung | [Teil F](#teil-f--eigentumsschutz-auflassungsvormerkung-freistellung-insolvenz); J.2 |
+| Planungs- und Änderungsvorbehalt des Verkäufers | Vorbemerkung: „Verkäufer behält sich vor, einzelne Häuser/Bauabschnitte nicht zu errichten…" | J.3 |
+| Drittwirkungsbezogene Nutzungsbedingung (z. B. Lärmschutz über Nachbarbebauung) | § 0.6: Nutzung erst nach Errichtung der Blockrandbebauung auf Nachbargrundstück | J.4 |
+| 7-Raten-MaBV-Plan mit konkreten Prozentsätzen | § 3.2: 30 % → 28 % → 13,3 % → 6,3 % → 10,5 % → 8,4 % → 3,5 % | [Teil A](#teil-a--mabv-ratenplan-und-sicherheiten); J.5 |
+| Erfüllungsbürgschaft 5 % nach § 650m Abs. 2/3, § 632a BGB | § 3.3: Bürgschaft eines Kreditinstituts über 5 %, treuhänderisch beim Notar | [Teil E.3a](#e3a--5-sicherheitseinbehalt-nach--650m-bgb-pflichtpunkt); J.5 |
+| Pauschalierter Schadensersatz pro Tag/m² mit 5 %-Deckel statt Vertragsstrafe | § 5.7.2: EUR pro Tag und m² Wohnfläche, gedeckelt auf 5 % des Kaufpreises | [Teil D.2](#d2--vertragsstrafen-und-pauschalierter-schadensersatz); J.6 |
+| Doppelabnahme SE/GE mit IHK-Sachverständigem auf Bauträgerkosten | § 6.2 + § 6.3: Sondereigentum mit Erwerber, Gemeinschaftseigentum durch IHK-vereidigten Sachverständigen | [Teil E.1](#e1--doppelabnahme-bei-eigentumswohnungen); J.7 |
+| Abnahmefiktion bei Nicht-Teilnahme nach Nachfrist (§ 640 Abs. 2 BGB) | § 6.2.1 letzter Absatz: 16-Tage-Nachfrist mit Belehrung | [Teil E.2](#e2--abnahmefiktion--640-abs-2-bgb); J.7 |
+| § 315-BGB-Leistungsbestimmungsrecht für unbestimmte Leistungen | § 5.5: bei Lücken in der Baubeschreibung bestimmt der Verkäufer nach billigem Ermessen, „mittlere Art und Güte" | J.8 |
+| Selbstvornahmeausschluss § 637 BGB | § 9.4: „Das Selbstvornahmerecht des Käufers nach § 637 BGB ist ausgeschlossen" | [Teil E.4a](#e4a--selbstvornahmeausschluss--637-bgb); J.9 |
+| Wohnflächentoleranz 3 % nach WoFlV | § 5.8.2: Unterschreitung erst ab 3 % relevant | [Teil C](#teil-c--leistungsbeschreibung-baubeschreibung-und-bausoll); J.10 |
+| Anerkannte Regeln der Technik „zum Vertragsschluss" statt „zur Fertigstellung" | typisch in Bezugs-Baubeschreibung | J.11 |
+| Disclaimer Verkaufsunterlagen (Visualisierungen, Prospekte sind nicht verbindlich) | § 5.10: Käufer bestätigt, dass keine Zusagen außerhalb der Urkunde gemacht wurden | J.12 |
+| Sonderwunschvergütung pro Stunde (typisch 90 EUR/h) + Bemusterungsfrist (typisch 4 Wochen) | § 5.3: Beratungspauschale 5 h, danach Stundenhonorar | J.13 |
+| Vollmacht zur Belastung und zur Teilungserklärungsänderung | § 4 + § 12: Käufer bevollmächtigt Verkäufer | J.14 |
+
+## J.1 — Bezugsurkunden und § 13a BeurkG
+
+Großprojekt-Verträge sind selten Einzeldokumente. Sie bestehen aus:
+
+- Hauptvertrag (der Wohnungsbauträgervertrag mit Auflassung).
+- Teilungserklärung mit Gemeinschaftsordnung als Bezugsurkunde 1, oft mit mehreren Nachträgen.
+- Baubeschreibung als Bezugsurkunde 2 (eigene UR-Nummer).
+- Anlagenkonvolut Pläne — typisch beim letzten Nachtrag, der die früheren Pläne ablöst.
+- Anlage Ausstattungskatalog / Bemusterungs-Festlegung zum konkreten Vertrag.
+
+Wichtig: Die Verweisung nach § 13a BeurkG macht die Bezugsurkunden zum Gegenstand der Beurkundung — die Verhandlungsbeteiligten verzichten typischerweise auf Vorlesen und Vorlage zur Durchsicht. Genau hier entstehen Risiken:
+
+| Prüfpunkt | Befund |
+| --- | --- |
+| Wurden alle Bezugsurkunden dem Erwerber mindestens zwei Wochen vor dem Termin übersandt (§ 17 Abs. 2a BeurkG)? | 🔴 wenn nicht |
+| Wird die zuletzt gültige Planfassung benannt (z. B. „Pläne gem. 4. Nachtrag, Anlagenkonvolut NT 4-1")? | 🟢 wenn ja, 🔴 wenn auf alte Fassung verwiesen |
+| Werden die Pläne der eigenen Vorstellung mit Eintragungen im Grundriss abgeglichen (Wandverlauf, Dusche tatsächlich vorhanden, Türschlag, Steckdosenpositionen)? | 🟠 wenn nicht; spätere Änderung sehr teuer |
+| Sind die Grunddienstbarkeiten der Abteilung II eingesehen worden? | 🟠 (Risiko, dass Versorgungs- oder Nachbarrechte unentdeckt bleiben) |
+
+Mandantenhinweis: Vor Beurkundung den Grundriss endgültig prüfen. Was an Anlage 1 nicht stimmt, wird später als Sonderwunsch behandelt — mit Mehrkosten, Bemusterungsfrist und Diskussionsbedarf.
+
+## J.2 — Untergemeinschaften nach Gemeinschaftsordnung
+
+Großprojekte teilen das Gemeinschaftseigentum in Untergemeinschaften pro Haus (typisch in Teil 3 der Teilungserklärung, § 1 der Gemeinschaftsordnung). Die Untergemeinschaften sind hinsichtlich der Kostentragung — soweit rechtlich möglich — selbständig.
+
+| Folge | Bewertung |
+| --- | --- |
+| Erwerber zahlt nur für Instandhaltung, Reparatur, Schönheitsreparaturen der eigenen Untergemeinschaft (eigenes Haus) | 🟢 |
+| Keine Beteiligung an Mängelbeseitigungskosten anderer Häuser im Projekt | 🟢 |
+| Prüfung nötig: Ist diese Kapselung in der Gemeinschaftsordnung tatsächlich so geregelt oder nur in der Vorbemerkung versprochen? | 🔴 wenn nur im Hauptvertrag versprochen, in der GO aber nicht abgesichert |
+| Achtung bei Pflege-, Instandhaltungs-, Instandsetzungs- und Schönheitsreparaturpflichten am Gemeinschaftseigentum innerhalb des eigenen Hauses | gehört zur Untergemeinschaft — weiterhin gemeinschaftlich zu tragen |
+
+Fehlt die Untergemeinschaft, können Erwerber an Mängelbeseitigungskosten anderer Häuser beteiligt werden, obwohl sie davon keinen Nutzen haben. Vor Beurkundung klären.
+
+## J.3 — Planungs- und Änderungsvorbehalt des Verkäufers
+
+In Großprojekten behält sich der Verkäufer typisch vor:
+
+- die Anzahl der Wohn-/Teileigentumseinheiten und Stellplätze zu ändern (Zusammenlegung, Aufteilung),
+- einzelne Mehrfamilienhäuser oder Bauabschnitte nicht zu errichten,
+- „sonstige Änderungen der Planung" vorzunehmen, soweit erforderlich,
+- die Teilungserklärung später noch zu ändern (Vollmacht durch Erwerber).
+
+Das ist bei großen Vorhaben gängig und nachvollziehbar, hat aber Folgen für den Erwerber. Prüfraster:
+
+| Vorbehaltsklausel | Bewertung |
+| --- | --- |
+| Bauträger darf einzelne Häuser nicht errichten | 🟠 (Auswirkung auf Außenanlagen, Schallschutz, Quartierscharakter) |
+| Erwerber hat keinen Anspruch auf Errichtung der weiteren Häuser | 🟠 (sachgerecht, aber kommunizieren) |
+| Fälligkeit der Raten hängt nur am eigenen Hausbautenstand, nicht am Gesamtprojekt | 🟢 (vorteilhaft) |
+| Aber: Schallschutz oder Nutzungsvoraussetzungen hängen an Errichtung Nachbargebäude/Bauabschnitt | siehe J.4 |
+| Erwerber-Duldungspflicht für Lärm/Staub durch Folgebau auch nach Übergabe | 🟠 (verhandeln: Anspruch auf Schallminderung, Sauberkeit, Wegfreiheit) |
+
+## J.4 — Drittwirkungs-Fallen („Nutzung erst nach Nachbargebäude")
+
+Wenn der Schallschutz im Blockinnenbereich durch eine Blockrandbebauung auf einem Nachbargrundstück sichergestellt werden muss, entstehen Risiken:
+
+- Späte Nutzbarkeit: Die Wohnung darf erst genutzt werden, wenn die Orientierungswerte der DIN 18 005 eingehalten werden. Das kann an einem Drittprojekt hängen.
+- Finanzierungsrisiko: Wenn die Fälligkeit von Ratenstufen (z. B. der 3. bis 7. Rate) an dieses Drittprojekt geknüpft ist, schwebt Bereitstellungszinsen-Risiko bei der Bank.
+- Verhandlung mit der Bank: Der Erwerber muss seine finanzierende Bank über das Drittprojekt informieren und Bereitstellungszinsen-Strukturen entsprechend planen.
+
+Prüfraster:
+
+| Befund | Ampel |
+| --- | --- |
+| Vertrag verknüpft Nutzungsbeginn mit Errichtung Nachbarbau | 🟠 (sachgerecht, aber für Erwerber risikoreich) |
+| Vertrag verknüpft späte Kaufpreisraten mit Drittprojekt-Voraussetzungen | 🟢 (vorteilhaft für Erwerber — keine Zahlung ohne Nutzbarkeit) |
+| Aber: Bereitstellungszinsen-Risiko bei Bank | 🟠 (Mandantenhinweis nötig) |
+| Keine Regelung zum Zeitpunkt der Drittbebauung | 🔴 (offenes Ende) |
+
+## J.5 — 7-Raten-MaBV-Plan und Vertragserfüllungsbürgschaft
+
+Der typische zusammengefasste 7-Raten-Plan nach § 3 Abs. 2 MaBV hat folgende Stichmonate (Prozentsätze sind beispielhaft, MaBV gibt nur die Stichmonate vor; die Vom-Hundert-Sätze sind vom Bauträger frei kombinierbar, soweit sie zu den Stichmonaten passen):
+
+| Rate | Stichmonat | Beispielprozentsatz |
+| --- | --- | --- |
+| 1. Rate | nach Beginn der Erdarbeiten (zugleich Voraussetzung Sicherheit nach § 3.3 / § 650m) | 30,0 % |
+| 2. Rate | nach Rohbaufertigstellung einschließlich Zimmererarbeiten | 28,0 % |
+| 3. Rate | nach Rohinstallation Heizung, Sanitär, Elektro + Fenstereinbau (mit Verglasung) | 13,3 % |
+| 4. Rate | nach Innenputz (ohne Beiputz) + Estrich | 6,3 % |
+| 5. Rate | nach Dachflächen/Dachrinnen + Fassadenarbeiten + Fliesen Sanitärbereich | 10,5 % |
+| 6. Rate | nach Bezugsfertigkeit, Zug um Zug gegen Besitzübergabe | 8,4 % |
+| 7. Rate | nach vollständiger Fertigstellung | 3,5 % |
+
+Prüfraster im Mandat:
+
+- Stimmen die Stichmonate mit § 3 Abs. 2 MaBV überein? Achtung: nicht jeder Posten der Beispielzeile ist Pflicht; maßgeblich sind die MaBV-Stichmonate.
+- Wird der konkrete Bautenstand vor Zahlung durch eine Bauleiterbestätigung dokumentiert? Immer fordern und vor Zahlung verifizieren (eigene Inaugenscheinnahme, ggf. Ingenieur).
+- Erfüllungsbürgschaft 5 %: Wird sie mit der ersten Abschlagsrechnung tatsächlich übersandt? Wenn nicht, sind 5 % der ersten Rate als Sicherheitseinbehalt einzubehalten — zwingendes Verbraucherrecht nach § 650m BGB (siehe [Teil E.3a](#e3a--5-sicherheitseinbehalt-nach--650m-bgb-pflichtpunkt)).
+- Sichert die Bürgschaft auch Schadensersatzansprüche (z. B. wegen verspäteter Übergabe), nicht nur die mangelfreie Fertigstellung? Wenn nicht: nachverhandeln.
+- Wer entscheidet über Rückgabe der Bürgschaft? Wenn der Notar treuhänderisch verwahrt und der Erwerber der Rückgabe widersprechen kann (z. B. binnen 14 Tagen): 🟢.
+
+## J.6 — Vertragsstrafe vs. pauschalierter Schadensersatz (Realfall)
+
+In Großprojekten findet sich häufig statt einer Vertragsstrafe ein pauschalierter Tages-Schadensersatz pro m² Wohnfläche, z. B. „EUR 0,48 pro Tag und m² Wohnfläche", gedeckelt auf 5 % des Gesamtkaufpreises, mit Anrechnungsmöglichkeit weitergehender Schäden.
+
+Mandantenhinweise:
+
+- Der Tagessatz pro m² ist niedrig im Vergleich zum tatsächlichen Mietausfall in Großstädten (oft EUR 20–40/m² Monatsmiete). Pauschale deckt nicht den realen Schaden.
+- Erwerber kann den weitergehenden Schaden (insbesondere Bereitstellungszinsen, doppelte Mietzahlung, Hotelkosten) zusätzlich geltend machen — muss ihn aber konkret darlegen und beweisen. Die Pauschale wird angerechnet.
+- Bei Bauzeitverlängerung aus Gründen, die der Verkäufer nicht zu vertreten hat (höhere Gewalt, Streik, Witterung, behördliche Auflagen), verschiebt sich der Termin. Damit der Verkäufer nach Ablauf des neuen Termins in Verzug kommt, ist eine Mahnung erforderlich (§ 286 BGB). Ohne Mahnung verliert der Erwerber den Anspruch auf weitergehende Schadensersatzansprüche — ein häufiger Fehler.
+
+Vorgehen bei Verzögerung:
+
+1. Original-Spätesttermin im Kalender markieren.
+2. Bei Verschiebung: Verzögerungsgrund schriftlich vom Verkäufer bestätigen lassen.
+3. Neuen Termin festlegen (oder vom Verkäufer mitteilen lassen).
+4. Nach Ablauf des neuen Termins: förmliche Mahnung mit Fristsetzung.
+5. Pauschalen Schadensersatz und weitergehende Schäden parallel anmelden.
+
+## J.7 — Doppelabnahme SE/GE mit IHK-Sachverständigem
+
+Großprojekt-Verträge lösen die Abnahme des Gemeinschaftseigentums häufig so:
+
+- Das Sondereigentum nimmt der Erwerber selbst ab (gemeinsame Begehung, Niederschrift).
+- Das Gemeinschaftseigentum wird durch einen von der IHK benannten vereidigten Sachverständigen auf Kosten des Verkäufers begutachtet. Anschließend wird der Erwerber zur rechtsgeschäftlichen Abnahmeerklärung aufgefordert; bei Verstreichen einer Nachfrist (typisch 16 Tage) greift die Abnahmefiktion nach § 640 Abs. 2 BGB.
+
+Prüfraster:
+
+| Befund | Bewertung |
+| --- | --- |
+| IHK-vereidigter Sachverständiger durch Bauträger bestellt | 🟠 (nicht per se unwirksam, aber Indiz für Bauträger-Nähe) |
+| Erwerber hat das Recht, eigenen Sachverständigen hinzuzuziehen | 🟢 (Pflicht, im Mandat empfehlen) |
+| Anteilige Sachverständigenkosten beim Erwerber | 🔴 (siehe Pflicht-Prüfblock Punkt 5) |
+| Abnahmefiktion bei Nicht-Reaktion nach 16-Tage-Frist | 🟠 (zulässig nur mit Belehrung nach § 640 Abs. 2 S. 2 BGB) |
+| Abnahmefiktion auch ohne Anwesenheit des Erwerbers bei Begehung | 🔴 wenn Belehrung fehlt |
+
+Mandantenhinweise:
+
+- Eigener Ingenieur für die GE-Abnahme. Mit Abnahme beginnt die Gewährleistungsfrist, findet die Beweislastumkehr statt und wird die Schlussrate fällig. Ein IHK-Sachverständiger auf Bauträgerkosten ist nicht der Vertreter des Erwerbers.
+- Rechtzeitig zur Begehung erscheinen — bei Nicht-Teilnahme greift die Fiktion.
+- Mängelliste schriftlich, mit Foto, mit Zuordnung zu SE oder GE.
+
+## J.8 — § 315-BGB-Leistungsbestimmungsrecht des Bauträgers
+
+Typische Klausel: „Soweit die Baubeschreibung keine oder unbestimmte Angaben hinsichtlich notwendiger Leistungen enthält, ist der Verkäufer gemäß § 315 BGB zur Leistungsbestimmung nach billigem Ermessen berechtigt. Die Leistung muss mindestens von mittlerer Art und Güte sein …"
+
+Das ist eine gefährliche Leerstelle, weil die Baubeschreibung damit gezielt Lücken lassen kann — die der Bauträger später selbst füllt.
+
+| Prüfpunkt | Befund |
+| --- | --- |
+| Klausel verweist auf § 315 BGB als Lückenfüller | 🟠–🔴 (je nach Umfang der Lücken) |
+| „Mittlere Art und Güte" als Mindestmaßstab | 🟠 (verbreitet, aber nicht Bausoll-konkret) |
+| Klausel mit Bezugsgröße (z. B. „Fliesen mindestens EUR 35/m² Listenpreis") | 🟢 |
+| Lücke betrifft Kernausstattung (Bodenbeläge, Sanitär, Türen) | 🔴 |
+
+Verhandlungsstrategie: Statt „mittlere Art und Güte" konkrete Mindestklassen oder Mindestpreise pro Gewerk verlangen. Wer ohne konkretes Bausoll baut, baut zu Lasten des Erwerbers.
+
+## J.9 — Selbstvornahmeausschluss § 637 (Realfall)
+
+Typische Klausel im Mängelteil: „Das Selbstvornahmerecht des Käufers nach § 637 BGB ist ausgeschlossen."
+
+Stand der Diskussion:
+
+- Die formularvertragliche Ausschlussklausel ist höchstrichterlich nicht abschließend geklärt.
+- Argumentationslinie für den Erwerber: Bei Verzug des Unternehmers mit der Nacherfüllung muss der Besteller die Mängel auf Kosten des Unternehmers beseitigen lassen dürfen — das ist Kernbestand des werkvertraglichen Schutzes.
+- Die neuere BGH-Linie zum Schadensersatz statt der Leistung (kein abstrakter Anspruch auf Mängelbeseitigungskosten, sondern nur Minderwert) verändert die Ausgangslage zusätzlich.
+- Risiko: Die Klausel kann unwirksam sein — dann gilt das Gesetz. Sie kann aber auch wirksam sein — dann hat der Erwerber den Selbstvornahmeweg verloren.
+
+Prüfung vor Schriftsatzverwendung: Aktuelle BGH-Entscheidung zu § 637 BGB (Wirksamkeit von Ausschlussklauseln im Bauträgervertrag) live verifizieren — Gericht, Datum, Aktenzeichen, tragende Aussage. Keine Aussage aus Modellwissen verwenden.
+
+Verhandlungsstrategie vor Beurkundung: Klausel streichen oder so umformulieren, dass Selbstvornahme nach den gesetzlichen Voraussetzungen (insbesondere bei Verzug des Bauträgers mit der Nacherfüllung) möglich bleibt.
+
+## J.10 — Wohnflächentoleranz: 3 % ist zu viel
+
+Typische Klausel: „Aus einer Unterschreitung der sich nach der Wohnflächenverordnung ermittelten Wohnfläche kann der Käufer nur Rechte herleiten, wenn die Abweichung 3 % unterschreitet."
+
+Mandantenhinweise (live verifizieren, BGH-Linie):
+
+- Die Rechtsprechung sieht Abweichungen von 1 %, eventuell auch 2 %, als geringfügig an.
+- 3 % geht darüber hinaus und ist zugunsten des Erwerbers nachverhandelbar.
+- Alternativ: Toleranzgrenze auf 1 % senken oder Kaufpreis um den Wert der Differenz reduzieren.
+
+| Toleranzgrenze | Bewertung |
+| --- | --- |
+| 1 % | 🟢 |
+| 2 % | 🟠 |
+| 3 % | 🟠–🔴 (nachverhandeln) |
+| > 3 % | 🔴 |
+| Keine Toleranzangabe | 🔴 (Streit vorprogrammiert) |
+
+## J.11 — „Anerkannte Regeln der Technik" — Stichtag
+
+Typische Klausel: „Der Verkäufer hat die Leistungen nach den anerkannten Regeln der Technik zum Zeitpunkt des Vertragsschlusses zu errichten."
+
+Problem: Zwischen Vertragsschluss und Fertigstellung können 1–3 Jahre liegen. In dieser Zeit ändern sich die anerkannten Regeln der Technik. Wer mit Stichtag Vertragsschluss baut, baut potenziell veraltet.
+
+Verhandlungsforderung: Stichtag „zum Zeitpunkt der Fertigstellung" — das ist die verbraucherfreundlichere und sachgerechte Fassung.
+
+| Stichtag | Bewertung |
+| --- | --- |
+| Zum Zeitpunkt der Fertigstellung | 🟢 |
+| Zum Zeitpunkt des Vertragsschlusses | 🟠 (technisch überholbar) |
+| Keine Festlegung | 🟠 (gesetzlich vermutet: Fertigstellung) |
+
+Realistische Lage: In Großprojekten, in denen schon andere Einheiten verkauft sind, ist eine Änderung dieser Klausel zu Gunsten des einzelnen Erwerbers oft nicht durchsetzbar (Gleichbehandlung der Erwerber im selben Projekt). Dann zumindest dokumentieren, dass auf den Wunsch hingewiesen wurde.
+
+## J.12 — Verkaufsunterlagen-Disclaimer
+
+Typische Klausel: „Der Käufer erklärt, dass ihm von Vertriebsmitarbeitern oder anderen Beauftragten keine Zusagen zur Ausgestaltung des Kaufgegenstandes gemacht wurden, die nicht Gegenstand des vorliegenden Vertrages oder der in Bezug genommenen Urkunden sind. Visualisierungen in Verkaufsunterlagen stellen keine verbindlichen Angaben dar."
+
+Folge:
+
+- Was im Hochglanz-Exposé, in Visualisierungen, in Show-Wohnungen gezeigt wird, ist im Streit nicht durchsetzbar, wenn es nicht in der Baubeschreibung oder im Vertrag steht.
+- Das ist ein klassisches Schaufenster-Pattern — prospektliche Highlights, vertragliche Pauschalverweise. Siehe [Teil C](#teil-c--leistungsbeschreibung-baubeschreibung-und-bausoll).
+
+Verhandlungsstrategie:
+
+- Vor Beurkundung abgleichen: Was im Exposé/in der Show-Wohnung versprochen wurde, muss in der Leistungsbeschreibung oder im Vertrag stehen.
+- Konkrete Materialien, Hersteller, Klassen schriftlich fixieren.
+- Disclaimer ist als AGB an sich nicht angreifbar — aber der materielle Schutz entsteht nur durch konkrete Bausoll-Festlegung.
+
+## J.13 — Sonderwünsche und Bemusterung
+
+Typische Klauseln in Großprojekten:
+
+- Bemusterung beim vom Bauträger benannten Bemusterungspartner.
+- 5 Beratungsstunden im Kaufpreis enthalten, danach EUR 90/h Beratungshonorar.
+- Bemusterung innerhalb 4 Wochen nach Aufforderung; danach Standardausstattung.
+- Spätere Änderungen nur, sofern der Baufortschritt es noch zulässt.
+- Spätere Sonderwünsche sind separat zu zahlen und nicht im MaBV-Ratenplan enthalten.
+
+Mandantenhinweise:
+
+- Alle Sonderwünsche im Vertrag fixieren — als Anlage zum Vertrag, mitbeurkundet, mit Mehrpreis und Liefertermin. Spätere Wünsche kosten zusätzlich Zeit und Geld.
+- Bemusterung gut vorbereiten — die 4-Wochen-Frist ist eng. Wer nicht entscheidet, bekommt Standard.
+- Außerhalb der Standardausstattung mit Bezugsgröße verhandeln („Fliesen-Mehrpreis nur, wenn der Listenpreis EUR 35/m² übersteigt").
+- Vorsicht bei Innentüren, Sanitär, Elektroinstallation, Bodenbelägen — hier sind Standardvarianten oft eng definiert; nachträgliche Änderungen kostspielig oder unmöglich.
+- Sonderwünsche für eine Dusche, Türschlag, Steckdosen-Position frühzeitig klären — wer die Grundrissanlage nicht prüft, kann später keine Anpassung mehr durchsetzen.
+
+## J.14 — Belastungs- und Änderungsvollmachten
+
+Typische Vollmachten im Vertrag:
+
+- Belastungsvollmacht (§ 4): Käufer bevollmächtigt Verkäufer, Grundpfandrechte des Käufers (Finanzierungsgrundschulden) zugunsten der finanzierenden Bank des Käufers zu bewilligen.
+- Teilungserklärungs-Änderungsvollmacht (§ 12): Käufer bevollmächtigt Verkäufer, die Teilungserklärung später noch zu ändern (z. B. bei Umplanung anderer Häuser).
+
+Prüfraster:
+
+| Vollmachtsumfang | Bewertung |
+| --- | --- |
+| Belastung nur zur Finanzierung des Kaufgegenstands, betragsbegrenzt | 🟢 |
+| Belastung ohne Betragsbegrenzung | 🔴 |
+| Keine persönliche Haftung des Erwerbers begründbar | 🟢 |
+| Teilungserklärungs-Änderung nur für andere Einheiten, nicht für die eigene | 🟢 |
+| Teilungserklärungs-Änderung pauschal, auch für die eigene Einheit | 🔴 |
+| Rückruf-/Widerrufsmöglichkeit | meist nicht vorgesehen; ggf. nachverhandeln |
+
+Die Vollmachten sind bei Großvorhaben gängig und meist sachgerecht — aber im Detail prüfen, ob die eigene Einheit geschützt ist.
+
+## J.15 — Gutachtenstruktur für den Mandantenbericht
+
+Wenn der Skill als Vorbereitung eines anwaltlichen Gutachtens dient, folgt die Ausgabe der paragraphenweisen Gutachtenstruktur, wie sie in der Praxis tatsächlich verwendet wird:
+
+```
+Kaufvertrag
+  Vorbemerkung
+    Zu § 0.1: Planungsvorbehalt
+    Zu § 0.6: Nutzungsvoraussetzung Nachbarbau
+  § 1 Kaufgegenstand
+    Zu Grundbuchauszug, Grundriss, Dienstbarkeiten
+  § 2 Kaufpreis
+  § 3 Kaufpreiszahlung
+    Zu § 3.1: Fälligkeit
+    Zu § 3.2: Ratenplan + Bautenstand-Kontrolle
+    Zu § 3.3: Vertragserfüllungsbürgschaft / 5 %-Einbehalt
+    Zu § 3.4: Bürgschafts-Treuhand
+  § 4 Kaufpreisfinanzierung
+  § 5 Baupflicht, Baubeschreibung
+    Zu § 5.3: Sonderwünsche, Bemusterung
+    Zu § 5.5: „Anerkannte Regeln der Technik" — Stichtag
+    Zu § 5.7: Fertigstellungstermin, pauschalierter Schadensersatz
+    Zu § 5.8: Wohnflächentoleranz
+  § 6 Übergabe, Abnahme, Teilungserklärung
+    Zu § 6.1: Leistungsverweigerungsrecht bei Mängeln
+    Zu § 6.2: Abnahme Sondereigentum + Abnahmefiktion
+    Zu § 6.3: Abnahme Gemeinschaftseigentum + Ingenieur
+  § 7 Erschließungskosten
+  § 8 Zutritt zur Baustelle
+  § 9 Haftung, Mängelrechte, Verzug, Verjährung
+    Zu § 9.4: Selbstvornahmeausschluss § 637 BGB
+  § 10 Vormerkung
+  §§ 11–16 Übrige Regelungen + Vollmachten
+Baubeschreibung
+  Zu Ausstattungskatalog (Anlage)
+  Zu Innentüren, Elektroinstallation, Bodenbelägen, Sanitärobjekten
+Teilungserklärung / Gemeinschaftsordnung
+  Pflichten gegenüber anderen Eigentümern
+  Untergemeinschaften
+```
+
+Stilregeln für den Mandantenbericht:
+
+- Paragraphenweise vorgehen, jeden § explizit ansprechen — auch dann, wenn er unkritisch ist („Die Regelung in § X ist nicht zu beanstanden."). Das gibt dem Mandanten Sicherheit, dass tatsächlich alles geprüft wurde.
+- Bei kritischen Punkten: Originalwortlaut zitieren, Decodierung liefern, konkreten Verhandlungsvorschlag machen.
+- Realitätscheck zur Durchsetzbarkeit: Bei Großprojekten ist eine Klauseländerung zugunsten eines einzelnen Erwerbers oft nicht durchsetzbar (Gleichbehandlung). Dann mitteilen: „Hinweis: In großen Bauvorhaben gleichlautend, Änderung zu Ihren Gunsten voraussichtlich nicht möglich; zumindest dokumentieren, dass auf die Problematik hingewiesen wurde."
+- Bauliche Prüfung neben rechtlicher: Bei zentralen Bausoll-Fragen (Baubeschreibung, Grundriss, Ausstattungskatalog) ausdrücklich empfehlen, einen Ingenieur hinzuzuziehen.
+- Abschluss: Anbieten, die Punkte im Gespräch zu vertiefen.
+
+## J.16 — Lehren aus realen Verträgen — die zehn häufigsten Hebel
+
+Fasst zusammen, was aus der Praxis als „klassische Knackpunkte" bei Großprojekt-Bauträgerverträgen wiederkehrt:
+
+1. Grundrissprüfung vor Beurkundung — Wand, Türen, Dusche, Steckdosen abgleichen; spätere Änderung wird Sonderwunsch.
+2. Bezugsurkunden lesen — Teilungserklärung, Nachträge, Baubeschreibung; nicht nur das Hauptdokument.
+3. Untergemeinschaften prüfen — Kostenkapselung gegen Mängel anderer Häuser?
+4. Bautenstandskontrolle vor Ratenzahlung — nicht blind auf Bauleiterbestätigung verlassen.
+5. 5 %-Sicherheitseinbehalt nach § 650m BGB — wenn keine Erfüllungsbürgschaft übersandt wird, einbehalten. Pflicht-Prüfblock Punkt 1.
+6. Mahnung nach verschobenem Termin — sonst keine weitergehenden Verzugsansprüche.
+7. Wohnflächentoleranz auf 1 % nachverhandeln — 3 % ist zu viel.
+8. Selbstvornahmeausschluss § 637 BGB — angreifbar, Rechtsprechung live prüfen.
+9. Doppelabnahme: eigener Ingenieur — sowohl SE als auch GE; mit Abnahme läuft Beweislastumkehr und Gewährleistungsfrist.
+10. Sonderwünsche im Vertrag — was nicht beurkundet ist, kostet später Ärger; Bezugsgröße (EUR/m²) für Mehrkosten verhandeln.
+
+---
+
+> Ende des Skills. Bei Anwendung: Vertragstext einfügen, Sofortstart-Logik nutzt automatisch alle Teile A bis J. Pflicht-Prüfblock am Anfang — § 650m BGB, § 309 Nr. 15 lit. a BGB, § 309 Nr. 15 lit. b BGB, Transparenzgebot § 307 Abs. 1 S. 2 BGB, Druckmuster und Eingriffe in die dingliche Sicherung, Leistungs- und Baubeschreibung § 650k BGB — ist in jedem Verbraucher-Bauträgervertrag zwingend zuerst durchzulaufen. Teil J liefert die Wiedererkennungsmuster aus realen Großprojekten und die Gutachtenstruktur für den Mandantenbericht.
