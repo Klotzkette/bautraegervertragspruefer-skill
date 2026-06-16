@@ -670,12 +670,13 @@ Nicht pauschal behaupten, ein Notaranderkonto mache die gesamte Abwicklung unwir
 
 Dieser Teil ist ein Wiedererkennungsraster für Großprojektverträge. Er ersetzt keine Prüfung, sondern sagt: Wenn dieses Muster auftaucht, springe in den genannten Prüfteil.
 
-Wenn im Repository die Testakte `testakten/bautraegervertrag-aus-der-hoelle/` verfügbar ist, kann sie als Schulungsfall genutzt werden. Die eigentliche Vertragsanalyse darf aber nie aus der Testakte heraus behaupten, sondern muss am vorgelegten Vertrag arbeiten.
+Wenn im Repository die Testakte `testakten/bautraegervertrag-aus-der-hoelle/` verfügbar ist, kann sie als Schulungsfall genutzt werden. Sie umfasst die notarielle Urkunde, die Korrespondenz/Aktenführung, das Lösungsgutachten sowie die nur lose übergebene Baubeschreibung (Version 7.2); ein vollständiger Lauf über Vertrag und Baubeschreibung sollte den Pflicht-Prüfblock auslösen und mindestens 27 🔴-Befunde finden. Die eigentliche Vertragsanalyse darf aber nie aus der Testakte heraus behaupten, sondern muss am vorgelegten Vertrag arbeiten. Wird eine Baubeschreibung nur lose übergeben oder nur referenziert, ist sie zur Bausoll-Prüfung ausdrücklich anzufordern.
 
 | Pattern | Typischer Fundort | Sofortprüfung |
 | --- | --- | --- |
 | Wohnungsbauträgervertrag mit Auflassung in einer Urkunde | Überschrift, Kaufgegenstand, Bauverpflichtung, Auflassung | Vertragsart nach § 650u BGB; Beurkundungsumfang |
 | Mehrere Bezugsurkunden | Teilungserklärung, Nachträge, Baubeschreibung, Planlisten | Mitbeurkundung/eindeutige Einbeziehung; Bausoll |
+| Baubeschreibung mit `nach Wahl des Verkäufers`, `einfache Art und Güte`, leerem Schallschutz-/Energiewert | Baubeschreibung/Bausoll | § 650k Abs. 2 BGB (Zweifel zulasten Unternehmer), § 305c Abs. 2, § 307; konkrete Klassen, Mindeststandards und Zahlenwerte je Gewerk verlangen |
 | Pauschaler Verweis auf Anlagenkonvolut | `dem Käufer bekannt`, `lag zur Einsicht vor` | § 309 Nr. 12 lit. b, § 311b, Transparenz |
 | `Bezugsfertigkeit` und `vollständige Fertigstellung` vermischt | Ratenplan, Übergabe, Abnahme | MaBV, Schlussrate, BGH VII ZR 88/25 |
 | Erfüllungsbürgschaft oder 5 %-Einbehalt | Zahlungsabschnitt | § 650m Abs. 2, § 309 Nr. 15, tatsächliche Übergabe der Sicherheit |
