@@ -46,7 +46,7 @@ Die Datei ist in folgende Teile gegliedert (interne Sprungmarken):
 - **Workflow in neun Stufen** — vom Intake bis zur Klage, mit Rechtsanker, Sofortstart-Logik, Antwortformaten und Qualitätsgate.
 - **Teil A — MaBV-Ratenplan und Sicherheiten** — § 3 Abs. 2 MaBV-Ratenplan (13 bzw. 7 Raten), § 7 MaBV-Bürgschaft, Voraussetzungen für die erste Rate, Insolvenzfestigkeit.
 - **Teil B — AGB- und Klauselkontrolle** — Klauselkatalog typischer Bauträger-AGB nach §§ 305 ff. BGB.
-- **Teil C — Baubeschreibung und Bausoll** — Pflichtangaben nach § 650k BGB, Wohnflächenberechnung, Bemusterungsklauseln, Pauschalverweise.
+- **Teil C — Leistungsbeschreibung, Baubeschreibung und Bausoll** — Pflicht-Check Leistungsbeschreibung (Mitbeurkundung, Konkretheit, Bemusterungsbudget, Toleranzen, Vorrangregel, Schaufenster-Vergleich), Pflichtangaben nach § 650k BGB, Wohnflächenberechnung, Bemusterungsklauseln, Pauschalverweise. Bausoll-Lücken sind die häufigste Streitquelle — wer hier nicht prüft, verliert später.
 - **Teil D — Vertragsstrafen, Fertigstellungsfristen, Verzug** — Fristverbindlichkeit, BGH-Linie zur Strafhöhe, Verzugsschaden.
 - **Teil E — Abnahme, Gefahrtragung, Mängelrechte, Gewährleistung** — Doppelabnahme bei Eigentumswohnungen, Abnahmefiktion, Verjährung, Schlussrate.
 - **Teil F — Eigentumsschutz, Auflassungsvormerkung, Freistellung, Insolvenz** — dingliche Sicherung, § 3 Abs. 1 Nr. 3 MaBV, Bauträger-Insolvenzlagen.
@@ -63,6 +63,7 @@ Der Skill enthält am Anfang einen festen Pflicht-Prüfblock, den er bei jedem V
 3. **§ 309 Nr. 15 lit. b BGB — Empfangsbestätigungen:** Enthält der Vertrag pauschale Bestätigungen, der Erwerber habe Unterlagen erhalten oder Risiken zur Kenntnis genommen? Unwirksam 🔴.
 4. **§ 307 Abs. 1 S. 2 BGB — Transparenzgebot:** 350-Seiten-Konvolute, verschachtelte Untergemeinschaften, juristisch nicht erschließbarer Aufbau — alles Indizien für Transparenzverstoß 🔴.
 5. **Druckmuster und Eingriffe in die dingliche Sicherung:** Vormerkungslöschung bei einseitiger Verzugsmitteilung, „Ohne Geld keine Schlüssel", anteilige Sachverständigenkosten für Bauträger-Gutachter — jeweils 🔴.
+6. **Leistungs- und Baubeschreibung — § 650k BGB.** Fehlt die Leistungsbeschreibung, ist sie nicht mitbeurkundet, besteht sie nur aus Pauschalverweisen oder werden Pflichtangaben (Wohnfläche mit Berechnungsgrundlage, KfW-/GEG-Klasse, Innenausbau-Standards, Fertigstellungstermin) ausgespart? Bausoll-Lücken sind 🔴 — sie sind die häufigste Streitquelle und der Hebel für spätere Mängel-, Minderungs- und Schadensersatzansprüche.
 
 **Folgen bei kumulativem Verstoß:** Teil- oder Gesamtnichtigkeit nach § 139 BGB; **Notarhaftung nach § 19 BNotO** i. V. m. § 17 BeurkG bei evident verbraucherfeindlicher Beurkundung ohne ausreichende Belehrung. Eskalationskette von der Notar-Korrekturaufforderung über Beurkundungsverweigerung bis zur kollektiven Beschwerde bei der Notaraufsicht ist in [Teil I des Skills](skill/SKILL.md#teil-i--nichtigkeitsrisiken-transparenzgebot-und-notarhaftung) dokumentiert.
 

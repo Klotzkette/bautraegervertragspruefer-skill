@@ -1,7 +1,7 @@
 ---
 name: bautraegervertrag-pruefer
-description: "Verbraucherseitige Prüfung deutscher Bauträgerverträge nach dem Ampelsystem (🔴/🟠/🟢). Erkennt MaBV-Verstöße im Ratenplan, unzulässige AGB-Klauseln nach §§ 305 ff. BGB, Risiken bei Auflassungsvormerkung und Freistellung nach § 3 MaBV, fehlerhafte Baubeschreibungen nach § 650k BGB, untaugliche Vertragsstrafen, Abnahme- und Mängelrechtsfallen, Gefahrtragungs- und Eigentumsumschreibungs-Risiken. Liefert klauselgenaue Risikomatrix, Ampel-Bilanz, Gesamteinschätzung und Handlungsempfehlung — von Nachverhandlung über notarielle Korrektur bis Rücktritt und Klage. Stützt sich auf §§ 650u, 650v BGB, §§ 650a–650o BGB, § 3 MaBV, §§ 305 ff. BGB, § 311b BGB, §§ 433 ff. BGB."
-version: "1.0.0"
+description: "Verbraucherseitige Prüfung deutscher Bauträgerverträge nach dem Ampelsystem (🔴/🟠/🟢). Erkennt MaBV-Verstöße im Ratenplan, unzulässige AGB-Klauseln nach §§ 305 ff. BGB, Risiken bei Auflassungsvormerkung und Freistellung nach § 3 MaBV, **fehlerhafte oder lückenhafte Leistungs- und Baubeschreibungen nach § 650k BGB** (Pflichtinhalte, Detaillierungstiefe, Pauschalverweise, Bemusterungsfallen, Bausoll-Lücken, Mitbeurkundungsstatus), untaugliche Vertragsstrafen, Abnahme- und Mängelrechtsfallen, Gefahrtragungs- und Eigentumsumschreibungs-Risiken. Liefert klauselgenaue Risikomatrix, Ampel-Bilanz, Gesamteinschätzung und Handlungsempfehlung — von Nachverhandlung über notarielle Korrektur bis Rücktritt und Klage. Stützt sich auf §§ 650u, 650v BGB, §§ 650a–650o BGB, § 3 MaBV, §§ 305 ff. BGB, § 311b BGB, §§ 433 ff. BGB."
+version: "1.1.0"
 ---
 
 # Bauträgervertrag-Prüfer (Ampelsystem für Verbraucher)
@@ -20,7 +20,7 @@ Diese Skill-Datei trägt den vollständigen Workflow zur verbraucherseitigen Ana
 - [Qualitätsgate vor jeder Ausgabe](#qualitätsgate-vor-jeder-ausgabe)
 - [Teil A — MaBV-Ratenplan und Sicherheiten](#teil-a--mabv-ratenplan-und-sicherheiten)
 - [Teil B — AGB- und Klauselkontrolle](#teil-b--agb--und-klauselkontrolle)
-- [Teil C — Baubeschreibung und Bausoll](#teil-c--baubeschreibung-und-bausoll)
+- [Teil C — Leistungsbeschreibung, Baubeschreibung und Bausoll](#teil-c--leistungsbeschreibung-baubeschreibung-und-bausoll)
 - [Teil D — Vertragsstrafen, Fertigstellungsfristen, Verzug](#teil-d--vertragsstrafen-fertigstellungsfristen-verzug)
 - [Teil E — Abnahme, Gefahrtragung, Mängelrechte, Gewährleistung](#teil-e--abnahme-gefahrtragung-mängelrechte-gewährleistung)
 - [Teil F — Eigentumsschutz, Auflassungsvormerkung, Freistellung, Insolvenz](#teil-f--eigentumsschutz-auflassungsvormerkung-freistellung-insolvenz)
@@ -42,6 +42,7 @@ Diese Skill-Datei trägt den vollständigen Workflow zur verbraucherseitigen Ana
    - dem Erwerber **anteilige Kosten des vom Bauträger gestellten Sachverständigen** für die technische Abnahme aufbürden?
    
    → Jeder dieser Punkte ist **🔴 schwerwiegend** und für den Mandantenbericht hervorzuheben.
+6. **Leistungs- und Baubeschreibung — § 650k BGB.** Liegt der Vertrag **ohne** vollständige Leistungs-/Baubeschreibung vor oder verweist er nur pauschal auf „branchenübliche Standards", „allgemein anerkannte Regeln der Technik" oder „Ausstattung mittlerer Art und Güte", ohne konkretes Bausoll zu definieren? Fehlen Pflichtangaben (Wohnflächenberechnung mit Grundlage, Energie-/KfW-Standard, Bauweise, Innenausbau-Standards, verbindlicher Fertigstellungstermin)? Wird die Leistungsbeschreibung in einer separaten, **nicht mitbeurkundeten Anlage** geführt, sodass sie später bestritten werden kann? → **🔴 schwerwiegend** — Bausoll-Lücken sind die häufigste Streitquelle und Hebel für Mängel-, Minderungs- und Schadensersatzansprüche. Detailprüfung: [Teil C](#teil-c--leistungsbeschreibung-baubeschreibung-und-bausoll).
 
 **Folgen, wenn einer dieser Punkte aus dem Vertrag schlägt:** Klauselunwirksamkeit nach §§ 307, 309 BGB; im Extremfall **Teilnichtigkeit oder Gesamtnichtigkeit** nach § 139 BGB, wenn die Aushöhlung des Verbraucherschutzes den Kern des Vertrags erfasst. **Notarhaftung** nach § 19 BNotO i. V. m. § 17 BeurkG kommt in Betracht, wenn der Notar einen offensichtlich einseitig zulasten des Verbrauchers gestalteten Vertrag ohne ausreichende Belehrung beurkundet hat. Näheres: [Teil I](#teil-i--nichtigkeitsrisiken-transparenzgebot-und-notarhaftung).
 
@@ -145,7 +146,7 @@ Material:
 
 - [Teil A](#teil-a--mabv-ratenplan-und-sicherheiten) — Ratenplan-Prozentsätze, Stichmonate, Mehr- als 7-Raten-Frage.
 - [Teil B](#teil-b--agb--und-klauselkontrolle) — Klauselkatalog typischer Bauträger-AGB.
-- [Teil C](#teil-c--baubeschreibung-und-bausoll) — Baubeschreibungs-Pflichtangaben, Sollbeschaffenheit, Bemusterungsfalle.
+- [Teil C](#teil-c--leistungsbeschreibung-baubeschreibung-und-bausoll) — Leistungs- und Baubeschreibungs-Pflichtangaben, Bausoll-Definition, Bemusterungsfalle.
 - [Teil D](#teil-d--vertragsstrafen-fertigstellungsfristen-verzug) — Fristen, Vertragsstrafen, Verzugsschaden.
 - [Teil E](#teil-e--abnahme-gefahrtragung-mängelrechte-gewährleistung) — Abnahmeklauseln, Mängelrechte.
 - [Teil F](#teil-f--eigentumsschutz-auflassungsvormerkung-freistellung-insolvenz) — dingliche Sicherung.
@@ -161,17 +162,23 @@ Der Ratenplan ist die **härteste** Schutzvorschrift für den Verbraucher. Prüf
 - Sind die Voraussetzungen für die erste Rate nach § 3 Abs. 1 MaBV erfüllt (Vertrag rechtswirksam, Auflassungsvormerkung eingetragen, Freistellung, Baugenehmigung)?
 - Vorauszahlungsklauseln über den Ratenplan hinaus → **immer 🔴**.
 
-### 5 — Baubeschreibung und Bausoll
+### 5 — Leistungsbeschreibung, Baubeschreibung und Bausoll
 
-Eine schwache Baubeschreibung ist die häufigste Streitquelle. Prüfe:
+Eine schwache oder lückenhafte Leistungsbeschreibung ist die **häufigste Streitquelle** und der wichtigste Hebel für spätere Mängel- und Minderungsansprüche. „Leistungsbeschreibung" und „Baubeschreibung" werden im Bauträgervertrag oft synonym verwendet; manche Verträge führen die Leistungsbeschreibung als eigene Anlage. Beides definiert das **Bausoll** — was nicht klar beschrieben ist, kann der Bauträger später bestreiten.
 
-- Wohnflächenangabe und Berechnungsgrundlage (DIN 277? WoFlV?).
-- Detaillierung der Ausstattung (Bodenbeläge, Sanitär, Heizung, Fenster, Dämmung).
-- Bemusterungsklauseln: Wer trägt Mehrkosten? Welche Auswahl ist im Preis enthalten?
-- Energie-Standard, KfW-Klasse, EnEV/GEG-Konformität.
-- Pauschalverweise auf „branchenübliche" oder „allgemein anerkannte" Standards — oft 🟠.
+Pflichtprüfpunkte:
 
-Material: [Teil C](#teil-c--baubeschreibung-und-bausoll).
+- **Vollständigkeit** nach § 650k Abs. 2 BGB (Art und Umfang der Leistung, wesentliche Eigenschaften, Gebäudedaten, Bauphysik, Innenausbau, Technik, Energiestandard, Außenanlagen, Fertigstellungstermin).
+- **Beurkundungsumfang:** Ist die Leistungsbeschreibung **mitbeurkundet** (Bestandteil der notariellen Urkunde) oder nur lose als Anlage beigefügt? Nur Mitbeurkundetes ist sicher Vertragsbestandteil (§ 311b BGB).
+- **Wohnflächenangabe** und Berechnungsgrundlage (DIN 277? WoFlV?) — mit Toleranzangabe?
+- **Detaillierung der Ausstattung** (Bodenbeläge, Sanitär, Heizung, Fenster, Dämmung, Elektrik, Lüftung, Smart-Home) — konkrete Produkte/Klassen oder nur Sammelbegriffe?
+- **Bemusterungsklauseln:** Wer trägt Mehrkosten? Welche Auswahl ist im Preis enthalten? Bemusterungsbudget pro Gewerk?
+- **Energie-Standard, KfW-Klasse, GEG-Konformität** mit konkreter Klasse, nicht nur „geltendes Recht".
+- **Pauschalverweise** auf „branchenübliche", „allgemein anerkannte Regeln der Technik" oder „Ausstattung mittlerer Art und Güte" — punktuell zulässig, aber **kein** Ersatz für konkretes Bausoll → oft 🟠 / 🔴.
+- **Schaufenster-Drift:** Hochwertiger Aufgabenkatalog im Prospekt, im Vertrag aber nur Pauschalverweise — Indiz für gezielte Aushöhlung des Bausolls. Werbeangaben sind nur dann geschuldet, wenn sie zum Vertragsinhalt gemacht wurden.
+- **Widersprüche zwischen Plan, Baubeschreibung und Vertragstext** — was geht im Streitfall vor? (Regel: Mitbeurkundetes vor loser Anlage; konkrete Beschreibung vor Pauschalverweis.)
+
+Material: [Teil C](#teil-c--leistungsbeschreibung-baubeschreibung-und-bausoll).
 
 ### 6 — Fristen, Strafen, Verzug
 
@@ -231,7 +238,7 @@ Nächster Schritt
 1. Pflichtbausteine sichern.
 2. Klauselweise Ampel-Risikomatrix.
 3. MaBV-Ratenplan im Detail.
-4. Baubeschreibung und Bausoll prüfen.
+4. Leistungsbeschreibung, Baubeschreibung und Bausoll prüfen.
 5. Fristen und Vertragsstrafen.
 6. Abnahme und Mängelrechte.
 7. Eigentumsschutz und Insolvenzfestigkeit.
@@ -393,9 +400,27 @@ Bauträgerverträge enthalten regelmäßig vorformulierte Klauseln, auch wenn si
 
 ---
 
-# Teil C — Baubeschreibung und Bausoll
+# Teil C — Leistungsbeschreibung, Baubeschreibung und Bausoll
 
-Die Baubeschreibung definiert, **was geschuldet ist**. Was nicht beschrieben ist, kann der Bauträger später bestreiten. Eine schlechte Baubeschreibung ist die häufigste Streitquelle.
+Die Leistungs- bzw. Baubeschreibung definiert, **was geschuldet ist** (das „Bausoll"). Was nicht beschrieben ist, kann der Bauträger später bestreiten. Eine schwache oder lückenhafte Leistungsbeschreibung ist die **häufigste** Streitquelle in Bauträgerverträgen — vor MaBV-Verstößen, vor Abnahmestreit, vor Vertragsstrafenfragen.
+
+**Terminologie.** „Leistungsbeschreibung" und „Baubeschreibung" werden in der Praxis oft synonym verwendet. Manche Verträge führen sie als ein Dokument, andere trennen sie (z. B. „Baubeschreibung" für das Gebäude und „Leistungsbeschreibung" für Ausstattung, Außenanlagen, technische Gewerke). Rechtlich entscheidend ist nicht der Begriff, sondern: **Was wurde wirksam zum Vertragsinhalt gemacht?** Nur was **mitbeurkundet** ist (§ 311b BGB), ist sicher Vertragsbestandteil. Lose Anlagen, Prospekte oder „Bemusterungslisten" sind im Streitfall häufig nicht durchsetzbar.
+
+## C.0 — Pflicht-Check Leistungsbeschreibung
+
+| Prüfpunkt | Soll | Mangel | Ampel |
+| --- | --- | --- | --- |
+| Mitbeurkundung | Bestandteil der Urkunde oder mitverlesener Anlage | Nur lose beigefügt, „liegt vor", „wurde übergeben" | 🔴 |
+| Eindeutige Bezeichnung | Datierte Version, Seitenzahl, Versionsindex | Undatiert, „aktuelle Fassung", mehrere Stände im Umlauf | 🔴 |
+| Vollständigkeit nach § 650k Abs. 2 BGB | Alle Pflichtangaben enthalten (s. C.1) | Pflichtangabe fehlt | 🔴 pro Fehlstelle |
+| Konkretheit | Konkrete Produkte/Hersteller/Klassen oder konkrete Mindeststandards | Nur Sammelbegriffe („hochwertig", „marktüblich") | 🔴 / 🟠 |
+| Bemusterungsbudget | Pro Gewerk in Euro/m² oder als Stückzahl beziffert | Nur „im Preis enthalten, soweit Standard" | 🟠 |
+| Energie-/GEG-Standard | Konkrete KfW-/Effizienzhaus-Klasse benannt | „geltendes Recht", „GEG-konform" ohne Klasse | 🔴 |
+| Toleranzen | Wohnfläche mit Toleranzangabe (z. B. ± 3 %) auf Basis WoFlV | Keine Toleranz, keine Grundlage, DIN 277 ohne Hinweis | 🟠 / 🔴 |
+| Vorrangregel | Klausel zur Konfliktauflösung: Mitbeurkundetes vor Anlage, Plan vor Text usw. | Keine Regel — Streit vorprogrammiert | 🟠 |
+| Schaufenster-Vergleich | Prospekt-/Exposé-Aussagen mit Leistungsbeschreibung abgleichen | Werbeaussagen nicht im Vertrag wiederzufinden | 🔴 (Werbung ist nicht geschuldet, wenn nicht beurkundet) |
+
+**Praxisregel:** Wer ein 30-seitiges Hochglanz-Exposé erhält, aber im Vertrag nur eine 4-seitige Baubeschreibung mit Pauschalverweisen findet, hat ein klassisches Schaufenster-Pattern. Werbeangaben sind nach BGH-Linie nur dann geschuldet, wenn sie zum Vertragsinhalt gemacht wurden — sonst nicht durchsetzbar.
 
 ## C.1 — Pflichtangaben nach § 650k BGB (analog für Bauträger)
 
