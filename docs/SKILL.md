@@ -1,10 +1,10 @@
 ---
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, Abnahme Gemeinschaftseigentum, Schlussrate, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar- und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt im Regelfall ein Drei-Dokumente-Paket: Mandantenanschreiben, ausführliches Gutachten und bestimmtes Schreiben an Bauträger/Notar. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
-version: "2.2.0"
+version: "2.3.0"
 ---
 
-# Bauträgervertrag-Prüfer 2.2
+# Bauträgervertrag-Prüfer 2.3
 
 Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -23,6 +23,8 @@ Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitig
 
 ## Inhaltsverzeichnis
 
+- [Harte Quellenregeln](#harte-quellenregeln)
+- [Schnellnavigation](#schnellnavigation)
 - [Sofortstart](#sofortstart)
 - [Aktuelle Rechtsprechungsanker](#aktuelle-rechtsprechungsanker)
 - [Normenkarte](#normenkarte)
@@ -45,6 +47,26 @@ Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitig
 - [Teil M — Vertiefte Dogmatik II](#teil-m--vertiefte-dogmatik-ii)
 - [Teil N — Wirtschaft, Organisation, HOAI und Technik](#teil-n--wirtschaft-organisation-hoai-und-technik)
 - [Bug-Hunt vor Ausgabe](#bug-hunt-vor-ausgabe)
+
+## Schnellnavigation
+
+Diese Tabelle ist ein reiner Wegweiser: Sie verkürzt den Weg zum einschlägigen Teil, ersetzt aber keine Prüfung. Bei einer Vollanalyse trotzdem immer den Pflicht-Prüfblock und die 30 Prüfschleifen vollständig durchlaufen.
+
+| Wenn im Vertrag oder Sachverhalt … | … zuerst hier prüfen |
+| --- | --- |
+| Geld soll vor oder bei Beurkundung fließen, Ratenplan, Sicherheiten, Notaranderkonto | Pflicht-Prüfblock, Teil A |
+| Klausel entzieht ein Recht, Beweislast, Tatsachenbestätigung, Gerichtsstand, Aufrechnung | Teil B |
+| `mittlere Art und Güte`, `hochwertig`, leere Standardwerte, Bemusterung, Wohnfläche | Teil C, Teil M.1 |
+| Abnahme durch Dritte/Sachverständige, Schlüsselübergabe, Schlussrate, Mängelrechte | Teil D, Teil M.2, Teil M.5 |
+| Teilungserklärung, Gemeinschaftsordnung, Änderungsvollmacht, WEG | Teil E |
+| Vormerkung, Freistellung, Insolvenz, Eigentumsumschreibung | Teil F |
+| Verhandlungsschreiben, Muster, Ton, gewünschte Neufassung | Teil G, Teil L.3 |
+| Bereits beurkundet, Rücktritt, Klage, Eskalation | Teil H |
+| Gesamtnichtigkeit, § 306/§ 139 BGB, Notarhaftung | Teil I |
+| Großprojekt-Muster wiedererkennen, Testakte | Teil J |
+| Preisanpassung, höhere Gewalt/Verzug, Baugruppe statt Bauträger | Teil M.3, Teil M.6, Teil M.7 |
+| Baugrund, Baugrube, Statik, Brand-/Schall-/Wärmeschutz, Haustechnik, HOAI, Bauüberwachung | Teil N |
+| Drei-Dokumente-Paket erstellen | Teil L |
 
 ## Sofortstart
 
