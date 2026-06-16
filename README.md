@@ -46,10 +46,10 @@ docs/
 └── index.html Download-Seite für Browser und Mobilgeräte
 
 uebungsfaelle/
-└── bautraegervertrag-neubauwohnung/
-    ├── quellen/    Fiktiver Vertrag und Baubeschreibung
-    ├── gesamt-docx/ DOCX-Fassungen zum Üben
-    └── gesamt-pdf/ PDF-Fassungen zum Üben
+└── bautraegervertrag/
+    ├── bautraegervertrag.md
+    ├── bautraegervertrag.docx
+    └── bautraegervertrag.pdf
 ```
 
 Die Skill-Datei ist in folgende Hauptteile gegliedert:
@@ -65,7 +65,7 @@ Die Skill-Datei ist in folgende Hauptteile gegliedert:
 - **Technik und Bauüberwachung** — Baugrund, Baugrube, Abdichtung, Schallschutz, Brandschutz, Energie, Statik, Nachweise, Objektüberwachung, private Sachverständige.
 - **Teilungserklärung und WEG** — Sondereigentum, Gemeinschaftseigentum, Sondernutzungsrechte, GdWE, Kostenverteilung, Abnahmeregime.
 - **Mandatsmodule** — Mandantenbericht, Notar-/Bauträgeranschreiben, Verhandlungsfassung, Eskalations- und Klagestrategie.
-- **Schulungsfall** — fiktiver Bauträgervertrag mit referenzierter Baubeschreibung.
+- **Übungsdokument** — ein freistehender Bauträgervertrag mit Baubeschreibung als Anlage.
 
 Zusätzlich enthält der Skill durchgängig:
 
@@ -118,9 +118,9 @@ Die `SKILL.md` enthält einen eigenen Rechtsprechungsanker mit überprüfbaren L
 
 Dieses Repository folgt derselben offenen Ein-Datei-Logik wie der [Arbeitszeugnis-Prüfer Skill](https://github.com/Klotzkette/arbeitszeugnispruefer-skill): Der eigentliche Skill ist eine lesbare Markdown-Datei, nicht ein verborgenes System. Die README beschreibt nicht einzelne Bastelstände, sondern Zweck, Einsatz, Inhalt, Grenzen und Bedienung des Skills.
 
-## Schulungsfall zum Üben
+## Bauträgervertrag zum Üben
 
-Im Ordner [`uebungsfaelle/bautraegervertrag-neubauwohnung/`](uebungsfaelle/bautraegervertrag-neubauwohnung/) liegt ein fiktiver Bauträgervertrag mit zugehöriger Baubeschreibung. Der Fall ist als neutrales Vorführ- und Übungsmaterial gedacht: Vertrag und Baubeschreibung werden ohne vorgelagerte Auswertung oder Hinweise bereitgestellt, damit der Skill die Prüfung autonom leisten muss.
+Im Ordner [`uebungsfaelle/bautraegervertrag/`](uebungsfaelle/bautraegervertrag/) liegt ein freistehender Bauträgervertrag als [Markdown](uebungsfaelle/bautraegervertrag/bautraegervertrag.md), [Word-Dokument](uebungsfaelle/bautraegervertrag/bautraegervertrag.docx) und [PDF](uebungsfaelle/bautraegervertrag/bautraegervertrag.pdf). Obacht: Dieses Dokument ist bewusst schlecht und darf nicht in der Praxis eingesetzt werden. Der Vertrag selbst enthält keine vorgelagerte Auswertung und keine Hinweise darauf, was zu beanstanden ist.
 
 ## Keine Aussage über Berufsrecht, Datenschutz, KI-VO oder Beschlagnahmeverbote
 

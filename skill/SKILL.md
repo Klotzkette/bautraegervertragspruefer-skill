@@ -41,7 +41,7 @@ Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitig
 - [Teil G — Verhandlungspaket](#teil-g--verhandlungspaket)
 - [Teil H — Streit, Rücktritt, Klage](#teil-h--streit-rücktritt-klage)
 - [Teil I — Nichtigkeit, § 306 BGB, Notar](#teil-i--nichtigkeit--306-bgb-notar)
-- [Teil J — Realfall-Pattern und Schulungsfall](#teil-j--realfall-pattern-und-schulungsfall)
+- [Teil J — Realfall-Pattern und Übungsdokument](#teil-j--realfall-pattern-und-übungsdokument)
 - [Teil K — Vertiefte Dogmatik](#teil-k--vertiefte-dogmatik)
 - [Teil L — Drei-Dokumente-Paket](#teil-l--drei-dokumente-paket)
 - [Teil M — Vertiefte Dogmatik II](#teil-m--vertiefte-dogmatik-ii)
@@ -63,7 +63,7 @@ Diese Tabelle ist ein reiner Wegweiser: Sie verkürzt den Weg zum einschlägigen
 | Verhandlungsschreiben, Muster, Ton, gewünschte Neufassung | Teil G, Teil L.3 |
 | Bereits beurkundet, Rücktritt, Klage, Eskalation | Teil H |
 | Gesamtnichtigkeit, § 306/§ 139 BGB, Notarhaftung | Teil I |
-| Großprojekt-Muster wiedererkennen, Schulungsfall | Teil J |
+| Großprojekt-Muster wiedererkennen, Übungsdokument | Teil J |
 | Preisanpassung, höhere Gewalt/Verzug, Baugruppe statt Bauträger | Teil M.3, Teil M.6, Teil M.7 |
 | Baugrund, Baugrube, Statik, Brand-/Schall-/Wärmeschutz, Haustechnik, HOAI, Bauüberwachung | Teil N |
 | Drei-Dokumente-Paket erstellen | Teil L |
@@ -688,11 +688,11 @@ Nicht pauschal behaupten, ein Notaranderkonto mache die gesamte Abwicklung unwir
 5. Welche Amtspflichtfragen stellt § 57 BeurkG?
 6. Welche zivilrechtlichen Ansprüche bestehen unabhängig davon?
 
-## Teil J — Realfall-Pattern und Schulungsfall
+## Teil J — Realfall-Pattern und Übungsdokument
 
 Dieser Teil ist ein Wiedererkennungsraster für Großprojektverträge. Er ersetzt keine Prüfung, sondern sagt: Wenn dieses Muster auftaucht, springe in den genannten Prüfteil.
 
-Wenn im Repository der Schulungsfall `uebungsfaelle/bautraegervertrag-neubauwohnung/` verfügbar ist, kann er zur Kalibrierung genutzt werden. Er umfasst die notarielle Urkunde sowie die nur lose übergebene Baubeschreibung (Version 7.2). Die eigentliche Vertragsanalyse darf aber nie aus dem Schulungsfall heraus behaupten, sondern muss am vorgelegten Vertrag arbeiten. Wird eine Baubeschreibung nur lose übergeben oder nur referenziert, ist sie zur Bausoll-Prüfung ausdrücklich anzufordern.
+Wenn im Repository das Übungsdokument `uebungsfaelle/bautraegervertrag/bautraegervertrag.md` verfügbar ist, kann es zur Kalibrierung genutzt werden. Es ist als freistehender Bauträgervertrag mit Baubeschreibung als Anlage aufgebaut. Die eigentliche Vertragsanalyse darf aber nie aus dem Übungsdokument heraus behaupten, sondern muss am vorgelegten Vertrag arbeiten. Wird eine Baubeschreibung nur lose übergeben oder nur referenziert, ist sie zur Bausoll-Prüfung ausdrücklich anzufordern.
 
 | Pattern | Typischer Fundort | Sofortprüfung |
 | --- | --- | --- |
