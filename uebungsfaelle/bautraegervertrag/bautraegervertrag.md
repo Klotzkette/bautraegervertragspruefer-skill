@@ -50,7 +50,7 @@ Der Käufer erklärte im Hinblick auf § 17 Abs. 2a BeurkG, dass ihm ein Entwurf
 
 Die Erschienenen baten sodann um die Beurkundung des nachstehenden
 
-# Bauträgervertrag
+# Wohnungsbauträgervertrag mit Auflassung
 
 ## Vorbemerkungen
 
