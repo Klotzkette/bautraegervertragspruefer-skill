@@ -1,10 +1,10 @@
 ---
 name: bautraegervertrag-pruefer
-description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, Abnahme Gemeinschaftseigentum, Schlussrate, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar- und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt im Regelfall ein Drei-Dokumente-Paket: Mandantenanschreiben, ausführliches Gutachten und bestimmtes Schreiben an Bauträger/Notar. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
-version: "2.4.1"
+description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, Abnahme Gemeinschaftseigentum, Schlussrate, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar- und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt im Regelfall ein Drei-Dokumente-Paket: Mandantenanschreiben, ausführliches Gutachten und bestimmtes Schreiben an Bauträger/Notar. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
+version: "2.4.2"
 ---
 
-# Bauträgervertrag-Prüfer 2.4.1
+# Bauträgervertrag-Prüfer 2.4.2
 
 Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -26,6 +26,7 @@ Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitig
 - [Harte Quellenregeln](#harte-quellenregeln)
 - [Schnellnavigation](#schnellnavigation)
 - [Sofortstart](#sofortstart)
+- [Fall-Fingerabdruck und Anti-Generik-Regel](#fall-fingerabdruck-und-anti-generik-regel)
 - [Aktuelle Rechtsprechungsanker](#aktuelle-rechtsprechungsanker)
 - [Normenkarte](#normenkarte)
 - [30-Prüfschleifen](#30-prüfschleifen)
@@ -41,7 +42,7 @@ Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitig
 - [Teil G — Verhandlungspaket](#teil-g--verhandlungspaket)
 - [Teil H — Streit, Rücktritt, Klage](#teil-h--streit-rücktritt-klage)
 - [Teil I — Nichtigkeit, § 306 BGB, Notar](#teil-i--nichtigkeit--306-bgb-notar)
-- [Teil J — Realfall-Pattern und Übungsdokument](#teil-j--realfall-pattern-und-übungsdokument)
+- [Teil J — Großprojekt-Pattern und Fallbezug](#teil-j--großprojekt-pattern-und-fallbezug)
 - [Teil K — Vertiefte Dogmatik](#teil-k--vertiefte-dogmatik)
 - [Teil L — Drei-Dokumente-Paket](#teil-l--drei-dokumente-paket)
 - [Teil M — Vertiefte Dogmatik II](#teil-m--vertiefte-dogmatik-ii)
@@ -63,7 +64,7 @@ Diese Tabelle ist ein reiner Wegweiser: Sie verkürzt den Weg zum einschlägigen
 | Verhandlungsschreiben, Muster, Ton, gewünschte Neufassung | Teil G, Teil L.3 |
 | Bereits beurkundet, Rücktritt, Klage, Eskalation | Teil H |
 | Gesamtnichtigkeit, § 306/§ 139 BGB, Notarhaftung | Teil I |
-| Großprojekt-Muster wiedererkennen, Übungsdokument | Teil J |
+| Großprojekt-Muster, Serienurkunde, Projektgesellschaft, Fallbezug | Teil J |
 | Preisanpassung, höhere Gewalt/Verzug, Baugruppe statt Bauträger | Teil M.3, Teil M.6, Teil M.7 |
 | Baugrund, Baugrube, Statik, Brand-/Schall-/Wärmeschutz, Haustechnik, HOAI, Bauüberwachung | Teil N |
 | Drei-Dokumente-Paket erstellen | Teil L |
@@ -84,6 +85,42 @@ Pflichtreihenfolge:
 6. Rechtsprechung nur mit zulässiger Fundstelle nennen.
 7. Verhandlungspaket mit konkreten Änderungsformulierungen liefern.
 8. Wenn ein vollständiger oder im Wesentlichen vollständiger Vertrag vorliegt: Drei-Dokumente-Paket nach Teil L erzeugen, sofern der Nutzer nicht ausdrücklich nur einen Schnellscan will.
+
+## Fall-Fingerabdruck und Anti-Generik-Regel
+
+Vor jeder Bewertung wird intern ein Fall-Fingerabdruck erstellt. Er ist kein Selbstzweck und wird nur so weit ausgegeben, wie er für die Antwort nützlich ist. Ohne diesen Fingerabdruck darf keine rote oder orange Ampel gesetzt werden.
+
+| Feld | Konkret zu erfassen |
+| --- | --- |
+| Urkunde | UR-Nr., Notar, Beurkundungsdatum, Entwurfs-/Beurkundungsstatus, Verbraucherfrist, Bezugsurkunden |
+| Verkäuferseite | Firma, Rechtsform, Projektgesellschaft, Vollmacht, Konzern-/Finanzierungsbezug, eingetragene Grundpfandrechte |
+| Erwerberseite | natürliche Person, Eigennutzung/private Kapitalanlage, Finanzierungsdruck, Beurkundungs-/Zahlungs-/Abnahmefristen |
+| Grundstück und Projekt | Grundbuch, Gemarkung, Flurstück, Bauabschnitte, Nachbarbaufelder, Tiefgarage, Gemeinschaftsflächen, Erschließung |
+| Einheit | Haus, Wohnungsnummer, Geschoss, Keller, Terrasse/Balkon/Sondernutzung, Stellplatz, Wohnfläche, Miteigentumsanteil |
+| Preis und Zahlungen | Kaufpreis, Stellplatzaufpreis, Reservierungs-/Sonderwunschzahlungen, Ratenplan, Schlussrate, Erschließungs-/Anschlusskosten |
+| Sicherheiten | Vormerkung, Lastenfreistellung, § 650m-Abs.-2-Sicherheit, § 7-MaBV-Alternative, Löschungs-/Freigabemechanik |
+| Bausoll | Baubeschreibung mit Datum/Version, Pläne, Bemusterung, Fabrikate, Schall/Energie/Feuchte, Wohnflächenmethode |
+| Technik | Baugrund, Grundwasser, Altlasten, Kampfmittel, Baugrube, Abdichtung, Statik, Brandschutz, Lüftung, Heizung, Tiefgarage |
+| Organisation | Planer/Fachplaner, Objektüberwachung, Projektsteuerung, privater Sachverständiger, Erstverwalter, Wartungs-/Contractingverträge |
+| Streitstand | vor Beurkundung, nach Beurkundung, vor Rate, vor Abnahme, Mängelstreit, Insolvenz-/Freistellungsproblem |
+
+Anti-Generik-Regel: Jeder Befund muss mindestens zwei Fallanker enthalten, etwa Klauselnummer, Originalwortlaut, Betrag, Rate, Datum, Haus-/Wohnungsnummer, Baubeschreibungsabschnitt, beteiligte Partei oder technisches Bauteil. Ein Satz, der unverändert in eine andere Bauträgerakte passen würde, ist vor Ausgabe umzuschreiben.
+
+Verbotene Ausgabemuster:
+
+- `Der Bauträger sollte die Klausel anpassen.`
+- `Die Baubeschreibung ist unklar.`
+- `Die Abnahme ist problematisch.`
+- `Technische Unterlagen sollten vorgelegt werden.`
+
+Erforderliche Fassung:
+
+- Benenne die Klausel und ihre wirtschaftliche Wirkung in diesem Vertrag.
+- Benenne den konkreten Gegenstand: z. B. Haus, Wohnung, Stellplatz, Ratenmeilenstein, Baubeschreibungsabschnitt, Baufeld, Technikgewerk.
+- Benenne die konkrete Änderung: Streichung, Ergänzung, Zahlungsstopp, Einbehalt, Unterlagenliste, Frist oder Alternativwortlaut.
+- Benenne das erwartbare Gegenargument von Verkäufer, Notariat oder finanzierender Bank und beantworte genau dieses Argument.
+
+No-Meta-Regel: Die Analyse spricht nie darüber, ob ein Dokument aus einem Repository, einer Vorlage, einem Beispiel, einer Demonstration oder einem Test stammt. Auch wenn Herkunft oder Dateipfad erkennbar sind, wird ausschließlich der vorgelegte Vertragsstoff behandelt.
 
 ## Aktuelle Rechtsprechungsanker
 
@@ -182,12 +219,13 @@ Erfasse knapp:
 
 | Punkt | Inhalt |
 | --- | --- |
-| Rolle | Erwerber, Anwalt, Verbraucherzentrale, WEG/GdWE, Notar-/Bauträger-Gegenprüfung |
-| Status | Entwurf, Beurkundung terminiert, beurkundet, Bauphase, Abnahme, Mängelstreit, Insolvenz |
-| Objekt | Wohnung, Teileigentum, Reihenhaus, Sanierung, Erbbaurecht |
-| Preis | Gesamtpreis, Sonderwünsche, Finanzierungs-/KfW-Bezug |
-| Unterlagen | Vertrag, Anlagen, Teilungserklärung, Gemeinschaftsordnung, Baubeschreibung, Freistellung, Ratenplan, Baugrundgutachten, Baugenehmigung, Fachplaner-/Nachweisunterlagen |
-| Eilbedarf | Beurkundungstermin, Zahlungsfrist, Abnahmefrist, Klagefrist |
+| Rolle | Wer fragt konkret: Erwerber dieser Einheit, anwaltliche Vertretung, Verbraucherzentrale, GdWE, Notar-/Bauträger-Gegenprüfung |
+| Status | Entwurfsdatum oder UR-Nr.; Beurkundungstermin, bereits beurkundet, Bauphase, Rate angefordert, Abnahme, Mängelstreit, Insolvenz |
+| Objekt | Haus/Einheit/Geschoss, Keller, Balkon/Terrasse/Garten, Stellplatz, Miteigentumsanteil, Wohnflächenmethode, Sondernutzungsrechte |
+| Projekt | Grundstück, Bauabschnitte, Nachbarbaufelder, Tiefgarage, Erschließung, Gemeinschaftsflächen, Erstverwalter, spätere Quartiersentwicklung |
+| Preis | Kaufpreis, Stellplatzaufpreis, Reservierungsentgelt, Sonderwünsche, Ratenplan, Erschließungs-/Anschlusskosten, Finanzierungs-/Förderbezug |
+| Unterlagen | Vertrag, Baubeschreibung mit Version, Pläne, Teilungserklärung/Nachträge, Gemeinschaftsordnung, Freistellung, Baugenehmigung, Baugrund, Fachplaner-/Nachweisunterlagen |
+| Eilbedarf | Datum der Beurkundung, Rate, Bemusterung, Zutritt, Abnahme, Besitzübergang, Schlussrate, gerichtliche Frist |
 
 ### 2 — Quellenrefresh
 
@@ -256,6 +294,7 @@ Gesamteinschätzung:
 
 ```text
 Kurzbild
+- Fall-Fingerabdruck:
 - Vertragsart:
 - Verbraucherstatus:
 - Pflicht-Prüfblock: 🔴 x / 🟠 y / 🟢 z
@@ -267,18 +306,19 @@ Kurzbild
 ### Vollanalyse
 
 ```text
-1. Pflicht-Prüfblock
-2. Quellenstand
-3. Vertragsart und Verbraucherstatus
-4. MaBV-Zahlungsprüfung
-5. AGB-Klauselmatrix
-6. Baubeschreibung/Bausoll
-7. Abnahme, Schlussrate, Mängelrechte
-8. HOAI/Objektüberwachung/technische Projektrisiken
-9. Wirtschaft/Organisation/WEG-Betrieb
-10. Eigentumsschutz/Insolvenz
-11. Verhandlungspaket
-12. Restfragen
+1. Fall-Fingerabdruck
+2. Pflicht-Prüfblock
+3. Quellenstand
+4. Vertragsart und Verbraucherstatus
+5. MaBV-Zahlungsprüfung
+6. AGB-Klauselmatrix
+7. Baubeschreibung/Bausoll
+8. Abnahme, Schlussrate, Mängelrechte
+9. HOAI/Objektüberwachung/technische Projektrisiken
+10. Wirtschaft/Organisation/WEG-Betrieb
+11. Eigentumsschutz/Insolvenz
+12. Verhandlungspaket
+13. Restfragen
 ```
 
 ### Streitstellen-Tabelle
@@ -408,7 +448,7 @@ Regelfolgen:
 Schreibe nicht nur `unwirksam`. Schreibe:
 
 ```text
-Die Klausel ist als AGB angreifbar, weil sie [konkretes Recht] entzieht. Gesetzlicher Ausgangspunkt ist [Norm]. Die aktuelle BGH-Linie zu [Fallgruppe] stützt das, weil [Kernaussage]. Das erwartbare Gegenargument [x] trägt nicht, weil [juristische Antwort]. Gewünschte Fassung: [...]
+Die Klausel [Paragraph/Absatz/Baubeschreibungsabschnitt] ist als AGB angreifbar, weil sie für [konkrete Einheit/Rate/Abnahme/Unterlage/Technikgewerk] [konkretes Recht] entzieht. Gesetzlicher Ausgangspunkt ist [Norm]. Die aktuelle BGH-Linie zu [Fallgruppe] stützt das, weil [Kernaussage]. Das erwartbare Gegenargument [konkretes Verkäufer-/Notarargument aus dieser Klausel] trägt nicht, weil [juristische Antwort]. Gewünschte Fassung für diesen Vertrag: [konkreter Wortlaut].
 ```
 
 ## Teil C — Baubeschreibung und Bausoll
@@ -580,17 +620,18 @@ Der Stil ist bestimmt, nicht schrill. Ziel: Der Notar soll rechtlich prüfen mü
 ```text
 Sehr geehrte Damen und Herren,
 
-wir nehmen Bezug auf den Entwurf vom [Datum] zum Bauträgervertrag [Projekt/Wohnung]. Der Entwurf ist in mehreren Punkten vor einer Beurkundung anzupassen. Die nachfolgenden Punkte sind keine Geschmacksfragen, sondern betreffen zwingende MaBV-Vorgaben, AGB-Kontrolle und aktuelle BGH-Rechtsprechung.
+wir nehmen Bezug auf den Entwurf vom [Datum/UR-Nr./Notar] zum Bauträgervertrag über [Projekt, Haus, Einheit, Stellplatz]. Der Entwurf ist in mehreren Punkten vor einer Beurkundung anzupassen. Die nachfolgenden Punkte sind keine Geschmacksfragen, sondern betreffen die konkrete Zahlungs-, Sicherungs-, Abnahme-, Bausoll- und WEG-Struktur dieses Vertrages sowie zwingende MaBV-Vorgaben, AGB-Kontrolle und aktuelle BGH-Rechtsprechung.
 
-1. [Klausel] - [Problem]
-Original: "[...]"
-Bewertung: [...]
-Fundstelle: [...]
+1. [Paragraph/Absatz] - [Problem bezogen auf Rate/Einheit/Unterlage/Abnahme/Technik]
+Original: "[maßgeblicher Wortlaut]"
+Wirkung in diesem Vertrag: [Betrag, Frist, Rate, Unterlage, Einheit, Bauteil oder WEG-Folge]
+Bewertung: [Norm/Rechtsprechungsanker/Argumentationslinie bezogen auf diese Klausel]
+Fundstelle: [zulässige URL oder `nicht quellenhart verifiziert`]
 Erwartetes Gegenargument: [...]
-Antwort: [...]
-Gewünschte Fassung: [...]
+Antwort: [Antwort auf genau dieses Gegenargument]
+Gewünschte Fassung: [voller Ersatzwortlaut oder Streichungsanweisung für diesen Vertrag]
 
-Wir bitten um einen überarbeiteten Entwurf bis [Datum]. Ohne diese Klärung ist eine Beurkundung aus Erwerbersicht nicht verantwortbar.
+Wir bitten um einen überarbeiteten Entwurf bis [konkretes Datum vor Beurkundung/Zahlungsfrist]. Ohne diese Klärung ist eine Beurkundung aus Erwerbersicht nicht verantwortbar.
 
 Mit freundlichen Grüßen
 ```
@@ -688,11 +729,11 @@ Nicht pauschal behaupten, ein Notaranderkonto mache die gesamte Abwicklung unwir
 5. Welche Amtspflichtfragen stellt § 57 BeurkG?
 6. Welche zivilrechtlichen Ansprüche bestehen unabhängig davon?
 
-## Teil J — Realfall-Pattern und Übungsdokument
+## Teil J — Großprojekt-Pattern und Fallbezug
 
-Dieser Teil ist ein Wiedererkennungsraster für Großprojektverträge. Er ersetzt keine Prüfung, sondern sagt: Wenn dieses Muster auftaucht, springe in den genannten Prüfteil.
+Dieser Teil ist ein Wiedererkennungsraster für großvolumige Wohnungsbauträgerverträge. Er ersetzt keine Prüfung, sondern zwingt die Analyse, typische Serienklauseln an die konkrete Urkunde, die konkrete Einheit und die konkrete Projektorganisation zurückzubinden.
 
-Wenn im Repository das Übungsdokument `uebungsfaelle/bautraegervertrag/bautraegervertrag.md` verfügbar ist, kann es zur Kalibrierung genutzt werden. Es ist als freistehender Bauträgervertrag mit Baubeschreibung als Anlage aufgebaut. Die eigentliche Vertragsanalyse darf aber nie aus dem Übungsdokument heraus behaupten, sondern muss am vorgelegten Vertrag arbeiten. Wird genau dieses Dokument als Prüfgegenstand vorgelegt, behandle es wie einen normalen fremden Bauträgervertrag: keine Meta-Hinweise, kein Lösungsschlüssel, keine Aussage, dass Fehler eingebaut wurden. Wird eine Baubeschreibung nur lose übergeben oder nur referenziert, ist sie zur Bausoll-Prüfung ausdrücklich anzufordern.
+Wird eine Baubeschreibung nur lose übergeben oder nur referenziert, ist sie zur Bausoll-Prüfung ausdrücklich anzufordern. Wird sie als Anlage mitgeliefert, sind Vertragsteil und Anlage gegeneinander zu lesen: Fassung, Datum, Einbeziehung, Widerspruchsregel, Wohnflächenmethode, technische Mindestparameter und nachträgliche Fortschreibungsrechte.
 
 | Pattern | Typischer Fundort | Sofortprüfung |
 | --- | --- | --- |
@@ -730,6 +771,20 @@ Bei großen Projekten ist eine individuelle Klauseländerung oft wirtschaftlich 
 - Bei Beurkundung trotz Einwand: Belehrung und Ablehnung der Klausel dokumentieren lassen, soweit der Notar mitwirkt.
 - Nach Beurkundung: Unwirksamkeit im Streitfall einwenden; gesetzliche Lage tritt ein.
 - In der WEG/GdWE: Ansprüche am Gemeinschaftseigentum kollektiv bündeln.
+
+### J.3 — Anti-Generik-Check für jeden Befund
+
+Vor Ausgabe jedes Befunds prüfen:
+
+| Frage | Mindestantwort |
+| --- | --- |
+| Welche Klausel? | Paragraph, Absatz oder Baubeschreibungsabschnitt mit Kurzoriginal |
+| Welches konkrete Risiko? | Zahlung, Abnahme, Vormerkung, Wohnfläche, Schallschutz, Baugrund, Wartung, WEG-Kosten oder anderes benanntes Risiko |
+| Welche konkrete Auswirkung? | Betrag, Rate, Termin, Unterlage, Einheitsnummer, Bauabschnitt, technisches Gewerk oder Verwalter-/Bankrolle |
+| Welche konkrete Änderung? | Wortlaut, Streichung, Einbehalt, Frist, Unterlagenanforderung oder Prüfvorbehalt |
+| Welches Gegenargument? | Verkäufer-/Notar-/Bankargument nicht abstrakt, sondern aus der konkreten Klausellogik |
+
+Wenn eine dieser Antworten fehlt, ist der Befund noch nicht ausgabereif.
 
 ## Teil K — Vertiefte Dogmatik
 
@@ -856,14 +911,15 @@ Ziel: Der Verbraucher versteht in fünf Minuten, ob er unterschreiben, verschieb
 Aufbau:
 
 ```text
-Betreff: Prüfung Bauträgervertrag [Projekt/Wohnung]
+Betreff: Prüfung Bauträgervertrag [Projektname, Haus/Einheit/Stellplatz, Entwurfsdatum oder UR-Nr.]
 
 1. Ergebnis in einem Absatz
-2. Ampel-Bilanz
-3. Die wichtigsten drei bis sieben Risiken
-4. Was das praktisch bedeutet
-5. Nächste Schritte
-6. Offene Unterlagen/Fragen
+2. Fall-Fingerabdruck
+3. Ampel-Bilanz
+4. Die wichtigsten drei bis sieben Risiken
+5. Was das praktisch für Zahlung, Beurkundung, Abnahme oder Besitzübergang bedeutet
+6. Nächste Schritte mit konkreten Fristen
+7. Offene Unterlagen/Fragen
 ```
 
 Stil:
@@ -882,17 +938,18 @@ Aufbau:
 ```text
 A. Sachverhalt und geprüfte Unterlagen
 B. Quellenstand
-C. Vertragsart und Verbraucherstatus
-D. Pflicht-Prüfblock
-E. MaBV und Zahlungsplan
-F. AGB-Klauselmatrix
-G. Baubeschreibung/Bausoll
-H. Abnahme, Schlussrate, Mängelrechte
-I. HOAI/Objektüberwachung/technische Projektrisiken
-J. Wirtschaft/Organisation/WEG
-K. Eigentumsschutz/Insolvenz
-L. Gesamteinschätzung
-M. Konkrete Änderungsfassung
+C. Fall-Fingerabdruck
+D. Vertragsart und Verbraucherstatus
+E. Pflicht-Prüfblock
+F. MaBV und Zahlungsplan
+G. AGB-Klauselmatrix
+H. Baubeschreibung/Bausoll
+I. Abnahme, Schlussrate, Mängelrechte
+J. HOAI/Objektüberwachung/technische Projektrisiken
+K. Wirtschaft/Organisation/WEG
+L. Eigentumsschutz/Insolvenz
+M. Gesamteinschätzung
+N. Konkrete Änderungsfassung
 ```
 
 Jeder rote Befund braucht Norm, Fundstelle oder klare Argumentationslinie.
@@ -904,18 +961,18 @@ Ziel: bestimmte, verhandlungsfähige Aufforderung.
 Aufbau:
 
 ```text
-Betreff: Bauträgervertrag [Projekt/Wohnung] - erforderliche Anpassungen vor Beurkundung
+Betreff: Bauträgervertrag [Projektname, Haus/Einheit/Stellplatz, Entwurfsdatum oder UR-Nr.] - erforderliche Anpassungen vor Beurkundung
 
 Sehr geehrte Damen und Herren,
 
 der Entwurf ist in folgenden Punkten vor Beurkundung anzupassen. Die notarielle Form ersetzt nicht die AGB-Inhaltskontrolle. Zwingende MaBV- und Verbraucherschutzvorgaben stehen nicht zur Disposition.
 
-1. [Klausel] - [Problem]
-Original: [...]
+1. [Paragraph/Absatz/Baubeschreibungsabschnitt] - [konkretes Problem]
+Original: [maßgeblicher Wortlaut]
 Rechtsgrundlage: [...]
 Gegenargument: [...]
-Antwort: [...]
-Gewünschte Fassung: [...]
+Antwort: [Antwort auf das konkrete Gegenargument]
+Gewünschte Fassung: [voller Ersatzwortlaut oder Streichungsanweisung]
 
 Frist / weiteres Vorgehen
 ```

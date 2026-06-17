@@ -6,7 +6,7 @@
 >
 > **Eine einzige Datei, modellunabhängig einsetzbar.** Der vollständige Skill steckt in einer einzigen Markdown-Datei: [`skill/SKILL.md`](skill/SKILL.md) — ohne externe Laufzeit, ohne Datenbank, ohne Konto und ohne zusätzliches Werkzeug. Er funktioniert in jedem leistungsfähigen KI-Chatbot bzw. Sprachmodell: Claude, ChatGPT, Gemini, Mistral, Perplexity, lokal betriebene Modelle. Es ist keine Installation erforderlich — siehe [Anwendung](#anwendung-so-einfach-gehts).
 
-Konsolidierter Skill (Version 2.4.1) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität und Verhandlungsstrategie.
+Konsolidierter Skill (Version 2.4.2) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität und Verhandlungsstrategie.
 
 ## Download
 
@@ -45,7 +45,7 @@ docs/
 ├── SKILL.md   Veröffentlichte Downloadfassung
 └── index.html Download-Seite für Browser und Mobilgeräte
 
-uebungsfaelle/
+vertragsdokumente/
 └── bautraegervertrag/
     ├── bautraegervertrag.md
     ├── bautraegervertrag.docx
@@ -65,14 +65,15 @@ Die Skill-Datei ist in folgende Hauptteile gegliedert:
 - **Technik und Bauüberwachung** — Baugrund, Baugrube, Abdichtung, Schallschutz, Brandschutz, Energie, Statik, Nachweise, Objektüberwachung, private Sachverständige.
 - **Teilungserklärung und WEG** — Sondereigentum, Gemeinschaftseigentum, Sondernutzungsrechte, GdWE, Kostenverteilung, Abnahmeregime.
 - **Mandatsmodule** — Mandantenbericht, Notar-/Bauträgeranschreiben, Verhandlungsfassung, Eskalations- und Klagestrategie.
-- **Übungsdokument** — ein freistehender Bauträgervertrag mit Baubeschreibung als Anlage.
+- **Vertragsdokument** — ein freistehender Bauträgervertrag mit Baubeschreibung als Anlage.
 
 Zusätzlich enthält der Skill durchgängig:
 
 - **Verbraucherschützende Priorisierung** — der Skill sucht nicht nur formale Fehler, sondern wirtschaftliche, technische und organisatorische Schieflagen.
 - **Überzeugungsdisziplin** — jedes harte Argument soll so formuliert werden, dass es gegenüber Notariat, Bauträger und deren Prozessvertretung belastbar ist.
 - **Kein Blindzitat** — tragende Rechtsprechung wird nicht aus Modellwissen erfunden; Quellen werden als zu verifizieren markiert oder mit frei überprüfbarem Fundort benannt.
-- **No-Meta-Regel für das Übungsdokument** — wenn der enthaltene Bauträgervertrag geprüft wird, behandelt der Skill ihn wie jeden fremden Vertrag und gibt keinen Lösungsschlüssel aus.
+- **No-Meta-Regel für jedes Vertragsdokument** — der Skill spricht nie über Herkunft, Repository, Beispiel, Demonstration oder Dateirolle, sondern prüft ausschließlich den vorgelegten Vertragsstoff.
+- **Anti-Generik-Regel** — kein Befund darf ohne Fallanker ausgegeben werden; jede rote oder orange Ampel braucht Klausel, Betrag/Rate/Frist oder Projekt-/Einheitsbezug und eine konkrete Änderungsfassung.
 - **Technischer Realitätscheck** — ein juristisch eleganter Vertrag genügt nicht, wenn Baugrund, Baugrube, Abdichtung, Bauüberwachung oder Nachweislage nicht tragen.
 - **Drei-Dokumente-Ausgabe** — Mandantenbericht, Gegenseitenschreiben und Änderungs-/Streichungsliste können in einem Durchgang erzeugt werden.
 
@@ -119,9 +120,9 @@ Die `SKILL.md` enthält einen eigenen Rechtsprechungsanker mit überprüfbaren L
 
 Dieses Repository folgt derselben offenen Ein-Datei-Logik wie der [Arbeitszeugnis-Prüfer Skill](https://github.com/Klotzkette/arbeitszeugnispruefer-skill): Der eigentliche Skill ist eine lesbare Markdown-Datei, nicht ein verborgenes System. Die README beschreibt nicht einzelne Bastelstände, sondern Zweck, Einsatz, Inhalt, Grenzen und Bedienung des Skills.
 
-## Bauträgervertrag zum Üben
+## Bauträgervertragsdokument
 
-Im Ordner [`uebungsfaelle/bautraegervertrag/`](uebungsfaelle/bautraegervertrag/) liegt ein freistehender Bauträgervertrag als [Markdown](uebungsfaelle/bautraegervertrag/bautraegervertrag.md), [Word-Dokument](uebungsfaelle/bautraegervertrag/bautraegervertrag.docx) und [PDF](uebungsfaelle/bautraegervertrag/bautraegervertrag.pdf). Obacht: Dieses Dokument ist bewusst schlecht und darf nicht in der Praxis eingesetzt werden. Der Vertrag selbst enthält keine vorgelagerte Auswertung und keine Hinweise darauf, was zu beanstanden ist.
+Im Ordner [`vertragsdokumente/bautraegervertrag/`](vertragsdokumente/bautraegervertrag/) liegt ein freistehender Bauträgervertrag als [Markdown](vertragsdokumente/bautraegervertrag/bautraegervertrag.md), [Word-Dokument](vertragsdokumente/bautraegervertrag/bautraegervertrag.docx) und [PDF](vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf). Dieses Dokument ist kein Mustervertrag und darf nicht in der Praxis eingesetzt oder gegenüber echten Käuferinnen, Käufern, Bauträgern, Notariaten oder Behörden verwendet werden. Eine fachliche Bewertung setzt immer eine eigenständige rechtliche und technische Prüfung voraus.
 
 ## Keine Aussage über Berufsrecht, Datenschutz, KI-VO oder Beschlagnahmeverbote
 
