@@ -18,6 +18,16 @@ Wenn der Download-Knopf in einer App nicht direkt funktioniert, wird die Datei s
 
 Wer den Inhalt lieber direkt sehen und kopieren will, öffnet [`skill/SKILL.md`](skill/SKILL.md) — das ist die formatierte Ansicht hier im Repository. Der gesamte Text lässt sich dort mit `Strg+A` / `Cmd+A` markieren und kopieren.
 
+## Beispiel-Bauträgervertrag zum Ausprobieren
+
+Zum Testen des Skills liegt im Repository ein freistehender Bauträgervertrag als Beispieldokument bereit — ein realistisch wirkender, vollständig fingierter Vertrag, an dem sich die Prüfung sofort durchspielen lässt:
+
+- **[📄 Bauträgervertrag als Markdown](vertragsdokumente/bautraegervertrag/bautraegervertrag.md)**
+- **[📄 Bauträgervertrag als Word-Dokument](vertragsdokumente/bautraegervertrag/bautraegervertrag.docx)**
+- **[📄 Bauträgervertrag als PDF](vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf)**
+
+Das Dokument ist kein Mustervertrag und darf nicht in der Praxis eingesetzt oder gegenüber echten Käuferinnen, Käufern, Bauträgern, Notariaten oder Behörden verwendet werden. Eine fachliche Bewertung setzt immer eine eigenständige rechtliche und technische Prüfung voraus.
+
 ## Kurzversion für kleinere Modelle
 
 **[📥 MINI_SKILL.md herunterladen](https://klotzkette.github.io/bautraegervertragspruefer-skill/MINI_SKILL.md)**
@@ -128,13 +138,9 @@ Die `SKILL.md` enthält einen eigenen Rechtsprechungsanker mit überprüfbaren L
 - Baugrund, Baugrube, Abdichtung, Schallschutz, Brandschutz oder Energieangaben wirken lückenhaft.
 - Notariat oder Bauträger lehnen Änderungen ab und brauchen harte, zitierfähige Gegenargumente.
 
-## Verwandte Projekte
+## Offene Ein-Datei-Logik
 
-Dieses Repository folgt derselben offenen Ein-Datei-Logik wie der [Arbeitszeugnis-Prüfer Skill](https://github.com/Klotzkette/arbeitszeugnispruefer-skill): Der eigentliche Skill ist eine lesbare Markdown-Datei, nicht ein verborgenes System. Die README beschreibt nicht einzelne Bastelstände, sondern Zweck, Einsatz, Inhalt, Grenzen und Bedienung des Skills.
-
-## Bauträgervertragsdokument
-
-Im Ordner [`vertragsdokumente/bautraegervertrag/`](vertragsdokumente/bautraegervertrag/) liegt ein freistehender Bauträgervertrag als [Markdown](vertragsdokumente/bautraegervertrag/bautraegervertrag.md), [Word-Dokument](vertragsdokumente/bautraegervertrag/bautraegervertrag.docx) und [PDF](vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf). Dieses Dokument ist kein Mustervertrag und darf nicht in der Praxis eingesetzt oder gegenüber echten Käuferinnen, Käufern, Bauträgern, Notariaten oder Behörden verwendet werden. Eine fachliche Bewertung setzt immer eine eigenständige rechtliche und technische Prüfung voraus.
+Dieses Repository folgt einer offenen Ein-Datei-Logik: Der eigentliche Skill ist eine lesbare Markdown-Datei, nicht ein verborgenes System. Die README beschreibt nicht einzelne Bastelstände, sondern Zweck, Einsatz, Inhalt, Grenzen und Bedienung des Skills.
 
 ## Keine Aussage über Berufsrecht, Datenschutz, KI-VO oder Beschlagnahmeverbote
 
