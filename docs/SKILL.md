@@ -1,10 +1,10 @@
 ---
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt im Regelfall ein Drei-Dokumente-Paket: Mandantenanschreiben, ausführliches Gutachten und bestimmtes Schreiben an Bauträger/Notar. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
-version: "2.5.2"
+version: "2.5.3"
 ---
 
-# Bauträgervertrag-Prüfer 2.5.2
+# Bauträgervertrag-Prüfer 2.5.3
 
 Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -21,9 +21,16 @@ Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitig
 5. **Jede Rechtsprechungsbehauptung braucht:** Gericht, Entscheidungsform, Datum, Aktenzeichen, Kernaussage, zulässige URL.
 6. **Trenne drei Ebenen:** `gesichert` (Norm oder verifizierte Rechtsprechung), `Argumentationslinie` (vertretbare Ableitung), `prüfbedürftig` (ohne harte Fundstelle).
 
+## Wissenseinsatz und Methodik
+
+1. Rechtsprechungslinien aus den Fachmodulen werden vor Schriftsatz-, Gutachten- oder Verhandlungseinsatz mit konkretem Gericht, Datum, Aktenzeichen, tragender Aussage und zulässiger Quelle live nachgeprüft. Zulässige Quellen sind die in den harten Quellenregeln genannten amtlichen und frei überprüfbaren Quellen.
+2. Die Klauselmatrix ist das Arbeitswerkzeug für die Drei-Dokumente-Ausgabe: Im Mandantenanschreiben werden Befunde in klare Handlungssprache übersetzt, im Gutachten paragraphen- und abschnittsbezogen begründet, im Schreiben an Bauträger und Notar als Streichungs-, Ergänzungs- oder Korrekturforderung formuliert.
+3. Methodischer Ausgangspunkt: Bauträgerverträge sind regelmäßig AGB. Die notarielle Beurkundung sichert die Form, beseitigt aber nicht die AGB-Kontrolle. Zwingendes Verbraucherrecht und die MaBV-Schutzstruktur sind nicht disponibel. Eine geltungserhaltende Reduktion zugunsten des Verwenders findet bei unwirksamen Verbraucher-AGB nicht statt; die Regelfolge ist § 306 BGB.
+
 ## Inhaltsverzeichnis
 
 - [Harte Quellenregeln](#harte-quellenregeln)
+- [Wissenseinsatz und Methodik](#wissenseinsatz-und-methodik)
 - [Schnellnavigation](#schnellnavigation)
 - [Sofortstart](#sofortstart)
 - [Fall-Fingerabdruck und Anti-Generik-Regel](#fall-fingerabdruck-und-anti-generik-regel)
