@@ -1,10 +1,10 @@
 ---
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt im Regelfall ein Drei-Dokumente-Paket: Mandantenanschreiben, ausführliches Gutachten und bestimmtes Schreiben an Bauträger/Notar. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
-version: "2.5.1"
+version: "2.5.2"
 ---
 
-# Bauträgervertrag-Prüfer 2.5.1
+# Bauträgervertrag-Prüfer 2.5.2
 
 Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -47,7 +47,7 @@ Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitig
 - [Teil L — Drei-Dokumente-Paket](#teil-l--drei-dokumente-paket)
 - [Teil M — Vertiefte Dogmatik II](#teil-m--vertiefte-dogmatik-ii)
 - [Teil N — Wirtschaft, Organisation, HOAI und Technik](#teil-n--wirtschaft-organisation-hoai-und-technik)
-- [Teil O — Dossier-Synthese 2026](#teil-o--dossier-synthese-2026)
+- [Teil O — Fachmodule Bauträgerrecht 2026](#teil-o--fachmodule-bauträgerrecht-2026)
 - [Bug-Hunt vor Ausgabe](#bug-hunt-vor-ausgabe)
 
 ## Schnellnavigation
@@ -1170,7 +1170,7 @@ Pflichtforderungen, wenn die Klausel vorkommt:
 - Hat Dokument 3 konkrete Neufassungen?
 - Sind Gegenargumente vorweggenommen?
 - Sind § 306 BGB und § 139 BGB sauber getrennt?
-- Ist jeder Dossier-Befund mit Fallanker, Norm, Gegenargument und konkreter Änderung ausgegeben?
+- Ist jeder Fachbefund mit Fallanker, Norm, Gegenargument und konkreter Änderung ausgegeben?
 
 ## Teil M — Vertiefte Dogmatik II
 
@@ -1562,9 +1562,9 @@ Bitte ergänzen Sie eine Regelung, wonach der Erwerber nach angemessener Voranme
 | Lange Wartungs-/Contractingbindung an Verkäuferumfeld | 🟠/🔴 |
 | Technische Unterlagen erst `nach Ermessen` oder gar nicht | 🔴 |
 
-## Teil O — Dossier-Synthese 2026
+## Teil O — Fachmodule Bauträgerrecht 2026
 
-Teil O ist die verdichtete Arbeitskarte für das fachliche Dossier. Er wird nicht separat ausgegeben, sondern steuert, welche Prüffragen in Teil B, K, L, M und N zwingend mitzudenken sind. Alles, was auf konkrete Rechtsprechung hinausläuft und nicht bereits in den Rechtsprechungsankern mit zulässiger URL steht, wird vor Schriftsatz- oder Gutachtenverwendung live über offizielle Gerichtsseiten, `rechtsprechung-im-internet.de`, `dejure.org` oder `openjur.de` verifiziert.
+Teil O ist die verdichtete Arbeitskarte der fachlichen Erweiterung. Er wird nicht separat ausgegeben, sondern steuert, welche Prüffragen in Teil B, K, L, M und N zwingend mitzudenken sind. Alles, was auf konkrete Rechtsprechung hinausläuft und nicht bereits in den Rechtsprechungsankern mit zulässiger URL steht, wird vor Schriftsatz- oder Gutachtenverwendung live über offizielle Gerichtsseiten, `rechtsprechung-im-internet.de`, `dejure.org` oder `openjur.de` verifiziert.
 
 ### O.1 — Vorinsolvenz, MaBV-Druckmuster und Rückforderung
 
@@ -1701,7 +1701,7 @@ Die Matrix in Teil B ist bei Vollanalysen mindestens mit diesen Treffern abzugle
 
 Mandantenanschreiben: klare Entscheidungshilfe zu Unterschrift, Zahlungsstopp, Nachverhandlung, Abnahme, Besitz oder Streit. Keine Normwand.
 
-Gutachten: jedes Dossier-Thema wird dort behandelt, wo es hingehört: MaBV in F, AGB in G, Bausoll/Technik in H/J, Abnahme in I, Verzug in M, Haftung in N.
+Gutachten: jedes Fachmodul wird dort behandelt, wo es hingehört: MaBV in F, AGB in G, Bausoll/Technik in H/J, Abnahme in I, Verzug in M, Haftung in N.
 
 Schreiben an Bauträger/Notar: keine akademische Vollständigkeit, sondern konkrete Streichungs- und Änderungsforderungen mit Alternativwortlaut.
 
