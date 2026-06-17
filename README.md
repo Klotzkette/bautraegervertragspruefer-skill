@@ -18,6 +18,14 @@ Wenn der Download-Knopf in einer App nicht direkt funktioniert, wird die Datei s
 
 Wer den Inhalt lieber direkt sehen und kopieren will, öffnet [`skill/SKILL.md`](skill/SKILL.md) — das ist die formatierte Ansicht hier im Repository. Der gesamte Text lässt sich dort mit `Strg+A` / `Cmd+A` markieren und kopieren.
 
+## Kurzversion für kleinere Modelle
+
+**[📥 MINI_SKILL.md herunterladen](https://klotzkette.github.io/bautraegervertragspruefer-skill/MINI_SKILL.md)**
+
+Wenn Claude, ChatGPT, Perplexity, Gemini, Mistral oder ein lokal betriebenes Modell die große `SKILL.md` nicht zuverlässig annimmt, zu früh abbricht oder nur ein kleiner Skill-Kontext zur Verfügung steht, ist [`skill/MINI_SKILL.md`](skill/MINI_SKILL.md) die Sparversion. Sie hat weniger als 7.500 Zeichen inklusive Leerzeichen und enthält trotzdem den Kern: verbraucherseitige Prüfung, harte Quellenregeln, MaBV-/AGB-/WEG-/Technik-Pflichtblock, No-Meta-Regel, Anti-Generik-Regel und die immer verpflichtende Drei-Dokumente-Ausgabe.
+
+Die Kurzversion ist nicht so tief wie die Vollfassung. Sie ist dafür schnell kopierbar, robust in kleineren Assistenten und gut genug abgehangen, um auch dort Zahlungsplan, Sicherheiten, Abnahme, Bausoll, Bauüberwachung, Preisanpassung, Verzug und die wichtigsten AGB-Risiken strukturiert zu prüfen.
+
 ## Anwendung: So einfach geht's
 
 **Weg A — Text kopieren:**
@@ -38,12 +46,14 @@ Wer den Inhalt lieber direkt sehen und kopieren will, öffnet [`skill/SKILL.md`]
 
 ```text
 skill/
-└── SKILL.md   Alles in einer Datei: Workflow, Quellenregeln, Klauselmatrix,
-               Rechtsanker, Technikmodule, Mandantenbericht, Verhandlungspaket
+├── SKILL.md       Vollfassung: Workflow, Quellenregeln, Klauselmatrix,
+│                  Rechtsanker, Technikmodule, Mandantenbericht, Verhandlungspaket
+└── MINI_SKILL.md  Kurzfassung unter 7.500 Zeichen für kleinere KI-Kontexte
 
 docs/
-├── SKILL.md   Veröffentlichte Downloadfassung
-└── index.html Download-Seite für Browser und Mobilgeräte
+├── SKILL.md       Veröffentlichte Vollfassung
+├── MINI_SKILL.md  Veröffentlichte Kurzfassung
+└── index.html     Download-Seite für Browser und Mobilgeräte
 
 vertragsdokumente/
 └── bautraegervertrag/
@@ -77,6 +87,7 @@ Zusätzlich enthält der Skill durchgängig:
 - **Anti-Generik-Regel** — kein Befund darf ohne Fallanker ausgegeben werden; jede rote oder orange Ampel braucht Klausel, Betrag/Rate/Frist oder Projekt-/Einheitsbezug und eine konkrete Änderungsfassung.
 - **Technischer Realitätscheck** — ein juristisch eleganter Vertrag genügt nicht, wenn Baugrund, Baugrube, Abdichtung, Bauüberwachung oder Nachweislage nicht tragen.
 - **Drei-Dokumente-Ausgabe** — immer: Übersendungsschreiben an den Mandanten, Mandantengutachten und außergerichtliches Aufforderungsschreiben an Bauträger/Notar mit Problem, Begründung und richtiger Fassung.
+- **Mini-Fallback** — für kleine Kontextfenster gibt es `MINI_SKILL.md`; sie ersetzt die Vollfassung nicht, hält aber den Kernworkflow und die drei Pflichtdokumente fest.
 
 ## Workflow in zwölf Stufen
 
