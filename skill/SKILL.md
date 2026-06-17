@@ -1,10 +1,10 @@
 ---
 name: bautraegervertrag-pruefer
-description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt im Regelfall ein Drei-Dokumente-Paket: Mandantenanschreiben, ausführliches Gutachten und bestimmtes Schreiben an Bauträger/Notar. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
-version: "2.5.3"
+description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt immer ein modellunabhängiges Drei-Dokumente-Paket: Übersendungsschreiben/Informationsschreiben an den Mandanten, ausführliches Mandantengutachten und außergerichtliches Aufforderungsschreiben an Bauträger/Notar mit Problem, Begründung und konkreter richtiger Fassung. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
+version: "2.5.4"
 ---
 
-# Bauträgervertrag-Prüfer 2.5.3
+# Bauträgervertrag-Prüfer 2.5.4
 
 Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -93,7 +93,9 @@ Pflichtreihenfolge:
 5. MaBV-Zahlungsmodell gesondert rechnen.
 6. Rechtsprechung nur mit zulässiger Fundstelle nennen.
 7. Verhandlungspaket mit konkreten Änderungsformulierungen liefern.
-8. Wenn ein vollständiger oder im Wesentlichen vollständiger Vertrag vorliegt: Drei-Dokumente-Paket nach Teil L erzeugen, sofern der Nutzer nicht ausdrücklich nur einen Schnellscan will.
+8. Immer ein Drei-Dokumente-Paket nach Teil L erzeugen: Übersendungsschreiben an den Mandanten, Mandantengutachten und außergerichtliches Aufforderungsschreiben an Bauträger/Notar. Fehlen Informationen, werden sie als Annahmen, Prüfvorbehalte und Nachforderungsliste ausgewiesen; der Workflow bleibt nicht stehen.
+
+Modellunabhängige Fortsetzungsregel: Der Skill muss in Claude, ChatGPT, Perplexity, Gemini, Mistral und lokalen Modellen als reine Markdown-Arbeitsanweisung funktionieren. Deshalb nie mit `Soll ich fortfahren?`, `Bitte bestätigen` oder einer bloßen Analysezwischenstufe enden. Wenn die Antwortlänge knapp wird, wird gekürzt, aber alle drei Dokumente werden ausgegeben. Wenn eine Plattform technisch abschneidet, setzt die nächste Antwort ohne Neuplanung an der letzten Dokumentüberschrift fort.
 
 ## Fall-Fingerabdruck und Anti-Generik-Regel
 
@@ -342,13 +344,13 @@ Kurzbild
 
 ### Regelausgabe
 
-Bei vollständigem oder fast vollständigem Vertrag ist die Regelausgabe das **Drei-Dokumente-Paket**:
+Die Regelausgabe ist immer das **Drei-Dokumente-Paket**. Es wird auch bei unvollständigem OCR, Fotos, Entwurfsfragmenten oder fehlenden Anlagen erstellt; Unsicherheiten werden als Annahmen, Prüfvorbehalte und Unterlagenliste kenntlich gemacht.
 
-1. Mandantenanschreiben in einfacher Sprache.
-2. Ausführliches Gutachten.
-3. Schreiben an Bauträger/Notar.
+1. **Übersendungsschreiben / Informationsschreiben an den Mandanten** in einfacher Sprache. Es erklärt Ergebnis, Hauptrisiken, Handlungsempfehlung und verweist auf das beigefügte Gutachten.
+2. **Ausführliches Mandantengutachten** mit Sachverhalt, Quellenstand, Klauselmatrix, rechtlicher und technischer Begründung, Ampelbefunden, Gegenargumenten und konkreten Änderungszielen.
+3. **Außergerichtliches Aufforderungsschreiben an Bauträger/Notar** mit jeder wesentlichen Änderung: Originalproblem, kurze Begründung, warum die Klausel so nicht geht, und konkrete Formulierung oder Streichungsanweisung, wie es richtig gefasst werden muss.
 
-Alle drei Dokumente beruhen auf denselben Befunden. Was im Gutachten 🔴 ist, muss im Schreiben an Bauträger/Notar auftauchen; was im Mandantenanschreiben als Hauptrisiko steht, muss im Gutachten belegt sein.
+Alle drei Dokumente beruhen auf denselben Befunden. Was im Gutachten 🔴 ist, muss im Schreiben an Bauträger/Notar auftauchen; was im Mandantenanschreiben als Hauptrisiko steht, muss im Gutachten belegt sein. Es gibt keine bloße Endanalyse ohne diese drei Dokumente.
 
 ## Teil A — MaBV und Zahlungen
 
@@ -1050,23 +1052,27 @@ Prozessstrategie: Bei fahrlässiger Notarpflichtverletzung in einem Prozess gege
 
 ## Teil L — Drei-Dokumente-Paket
 
-Jede Vollanalyse mündet im Regelfall in drei getrennte Dokumente. Keine Vermischung der Sprachregister.
+Jede Vollanalyse mündet zwingend in drei getrennte Dokumente. Keine Vermischung der Sprachregister. Wenn der Nutzer nur einen Schnellscan verlangt, wird zusätzlich ein Kurzbild vorangestellt; das Drei-Dokumente-Paket bleibt der Abschluss.
 
-### L.1 — Dokument 1: Mandantenanschreiben
+### L.1 — Dokument 1: Übersendungsschreiben / Informationsschreiben an den Mandanten
 
-Ziel: Der Verbraucher versteht in fünf Minuten, ob er unterschreiben, verschieben, nachverhandeln oder streiten soll.
+Ziel: Der Verbraucher versteht in fünf Minuten, ob er unterschreiben, verschieben, nachverhandeln, zahlen, einbehalten, abnehmen oder streiten soll. Das Schreiben ist als Kanzlei-/Mandantenanschreiben formuliert und verweist auf das beigefügte Gutachten.
 
 Aufbau:
 
 ```text
-Betreff: Prüfung Bauträgervertrag [Projektname, Haus/Einheit/Stellplatz, Entwurfsdatum oder UR-Nr.]
+Betreff: Prüfung Bauträgervertrag [Projektname, Haus/Einheit/Stellplatz, Entwurfsdatum oder UR-Nr.] - Übersendung der ersten Einschätzung und des Gutachtens
+
+Sehr geehrte/r [Mandant/in],
+
+anbei erhalten Sie die Prüfung des Bauträgervertrags [Projekt/Haus/Einheit]. Kurz zusammengefasst:
 
 1. Ergebnis in einem Absatz
-2. Fall-Fingerabdruck
-3. Ampel-Bilanz
-4. Die wichtigsten drei bis sieben Risiken
-5. Was das praktisch für Zahlung, Beurkundung, Abnahme oder Besitzübergang bedeutet
-6. Nächste Schritte mit konkreten Fristen
+2. Ampel-Bilanz
+3. Die wichtigsten drei bis sieben Risiken
+4. Was das praktisch für Zahlung, Beurkundung, Abnahme oder Besitzübergang bedeutet
+5. Nächste Schritte mit konkreten Fristen
+6. Hinweis auf das beigefügte Gutachten
 7. Offene Unterlagen/Fragen
 ```
 
@@ -1085,9 +1091,9 @@ Stil:
 - klare Handlungsempfehlung.
 - keine falsche Sicherheit.
 
-### L.2 — Dokument 2: Gutachten
+### L.2 — Dokument 2: Mandantengutachten
 
-Ziel: belastbare rechtliche Arbeitsfassung.
+Ziel: belastbare rechtliche und technische Arbeitsfassung für den Mandanten. Das Gutachten trägt das Mandantenanschreiben und das außergerichtliche Aufforderungsschreiben.
 
 Aufbau:
 
@@ -1112,9 +1118,9 @@ P. Konkrete Änderungsfassung
 
 Jeder rote Befund braucht Norm, Fundstelle oder klare Argumentationslinie. Nicht quellenhart verifizierte Rechtsprechungslinien werden als Prüfbedarf gekennzeichnet; keine Entscheidung, kein Datum und kein Aktenzeichen werden aus Modellwissen ergänzt.
 
-### L.3 — Dokument 3: Schreiben an Bauträger und Notar
+### L.3 — Dokument 3: Außergerichtliches Aufforderungsschreiben an Bauträger und Notar
 
-Ziel: bestimmte, verhandlungsfähige Aufforderung.
+Ziel: bestimmte, verhandlungsfähige Aufforderung, die gefundenen Vertragsänderungen umzusetzen. Jede Forderung nennt kurz das Problem, die rechtliche/technische Begründung und die richtige Fassung.
 
 Aufbau:
 
@@ -1127,10 +1133,10 @@ der Entwurf ist in folgenden Punkten vor Beurkundung anzupassen. Die notarielle 
 
 1. [Paragraph/Absatz/Baubeschreibungsabschnitt] - [konkretes Problem]
 Original: [maßgeblicher Wortlaut]
-Rechtsgrundlage: [...]
+Warum das so nicht geht: [kurze Begründung mit Norm/Argumentationslinie]
 Gegenargument: [...]
 Antwort: [Antwort auf das konkrete Gegenargument]
-Gewünschte Fassung: [voller Ersatzwortlaut oder Streichungsanweisung]
+So muss es richtig gefasst werden: [voller Ersatzwortlaut oder Streichungsanweisung]
 
 Frist / weiteres Vorgehen
 ```
@@ -1141,6 +1147,7 @@ Ton:
 - keine Übertreibung.
 - keine pauschalen Nichtigkeitsdrohungen.
 - bei § 306 BGB klar: unwirksame AGB fallen weg; Gesetz gilt.
+- immer konkrete Fassung liefern: bloß `bitte anpassen` genügt nicht.
 
 Pflichtforderungen, wenn die Klausel vorkommt:
 
@@ -1171,10 +1178,11 @@ Pflichtforderungen, wenn die Klausel vorkommt:
 ### L.5 — Qualitätsgate für das Paket
 
 - Sind alle drei Dokumente getrennt?
+- Enthält Dokument 1 ein echtes Übersendungsschreiben mit Hinweis auf das Gutachten?
 - Stimmen Ampeln und Befunde überein?
 - Hat Dokument 1 keine unnötigen Fachbegriffe?
 - Hat Dokument 2 harte Quellen?
-- Hat Dokument 3 konkrete Neufassungen?
+- Hat Dokument 3 zu jeder wesentlichen Forderung Problem, Kurzbegründung und konkrete richtige Fassung?
 - Sind Gegenargumente vorweggenommen?
 - Sind § 306 BGB und § 139 BGB sauber getrennt?
 - Ist jeder Fachbefund mit Fallanker, Norm, Gegenargument und konkreter Änderung ausgegeben?
