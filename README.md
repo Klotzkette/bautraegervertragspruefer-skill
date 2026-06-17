@@ -22,9 +22,9 @@ Wer den Inhalt lieber direkt sehen und kopieren will, öffnet [`skill/SKILL.md`]
 
 Zum Testen des Skills liegt im Repository ein freistehender Bauträgervertrag als Beispieldokument bereit — ein realistisch wirkender, vollständig fingierter Vertrag, an dem sich die Prüfung sofort durchspielen lässt:
 
-- **[📄 Bauträgervertrag als Markdown](vertragsdokumente/bautraegervertrag/bautraegervertrag.md)**
-- **[📄 Bauträgervertrag als Word-Dokument](vertragsdokumente/bautraegervertrag/bautraegervertrag.docx)**
-- **[📄 Bauträgervertrag als PDF](vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf)**
+- **[📄 Bauträgervertrag als PDF](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf)** — öffnet direkt im Browser
+- **[📄 Bauträgervertrag als Word-Dokument](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx)**
+- **[📄 Bauträgervertrag als Markdown](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.md)**
 
 Das Dokument ist kein Mustervertrag und darf nicht in der Praxis eingesetzt oder gegenüber echten Käuferinnen, Käufern, Bauträgern, Notariaten oder Behörden verwendet werden. Eine fachliche Bewertung setzt immer eine eigenständige rechtliche und technische Prüfung voraus.
 

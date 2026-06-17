@@ -6,6 +6,9 @@ on:
     paths:
       - 'skill/SKILL.md'
       - 'skill/MINI_SKILL.md'
+      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf'
+      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag.docx'
+      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag.md'
 
 permissions:
   contents: write
@@ -22,18 +25,21 @@ jobs:
 
       - name: Copy skill files to docs/
         run: |
-          mkdir -p docs
+          mkdir -p docs/vertragsdokumente/bautraegervertrag
           cp skill/SKILL.md docs/SKILL.md
           cp skill/MINI_SKILL.md docs/MINI_SKILL.md
+          cp vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf  docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf
+          cp vertragsdokumente/bautraegervertrag/bautraegervertrag.docx docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx
+          cp vertragsdokumente/bautraegervertrag/bautraegervertrag.md   docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.md
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet docs/SKILL.md docs/MINI_SKILL.md; then
-            echo "docs skill files unchanged — nothing to commit."
+          if git diff --quiet docs/SKILL.md docs/MINI_SKILL.md docs/vertragsdokumente/bautraegervertrag/; then
+            echo "docs files unchanged — nothing to commit."
             exit 0
           fi
-          git add docs/SKILL.md docs/MINI_SKILL.md
-          git commit -m "chore(docs): sync skill files for GitHub Pages"
+          git add docs/SKILL.md docs/MINI_SKILL.md docs/vertragsdokumente/bautraegervertrag/
+          git commit -m "chore(docs): sync files for GitHub Pages"
           git push
