@@ -10,6 +10,9 @@ on:
       - 'vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf'
       - 'vertragsdokumente/bautraegervertrag/bautraegervertrag.docx'
       - 'vertragsdokumente/bautraegervertrag/bautraegervertrag.md'
+      - 'vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.pdf'
+      - 'vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.docx'
+      - 'vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.md'
 
 permissions:
   contents: write
@@ -27,20 +30,24 @@ jobs:
       - name: Copy skill files to docs/
         run: |
           mkdir -p docs/vertragsdokumente/bautraegervertrag
+          mkdir -p docs/vertragsdokumente/bautraegervertrag-grenzwertig
           cp skill/SKILL.md docs/SKILL.md
           cp skill/MINI_SKILL.md docs/MINI_SKILL.md
           cp vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf  docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf
           cp vertragsdokumente/bautraegervertrag/bautraegervertrag.docx docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx
           cp vertragsdokumente/bautraegervertrag/bautraegervertrag.md   docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.md
+          cp vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.pdf  docs/vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.pdf
+          cp vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.docx docs/vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.docx
+          cp vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.md   docs/vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.md
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet docs/SKILL.md docs/MINI_SKILL.md docs/vertragsdokumente/bautraegervertrag/; then
+          if git diff --quiet docs/SKILL.md docs/MINI_SKILL.md docs/vertragsdokumente/; then
             echo "docs files unchanged — nothing to commit."
             exit 0
           fi
-          git add docs/SKILL.md docs/MINI_SKILL.md docs/vertragsdokumente/bautraegervertrag/
+          git add docs/SKILL.md docs/MINI_SKILL.md docs/vertragsdokumente/
           git commit -m "chore(docs): sync files for GitHub Pages"
           git push
