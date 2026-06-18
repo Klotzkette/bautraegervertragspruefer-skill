@@ -23,6 +23,7 @@ Markdown, Word und PDF enthalten denselben Vertragsstoff einschließlich der Bau
 1. Lade den Bauträgervertrag als PDF, DOCX oder Markdown.
 2. Lade den Bauträgervertrag-Prüfer-Skill aus dem Repository, entweder vollständig als `SKILL.md` oder kompakt als `MINI_SKILL.md`.
 3. Übergib beides einer KI und lasse den Vertrag autonom prüfen.
+4. Die Ausgabe soll mit Übersendungsschreiben an die Käuferseite, Mandantengutachten und außergerichtlichem Aufforderungsschreiben an Bauträger/Notar enden.
 
 ## Neu erzeugen
 
