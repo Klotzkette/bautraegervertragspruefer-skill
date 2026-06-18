@@ -6,7 +6,7 @@
 >
 > **Ein-Datei-Prinzip, modellunabhängig einsetzbar.** Die Vollfassung steckt in einer einzigen Markdown-Datei: [`skill/SKILL.md`](skill/SKILL.md) — ohne externe Laufzeit, ohne Datenbank, ohne Konto und ohne zusätzliches Werkzeug. Für kleine Kontextfenster gibt es zusätzlich [`skill/MINI_SKILL.md`](skill/MINI_SKILL.md). Beide Dateien funktionieren in leistungsfähigen KI-Chatbots bzw. Sprachmodellen: Claude, ChatGPT, Gemini, Mistral, Perplexity, lokal betriebene Modelle. Es ist keine Installation erforderlich — siehe [Anwendung](#anwendung-so-einfach-gehts).
 
-Konsolidierter Skill (Version 2.6.17) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität und Verhandlungsstrategie.
+Konsolidierter Skill (Version 2.7.0) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität und Verhandlungsstrategie.
 
 **Schnellwahl:** Für eine vollständige Vertragsprüfung mit Mandantenschreiben, Gutachten und Aufforderungsschreiben an Bauträger/Notar ist [`SKILL.md`](skill/SKILL.md) die Hauptfassung. Wenn ein kleineres Modell den langen Prompt nicht vollständig lädt oder die Antwort vor dem Drei-Dokumente-Paket abbricht, ist [`MINI_SKILL.md`](skill/MINI_SKILL.md) die kompakte Ausweichfassung.
 
@@ -22,13 +22,17 @@ Wer den Inhalt lieber direkt sehen und kopieren will, öffnet [`skill/SKILL.md`]
 
 ## Bauträgervertrag zum Ausprobieren
 
-Zum Ausprobieren des Skills liegt ein freistehender Bauträgervertrag bereit — ein realistisch wirkender, vollständig fingierter Vertrag, an dem sich die Prüfung sofort durchspielen lässt:
+Zum Ausprobieren des Skills liegen zwei freistehende, vollständig fingierte Bauträgerverträge bereit, an denen sich die Prüfung sofort durchspielen lässt.
 
-- **[📄 Bauträgervertrag als PDF](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf)** — öffnet direkt im Browser
-- **[📄 Bauträgervertrag als Word-Dokument](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx)**
-- **[📄 Bauträgervertrag als Markdown](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.md)**
+**Vertrag 1 — bewusst fehlerhaft.** Überladen mit unwirksamen und teils nichtigen Klauseln; ideal, um zu sehen, wie viele rote Ampeln der Skill findet:
 
-Das Dokument ist kein Mustervertrag: nicht unterschreiben, nicht als Vorlage verwenden, nicht in der Praxis einsetzen und nicht gegenüber echten Käuferinnen, Käufern, Bauträgern, Notariaten oder Behörden verwenden. Eine fachliche Bewertung setzt immer eine eigenständige rechtliche und technische Prüfung voraus.
+- **[📄 PDF](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf)** · **[📄 Word](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx)** · **[📄 Markdown](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.md)**
+
+**Vertrag 2 — grenzwertig, aber wirksam.** Das Gegenstück: verkäuferfreundlich bis an die Grenze des Zulässigen ausgereizt, aber ohne nichtige Klausel. Hier soll der Skill diskutieren und im Ergebnis sagen: hart und ausgereizt, aber im Rahmen des geltenden Rechts:
+
+- **[📄 PDF](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.pdf)** · **[📄 Word](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.docx)** · **[📄 Markdown](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.md)**
+
+Beide Dokumente sind keine Musterverträge: nicht unterschreiben, nicht als Vorlage verwenden, nicht in der Praxis einsetzen und nicht gegenüber echten Käuferinnen, Käufern, Bauträgern, Notariaten oder Behörden verwenden. Eine fachliche Bewertung setzt immer eine eigenständige rechtliche und technische Prüfung voraus.
 
 ## Kurzversion für kleinere Modelle
 
@@ -66,16 +70,15 @@ docs/
 ├── SKILL.md       Veröffentlichte Vollfassung
 ├── MINI_SKILL.md  Veröffentlichte Kurzfassung
 ├── index.html     Download-Seite für Browser und Mobilgeräte
-└── vertragsdokumente/bautraegervertrag/
-    ├── bautraegervertrag.md
-    ├── bautraegervertrag.docx
-    └── bautraegervertrag.pdf
+└── vertragsdokumente/  (veröffentlichte Spiegel der Übungsverträge)
 
 vertragsdokumente/
-└── bautraegervertrag/
-    ├── bautraegervertrag.md
-    ├── bautraegervertrag.docx
-    └── bautraegervertrag.pdf
+├── bautraegervertrag/                Übungsvertrag 1 (bewusst fehlerhaft)
+│   ├── bautraegervertrag.md / .docx / .pdf
+│   └── build.sh, build/
+└── bautraegervertrag-grenzwertig/    Übungsvertrag 2 (grenzwertig, aber wirksam)
+    ├── bautraegervertrag-grenzwertig.md / .docx / .pdf
+    └── build.sh, build/
 ```
 
 Die Skill-Datei ist in folgende Hauptteile gegliedert:
@@ -92,7 +95,7 @@ Die Skill-Datei ist in folgende Hauptteile gegliedert:
 - **Fachmodule Bauträgerrecht 2026** — Vorinsolvenz, unwirksame Notarklauseln, anerkannte Regeln der Technik, DIN-Verweise, Preisanpassung, Bauzeitverzug, Baugruppen-GbR, Nachzügler, Sonderwünsche, Sicherheitenschichten und Haftungsketten.
 - **Teilungserklärung und WEG** — Sondereigentum, Gemeinschaftseigentum, Sondernutzungsrechte, GdWE, Kostenverteilung, Abnahmeregime.
 - **Mandatsmodule** — Mandantenbericht, Notar-/Bauträgeranschreiben, Verhandlungsfassung, Eskalations- und Klagestrategie.
-- **Vertragsdokument (separate Datei)** — zusätzlich zur Skill-Datei liegt unter `vertragsdokumente/` ein freistehender Bauträgervertrag mit Baubeschreibung als Anlage zum Ausprobieren bereit.
+- **Vertragsdokumente (separate Dateien)** — zusätzlich zur Skill-Datei liegen unter `vertragsdokumente/` zwei freistehende Bauträgerverträge mit Baubeschreibung als Anlage zum Ausprobieren bereit: einer bewusst fehlerhaft, einer grenzwertig, aber wirksam.
 
 Zusätzlich enthält der Skill durchgängig:
 

@@ -1,0 +1,92 @@
+/* Formales Layout für die PDF-Ausgabe des Bauträgervertrags (weasyprint).
+   Ruhiger, kanzleitauglicher Schriftsatz mit Blocksatz, klaren
+   Paragraphenüberschriften und Seitenzahlen. */
+
+@page {
+  size: A4;
+  margin: 2.4cm 2.2cm 2.2cm 2.6cm;
+  @bottom-center {
+    content: counter(page);
+    font-family: "DejaVu Serif", Georgia, serif;
+    font-size: 9pt;
+    color: #555;
+  }
+}
+
+body {
+  font-family: "DejaVu Serif", Georgia, serif;
+  font-size: 10.5pt;
+  line-height: 1.42;
+  text-align: justify;
+  hyphens: auto;
+  color: #111;
+}
+
+header.title-block, .title { text-align: left; }
+
+h1.title {
+  font-size: 17pt;
+  margin: 0 0 0.2em;
+  border: none;
+}
+p.subtitle {
+  font-size: 11pt;
+  font-style: italic;
+  color: #444;
+  margin: 0 0 1em;
+}
+
+h1 {
+  font-size: 13pt;
+  margin: 0.6em 0 0.5em;
+  border-bottom: 1.5px solid #333;
+  padding-bottom: 2px;
+  page-break-after: avoid;
+}
+h2 {
+  font-size: 11.5pt;
+  margin: 1em 0 0.3em;
+  page-break-after: avoid;
+}
+h3 {
+  font-size: 10.8pt;
+  margin: 0.9em 0 0.3em;
+  page-break-after: avoid;
+}
+
+p { margin: 0.45em 0; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 9.3pt;
+  margin: 0.6em 0;
+  page-break-inside: avoid;
+}
+th, td {
+  border: 0.5px solid #999;
+  padding: 3px 6px;
+  text-align: left;
+  vertical-align: top;
+}
+th { background: #eee; }
+
+blockquote {
+  margin: 0.5em 0 0.5em 0.6em;
+  padding: 0.1em 0 0.1em 0.9em;
+  border-left: 2px solid #bbb;
+  color: #1a1a1a;
+}
+
+code, pre {
+  font-family: "DejaVu Sans Mono", monospace;
+  font-size: 8.8pt;
+}
+pre {
+  background: #f6f6f6;
+  border: 0.5px solid #ddd;
+  padding: 6px 8px;
+  white-space: pre-wrap;
+}
+
+hr { border: none; border-top: 0.5px solid #ccc; margin: 0.8em 0; }
