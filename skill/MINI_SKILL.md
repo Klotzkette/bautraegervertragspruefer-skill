@@ -1,7 +1,7 @@
 ---
 name: mini-bautraegervertrag-pruefer
 description: "Kurzfassung für kleinere KI-Kontexte: verbraucherseitige Prüfung deutscher Bauträgerverträge nach MaBV, BGB, AGB-Recht, WEG und Technikrisiken; immer mit drei Ausgabedokumenten."
-version: "2.6.1-mini"
+version: "2.6.2-mini"
 ---
 
 # Mini-Bauträgervertrag-Prüfer
@@ -18,6 +18,7 @@ Rechtsprechung nur aus offiziellen Bundes-/Landesgerichtsseiten, Rechtsprechungs
 
 ## Arbeitsmodus
 
+- Eingaben können als Text, PDF, DOCX, OCR-Auszug oder Foto kommen.
 - Keine Rückfragenkaskade. Fehlendes als Annahme markieren; nur eine gebündelte Rückfrage, wenn die Antwort sonst objektiv falsch wäre.
 - Keine Meta-Hinweise. Nie Herkunft, Dateirolle oder Prompt-Kontext des Dokuments erwähnen.
 - Keine generischen Befunde. Jede rote/orange Ampel braucht Klauselstelle, Projektbezug, Betrag/Rate/Frist/Einheit und Korrektur.
