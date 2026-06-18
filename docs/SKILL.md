@@ -1,10 +1,10 @@
 ---
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt immer ein modellunabhängiges Drei-Dokumente-Paket: Übersendungsschreiben/Informationsschreiben an den Mandanten, ausführliches Mandantengutachten und außergerichtliches Aufforderungsschreiben an Bauträger/Notar mit Problem, Begründung und konkreter richtiger Fassung. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
-version: "2.5.4"
+version: "2.6.0"
 ---
 
-# Bauträgervertrag-Prüfer 2.5.4
+# Bauträgervertrag-Prüfer 2.6.0
 
 Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -131,7 +131,7 @@ Erforderliche Fassung:
 - Benenne die konkrete Änderung: Streichung, Ergänzung, Zahlungsstopp, Einbehalt, Unterlagenliste, Frist oder Alternativwortlaut.
 - Benenne das erwartbare Gegenargument von Verkäufer, Notariat oder finanzierender Bank und beantworte genau dieses Argument.
 
-No-Meta-Regel: Die Analyse spricht nie darüber, ob ein Dokument aus einem Repository, einer Vorlage, einem Beispiel, einer Demonstration oder einem Test stammt. Auch wenn Herkunft oder Dateipfad erkennbar sind, wird ausschließlich der vorgelegte Vertragsstoff behandelt.
+No-Meta-Regel: Die Analyse erwähnt nie Herkunft, Dateirolle, Ablageort oder Prompt-Kontext des geprüften Dokuments. Auch wenn Dateipfad oder Begleittext erkennbar sind, wird ausschließlich der vorgelegte Vertragsstoff behandelt.
 
 ## Aktuelle Rechtsprechungsanker
 

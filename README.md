@@ -6,7 +6,7 @@
 >
 > **Eine einzige Datei, modellunabhängig einsetzbar.** Der vollständige Skill steckt in einer einzigen Markdown-Datei: [`skill/SKILL.md`](skill/SKILL.md) — ohne externe Laufzeit, ohne Datenbank, ohne Konto und ohne zusätzliches Werkzeug. Er funktioniert in jedem leistungsfähigen KI-Chatbot bzw. Sprachmodell: Claude, ChatGPT, Gemini, Mistral, Perplexity, lokal betriebene Modelle. Es ist keine Installation erforderlich — siehe [Anwendung](#anwendung-so-einfach-gehts).
 
-Konsolidierter Skill (Version 2.5.4) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität und Verhandlungsstrategie.
+Konsolidierter Skill (Version 2.6.0) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität und Verhandlungsstrategie.
 
 ## Download
 
@@ -18,9 +18,9 @@ Wenn der Download-Knopf in einer App nicht direkt funktioniert, wird die Datei s
 
 Wer den Inhalt lieber direkt sehen und kopieren will, öffnet [`skill/SKILL.md`](skill/SKILL.md) — das ist die formatierte Ansicht hier im Repository. Der gesamte Text lässt sich dort mit `Strg+A` / `Cmd+A` markieren und kopieren.
 
-## Beispiel-Bauträgervertrag zum Ausprobieren
+## Bauträgervertrag zum Ausprobieren
 
-Zum Testen des Skills liegt im Repository ein freistehender Bauträgervertrag als Beispieldokument bereit — ein realistisch wirkender, vollständig fingierter Vertrag, an dem sich die Prüfung sofort durchspielen lässt:
+Zum Ausprobieren des Skills liegt ein freistehender Bauträgervertrag bereit — ein realistisch wirkender, vollständig fingierter Vertrag, an dem sich die Prüfung sofort durchspielen lässt:
 
 - **[📄 Bauträgervertrag als PDF](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf)** — öffnet direkt im Browser
 - **[📄 Bauträgervertrag als Word-Dokument](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx)**
@@ -40,13 +40,13 @@ Die Kurzversion ist nicht so tief wie die Vollfassung. Sie ist dafür schnell ko
 
 **Weg A — Text kopieren:**
 
-1. [`skill/SKILL.md`](skill/SKILL.md) öffnen, den gesamten Text mit `Strg+A` / `Cmd+A` markieren und in den Chat einfügen.
+1. [`skill/SKILL.md`](skill/SKILL.md) öffnen, den gesamten Text mit `Strg+A` / `Cmd+A` markieren und in den Chat einfügen. Wenn das Modell die Vollfassung nicht annimmt, stattdessen [`skill/MINI_SKILL.md`](skill/MINI_SKILL.md) verwenden.
 2. Dazuschreiben: _"Bitte halte dich an diesen Skill/Prompt. Gleich kommt ein Bauträgervertrag — bearbeite ihn danach."_ Enter drücken.
 3. Den Vertrag einfügen oder hochladen (Text, PDF, DOCX oder Foto). Die Analyse startet von selbst.
 
 **Weg B — Datei hineinziehen (Drag & Drop):**
 
-1. `SKILL.md` über den [Direktdownload oben](#download) auf das Gerät laden.
+1. `SKILL.md` über den [Direktdownload oben](#download) auf das Gerät laden; bei engem Kontext `MINI_SKILL.md` aus der [Kurzversion](#kurzversion-für-kleinere-modelle).
 2. Die Datei per Drag & Drop in das Chatfenster ziehen und dazuschreiben: _"Bitte halte dich an diesen Skill/Prompt. Gleich kommt ein Bauträgervertrag — bearbeite ihn danach."_ Enter drücken.
 3. Den Vertrag nachreichen — fertig.
 
@@ -63,7 +63,11 @@ skill/
 docs/
 ├── SKILL.md       Veröffentlichte Vollfassung
 ├── MINI_SKILL.md  Veröffentlichte Kurzfassung
-└── index.html     Download-Seite für Browser und Mobilgeräte
+├── index.html     Download-Seite für Browser und Mobilgeräte
+└── vertragsdokumente/bautraegervertrag/
+    ├── bautraegervertrag.md
+    ├── bautraegervertrag.docx
+    └── bautraegervertrag.pdf
 
 vertragsdokumente/
 └── bautraegervertrag/
