@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #
 # Baut den Bauträgervertrag aus Markdown in die beiden Ausgabeformate:
-#   * bautraegervertrag-grenzwertig.docx  (Word, zum Annotieren)
-#   * bautraegervertrag-grenzwertig.pdf   (PDF, zum Lesen und Versenden)
+#   * bautraegervertrag-marewald.docx  (Word, zum Annotieren)
+#   * bautraegervertrag-marewald.pdf   (PDF, zum Lesen und Versenden)
 #
 # Voraussetzungen:
 #   * pandoc
@@ -14,16 +14,16 @@
 set -euo pipefail
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SRC="$DIR/bautraegervertrag-grenzwertig.md"
-OUT_DOCX="$DIR/bautraegervertrag-grenzwertig.docx"
-OUT_PDF="$DIR/bautraegervertrag-grenzwertig.pdf"
+SRC="$DIR/bautraegervertrag-marewald.md"
+OUT_DOCX="$DIR/bautraegervertrag-marewald.docx"
+OUT_PDF="$DIR/bautraegervertrag-marewald.pdf"
 FILTER="$DIR/build/pagebreak.lua"
 CSS="$DIR/build/style.css"
 
 command -v pandoc >/dev/null     || { echo "FEHLT: pandoc";     exit 1; }
 command -v weasyprint >/dev/null || { echo "FEHLT: weasyprint"; exit 1; }
 
-echo "→ bautraegervertrag-grenzwertig"
+echo "→ bautraegervertrag-marewald"
 pandoc "$SRC" --lua-filter="$FILTER" -o "$OUT_DOCX"
 pandoc "$SRC" --lua-filter="$FILTER" --pdf-engine=weasyprint --css="$CSS" -o "$OUT_PDF"
 

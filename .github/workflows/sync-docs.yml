@@ -10,9 +10,9 @@ on:
       - 'vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf'
       - 'vertragsdokumente/bautraegervertrag/bautraegervertrag.docx'
       - 'vertragsdokumente/bautraegervertrag/bautraegervertrag.md'
-      - 'vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.pdf'
-      - 'vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.docx'
-      - 'vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.md'
+      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf'
+      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx'
+      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md'
 
 permissions:
   contents: write
@@ -30,15 +30,15 @@ jobs:
       - name: Copy skill files to docs/
         run: |
           mkdir -p docs/vertragsdokumente/bautraegervertrag
-          mkdir -p docs/vertragsdokumente/bautraegervertrag-grenzwertig
+          mkdir -p docs/vertragsdokumente/bautraegervertrag-marewald
           cp skill/SKILL.md docs/SKILL.md
           cp skill/MINI_SKILL.md docs/MINI_SKILL.md
           cp vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf  docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf
           cp vertragsdokumente/bautraegervertrag/bautraegervertrag.docx docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx
           cp vertragsdokumente/bautraegervertrag/bautraegervertrag.md   docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.md
-          cp vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.pdf  docs/vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.pdf
-          cp vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.docx docs/vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.docx
-          cp vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.md   docs/vertragsdokumente/bautraegervertrag-grenzwertig/bautraegervertrag-grenzwertig.md
+          cp vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf  docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf
+          cp vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx
+          cp vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md   docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md
 
       - name: Commit and push if changed
         run: |
