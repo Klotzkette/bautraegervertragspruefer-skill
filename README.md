@@ -26,9 +26,13 @@ Zum Ausprobieren des Skills liegen zwei freistehende Bauträgervertragsakten ber
 
 **Vertrag Hohenwartshofen — Wohnungsbauträgervertrag mit Auflassung**
 
+Fehlerakte mit bewusst groben MaBV-, AGB-, Abnahme-, Sicherungs-, Bauüberwachungs- und Baubeschreibungsproblemen; hier soll der Skill viele rote Pflichtbefunde finden.
+
 - **[📦 Akten-ZIP mit Einzel-PDFs](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip)** · **[📄 PDF](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf)** · **[📄 Word](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx)** · **[📄 Markdown](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.md)**
 
 **Vertrag Marewald — Wohnungsbauträgervertrag mit Auflassung**
+
+Kontrollakte mit rechtmäßigem, aber deutlich verkäuferfreundlichem Grenzvertrag; hier soll der Skill harte gelbe Verhandlungsbefunde liefern, aber keine Nichtigkeit oder rote Pflichtverstöße behaupten.
 
 - **[📦 Akten-ZIP mit Einzel-PDFs](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip)** · **[📄 PDF](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf)** · **[📄 Word](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx)** · **[📄 Markdown](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md)**
 

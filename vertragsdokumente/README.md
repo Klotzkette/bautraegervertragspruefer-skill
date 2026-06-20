@@ -5,7 +5,7 @@ Hier liegen zwei eigenständige, vollständig fingierte Bauträgervertrags-Akten
 | Akte | Verzeichnis | Charakter | Erwartung an die Prüfung |
 | --- | --- | --- | --- |
 | Hohenwartshofen | [`bautraegervertrag/`](bautraegervertrag/) | bewusst fehlerhaft — überladen mit unwirksamen und teils nichtigen Klauseln | viele 🔴, klare Pflichtblock-Treffer |
-| Marewald | [`bautraegervertrag-marewald/`](bautraegervertrag-marewald/) | grenzwertig, aber wirksam — verkäuferfreundlich bis an die Grenze ausgereizt | überwiegend 🟠, kein 🔴 wegen Nichtigkeit |
+| Marewald | [`bautraegervertrag-marewald/`](bautraegervertrag-marewald/) | rechtmäßig, aber grenzwertig verkäuferfreundlich — bis an die Grenze ausgereizt, ohne rote Pflichtverletzung | überwiegend 🟠, kein 🔴 wegen Nichtigkeit |
 
 Jede Akte liegt in vier Formen vor: Markdown, Word und Gesamt-PDF sowie als **Akten-ZIP mit getrennten Einzel-PDFs** (Vertrag und Baubeschreibung separat), damit auch Modelle mit kleinem Kontext die Akte dokumentweise aufnehmen können. Details und Download-Links stehen im README der jeweiligen Akte.
 

@@ -1,6 +1,6 @@
 # Bauträgervertrag — Akte Marewald
 
-> **Charakter dieser Akte:** grenzwertig, aber wirksam. Der Vertrag reizt den verkäuferfreundlichen Spielraum bis an die Grenze des Zulässigen aus, ohne erkennbar nichtige Klausel — der Skill soll ihn als hart und ausgereizt, aber im Rahmen des Rechts einordnen (überwiegend 🟠). Das bewusst fehlerhafte Gegenstück ist die Akte Hohenwartshofen (`../bautraegervertrag/`). Übersicht: [`../README.md`](../README.md).
+> **Charakter dieser Akte:** rechtmäßig, aber grenzwertig verkäuferfreundlich. Der Vertrag reizt den zulässigen Spielraum aus, ohne rote Pflichtverletzung oder erkennbare Nichtigkeit — der Skill soll ihn als hart und ausgereizt, aber im Rahmen des Rechts einordnen (überwiegend 🟠). Das bewusst fehlerhafte Gegenstück ist die Akte Hohenwartshofen (`../bautraegervertrag/`). Übersicht: [`../README.md`](../README.md).
 
 Dieses Verzeichnis enthält ein eigenständiges Vertragsdokument in den Gesamtfassungen und als Akten-ZIP mit getrennten Einzel-PDFs:
 
