@@ -1,16 +1,16 @@
 ---
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt immer ein modellunabhängiges Drei-Dokumente-Paket: Übersendungsschreiben/Informationsschreiben an den Mandanten, ausführliches Mandantengutachten und außergerichtliches Aufforderungsschreiben an Bauträger/Notar mit Problem, Begründung und konkreter richtiger Fassung. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
-version: "2.7.4"
+version: "2.7.5"
 ---
 
-# Bauträgervertrag-Prüfer 2.7.4
+# Bauträgervertrag-Prüfer 2.7.5
 
 Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
 **Befunde werden mit Ampelsymbolen ausgegeben:** 🔴 / 🟠 / 🟢. Keine Farbwörter als Ersatz.
 
-**Rechtsstand der eingebauten Anker:** 18. Juni 2026. Vor jeder echten Vertragsausgabe aktuelle Quellen live prüfen.
+**Rechtsstand der eingebauten Anker:** 20. Juni 2026. Vor jeder echten Vertragsausgabe aktuelle Quellen live prüfen.
 
 ## Harte Quellenregeln
 
@@ -145,6 +145,18 @@ Diese Anker sind besonders stark, weil sie direkt Bauträgerrecht, AGB-Kontrolle
 | Änderung der Teilungserklärung/Gemeinschaftsordnung | BGH, Urteil vom 23.01.2026 - V ZR 91/25, official PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__91-25.pdf?__blob=publicationFile&v=1 | AGB-Pflichten des Verbrauchers, späteren Änderungen der Teilungserklärung durch den Bauträger zuzustimmen, sind nach § 308 Nr. 4 BGB unwirksam, wenn die Klausel keine im Einzelnen benannten triftigen Gründe erkennen lässt. Aus § 242 BGB folgt dann regelmäßig keine Ersatz-Zustimmungspflicht. Private Vermögensverwaltung kann Verbraucherstatus bleiben, auch bei Gewerbeeinheit. | Weite Vollmachten und Zustimmungspflichten zu Teilungserklärung, Gemeinschaftsordnung, Untergemeinschaften, Nutzungsänderungen rot markieren. |
 | Abnahme durch bauträgernahe Tochtergesellschaft | BGH, Urteil vom 09.11.2023 - VII ZR 241/22, DeJure: https://dejure.org/dienste/vernetzung/rechtsprechung?Aktenzeichen=VII+ZR+241%2F22&Datum=09.11.2023&Gericht=BGH | Abnahmeklauseln, die eine im Lager des Bauträgers stehende Person/Gesellschaft für die Abnahme des Gemeinschaftseigentums einsetzen, sind AGB-rechtlich hoch angreifbar. Die GdWE kann Mängelrechte gebündelt geltend machen; der Verwender kann sich nicht auf die Folgen seiner unwirksamen Klausel berufen. | Gegen Tochtergesellschaft, Erstverwalter, Projektsteuerer, `neutralen` Bauträgerdienstleister. |
 | Notaranderkonto bei Bauträgerabwicklung | BGH, Beschluss vom 02.08.2023 - VII ZB 28/20, official PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2020/VII_ZB__28-20.pdf?__blob=publicationFile&v=1 | Notaranderkonto ist kein einfacher Ersatz für MaBV-Schutz. § 57 Abs. 2 BeurkG richtet sich an den Notar; ein fehlendes Sicherungsinteresse macht die zivilrechtliche Verwahrungsabrede nicht automatisch unwirksam. Bei Abtretung/Pfändung kann der Auszahlungsanspruch gegen den Notar miterfasst sein. | Nicht pauschal `Notaranderkonto löst alles`; Verwahrungsanweisung, MaBV, Fälligkeit und Empfangsberechtigung getrennt prüfen. |
+
+**Rechtsprechungs-Refresh (Pflicht vor jeder echten Ausgabe).** Die vorstehenden Anker sind ein Startbestand mit Stand 20. Juni 2026, keine abschließende Sammlung. Vor einer echten Vertragsausgabe ist der Stand an den zulässigen amtlichen Quellen (BGH, OLG, KG, LG, `rechtsprechung-im-internet.de`, `rechtsinformationen.bund.de`, DeJure, OpenJur) zu prüfen und um neuere Entscheidungen zu ergänzen. Für die folgenden Streitfragen ist gezielt nach aktueller Rechtsprechung zu suchen; jede gefundene Entscheidung wird nur mit Gericht, Datum, Aktenzeichen, Kernaussage und zulässiger URL zitiert, andernfalls als `prüfbedürftig` ausgewiesen — niemals wird eine Fundstelle erfunden:
+
+- Abnahme des Gemeinschaftseigentums durch Erstverwalter, bauträgernahe Person oder Sachverständigen; Folgen unwirksamer Abnahmeklauseln samt Verjährungs- und Höchstgrenzenlogik.
+- Fälligkeit der Schlussrate und Auslegung der „vollständigen Fertigstellung" einschließlich Außenanlagen und protokollierter Restarbeiten.
+- 5-%-Sicherheit nach § 650m Abs. 2 BGB im Zusammenspiel mit § 309 Nr. 15 BGB beim Bauträgervertrag.
+- Wirksamkeit von Änderungsvorbehalten zu Teilungserklärung und Gemeinschaftsordnung (§ 308 Nr. 4 BGB).
+- Preisanpassungs- und Baukostenklauseln, Bauzeitverzug und die Berufung auf höhere Gewalt.
+- Vormerkungslöschungs- und Freistellungsmechanik, Notaranderkonto sowie Insolvenz des Bauträgers.
+- Maßgeblicher Zeitpunkt der anerkannten Regeln der Technik, DIN-Bezug, Mindest- und erhöhter Schallschutz, Wohnflächenabweichung.
+
+Findet sich zu einer Frage keine in zulässiger Quelle verifizierte Entscheidung, wird sie als Argumentationslinie oder als `prüfbedürftig` geführt, nicht als belegte Rechtsprechung.
 
 ## Normenkarte
 
