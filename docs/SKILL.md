@@ -1,10 +1,10 @@
 ---
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt immer ein modellunabhängiges Drei-Dokumente-Paket: Übersendungsschreiben/Informationsschreiben an den Mandanten, ausführliches Mandantengutachten und außergerichtliches Aufforderungsschreiben an Bauträger/Notar mit Problem, Begründung und konkreter richtiger Fassung. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
-version: "2.7.10"
+version: "2.7.11"
 ---
 
-# Bauträgervertrag-Prüfer 2.7.10
+# Bauträgervertrag-Prüfer 2.7.11
 
 Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -468,7 +468,7 @@ Regelfolgen:
 | Abnahme GE durch Vertreter aus Erwerberkreis | § 307 BGB; BGH VII ZR 68/24 | `Die Erwerber wählen doch selbst.` | Wahl genügt nicht, wenn der einzelne Erwerber sein eigenes Prüf- und Abnahmerecht verliert. | 🔴 |
 | Abnahme GE durch Sachverständigen | § 307 BGB; BGH VII ZR 108/24 | `Neutraler Sachverständiger ist besser.` | Neutralität ersetzt nicht das Bestellerrecht auf eigene Prüfung und Erklärung. | 🔴 |
 | Abnahme durch Tochter/Erstverwalter/Projektpartner | § 307 BGB; BGH VII ZR 241/22 | `Organisatorisch nötig.` | Bauträgernahes Lager und Entzug eigener Abnahmerechte sind nicht organisatorisch heilbar. | 🔴 |
-| Nachzüglerklausel `Abnahme ist erfolgt` | § 307/§ 305c BGB; BGH VII ZR 68/24 | `Das Objekt war schon abgenommen.` | Erwerber kann nicht formularmäßig an eine frühere, fremde und ggf. unwirksame Abnahme gebunden werden. | 🔴 |
+| Nachzüglerklausel `Abnahme ist erfolgt` | § 309 Nr. 8 lit. b ff BGB; BGH VII ZR 49/15 und VII ZR 171/15 | `Das Objekt war schon abgenommen.` | Nachzügler dürfen formularmäßig weder an eine frühere Abnahme des Gemeinschaftseigentums noch an einen darauf vorverlegten Verjährungsbeginn gebunden werden. | 🔴 |
 | Schlussrate ohne Mängeleinbehalt | § 641 Abs. 3 BGB; BGH VII ZR 88/25 | `Mängel werden Zug um Zug beseitigt.` | Bei Vertragswortlaut `vollständige Fertigstellung` und protokollierten Restmängeln kann schon Fälligkeit fehlen. | 🔴 |
 | Schlüssel nur gegen vollständige Zahlung | § 307, § 641 Abs. 3 BGB | `Ohne Zahlung kein Besitz.` | Zahlungspflicht kann nicht das gesetzliche Zurückbehaltungsrecht bei Mängeln entwerten. | 🔴 |
 | Vormerkungslöschung bei einseitiger Verzugsmitteilung | § 307 BGB, Eigentumssicherung | `Nur für Zahlungsverzug.` | Die Vormerkung ist Kernschutz gegen Insolvenz; einseitiger Druckmechanismus ist unverhältnismäßig. | 🔴 |
@@ -810,7 +810,7 @@ Wird eine Baubeschreibung nur lose übergeben oder nur referenziert, ist sie zur
 | Pauschalierter Verzugsschaden | Fertigstellung/Verzug | § 309 Nr. 5, § 286, Anrechnung auf Schadensersatz |
 | Selbstvornahme ausgeschlossen | Mängelrechte | § 307, § 637, praktische Durchsetzung |
 | Weite Änderungsvollmacht | Teilungserklärung/Gemeinschaftsordnung | § 308 Nr. 4, BGH V ZR 91/25 |
-| Nachzüglerklausel | Abnahme Gemeinschaftseigentum | BGH VII ZR 68/24, keine Bindung an fremde unwirksame Abnahme |
+| Nachzüglerklausel | Abnahme Gemeinschaftseigentum | BGH VII ZR 49/15 und VII ZR 171/15, keine Bindung an fremde Abnahme oder vorverlegte Verjährung |
 | Vormerkungslöschung bei Zahlungsverzug | Vollzug/Eigentumsschutz | § 307, Druckmittel, Insolvenzrisiko |
 | Notaranderkonto als Abwicklungsersatz | Zahlungs-/Verwahrungsabschnitt | BGH VII ZB 28/20, MaBV/Fälligkeit/Empfangsberechtigung trennen |
 
@@ -924,6 +924,8 @@ Bezugsfertigkeit setzt nicht nur vier Wände und Sanitärnutzung voraus. Der Zug
 ### K.4 — Nachzügler
 
 Erwerber, die nach einer vermeintlichen Abnahme des Gemeinschaftseigentums kaufen, sind nicht automatisch an eine frühere Abnahme gebunden. Formularmäßige Klauseln wie `Abnahme ist erfolgt` sind hoch angreifbar, wenn eigene Prüf- und Abnahmerechte fehlen.
+
+Amtliche BGH-Anker: VII ZR 49/15 erklärt eine Nachzüglerklausel, die spätere Erwerber an eine frühere Abnahme des Gemeinschaftseigentums bindet, wegen mittelbarer Verkürzung der Verjährung nach § 309 Nr. 8 lit. b ff BGB für unwirksam. VII ZR 171/15 bestätigt zusätzlich, dass eine Ingenieurbüro- oder Beschlussabnahme aus einer Zeit, in der der Nachzügler weder Wohnungseigentümer noch werdender Wohnungseigentümer war, keine Abnahmewirkung zu seinen Lasten entfaltet; für neu errichtete Eigentumswohnungen bleibt Werkvertragsrecht grundsätzlich relevant, auch wenn das Bauwerk bei Vertragsschluss bereits fertiggestellt ist.
 
 Prüfraster:
 
@@ -1668,7 +1670,7 @@ Bei Formrisiko nicht reflexhaft Gesamtnichtigkeit behaupten. Vertragsstand, Aufl
 
 ### O.7 — Nachzügler, Altbau und Sanierungsobjekte
 
-Nachzüglerfälle brauchen einen eigenen Block im Gutachten. Erfasst werden: Errichtung/Fertigstellung, vorherige Abnahmeakte, Vermietungsdauer, Zustand bei Erwerb, eigener Abnahmetermin, Klausel zur Anerkennung fremder Abnahme und Art der übernommenen Sanierungsleistung. Werkvertragsrecht kann auch bei schon ausgeführten Arbeiten relevant bleiben; bei längerer Vermietung und echtem Bestandsverkauf ist Kaufrechtsnähe gesondert zu prüfen.
+Nachzüglerfälle brauchen einen eigenen Block im Gutachten. Erfasst werden: Errichtung/Fertigstellung, vorherige Abnahmeakte, Vermietungsdauer, Zustand bei Erwerb, eigener Abnahmetermin, Klausel zur Anerkennung fremder Abnahme und Art der übernommenen Sanierungsleistung. BGH VII ZR 49/15 und VII ZR 171/15 sind die vorrangigen Nachzügler-Anker: keine formularmäßige Bindung an fremde Abnahme, keine vorverlegte Mängelverjährung und keine automatische Verdrängung des Werkvertragsrechts nur wegen Fertigstellung vor Vertragsschluss. Bei längerer Vermietung und echtem Bestandsverkauf ist Kaufrechtsnähe gesondert zu prüfen.
 
 ### O.8 — Persönliche und notarielle Anspruchsketten
 
