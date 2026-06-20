@@ -10,9 +10,11 @@ on:
       - 'vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf'
       - 'vertragsdokumente/bautraegervertrag/bautraegervertrag.docx'
       - 'vertragsdokumente/bautraegervertrag/bautraegervertrag.md'
+      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip'
       - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf'
       - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx'
       - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md'
+      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip'
 
 permissions:
   contents: write
@@ -36,9 +38,11 @@ jobs:
           cp vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf  docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf
           cp vertragsdokumente/bautraegervertrag/bautraegervertrag.docx docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx
           cp vertragsdokumente/bautraegervertrag/bautraegervertrag.md   docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.md
+          cp vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip
           cp vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf  docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf
           cp vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx
           cp vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md   docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md
+          cp vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip
 
       - name: Commit and push if changed
         run: |

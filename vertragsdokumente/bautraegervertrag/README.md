@@ -1,22 +1,24 @@
 # Bauträgervertrag
 
-Dieses Verzeichnis enthält ein eigenständiges Vertragsdokument in drei Fassungen:
+Dieses Verzeichnis enthält ein eigenständiges Vertragsdokument in den Gesamtfassungen und als Akten-ZIP mit getrennten Einzel-PDFs:
 
 - [Markdown öffnen](bautraegervertrag.md)
 - [Word-Dokument herunterladen](bautraegervertrag.docx)
 - [PDF herunterladen](bautraegervertrag.pdf)
+- [Akten-ZIP mit Einzel-PDFs herunterladen](bautraegervertrag-einzel-pdfs.zip)
 
 Öffentliche Download-Links über GitHub Pages:
 
 - [Markdown direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.md)
 - [Word-Dokument direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx)
 - [PDF direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf)
+- [Akten-ZIP direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip)
 
 ## Wichtiger Hinweis
 
 Dieser Bauträgervertrag ist kein Mustervertrag und darf nicht als Vorlage in der Praxis verwendet, nicht übernommen und nicht gegenüber echten Käuferinnen, Käufern, Bauträgern, Notariaten oder Behörden eingesetzt werden.
 
-Markdown, Word und PDF enthalten denselben Vertragsstoff einschließlich der Baubeschreibung als Anlage. Für jede fachliche Bewertung ist eine eigenständige rechtliche und technische Prüfung erforderlich.
+Markdown, Word und PDF enthalten denselben Vertragsstoff einschließlich der Baubeschreibung als Anlage. Das Akten-ZIP enthält denselben Stoff als getrennte, neutral benannte Einzel-PDFs. Für jede fachliche Bewertung ist eine eigenständige rechtliche und technische Prüfung erforderlich.
 
 ## Verwendung mit dem Skill
 
@@ -27,7 +29,7 @@ Markdown, Word und PDF enthalten denselben Vertragsstoff einschließlich der Bau
 
 ## Neu erzeugen
 
-Nach Änderungen an `bautraegervertrag.md` werden Word- und PDF-Fassung so erzeugt:
+Nach Änderungen an `bautraegervertrag.md` werden Word-Fassung, Gesamt-PDF und Akten-ZIP so erzeugt:
 
 ```bash
 ./build.sh

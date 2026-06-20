@@ -1,22 +1,24 @@
 # Bauträgervertrag Marewald
 
-Dieses Verzeichnis enthält ein eigenständiges Vertragsdokument in drei Fassungen:
+Dieses Verzeichnis enthält ein eigenständiges Vertragsdokument in den Gesamtfassungen und als Akten-ZIP mit getrennten Einzel-PDFs:
 
 - [Markdown öffnen](bautraegervertrag-marewald.md)
 - [Word-Dokument herunterladen](bautraegervertrag-marewald.docx)
 - [PDF herunterladen](bautraegervertrag-marewald.pdf)
+- [Akten-ZIP mit Einzel-PDFs herunterladen](bautraegervertrag-marewald-einzel-pdfs.zip)
 
 Öffentliche Download-Links über GitHub Pages:
 
 - [Markdown direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md)
 - [Word-Dokument direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx)
 - [PDF direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf)
+- [Akten-ZIP direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip)
 
 ## Wichtiger Hinweis
 
 Dieser Bauträgervertrag ist kein Mustervertrag und darf nicht als Vorlage in der Praxis verwendet, nicht übernommen und nicht gegenüber echten Käuferinnen, Käufern, Bauträgern, Notariaten oder Behörden eingesetzt werden. Für jede fachliche Bewertung ist eine eigenständige rechtliche und technische Prüfung erforderlich.
 
-Markdown, Word und PDF enthalten denselben Vertragsstoff einschließlich der Baubeschreibung als Anlage.
+Markdown, Word und PDF enthalten denselben Vertragsstoff einschließlich der Baubeschreibung als Anlage. Das Akten-ZIP enthält denselben Stoff als getrennte, neutral benannte Einzel-PDFs.
 
 ## Verwendung mit dem Skill
 
@@ -27,7 +29,7 @@ Markdown, Word und PDF enthalten denselben Vertragsstoff einschließlich der Bau
 
 ## Neu erzeugen
 
-Nach Änderungen an `bautraegervertrag-marewald.md` werden Word- und PDF-Fassung so erzeugt:
+Nach Änderungen an `bautraegervertrag-marewald.md` werden Word-Fassung, Gesamt-PDF und Akten-ZIP so erzeugt:
 
 ```bash
 ./build.sh
