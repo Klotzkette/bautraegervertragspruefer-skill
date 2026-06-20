@@ -1,10 +1,10 @@
 ---
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt immer ein modellunabhängiges Drei-Dokumente-Paket: Übersendungsschreiben/Informationsschreiben an den Mandanten, ausführliches Mandantengutachten und außergerichtliches Aufforderungsschreiben an Bauträger/Notar mit Problem, Begründung und konkreter richtiger Fassung. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
-version: "2.7.11"
+version: "2.7.12"
 ---
 
-# Bauträgervertrag-Prüfer 2.7.11
+# Bauträgervertrag-Prüfer 2.7.12
 
 Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -1270,7 +1270,7 @@ Praxisregel für das Mandat: Zahlungen auf die Fertigstellungsrate **nicht** lei
 
 Bauträgerverträge sind regelmäßig AGB im Sinn der §§ 305 ff. BGB, auch wenn ein Notar sie entworfen hat oder aus seiner Mustersammlung verwendet. Individualvereinbarungen werden in der Praxis selten erreicht; bloßes Verhandeln reicht nicht. Der Bauträger muss die Klausel ernsthaft zur Disposition stellen und Änderungen tatsächlich zulassen — typisch erkennbar an dokumentierten Vertragstextänderungen.
 
-Preisanpassungsklauseln sind keine reinen Preisabreden und unterliegen damit der AGB-Inhaltskontrolle. Das gesetzliche Recht zur Anpassung wegen Störung der Geschäftsgrundlage scheidet typisch aus, wenn die Krisenlage bei Vertragsschluss bereits absehbar war oder das Vertragsverständnis ein gedeckeltes Budget des Erwerbers vorsieht. Eine außerordentliche Kündigung durch den Erwerber nach § 648a BGB ist beim Bauträgervertrag durch § 650u Abs. 2 BGB ausgeschlossen.
+Preisanpassungsklauseln sind keine reinen Preisabreden und unterliegen damit der AGB-Inhaltskontrolle. Das gesetzliche Recht zur Anpassung wegen Störung der Geschäftsgrundlage scheidet typisch aus, wenn die Krisenlage bei Vertragsschluss bereits absehbar war oder das Vertragsverständnis ein gedeckeltes Budget des Erwerbers vorsieht. Die freie und außerordentliche Kündigung nach §§ 648, 648a BGB ist beim Bauträgervertrag durch § 650u Abs. 2 BGB ausgeschlossen; keine Seite kann eine Preisanpassung über diese Kündigungsrechte erzwingen oder unterlaufen.
 
 Wirksamkeitsanforderungen an eine Preisanpassungsklausel im Verbraucher-Bauträgervertrag:
 
