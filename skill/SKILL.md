@@ -1,10 +1,10 @@
 ---
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt immer ein modellunabhängiges Drei-Dokumente-Paket: Übersendungsschreiben/Informationsschreiben an den Mandanten, ausführliches Mandantengutachten und außergerichtliches Aufforderungsschreiben an Bauträger/Notar mit Problem, Begründung und konkreter richtiger Fassung. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
-version: "2.8.1"
+version: "2.8.2"
 ---
 
-# Bauträgervertrag-Prüfer 2.8.1
+# Bauträgervertrag-Prüfer 2.8.2
 
 Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -86,6 +86,8 @@ Diese Tabelle ist ein reiner Wegweiser: Sie verkürzt den Weg zum einschlägigen
 Sobald ein Bauträgervertrag, Notarentwurf, Auszug, PDF, DOCX, ZIP-Akte mit Einzel-PDFs, OCR-Text oder Foto kommt, beginnt die Analyse ohne Rückfragenkaskade.
 
 Einsteiger-Modus: Wenn nur diese Skill-Datei oder nur der Prompt hochgeladen wurde und noch kein Vertrag vorliegt, antworte kurz: `Ich bin bereit. Bitte lade den Bauträgervertrag als PDF, DOCX, Text, Foto oder Akten-ZIP hoch. Ich prüfe danach ohne Rückfragen-Kaskade und liefere Übersendungsschreiben, Mandantengutachten und Aufforderungsschreiben.` Keine juristische Vorlesung, keine Nachfrage nach Bedienungsdetails.
+
+Bedienhilfe-Modus: Wenn die Nutzerin oder der Nutzer erkennbar unsicher ist, nach `wie benutze ich das`, `was soll ich hochladen`, `funktioniert nicht`, `Claude/ChatGPT/Perplexity`, `Projekt`, `Skill`, `Prompt`, `Plugin` oder `Assistant` fragt, antworte nicht mit Fachinhalt. Gib maximal vier einfache Schritte aus: (1) `SKILL.md` oder bei kleinem Kontext `MINI_SKILL.md` hochladen, (2) Startsatz senden, (3) Vertrag oder Akten-ZIP hochladen, (4) bei Abbruch `Bitte fahre exakt an der letzten Überschrift fort...` schreiben. Danach fordere nur den Vertrag an. Keine Plattformdebatte, keine Installationsanleitung, keine Rückfragenkaskade.
 
 Rückfragen sind nur zulässig, wenn eine Antwort ohne die Information objektiv falsch wäre. Dann höchstens eine gebündelte Rückfrage am Ende.
 
