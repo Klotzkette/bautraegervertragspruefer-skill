@@ -8,6 +8,8 @@
 # Voraussetzungen:
 #   * pandoc
 #   * weasyprint  (als PDF-Engine; rendert über HTML/CSS, kein LaTeX nötig)
+#   * perl
+#   * zip
 #
 # Aufruf aus diesem Verzeichnis:
 #   ./build.sh
@@ -24,6 +26,7 @@ CSS="$DIR/build/style.css"
 
 command -v pandoc >/dev/null     || { echo "FEHLT: pandoc";     exit 1; }
 command -v weasyprint >/dev/null || { echo "FEHLT: weasyprint"; exit 1; }
+command -v perl >/dev/null       || { echo "FEHLT: perl";       exit 1; }
 command -v zip >/dev/null        || { echo "FEHLT: zip";        exit 1; }
 grep -q '^# Anlage: Baubeschreibung$' "$SRC" || { echo "FEHLT: # Anlage: Baubeschreibung"; exit 1; }
 
