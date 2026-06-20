@@ -1,10 +1,10 @@
 ---
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt immer ein modellunabhängiges Drei-Dokumente-Paket: Übersendungsschreiben/Informationsschreiben an den Mandanten, ausführliches Mandantengutachten und außergerichtliches Aufforderungsschreiben an Bauträger/Notar mit Problem, Begründung und konkreter richtiger Fassung. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
-version: "2.7.15"
+version: "2.8.0"
 ---
 
-# Bauträgervertrag-Prüfer 2.7.15
+# Bauträgervertrag-Prüfer 2.8.0
 
 Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -56,6 +56,7 @@ Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitig
 - [Teil M — Vertiefte Dogmatik II](#teil-m--vertiefte-dogmatik-ii)
 - [Teil N — Wirtschaft, Organisation, HOAI und Technik](#teil-n--wirtschaft-organisation-hoai-und-technik)
 - [Teil O — Fachmodule Bauträgerrecht 2026](#teil-o--fachmodule-bauträgerrecht-2026)
+- [Teil P — Beratungsstellen-Schnellmodus](#teil-p--beratungsstellen-schnellmodus-zeitknappe-verbraucherberatung)
 - [Bug-Hunt vor Ausgabe](#bug-hunt-vor-ausgabe)
 
 ## Schnellnavigation
@@ -78,6 +79,7 @@ Diese Tabelle ist ein reiner Wegweiser: Sie verkürzt den Weg zum einschlägigen
 | Baugrund, Baugrube, Statik, Brand-/Schall-/Wärmeschutz, Haustechnik, HOAI, Bauüberwachung | Teil N |
 | Vorinsolvenz, Geschäftsführer/Notar/Bauleiter, Sonderwünsche, Nachzügler, Sicherheitenschichten | Teil K, Teil O |
 | Drei-Dokumente-Paket erstellen | Teil L |
+| Wenig Zeit, schnelles und trotzdem korrektes Gutachten (Beratungsstelle) | Teil P |
 
 ## Sofortstart
 
@@ -1739,6 +1741,46 @@ Mandantenanschreiben: klare Entscheidungshilfe zu Unterschrift, Zahlungsstopp, N
 Gutachten: jedes Fachmodul wird dort behandelt, wo es hingehört: MaBV in F, AGB in G, Bausoll/Technik in H/J, Abnahme in I, Verzug in M, Haftung in N.
 
 Schreiben an Bauträger/Notar: keine akademische Vollständigkeit, sondern konkrete Streichungs- und Änderungsforderungen mit Alternativwortlaut.
+
+## Teil P — Beratungsstellen-Schnellmodus (zeitknappe Verbraucherberatung)
+
+Dieser Teil richtet sich an Beraterinnen und Berater in Verbraucherzentralen, Erwerberschutz- und Mietervereinen sowie kleinen Kanzleien, die solide Grundkenntnisse im Bauträgerrecht haben, aber wenig Zeit. Ziel: in kurzer Zeit ein korrektes, belastbares und versandfertiges Erstgutachten, das die eigene Kompetenz verstärkt statt sie zu ersetzen. Der Modus erfindet nichts dazu — er priorisiert und sequenziert die übrigen Teile.
+
+### P.1 — Zeitbudget-Pfad (Richtwert 30 Minuten)
+
+1. Fall-Fingerabdruck (ca. 5 Min): Parteien, Verbraucherstatus, Einheit, Preis, Ratenplan, Sicherheiten, Beurkundungs-/Bauphase, Fristen, Anlagen. Fehlendes als Annahme markieren, nicht zurückfragen.
+2. Pflicht-Prüfblock zuerst (ca. 10 Min): die Punkte des Pflicht-Prüfblocks abarbeiten — sie tragen das Mandat (MaBV-Fälligkeit, 5-%-Sicherheit, Beweislast/Tatsachenbestätigung, Abnahme Gemeinschaftseigentum, Schlussrate, Teilungserklärung, Bausoll, Bauüberwachung).
+3. Top-Risiken priorisieren (ca. 5 Min): die drei bis sieben Befunde mit der größten wirtschaftlichen oder fristbezogenen Wirkung nach vorn; Nebenschauplätze zurückstellen.
+4. Drei-Dokumente-Paket erzeugen (ca. 10 Min): Übersendungsschreiben, Mandantengutachten und Aufforderungsschreiben nach Teil L — direkt versandfertig.
+
+### P.2 — Entscheidungs-zuerst-Reihenfolge
+
+Bei akutem Zeitdruck zuerst die fünf Fragen klären, die typischerweise über das Mandat entscheiden:
+
+- Darf jetzt überhaupt gezahlt werden? (§ 3 Abs. 1 MaBV erfüllt, Vormerkung eingetragen, Freistellung vorhanden)
+- Ist die 5-%-Sicherheit nach § 650m Abs. 2 BGB vorhanden oder unzulässig abbedungen?
+- Bleibt das eigene Abnahmerecht für Sonder- und Gemeinschaftseigentum erhalten?
+- Wird die Schlussrate erst bei vollständiger Fertigstellung einschließlich Außenanlagen fällig?
+- Steht ein Termin (Beurkundung, Zahlung, Abnahme, Klage-/Rücktrittsfrist) an, der eine Sofortmaßnahme erzwingt?
+
+### P.3 — Korrektheitssicherung für Nicht-Spezialisten
+
+- Pflicht-Prüfblock und Bug-Hunt sind das Mindestgerüst; nichts davon auslassen, auch unter Zeitdruck.
+- Drei Ebenen trennen: gesichert (Norm oder verifizierte Rechtsprechung), Argumentationslinie, prüfbedürftig. Im Zweifel als prüfbedürftig kennzeichnen statt zu überdehnen.
+- Keine Fundstelle erfinden; Rechtsprechung nur mit zulässiger Quelle, sonst als zu verifizieren ausweisen.
+- Jede rote oder orange Ampel braucht Klauselstelle, konkreten Betrag/Frist/Einheit und eine gewünschte Fassung.
+
+### P.4 — Wann an Spezialisten oder Sachverständige abgeben
+
+Im Gutachten klar vermerken, wenn ein Punkt vertiefte Spezial- oder Sachverständigenprüfung braucht: Baugrund-, Statik-, Brandschutz- oder Bauphysikfragen, komplexe Insolvenz- und Sicherungslagen, Notarhaftung, hohe Streitwerte, gerichtliche Eilbedürftigkeit. So bleibt das Schnellgutachten ehrlich und haftungsbewusst und überschreitet nicht die eigene Prüftiefe.
+
+### P.5 — Versandfertigkeit (Selbstcheck vor Abgabe)
+
+- Ergebnis in einem Satz und Ampel-Bilanz vorhanden?
+- Drei bis sieben priorisierte Hauptrisiken mit konkreter Handlungsempfehlung?
+- Fristen und Sofortmaßnahmen benannt?
+- Nachforderungsliste für fehlende Unterlagen?
+- Mandantenanschreiben in einfacher Sprache, Gutachten mit Quellen, Bauträger-/Notarschreiben mit konkreten Neufassungen?
 
 ## Bug-Hunt vor Ausgabe
 
