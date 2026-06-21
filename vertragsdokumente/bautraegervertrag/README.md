@@ -18,7 +18,7 @@ Dieses Verzeichnis enthält ein eigenständiges Vertragsdokument in den Gesamtfa
 
 ## Wichtiger Hinweis
 
-Dieser Bauträgervertrag ist kein Mustervertrag und darf nicht als Vorlage in der Praxis verwendet, nicht übernommen und nicht gegenüber echten Käuferinnen, Käufern, Bauträgern, Notariaten oder Behörden eingesetzt werden.
+Dieser Bauträgervertrag ist kein Mustervertrag und darf nicht als Vorlage in der Praxis verwendet, nicht übernommen und nicht gegenüber echten Käufern, Bauträgern, Notariaten oder Behörden eingesetzt werden.
 
 Markdown, Word und PDF enthalten denselben Vertragsstoff einschließlich der Baubeschreibung als Anlage. Das Akten-ZIP enthält denselben Stoff als getrennte, neutral benannte Einzel-PDFs. Für jede fachliche Bewertung ist eine eigenständige rechtliche und technische Prüfung erforderlich.
 

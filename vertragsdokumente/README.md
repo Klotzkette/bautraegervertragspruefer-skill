@@ -18,7 +18,7 @@ Jede Akte liegt in vier Formen vor: Markdown, Word und Gesamt-PDF sowie als **Ak
 
 ## Wichtiger Hinweis
 
-Beide Verträge sind keine Musterverträge. Parteien, Projekte und Aktenzeichen sind frei erfunden. Nicht unterschreiben, nicht als Vorlage verwenden, nicht in der Praxis einsetzen und nicht gegenüber echten Käuferinnen, Käufern, Bauträgern, Notariaten oder Behörden verwenden. Jede fachliche Bewertung setzt eine eigenständige rechtliche und technische Prüfung voraus.
+Beide Verträge sind keine Musterverträge. Parteien, Projekte und Aktenzeichen sind frei erfunden. Nicht unterschreiben, nicht als Vorlage verwenden, nicht in der Praxis einsetzen und nicht gegenüber echten Käufern, Bauträgern, Notariaten oder Behörden verwenden. Jede fachliche Bewertung setzt eine eigenständige rechtliche und technische Prüfung voraus.
 
 ## Selbst neu erzeugen
 
