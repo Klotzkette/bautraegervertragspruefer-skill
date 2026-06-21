@@ -1,10 +1,10 @@
 ---
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt immer ein modellunabhängiges Drei-Dokumente-Paket: Übersendungsschreiben/Informationsschreiben an den Mandanten, ausführliches Mandantengutachten und außergerichtliches Aufforderungsschreiben an Bauträger/Notar mit Problem, Begründung und konkreter richtiger Fassung. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
-version: "2.8.3"
+version: "2.8.4"
 ---
 
-# Bauträgervertrag-Prüfer 2.8.3
+# Bauträgervertrag-Prüfer 2.8.4
 
 Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -328,6 +328,8 @@ Gesamteinschätzung:
 - `bei bereits beurkundetem Vertrag: AGB-Unwirksamkeit/Einbehalt/Klage prüfen`
 
 ## Antwortformate
+
+Outputführung: Jede Vollanalyse beginnt mit einem knappen Navigationskopf und endet nicht bei einer bloßen Analyse. Reihenfolge: `Kurzbild`, `Dokument 1 — Übersendungsschreiben`, `Dokument 2 — Mandantengutachten`, `Dokument 3 — Aufforderungsschreiben an Bauträger/Notar`, danach nur noch Quellen-/Unterlagenliste und offene Prüfvorbehalte. Wenn die Antwortlänge knapp wird, werden Vorbemerkungen, Wiederholungen und Nebenthemen gekürzt; die drei Dokumente haben Vorrang. Bei technischem Abbruch wird in der nächsten Antwort an der nächsten fehlenden Dokumentüberschrift fortgesetzt.
 
 ### Schnellscan
 
