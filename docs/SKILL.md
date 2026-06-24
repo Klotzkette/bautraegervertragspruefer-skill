@@ -1,10 +1,10 @@
 ---
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt immer ein modellunabhängiges Drei-Dokumente-Paket: Übersendungsschreiben/Informationsschreiben an den Mandanten, ausführliches Mandantengutachten mit Beweis- und Durchsetzungslandkarte und außergerichtliches Aufforderungsschreiben an Bauträger/Notar mit Problem, Begründung und konkreter richtiger Fassung. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
-version: "3.0.1"
+version: "3.0.2"
 ---
 
-# Bauträgervertrag-Prüfer 3.0.1
+# Bauträgervertrag-Prüfer 3.0.2
 
 Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -342,10 +342,13 @@ Gesamteinschätzung:
 
 Outputführung: Jede Vollanalyse beginnt mit einem knappen Navigationskopf und endet nicht bei einer bloßen Analyse. Reihenfolge: `Kurzbild`, `Dokument 1 — Übersendungsschreiben`, `Dokument 2 — Mandantengutachten`, `Dokument 3 — Aufforderungsschreiben an Bauträger/Notar`, danach nur noch Quellen-/Unterlagenliste und offene Prüfvorbehalte. Wenn die Antwortlänge knapp wird, werden Vorbemerkungen, Wiederholungen und Nebenthemen gekürzt; die drei Dokumente haben Vorrang. Bei technischem Abbruch wird in der nächsten Antwort an der nächsten fehlenden Dokumentüberschrift fortgesetzt.
 
+Pflicht-Statuskopf: Direkt unter dem Kurzbild steht eine einzeilige Checkpoint-Leiste: `Status: Kurzbild erledigt | Dokument 1 offen/erledigt | Dokument 2 offen/erledigt | Dokument 3 offen/erledigt | Nächster Schritt: ...`. Diese Leiste wird bei jeder Fortsetzung aktualisiert. Sie verhindert, dass kleine Modelle nach einem Abbruch neu anfangen oder das Bauträger-/Notarschreiben vergessen.
+
 ### Schnellscan
 
 ```text
 Kurzbild
+- Status: Kurzbild erledigt | Dokument 1 offen | Dokument 2 offen | Dokument 3 offen | Nächster Schritt: Dokument 1
 - Fall-Fingerabdruck:
 - Vertragsart:
 - Verbraucherstatus:
@@ -1091,7 +1094,7 @@ Prozessstrategie: Bei fahrlässiger Notarpflichtverletzung in einem Prozess gege
 
 ## Teil L — Drei-Dokumente-Paket
 
-Jede Vollanalyse mündet zwingend in drei getrennte Dokumente. Keine Vermischung der Sprachregister. Wenn der Nutzer nur einen Schnellscan verlangt, wird zusätzlich ein Kurzbild vorangestellt; das Drei-Dokumente-Paket bleibt der Abschluss.
+Jede Vollanalyse mündet zwingend in drei getrennte Dokumente. Keine Vermischung der Sprachregister. Wenn der Nutzer nur einen Schnellscan verlangt, wird zusätzlich ein Kurzbild vorangestellt; das Drei-Dokumente-Paket bleibt der Abschluss. Jedes Dokument beginnt mit seiner festen Überschrift (`Dokument 1`, `Dokument 2`, `Dokument 3`), damit Fortsetzungen und Copy/Paste in Kanzlei- oder Mandantenakten nicht durcheinanderlaufen.
 
 ### L.1 — Dokument 1: Übersendungsschreiben / Informationsschreiben an den Mandanten
 
@@ -1822,6 +1825,7 @@ Vor jeder finalen Analyse diese Fehler ausschließen:
 - Keine BGH-Entscheidung ohne zulässige URL und Liveprüfung.
 - Keine schrillen Drohungen ohne Tatbestand; Verhandlungsposition soll streng, aber glaubwürdig sein.
 - Jede rote Ampel muss eine konkrete gewünschte Änderung haben.
+- Statuskopf nicht vergessen: Kurzbild, Dokument 1, Dokument 2 und Dokument 3 müssen als offen/erledigt markiert sein.
 - Jede rote oder orange Ampel muss das Subsumtions-Gate bestehen: Textstelle, Wirkung, Rechtsfolge, Beweislast und Gegenargument.
 - Fehlende Unterlagen nicht vorschnell als bewiesenen Mangel verkaufen; sauber zwischen Unterlagenlücke, Aufklärungsdefizit, Fälligkeitssperre, Sachmangel und AGB-Risiko trennen.
 - Technik nicht hinter Jura verstecken: Baugrund, Baugrube, Objektüberwachung, private Sachverständige, LPH 8, Unterlagen, Wartung und Betriebskosten immer mitprüfen.
