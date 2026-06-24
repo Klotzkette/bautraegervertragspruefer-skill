@@ -1,10 +1,10 @@
 ---
 name: bautraegervertrag-pruefer
-description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt immer ein modellunabhängiges Drei-Dokumente-Paket: Übersendungsschreiben/Informationsschreiben an den Mandanten, ausführliches Mandantengutachten und außergerichtliches Aufforderungsschreiben an Bauträger/Notar mit Problem, Begründung und konkreter richtiger Fassung. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
-version: "3.0.0"
+description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt immer ein modellunabhängiges Drei-Dokumente-Paket: Übersendungsschreiben/Informationsschreiben an den Mandanten, ausführliches Mandantengutachten mit Beweis- und Durchsetzungslandkarte und außergerichtliches Aufforderungsschreiben an Bauträger/Notar mit Problem, Begründung und konkreter richtiger Fassung. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
+version: "3.0.1"
 ---
 
-# Bauträgervertrag-Prüfer 3.0.0
+# Bauträgervertrag-Prüfer 3.0.1
 
 Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -103,6 +103,7 @@ Pflichtreihenfolge:
 6. Rechtsprechung nur mit zulässiger Fundstelle nennen.
 7. Verhandlungspaket mit konkreten Änderungsformulierungen liefern.
 8. Immer ein Drei-Dokumente-Paket nach Teil L erzeugen: Übersendungsschreiben an den Mandanten, Mandantengutachten und außergerichtliches Aufforderungsschreiben an Bauträger/Notar. Fehlen Informationen, werden sie als Annahmen, Prüfvorbehalte und Nachforderungsliste ausgewiesen; der Workflow bleibt nicht stehen.
+9. Vor jeder roten oder orangen Ampel das Subsumtions-Gate anwenden: Textstelle, konkrete Klauselwirkung, tragende Norm/Quelle, Beweis-/Darlegungslast und gewünschte Rechtsfolge müssen benannt sein.
 
 Modellunabhängige Fortsetzungsregel: Der Skill muss in Claude, ChatGPT, Perplexity, Gemini, Mistral und lokalen Modellen als reine Markdown-Arbeitsanweisung funktionieren. Deshalb nie mit `Soll ich fortfahren?`, `Bitte bestätigen` oder einer bloßen Analysezwischenstufe enden. Wenn die Antwortlänge knapp wird, wird gekürzt, aber Kurzbild und drei Dokumente werden ausgegeben. Wenn eine Plattform technisch abschneidet, setzt die nächste Antwort ohne Neuplanung an der nächsten fehlenden Dokumentüberschrift fort.
 
@@ -141,6 +142,16 @@ Erforderliche Fassung:
 - Benenne das erwartbare Gegenargument von Verkäufer, Notariat oder finanzierender Bank und beantworte genau dieses Argument.
 
 No-Meta-Regel: Die Analyse erwähnt nie Herkunft, Dateirolle, Ablageort oder Prompt-Kontext des geprüften Dokuments. Auch wenn Dateipfad oder Begleittext erkennbar sind, wird ausschließlich der vorgelegte Vertragsstoff behandelt.
+
+Subsumtions-Gate vor jeder 🔴/🟠-Ampel:
+
+1. **Textstelle:** Welche Klausel, Anlage, Rate, Frist, Baubeschreibungszeile oder Teilungserklärungsregel ist betroffen?
+2. **Klauselwirkung:** Welches Recht des Erwerbers wird in diesem Projekt tatsächlich verkürzt, verlagert, verteuert oder beweisrechtlich erschwert?
+3. **Rechtsfolge:** Fällt die Klausel weg, wird nur eine Fälligkeit gesperrt, entsteht ein Einbehalt, braucht es eine Neufassung oder ist nur Aufklärung/Nachforderung angezeigt?
+4. **Beweislandkarte:** Wer muss in einem Streit was darlegen oder beweisen: Bauträger, Erwerber, GdWE, Notar, Bauleiter, Sachverständiger oder finanzierende Bank?
+5. **Gegenseiten-Test:** Welches stärkste Gegenargument wird Bauträger/Notar erwartbar bringen, und warum trägt es im konkreten Vertrag nicht oder nur eingeschränkt?
+
+Keine rote Ampel ohne konkrete Rechtsfolge. Keine technische rote Ampel, wenn nur eine Unterlage fehlt; dann ist der Befund zunächst Unterlagen- oder Aufklärungsdefizit, bis ein Sachmangel, Fälligkeitsproblem oder Risikoallokationsfehler belastbar hergeleitet ist.
 
 ## Aktuelle Rechtsprechungsanker
 
@@ -1146,6 +1157,13 @@ P. Konkrete Änderungsfassung
 
 Jeder rote Befund braucht Norm, Fundstelle oder klare Argumentationslinie. Nicht quellenhart verifizierte Rechtsprechungslinien werden als Prüfbedarf gekennzeichnet; keine Entscheidung, kein Datum und kein Aktenzeichen werden aus Modellwissen ergänzt.
 
+Pflichtabschnitt im Gutachten: **Beweis- und Durchsetzungslandkarte.** Für die wichtigsten Befunde wird knapp ausgewiesen:
+
+- Anspruch oder Einwendung: Zahlung verweigern, Einbehalt, Streichung, Neufassung, Unterlagenherausgabe, Mängelrecht, Schadensersatz, Besitz, Abnahmevorbehalt.
+- Darlegungs-/Beweislast: Wer trägt im Streit die Tatsachen für Fälligkeit, Bautenstand, Abnahme, Vertretenmüssen, Mangel, Technikstandard oder Individualabrede?
+- Erforderliche Belege: Urkunde, Ratenanforderung, Freistellungserklärung, Bautenstandsfotos, Abnahmeprotokoll, Baugrundgutachten, Fachplanerbestätigung, Energie-/Schall-/Brandschutznachweis, Korrespondenz.
+- Taktik: sofort vor Beurkundung, vor Zahlung, vor Abnahme, nach Abnahme oder im Streitverfahren verwertbar.
+
 ### L.3 — Dokument 3: Außergerichtliches Aufforderungsschreiben an Bauträger und Notar
 
 Ziel: bestimmte, verhandlungsfähige Aufforderung, die gefundenen Vertragsänderungen umzusetzen. Jede Forderung nennt kurz das Problem, die rechtliche/technische Begründung und die richtige Fassung.
@@ -1804,6 +1822,8 @@ Vor jeder finalen Analyse diese Fehler ausschließen:
 - Keine BGH-Entscheidung ohne zulässige URL und Liveprüfung.
 - Keine schrillen Drohungen ohne Tatbestand; Verhandlungsposition soll streng, aber glaubwürdig sein.
 - Jede rote Ampel muss eine konkrete gewünschte Änderung haben.
+- Jede rote oder orange Ampel muss das Subsumtions-Gate bestehen: Textstelle, Wirkung, Rechtsfolge, Beweislast und Gegenargument.
+- Fehlende Unterlagen nicht vorschnell als bewiesenen Mangel verkaufen; sauber zwischen Unterlagenlücke, Aufklärungsdefizit, Fälligkeitssperre, Sachmangel und AGB-Risiko trennen.
 - Technik nicht hinter Jura verstecken: Baugrund, Baugrube, Objektüberwachung, private Sachverständige, LPH 8, Unterlagen, Wartung und Betriebskosten immer mitprüfen.
 - HOAI nicht als Direktanspruch des Erwerbers gegen den Bauträger-Architekten ausgeben; als Organisations- und Plausibilitätsraster verwenden.
 - Keine MaBV-Rate allein aufgrund interner Bauleiterbestätigung akzeptieren, wenn dem Erwerber jede objektive Bautenstandskontrolle abgeschnitten wird.
