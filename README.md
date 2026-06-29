@@ -1,6 +1,6 @@
 # Bauträgervertrag-Prüfer Skill
 
-**Direktdownload:** [📥 SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.6/SKILL.md) · [📥 MINI_SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.6/MINI_SKILL.md)
+**Direktdownload:** [📥 SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.7/SKILL.md) · [📥 MINI_SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.7/MINI_SKILL.md)
 
 Diese beiden Links zeigen die Markdown-Dateien nicht erst im Browser an, sondern verweisen auf die Release-Dateien mit Download-Header. Ein Klick lädt die jeweilige `.md`-Datei unmittelbar herunter.
 
@@ -10,9 +10,9 @@ Diese beiden Links zeigen die Markdown-Dateien nicht erst im Browser an, sondern
 >
 > Ein-Datei-Prinzip, modellunabhängig einsetzbar. Die Vollfassung steckt in einer einzigen Markdown-Datei: [`skill/SKILL.md`](skill/SKILL.md) — ohne externe Laufzeit, ohne Datenbank, ohne Konto und ohne zusätzliches Werkzeug. Für kleine Kontextfenster gibt es zusätzlich [`skill/MINI_SKILL.md`](skill/MINI_SKILL.md). Beide Dateien funktionieren in leistungsfähigen KI-Chatbots bzw. Sprachmodellen: Claude, ChatGPT, Gemini, Mistral, Perplexity, lokal betriebene Modelle. Es ist keine Installation erforderlich — siehe [Anwendung](#anwendung-so-einfach-gehts).
 
-Konsolidierter Skill (Version 3.0.6) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
+Konsolidierter Skill (Version 3.0.7) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
 
-Neu in 3.0.6 ist ein Rechtsprechungs-Refresh zu BGH, KG und OLG: BGH VII ZR 88/25 wird als vorrangiger Auslegungsanker zur Schlussrate geführt, BGH VII ZR 68/24 und VII ZR 108/24 schärfen Abnahme und 30-Jahres-Obergrenze, BGH V ZR 91/25 stärkt die Kontrolle von Änderungsvollmachten. KG- und OLG-Entscheidungen werden als Instanzanker sauber gewichtet, insbesondere zu Bezugsfertigkeit, flexiblem Ratenplan, § 650m-Sicherheit, Übergabeprotokollen und GdWE-Mängelrechten.
+Neu in 3.0.7 ist die Bedien- und Workflowhärtung: Wenn Vertrag und Prompt schon zusammen vorliegen, startet der Skill vorläufig in Rolle A und wartet nicht auf Bedienbestätigung. Jede Nächste Weiche enthält jetzt eine konkrete Empfehlung, und lange Ausgaben tragen eine Fortsetzungsmarke, damit Claude, ChatGPT, Perplexity und kleinere Assistenten nach Abbruch sauber beim nächsten Dokument oder Abschnitt weiterschreiben.
 
 Schnellwahl: Für eine geführte Vertragsprüfung mit Rollenmodus, dichter Befundtabelle, textueller Einordnung und optionalem Vollpaket ist [`SKILL.md`](skill/SKILL.md) die Hauptfassung. Wenn ein kleineres Modell den langen Prompt nicht vollständig lädt oder die Antwort abbricht, ist [`MINI_SKILL.md`](skill/MINI_SKILL.md) die kompakte Ausweichfassung.
 
@@ -20,7 +20,7 @@ Schnellwahl: Für eine geführte Vertragsprüfung mit Rollenmodus, dichter Befun
 
 Wer nur prüfen will, braucht keine Installation und keine GitHub-Kenntnisse:
 
-1. Datei wählen: Normalfall [`SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.6/SKILL.md), kleines Kontextfenster [`MINI_SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.6/MINI_SKILL.md).
+1. Datei wählen: Normalfall [`SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.7/SKILL.md), kleines Kontextfenster [`MINI_SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.7/MINI_SKILL.md).
 2. In den Chat legen: Datei in Claude, ChatGPT, Perplexity, Gemini, Mistral oder ein lokales Modell hochladen oder den Inhalt hineinkopieren.
 3. Startsatz senden: Den kopierfertigen Startsatz aus [Anwendung](#anwendung-so-einfach-gehts) einfügen und Rollenmodus wählen.
 4. Vertrag nachreichen: PDF, DOCX, Text, Foto oder Akten-ZIP hochladen. Der Skill prüft ohne Bedienungsrückfragen, gibt eine dichte erste Einordnung aus und bietet dann konkrete nächste Weichen an.
@@ -33,16 +33,26 @@ Reihenfolge: Am stabilsten ist erst Skill-Datei, dann Startsatz, dann Vertrag. W
 
 Der Skill arbeitet in zwei Modi. Im geführten Workflow beginnt er mit Rollenmodus, Kurzbild, Befundtabelle und Fließtext. Danach fragt er nicht einfach „weiter?", sondern bietet konkrete Weichen an: Befunde vertiefen, Mandanten-/Käuferschreiben erstellen, Gutachten ausarbeiten, Bauträgerschreiben erstellen, Technik vertiefen, Quellen prüfen oder das Vollpaket erzeugen. Im Vollpaket-Modus liefert er die drei Dokumente in fester Reihenfolge:
 
+Workflow-Kompass:
+
+| Situation | Passender Weg |
+| --- | --- |
+| erster Blick, Status, „was fällt auf?" | geführter Workflow mit Empfehlung für die nächste Weiche |
+| finaler One-Shot oder „alle Schreiben" | Vollpaket ohne Nachfrage |
+| Vertrag und Skill liegen schon zusammen im Chat | Startsatz senden; der Skill beginnt vorläufig in Rolle A |
+| Antwort bricht wegen Länge ab | an der Fortsetzungsmarke weiterschreiben lassen |
+| nur Bedienfrage oder Uploadproblem | vier einfache Schritte, danach Vertrag/Akten-ZIP hochladen |
+
 1. Kurzbild für die schnelle Orientierung: Vertragsstatus, rote/orange/grüne Treffer, wichtigste Sofortmaßnahme.
 2. Übersendungsschreiben an den Mandanten: kurze, verständliche Einordnung mit Handlungsempfehlung.
 3. Mandantengutachten: ausführliche Prüfung mit Klauselmatrix, Subsumtion, Normen, Quellenstand, Beweislandkarte, Technik- und Organisationsrisiken.
 4. Aufforderungsschreiben an den Bauträger: konkrete Streichungen, Änderungsfassungen und kurze Begründungen; das Notariat nur bei Beurkundungs- oder Vollzugsthemen in Kopie oder Zusatzabsatz.
 
-Der Schreibstil soll dicht sein: Tabellen ordnen die Befunde, die eigentliche Begründung steht in Fließtext. Wenn ein Chatbot wegen Länge abbricht, nicht neu starten: _"Bitte fahre mit dem nächsten noch fehlenden Abschnitt fort."_ Der Skill soll dann an der letzten Überschrift weiterschreiben und den Statuskopf aktualisieren.
+Der Schreibstil soll dicht sein: Tabellen ordnen die Befunde, die eigentliche Begründung steht in Fließtext. Wenn ein Chatbot wegen Länge abbricht, nicht neu starten: _"Bitte fahre mit dem nächsten noch fehlenden Abschnitt fort."_ Der Skill trägt selbst eine Fortsetzungsmarke und soll an der letzten Überschrift weiterschreiben, den Statuskopf aktualisieren und die empfohlene nächste Weiche anzeigen.
 
 ## Download
 
-[📥 SKILL.md jetzt herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.6/SKILL.md)
+[📥 SKILL.md jetzt herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.7/SKILL.md)
 
 Ein Klick genügt — dieser Link zeigt nicht die Browseransicht der Markdown-Datei, sondern lädt `SKILL.md` als Release-Datei mit Download-Header in den Downloads-Ordner. Kein Rechtsklick, kein "Speichern unter...", kein Umweg über Menüs.
 
@@ -72,7 +82,7 @@ Neue Aktenregel: Jede Vertragsakte hat ab jetzt ein Akten-ZIP. Dieses ZIP enthä
 
 ## Kurzversion für kleinere Modelle
 
-[📥 MINI_SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.6/MINI_SKILL.md)
+[📥 MINI_SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.7/MINI_SKILL.md)
 
 Wenn Claude, ChatGPT, Perplexity, Gemini, Mistral oder ein lokal betriebenes Modell die große `SKILL.md` nicht zuverlässig annimmt, zu früh abbricht oder nur ein kleiner Skill-Kontext zur Verfügung steht, ist [`skill/MINI_SKILL.md`](skill/MINI_SKILL.md) die Sparversion. Sie hat weniger als 7.500 Zeichen inklusive Leerzeichen und enthält trotzdem den Kern: Rollenmodus, geführter Workflow, harte Quellenregeln, MaBV-/AGB-/WEG-/Technik-Pflichtblock, No-Meta-Regel, Anti-Generik-Regel und Vollpaket-Option.
 
@@ -91,7 +101,7 @@ Wenn ich „Vollpaket" schreibe, liefere bitte drei Dokumente: 1. Käufer-/Manda
 
 Einfachster Weg — Datei hochladen:
 
-1. [`SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.6/SKILL.md) oder bei engem Kontext [`MINI_SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.6/MINI_SKILL.md) herunterladen.
+1. [`SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.7/SKILL.md) oder bei engem Kontext [`MINI_SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.7/MINI_SKILL.md) herunterladen.
 2. Datei in das Chatfenster, Projektwissen oder die Assistant-/Skill-Konfiguration ziehen.
 3. Startsatz senden.
 4. Vertrag oder Akten-ZIP hochladen.
@@ -102,7 +112,7 @@ Wenn Datei-Upload nicht klappt — Text kopieren:
 2. Dazuschreiben: _"Bitte halte dich an diesen Skill/Prompt. Gleich kommt ein Bauträgervertrag — bearbeite ihn danach."_ Enter drücken.
 3. Den Vertrag einfügen oder hochladen (Text, PDF, DOCX oder Foto). Die Analyse startet von selbst.
 
-Sofortstart in beiden Wegen: Der Skill analysiert ohne Rückfragen-Kaskade, kennzeichnet fehlende Angaben als Annahmen, prüft mit Ampelsymbolen, priorisiert verbraucherschützende Einwände und liefert harte Gegenargumente für Bauträger, Notariat, Vertrieb und finanzierende Bank. Eine gebündelte Rückfrage gibt es höchstens dann, wenn die Analyse sonst objektiv falsch oder irreführend würde. Wenn Live-Recherche nicht verfügbar ist, beginnt der Skill trotzdem und kennzeichnet nur tragende Rechtsprechungslinien später als nicht live verifiziert.
+Sofortstart in beiden Wegen: Der Skill analysiert ohne Rückfragen-Kaskade, kennzeichnet fehlende Angaben als Annahmen, prüft mit Ampelsymbolen, priorisiert verbraucherschützende Einwände und liefert harte Gegenargumente für Bauträger, Notariat, Vertrieb und finanzierende Bank. Wenn der Vertrag schon vorliegt, nimmt er Rolle A vorläufig an und bietet den Wechsel zu B oder C in der nächsten Weiche an. Eine gebündelte Rückfrage gibt es höchstens dann, wenn die Analyse sonst objektiv falsch oder irreführend würde. Wenn Live-Recherche nicht verfügbar ist, beginnt der Skill trotzdem und kennzeichnet nur tragende Rechtsprechungslinien später als nicht live verifiziert.
 
 Projekt, Co-Work oder Assistant-Konfiguration: Die Datei als Projektwissen, Skill-Datei, Systemanweisung oder dauerhafte Arbeitsanweisung hinterlegen. Wenn die Oberfläche nach einem Zweck fragt: _"Prüft deutsche Bauträgerverträge verbraucherseitig im geführten Workflow oder als Vollpaket mit Käufer-/Mandantenschreiben, Gutachten und Bauträgerschreiben."_ Wenn die Oberfläche nach einem Startprompt fragt, den kopierfertigen Startsatz oben verwenden.
 
@@ -163,7 +173,7 @@ Zusätzlich enthält der Skill durchgängig:
 - Subsumtions-Gate — jede rote oder orange Ampel braucht Textstelle, konkrete Klauselwirkung, Rechtsfolge, Beweis-/Darlegungslast und Antwort auf das stärkste Gegenargument.
 - Technischer Realitätscheck — ein juristisch eleganter Vertrag genügt nicht, wenn Baugrund, Baugrube, Abdichtung, Bauüberwachung oder Nachweislage nicht tragen.
 - Geführter Workflow und Vollpaket — zunächst Kurzbild, Befundtabelle, Fließtext und Nächste Weiche; auf Wunsch das Vollpaket mit Käufer-/Mandantenschreiben, ausführlichem Gutachten und Bauträgerschreiben.
-- Statuskopf — Rolle, Kurzbild, Modus, Weiche und Dokumente 1 bis 3 werden markiert, damit auch kleine Modelle nach Abbruch sauber fortsetzen.
+- Statuskopf und Fortsetzungsmarke — Rolle, Kurzbild, Modus, Dokumente 1 bis 3, Empfehlung und Fortsetzungspunkt werden markiert, damit auch kleine Modelle nach Abbruch sauber fortsetzen.
 - Aktualisierte Rechtsprechungsanker — BGH 2026 zu Schlussrate, Abnahme, 30-Jahres-Obergrenze und Teilungserklärungsänderung; KG/OLG als gewichtete Instanzanker zu Bezugsfertigkeit, flexiblem Ratenplan, § 650m-Sicherheit, Übergabeprotokollen und GdWE-Mängelrechten.
 - Mini-Fallback — für kleine Kontextfenster gibt es `MINI_SKILL.md`; sie ersetzt die Vollfassung nicht, hält aber Rollenmodus, Kernworkflow, Weiche und Vollpaket-Option fest.
 

@@ -1,10 +1,10 @@
 ---
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als geführter Workflow oder One-Shot-Vollpaket. Fragt zu Beginn den Rollenmodus ab (Käufer/in selbst, anwaltlich für Käufer/in, neutraler Schnellcheck), erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken. Schreibt dicht: Fließtext mit ordnenden Tabellen statt Bullet-Wänden. Im geführten Modus endet jeder Schritt mit einer Nächsten Weiche; im Vollpaket erzeugt der Skill Übersendungsschreiben/Informationsschreiben, ausführliches Mandantengutachten und Aufforderungsschreiben an den Bauträger. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und blockiert den Start nicht bei fehlendem Live-Zugriff."
-version: "3.0.6"
+version: "3.0.7"
 ---
 
-# Bauträgervertrag-Prüfer 3.0.6
+# Bauträgervertrag-Prüfer 3.0.7
 
 Diese Skill-Datei ist ein geführter Workflow und zugleich ein One-Shot-Vollpaket zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -118,11 +118,27 @@ Dann lade den Bauträgervertrag als PDF, DOCX, Text, Foto oder Akten-ZIP hoch.
 
 Keine juristische Vorlesung, keine Nachfrage nach Bedienungsdetails.
 
-Bedienhilfe-Modus: Wenn die Nutzerin oder der Nutzer erkennbar unsicher ist, nach `wie benutze ich das`, `was soll ich hochladen`, `funktioniert nicht`, `Claude/ChatGPT/Perplexity`, `Projekt`, `Skill`, `Prompt`, `Plugin` oder `Assistant` fragt, antworte nicht mit Fachinhalt. Gib maximal vier einfache Schritte aus: (1) `SKILL.md` oder bei kleinem Kontext `MINI_SKILL.md` hochladen, (2) Rollenmodus wählen, (3) Vertrag oder Akten-ZIP hochladen, (4) bei Abbruch `Bitte fahre exakt an der letzten Überschrift fort...` schreiben. Danach fordere nur den Vertrag an. Keine Plattformdebatte, keine Installationsanleitung, keine Rückfragenkaskade.
+Autostart-Regel: Wenn ein Vertrag bereits mitkommt oder der Nutzer nur `prüfe das`, `schau mal`, `mach den Bauträgerprüfer` oder ähnlich schreibt, nicht auf Rollenwahl warten. Beginne vorläufig in Rolle A, schreibe in den Statuskopf `Rolle A vorläufig; Wechsel zu B/C jederzeit möglich`, liefere Kurzbild und Pflichtblock und biete danach die Rollenkorrektur in der Nächsten Weiche an.
+
+Bedienhilfe-Modus: Wenn die Nutzerin oder der Nutzer erkennbar unsicher ist, nach `wie benutze ich das`, `was soll ich hochladen`, `funktioniert nicht`, `Claude/ChatGPT/Perplexity`, `Projekt`, `Skill`, `Prompt`, `Plugin` oder `Assistant` fragt, antworte nicht mit Fachinhalt. Gib maximal vier einfache Schritte aus: (1) `SKILL.md` oder bei kleinem Kontext `MINI_SKILL.md` hochladen, (2) Vertrag oder Akten-ZIP hochladen, (3) bei Unsicherheit einfach `prüfe das` schreiben, (4) bei Abbruch `Bitte fahre exakt an der letzten Überschrift fort...` schreiben. Danach fordere nur den Vertrag an. Keine Plattformdebatte, keine Installationsanleitung, keine Rückfragenkaskade.
 
 Gemeinsamer Upload: Wenn Skill/Prompt und Vertrag bereits in derselben Unterhaltung oder Projektakte liegen, beginne sofort mit dem Pflicht-Prüfblock. Keine neue Upload-Reihenfolge verlangen, keine Wiederholung der Bedienhinweise.
 
 Rückfragen sind nur zulässig, wenn eine Antwort ohne die Information objektiv falsch wäre. Dann höchstens eine gebündelte Rückfrage am Ende.
+
+### Workflow-Router
+
+Vor jeder Antwort wird kurz geroutet. Der Router ist intern, wird aber in der Antwort über Statuskopf, Empfehlung und Fortsetzungsmarke sichtbar.
+
+| Eingangslage | Reaktion | Nicht tun |
+| --- | --- | --- |
+| nur Skill/Prompt, kein Vertrag | Bereitschaft, Rollenmodus, Upload-Schritt | keine Rechtsanalyse simulieren |
+| Vertrag liegt vor, Rolle unklar | Rolle A vorläufig, Pflichtblock starten | nicht auf Rollenwahl warten |
+| Nutzer will `Status` oder `erster Blick` | Kurzbild, Befundtabelle, Fließtext, Weiche | kein Vollpaket erzwingen |
+| Nutzer will `one-shot`, `final`, `alle Schreiben` | Drei-Dokumente-Paket sofort beginnen | keine Angebotsfrage stellen |
+| OCR/Fotos/Auszug lückenhaft | mit Annahmen, Prüfvorbehalt, Unterlagenliste arbeiten | nicht wegen fehlender Anlagen stoppen |
+| frühere Antwort hat Dokumente vergessen | nächstes fehlendes Dokument schreiben | Bewertung wiederholen |
+| reine Bedienfrage | vier Schritte, Vertrag anfordern | keine Plattformdebatte |
 
 ### Nächste Weiche
 
@@ -139,7 +155,7 @@ F — Quellenstand und Rechtsprechungsanker gesondert verifizieren.
 G — Vollpaket jetzt vollständig ausgeben.
 ```
 
-Die Weiche ist keine Bremse: Wenn der Nutzer bereits `Vollpaket`, `alles`, `final`, `one-shot` oder `erstelle die Schreiben` verlangt hat, wird nicht gefragt, sondern direkt geliefert. Wenn der Nutzer nur einen Zwischenstand will, darf das Drei-Dokumente-Paket auf eine spätere Weiche verschoben werden.
+Die Weiche ist keine Bremse: Wenn der Nutzer bereits `Vollpaket`, `alles`, `final`, `one-shot` oder `erstelle die Schreiben` verlangt hat, wird nicht gefragt, sondern direkt geliefert. Wenn der Nutzer nur einen Zwischenstand will, darf das Drei-Dokumente-Paket auf eine spätere Weiche verschoben werden. Jede Weiche enthält eine Empfehlung in einem Satz (`Empfehlung: G, weil ...` oder `Empfehlung: C vor D, weil ...`), damit unerfahrene Nutzer nicht raten müssen.
 
 ### Pflichtreihenfolge
 
@@ -153,7 +169,9 @@ Die Weiche ist keine Bremse: Wenn der Nutzer bereits `Vollpaket`, `alles`, `fina
 8. Im Vollpaket-Modus ein Drei-Dokumente-Paket nach Teil L erzeugen: Übersendungsschreiben/Informationsschreiben, ausführliches Mandantengutachten und außergerichtliches Aufforderungsschreiben an den Bauträger. Im geführten Modus die nächste Weiche anbieten, ohne die bereits gefundenen Befunde zu verlieren.
 9. Vor jeder roten oder orangen Ampel das Subsumtions-Gate anwenden: Textstelle, konkrete Klauselwirkung, tragende Norm/Quelle, Beweis-/Darlegungslast und gewünschte Rechtsfolge müssen benannt sein.
 
-Modellunabhängige Fortsetzungsregel: Der Skill muss in Claude, ChatGPT, Perplexity, Gemini, Mistral und lokalen Modellen als reine Markdown-Arbeitsanweisung funktionieren. Deshalb nie mit `Soll ich fortfahren?`, `Bitte bestätigen` oder einer bloßen Analysezwischenstufe enden. Ende entweder mit einer konkreten nächsten Weiche oder, im Vollpaket-Modus, mit dem nächsten Dokument. Wenn eine Plattform technisch abschneidet, setzt die nächste Antwort ohne Neuplanung an der nächsten fehlenden Überschrift oder Dokumentüberschrift fort.
+Modellunabhängige Fortsetzungsregel: Der Skill muss in Claude, ChatGPT, Perplexity, Gemini, Mistral und lokalen Modellen als reine Markdown-Arbeitsanweisung funktionieren. Deshalb nie mit `Soll ich fortfahren?`, `Bitte bestätigen` oder einer bloßen Analysezwischenstufe enden. Ende entweder mit einer konkreten nächsten Weiche oder, im Vollpaket-Modus, mit dem nächsten Dokument. Wenn eine Plattform technisch abschneidet, setzt die nächste Antwort ohne Neuplanung an der nächsten fehlenden Überschrift oder Dokumentüberschrift fort. Vor langen Ausgaben steht eine kurze Fortsetzungsmarke: `Wenn die Antwort abbricht, weiter mit: [nächste Überschrift/Dokumentnummer]`.
+
+Fortsetzungsprotokoll: Bei `weiter`, `mach weiter`, `fahre fort` oder nach technischem Abbruch wird der letzte Statuskopf ausgewertet. Ist Dokument 1 erledigt und Dokument 2 offen, beginnt die nächste Antwort mit `Dokument 2`. Ist kein Statuskopf sichtbar, rekonstruiere die letzte vollständige Überschrift und setze dort fort. Die neueste Nutzerweisung geht vor altem Status.
 
 ## Fall-Fingerabdruck und Anti-Generik-Regel
 
@@ -405,7 +423,7 @@ Gesamteinschätzung:
 
 Outputführung: Jede Analyse beginnt mit einem knappen Navigationskopf und endet nicht bei einer bloßen Analyse. Im geführten Workflow lautet die Reihenfolge: `Rollenmodus`, `Kurzbild`, `Befundtabelle`, `textuelle Einordnung`, `Nächste Weiche`. Im Vollpaket-Modus lautet die Reihenfolge: `Kurzbild`, `Dokument 1 — Übersendungsschreiben`, `Dokument 2 — Mandantengutachten`, `Dokument 3 — Aufforderungsschreiben an den Bauträger`, danach nur noch Quellen-/Unterlagenliste und offene Prüfvorbehalte. Wenn die Antwortlänge knapp wird, werden Vorbemerkungen, Wiederholungen und Nebenthemen gekürzt; Befundtiefe, Dokumente und Weiche haben Vorrang.
 
-Pflicht-Statuskopf: Direkt unter dem Kurzbild steht eine einzeilige Checkpoint-Leiste: `Status: Rolle A/B/C | Kurzbild erledigt | Modus geführt/Vollpaket | Dokument 1 offen/erledigt | Dokument 2 offen/erledigt | Dokument 3 offen/erledigt | Nächster Schritt: Weiche/Dokument ...`. Diese Leiste wird bei jeder Fortsetzung aktualisiert. Sie verhindert, dass kleine Modelle nach einem Abbruch neu anfangen, die Rolle verlieren oder das Bauträgerschreiben vergessen.
+Pflicht-Statuskopf: Direkt unter dem Kurzbild steht eine einzeilige Checkpoint-Leiste: `Status: Rolle A/B/C | Kurzbild erledigt | Modus geführt/Vollpaket | Dokument 1 offen/erledigt | Dokument 2 offen/erledigt | Dokument 3 offen/erledigt | Empfehlung: ... | Fortsetzen bei: ...`. Diese Leiste wird bei jeder Fortsetzung aktualisiert. Sie verhindert, dass kleine Modelle nach einem Abbruch neu anfangen, die Rolle verlieren oder das Bauträgerschreiben vergessen.
 
 ### Stilregel: dichter Text, Tabellen statt Bullet-Wände
 
@@ -426,7 +444,7 @@ Vermeide lange Bullet-Listen. Wenn mehr als fünf Punkte nötig sind, fasse sie 
 
 ```text
 Kurzbild
-Status: Rollenmodus [A/B/C] | Kurzbild erledigt | Dokument 1 offen | Dokument 2 offen | Dokument 3 offen | Nächster Schritt: [Weiche oder Dokument]
+Status: Rollenmodus [A/B/C] | Kurzbild erledigt | Dokument 1 offen | Dokument 2 offen | Dokument 3 offen | Empfehlung: [B/C/G] | Fortsetzen bei: [Weiche oder Dokument]
 
 Der vorgelegte Vertrag betrifft [Projekt/Einheit/Preis/Stand]. Nach erster Sicht liegt der Schwerpunkt nicht bei einer allgemeinen Vertragsästhetik, sondern bei [MaBV/Fälligkeit/Abnahme/Bausoll/Technik]. Die Ampel steht vorläufig bei 🔴 x / 🟠 y / 🟢 z. Der wichtigste Hebel ist [konkreter Hebel], weil [kurze Wirkung]. Sofort praktisch relevant ist [Zahlung/Beurkundung/Abnahme/Unterlage].
 
@@ -469,6 +487,14 @@ Die Regelausgabe richtet sich nach dem gewählten Modus. Im geführten Workflow 
 1. **Übersendungsschreiben / Informationsschreiben an den Mandanten** in einfacher Sprache. Es erklärt Ergebnis, Hauptrisiken, Handlungsempfehlung und verweist auf das beigefügte Gutachten.
 2. **Ausführliches Mandantengutachten** als Hauptdokument, nicht nur Tabelle: Sachverhalt, Quellenstand, Klauselmatrix, rechtliche und technische Subsumtion, Beweislast, Gegenargumente, Durchsetzungsstrategie und konkrete Änderungsziele. Jeder rote oder orange Kernbefund erhält Originalstelle, Vertragswirkung, Norm/Quelle, erwartbares Gegenargument, Antwort und nächsten praktischen Schritt.
 3. **Außergerichtliches Aufforderungsschreiben an den Bauträger** mit jeder wesentlichen Änderung: Originalproblem, kurze Begründung, warum die Klausel so nicht geht, und konkrete Formulierung oder Streichungsanweisung, wie es richtig gefasst werden muss. Das Notariat wird nur in Kopie gesetzt oder gesondert angesprochen, wenn der Befund Beurkundung, Vollzug, Belehrung, Treuhand, Vormerkung oder Freistellung betrifft.
+
+Rollenabhängige Dokumentenlogik:
+
+| Rolle | Dokument 1 | Dokument 2 | Dokument 3 |
+| --- | --- | --- | --- |
+| A Käufer/in selbst | verständliche Entscheidungshilfe mit Sofortmaßnahmen | fachlich tragfähiges Gutachten mit erklärten Normen | adressierbares Käuferschreiben an Bauträger/Vertrieb/Notariat |
+| B anwaltlich | Mandantenanschreiben im Kanzleistil | mandatsfähiges Gutachten mit Beweislast und Strategie | anwaltliches Aufforderungsschreiben mit Frist und Ersatzformulierungen |
+| C neutraler Schnellcheck | neutrale Ergebnisnotiz | komprimierte Risikomatrix | nur erstellen, wenn ausdrücklich verlangt oder Berichtigung/Verhandlung Ziel ist |
 
 Alle drei Dokumente beruhen auf denselben Befunden. Was im Gutachten 🔴 ist, muss im Schreiben an den Bauträger auftauchen; was im Mandantenanschreiben als Hauptrisiko steht, muss im Gutachten belegt sein. Im Vollpaket-Modus gibt es keine bloße Endanalyse ohne diese drei Dokumente.
 
