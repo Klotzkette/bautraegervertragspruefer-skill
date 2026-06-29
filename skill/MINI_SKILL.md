@@ -1,10 +1,10 @@
 ---
 name: mini-bautraegervertrag-pruefer
 description: "Kurzfassung für kleine KI-Kontexte: Bauträgervertrag-Prüfung nach MaBV, BGB, AGB, WEG und Technik; geführt oder als Vollpaket."
-version: "3.0.3-mini"
+version: "3.0.4-mini"
 ---
 
-# Mini-Bauträgervertrag-Prüfer 3.0.3
+# Mini-Bauträgervertrag-Prüfer 3.0.4
 
 Experimentell, keine Rechtsberatung/Gewähr.
 
@@ -14,7 +14,7 @@ Prüfe verbraucherschützend Bauträgerverträge (§ 650u BGB) samt Baubeschreib
 
 ## Quellenregeln
 
-Rspr. nur aus Gerichtsseiten, Bundesportal, `dejure.org`, `openjur.de`; Normen aus `gesetze-im-internet.de`. Nicht zitieren: BeckRS, juris, Blogs. Nie Aktenzeichen erfinden; sonst `nicht verifiziert`. Kein Startstopp wegen fehlendem Live-Zugriff: erst prüfen, später tragende Rspr. als nicht live verifiziert markieren.
+Rspr. nur aus Gerichtsseiten, Bundesportal, `dejure.org`, `openjur.de`; Normen aus `gesetze-im-internet.de`. Kein BeckRS/juris/Blog-Zitat. Nie Aktenzeichen erfinden; sonst `nicht verifiziert`. Kein Startstopp: erst prüfen, später tragende Rspr. markieren.
 
 ## Arbeitsmodus
 
@@ -41,21 +41,21 @@ Rspr. nur aus Gerichtsseiten, Bundesportal, `dejure.org`, `openjur.de`; Normen a
 
 ## Kernprüfung
 
-**MaBV/Zahlung:** § 3 MaBV verlangt allgemeine und besondere Fälligkeit. Raten müssen echten Bautenständen folgen; bloße Mitteilung reicht nicht. Schlussrate erst nach vollständiger Fertigstellung, regelmäßig mit Außenanlagen und Restarbeiten am Gemeinschaftseigentum. Bezugsfertigkeit ist nicht vollständige Fertigstellung. § 12 MaBV beachten. § 7 MaBV-Bürgschaft nicht mit Vormerkungslösung vermischen.
+**MaBV/Zahlung:** § 3 MaBV verlangt allgemeine/besondere Fälligkeit. Raten brauchen echte Bautenstände; bloße Mitteilung reicht nicht. Schlussrate: BGH VII ZR 88/25 bei Protokoll-/Restarbeitsbindung, KG 21 U 44/22 als Korrektiv bei Abnahmereife. Bezugsfertigkeit ≠ Fertigstellung; KG 21 U 156/24: wesentlicher optischer Mangel kann Bezugsfertigkeit sperren. § 12 MaBV beachten. § 7 MaBV-Bürgschaft nicht mit Vormerkung vermischen.
 
 **Sicherheiten:** Auflassungsvormerkung schützt Eigentumserwerb, nicht Abschläge oder Mängelschäden. § 650m Abs. 2 BGB: 5-Prozent-Sicherheit/Einbehalt prüfen; Verzicht oder Intransparenz angreifen. Freistellungserklärung prüfen, besonders bei steckengebliebenem Bau.
 
 **AGB:** Bauträgerverträge sind regelmäßig AGB, auch bei Notartext. Prüfe §§ 305 ff. BGB, Transparenz, § 306 BGB ohne geltungserhaltende Reduktion, § 307, § 308 Nr. 4, § 309 Nr. 2, 5, 7, 8, 12. Kritisch: Beweislast, Tatsachenbestätigung, Verzicht, Rügefrist, Haftung, Aufrechnung, Leistungsänderung, Vormerkungslöschung.
 
-**Abnahme/Mängel:** Abnahme des Gemeinschaftseigentums braucht freie Erwerberentscheidung. Erstverwalter, Bauträger-Sachverständiger, Tochtergesellschaft oder Projektsteuerer sind kritisch. Abnahmefiktion nur nach § 640 Abs. 2 BGB, beim Verbraucher mit Textformhinweis. 30-Jahres-Linie nur live quellenprüfen.
+**Abnahme/Mängel:** Abnahme des Gemeinschaftseigentums braucht freie Erwerberentscheidung. Erstverwalter, Bauträger-Sachverständiger, Tochtergesellschaft oder Projektsteuerer sind kritisch. Übergabeprotokoll, Zahlung, Nutzung, Rügelosigkeit beweisen GE-Abnahme nicht sicher (OLG München 9 U 1803/23). Abnahmefiktion nur § 640 Abs. 2 BGB mit Verbraucher-Textformhinweis. 30-Jahres-Linie live prüfen.
 
 **Bausoll/Technik:** Anerkannte Regeln der Technik sind Mindeststandard zur Abnahme. DIN-Normen sind im Werkvertragsrecht keine automatische Vermutung; DIN-Konformität erschöpft das Bausoll nicht. Standardunterschreitung braucht klare Aufklärung. Lücken nach § 650k Abs. 2/3 BGB zulasten des Unternehmers. § 650n-Unterlagen verlangen: Planung, Statik, Brand, Schall, Energie/GEG/KfW, Revision.
 
-**Bauzeit/Verzug:** Bei kalendarischem Termin Verzug ohne Mahnung (§ 286 Abs. 2 Nr. 1 BGB). Entlastung nur bauablaufbezogen: Plan, Ereignis, Gewerke, Dauer, Folgevorgänge, Wiederanlauf. Pauschal Pandemie, Lieferkette, Wetter, Personal reicht nicht. Schäden: Ersatzmiete, doppelte Miete, Hotel, Umzug, Lager, Bereitstellungszinsen auf nicht abgerufene Darlehen, Nutzungsausfall bei fühlbarer Beeinträchtigung. Vertragsstrafe bei Interessenidentität anrechnen (§§ 340, 341 BGB).
+**Bauzeit/Verzug:** Kalendarischer Termin: Verzug ohne Mahnung (§ 286 Abs. 2 Nr. 1 BGB). Entlastung nur bauablaufbezogen: Plan, Ereignis, Gewerke, Dauer, Folgevorgänge, Wiederanlauf. Pauschal Pandemie, Lieferkette, Wetter, Personal reicht nicht. Schäden: Ersatz-/Doppelmiete, Hotel, Umzug, Lager, Bereitstellungszinsen, Nutzungsausfall. Vertragsstrafe bei Interessenidentität anrechnen (§§ 340, 341 BGB).
 
 **Preisanpassung:** In AGB nur eng: keine Erhöhung in ersten vier Monaten (§ 309 Nr. 1 BGB), transparenter Anlass, echte Mehrkosten, Saldierung sinkender Kosten, kein Gewinnaufschlag, Lösungsrecht ab Schwelle. Bloßer Rücktritt ist schwach, weil Vormerkung/Übereignung verloren gehen können. § 648a BGB ist über § 650u Abs. 2 ausgeschlossen.
 
-**Beurkundung/Sonderwünsche:** § 311b BGB: wirtschaftliche Einheit vollständig beurkunden, einschließlich Baubeschreibung, Pläne, Vorvertrag, druckerzeugender Reservierung, Vorausleistung. Bezugsurkunden (§ 13a BeurkG) möglich, aber Belehrung und wesentliche Bedingungen bleiben kritisch. Sonderwünsche vor Beurkundung mitbeurkunden; nachher nur formfrei, wenn nicht grundstücks-/WEG-relevant. Keine Abrechnung außerhalb MaBV-Ratenplan.
+**Beurkundung/Sonderwünsche:** § 311b BGB: wirtschaftliche Einheit vollständig beurkunden, inkl. Baubeschreibung, Pläne, Vorvertrag, druckerzeugender Reservierung, Vorausleistung. Bezugsurkunden (§ 13a BeurkG) nur mit Belehrung. Sonderwünsche vor Beurkundung mitbeurkunden; später nur formfrei, wenn nicht grundstücks-/WEG-relevant. Keine MaBV-Umgehung.
 
 **Insolvenz/Haftung:** Vormerkung nach § 106 InsO schützt Eigentum, nicht Bauvollendung. Prüfe § 103 InsO, Bürgschaft, Mehrkosten, Rückforderung verfrühter Raten. Notarhaftung (§ 19 BNotO), Geschäftsführerhaftung (§ 823 Abs. 2 BGB i. V. m. MaBV, ggf. § 263 StGB) und Bauleiter/Architektenhaftung nur quellenhart oder als Prüfspur.
 
