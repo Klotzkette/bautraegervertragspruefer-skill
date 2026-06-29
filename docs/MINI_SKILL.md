@@ -1,10 +1,10 @@
 ---
 name: mini-bautraegervertrag-pruefer
 description: "Kurzfassung für kleine KI-Kontexte: Bauträgervertrag-Prüfung nach MaBV, BGB, AGB, WEG und Technik; geführt oder als Vollpaket."
-version: "3.0.4-mini"
+version: "3.0.5-mini"
 ---
 
-# Mini-Bauträgervertrag-Prüfer 3.0.4
+# Mini-Bauträgervertrag-Prüfer 3.0.5
 
 Experimentell, keine Rechtsberatung/Gewähr.
 
@@ -41,13 +41,13 @@ Rspr. nur aus Gerichtsseiten, Bundesportal, `dejure.org`, `openjur.de`; Normen a
 
 ## Kernprüfung
 
-**MaBV/Zahlung:** § 3 MaBV verlangt allgemeine/besondere Fälligkeit. Raten brauchen echte Bautenstände; bloße Mitteilung reicht nicht. Schlussrate: BGH VII ZR 88/25 bei Protokoll-/Restarbeitsbindung, KG 21 U 44/22 als Korrektiv bei Abnahmereife. Bezugsfertigkeit ≠ Fertigstellung; KG 21 U 156/24: wesentlicher optischer Mangel kann Bezugsfertigkeit sperren. § 12 MaBV beachten. § 7 MaBV-Bürgschaft nicht mit Vormerkung vermischen.
+**MaBV/Zahlung:** § 3 MaBV: echte Bautenstände, keine bloße Mitteilung. Schlussrate: BGH VII ZR 88/25 zuerst vertraglich auslegen; KG 21 U 44/22 nur Instanzlinie bei Abnahmereife ohne Protokollbindung. Bezugsfertigkeit ≠ Fertigstellung; KG 21 U 156/24: wesentlicher optischer Mangel kann Bezugsfertigkeit sperren. Flexibler Ratenplan ist nicht automatisch 🔴 (KG 21 U 73/24), aber tatsächliche Abrufe/max. 7 Raten/§650m prüfen.
 
-**Sicherheiten:** Auflassungsvormerkung schützt Eigentumserwerb, nicht Abschläge oder Mängelschäden. § 650m Abs. 2 BGB: 5-Prozent-Sicherheit/Einbehalt prüfen; Verzicht oder Intransparenz angreifen. Freistellungserklärung prüfen, besonders bei steckengebliebenem Bau.
+**Sicherheiten:** Vormerkung schützt Eigentum, nicht Abschläge/Mängelschäden. § 650m Abs. 2 BGB: 5-Prozent-Sicherheit klar und zwingend; unklarer Einbehalt/achte Rate angreifen (OLG Karlsruhe 19 U 128/24 live prüfen). Freistellung besonders bei steckengebliebenem Bau prüfen.
 
 **AGB:** Bauträgerverträge sind regelmäßig AGB, auch bei Notartext. Prüfe §§ 305 ff. BGB, Transparenz, § 306 BGB ohne geltungserhaltende Reduktion, § 307, § 308 Nr. 4, § 309 Nr. 2, 5, 7, 8, 12. Kritisch: Beweislast, Tatsachenbestätigung, Verzicht, Rügefrist, Haftung, Aufrechnung, Leistungsänderung, Vormerkungslöschung.
 
-**Abnahme/Mängel:** Abnahme des Gemeinschaftseigentums braucht freie Erwerberentscheidung. Erstverwalter, Bauträger-Sachverständiger, Tochtergesellschaft oder Projektsteuerer sind kritisch. Übergabeprotokoll, Zahlung, Nutzung, Rügelosigkeit beweisen GE-Abnahme nicht sicher (OLG München 9 U 1803/23). Abnahmefiktion nur § 640 Abs. 2 BGB mit Verbraucher-Textformhinweis. 30-Jahres-Linie live prüfen.
+**Abnahme/Mängel:** GE-Abnahme braucht freie Erwerberentscheidung. Erstverwalter, Bauträger-Sachverständiger, Tochter/Projektsteuerer kritisch. Übergabeprotokoll, Zahlung, Nutzung, Rügelosigkeit beweisen GE-Abnahme nicht sicher; individuell unterschriebene Abnahme aber einzelfallbezogen prüfen. Abnahmefiktion nur § 640 Abs. 2 BGB mit Verbraucher-Textformhinweis. BGH 2026: 30-Jahres-Obergrenze nur anspruchsbezogen.
 
 **Bausoll/Technik:** Anerkannte Regeln der Technik sind Mindeststandard zur Abnahme. DIN-Normen sind im Werkvertragsrecht keine automatische Vermutung; DIN-Konformität erschöpft das Bausoll nicht. Standardunterschreitung braucht klare Aufklärung. Lücken nach § 650k Abs. 2/3 BGB zulasten des Unternehmers. § 650n-Unterlagen verlangen: Planung, Statik, Brand, Schall, Energie/GEG/KfW, Revision.
 
