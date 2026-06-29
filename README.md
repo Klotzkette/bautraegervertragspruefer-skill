@@ -1,6 +1,6 @@
 # Bauträgervertrag-Prüfer Skill
 
-**Direktdownload:** [📥 SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.5/SKILL.md) · [📥 MINI_SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.5/MINI_SKILL.md)
+**Direktdownload:** [📥 SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.6/SKILL.md) · [📥 MINI_SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.6/MINI_SKILL.md)
 
 Diese beiden Links zeigen die Markdown-Dateien nicht erst im Browser an, sondern verweisen auf die Release-Dateien mit Download-Header. Ein Klick lädt die jeweilige `.md`-Datei unmittelbar herunter.
 
@@ -10,9 +10,9 @@ Diese beiden Links zeigen die Markdown-Dateien nicht erst im Browser an, sondern
 >
 > Ein-Datei-Prinzip, modellunabhängig einsetzbar. Die Vollfassung steckt in einer einzigen Markdown-Datei: [`skill/SKILL.md`](skill/SKILL.md) — ohne externe Laufzeit, ohne Datenbank, ohne Konto und ohne zusätzliches Werkzeug. Für kleine Kontextfenster gibt es zusätzlich [`skill/MINI_SKILL.md`](skill/MINI_SKILL.md). Beide Dateien funktionieren in leistungsfähigen KI-Chatbots bzw. Sprachmodellen: Claude, ChatGPT, Gemini, Mistral, Perplexity, lokal betriebene Modelle. Es ist keine Installation erforderlich — siehe [Anwendung](#anwendung-so-einfach-gehts).
 
-Konsolidierter Skill (Version 3.0.5) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
+Konsolidierter Skill (Version 3.0.6) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
 
-Neu in 3.0.5 ist ein Rechtsprechungs-Refresh zu BGH, KG und OLG: BGH VII ZR 88/25 wird als vorrangiger Auslegungsanker zur Schlussrate geführt, BGH VII ZR 68/24 und VII ZR 108/24 schärfen Abnahme und 30-Jahres-Obergrenze, BGH V ZR 91/25 stärkt die Kontrolle von Änderungsvollmachten. KG- und OLG-Entscheidungen werden als Instanzanker sauber gewichtet, insbesondere zu Bezugsfertigkeit, flexiblem Ratenplan, § 650m-Sicherheit, Übergabeprotokollen und GdWE-Mängelrechten.
+Neu in 3.0.6 ist ein Rechtsprechungs-Refresh zu BGH, KG und OLG: BGH VII ZR 88/25 wird als vorrangiger Auslegungsanker zur Schlussrate geführt, BGH VII ZR 68/24 und VII ZR 108/24 schärfen Abnahme und 30-Jahres-Obergrenze, BGH V ZR 91/25 stärkt die Kontrolle von Änderungsvollmachten. KG- und OLG-Entscheidungen werden als Instanzanker sauber gewichtet, insbesondere zu Bezugsfertigkeit, flexiblem Ratenplan, § 650m-Sicherheit, Übergabeprotokollen und GdWE-Mängelrechten.
 
 Schnellwahl: Für eine geführte Vertragsprüfung mit Rollenmodus, dichter Befundtabelle, textueller Einordnung und optionalem Vollpaket ist [`SKILL.md`](skill/SKILL.md) die Hauptfassung. Wenn ein kleineres Modell den langen Prompt nicht vollständig lädt oder die Antwort abbricht, ist [`MINI_SKILL.md`](skill/MINI_SKILL.md) die kompakte Ausweichfassung.
 
@@ -20,7 +20,7 @@ Schnellwahl: Für eine geführte Vertragsprüfung mit Rollenmodus, dichter Befun
 
 Wer nur prüfen will, braucht keine Installation und keine GitHub-Kenntnisse:
 
-1. Datei wählen: Normalfall [`SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.5/SKILL.md), kleines Kontextfenster [`MINI_SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.5/MINI_SKILL.md).
+1. Datei wählen: Normalfall [`SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.6/SKILL.md), kleines Kontextfenster [`MINI_SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.6/MINI_SKILL.md).
 2. In den Chat legen: Datei in Claude, ChatGPT, Perplexity, Gemini, Mistral oder ein lokales Modell hochladen oder den Inhalt hineinkopieren.
 3. Startsatz senden: Den kopierfertigen Startsatz aus [Anwendung](#anwendung-so-einfach-gehts) einfügen und Rollenmodus wählen.
 4. Vertrag nachreichen: PDF, DOCX, Text, Foto oder Akten-ZIP hochladen. Der Skill prüft ohne Bedienungsrückfragen, gibt eine dichte erste Einordnung aus und bietet dann konkrete nächste Weichen an.
@@ -42,7 +42,7 @@ Der Schreibstil soll dicht sein: Tabellen ordnen die Befunde, die eigentliche Be
 
 ## Download
 
-[📥 SKILL.md jetzt herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.5/SKILL.md)
+[📥 SKILL.md jetzt herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.6/SKILL.md)
 
 Ein Klick genügt — dieser Link zeigt nicht die Browseransicht der Markdown-Datei, sondern lädt `SKILL.md` als Release-Datei mit Download-Header in den Downloads-Ordner. Kein Rechtsklick, kein "Speichern unter...", kein Umweg über Menüs.
 
@@ -72,7 +72,7 @@ Neue Aktenregel: Jede Vertragsakte hat ab jetzt ein Akten-ZIP. Dieses ZIP enthä
 
 ## Kurzversion für kleinere Modelle
 
-[📥 MINI_SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.5/MINI_SKILL.md)
+[📥 MINI_SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.6/MINI_SKILL.md)
 
 Wenn Claude, ChatGPT, Perplexity, Gemini, Mistral oder ein lokal betriebenes Modell die große `SKILL.md` nicht zuverlässig annimmt, zu früh abbricht oder nur ein kleiner Skill-Kontext zur Verfügung steht, ist [`skill/MINI_SKILL.md`](skill/MINI_SKILL.md) die Sparversion. Sie hat weniger als 7.500 Zeichen inklusive Leerzeichen und enthält trotzdem den Kern: Rollenmodus, geführter Workflow, harte Quellenregeln, MaBV-/AGB-/WEG-/Technik-Pflichtblock, No-Meta-Regel, Anti-Generik-Regel und Vollpaket-Option.
 
@@ -91,7 +91,7 @@ Wenn ich „Vollpaket" schreibe, liefere bitte drei Dokumente: 1. Käufer-/Manda
 
 Einfachster Weg — Datei hochladen:
 
-1. [`SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.5/SKILL.md) oder bei engem Kontext [`MINI_SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.5/MINI_SKILL.md) herunterladen.
+1. [`SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.6/SKILL.md) oder bei engem Kontext [`MINI_SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/download/v3.0.6/MINI_SKILL.md) herunterladen.
 2. Datei in das Chatfenster, Projektwissen oder die Assistant-/Skill-Konfiguration ziehen.
 3. Startsatz senden.
 4. Vertrag oder Akten-ZIP hochladen.
