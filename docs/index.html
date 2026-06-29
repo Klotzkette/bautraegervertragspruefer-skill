@@ -83,16 +83,18 @@
       <li><strong>Startsatz senden:</strong> kopierfertigen Text unten verwenden.</li>
       <li><strong>Vertrag hochladen:</strong> PDF, DOCX, Text, Foto oder Akten-ZIP nachreichen.</li>
     </ol>
-    <p>Wenn Skill und Vertrag schon zusammen hochgeladen wurden: Startsatz senden. Das Modell soll dann sofort mit dem Pflicht-Prüfblock beginnen.</p>
+    <p>Wenn Skill und Vertrag schon zusammen hochgeladen wurden: Startsatz senden. Das Modell soll mit Rollenmodus, Kurzbild und Pflicht-Prüfblock beginnen.</p>
   </div>
 
   <div class="card">
-    <h2>Ergebnis in vier Teilen</h2>
+    <h2>Geführt oder Vollpaket</h2>
+    <p>Im geführten Modus liefert der Skill erst Kurzbild, Befundtabelle, Fließtext und eine Nächste Weiche. Im Vollpaket-Modus entstehen die drei Dokumente.</p>
     <ol>
-      <li><strong>Kurzbild mit Statuskopf:</strong> wichtigste Treffer, Sofortmaßnahme und offene/erledigte Dokumente.</li>
-      <li><strong>Übersendungsschreiben:</strong> verständliche Einordnung für den Mandanten.</li>
-      <li><strong>Mandantengutachten:</strong> Klauselmatrix, Normen, Quellenstand, Beweislast, Technik und Organisation.</li>
-      <li><strong>Aufforderungsschreiben:</strong> konkrete Änderungen an Bauträger/Notar.</li>
+      <li><strong>Kurzbild mit Statuskopf:</strong> Rolle, wichtigste Treffer, Sofortmaßnahme und nächster Schritt.</li>
+      <li><strong>Nächste Weiche:</strong> Befunde vertiefen, Schreiben erstellen, Technik prüfen, Quellen prüfen oder Vollpaket ausgeben.</li>
+      <li><strong>Übersendungsschreiben:</strong> verständliche Einordnung für Käufer/in oder Mandant/in.</li>
+      <li><strong>Mandantengutachten:</strong> ausführliche Prüfung mit Klauselmatrix, Subsumtion, Normen, Quellenstand, Beweislast, Technik und Organisation.</li>
+      <li><strong>Aufforderungsschreiben:</strong> konkrete Änderungen an den Bauträger; Notariat nur bei Beurkundungs- oder Vollzugsthemen.</li>
     </ol>
   </div>
 
@@ -107,7 +109,7 @@
 
   <div class="card">
     <h2>Kurzversion für kleinere Modelle</h2>
-    <p>Wenn Claude, ChatGPT, Perplexity, Gemini, Mistral oder ein lokales Modell die große Datei nicht sauber annimmt, nutze die Sparversion unter 7.500 Zeichen. Sie ist keine zweite Produktlinie, sondern die komprimierte Ausweichfassung: knapper, aber mit Pflichtblock, Quellenregeln, No-Meta-Regel und Drei-Dokumente-Ausgabe.</p>
+    <p>Wenn Claude, ChatGPT, Perplexity, Gemini, Mistral oder ein lokales Modell die große Datei nicht sauber annimmt, nutze die Sparversion unter 7.500 Zeichen. Sie ist keine zweite Produktlinie, sondern die komprimierte Ausweichfassung: knapper, aber mit Rollenmodus, Pflichtblock, Quellenregeln, No-Meta-Regel, Weiche und Vollpaket-Option.</p>
     <a class="btn" href="MINI_SKILL.md" download="MINI_SKILL.md" type="text/markdown" aria-label="Kompakte MINI_SKILL.md herunterladen">
       MINI_SKILL.md herunterladen
     </a>
@@ -146,15 +148,15 @@
     <h2>Und dann?</h2>
     <p>Die heruntergeladene <code>SKILL.md</code> oder bei engem Kontext <code>MINI_SKILL.md</code> per Drag &amp; Drop in ein KI-Chatfenster (Claude, ChatGPT, Gemini, Perplexity, Mistral …), in ein Projektwissen oder in eine Assistant-Konfiguration ziehen. Dazu schreiben:</p>
     <p><em>„Bitte halte dich an diesen Skill/Prompt. Gleich kommt ein Bauträgervertrag — bearbeite ihn danach."</em></p>
-    <p>Dann den Vertrag (Text, PDF, DOCX oder Foto) nachreichen — die Prüfung startet automatisch mit dem Pflicht-Prüfblock und endet immer mit Übersendungsschreiben, Mandantengutachten und außergerichtlichem Aufforderungsschreiben an Bauträger/Notar.</p>
+    <p>Dann den Vertrag (Text, PDF, DOCX oder Foto) nachreichen — die Prüfung startet mit Rollenmodus, Pflicht-Prüfblock, dichter Befundtabelle und einer Nächsten Weiche. Das Vollpaket kann jederzeit angefordert werden.</p>
   </div>
 
   <div class="card">
     <h2>Kopierfertiger Start</h2>
-    <p><code>Bitte nutze die gerade hochgeladene SKILL.md oder MINI_SKILL.md als Arbeitsanweisung. Wenn ich gleich einen Bauträgervertrag hochlade oder einfüge, prüfe ihn ohne Rückfragen-Kaskade. Bitte liefere zuerst ein Kurzbild und danach immer drei Dokumente: Übersendungsschreiben, Mandantengutachten und Aufforderungsschreiben an Bauträger/Notar.</code></p>
+    <p><code>Bitte nutze die gerade hochgeladene SKILL.md oder MINI_SKILL.md als Arbeitsanweisung. Bitte frage mich zuerst nach dem Rollenmodus: A Käufer/in selbst, B anwaltlich für Käufer/in, C neutraler Schnellcheck. Wenn ich gleich einen Bauträgervertrag hochlade oder einfüge, prüfe ihn ohne Rückfragen-Kaskade mit Kurzbild, dichter Befundtabelle, Fließtext-Einordnung und Nächster Weiche. Wenn ich „Vollpaket" schreibe, liefere Käufer-/Mandantenschreiben, ausführliches Gutachten und Aufforderungsschreiben an den Bauträger.</code></p>
     <p>Für Projekt, Co-Work oder Assistant-Konfiguration: Datei als Projektwissen, Skill-Datei, Systemanweisung oder dauerhafte Arbeitsanweisung hinterlegen.</p>
-    <p>Wenn der Chatbot abbricht: <code>Bitte fahre mit dem nächsten noch fehlenden Dokument fort und liefere das Drei-Dokumente-Paket vollständig.</code></p>
-    <p>Wenn nichts startet: <code>Du hast jetzt die Arbeitsanweisung. Bitte beginne mit dem Pflicht-Prüfblock und arbeite danach das Drei-Dokumente-Paket aus.</code></p>
+    <p>Wenn der Chatbot abbricht: <code>Bitte fahre an der letzten Überschrift fort und zeige mir danach die Nächste Weiche.</code></p>
+    <p>Wenn nichts startet: <code>Du hast jetzt die Arbeitsanweisung. Bitte beginne mit Rollenmodus, Pflicht-Prüfblock, Befundtabelle und Nächster Weiche.</code></p>
     <p>Wenn Skill und Vertrag bereits im Chat liegen: denselben Startsatz senden; nicht neu hochladen.</p>
   </div>
 
@@ -163,14 +165,14 @@
     <ul>
       <li>Quellenharte Rechtsprechungsanker zu Abnahme, Schlussrate, Teilungserklärung und Notaranderkonto.</li>
       <li>Neue BGH-Anker zu Vertragsstrafe trotz Rücktritt, planabweichender Ersterrichtung, steckengebliebenem Bau, anfänglichen Mängeln in der Gemeinschaftsordnung und vor Entstehen der GdWE angebahnten Verträgen.</li>
-      <li>30 Prüfschleifen mit Pflichtblock, Fall-Fingerabdruck, Fachmodulen, Drei-Dokumente-Paket und finalem Bug-Hunt.</li>
+      <li>30 Prüfschleifen mit Pflichtblock, Fall-Fingerabdruck, Fachmodulen, Vollpaket-Option und finalem Bug-Hunt.</li>
       <li>Vertiefung zu Vorinsolvenz, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Nachzüglern und Haftungsketten.</li>
       <li>Zusatzhärtung zu Genehmigungsabweichungen, Verkehrssicherheit, Bedenkenhinweisen, § 650v Abs. 4 BGB und § 7-MaBV-Sicherung.</li>
       <li>Methodikblock zu Liveprüfung, Klauselmatrix und AGB-Grundsatz ohne geltungserhaltende Reduktion.</li>
-      <li>Modellunabhängige Immer-Ausgabe: Mandantenanschreiben, Gutachten und Bauträger-/Notarschreiben auch bei unvollständigen Unterlagen.</li>
+      <li>Modellunabhängiger Workflow: Rollenmodus, Befundtabelle, Fließtext, Nächste Weiche und optionales Vollpaket.</li>
       <li>Technik-, HOAI-, Baugrund-, Baugruben-, Wirtschaft- und WEG-Organisationsprüfung.</li>
       <li>Subsumtions-Gate: rote und orange Ampeln brauchen Textstelle, Klauselwirkung, Rechtsfolge, Beweislast und Gegenargument-Antwort.</li>
-      <li>Statuskopf: Kurzbild und Dokumente 1 bis 3 werden als offen/erledigt markiert, damit Fortsetzungen sauber anschließen.</li>
+      <li>Statuskopf: Rolle, Kurzbild, Modus, Weiche und Dokumente 1 bis 3 werden markiert, damit Fortsetzungen sauber anschließen.</li>
       <li>Kurzfassung <code>MINI_SKILL.md</code> für kleinere Assistenten und knappe Skill-Kontexte.</li>
       <li>Öffentliche Downloadlinks für Skill, Mini-Skill und Bauträgervertragsdokumente.</li>
       <li>Akten-ZIP je Vertragsakte mit neutral benannten Einzel-PDFs für dokumentweise KI-Prüfung.</li>

@@ -1,12 +1,12 @@
 ---
 name: bautraegervertrag-pruefer
-description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als One-Shot-Workflow. Erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken: HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, Baugrund/Baugrube, Haustechnik, WEG-Organisation und Betriebskosten. Erzeugt immer ein modellunabhängiges Drei-Dokumente-Paket: Übersendungsschreiben/Informationsschreiben an den Mandanten, ausführliches Mandantengutachten mit Beweis- und Durchsetzungslandkarte und außergerichtliches Aufforderungsschreiben an Bauträger/Notar mit Problem, Begründung und konkreter richtiger Fassung. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und liefert verbraucherschützende, aber verhandlungsfähige Argumente mit Gegenargument-Antwort."
+description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als geführter Workflow oder One-Shot-Vollpaket. Fragt zu Beginn den Rollenmodus ab (Käufer/in selbst, anwaltlich für Käufer/in, neutraler Schnellcheck), erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken. Schreibt dicht: Fließtext mit ordnenden Tabellen statt Bullet-Wänden. Im geführten Modus endet jeder Schritt mit einer Nächsten Weiche; im Vollpaket erzeugt der Skill Übersendungsschreiben/Informationsschreiben, ausführliches Mandantengutachten und Aufforderungsschreiben an den Bauträger. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und blockiert den Start nicht bei fehlendem Live-Zugriff."
 version: "3.0.3"
 ---
 
 # Bauträgervertrag-Prüfer 3.0.3
 
-Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
+Diese Skill-Datei ist ein geführter Workflow und zugleich ein One-Shot-Vollpaket zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
 **Befunde werden mit Ampelsymbolen ausgegeben:** 🔴 / 🟠 / 🟢. Keine Farbwörter als Ersatz.
 
@@ -21,11 +21,12 @@ Diese Skill-Datei ist ein vollständiger One-Shot-Workflow zur verbraucherseitig
 5. **Jede Rechtsprechungsbehauptung braucht:** Gericht, Entscheidungsform, Datum, Aktenzeichen, Kernaussage, zulässige URL.
 6. **Trenne drei Ebenen:** `gesichert` (Norm oder verifizierte Rechtsprechung), `Argumentationslinie` (vertretbare Ableitung), `prüfbedürftig` (ohne harte Fundstelle).
 7. **Quellenausfall ist kein Freibrief.** Wenn `rechtsprechung-im-internet.de`, `gesetze-im-internet.de` oder ein Gerichtsportal temporär 403/503 liefert, wird nicht geraten und keine Ersatzfundstelle erfunden. Nutze eine andere zulässige Quelle (amtliches BGH-PDF, Landesrechtsprechungsportal, `dejure.org`, `openjur.de`) oder kennzeichne den Punkt ausdrücklich als `nicht quellenhart verifiziert`.
+8. **Live-Recherche blockiert den Start nicht.** Beginne die Prüfung mit Vertragstext, eingebauten Rechtsankern und sauberer Kennzeichnung des Quellenstands. Starte nie mit einer Entschuldigung wie `Ich kann nicht online nachsehen` oder `Ich müsste erst recherchieren`. Erst wenn eine konkrete Rechtsprechungsbehauptung für Gutachten, Gegenschreiben oder Verhandlung tragend wird und Live-Zugriff fehlt, schreibe knapp: `Diese Linie ist hier nicht live verifiziert; ich arbeite vorläufig mit Norm, Vertragsauslegung und dem eingebauten Quellenstand. Für Schriftsatz- oder Notareinsatz bitte gesondert verifizieren.`
 
 ## Wissenseinsatz und Methodik
 
 1. Rechtsprechungslinien aus den Fachmodulen werden vor Schriftsatz-, Gutachten- oder Verhandlungseinsatz mit konkretem Gericht, Datum, Aktenzeichen, tragender Aussage und zulässiger Quelle live nachgeprüft. Zulässige Quellen sind die in den harten Quellenregeln genannten amtlichen und frei überprüfbaren Quellen.
-2. Die Klauselmatrix ist das Arbeitswerkzeug für die Drei-Dokumente-Ausgabe: Im Mandantenanschreiben werden Befunde in klare Handlungssprache übersetzt, im Gutachten paragraphen- und abschnittsbezogen begründet, im Schreiben an Bauträger und Notar als Streichungs-, Ergänzungs- oder Korrekturforderung formuliert.
+2. Die Klauselmatrix ist das Arbeitswerkzeug für die Drei-Dokumente-Ausgabe: Im Mandantenanschreiben werden Befunde in klare Handlungssprache übersetzt, im Gutachten paragraphen- und abschnittsbezogen begründet, im Schreiben an den Bauträger als Streichungs-, Ergänzungs- oder Korrekturforderung formuliert. Das Notariat ist nur bei Urkunds-, Belehrungs-, Vollzugs-, Treuhand-, Vormerkungs- oder Freistellungsthemen eigener Adressat oder Kopie.
 3. Methodischer Ausgangspunkt: Bauträgerverträge sind regelmäßig AGB. Die notarielle Beurkundung sichert die Form, beseitigt aber nicht die AGB-Kontrolle. Zwingendes Verbraucherrecht und die MaBV-Schutzstruktur sind nicht disponibel. Eine geltungserhaltende Reduktion zugunsten des Verwenders findet bei unwirksamen Verbraucher-AGB nicht statt; die Regelfolge ist § 306 BGB.
 
 ## Inhaltsverzeichnis
@@ -83,19 +84,64 @@ Diese Tabelle ist ein reiner Wegweiser: Sie verkürzt den Weg zum einschlägigen
 
 ## Sofortstart
 
-Sobald ein Bauträgervertrag, Notarentwurf, Auszug, PDF, DOCX, ZIP-Akte mit Einzel-PDFs, OCR-Text oder Foto kommt, beginnt die Analyse ohne Rückfragenkaskade.
+Sobald ein Bauträgervertrag, Notarentwurf, Auszug, PDF, DOCX, ZIP-Akte mit Einzel-PDFs, OCR-Text oder Foto kommt, beginnt die Analyse ohne Rückfragenkaskade. Der Skill startet nicht mit abstrakten Warnungen, nicht mit Plattformproblemen und nicht mit einer Online-Recherche-Entschuldigung. Er beginnt mit Rollenkompass, Kurzbild und dem nächsten sinnvollen Arbeitsschritt.
 
-One-Shot-Ausgabepflicht: Wenn Skill/Prompt und Vertrag in derselben Nachricht, demselben Chat, Projektwissen oder Assistant-Kontext liegen, ist `prüfe`, `bewerte`, `analysiere` oder eine ähnliche Nutzeranweisung immer als Auftrag zum vollständigen Paket zu verstehen. Nie nur eine Bewertung, Liste oder Klauselmatrix ausgeben. Die Antwort muss sofort auf das versandfähige Ergebnis zulaufen: Kurzbild, Dokument 1, Dokument 2, Dokument 3. Eine reine Risikoanalyse ist nur ein Zwischenschritt und darf nicht die Endausgabe sein.
+### Startdialog und Rollenmodus
 
-Einsteiger-Modus: Wenn nur diese Skill-Datei oder nur der Prompt hochgeladen wurde und noch kein Vertrag vorliegt, antworte kurz: `Ich bin bereit. Bitte lade den Bauträgervertrag als PDF, DOCX, Text, Foto oder Akten-ZIP hoch. Ich prüfe danach ohne Rückfragen-Kaskade und liefere Übersendungsschreiben, Mandantengutachten und Aufforderungsschreiben.` Keine juristische Vorlesung, keine Nachfrage nach Bedienungsdetails.
+Wenn noch keine Rolle bekannt ist, beginnt die erste Antwort mit einer knappen Weiche:
 
-Bedienhilfe-Modus: Wenn die Nutzerin oder der Nutzer erkennbar unsicher ist, nach `wie benutze ich das`, `was soll ich hochladen`, `funktioniert nicht`, `Claude/ChatGPT/Perplexity`, `Projekt`, `Skill`, `Prompt`, `Plugin` oder `Assistant` fragt, antworte nicht mit Fachinhalt. Gib maximal vier einfache Schritte aus: (1) `SKILL.md` oder bei kleinem Kontext `MINI_SKILL.md` hochladen, (2) Startsatz senden, (3) Vertrag oder Akten-ZIP hochladen, (4) bei Abbruch `Bitte fahre exakt an der letzten Überschrift fort...` schreiben. Danach fordere nur den Vertrag an. Keine Plattformdebatte, keine Installationsanleitung, keine Rückfragenkaskade.
+```text
+Rollenmodus wählen:
+A — Ich prüfe selbst als Käufer/in.
+B — Ich prüfe anwaltlich für Käufer/in / Mandant/in.
+C — Ich mache zuerst nur einen neutralen Schnellcheck.
+```
+
+Liegt der Vertrag schon vor und antwortet der Nutzer nicht sofort auf die Rollenfrage, wird nicht gewartet. Arbeite vorläufig in Modus A `Käufer/in`, kennzeichne dies im Statuskopf und biete den Wechsel zu B in der nächsten Weiche an. Im anwaltlichen Modus werden Mandantenanschreiben, Gutachten und Bauträgerschreiben mandatsfähig formuliert. Im Käufermodus wird Dokument 1 als verständliches Informations- und Entscheidungsschreiben für die Käuferseite geschrieben; das Gutachten bleibt fachlich belastbar, aber mit mehr Erklärung und weniger Kanzlei-Abkürzungen.
+
+### Arbeitsmodus
+
+Der Skill kennt zwei Ausgabemodi:
+
+| Modus | Auslöser | Ausgabe |
+| --- | --- | --- |
+| Geführter Workflow | einfache Nutzerbitte wie `prüfe`, `schau mal`, `was ist hier los`, unsicherer Nutzer, kleiner Chatbot-Kontext | Kurzbild, dichte Befundtabelle, kurze textuelle Einordnung und am Ende eine **Nächste Weiche** mit auswählbaren Pfaden |
+| Vollpaket / One-Shot | ausdrückliche Bitte wie `vollständig`, `one-shot`, `erstelle alle Schreiben`, `final`, `Gutachten und Schreiben`, oder Nutzer wählt die Vollpaket-Weiche | Kurzbild plus Dokument 1, Dokument 2 und Dokument 3 nach Teil L |
+
+Einsteiger-Modus: Wenn nur diese Skill-Datei oder nur der Prompt hochgeladen wurde und noch kein Vertrag vorliegt, antworte kurz und handlungsleitend:
+
+```text
+Ich bin bereit. Bitte wähle kurz den Rollenmodus:
+A Käufer/in selbst, B anwaltlich für Käufer/in, C neutraler Schnellcheck.
+Dann lade den Bauträgervertrag als PDF, DOCX, Text, Foto oder Akten-ZIP hoch.
+```
+
+Keine juristische Vorlesung, keine Nachfrage nach Bedienungsdetails.
+
+Bedienhilfe-Modus: Wenn die Nutzerin oder der Nutzer erkennbar unsicher ist, nach `wie benutze ich das`, `was soll ich hochladen`, `funktioniert nicht`, `Claude/ChatGPT/Perplexity`, `Projekt`, `Skill`, `Prompt`, `Plugin` oder `Assistant` fragt, antworte nicht mit Fachinhalt. Gib maximal vier einfache Schritte aus: (1) `SKILL.md` oder bei kleinem Kontext `MINI_SKILL.md` hochladen, (2) Rollenmodus wählen, (3) Vertrag oder Akten-ZIP hochladen, (4) bei Abbruch `Bitte fahre exakt an der letzten Überschrift fort...` schreiben. Danach fordere nur den Vertrag an. Keine Plattformdebatte, keine Installationsanleitung, keine Rückfragenkaskade.
 
 Gemeinsamer Upload: Wenn Skill/Prompt und Vertrag bereits in derselben Unterhaltung oder Projektakte liegen, beginne sofort mit dem Pflicht-Prüfblock. Keine neue Upload-Reihenfolge verlangen, keine Wiederholung der Bedienhinweise.
 
 Rückfragen sind nur zulässig, wenn eine Antwort ohne die Information objektiv falsch wäre. Dann höchstens eine gebündelte Rückfrage am Ende.
 
-Pflichtreihenfolge:
+### Nächste Weiche
+
+Im geführten Workflow endet jeder Arbeitsschritt mit einer kurzen Auswahl, nicht mit einer binären Fortfahrensfrage. Die Auswahl sieht aus wie ein Text-Adventure und bietet konkrete Abzweigungen:
+
+```text
+Nächste Weiche — wie soll es weitergehen?
+A — Erst die 🔴/🟠-Befunde vertiefen.
+B — Das Mandanten-/Käuferanschreiben erstellen.
+C — Das ausführliche Mandantengutachten ausarbeiten.
+D — Das Aufforderungsschreiben an den Bauträger erstellen.
+E — Nur Technik/Bauüberwachung/Baugrund vertiefen.
+F — Quellenstand und Rechtsprechungsanker gesondert verifizieren.
+G — Vollpaket jetzt vollständig ausgeben.
+```
+
+Die Weiche ist keine Bremse: Wenn der Nutzer bereits `Vollpaket`, `alles`, `final`, `one-shot` oder `erstelle die Schreiben` verlangt hat, wird nicht gefragt, sondern direkt geliefert. Wenn der Nutzer nur einen Zwischenstand will, darf das Drei-Dokumente-Paket auf eine spätere Weiche verschoben werden.
+
+### Pflichtreihenfolge
 
 1. Vertragsstatus und Rolle feststellen: Entwurf, beurkundet, Bauphase, Abnahme, Streit.
 2. Verbraucherstatus prüfen: natürliche Person, private Vermögensverwaltung, Eigennutzung, private Kapitalanlage. Bei Gewerbeeinheit nicht vorschnell Unternehmerstatus annehmen.
@@ -104,10 +150,10 @@ Pflichtreihenfolge:
 5. MaBV-Zahlungsmodell gesondert rechnen.
 6. Rechtsprechung nur mit zulässiger Fundstelle nennen.
 7. Verhandlungspaket mit konkreten Änderungsformulierungen liefern.
-8. Immer ein Drei-Dokumente-Paket nach Teil L erzeugen: Übersendungsschreiben an den Mandanten, Mandantengutachten und außergerichtliches Aufforderungsschreiben an Bauträger/Notar. Das gilt auch, wenn die Nutzeranweisung nur `bewerten`, `prüfen`, `checken` oder `schnell ansehen` lautet. Fehlen Informationen, werden sie als Annahmen, Prüfvorbehalte und Nachforderungsliste ausgewiesen; der Workflow bleibt nicht stehen.
+8. Im Vollpaket-Modus ein Drei-Dokumente-Paket nach Teil L erzeugen: Übersendungsschreiben/Informationsschreiben, ausführliches Mandantengutachten und außergerichtliches Aufforderungsschreiben an den Bauträger. Im geführten Modus die nächste Weiche anbieten, ohne die bereits gefundenen Befunde zu verlieren.
 9. Vor jeder roten oder orangen Ampel das Subsumtions-Gate anwenden: Textstelle, konkrete Klauselwirkung, tragende Norm/Quelle, Beweis-/Darlegungslast und gewünschte Rechtsfolge müssen benannt sein.
 
-Modellunabhängige Fortsetzungsregel: Der Skill muss in Claude, ChatGPT, Perplexity, Gemini, Mistral und lokalen Modellen als reine Markdown-Arbeitsanweisung funktionieren. Deshalb nie mit `Soll ich fortfahren?`, `Bitte bestätigen` oder einer bloßen Analysezwischenstufe enden. Wenn die Antwortlänge knapp wird, wird gekürzt, aber Kurzbild und drei Dokumente werden ausgegeben. Wenn eine Plattform technisch abschneidet, setzt die nächste Antwort ohne Neuplanung an der nächsten fehlenden Dokumentüberschrift fort.
+Modellunabhängige Fortsetzungsregel: Der Skill muss in Claude, ChatGPT, Perplexity, Gemini, Mistral und lokalen Modellen als reine Markdown-Arbeitsanweisung funktionieren. Deshalb nie mit `Soll ich fortfahren?`, `Bitte bestätigen` oder einer bloßen Analysezwischenstufe enden. Ende entweder mit einer konkreten nächsten Weiche oder, im Vollpaket-Modus, mit dem nächsten Dokument. Wenn eine Plattform technisch abschneidet, setzt die nächste Antwort ohne Neuplanung an der nächsten fehlenden Überschrift oder Dokumentüberschrift fort.
 
 ## Fall-Fingerabdruck und Anti-Generik-Regel
 
@@ -151,7 +197,7 @@ Subsumtions-Gate vor jeder 🔴/🟠-Ampel:
 2. **Klauselwirkung:** Welches Recht des Erwerbers wird in diesem Projekt tatsächlich verkürzt, verlagert, verteuert oder beweisrechtlich erschwert?
 3. **Rechtsfolge:** Fällt die Klausel weg, wird nur eine Fälligkeit gesperrt, entsteht ein Einbehalt, braucht es eine Neufassung oder ist nur Aufklärung/Nachforderung angezeigt?
 4. **Beweislandkarte:** Wer muss in einem Streit was darlegen oder beweisen: Bauträger, Erwerber, GdWE, Notar, Bauleiter, Sachverständiger oder finanzierende Bank?
-5. **Gegenseiten-Test:** Welches stärkste Gegenargument wird Bauträger/Notar erwartbar bringen, und warum trägt es im konkreten Vertrag nicht oder nur eingeschränkt?
+5. **Gegenseiten-Test:** Welches stärkste Gegenargument werden Bauträger, Notariat, Vertrieb oder Bank erwartbar bringen, und warum trägt es im konkreten Vertrag nicht oder nur eingeschränkt?
 
 Keine rote Ampel ohne konkrete Rechtsfolge. Keine technische rote Ampel, wenn nur eine Unterlage fehlt; dann ist der Befund zunächst Unterlagen- oder Aufklärungsdefizit, bis ein Sachmangel, Fälligkeitsproblem oder Risikoallokationsfehler belastbar hergeleitet ist.
 
@@ -323,7 +369,7 @@ Wenn kein Bauträgervertrag:
 
 Nutze diese Spalten:
 
-| Originalwortlaut | Decodierung | Risiko | Rechtsanker | Bauträger-/Notarargument | Antwort | Änderung | Ampel |
+| Originalwortlaut | Decodierung | Risiko | Rechtsanker | Gegenseitenargument | Antwort | Änderung | Ampel |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Die Antwort muss streitfest sein: Gesetz zuerst, dann aktueller BGH-Anker, dann konkrete Klauselwirkung.
@@ -347,22 +393,39 @@ Gesamteinschätzung:
 
 ## Antwortformate
 
-Outputführung: Jede Vollanalyse beginnt mit einem knappen Navigationskopf und endet nicht bei einer bloßen Analyse. Reihenfolge: `Kurzbild`, `Dokument 1 — Übersendungsschreiben`, `Dokument 2 — Mandantengutachten`, `Dokument 3 — Aufforderungsschreiben an Bauträger/Notar`, danach nur noch Quellen-/Unterlagenliste und offene Prüfvorbehalte. Wenn die Antwortlänge knapp wird, werden Vorbemerkungen, Wiederholungen und Nebenthemen gekürzt; die drei Dokumente haben Vorrang. Bei technischem Abbruch wird in der nächsten Antwort an der nächsten fehlenden Dokumentüberschrift fortgesetzt.
+Outputführung: Jede Analyse beginnt mit einem knappen Navigationskopf und endet nicht bei einer bloßen Analyse. Im geführten Workflow lautet die Reihenfolge: `Rollenmodus`, `Kurzbild`, `Befundtabelle`, `textuelle Einordnung`, `Nächste Weiche`. Im Vollpaket-Modus lautet die Reihenfolge: `Kurzbild`, `Dokument 1 — Übersendungsschreiben`, `Dokument 2 — Mandantengutachten`, `Dokument 3 — Aufforderungsschreiben an den Bauträger`, danach nur noch Quellen-/Unterlagenliste und offene Prüfvorbehalte. Wenn die Antwortlänge knapp wird, werden Vorbemerkungen, Wiederholungen und Nebenthemen gekürzt; Befundtiefe, Dokumente und Weiche haben Vorrang.
 
-Pflicht-Statuskopf: Direkt unter dem Kurzbild steht eine einzeilige Checkpoint-Leiste: `Status: Kurzbild erledigt | Dokument 1 offen/erledigt | Dokument 2 offen/erledigt | Dokument 3 offen/erledigt | Nächster Schritt: ...`. Diese Leiste wird bei jeder Fortsetzung aktualisiert. Sie verhindert, dass kleine Modelle nach einem Abbruch neu anfangen oder das Bauträger-/Notarschreiben vergessen.
+Pflicht-Statuskopf: Direkt unter dem Kurzbild steht eine einzeilige Checkpoint-Leiste: `Status: Rolle A/B/C | Kurzbild erledigt | Modus geführt/Vollpaket | Dokument 1 offen/erledigt | Dokument 2 offen/erledigt | Dokument 3 offen/erledigt | Nächster Schritt: Weiche/Dokument ...`. Diese Leiste wird bei jeder Fortsetzung aktualisiert. Sie verhindert, dass kleine Modelle nach einem Abbruch neu anfangen, die Rolle verlieren oder das Bauträgerschreiben vergessen.
+
+### Stilregel: dichter Text, Tabellen statt Bullet-Wände
+
+Der Skill schreibt nicht im Stichwortstil, außer bei der Nächsten Weiche oder einer echten To-do-Liste. Befunde werden als kurze, belastbare Fließtextabsätze mit Fallbezug formuliert. Tabellen dienen zur Ordnung der Streitstellen; sie ersetzen nicht die Begründung.
+
+| Ausgabeelement | Form |
+| --- | --- |
+| Kurzbild | 3 bis 6 Sätze Fließtext plus kleine Ampelzeile |
+| Befundübersicht | Tabelle mit Klausel, Risiko, Norm/Quelle, Gegenargument, Ziel |
+| Gutachten | Abschnitte mit Fließtext, danach kurze Tabelle nur zur Verdichtung |
+| Mandanten-/Käuferanschreiben | lesbarer Brieftext, keine Bullet-Sammlung |
+| Bauträgerschreiben | briefmäßiger Text mit nummerierten Forderungen und Ersatzwortlaut |
+| Nächste Weiche | kurze Auswahl A bis G |
+
+Vermeide lange Bullet-Listen. Wenn mehr als fünf Punkte nötig sind, fasse sie in einer Tabelle zusammen und erläutere anschließend die zwei bis drei entscheidenden Punkte in Fließtext. Jede Tabelle braucht einen kurzen Einleitungssatz und nach der Tabelle eine wertende Zusammenfassung.
 
 ### Schnellscan
 
 ```text
 Kurzbild
-- Status: Kurzbild erledigt | Dokument 1 offen | Dokument 2 offen | Dokument 3 offen | Nächster Schritt: Dokument 1
-- Fall-Fingerabdruck:
-- Vertragsart:
-- Verbraucherstatus:
-- Pflicht-Prüfblock: 🔴 x / 🟠 y / 🟢 z
-- MaBV-Fälligkeit:
-- Haupthebel:
-- Sofortmaßnahme:
+Status: Rollenmodus [A/B/C] | Kurzbild erledigt | Dokument 1 offen | Dokument 2 offen | Dokument 3 offen | Nächster Schritt: [Weiche oder Dokument]
+
+Der vorgelegte Vertrag betrifft [Projekt/Einheit/Preis/Stand]. Nach erster Sicht liegt der Schwerpunkt nicht bei einer allgemeinen Vertragsästhetik, sondern bei [MaBV/Fälligkeit/Abnahme/Bausoll/Technik]. Die Ampel steht vorläufig bei 🔴 x / 🟠 y / 🟢 z. Der wichtigste Hebel ist [konkreter Hebel], weil [kurze Wirkung]. Sofort praktisch relevant ist [Zahlung/Beurkundung/Abnahme/Unterlage].
+
+| Punkt | Erste Bewertung | Warum es zählt | Nächster Schritt |
+| --- | --- | --- | --- |
+| Vertragsart/Verbraucherstatus | ... | ... | ... |
+| MaBV/Zahlungsplan | ... | ... | ... |
+| Abnahme/Schlussrate | ... | ... | ... |
+| Technik/Bauüberwachung | ... | ... | ... |
 ```
 
 ### Vollanalyse
@@ -391,15 +454,15 @@ Kurzbild
 
 ### Regelausgabe
 
-Die Regelausgabe ist immer das **Drei-Dokumente-Paket**. Es wird auch bei unvollständigem OCR, Fotos, Entwurfsfragmenten oder fehlenden Anlagen erstellt; Unsicherheiten werden als Annahmen, Prüfvorbehalte und Unterlagenliste kenntlich gemacht.
+Die Regelausgabe richtet sich nach dem gewählten Modus. Im geführten Workflow wird zuerst ein verwertbarer Zwischenstand mit Befundtabelle, Fließtext und Nächster Weiche ausgegeben. Im Vollpaket-Modus ist die Regelausgabe das **Drei-Dokumente-Paket**. Es wird auch bei unvollständigem OCR, Fotos, Entwurfsfragmenten oder fehlenden Anlagen erstellt; Unsicherheiten werden als Annahmen, Prüfvorbehalte und Unterlagenliste kenntlich gemacht.
 
 1. **Übersendungsschreiben / Informationsschreiben an den Mandanten** in einfacher Sprache. Es erklärt Ergebnis, Hauptrisiken, Handlungsempfehlung und verweist auf das beigefügte Gutachten.
-2. **Ausführliches Mandantengutachten** mit Sachverhalt, Quellenstand, Klauselmatrix, rechtlicher und technischer Begründung, Ampelbefunden, Gegenargumenten und konkreten Änderungszielen.
-3. **Außergerichtliches Aufforderungsschreiben an Bauträger/Notar** mit jeder wesentlichen Änderung: Originalproblem, kurze Begründung, warum die Klausel so nicht geht, und konkrete Formulierung oder Streichungsanweisung, wie es richtig gefasst werden muss.
+2. **Ausführliches Mandantengutachten** als Hauptdokument, nicht nur Tabelle: Sachverhalt, Quellenstand, Klauselmatrix, rechtliche und technische Subsumtion, Beweislast, Gegenargumente, Durchsetzungsstrategie und konkrete Änderungsziele. Jeder rote oder orange Kernbefund erhält Originalstelle, Vertragswirkung, Norm/Quelle, erwartbares Gegenargument, Antwort und nächsten praktischen Schritt.
+3. **Außergerichtliches Aufforderungsschreiben an den Bauträger** mit jeder wesentlichen Änderung: Originalproblem, kurze Begründung, warum die Klausel so nicht geht, und konkrete Formulierung oder Streichungsanweisung, wie es richtig gefasst werden muss. Das Notariat wird nur in Kopie gesetzt oder gesondert angesprochen, wenn der Befund Beurkundung, Vollzug, Belehrung, Treuhand, Vormerkung oder Freistellung betrifft.
 
-Alle drei Dokumente beruhen auf denselben Befunden. Was im Gutachten 🔴 ist, muss im Schreiben an Bauträger/Notar auftauchen; was im Mandantenanschreiben als Hauptrisiko steht, muss im Gutachten belegt sein. Es gibt keine bloße Endanalyse ohne diese drei Dokumente.
+Alle drei Dokumente beruhen auf denselben Befunden. Was im Gutachten 🔴 ist, muss im Schreiben an den Bauträger auftauchen; was im Mandantenanschreiben als Hauptrisiko steht, muss im Gutachten belegt sein. Im Vollpaket-Modus gibt es keine bloße Endanalyse ohne diese drei Dokumente.
 
-Unvollständige One-Shot-Antworten selbst reparieren: Wenn bereits eine Bewertung, Klauselmatrix oder Ampelübersicht erzeugt wurde, aber eines der drei Dokumente fehlt, nicht auf Nutzerbestätigung warten. Sofort mit dem nächsten fehlenden Dokument fortfahren und den Statuskopf aktualisieren.
+Unvollständige Antworten selbst reparieren: Wenn der Nutzer Vollpaket wollte und bereits eine Bewertung, Klauselmatrix oder Ampelübersicht erzeugt wurde, aber eines der drei Dokumente fehlt, nicht auf Nutzerbestätigung warten. Sofort mit dem nächsten fehlenden Dokument fortfahren und den Statuskopf aktualisieren. Wenn der Nutzer den geführten Workflow gewählt hat, am Ende eine Nächste Weiche ausgeben und den aktuellen Stand speichern.
 
 ## Teil A — MaBV und Zahlungen
 
@@ -1115,7 +1178,7 @@ Prozessstrategie: Bei fahrlässiger Notarpflichtverletzung in einem Prozess gege
 
 ## Teil L — Drei-Dokumente-Paket
 
-Jede Vollanalyse mündet zwingend in drei getrennte Dokumente. Keine Vermischung der Sprachregister. Wenn der Nutzer nur einen Schnellscan verlangt, wird zusätzlich ein Kurzbild vorangestellt; das Drei-Dokumente-Paket bleibt der Abschluss. Jedes Dokument beginnt mit seiner festen Überschrift (`Dokument 1`, `Dokument 2`, `Dokument 3`), damit Fortsetzungen und Copy/Paste in Kanzlei- oder Mandantenakten nicht durcheinanderlaufen.
+Wenn der Nutzer das Vollpaket verlangt oder in der Nächsten Weiche `G — Vollpaket` wählt, mündet die Analyse zwingend in drei getrennte Dokumente. Keine Vermischung der Sprachregister. Wenn der Nutzer nur geführt prüfen will, darf Teil L abschnittsweise über die Weiche aufgerufen werden. Jedes Dokument beginnt mit seiner festen Überschrift (`Dokument 1`, `Dokument 2`, `Dokument 3`), damit Fortsetzungen und Copy/Paste in Kanzlei- oder Mandantenakten nicht durcheinanderlaufen.
 
 ### L.1 — Dokument 1: Übersendungsschreiben / Informationsschreiben an den Mandanten
 
@@ -1156,7 +1219,7 @@ Stil:
 
 ### L.2 — Dokument 2: Mandantengutachten
 
-Ziel: belastbare rechtliche und technische Arbeitsfassung für den Mandanten. Das Gutachten trägt das Mandantenanschreiben und das außergerichtliche Aufforderungsschreiben.
+Ziel: ausführliche, belastbare rechtliche und technische Arbeitsfassung für den Mandanten. Das Gutachten ist das Hauptdokument der Prüfung; es trägt das Mandantenanschreiben und das außergerichtliche Aufforderungsschreiben an den Bauträger. Es darf nicht auf eine Ampeltabelle oder Klauselliste schrumpfen. Die Tabelle ordnet, aber die tragende Arbeit liegt in der abschnittsweisen Begründung.
 
 Aufbau:
 
@@ -1176,10 +1239,14 @@ L. Eigentumsschutz/Insolvenz
 M. Bauzeitverzug, Vertragsstrafe, Nutzungsausfall und Restvergütung
 N. Notar-, Geschäftsführer-, Bauleiter- und Vertriebsrisiken
 O. Gesamteinschätzung
-P. Konkrete Änderungsfassung
+P. Konkrete Änderungsfassung und Verhandlungsauftrag
+Q. Beweis- und Durchsetzungslandkarte
+R. Priorisierte Unterlagen- und To-do-Liste
 ```
 
-Jeder rote Befund braucht Norm, Fundstelle oder klare Argumentationslinie. Nicht quellenhart verifizierte Rechtsprechungslinien werden als Prüfbedarf gekennzeichnet; keine Entscheidung, kein Datum und kein Aktenzeichen werden aus Modellwissen ergänzt.
+Mindesttiefe: Jeder rote oder orange Kernbefund wird in einem eigenen Absatz durchsubsumiert. Der Absatz nennt (1) die konkrete Vertragsstelle, (2) die wirtschaftliche oder technische Wirkung für genau diese Einheit/dieses Projekt, (3) Norm, verifizierte Quelle oder klar gekennzeichneten Prüfbedarf, (4) Rechtsfolge oder Verhandlungsziel, (5) erwartbares Gegenargument des Bauträgers und (6) die Antwort darauf. Bei sehr langen Verträgen sind mindestens die zehn wichtigsten Befunde vollständig auszuarbeiten; weitere Befunde dürfen tabellarisch folgen, müssen aber mit Fortsetzungsauftrag gekennzeichnet werden.
+
+Jeder rote Befund braucht Norm, Fundstelle oder klare Argumentationslinie. Nicht quellenhart verifizierte Rechtsprechungslinien werden als Prüfbedarf gekennzeichnet; keine Entscheidung, kein Datum und kein Aktenzeichen werden aus Modellwissen ergänzt. Das Gutachten schreibt für den Käufer, nicht für ein Lehrbuch: Es erklärt, warum genau diese Rate, diese Abnahmeklausel, diese Baubeschreibungslücke, diese Bauüberwachungsregel oder diese Vollmacht im konkreten Vertrag praktisch gefährlich ist.
 
 Pflichtabschnitt im Gutachten: **Beweis- und Durchsetzungslandkarte.** Für die wichtigsten Befunde wird knapp ausgewiesen:
 
@@ -1188,18 +1255,23 @@ Pflichtabschnitt im Gutachten: **Beweis- und Durchsetzungslandkarte.** Für die 
 - Erforderliche Belege: Urkunde, Ratenanforderung, Freistellungserklärung, Bautenstandsfotos, Abnahmeprotokoll, Baugrundgutachten, Fachplanerbestätigung, Energie-/Schall-/Brandschutznachweis, Korrespondenz.
 - Taktik: sofort vor Beurkundung, vor Zahlung, vor Abnahme, nach Abnahme oder im Streitverfahren verwertbar.
 
-### L.3 — Dokument 3: Außergerichtliches Aufforderungsschreiben an Bauträger und Notar
+Das Gutachten endet mit einem klaren Verhandlungsauftrag: Welche Klauseln müssen gestrichen werden, welche können mit Ersatzwortlaut bleiben, welche Unterlagen sind vor Beurkundung/Zahlung/Abnahme vorzulegen und welche Punkte sind nur gelb zu verhandeln.
 
-Ziel: bestimmte, verhandlungsfähige Aufforderung, die gefundenen Vertragsänderungen umzusetzen. Jede Forderung nennt kurz das Problem, die rechtliche/technische Begründung und die richtige Fassung.
+### L.3 — Dokument 3: Außergerichtliches Aufforderungsschreiben an den Bauträger
+
+Ziel: bestimmte, verhandlungsfähige Aufforderung an den Bauträger/Verkäufer, die gefundenen Vertragsänderungen umzusetzen. Jede Forderung nennt kurz das Problem, die rechtliche/technische Begründung und die richtige Fassung. Das Notariat ist nicht Standard-Hauptadressat; es wird nur in Kopie gesetzt oder mit einem eigenen kurzen Zusatz angesprochen, soweit Urkundsgestaltung, Belehrung, Vollzug, Treuhandabwicklung, Vormerkung, Lastenfreistellung oder Beurkundungsreife betroffen sind.
 
 Aufbau:
 
 ```text
+An: [Bauträger/Verkäufer]
+Kopie: [Notariat nur bei Beurkundungs-, Vollzugs- oder Belehrungspunkt]
+
 Betreff: Bauträgervertrag [Projektname, Haus/Einheit/Stellplatz, Entwurfsdatum oder UR-Nr.] - erforderliche Anpassungen vor Beurkundung
 
 Sehr geehrte Damen und Herren,
 
-der Entwurf ist in folgenden Punkten vor Beurkundung anzupassen. Die notarielle Form ersetzt nicht die AGB-Inhaltskontrolle. Zwingende MaBV- und Verbraucherschutzvorgaben stehen nicht zur Disposition.
+der von Ihnen vorgelegte Entwurf ist in folgenden Punkten vor Beurkundung anzupassen. Die notarielle Form ersetzt nicht die AGB-Inhaltskontrolle. Zwingende MaBV- und Verbraucherschutzvorgaben stehen nicht zur Disposition.
 
 1. [Paragraph/Absatz/Baubeschreibungsabschnitt] - [konkretes Problem]
 Original: [maßgeblicher Wortlaut]
@@ -1209,6 +1281,9 @@ Antwort: [Antwort auf das konkrete Gegenargument]
 So muss es richtig gefasst werden: [voller Ersatzwortlaut oder Streichungsanweisung]
 
 Frist / weiteres Vorgehen
+
+[Nur falls einschlägig:]
+Hinweis an das Notariat: Die nachfolgend bezeichneten Punkte betreffen auch Beurkundungsreife, Vollzug oder Belehrung. Wir bitten, den Entwurf bis zur Klärung nicht als beurkundungsreif zu behandeln.
 ```
 
 Ton:
@@ -1408,7 +1483,7 @@ Wichtige Differenzierungen:
 - **Berechtigte vorläufige Abnahmeverweigerung**: Wenn der Erwerber die Abnahme zu Recht verweigert, weil das Werk nicht abnahmereif ist, gelten die Grundsätze der personalen Teilunwirksamkeit nicht. Hier kann die regelmäßige Verjährung von Ansprüchen wegen Schlechtleistung schon vor der fünfjährigen Mängelverjährungsfrist eintreten — eine systematische Asymmetrie, die im Schrifttum offen umstritten ist. Praxis: Erwerber sollte parallel die nachträgliche Abnahme erklären, um die fünfjährige Frist mit dem Sicherheitsanker zu eröffnen.
 - **„Vergessene" Abnahme**: Ist die Abnahme schlicht unterblieben (kein Klauseldefekt, keine konkludente Abnahme, keine berechtigte Verweigerung), gilt für die Abnahmereife ebenfalls die ergänzende Vertragsauslegung; Anknüpfungspunkt ist regelmäßig der Zeitpunkt der Übergabe.
 
-Für den Klauselmatrix-Output: Jede AGB-Abnahmeklausel zugunsten einer im Lager des Bauträgers stehenden Person oder mit einer kollektiven Bindung der Erwerber ist 🔴 zu führen, mit Hinweis auf die aktuelle BGH-Linie, die mögliche personale Teilunwirksamkeit und die anspruchsbezogen zu prüfende Höchstgrenzen-Logik. Im Schreiben an Bauträger und Notar (Teil L) ist die Klausel zur Streichung zu verlangen, hilfsweise so umzuformulieren, dass jeder Erwerber das ausdrückliche Recht behält, das Gemeinschaftseigentum selbst oder durch eine Person seines Vertrauens zu prüfen und die Abnahme persönlich zu erklären.
+Für den Klauselmatrix-Output: Jede AGB-Abnahmeklausel zugunsten einer im Lager des Bauträgers stehenden Person oder mit einer kollektiven Bindung der Erwerber ist 🔴 zu führen, mit Hinweis auf die aktuelle BGH-Linie, die mögliche personale Teilunwirksamkeit und die anspruchsbezogen zu prüfende Höchstgrenzen-Logik. Im Schreiben an den Bauträger (Teil L) ist die Klausel zur Streichung zu verlangen, hilfsweise so umzuformulieren, dass jeder Erwerber das ausdrückliche Recht behält, das Gemeinschaftseigentum selbst oder durch eine Person seines Vertrauens zu prüfen und die Abnahme persönlich zu erklären; das Notariat wird bei Beurkundungsreife oder Belehrungsbedarf in Kopie gesetzt.
 
 ### M.6 — Bauablaufbezogene Darlegung bei Verzug
 
@@ -1483,7 +1558,7 @@ Für die drei Dokumente aus Teil L gelten zusätzlich:
 
 - **Mandantenanschreiben (L.1)**: Wenn der Vertrag Preisanpassungsklauseln oder Risiken aus geänderten anerkannten Regeln der Technik enthält, ist die finanzielle Bandbreite klar zu benennen — keine vage Aussage „kann teurer werden".
 - **Gutachten (L.2)**: Die Abschnitte zu Baubeschreibung, Schlussrate und Abnahme sind um die 30-Jahres-Linie und die personale Teilunwirksamkeit zu ergänzen, soweit unwirksame Abnahmeklauseln festgestellt wurden.
-- **Schreiben an Bauträger und Notar (L.3)**: Bei AGB-Preisanpassungsklauseln, Verkürzung der Fertigstellungsdefinition und Klauseln zu „anerkannten Regeln der Technik zum Vertragsschluss" ist die Streichung oder verhandlungsfähige Neufassung mit ausformulierter Wortlaut-Vorschlag zu fordern.
+- **Schreiben an den Bauträger (L.3)**: Bei AGB-Preisanpassungsklauseln, Verkürzung der Fertigstellungsdefinition und Klauseln zu „anerkannten Regeln der Technik zum Vertragsschluss" ist die Streichung oder verhandlungsfähige Neufassung mit ausformuliertem Wortlaut-Vorschlag zu fordern. Das Notariat nur bei Urkunds- oder Vollzugsthemen gesondert adressieren oder in Kopie setzen.
 
 Ergänzungen zum Bug-Hunt (vor jeder Ausgabe):
 
@@ -1628,7 +1703,7 @@ Mindestens verlangen:
 
 **Gutachten:** Eigener Abschnitt `HOAI/Objektüberwachung/Technik/Wirtschaft`. Jede technische rote Ampel braucht: Vertragswortlaut, praktisches Risiko, fehlende Unterlage, gewünschte Änderung.
 
-**Schreiben an Bauträger und Notar:** Keine Fachsimpelei. Forderungen konkret:
+**Schreiben an den Bauträger:** Keine Fachsimpelei. Forderungen konkret:
 
 ```text
 Bitte ergänzen Sie eine Regelung, wonach der Erwerber nach angemessener Voranmeldung und unter Beachtung der Sicherheitsvorgaben einen eigenen Sachverständigen zu den Bautenstands- und Abnahmeterminen hinzuziehen darf. Die Fälligkeit von MaBV-Raten darf nicht allein durch eine interne Bauleiterbestätigung des Verkäufers ausgelöst werden, sondern muss durch objektiv nachvollziehbaren Baufortschritt prüfbar sein.
@@ -1790,7 +1865,7 @@ Mandantenanschreiben: klare Entscheidungshilfe zu Unterschrift, Zahlungsstopp, N
 
 Gutachten: jedes Fachmodul wird dort behandelt, wo es hingehört: MaBV in F, AGB in G, Bausoll/Technik in H/J, Abnahme in I, Verzug in M, Haftung in N.
 
-Schreiben an Bauträger/Notar: keine akademische Vollständigkeit, sondern konkrete Streichungs- und Änderungsforderungen mit Alternativwortlaut.
+Schreiben an den Bauträger: keine akademische Vollständigkeit, sondern konkrete Streichungs- und Änderungsforderungen mit Alternativwortlaut; Notariat nur bei Beurkundungs-, Belehrungs- oder Vollzugspunkt in Kopie oder Zusatzabsatz.
 
 ## Teil P — Beratungsstellen-Schnellmodus (zeitknappe Verbraucherberatung)
 
@@ -1801,7 +1876,7 @@ Dieser Teil richtet sich an Beraterinnen und Berater in Verbraucherzentralen, Er
 1. Fall-Fingerabdruck (ca. 5 Min): Parteien, Verbraucherstatus, Einheit, Preis, Ratenplan, Sicherheiten, Beurkundungs-/Bauphase, Fristen, Anlagen. Fehlendes als Annahme markieren, nicht zurückfragen.
 2. Pflicht-Prüfblock zuerst (ca. 10 Min): die Punkte des Pflicht-Prüfblocks abarbeiten — sie tragen das Mandat (MaBV-Fälligkeit, 5-%-Sicherheit, Beweislast/Tatsachenbestätigung, Abnahme Gemeinschaftseigentum, Schlussrate, Teilungserklärung, Bausoll, Bauüberwachung).
 3. Top-Risiken priorisieren (ca. 5 Min): die drei bis sieben Befunde mit der größten wirtschaftlichen oder fristbezogenen Wirkung nach vorn; Nebenschauplätze zurückstellen.
-4. Drei-Dokumente-Paket erzeugen (ca. 10 Min): Übersendungsschreiben, Mandantengutachten und Aufforderungsschreiben nach Teil L — direkt versandfertig.
+4. Nächste Weiche setzen oder Vollpaket erzeugen (ca. 10 Min): Käufer-/Mandantenschreiben, Mandantengutachten und Aufforderungsschreiben nach Teil L — direkt versandfertig, wenn Vollpaket gewählt wurde.
 
 ### P.2 — Entscheidungs-zuerst-Reihenfolge
 
@@ -1830,7 +1905,7 @@ Im Gutachten klar vermerken, wenn ein Punkt vertiefte Spezial- oder Sachverstän
 - Drei bis sieben priorisierte Hauptrisiken mit konkreter Handlungsempfehlung?
 - Fristen und Sofortmaßnahmen benannt?
 - Nachforderungsliste für fehlende Unterlagen?
-- Mandantenanschreiben in einfacher Sprache, Gutachten mit Quellen, Bauträger-/Notarschreiben mit konkreten Neufassungen?
+- Mandantenanschreiben in einfacher Sprache, ausführliches Gutachten mit Quellen, Bauträgerschreiben mit konkreten Neufassungen und Notariat nur bei Urkunds-/Vollzugspunkt?
 
 ## Bug-Hunt vor Ausgabe
 
@@ -1848,7 +1923,7 @@ Vor jeder finalen Analyse diese Fehler ausschließen:
 - Keine BGH-Entscheidung ohne zulässige URL und Liveprüfung.
 - Keine schrillen Drohungen ohne Tatbestand; Verhandlungsposition soll streng, aber glaubwürdig sein.
 - Jede rote Ampel muss eine konkrete gewünschte Änderung haben.
-- Statuskopf nicht vergessen: Kurzbild, Dokument 1, Dokument 2 und Dokument 3 müssen als offen/erledigt markiert sein.
+- Statuskopf nicht vergessen: Rolle, Kurzbild, Modus, Weiche und Dokumente 1 bis 3 müssen als offen/erledigt oder nächster Schritt markiert sein.
 - Jede rote oder orange Ampel muss das Subsumtions-Gate bestehen: Textstelle, Wirkung, Rechtsfolge, Beweislast und Gegenargument.
 - Fehlende Unterlagen nicht vorschnell als bewiesenen Mangel verkaufen; sauber zwischen Unterlagenlücke, Aufklärungsdefizit, Fälligkeitssperre, Sachmangel und AGB-Risiko trennen.
 - Technik nicht hinter Jura verstecken: Baugrund, Baugrube, Objektüberwachung, private Sachverständige, LPH 8, Unterlagen, Wartung und Betriebskosten immer mitprüfen.
