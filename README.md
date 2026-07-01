@@ -10,9 +10,9 @@ Diese beiden Links zeigen die Markdown-Dateien nicht erst im Browser an, sondern
 >
 > Ein-Datei-Prinzip, modellunabhängig einsetzbar. Die Vollfassung steckt in einer einzigen Markdown-Datei: [`skill/SKILL.md`](skill/SKILL.md) — ohne externe Laufzeit, ohne Datenbank, ohne Konto und ohne zusätzliches Werkzeug. Für kleine Kontextfenster gibt es zusätzlich [`skill/MINI_SKILL.md`](skill/MINI_SKILL.md). Beide Dateien funktionieren in leistungsfähigen KI-Chatbots bzw. Sprachmodellen: Claude, ChatGPT, Gemini, Mistral, Perplexity, lokal betriebene Modelle. Es ist keine Installation erforderlich — siehe [Anwendung](#anwendung-so-einfach-gehts).
 
-Konsolidierter Skill (Version 3.0.9) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
+Konsolidierter Skill (Version 3.0.10) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
 
-Neu in 3.0.9: die Download-Seite teilt sich sauber — Open-Graph-Vorschau beim Verlinken und eine zur Hell-/Dunkel-Palette passende Browserleiste (theme-color). Aus 3.0.8 gilt weiter: Die Direktdownloads zeigen über `releases/latest` dauerhaft auf die neueste Release-Datei und brechen bei künftigen Versionssprüngen nicht mehr, und die Download-Seite hat einen echten Dunkelmodus. Inhaltlich gilt weiter die Workflowhärtung aus 3.0.7: Bei bereits vorliegendem Vertrag startet der Skill vorläufig in Rolle A, jede Nächste Weiche trägt eine konkrete Empfehlung, und lange Ausgaben tragen eine Fortsetzungsmarke, damit Claude, ChatGPT, Perplexity und kleinere Assistenten nach Abbruch sauber weiterschreiben.
+Neu in 3.0.10: Die Release-Qualität ist jetzt selbst prüfbar. `scripts/validate_repo.sh` kontrolliert Versionsgleichlauf, `releases/latest`-Direktdownloads, Synchronität von `skill/` und `docs/`, Mini-Grenze unter 8.000 Zeichen, Akten-ZIPs mit Einzel-PDFs und die No-Meta-Regel in den Vertragsdokumenten; dieselbe Prüfung läuft in GitHub Actions. Die Download-Seite behält Open-Graph-Vorschau, theme-color, echten Dunkelmodus und robuste Direktdownloads, und der Skill bleibt auf Autostart, empfohlene Nächste Weiche und Fortsetzungsmarke für abgebrochene Antworten getrimmt.
 
 Schnellwahl: Für eine geführte Vertragsprüfung mit Rollenmodus, dichter Befundtabelle, textueller Einordnung und optionalem Vollpaket ist [`SKILL.md`](skill/SKILL.md) die Hauptfassung. Wenn ein kleineres Modell den langen Prompt nicht vollständig lädt oder die Antwort abbricht, ist [`MINI_SKILL.md`](skill/MINI_SKILL.md) die kompakte Ausweichfassung.
 
@@ -136,6 +136,10 @@ docs/
 ├── index.html     Download-Seite für Browser und Mobilgeräte
 └── vertragsdokumente/  Veröffentlichte Spiegel der Vertragsakten
 
+scripts/
+└── validate_repo.sh  Lokaler Sanity-Check für Versionen, Downloads,
+                     Mini-Limit, Docs-Sync, Testakten und No-Meta-Regel
+
 vertragsdokumente/
 ├── bautraegervertrag/
 │   ├── bautraegervertrag.md / .docx / .pdf
@@ -174,6 +178,7 @@ Zusätzlich enthält der Skill durchgängig:
 - Technischer Realitätscheck — ein juristisch eleganter Vertrag genügt nicht, wenn Baugrund, Baugrube, Abdichtung, Bauüberwachung oder Nachweislage nicht tragen.
 - Geführter Workflow und Vollpaket — zunächst Kurzbild, Befundtabelle, Fließtext und Nächste Weiche; auf Wunsch das Vollpaket mit Käufer-/Mandantenschreiben, ausführlichem Gutachten und Bauträgerschreiben.
 - Statuskopf und Fortsetzungsmarke — Rolle, Kurzbild, Modus, Dokumente 1 bis 3, Empfehlung und Fortsetzungspunkt werden markiert, damit auch kleine Modelle nach Abbruch sauber fortsetzen.
+- Release-Validierung — `scripts/validate_repo.sh` prüft vor Veröffentlichung die harten Repo-Invarianten; `.github/workflows/validate.yml` führt denselben Check in GitHub Actions aus.
 - Aktualisierte Rechtsprechungsanker — BGH 2026 zu Schlussrate, Abnahme, 30-Jahres-Obergrenze und Teilungserklärungsänderung; KG/OLG als gewichtete Instanzanker zu Bezugsfertigkeit, flexiblem Ratenplan, § 650m-Sicherheit, Übergabeprotokollen und GdWE-Mängelrechten.
 - Mini-Fallback — für kleine Kontextfenster gibt es `MINI_SKILL.md`; sie ersetzt die Vollfassung nicht, hält aber Rollenmodus, Kernworkflow, Weiche und Vollpaket-Option fest.
 
