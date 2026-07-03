@@ -36,21 +36,34 @@ for path in \
   docs/SKILL.md \
   docs/MINI_SKILL.md \
   docs/index.html \
+  scripts/build_bilingual_contracts.py \
   vertragsdokumente/bautraegervertrag/bautraegervertrag.md \
   vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf \
   vertragsdokumente/bautraegervertrag/bautraegervertrag.docx \
+  vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html \
+  vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.pdf \
+  vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.docx \
   vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip \
   vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md \
   vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf \
   vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx \
+  vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html \
+  vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf \
+  vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx \
   vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip \
   docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.md \
   docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf \
   docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx \
+  docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html \
+  docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.pdf \
+  docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.docx \
   docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip \
   docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md \
   docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf \
   docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx \
+  docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html \
+  docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf \
+  docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx \
   docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip; do
   require_file "$path"
 done
@@ -66,6 +79,12 @@ grep -Fq "# Mini-Bauträgervertrag-Prüfer ${skill_version}" skill/MINI_SKILL.md
 
 cmp -s skill/SKILL.md docs/SKILL.md || fail "skill/SKILL.md and docs/SKILL.md differ"
 cmp -s skill/MINI_SKILL.md docs/MINI_SKILL.md || fail "skill/MINI_SKILL.md and docs/MINI_SKILL.md differ"
+cmp -s vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html || fail "Hohenwartshofen bilingual HTML docs copy differs"
+cmp -s vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.pdf docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.pdf || fail "Hohenwartshofen bilingual PDF docs copy differs"
+cmp -s vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.docx docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.docx || fail "Hohenwartshofen bilingual DOCX docs copy differs"
+cmp -s vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html || fail "Marewald bilingual HTML docs copy differs"
+cmp -s vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf || fail "Marewald bilingual PDF docs copy differs"
+cmp -s vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx || fail "Marewald bilingual DOCX docs copy differs"
 
 mini_chars="$(wc -m < skill/MINI_SKILL.md | tr -d ' ')"
 [[ "$mini_chars" -le 8000 ]] || fail "MINI_SKILL.md exceeds 8000 chars: $mini_chars"
@@ -97,6 +116,22 @@ if repo_rg -n 'aus der Hölle|Horror|schrecklich|Schulungsfall|Lösungsschlüsse
   cat /tmp/btv_meta_tells.txt >&2
   fail "contract document contains meta/test tell"
 fi
+
+bilingual_sources=(
+  vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html
+  vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html
+  docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html
+  docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html
+)
+
+for html in "${bilingual_sources[@]}"; do
+  grep -Fq "Deutsch-englische Lesefassung" "$html" || fail "$html missing bilingual notice"
+  grep -Fq "ausschließlich die deutsche Sprachfassung" "$html" || fail "$html missing notarisation-language clause"
+  grep -Fq "the German language version shall be authoritative" "$html" || fail "$html missing English precedence clause"
+  if grep -Eq 'Bound|\*\*|subscription skill|ready-to-cover|statement of insolvency|Published today|Business resident' "$html"; then
+    fail "$html contains visible translation artifact"
+  fi
+done
 
 for zip in \
   vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip \

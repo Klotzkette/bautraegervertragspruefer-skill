@@ -1,10 +1,10 @@
 ---
 name: mini-bautraegervertrag-pruefer
 description: "Kurzfassung für kleine KI-Kontexte: Bauträgervertrag-Prüfung nach MaBV, BGB, AGB, WEG und Technik; geführt oder als Vollpaket."
-version: "3.0.10-mini"
+version: "3.1.0-mini"
 ---
 
-# Mini-Bauträgervertrag-Prüfer 3.0.10
+# Mini-Bauträgervertrag-Prüfer 3.1.0
 
 Experimentell, keine Rechtsberatung/Gewähr.
 

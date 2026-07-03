@@ -10,9 +10,9 @@ Diese beiden Links zeigen die Markdown-Dateien nicht erst im Browser an, sondern
 >
 > Ein-Datei-Prinzip, modellunabhängig einsetzbar. Die Vollfassung steckt in einer einzigen Markdown-Datei: [`skill/SKILL.md`](skill/SKILL.md) — ohne externe Laufzeit, ohne Datenbank, ohne Konto und ohne zusätzliches Werkzeug. Für kleine Kontextfenster gibt es zusätzlich [`skill/MINI_SKILL.md`](skill/MINI_SKILL.md). Beide Dateien funktionieren in leistungsfähigen KI-Chatbots bzw. Sprachmodellen: Claude, ChatGPT, Gemini, Mistral, Perplexity, lokal betriebene Modelle. Es ist keine Installation erforderlich — siehe [Anwendung](#anwendung-so-einfach-gehts).
 
-Konsolidierter Skill (Version 3.0.10) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
+Konsolidierter Skill (Version 3.1.0) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
 
-Neu in 3.0.10: Die Release-Qualität ist jetzt selbst prüfbar. `scripts/validate_repo.sh` kontrolliert Versionsgleichlauf, `releases/latest`-Direktdownloads, Synchronität von `skill/` und `docs/`, Mini-Grenze unter 8.000 Zeichen, Akten-ZIPs mit Einzel-PDFs und die No-Meta-Regel in den Vertragsdokumenten; dieselbe Prüfung läuft in GitHub Actions. Die Download-Seite behält Open-Graph-Vorschau, theme-color, echten Dunkelmodus und robuste Direktdownloads, und der Skill bleibt auf Autostart, empfohlene Nächste Weiche und Fortsetzungsmarke für abgebrochene Antworten getrimmt.
+Neu in 3.1.0: Beide Bauträgervertragsakten haben zusätzlich eine deutsch-englische Lesefassung als zweispaltiges HTML, PDF und Word-Dokument. Links steht jeweils die deutsche Urkundenfassung, rechts eine englische Verständnishilfe; die eingebaute Sprachklausel stellt klar, dass bei der Beurkundung nur die deutsche Fassung verlesen wird und bei Konflikten ausschließlich die deutsche Fassung maßgeblich ist. Die Release-Validierung kontrolliert diese neuen Artefakte mit, und die Download-Seite verlinkt die Lesefassungen direkt.
 
 Schnellwahl: Für eine geführte Vertragsprüfung mit Rollenmodus, dichter Befundtabelle, textueller Einordnung und optionalem Vollpaket ist [`SKILL.md`](skill/SKILL.md) die Hauptfassung. Wenn ein kleineres Modell den langen Prompt nicht vollständig lädt oder die Antwort abbricht, ist [`MINI_SKILL.md`](skill/MINI_SKILL.md) die kompakte Ausweichfassung.
 
@@ -69,16 +69,20 @@ Vertrag Hohenwartshofen — Wohnungsbauträgervertrag mit Auflassung
 Fehlerakte mit bewusst groben MaBV-, AGB-, Abnahme-, Sicherungs-, Bauüberwachungs- und Baubeschreibungsproblemen; hier soll der Skill viele rote Pflichtbefunde finden.
 
 - [📦 Akten-ZIP mit Einzel-PDFs](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip) · [📄 PDF](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf) · [📄 Word](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx) · [📄 Markdown](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.md)
+- Deutsch/English-Lesefassung: [🌐 HTML](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html) · [📄 PDF](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.pdf) · [📄 Word](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.docx)
 
 Vertrag Marewald — Wohnungsbauträgervertrag mit Auflassung
 
 Kontrollakte mit rechtmäßigem, aber deutlich verkäuferfreundlichem Grenzvertrag; hier soll der Skill harte gelbe Verhandlungsbefunde liefern, aber keine Nichtigkeit oder rote Pflichtverstöße behaupten.
 
 - [📦 Akten-ZIP mit Einzel-PDFs](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip) · [📄 PDF](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf) · [📄 Word](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx) · [📄 Markdown](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md)
+- Deutsch/English-Lesefassung: [🌐 HTML](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html) · [📄 PDF](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf) · [📄 Word](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx)
 
 Beide Dokumente sind keine Musterverträge: nicht unterschreiben, nicht als Vorlage verwenden, nicht in der Praxis einsetzen und nicht gegenüber echten Käufern, Bauträgern, Notariaten oder Behörden verwenden. Eine fachliche Bewertung setzt immer eine eigenständige rechtliche und technische Prüfung voraus.
 
 Neue Aktenregel: Jede Vertragsakte hat ab jetzt ein Akten-ZIP. Dieses ZIP enthält die Unterlagen der jeweiligen Akte nicht als ein weiteres Gesamt-PDF und nicht als bloße Formatvariante, sondern als getrennte, neutral benannte Einzel-PDFs, damit kleinere und größere KI-Systeme die Akte dokumentweise aufnehmen können.
+
+Deutsch-englische Lesefassungen: Die zweispaltigen Fassungen sind Verständnishilfen für Käuferinnen und Käufer, die den deutschen Vertrag lesen können, aber eine parallele englische Orientierung benötigen. Sie sind nicht als amtliche Übersetzung und nicht als zweite Vertragssprache gedacht; die Lesefassung selbst enthält die notarielle Vorlese- und Sprachvorrangklausel.
 
 ## Kurzversion für kleinere Modelle
 
@@ -137,16 +141,19 @@ docs/
 └── vertragsdokumente/  Veröffentlichte Spiegel der Vertragsakten
 
 scripts/
-└── validate_repo.sh  Lokaler Sanity-Check für Versionen, Downloads,
-                     Mini-Limit, Docs-Sync, Testakten und No-Meta-Regel
+├── build_bilingual_contracts.py  Erzeugt die deutsch-englischen Lesefassungen
+└── validate_repo.sh              Lokaler Sanity-Check für Versionen, Downloads,
+                                  Mini-Limit, Docs-Sync, Testakten und No-Meta-Regel
 
 vertragsdokumente/
 ├── bautraegervertrag/
 │   ├── bautraegervertrag.md / .docx / .pdf
+│   ├── bautraegervertrag-de-en.html / .docx / .pdf
 │   ├── bautraegervertrag-einzel-pdfs.zip
 │   └── build.sh, build/
 └── bautraegervertrag-marewald/
     ├── bautraegervertrag-marewald.md / .docx / .pdf
+    ├── bautraegervertrag-marewald-de-en.html / .docx / .pdf
     ├── bautraegervertrag-marewald-einzel-pdfs.zip
     └── build.sh, build/
 ```
@@ -165,7 +172,7 @@ Die Skill-Datei ist in folgende Hauptteile gegliedert:
 - Fachmodule Bauträgerrecht 2026 — Vorinsolvenz, unwirksame Notarklauseln, anerkannte Regeln der Technik, DIN-Verweise, Preisanpassung, Bauzeitverzug, Baugruppen-GbR, Nachzügler, Sonderwünsche, Sicherheitenschichten und Haftungsketten.
 - Teilungserklärung und WEG — Sondereigentum, Gemeinschaftseigentum, Sondernutzungsrechte, GdWE, Kostenverteilung, Abnahmeregime.
 - Mandatsmodule — Käufer-/Mandantenbericht, Bauträgeranschreiben, Notariatszusatz nur bei Beurkundungs-/Vollzugspunkten, Verhandlungsfassung, Eskalations- und Klagestrategie.
-- Vertragsdokumente (separate Dateien) — zusätzlich zur Skill-Datei liegen unter `vertragsdokumente/` zwei freistehende Bauträgerverträge mit Baubeschreibung als Anlage bereit; jede Akte enthält außerdem ein ZIP mit getrennten Einzel-PDFs.
+- Vertragsdokumente (separate Dateien) — zusätzlich zur Skill-Datei liegen unter `vertragsdokumente/` zwei freistehende Bauträgerverträge mit Baubeschreibung als Anlage bereit; jede Akte enthält außerdem ein ZIP mit getrennten Einzel-PDFs und eine zweispaltige deutsch-englische Lesefassung.
 
 Zusätzlich enthält der Skill durchgängig:
 

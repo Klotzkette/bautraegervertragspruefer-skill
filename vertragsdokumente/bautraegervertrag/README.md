@@ -9,18 +9,27 @@ Dieses Verzeichnis enthält ein eigenständiges Vertragsdokument in den Gesamtfa
 - [PDF herunterladen](bautraegervertrag.pdf)
 - [Akten-ZIP mit Einzel-PDFs herunterladen](bautraegervertrag-einzel-pdfs.zip)
 
+Deutsch-englische Lesefassung:
+
+- [Zweispaltiges HTML öffnen](bautraegervertrag-de-en.html)
+- [Zweispaltiges Word-Dokument herunterladen](bautraegervertrag-de-en.docx)
+- [Zweispaltiges PDF herunterladen](bautraegervertrag-de-en.pdf)
+
 Öffentliche Download-Links über GitHub Pages:
 
 - [Markdown direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.md)
 - [Word-Dokument direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx)
 - [PDF direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf)
 - [Akten-ZIP direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip)
+- [Deutsch/English-HTML direkt öffnen](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html)
+- [Deutsch/English-Word direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.docx)
+- [Deutsch/English-PDF direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.pdf)
 
 ## Wichtiger Hinweis
 
 Dieser Bauträgervertrag ist kein Mustervertrag und darf nicht als Vorlage in der Praxis verwendet, nicht übernommen und nicht gegenüber echten Käufern, Bauträgern, Notariaten oder Behörden eingesetzt werden.
 
-Markdown, Word und PDF enthalten denselben Vertragsstoff einschließlich der Baubeschreibung als Anlage. Das Akten-ZIP enthält denselben Stoff als getrennte, neutral benannte Einzel-PDFs. Für jede fachliche Bewertung ist eine eigenständige rechtliche und technische Prüfung erforderlich.
+Markdown, Word und PDF enthalten denselben Vertragsstoff einschließlich der Baubeschreibung als Anlage. Das Akten-ZIP enthält denselben Stoff als getrennte, neutral benannte Einzel-PDFs. Die deutsch-englische Lesefassung ist keine eigenständige Vertragssprache: links steht die deutsche Fassung, rechts nur eine englische Verständnishilfe; die Urkunde selbst stellt klar, dass bei Beurkundung und Auslegung die deutsche Fassung maßgeblich bleibt. Für jede fachliche Bewertung ist eine eigenständige rechtliche und technische Prüfung erforderlich.
 
 ## Verwendung mit dem Skill
 
@@ -38,3 +47,9 @@ Nach Änderungen an `bautraegervertrag.md` werden Word-Fassung, Gesamt-PDF und A
 ```
 
 Voraussetzungen: `pandoc` und `weasyprint`. Layout und Seitenumbrüche steuern `build/style.css` und `build/pagebreak.lua`.
+
+Die deutsch-englische Lesefassung wird vom Repository-Generator erzeugt:
+
+```bash
+../../scripts/build_bilingual_contracts.py
+```

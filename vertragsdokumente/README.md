@@ -7,7 +7,7 @@ Hier liegen zwei eigenständige, vollständig fingierte Bauträgervertrags-Akten
 | Hohenwartshofen | [`bautraegervertrag/`](bautraegervertrag/) | bewusst fehlerhaft — überladen mit unwirksamen und teils nichtigen Klauseln | viele 🔴, klare Pflichtblock-Treffer |
 | Marewald | [`bautraegervertrag-marewald/`](bautraegervertrag-marewald/) | rechtmäßig, aber grenzwertig verkäuferfreundlich — bis an die Grenze ausgereizt, ohne rote Pflichtverletzung | überwiegend 🟠, kein 🔴 wegen Nichtigkeit |
 
-Jede Akte liegt in vier Formen vor: Markdown, Word und Gesamt-PDF sowie als **Akten-ZIP mit getrennten Einzel-PDFs** (Vertrag und Baubeschreibung separat), damit auch Modelle mit kleinem Kontext die Akte dokumentweise aufnehmen können. Details und Download-Links stehen im README der jeweiligen Akte.
+Jede Akte liegt in vier deutschen Formen vor: Markdown, Word und Gesamt-PDF sowie als **Akten-ZIP mit getrennten Einzel-PDFs** (Vertrag und Baubeschreibung separat), damit auch Modelle mit kleinem Kontext die Akte dokumentweise aufnehmen können. Zusätzlich gibt es zu beiden Verträgen eine deutsch-englische Lesefassung als HTML, Word und PDF: links die deutsche Urkundenfassung, rechts eine englische Verständnishilfe. In dieser Lesefassung ist ausdrücklich geregelt, dass bei der Beurkundung nur die deutsche Fassung verlesen wird und bei jedem Widerspruch ausschließlich die deutsche Fassung maßgeblich ist. Details und Download-Links stehen im README der jeweiligen Akte.
 
 ## So testet man den Skill damit
 
@@ -22,4 +22,4 @@ Beide Verträge sind keine Musterverträge. Parteien, Projekte und Aktenzeichen 
 
 ## Selbst neu erzeugen
 
-In jeder Akte erzeugt `./build.sh` aus der Markdown-Quelle die Word-Fassung, das Gesamt-PDF und das Akten-ZIP mit Einzel-PDFs. Voraussetzungen: `pandoc`, `weasyprint`, `perl`, `zip`.
+In jeder Akte erzeugt `./build.sh` aus der Markdown-Quelle die Word-Fassung, das Gesamt-PDF und das Akten-ZIP mit Einzel-PDFs. Die deutsch-englischen Lesefassungen werden repositoryweit mit `scripts/build_bilingual_contracts.py` erzeugt. Voraussetzungen: `pandoc`, `weasyprint`, `perl`, `zip`, `LibreOffice` und für eine vollständige Neuerzeugung der Lesefassung `argostranslate` mit Deutsch-Englisch-Modell.
