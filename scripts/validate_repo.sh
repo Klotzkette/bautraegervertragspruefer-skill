@@ -95,6 +95,17 @@ grep -Fq "releases/latest/download/MINI_SKILL.md" README.md || fail "README MINI
 grep -Fq "Bauträgervertrag-Prüfer Skill ${skill_version}" docs/index.html || fail "docs/index.html title/header version stale"
 grep -Fq "Stand ${skill_version}" docs/index.html || fail "docs/index.html stand/version stale"
 
+for asset in \
+  bautraegervertrag-de-en.html \
+  bautraegervertrag-de-en.pdf \
+  bautraegervertrag-de-en.docx \
+  bautraegervertrag-marewald-de-en.html \
+  bautraegervertrag-marewald-de-en.pdf \
+  bautraegervertrag-marewald-de-en.docx; do
+  grep -Fq "releases/latest/download/${asset}" README.md || fail "README missing release download link for ${asset}"
+  grep -Fq "releases/latest/download/${asset}" docs/index.html || fail "docs/index.html missing release download link for ${asset}"
+done
+
 versioned_downloads="$(grep -Eo 'releases/download/v[0-9]+\.[0-9]+\.[0-9]+' README.md | sort -u || true)"
 if [[ -n "$versioned_downloads" ]]; then
   fail "README contains version-pinned release download links: ${versioned_downloads}"
