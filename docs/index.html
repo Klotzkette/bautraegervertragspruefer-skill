@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bauträgervertrag-Prüfer Skill 3.2.0 — Direktdownload</title>
-<meta name="description" content="Lade die SKILL.md-Datei des Bauträgervertrag-Prüfer-Skills 3.2.0 direkt herunter — quellenharte, fallbezogene Prüfung deutscher Bauträgerverträge als Markdown.">
+<title>Bauträgervertrag-Prüfer Skill 3.2.1 — Direktdownload</title>
+<meta name="description" content="Lade die SKILL.md-Datei des Bauträgervertrag-Prüfer-Skills 3.2.1 direkt herunter — quellenharte, fallbezogene Prüfung deutscher Bauträgerverträge als Markdown.">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#f7f8fb" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0f141a" media="(prefers-color-scheme: dark)">
@@ -83,7 +83,7 @@
 </head>
 <body>
 <main>
-  <h1>Bauträgervertrag-Prüfer Skill 3.2.0</h1>
+  <h1>Bauträgervertrag-Prüfer Skill 3.2.1</h1>
   <p class="lead">Lade die passende Skill-Datei herunter, lege sie in deinen Chatbot und reiche danach den Bauträgervertrag nach.</p>
 
   <div class="card">
@@ -95,6 +95,12 @@
       <li><strong>Vertrag hochladen:</strong> PDF, DOCX, Text, Foto oder Akten-ZIP nachreichen.</li>
     </ol>
     <p>Wenn Skill und Vertrag schon zusammen hochgeladen wurden: Startsatz senden. Das Modell soll mit Rollenmodus, Kurzbild und Pflicht-Prüfblock beginnen.</p>
+  </div>
+
+  <div class="card">
+    <h2>Robust auf PC und Mac</h2>
+    <p>Der Skill soll nie still hängen. Nach Startsatz oder Upload kommt zuerst ein kurzes Startsignal, danach die Prüfung in sichtbaren Etappen: Pflichtblock, Zahlungsplan, Abnahme/Mängel, Technik und Dokumente.</p>
+    <p>Bei langen Antworten setzt der Skill Fortsetzungsmarken wie <code>Pflichtblock erledigt</code>, <code>Dokument 1 fertig</code> oder <code>Fortsetzen bei ...</code>. Wenn du <code>beenden</code>, <code>abbrechen</code> oder <code>stop</code> schreibst, muss er sofort aufhören und darf erst nach ausdrücklichem <code>weiter</code> fortsetzen.</p>
   </div>
 
   <div class="card">
@@ -193,10 +199,11 @@
   </div>
 
   <div class="card">
-    <h2>Stand 3.2.0</h2>
+    <h2>Stand 3.2.1</h2>
     <ul>
+      <li>Neu: Reaktions- und Abbruchdisziplin mit sofortigem Startsignal, Fortschrittsmarken, harter Stop-Regel und sauberer Fortsetzung auf PC, Mac, Mobilgeräten und in unterschiedlichen KI-Chatbots.</li>
       <li>Release-Validierung: automatischer Check für Versionsgleichlauf, <code>releases/latest</code>-Direktdownloads, Skill-/Docs-Sync, Mini-Limit, Akten-ZIPs und No-Meta-Regel der Vertragsdokumente.</li>
-      <li>Neu: dritte Vertragsakte Lindenhain als faire, ausgewogene und leicht käuferfreundliche Kontrollakte mit Markdown, Word, PDF, Akten-ZIP und Deutsch/English-Lesefassung.</li>
+      <li>Dritte Vertragsakte Lindenhain als faire, ausgewogene und leicht käuferfreundliche Kontrollakte mit Markdown, Word, PDF, Akten-ZIP und Deutsch/English-Lesefassung.</li>
       <li>Zweispaltige Deutsch/English-Lesefassungen für alle drei Bauträgervertragsakten als HTML, PDF und Word-Dokument, jeweils mit notarieller Vorlese- und Sprachvorrangklausel sowie robusten <code>releases/latest</code>-Sofortdownloads.</li>
       <li>Saubere Link-Vorschau beim Teilen (Open-Graph-Metadaten) und zur Farbpalette passende Browserleiste (theme-color, hell und dunkel).</li>
       <li>Robuste Direktdownloads über <code>releases/latest</code> (brechen bei Versionssprüngen nicht mehr) und echter Dunkelmodus der Download-Seite.</li>

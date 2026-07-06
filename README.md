@@ -10,9 +10,9 @@ Diese beiden Links zeigen die Markdown-Dateien nicht erst im Browser an, sondern
 >
 > Ein-Datei-Prinzip, modellunabhängig einsetzbar. Die Vollfassung steckt in einer einzigen Markdown-Datei: [`skill/SKILL.md`](skill/SKILL.md) — ohne externe Laufzeit, ohne Datenbank, ohne Konto und ohne zusätzliches Werkzeug. Für kleine Kontextfenster gibt es zusätzlich [`skill/MINI_SKILL.md`](skill/MINI_SKILL.md). Beide Dateien funktionieren in leistungsfähigen KI-Chatbots bzw. Sprachmodellen: Claude, ChatGPT, Gemini, Mistral, Perplexity, lokal betriebene Modelle. Es ist keine Installation erforderlich — siehe [Anwendung](#anwendung-so-einfach-gehts).
 
-Konsolidierter Skill (Version 3.2.0) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
+Konsolidierter Skill (Version 3.2.1) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
 
-Neu in 3.2.0: Die Vertragsakten sind um **Lindenhain** erweitert, einen fairen, ausgewogenen und leicht käuferfreundlichen Bauträgervertrag. Damit lassen sich drei Prüfprofile durchspielen: harte Fehlerakte, rechtmäßiger Verkäufer-Grenzvertrag und positive Kontrollakte, bei der der Skill gerade nicht reflexhaft rote Befunde produzieren soll. Alle drei Akten haben ein Akten-ZIP mit Einzel-PDFs und eine deutsch-englische Lesefassung als zweispaltiges HTML, PDF und Word-Dokument; die Release-Validierung kontrolliert diese Artefakte mit.
+Neu in 3.2.1: Der Start- und Abbruchmodus ist gehärtet. Der Skill soll auf PC, Mac, Mobilgeräten und in ChatGPT, Claude, Perplexity, Gemini, Mistral oder lokalen Modellen sofort ein kurzes Startsignal geben, bei langen Prüfungen sichtbare Fortschrittsmarken setzen und bei `stop`, `abbrechen` oder `beenden` vollständig abbrechen, ohne im Hintergrund weiterzuarbeiten. Die drei Vertragsakten aus 3.2.0 bleiben vollständig eingebunden.
 
 Schnellwahl: Für eine geführte Vertragsprüfung mit Rollenmodus, dichter Befundtabelle, textueller Einordnung und optionalem Vollpaket ist [`SKILL.md`](skill/SKILL.md) die Hauptfassung. Wenn ein kleineres Modell den langen Prompt nicht vollständig lädt oder die Antwort abbricht, ist [`MINI_SKILL.md`](skill/MINI_SKILL.md) die kompakte Ausweichfassung.
 
@@ -24,6 +24,8 @@ Wer nur prüfen will, braucht keine Installation und keine GitHub-Kenntnisse:
 2. In den Chat legen: Datei in Claude, ChatGPT, Perplexity, Gemini, Mistral oder ein lokales Modell hochladen oder den Inhalt hineinkopieren.
 3. Startsatz senden: Den kopierfertigen Startsatz aus [Anwendung](#anwendung-so-einfach-gehts) einfügen und Rollenmodus wählen.
 4. Vertrag nachreichen: PDF, DOCX, Text, Foto oder Akten-ZIP hochladen. Der Skill prüft ohne Bedienungsrückfragen, gibt eine dichte erste Einordnung aus und bietet dann konkrete nächste Weichen an.
+
+Robuster Start: Der Skill soll nie still hängen. Nach Upload oder Startsatz muss zuerst ein kurzes Startsignal kommen, danach erst die längere Prüfung. Bei großen PDF-/ZIP-Akten arbeitet er stufenweise: Pflichtblock, Zahlungsplan, Abnahme/Mängel, Technik, Dokumente. Jede längere Antwort trägt eine Fortsetzungsmarke. Wenn du `beenden`, `abbrechen` oder `stop` schreibst, muss der Skill sofort aufhören und erst bei ausdrücklichem `weiter` wieder ansetzen.
 
 Dateiwahl ohne Nachdenken: Große Modelle und Kanzlei-/Projektarbeit: `SKILL.md`. Kleine Assistenten, mobile Apps, knappe Upload-Limits oder erste Vorführung: `MINI_SKILL.md`. Testlauf mit getrennten Unterlagen: erst die Skill-Datei, dann das passende Akten-ZIP.
 
@@ -41,6 +43,7 @@ Workflow-Kompass:
 | finaler One-Shot oder „alle Schreiben" | Vollpaket ohne Nachfrage |
 | Vertrag und Skill liegen schon zusammen im Chat | Startsatz senden; der Skill beginnt vorläufig in Rolle A |
 | Antwort bricht wegen Länge ab | an der Fortsetzungsmarke weiterschreiben lassen |
+| Prüfung soll wirklich enden | `beenden`, `abbrechen` oder `stop`; der Skill bestätigt Ende und arbeitet nicht weiter |
 | nur Bedienfrage oder Uploadproblem | vier einfache Schritte, danach Vertrag/Akten-ZIP hochladen |
 
 1. Kurzbild für die schnelle Orientierung: Vertragsstatus, rote/orange/grüne Treffer, wichtigste Sofortmaßnahme.
@@ -132,6 +135,8 @@ Wenn der Chatbot stehenbleibt: Nicht neu anfangen. Schreibe einfach: _"Bitte fah
 Wenn gar nichts passiert: Einmal klar nachschieben: _"Du hast jetzt die Arbeitsanweisung. Bitte beginne mit Rollenmodus, Pflicht-Prüfblock, Befundtabelle und Nächster Weiche."_ Danach nicht weiter erklären, sondern den Vertrag oder das Akten-ZIP hochladen.
 
 Wenn Skill und Vertrag schon zusammen hochgeladen wurden: Einfach den Startsatz senden. Das Modell soll dann sofort mit dem Pflicht-Prüfblock beginnen und keine neue Upload-Reihenfolge verlangen.
+
+Wenn du die Prüfung beenden willst: Schreibe `beenden`, `abbrechen` oder `stop`. Der Skill soll dann nur noch bestätigen, dass er keine weiteren Prüfschritte ausführt. Eine spätere Fortsetzung beginnt erst nach einer neuen ausdrücklichen Weisung wie `weiter ab Dokument 2` oder `prüfe erneut`.
 
 ## Inhalt
 

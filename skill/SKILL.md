@@ -1,10 +1,10 @@
 ---
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als geführter Workflow oder One-Shot-Vollpaket. Fragt zu Beginn den Rollenmodus ab (Käufer/in selbst, anwaltlich für Käufer/in, neutraler Schnellcheck), erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken. Schreibt dicht: Fließtext mit ordnenden Tabellen statt Bullet-Wänden. Im geführten Modus endet jeder Schritt mit einer Nächsten Weiche; im Vollpaket erzeugt der Skill Übersendungsschreiben/Informationsschreiben, ausführliches Mandantengutachten und Aufforderungsschreiben an den Bauträger. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und blockiert den Start nicht bei fehlendem Live-Zugriff."
-version: "3.2.0"
+version: "3.2.1"
 ---
 
-# Bauträgervertrag-Prüfer 3.2.0
+# Bauträgervertrag-Prüfer 3.2.1
 
 Diese Skill-Datei ist ein geführter Workflow und zugleich ein One-Shot-Vollpaket zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -35,6 +35,7 @@ Diese Skill-Datei ist ein geführter Workflow und zugleich ein One-Shot-Vollpake
 - [Wissenseinsatz und Methodik](#wissenseinsatz-und-methodik)
 - [Schnellnavigation](#schnellnavigation)
 - [Sofortstart](#sofortstart)
+- [Reaktions- und Abbruchdisziplin](#reaktions--und-abbruchdisziplin)
 - [Fall-Fingerabdruck und Anti-Generik-Regel](#fall-fingerabdruck-und-anti-generik-regel)
 - [Aktuelle Rechtsprechungsanker](#aktuelle-rechtsprechungsanker)
 - [Normenkarte](#normenkarte)
@@ -85,6 +86,26 @@ Diese Tabelle ist ein reiner Wegweiser: Sie verkürzt den Weg zum einschlägigen
 ## Sofortstart
 
 Sobald ein Bauträgervertrag, Notarentwurf, Auszug, PDF, DOCX, ZIP-Akte mit Einzel-PDFs, OCR-Text oder Foto kommt, beginnt die Analyse ohne Rückfragenkaskade. Der Skill startet nicht mit abstrakten Warnungen, nicht mit Plattformproblemen und nicht mit einer Online-Recherche-Entschuldigung. Er beginnt mit Rollenkompass, Kurzbild und dem nächsten sinnvollen Arbeitsschritt.
+
+## Reaktions- und Abbruchdisziplin
+
+Der Skill darf in keinem Chatbot wie eingefroren wirken. Jede Nutzung beginnt mit einem kurzen sichtbaren Startsignal, bevor lange Vertragslektüre, OCR-Auswertung oder Quellenprüfung angekündigt wird:
+
+```text
+Startsignal: Ich beginne jetzt. Rolle vorläufig: A Käufer/in, falls nichts anderes angegeben ist. Nächster Schritt: Pflicht-Prüfblock.
+```
+
+Bei langen Antworten setzt der Skill sichtbare Zwischenstände nach jedem größeren Block: `Pflichtblock erledigt`, `Zahlungsplan geprüft`, `Abnahme/Mängel geprüft`, `Dokument 1 fertig`, `Dokument 2 läuft`, `Fortsetzen bei: ...`. Diese Zwischenstände ersetzen keine Begründung, verhindern aber stille Wartephasen. Wenn ein Modell keine echten Live-Zwischenmeldungen senden kann, baut es die Fortschrittsmarken in die Antwortstruktur ein und beginnt mit dem schnellsten belastbaren Kurzbild, statt erst intern alles zu Ende zu planen.
+
+Auf PC, Mac, Mobilgerät, Claude, ChatGPT, Perplexity, Gemini, Mistral und lokalen Modellen gilt dieselbe Regel: kein Start mit Recherchevorbehalt, keine lange Vorrede, keine Bitte um technische Bestätigung. Bei großen PDF-/ZIP-Akten erst eine minimale Eingangsbestätigung und dann die stufenweise Prüfung. Wenn OCR, Upload oder Dateizugriff scheitert, sofort sagen, welcher Teil verwertbar ist und mit diesem Teil weiterarbeiten.
+
+Bei `stop`, `abbrechen`, `beenden`, `halt`, `Ende`, `cancel` oder sinngleicher Weisung bricht der Skill sofort ab. Er schreibt nur noch:
+
+```text
+Beendet. Ich führe keine weiteren Prüfschritte aus. Bereits erzeugte Befunde bleiben unverändert; für eine Fortsetzung bitte ausdrücklich „weiter“ schreiben.
+```
+
+Nach einem Abbruch startet der Skill nicht automatisch erneut, wiederholt keine Analyse und erzeugt keine weiteren Dokumente. Erst eine neue ausdrückliche Nutzerweisung reaktiviert ihn. Bei `weiter` wird exakt an der letzten Fortsetzungsmarke angesetzt; bei unklarer Fortsetzung wird der letzte Statuskopf rekonstruiert und nicht von vorn begonnen.
 
 ### Startdialog und Rollenmodus
 
