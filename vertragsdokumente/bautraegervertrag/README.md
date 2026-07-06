@@ -2,28 +2,19 @@
 
 > **Charakter dieser Akte:** bewusst fehlerhaft. Der Vertrag ist überladen mit unwirksamen und teils nichtigen Klauseln; an ihm lässt sich zeigen, wie viele rote Ampeln der Skill findet. Das wirksame Gegenstück ist die Akte Marewald (`../bautraegervertrag-marewald/`). Übersicht: [`../README.md`](../README.md).
 
-Dieses Verzeichnis enthält ein eigenständiges Vertragsdokument in den Gesamtfassungen und als Akten-ZIP mit getrennten Einzel-PDFs:
+## Downloads auf einen Blick
 
-- [Markdown öffnen](bautraegervertrag.md)
-- [Word-Dokument herunterladen](bautraegervertrag.docx)
-- [PDF herunterladen](bautraegervertrag.pdf)
-- [Akten-ZIP mit Einzel-PDFs herunterladen](bautraegervertrag-einzel-pdfs.zip)
+Dieses Verzeichnis enthält ein eigenständiges Vertragsdokument in den deutschen Gesamtfassungen, als Akten-ZIP mit getrennten Einzel-PDFs und als zweispaltige Deutsch/English-Lesefassung.
 
-Deutsch-englische Lesefassung:
-
-- [Zweispaltiges HTML öffnen](bautraegervertrag-de-en.html)
-- [Zweispaltiges Word-Dokument herunterladen](bautraegervertrag-de-en.docx)
-- [Zweispaltiges PDF herunterladen](bautraegervertrag-de-en.pdf)
-
-Öffentliche Download-Links über GitHub Pages:
-
-- [Markdown direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.md)
-- [Word-Dokument direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx)
-- [PDF direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf)
-- [Akten-ZIP direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip)
-- [Deutsch/English-HTML direkt öffnen](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html)
-- [Deutsch/English-Word direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.docx)
-- [Deutsch/English-PDF direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.pdf)
+| Datei | Lokal im Repository | Öffentlich über Pages | Sofortdownload über Release |
+| --- | --- | --- | --- |
+| Deutsch Markdown | [öffnen](bautraegervertrag.md) | [öffnen](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.md) | - |
+| Deutsch Word | [herunterladen](bautraegervertrag.docx) | [laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx) | - |
+| Deutsch PDF | [herunterladen](bautraegervertrag.pdf) | [laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf) | - |
+| Akten-ZIP Einzel-PDFs | [herunterladen](bautraegervertrag-einzel-pdfs.zip) | [laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip) | - |
+| Deutsch/English HTML | [ansehen](bautraegervertrag-de-en.html) | [ansehen](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html) | [laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-de-en.html) |
+| Deutsch/English Word | [herunterladen](bautraegervertrag-de-en.docx) | [laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.docx) | [laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-de-en.docx) |
+| Deutsch/English PDF | [herunterladen](bautraegervertrag-de-en.pdf) | [laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.pdf) | [laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-de-en.pdf) |
 
 ## Wichtiger Hinweis
 

@@ -2,28 +2,19 @@
 
 > **Charakter dieser Akte:** fair, ausgewogen und leicht käuferfreundlich. Der Vertrag ist als positive Kontrollakte gedacht: Der Skill soll nicht reflexhaft rote Befunde produzieren, sondern erkennen, dass Zahlungsplan, Sicherheiten, Abnahme, Unterlagen, Baukontrolle und Sprachfassung verbraucherseitig sauber geregelt sind. Übersicht: [`../README.md`](../README.md).
 
-Dieses Verzeichnis enthält ein eigenständiges Vertragsdokument in den Gesamtfassungen und als Akten-ZIP mit getrennten Einzel-PDFs:
+## Downloads auf einen Blick
 
-- [Markdown öffnen](bautraegervertrag-lindenhain.md)
-- [Word-Dokument herunterladen](bautraegervertrag-lindenhain.docx)
-- [PDF herunterladen](bautraegervertrag-lindenhain.pdf)
-- [Akten-ZIP mit Einzel-PDFs herunterladen](bautraegervertrag-lindenhain-einzel-pdfs.zip)
+Dieses Verzeichnis enthält ein eigenständiges Vertragsdokument in den deutschen Gesamtfassungen, als Akten-ZIP mit getrennten Einzel-PDFs und als zweispaltige Deutsch/English-Lesefassung.
 
-Deutsch-englische Lesefassung:
-
-- [Zweispaltiges HTML öffnen](bautraegervertrag-lindenhain-de-en.html)
-- [Zweispaltiges Word-Dokument herunterladen](bautraegervertrag-lindenhain-de-en.docx)
-- [Zweispaltiges PDF herunterladen](bautraegervertrag-lindenhain-de-en.pdf)
-
-Öffentliche Download-Links über GitHub Pages:
-
-- [Markdown direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md)
-- [Word-Dokument direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.docx)
-- [PDF direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf)
-- [Akten-ZIP direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip)
-- [Deutsch/English-HTML direkt öffnen](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html)
-- [Deutsch/English-Word direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx)
-- [Deutsch/English-PDF direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.pdf)
+| Datei | Lokal im Repository | Öffentlich über Pages | Sofortdownload über Release |
+| --- | --- | --- | --- |
+| Deutsch Markdown | [öffnen](bautraegervertrag-lindenhain.md) | [öffnen](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md) | - |
+| Deutsch Word | [herunterladen](bautraegervertrag-lindenhain.docx) | [laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.docx) | - |
+| Deutsch PDF | [herunterladen](bautraegervertrag-lindenhain.pdf) | [laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf) | - |
+| Akten-ZIP Einzel-PDFs | [herunterladen](bautraegervertrag-lindenhain-einzel-pdfs.zip) | [laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip) | - |
+| Deutsch/English HTML | [ansehen](bautraegervertrag-lindenhain-de-en.html) | [ansehen](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html) | [laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-lindenhain-de-en.html) |
+| Deutsch/English Word | [herunterladen](bautraegervertrag-lindenhain-de-en.docx) | [laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx) | [laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-lindenhain-de-en.docx) |
+| Deutsch/English PDF | [herunterladen](bautraegervertrag-lindenhain-de-en.pdf) | [laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.pdf) | [laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-lindenhain-de-en.pdf) |
 
 ## Wichtiger Hinweis
 

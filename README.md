@@ -10,11 +10,28 @@ Diese beiden Links zeigen die Markdown-Dateien nicht erst im Browser an, sondern
 >
 > Ein-Datei-Prinzip, modellunabhängig einsetzbar. Die Vollfassung steckt in einer einzigen Markdown-Datei: [`skill/SKILL.md`](skill/SKILL.md) — ohne externe Laufzeit, ohne Datenbank, ohne Konto und ohne zusätzliches Werkzeug. Für kleine Kontextfenster gibt es zusätzlich [`skill/MINI_SKILL.md`](skill/MINI_SKILL.md). Beide Dateien funktionieren in leistungsfähigen KI-Chatbots bzw. Sprachmodellen: Claude, ChatGPT, Gemini, Mistral, Perplexity, lokal betriebene Modelle. Es ist keine Installation erforderlich — siehe [Anwendung](#anwendung-so-einfach-gehts).
 
-Konsolidierter Skill (Version 3.2.1) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
+Konsolidierter Skill (Version 3.2.2) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
 
-Neu in 3.2.1: Der Start- und Abbruchmodus ist gehärtet. Der Skill soll auf PC, Mac, Mobilgeräten und in ChatGPT, Claude, Perplexity, Gemini, Mistral oder lokalen Modellen sofort ein kurzes Startsignal geben, bei langen Prüfungen sichtbare Fortschrittsmarken setzen und bei `stop`, `abbrechen` oder `beenden` vollständig abbrechen, ohne im Hintergrund weiterzuarbeiten. Die drei Vertragsakten aus 3.2.0 bleiben vollständig eingebunden.
+Neu in 3.2.2: Die Dokumentation ist stärker als Schnellzugriff aufgebaut. Skill-Dateien, Downloadseite, drei Vertragsakten, Akten-ZIPs, deutsche Fassungen und Deutsch/English-Lesefassungen sind jetzt zentraler, verständlicher und mit weniger Sucherei verlinkt. Die Start- und Abbruchhärtung aus 3.2.1 bleibt enthalten.
 
 Schnellwahl: Für eine geführte Vertragsprüfung mit Rollenmodus, dichter Befundtabelle, textueller Einordnung und optionalem Vollpaket ist [`SKILL.md`](skill/SKILL.md) die Hauptfassung. Wenn ein kleineres Modell den langen Prompt nicht vollständig lädt oder die Antwort abbricht, ist [`MINI_SKILL.md`](skill/MINI_SKILL.md) die kompakte Ausweichfassung.
+
+## Schnellzugriff
+
+| Zweck | Link | Wann nehmen? |
+| --- | --- | --- |
+| Vollständiger Skill | [SKILL.md direkt herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md) | Normalfall, gründliche Vertragsprüfung, Kanzlei-/Projektarbeit |
+| Kompakte Fassung | [MINI_SKILL.md direkt herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md) | kleine Chatbots, mobile Apps, knappe Kontextfenster |
+| Browser-Downloadseite | [klotzkette.github.io/bautraegervertragspruefer-skill](https://klotzkette.github.io/bautraegervertragspruefer-skill/) | wenn GitHub unübersichtlich ist oder Downloads in Apps klemmen |
+| Aktenübersicht | [vertragsdokumente/README.md](vertragsdokumente/README.md) | wenn du die drei Vertragsakten vergleichen willst |
+
+## Vertragsakten auf einen Blick
+
+| Akte | Prüfprofil | Akten-ZIP | Deutsch: PDF / Word / Markdown | Deutsch/English-Lesefassung |
+| --- | --- | --- | --- | --- |
+| Hohenwartshofen | Fehlerakte mit vielen roten Pflichtbefunden | [ZIP](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip) | [PDF](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf) · [Word](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx) · [Markdown](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.md) | [HTML ansehen](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html) · [HTML laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-de-en.html) · [PDF laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-de-en.pdf) · [Word laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-de-en.docx) |
+| Marewald | rechtmäßig, aber verkäuferfreundlich ausgereizt | [ZIP](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip) | [PDF](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf) · [Word](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx) · [Markdown](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md) | [HTML ansehen](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html) · [HTML laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-marewald-de-en.html) · [PDF laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-marewald-de-en.pdf) · [Word laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-marewald-de-en.docx) |
+| Lindenhain | faire positive Kontrollakte | [ZIP](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip) | [PDF](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf) · [Word](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.docx) · [Markdown](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md) | [HTML ansehen](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html) · [HTML laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-lindenhain-de-en.html) · [PDF laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-lindenhain-de-en.pdf) · [Word laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-lindenhain-de-en.docx) |
 
 ## Sofort loslegen
 
@@ -65,34 +82,19 @@ Wer den Inhalt lieber direkt sehen und kopieren will, öffnet [`skill/SKILL.md`]
 
 ## Bauträgerverträge zum Ausprobieren
 
-Zum Ausprobieren des Skills liegen drei freistehende Bauträgervertragsakten bereit. Sie dienen nur zum Durchspielen der Prüfung; sie sind keine Musterverträge und dürfen nicht in der Praxis eingesetzt werden.
+Zum Ausprobieren des Skills liegen drei freistehende Bauträgervertragsakten bereit. Die komplette Download-Matrix steht oben unter [Vertragsakten auf einen Blick](#vertragsakten-auf-einen-blick); die ausführliche Aktenübersicht liegt unter [`vertragsdokumente/README.md`](vertragsdokumente/README.md).
 
-Vertrag Hohenwartshofen — Wohnungsbauträgervertrag mit Auflassung
-
-Fehlerakte mit bewusst groben MaBV-, AGB-, Abnahme-, Sicherungs-, Bauüberwachungs- und Baubeschreibungsproblemen; hier soll der Skill viele rote Pflichtbefunde finden.
-
-- [📦 Akten-ZIP mit Einzel-PDFs](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip) · [📄 PDF](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf) · [📄 Word](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx) · [📄 Markdown](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag.md)
-- Deutsch/English-Lesefassung: [🌐 HTML ansehen](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html) · Sofortdownload: [HTML](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-de-en.html) · [PDF](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-de-en.pdf) · [Word](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-de-en.docx)
-
-Vertrag Marewald — Wohnungsbauträgervertrag mit Auflassung
-
-Kontrollakte mit rechtmäßigem, aber deutlich verkäuferfreundlichem Grenzvertrag; hier soll der Skill harte gelbe Verhandlungsbefunde liefern, aber keine Nichtigkeit oder rote Pflichtverstöße behaupten.
-
-- [📦 Akten-ZIP mit Einzel-PDFs](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip) · [📄 PDF](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf) · [📄 Word](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx) · [📄 Markdown](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md)
-- Deutsch/English-Lesefassung: [🌐 HTML ansehen](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html) · Sofortdownload: [HTML](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-marewald-de-en.html) · [PDF](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-marewald-de-en.pdf) · [Word](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-marewald-de-en.docx)
-
-Vertrag Lindenhain — Wohnungsbauträgervertrag mit Auflassung
-
-Positive Kontrollakte mit fairem, ausgewogenem und leicht käuferfreundlichem Vertragsstand; hier soll der Skill überwiegend tragfähige Regelungen bestätigen, allenfalls Verhandlungs- oder Präzisierungspunkte markieren und keine roten Pflichtverstöße behaupten.
-
-- [📦 Akten-ZIP mit Einzel-PDFs](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip) · [📄 PDF](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf) · [📄 Word](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.docx) · [📄 Markdown](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md)
-- Deutsch/English-Lesefassung: [🌐 HTML ansehen](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html) · Sofortdownload: [HTML](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-lindenhain-de-en.html) · [PDF](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-lindenhain-de-en.pdf) · [Word](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-lindenhain-de-en.docx)
+| Akte | Was sie testet | Erwartung an den Skill |
+| --- | --- | --- |
+| Hohenwartshofen | grobe MaBV-, AGB-, Abnahme-, Sicherungs-, Bauüberwachungs- und Baubeschreibungsprobleme | viele rote Pflichtbefunde, konkrete Streichungs- und Korrekturvorschläge |
+| Marewald | rechtmäßiger, aber deutlich verkäuferfreundlich ausgereizter Grenzvertrag | harte gelbe Verhandlungsbefunde, aber keine künstliche Nichtigkeit |
+| Lindenhain | fairer, ausgewogener und leicht käuferfreundlicher Vertragsstand | überwiegend grüne Bestätigung, nur echte Präzisierungs- oder Verhandlungspunkte |
 
 Alle drei Dokumente sind keine Musterverträge: nicht unterschreiben, nicht als Vorlage verwenden, nicht in der Praxis einsetzen und nicht gegenüber echten Käufern, Bauträgern, Notariaten oder Behörden verwenden. Eine fachliche Bewertung setzt immer eine eigenständige rechtliche und technische Prüfung voraus.
 
-Neue Aktenregel: Jede Vertragsakte hat ab jetzt ein Akten-ZIP. Dieses ZIP enthält die Unterlagen der jeweiligen Akte nicht als ein weiteres Gesamt-PDF und nicht als bloße Formatvariante, sondern als getrennte, neutral benannte Einzel-PDFs, damit kleinere und größere KI-Systeme die Akte dokumentweise aufnehmen können.
+Akten-ZIPs: Jede Vertragsakte hat ein ZIP mit getrennten, neutral benannten Einzel-PDFs. Das ist die beste Übergabeform für KI-Systeme, die große Gesamt-PDFs schlechter auswerten oder bei langen Dokumenten abbrechen.
 
-Deutsch-englische Lesefassungen: Die zweispaltigen Fassungen sind Verständnishilfen für Käuferinnen und Käufer, die den deutschen Vertrag lesen können, aber eine parallele englische Orientierung benötigen. Sie sind nicht als amtliche Übersetzung und nicht als zweite Vertragssprache gedacht; die Lesefassung selbst enthält die notarielle Vorlese- und Sprachvorrangklausel. Die Vorschau-Links öffnen die HTML-Fassung im Browser; die Sofortdownload-Links gehen über `releases/latest` und laden die Dateien mit Download-Header.
+Deutsch-englische Lesefassungen: Die zweispaltigen Fassungen sind Verständnishilfen für Käuferinnen und Käufer, die den deutschen Vertrag lesen können, aber eine parallele englische Orientierung benötigen. Sie sind nicht als amtliche Übersetzung und nicht als zweite Vertragssprache gedacht; die Lesefassung selbst enthält die notarielle Vorlese- und Sprachvorrangklausel. Vorschau-Links öffnen die HTML-Fassung im Browser; Sofortdownload-Links gehen über `releases/latest` und laden die Dateien mit Download-Header.
 
 ## Kurzversion für kleinere Modelle
 
@@ -164,10 +166,10 @@ vertragsdokumente/
 │   ├── bautraegervertrag-einzel-pdfs.zip
 │   └── build.sh, build/
 ├── bautraegervertrag-marewald/
-    ├── bautraegervertrag-marewald.md / .docx / .pdf
-    ├── bautraegervertrag-marewald-de-en.html / .docx / .pdf
-    ├── bautraegervertrag-marewald-einzel-pdfs.zip
-    └── build.sh, build/
+│   ├── bautraegervertrag-marewald.md / .docx / .pdf
+│   ├── bautraegervertrag-marewald-de-en.html / .docx / .pdf
+│   ├── bautraegervertrag-marewald-einzel-pdfs.zip
+│   └── build.sh, build/
 └── bautraegervertrag-lindenhain/
     ├── bautraegervertrag-lindenhain.md / .docx / .pdf
     ├── bautraegervertrag-lindenhain-de-en.html / .docx / .pdf

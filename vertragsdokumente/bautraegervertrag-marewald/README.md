@@ -2,28 +2,19 @@
 
 > **Charakter dieser Akte:** rechtmäßig, aber grenzwertig verkäuferfreundlich. Der Vertrag reizt den zulässigen Spielraum aus, ohne rote Pflichtverletzung oder erkennbare Nichtigkeit — der Skill soll ihn als hart und ausgereizt, aber im Rahmen des Rechts einordnen (überwiegend 🟠). Das bewusst fehlerhafte Gegenstück ist die Akte Hohenwartshofen (`../bautraegervertrag/`). Übersicht: [`../README.md`](../README.md).
 
-Dieses Verzeichnis enthält ein eigenständiges Vertragsdokument in den Gesamtfassungen und als Akten-ZIP mit getrennten Einzel-PDFs:
+## Downloads auf einen Blick
 
-- [Markdown öffnen](bautraegervertrag-marewald.md)
-- [Word-Dokument herunterladen](bautraegervertrag-marewald.docx)
-- [PDF herunterladen](bautraegervertrag-marewald.pdf)
-- [Akten-ZIP mit Einzel-PDFs herunterladen](bautraegervertrag-marewald-einzel-pdfs.zip)
+Dieses Verzeichnis enthält ein eigenständiges Vertragsdokument in den deutschen Gesamtfassungen, als Akten-ZIP mit getrennten Einzel-PDFs und als zweispaltige Deutsch/English-Lesefassung.
 
-Deutsch-englische Lesefassung:
-
-- [Zweispaltiges HTML öffnen](bautraegervertrag-marewald-de-en.html)
-- [Zweispaltiges Word-Dokument herunterladen](bautraegervertrag-marewald-de-en.docx)
-- [Zweispaltiges PDF herunterladen](bautraegervertrag-marewald-de-en.pdf)
-
-Öffentliche Download-Links über GitHub Pages:
-
-- [Markdown direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md)
-- [Word-Dokument direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx)
-- [PDF direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf)
-- [Akten-ZIP direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip)
-- [Deutsch/English-HTML direkt öffnen](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html)
-- [Deutsch/English-Word direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx)
-- [Deutsch/English-PDF direkt laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf)
+| Datei | Lokal im Repository | Öffentlich über Pages | Sofortdownload über Release |
+| --- | --- | --- | --- |
+| Deutsch Markdown | [öffnen](bautraegervertrag-marewald.md) | [öffnen](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md) | - |
+| Deutsch Word | [herunterladen](bautraegervertrag-marewald.docx) | [laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx) | - |
+| Deutsch PDF | [herunterladen](bautraegervertrag-marewald.pdf) | [laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf) | - |
+| Akten-ZIP Einzel-PDFs | [herunterladen](bautraegervertrag-marewald-einzel-pdfs.zip) | [laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip) | - |
+| Deutsch/English HTML | [ansehen](bautraegervertrag-marewald-de-en.html) | [ansehen](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html) | [laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-marewald-de-en.html) |
+| Deutsch/English Word | [herunterladen](bautraegervertrag-marewald-de-en.docx) | [laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx) | [laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-marewald-de-en.docx) |
+| Deutsch/English PDF | [herunterladen](bautraegervertrag-marewald-de-en.pdf) | [laden](https://klotzkette.github.io/bautraegervertragspruefer-skill/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf) | [laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-marewald-de-en.pdf) |
 
 ## Wichtiger Hinweis
 
