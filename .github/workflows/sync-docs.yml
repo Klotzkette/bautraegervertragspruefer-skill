@@ -21,6 +21,13 @@ on:
       - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf'
       - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx'
       - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip'
+      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf'
+      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.docx'
+      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md'
+      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html'
+      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.pdf'
+      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx'
+      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip'
 
 permissions:
   contents: write
@@ -39,6 +46,7 @@ jobs:
         run: |
           mkdir -p docs/vertragsdokumente/bautraegervertrag
           mkdir -p docs/vertragsdokumente/bautraegervertrag-marewald
+          mkdir -p docs/vertragsdokumente/bautraegervertrag-lindenhain
           cp skill/SKILL.md docs/SKILL.md
           cp skill/MINI_SKILL.md docs/MINI_SKILL.md
           cp vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf  docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf
@@ -55,6 +63,13 @@ jobs:
           cp vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf  docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf
           cp vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx
           cp vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip
+          cp vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf  docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf
+          cp vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.docx docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.docx
+          cp vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md   docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md
+          cp vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html
+          cp vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.pdf  docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.pdf
+          cp vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx
+          cp vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip
 
       - name: Commit and push if changed
         run: |

@@ -58,6 +58,14 @@ CONFIGS = [
         read_de="verliest",
         deed_de="beurkundet",
     ),
+    ContractConfig(
+        src=ROOT / "vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md",
+        out_prefix="bautraegervertrag-lindenhain-de-en",
+        short_title="Wohnungsbauträgervertrag mit Auflassung",
+        notary_de="Die amtierende Notarin",
+        read_de="verliest",
+        deed_de="beurkundet",
+    ),
 ]
 
 
@@ -89,8 +97,10 @@ EXACT_TRANSLATIONS = {
     "Verhandelt": "Recorded",
     "zu Berlin, am 14. März 2026": "in Berlin, on 14 March 2026",
     "zu Hamburg, am 12. Juni 2026": "in Hamburg, on 12 June 2026",
+    "zu Köln, am 18. September 2026": "in Cologne, on 18 September 2026",
     "Vor mir, dem unterzeichnenden Notar im Bezirk des Kammergerichts": "Before me, the undersigned Notary in the district of the Kammergericht",
     "Vor mir, der unterzeichnenden Notarin im Bezirk des Hanseatischen Oberlandesgerichts": "Before me, the undersigned Notary in the district of the Hanseatic Higher Regional Court",
+    "Vor mir, der unterzeichnenden Notarin im Bezirk des Oberlandesgerichts Köln": "Before me, the undersigned Notary in the district of the Higher Regional Court of Cologne",
     "erschienen heute:": "appeared today:",
     "dem Notar von Person bekannt,": "personally known to the Notary,",
     "der Notarin von Person bekannt,": "personally known to the Notary,",

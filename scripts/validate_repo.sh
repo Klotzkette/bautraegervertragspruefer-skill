@@ -51,6 +51,13 @@ for path in \
   vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf \
   vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx \
   vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip \
+  vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md \
+  vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf \
+  vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.docx \
+  vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html \
+  vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.pdf \
+  vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx \
+  vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip \
   docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.md \
   docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf \
   docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx \
@@ -64,7 +71,14 @@ for path in \
   docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html \
   docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf \
   docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx \
-  docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip; do
+  docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip \
+  docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md \
+  docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf \
+  docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.docx \
+  docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html \
+  docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.pdf \
+  docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx \
+  docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip; do
   require_file "$path"
 done
 
@@ -85,6 +99,13 @@ cmp -s vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.docx docs/ver
 cmp -s vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html || fail "Marewald bilingual HTML docs copy differs"
 cmp -s vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf || fail "Marewald bilingual PDF docs copy differs"
 cmp -s vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx || fail "Marewald bilingual DOCX docs copy differs"
+cmp -s vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md || fail "Lindenhain Markdown docs copy differs"
+cmp -s vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf || fail "Lindenhain PDF docs copy differs"
+cmp -s vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.docx docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.docx || fail "Lindenhain DOCX docs copy differs"
+cmp -s vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip || fail "Lindenhain ZIP docs copy differs"
+cmp -s vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html || fail "Lindenhain bilingual HTML docs copy differs"
+cmp -s vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.pdf docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.pdf || fail "Lindenhain bilingual PDF docs copy differs"
+cmp -s vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx || fail "Lindenhain bilingual DOCX docs copy differs"
 
 mini_chars="$(wc -m < skill/MINI_SKILL.md | tr -d ' ')"
 [[ "$mini_chars" -le 8000 ]] || fail "MINI_SKILL.md exceeds 8000 chars: $mini_chars"
@@ -101,7 +122,10 @@ for asset in \
   bautraegervertrag-de-en.docx \
   bautraegervertrag-marewald-de-en.html \
   bautraegervertrag-marewald-de-en.pdf \
-  bautraegervertrag-marewald-de-en.docx; do
+  bautraegervertrag-marewald-de-en.docx \
+  bautraegervertrag-lindenhain-de-en.html \
+  bautraegervertrag-lindenhain-de-en.pdf \
+  bautraegervertrag-lindenhain-de-en.docx; do
   grep -Fq "releases/latest/download/${asset}" README.md || fail "README missing release download link for ${asset}"
   grep -Fq "releases/latest/download/${asset}" docs/index.html || fail "docs/index.html missing release download link for ${asset}"
 done
@@ -119,8 +143,10 @@ fi
 contract_sources=(
   vertragsdokumente/bautraegervertrag/bautraegervertrag.md
   vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md
+  vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md
   docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.md
   docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md
+  docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md
 )
 
 if repo_rg -n 'aus der Hölle|Horror|schrecklich|Schulungsfall|Lösungsschlüssel|Dossier Bauträgervertragsrecht|Teil A — Dossier|bewusst fehlerhaft|Kontrollakte|Fehlerakte' "${contract_sources[@]}" >/tmp/btv_meta_tells.txt 2>/dev/null; then
@@ -131,8 +157,10 @@ fi
 bilingual_sources=(
   vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html
   vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html
+  vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html
   docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html
   docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html
+  docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html
 )
 
 for html in "${bilingual_sources[@]}"; do
@@ -147,8 +175,10 @@ done
 for zip in \
   vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip \
   vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip \
+  vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip \
   docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip \
-  docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip; do
+  docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip \
+  docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip; do
   require_file "$zip"
   pdf_count="$(zip_list "$zip" | grep -E '\.pdf$' | wc -l | tr -d ' ')"
   [[ "$pdf_count" -ge 2 ]] || fail "$zip contains fewer than two Einzel-PDFs"
