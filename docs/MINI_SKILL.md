@@ -1,10 +1,10 @@
 ---
 name: mini-bautraegervertrag-pruefer
 description: "Kurzfassung für kleine KI-Kontexte: Bauträgervertrag-Prüfung nach MaBV, BGB, AGB, WEG und Technik; geführt oder als Vollpaket."
-version: "3.2.2-mini"
+version: "3.2.3-mini"
 ---
 
-# Mini-Bauträgervertrag-Prüfer 3.2.2
+# Mini-Bauträgervertrag-Prüfer 3.2.3
 
 Experimentell, keine Rechtsberatung/Gewähr.
 
@@ -49,7 +49,7 @@ Rspr. nur aus Gerichtsseiten, Bundesportal, `dejure.org`, `openjur.de`; Normen a
 
 **Sicherheiten:** Vormerkung schützt Eigentum, nicht Abschläge/Mängelschäden. § 650m Abs. 2 BGB: 5-Prozent-Sicherheit klar und zwingend; unklarer Einbehalt/achte Rate angreifen (OLG Karlsruhe 19 U 128/24 live prüfen). Freistellung besonders bei steckengebliebenem Bau prüfen.
 
-**AGB:** Bauträgerverträge sind regelmäßig AGB, auch bei Notartext. Prüfe §§ 305 ff. BGB, Transparenz, § 306 BGB ohne geltungserhaltende Reduktion, § 307, § 308 Nr. 4, § 309 Nr. 2, 5, 7, 8, 12. Kritisch: Beweislast, Tatsachenbestätigung, Verzicht, Rügefrist, Haftung, Aufrechnung, Leistungsänderung, Vormerkungslöschung.
+**AGB:** Bauträgerverträge sind regelmäßig AGB, auch bei Notartext. Prüfe §§ 305 ff. BGB, Transparenz, § 306 BGB ohne geltungserhaltende Reduktion, § 307, § 308 Nr. 4, § 309 Nr. 2, 5, 7, 8, 12, 15. Kritisch: Beweislast/Tatsachenbestätigung (Nr. 12), Abschläge/Sicherheit (Nr. 15), Verzicht, Rügefrist, Haftung, Aufrechnung, Leistungsänderung, Vormerkungslöschung.
 
 **Abnahme/Mängel:** GE-Abnahme braucht freie Erwerberentscheidung. Erstverwalter, Bauträger-Sachverständiger, Tochter/Projektsteuerer kritisch. Übergabeprotokoll, Zahlung, Nutzung, Rügelosigkeit beweisen GE-Abnahme nicht sicher; individuell unterschriebene Abnahme aber einzelfallbezogen prüfen. Abnahmefiktion nur § 640 Abs. 2 BGB mit Verbraucher-Textformhinweis. BGH 2026: 30-Jahres-Obergrenze nur anspruchsbezogen.
 

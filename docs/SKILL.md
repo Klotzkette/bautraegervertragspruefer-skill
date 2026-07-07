@@ -1,10 +1,10 @@
 ---
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge als geführter Workflow oder One-Shot-Vollpaket. Fragt zu Beginn den Rollenmodus ab (Käufer/in selbst, anwaltlich für Käufer/in, neutraler Schnellcheck), erstellt zuerst einen Fall-Fingerabdruck aus Urkunde, Parteien, Einheit, Projekt, Preis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik und WEG-Organisation; jede spätere Bewertung muss an diesen konkreten Daten hängen. Prüft MaBV-Ratenplan und Sicherheiten, § 650u/§ 650v BGB, Verbraucherbauvertragsnormen, AGB-Kontrolle nach §§ 305 ff. BGB, Baubeschreibung/Bausoll, anerkannte Regeln der Technik, DIN-Verweise, Abnahme Gemeinschaftseigentum, Schlussrate, Bauzeitverzug, Preisanpassung, Baugruppen-GbR, Teilungserklärung, dingliche Sicherung, Insolvenzrisiken, Notar-/Geschäftsführer-/Bauleiterhaftung und Verhandlungsstrategie sowie technische, wirtschaftliche und organisatorische Projektrisiken. Schreibt dicht: Fließtext mit ordnenden Tabellen statt Bullet-Wänden. Im geführten Modus endet jeder Schritt mit einer Nächsten Weiche; im Vollpaket erzeugt der Skill Übersendungsschreiben/Informationsschreiben, ausführliches Mandantengutachten und Aufforderungsschreiben an den Bauträger. Nutzt nur offizielle Bundes-/Landesgerichtsseiten sowie DeJure/OpenJur als Rechtsprechungsquellen und blockiert den Start nicht bei fehlendem Live-Zugriff."
-version: "3.2.2"
+version: "3.2.3"
 ---
 
-# Bauträgervertrag-Prüfer 3.2.2
+# Bauträgervertrag-Prüfer 3.2.3
 
 Diese Skill-Datei ist ein geführter Workflow und zugleich ein One-Shot-Vollpaket zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -612,7 +612,7 @@ Regelfolgen:
 - § 305c Abs. 2 BGB: Zweifel bei Auslegung gehen zulasten des Verwenders.
 - § 307 BGB: unangemessene Benachteiligung/Intransparenz.
 - § 308 BGB: Klauselverbote mit Wertungsmöglichkeit, wichtig bei Änderungsvorbehalten.
-- § 309 BGB: Klauselverbote ohne Wertungsmöglichkeit, wichtig Nr. 2, 3, 12, 15.
+- § 309 BGB: Klauselverbote ohne Wertungsmöglichkeit. Für diesen Skill besonders wichtig: Nr. 2 für Leistungsverweigerungs-/Zurückbehaltungsrechte, Nr. 3 für Aufrechnung, Nr. 12 für Beweislast und Tatsachenbestätigungen, Nr. 15 für überhöhte Abschlagszahlungen und eine fehlende oder reduzierte §-650m-Abs.-2-Sicherheit.
 - § 306 BGB: unwirksame Klausel entfällt; Gesetz tritt ein.
 
 ### B.2 — Klauselkatalog mit Gegenargumenten
