@@ -10,9 +10,9 @@ Diese beiden Links zeigen die Markdown-Dateien nicht erst im Browser an, sondern
 >
 > Ein-Datei-Prinzip, modellunabhängig einsetzbar. Die Vollfassung steckt in einer einzigen Markdown-Datei: [`skill/SKILL.md`](skill/SKILL.md) — ohne externe Laufzeit, ohne Datenbank, ohne Konto und ohne zusätzliches Werkzeug. Für kleine Kontextfenster gibt es zusätzlich [`skill/MINI_SKILL.md`](skill/MINI_SKILL.md). Beide Dateien funktionieren in leistungsfähigen KI-Chatbots bzw. Sprachmodellen: Claude, ChatGPT, Gemini, Mistral, Perplexity, lokal betriebene Modelle. Es ist keine Installation erforderlich — siehe [Anwendung](#anwendung-so-einfach-gehts).
 
-Konsolidierter Skill (Version 3.2.3) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
+Konsolidierter Skill (Version 3.2.4) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
 
-Neu in 3.2.3: finaler Bug-Hunt, Kohärenz-Sweep und juristische Feinkorrektur. Die §-309-Systematik ist präziser gefasst: Nr. 12 trägt Beweislast- und Tatsachenbestätigungsprobleme, Nr. 15 trägt Abschlagszahlungs- und §-650m-Sicherheitsfragen. Die Schnellzugriffe, Akten-ZIPs, deutschen Fassungen und Deutsch/English-Lesefassungen bleiben zentral verlinkt.
+Neu in 3.2.4: finaler Bug-Hunt, Kohärenz-Sweep und Bedienhärtung. Die Startspur ist schneller: direkte Downloads stehen ganz oben, der 60-Sekunden-Start erklärt sofort, welche Datei zu nehmen ist, und der Skill verpflichtet sich noch klarer zu Startsignal, Fortschrittsmarke, Abbruchdisziplin und sauberer Fortsetzung. Die §-309-Systematik bleibt präzise: Nr. 12 trägt Beweislast- und Tatsachenbestätigungsprobleme, Nr. 15 trägt Abschlagszahlungs- und §-650m-Sicherheitsfragen.
 
 Schnellwahl: Für eine geführte Vertragsprüfung mit Rollenmodus, dichter Befundtabelle, textueller Einordnung und optionalem Vollpaket ist [`SKILL.md`](skill/SKILL.md) die Hauptfassung. Wenn ein kleineres Modell den langen Prompt nicht vollständig lädt oder die Antwort abbricht, ist [`MINI_SKILL.md`](skill/MINI_SKILL.md) die kompakte Ausweichfassung.
 
@@ -47,6 +47,16 @@ Robuster Start: Der Skill soll nie still hängen. Nach Upload oder Startsatz mus
 Dateiwahl ohne Nachdenken: Große Modelle und Kanzlei-/Projektarbeit: `SKILL.md`. Kleine Assistenten, mobile Apps, knappe Upload-Limits oder erste Vorführung: `MINI_SKILL.md`. Testlauf mit getrennten Unterlagen: erst die Skill-Datei, dann das passende Akten-ZIP.
 
 Reihenfolge: Am stabilsten ist erst Skill-Datei, dann Startsatz, dann Vertrag. Wenn Skill und Vertrag schon gemeinsam in derselben Unterhaltung liegen, genügt der Startsatz; nicht neu hochladen, nicht von vorn beginnen.
+
+### 60-Sekunden-Start
+
+| Lage | Tu genau das |
+| --- | --- |
+| großes Modell, Kanzlei, gründliche Prüfung | `SKILL.md` herunterladen, in den Chat oder das Projekt legen, Startsatz senden, Vertrag oder Akten-ZIP hochladen |
+| kleiner Chatbot, mobile App, knappes Kontextfenster | `MINI_SKILL.md` nehmen, Akten-ZIP mit Einzel-PDFs hochladen, `prüfe das` schreiben |
+| Skill und Vertrag liegen schon im Chat | nichts neu hochladen; nur den Startsatz senden |
+| Antwort hängt oder bricht ab | `Bitte fahre exakt an der letzten Überschrift fort und zeige danach die Nächste Weiche.` |
+| sofort alles erstellen | `Vollpaket: Käufer-/Mandantenschreiben, Gutachten und Bauträgerschreiben jetzt erstellen.` |
 
 ## Was herauskommt
 

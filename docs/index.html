@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bauträgervertrag-Prüfer Skill 3.2.3 — Direktdownload</title>
-<meta name="description" content="Lade die SKILL.md-Datei des Bauträgervertrag-Prüfer-Skills 3.2.3 direkt herunter — quellenharte, fallbezogene Prüfung deutscher Bauträgerverträge als Markdown.">
+<title>Bauträgervertrag-Prüfer Skill 3.2.4 — Direktdownload</title>
+<meta name="description" content="Lade die SKILL.md-Datei des Bauträgervertrag-Prüfer-Skills 3.2.4 direkt herunter — quellenharte, fallbezogene Prüfung deutscher Bauträgerverträge als Markdown.">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#f7f8fb" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0f141a" media="(prefers-color-scheme: dark)">
@@ -66,6 +66,7 @@
   }
   a.btn:hover, a.btn:focus { background: var(--accent-hover); }
   a.btn:focus { outline: 3px solid var(--fg); outline-offset: 2px; }
+  a.btn + a.btn { margin-top: 0.75rem; }
   a.link { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
   .table-wrap { width: 100%; overflow-x: auto; margin: 0.75rem 0 1rem; }
   table { width: 100%; min-width: 760px; border-collapse: collapse; font-size: 0.92rem; }
@@ -88,8 +89,19 @@
 </head>
 <body>
 <main>
-  <h1>Bauträgervertrag-Prüfer Skill 3.2.3</h1>
+  <h1>Bauträgervertrag-Prüfer Skill 3.2.4</h1>
   <p class="lead">Lade die passende Skill-Datei herunter, lege sie in deinen Chatbot und reiche danach den Bauträgervertrag nach.</p>
+
+  <div class="card">
+    <h2>Sofort laden und starten</h2>
+    <p>Normalfall: erst <code>SKILL.md</code>, dann Startsatz, dann Vertrag oder Akten-ZIP. Wenn ein kleiner Chatbot die Vollfassung nicht annimmt, nimm <code>MINI_SKILL.md</code> und lade möglichst das Akten-ZIP mit Einzel-PDFs hoch.</p>
+    <a class="btn" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md" download="SKILL.md" type="text/markdown" aria-label="Vollständige SKILL.md sofort herunterladen">
+      SKILL.md sofort herunterladen
+    </a>
+    <a class="btn" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md" download="MINI_SKILL.md" type="text/markdown" aria-label="Kompakte MINI_SKILL.md sofort herunterladen">
+      MINI_SKILL.md sofort herunterladen
+    </a>
+  </div>
 
   <div class="card">
     <h2>Start in vier Schritten</h2>
@@ -100,6 +112,7 @@
       <li><strong>Vertrag hochladen:</strong> PDF, DOCX, Text, Foto oder Akten-ZIP nachreichen.</li>
     </ol>
     <p>Wenn Skill und Vertrag schon zusammen hochgeladen wurden: Startsatz senden. Das Modell soll mit Rollenmodus, Kurzbild und Pflicht-Prüfblock beginnen.</p>
+    <p><strong>60-Sekunden-Regel:</strong> keine Recherchevorrede, keine Plattformdebatte. Erst sichtbares Startsignal, dann Rollenstatus und Pflichtblock. Bei Abbruch: <code>Bitte fahre exakt an der letzten Überschrift fort und zeige danach die Nächste Weiche.</code></p>
   </div>
 
   <div class="card">
@@ -207,8 +220,9 @@
   </div>
 
   <div class="card">
-    <h2>Stand 3.2.3</h2>
+    <h2>Stand 3.2.4</h2>
     <ul>
+      <li>Neu: 60-Sekunden-Startspur mit Direktbuttons ganz oben, klarer Mini-Ausweichroute und Fortsetzungsbefehl für abgebrochene Antworten.</li>
       <li>Neu: finaler Bug-Hunt und Kohärenz-Sweep mit präzisierter §-309-Systematik: Nr. 12 für Beweislast/Tatsachenbestätigung, Nr. 15 für Abschläge und §-650m-Sicherheit.</li>
       <li>Neu: Reaktions- und Abbruchdisziplin mit sofortigem Startsignal, Fortschrittsmarken, harter Stop-Regel und sauberer Fortsetzung auf PC, Mac, Mobilgeräten und in unterschiedlichen KI-Chatbots.</li>
       <li>Release-Validierung: automatischer Check für Versionsgleichlauf, <code>releases/latest</code>-Direktdownloads, Skill-/Docs-Sync, Mini-Limit, Akten-ZIPs und No-Meta-Regel der Vertragsdokumente.</li>
