@@ -108,7 +108,7 @@ cmp -s vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenha
 cmp -s vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx || fail "Lindenhain bilingual DOCX docs copy differs"
 
 mini_chars="$(wc -m < skill/MINI_SKILL.md | tr -d ' ')"
-[[ "$mini_chars" -le 8000 ]] || fail "MINI_SKILL.md exceeds 8000 chars: $mini_chars"
+[[ "$mini_chars" -le 7500 ]] || fail "MINI_SKILL.md exceeds 7500 chars: $mini_chars"
 
 grep -Fq "Version ${skill_version}" README.md || fail "README does not mention current version"
 grep -Fq "releases/latest/download/SKILL.md" README.md || fail "README SKILL.md latest release link is missing"
