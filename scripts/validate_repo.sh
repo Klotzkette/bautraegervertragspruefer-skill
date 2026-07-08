@@ -110,6 +110,17 @@ cmp -s vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenha
 mini_chars="$(wc -m < skill/MINI_SKILL.md | tr -d ' ')"
 [[ "$mini_chars" -le 7500 ]] || fail "MINI_SKILL.md exceeds 7500 chars: $mini_chars"
 
+for mini_required in \
+  "60s-Start" \
+  "Kurzbild" \
+  "Befundtabelle" \
+  "Nächste Weiche" \
+  "Käufer-/Mandantenschreiben" \
+  "Mandantengutachten" \
+  "Aufforderungsschreiben an Bauträger"; do
+  grep -Fq "$mini_required" skill/MINI_SKILL.md || fail "MINI_SKILL.md missing required workflow/output phrase: $mini_required"
+done
+
 grep -Fq "Version ${skill_version}" README.md || fail "README does not mention current version"
 grep -Fq "releases/latest/download/SKILL.md" README.md || fail "README SKILL.md latest release link is missing"
 grep -Fq "releases/latest/download/MINI_SKILL.md" README.md || fail "README MINI_SKILL.md latest release link is missing"
