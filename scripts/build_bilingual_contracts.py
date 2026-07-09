@@ -18,8 +18,10 @@ import html
 import re
 import shutil
 import subprocess
+import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from pathlib import Path
+from zipfile import ZIP_DEFLATED, ZipFile
 
 
 try:
@@ -485,6 +487,133 @@ strong {{ font-weight: bold; }}
 """
 
 
+WORD_NS = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+
+
+def repair_bilingual_docx_tables(path: Path) -> None:
+    """Flatten nested rate tables that LibreOffice misplaces during HTML import.
+
+    LibreOffice keeps the surrounding German/English table intact for prose, but
+    imports the two nested Markdown tables into swapped cells at excessive width.
+    Converting each rate row to a compact paragraph preserves the two-column
+    reading order and prevents clipping in Word and LibreOffice.
+    """
+
+    qn = lambda name: f"{{{WORD_NS}}}{name}"
+    ET.register_namespace("w", WORD_NS)
+
+    with ZipFile(path) as archive:
+        root = ET.fromstring(archive.read("word/document.xml"))
+
+    parents = {child: parent for parent in root.iter() for child in parent}
+
+    def ancestor(element: ET.Element, tag: str) -> ET.Element | None:
+        parent = parents.get(element)
+        while parent is not None and parent.tag != qn(tag):
+            parent = parents.get(parent)
+        return parent
+
+    def element_text(element: ET.Element) -> str:
+        return "".join(node.text or "" for node in element.iter(qn("t")))
+
+    english_rate_replacements = {
+        "Stichmonat": "Construction milestone",
+        "Bautenstand": "Construction status",
+        "Anteil": "Percentage",
+        "Betrag": "Percentage",
+        "nach Beginn der Erdarbeiten": "after commencement of earthworks",
+        "Beginn der Erdarbeiten, nach Vorliegen der Voraussetzungen aus § 3.1": (
+            "after commencement of earthworks and satisfaction of the conditions in § 3.1"
+        ),
+        "nach Fassadenarbeiten": "after completion of facade works",
+        "Innenputz, Estrich und Fassadenarbeiten": (
+            "interior plaster, screed and facade works"
+        ),
+        "Readiness to reference Train to train against transfer of ownership": (
+            "readiness for occupancy concurrently with transfer of possession"
+        ),
+        "Readiness to reference train to train against transfer of ownership": (
+            "readiness for occupancy concurrently with transfer of possession"
+        ),
+        "Skill of reference and train by train against transfer of ownership": (
+            "readiness for occupancy concurrently with transfer of possession"
+        ),
+    }
+
+    def table_lines(table: ET.Element, *, english: bool) -> list[ET.Element]:
+        paragraphs: list[ET.Element] = []
+        for index, row in enumerate(table.findall(qn("tr"))):
+            values = [element_text(cell).strip() for cell in row.findall(qn("tc"))]
+            if english:
+                values = [english_rate_replacements.get(value, value) for value in values]
+            paragraph = ET.Element(qn("p"))
+            properties = ET.SubElement(paragraph, qn("pPr"))
+            ET.SubElement(
+                properties,
+                qn("pStyle"),
+                {qn("val"): "TableHeading" if index == 0 else "TableContents"},
+            )
+            ET.SubElement(properties, qn("spacing"), {qn("before"): "0", qn("after"): "80"})
+            run = ET.SubElement(paragraph, qn("r"))
+            if index == 0:
+                run_properties = ET.SubElement(run, qn("rPr"))
+                ET.SubElement(run_properties, qn("b"))
+            text = ET.SubElement(run, qn("t"))
+            text.text = " · ".join(values)
+            paragraphs.append(paragraph)
+        return paragraphs
+
+    tables = list(root.iter(qn("tbl")))
+    if not any(list(table.iter(qn("tbl")))[1:] for table in tables):
+        return
+    innermost_tables = [
+        table for table in tables if not list(table.iter(qn("tbl")))[1:]
+    ]
+    if not innermost_tables:
+        return
+    if len(innermost_tables) % 2:
+        raise RuntimeError(f"Unexpected nested table count in {path}: {len(innermost_tables)}")
+
+    for german_table, english_table in zip(innermost_tables[::2], innermost_tables[1::2]):
+        german_cell = ancestor(german_table, "tc")
+        english_cell = ancestor(english_table, "tc")
+        german_row = ancestor(german_cell, "tr") if german_cell is not None else None
+        english_row = ancestor(english_cell, "tr") if english_cell is not None else None
+        outer_table = ancestor(german_row, "tbl") if german_row is not None else None
+        if any(
+            element is None
+            for element in (german_cell, english_cell, german_row, english_row, outer_table)
+        ):
+            raise RuntimeError(f"Could not locate bilingual table structure in {path}")
+        if outer_table is not ancestor(english_row, "tbl"):
+            raise RuntimeError(f"Nested tables do not share an outer table in {path}")
+
+        target_cells = german_row.findall(qn("tc"))
+        english_cells = english_row.findall(qn("tc"))
+        if len(target_cells) != 2 or not english_cells:
+            raise RuntimeError(f"Unexpected bilingual row geometry in {path}")
+        if german_cell is not target_cells[1] or english_cell is not english_cells[0]:
+            raise RuntimeError(f"LibreOffice table import shape changed in {path}")
+
+        german_lines = table_lines(german_table, english=False)
+        english_lines = table_lines(english_table, english=True)
+        german_cell.remove(german_table)
+        english_cell.remove(english_table)
+        for paragraph in german_lines:
+            target_cells[0].append(paragraph)
+        for paragraph in english_lines:
+            target_cells[1].append(paragraph)
+        outer_table.remove(english_row)
+
+    document_xml = ET.tostring(root, encoding="utf-8", xml_declaration=True)
+    temporary = path.with_suffix(".tmp.docx")
+    with ZipFile(path) as source, ZipFile(temporary, "w", ZIP_DEFLATED) as target:
+        for item in source.infolist():
+            data = document_xml if item.filename == "word/document.xml" else source.read(item.filename)
+            target.writestr(item, data)
+    temporary.replace(path)
+
+
 def build_contract(cfg: ContractConfig, render: bool) -> None:
     source = cfg.src.read_text(encoding="utf-8")
     blocks = inject_language_notice(split_blocks(source), cfg)
@@ -520,6 +649,7 @@ def build_contract(cfg: ContractConfig, render: bool) -> None:
             stale.unlink(missing_ok=True)
         subprocess.run(["soffice", "--headless", "--convert-to", "odt", "--outdir", str(out_dir), str(out_html)], check=True)
         subprocess.run(["soffice", "--headless", "--convert-to", "docx", "--outdir", str(out_dir), str(tmp_odt)], check=True)
+        repair_bilingual_docx_tables(out_docx)
         tmp_odt.unlink(missing_ok=True)
         print(f"built {out_html.relative_to(ROOT)}, {out_pdf.relative_to(ROOT)}, {out_docx.relative_to(ROOT)}")
     else:
@@ -529,7 +659,17 @@ def build_contract(cfg: ContractConfig, render: bool) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--no-render", action="store_true", help="Only generate bilingual HTML.")
+    parser.add_argument(
+        "--repair-docx",
+        type=Path,
+        help="Repair an already generated bilingual DOCX without running translation.",
+    )
     args = parser.parse_args()
+
+    if args.repair_docx is not None:
+        repair_bilingual_docx_tables(args.repair_docx.resolve())
+        print(f"repaired {args.repair_docx}")
+        return
 
     for tool in ["pandoc"]:
         if shutil.which(tool) is None:

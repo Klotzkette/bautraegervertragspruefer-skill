@@ -46,7 +46,7 @@ Die Käuferin erklärte, ihr sei der beabsichtigte Text dieser Urkunde einschlie
 
 Die Erschienenen baten sodann um die Beurkundung des nachstehenden
 
-# Wohnungsbauträgervertrags mit Auflassung
+# Wohnungsbauträgervertrag mit Auflassung
 
 ## 0 Präambel, Projekt und Vertragsunterlagen
 

@@ -1,10 +1,11 @@
 ---
 name: mini-bautraegervertrag-pruefer
 description: "Kurzfassung für kleine KI-Kontexte: Bauträgervertrag-Prüfung nach MaBV, BGB, AGB, WEG und Technik; geführt oder als Vollpaket."
-version: "3.2.6-mini"
+metadata:
+  version: "3.2.7-mini"
 ---
 
-# Mini-Bauträgervertrag-Prüfer 3.2.6
+# Mini-Bauträgervertrag-Prüfer 3.2.7
 
 Experimentell, keine Rechtsberatung/Gewähr.
 
@@ -38,11 +39,11 @@ Rspr. nur aus Gerichtsseiten, Bundesportal, `dejure.org`, `openjur.de`; Normen a
 3. Klauseln satzweise: 🔴 akut, 🟠 verhandlungs-/aufklärungsbedürftig, 🟢 tragfähig; immer Norm, Beweislast, Problem, Gegeneinwand, Antwort.
 4. Bausoll/Technik: Rangfolge Vertrag/Pläne/Baubeschreibung, Wohnfläche, SE/GE, Außenanlagen, Bemusterung, Energie, Schall, Brand, Abdichtung, Haustechnik, Baugrund, Baugrube, Wasser, Statik, Feuchte, GEG/KfW/BEG, HOAI-LPH 8, Objektüberwachung, Privatsachverständige.
 5. WEG/Wirtschaft: TE/GO, Sondernutzung, Änderungsvollmachten, Kosten, Erstverwalter, Gemeinschaftsmängel, Preis, Nebenkosten, Preisanpassung, Finanzierung, Bereitstellungszinsen, Nutzung/Vermietung, Insolvenz, Mehrkosten, Sicherheitenlücken.
-6. Bug-Hunt: keine DIN-Vermutung; Bezugsfertigkeit ≠ vollständige Fertigstellung; kein § 650l-Widerruf bei Beurkundung; keine § 650f-Sicherheit vom Verbraucher; § 309 Nr. 12; Schlussrate nicht vor Außenanlagen; keine pauschale höhere Gewalt.
+6. Bug-Hunt: keine DIN-Vermutung; Bezugsfertigkeit ≠ vollständige Fertigstellung; kein § 650l-Widerruf bei Beurkundung; keine § 650f-Sicherheit vom Verbraucher; kein § 650v Abs. 4; § 309 Nr. 12; Schlussrate nicht vor Außenanlagen; keine pauschale höhere Gewalt.
 
 ## Kernprüfung
 
-**MaBV/Zahlung:** § 3 MaBV: echte Bautenstände, keine bloße Mitteilung. Schlussrate: BGH VII ZR 88/25 zuerst vertraglich auslegen; KG 21 U 44/22 nur Instanzlinie bei Abnahmereife ohne Protokollbindung. Bezugsfertigkeit ≠ Fertigstellung; KG 21 U 156/24: wesentlicher optischer Mangel kann Bezugsfertigkeit sperren. Flexibler Ratenplan nicht automatisch 🔴 (KG 21 U 73/24), aber Abrufe/max. 7 Raten/§650m prüfen.
+**MaBV/Zahlung:** § 3 MaBV: echte Bautenstände, keine bloße Mitteilung. Schlussrate: BGH VII ZR 88/25 zuerst vertraglich auslegen; KG 21 U 44/22 nur Instanzlinie bei Abnahmereife ohne Protokollbindung. Bezugsfertigkeit ≠ Fertigstellung; KG 21 U 156/24: wesentlicher optischer Mangel kann Bezugsfertigkeit sperren. Flexibler Ratenplan nicht automatisch 🔴 (KG 21 U 73/24), aber Abrufe/max. 7 Raten/§650m prüfen. Bauträgervergütung: 10 Jahre (§§ 196, 200; BGH VII ZR 231/22), nicht mit Erwerber-Mängelverjährung vermischen.
 
 **Sicherheiten:** Vormerkung schützt Eigentum, nicht Abschläge/Mängelschäden. § 650m Abs. 2: 5-%-Sicherheit klar und zwingend; unklarer Einbehalt/achte Rate angreifen (OLG Karlsruhe 19 U 128/24 live prüfen). Freistellung bei steckengebliebenem Bau prüfen.
 

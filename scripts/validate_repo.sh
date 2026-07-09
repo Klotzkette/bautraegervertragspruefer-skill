@@ -82,8 +82,8 @@ for path in \
   require_file "$path"
 done
 
-skill_version="$(awk -F'"' '/^version:/{print $2; exit}' skill/SKILL.md)"
-mini_version="$(awk -F'"' '/^version:/{print $2; exit}' skill/MINI_SKILL.md)"
+skill_version="$(awk -F'"' '/^[[:space:]]+version:/{print $2; exit}' skill/SKILL.md)"
+mini_version="$(awk -F'"' '/^[[:space:]]+version:/{print $2; exit}' skill/MINI_SKILL.md)"
 
 [[ -n "$skill_version" ]] || fail "skill version not found"
 [[ "$mini_version" == "${skill_version}-mini" ]] || fail "mini version mismatch: $mini_version"
@@ -93,19 +93,21 @@ grep -Fq "# Mini-Bauträgervertrag-Prüfer ${skill_version}" skill/MINI_SKILL.md
 
 cmp -s skill/SKILL.md docs/SKILL.md || fail "skill/SKILL.md and docs/SKILL.md differ"
 cmp -s skill/MINI_SKILL.md docs/MINI_SKILL.md || fail "skill/MINI_SKILL.md and docs/MINI_SKILL.md differ"
-cmp -s vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html || fail "Hohenwartshofen bilingual HTML docs copy differs"
-cmp -s vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.pdf docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.pdf || fail "Hohenwartshofen bilingual PDF docs copy differs"
-cmp -s vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.docx docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.docx || fail "Hohenwartshofen bilingual DOCX docs copy differs"
-cmp -s vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html || fail "Marewald bilingual HTML docs copy differs"
-cmp -s vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf || fail "Marewald bilingual PDF docs copy differs"
-cmp -s vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx || fail "Marewald bilingual DOCX docs copy differs"
-cmp -s vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md || fail "Lindenhain Markdown docs copy differs"
-cmp -s vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf || fail "Lindenhain PDF docs copy differs"
-cmp -s vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.docx docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.docx || fail "Lindenhain DOCX docs copy differs"
-cmp -s vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip || fail "Lindenhain ZIP docs copy differs"
-cmp -s vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html || fail "Lindenhain bilingual HTML docs copy differs"
-cmp -s vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.pdf docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.pdf || fail "Lindenhain bilingual PDF docs copy differs"
-cmp -s vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx || fail "Lindenhain bilingual DOCX docs copy differs"
+
+contract_dirs=(
+  bautraegervertrag
+  bautraegervertrag-marewald
+  bautraegervertrag-lindenhain
+)
+
+for contract_dir in "${contract_dirs[@]}"; do
+  stem="$contract_dir"
+  for suffix in .md .pdf .docx -de-en.html -de-en.pdf -de-en.docx -einzel-pdfs.zip; do
+    source="vertragsdokumente/${contract_dir}/${stem}${suffix}"
+    public="docs/vertragsdokumente/${contract_dir}/${stem}${suffix}"
+    cmp -s "$source" "$public" || fail "published contract copy differs: ${public}"
+  done
+done
 
 mini_chars="$(wc -m < skill/MINI_SKILL.md | tr -d ' ')"
 [[ "$mini_chars" -le 7500 ]] || fail "MINI_SKILL.md exceeds 7500 chars: $mini_chars"
@@ -119,6 +121,16 @@ for mini_required in \
   "Mandantengutachten" \
   "Aufforderungsschreiben an Bauträger"; do
   grep -Fq "$mini_required" skill/MINI_SKILL.md || fail "MINI_SKILL.md missing required workflow/output phrase: $mini_required"
+done
+
+for full_required in \
+  "Startsignal: Ich beginne jetzt" \
+  "Vollpaket-Abschlussgate" \
+  "Dokument 1 — Übersendungsschreiben" \
+  "Dokument 2 — Mandantengutachten" \
+  "Dokument 3 — Aufforderungsschreiben" \
+  "VII ZR 231/22"; do
+  grep -Fq "$full_required" skill/SKILL.md || fail "SKILL.md missing required workflow/legal phrase: $full_required"
 done
 
 grep -Fq "Version ${skill_version}" README.md || fail "README does not mention current version"
@@ -151,6 +163,13 @@ if repo_rg -n 'Y-300-Z-BECKRS|BeckRS-B|https?://[^ )"]*(juris|beck)' README.md s
   fail "forbidden direct source artifact found"
 fi
 
+repo_rg -n '§ 650v Abs\. 4 BGB' README.md skill docs vertragsdokumente 2>/dev/null \
+  | grep -Ev 'Keinen|kein ' >/tmp/btv_invalid_norms.txt || true
+if [[ -s /tmp/btv_invalid_norms.txt ]]; then
+  cat /tmp/btv_invalid_norms.txt >&2
+  fail "nonexistent statutory subsection found"
+fi
+
 contract_sources=(
   vertragsdokumente/bautraegervertrag/bautraegervertrag.md
   vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md
@@ -165,6 +184,10 @@ if repo_rg -n 'aus der Hölle|Horror|schrecklich|Schulungsfall|Lösungsschlüsse
   fail "contract document contains meta/test tell"
 fi
 
+for source in "${contract_sources[@]:0:3}"; do
+  grep -Fq '# Wohnungsbauträgervertrag mit Auflassung' "$source" || fail "$source missing exact deed title"
+done
+
 bilingual_sources=(
   vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html
   vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html
@@ -178,9 +201,20 @@ for html in "${bilingual_sources[@]}"; do
   grep -Fq "Deutsch-englische Lesefassung" "$html" || fail "$html missing bilingual notice"
   grep -Fq "ausschließlich die deutsche Sprachfassung" "$html" || fail "$html missing notarisation-language clause"
   grep -Fq "the German language version shall be authoritative" "$html" || fail "$html missing English precedence clause"
-  if grep -Eq 'Bound|\*\*|subscription skill|ready-to-cover|statement of insolvency|Published today|Business resident' "$html"; then
+  if grep -Eq 'Bound|\*\*|subscription skill|ready-to-cover|statement of insolvency|Published today|Business resident|Housing housing|contract with disposition|Wohnungsbauträgervertrags' "$html"; then
     fail "$html contains visible translation artifact"
   fi
+done
+
+for docx in \
+  vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.docx \
+  vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx \
+  vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx; do
+  document_xml="$(unzip -p "$docx" word/document.xml)"
+  grep -Fq 'Wohnungsbauträgervertrag mit Auflassung' <<<"$document_xml" || fail "$docx missing corrected German deed title"
+  grep -Fq 'Residential Property Development Contract with Conveyance' <<<"$document_xml" || fail "$docx missing corrected English deed title"
+  table_count="$(grep -o '<w:tbl>' <<<"$document_xml" | wc -l | tr -d ' ' || true)"
+  [[ "$table_count" -eq 1 ]] || fail "$docx contains unflattened nested tables: $table_count"
 done
 
 for zip in \
