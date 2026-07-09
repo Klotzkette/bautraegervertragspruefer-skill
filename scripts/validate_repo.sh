@@ -119,16 +119,22 @@ for mini_required in \
   "Nächste Weiche" \
   "Käufer-/Mandantenschreiben" \
   "Mandantengutachten" \
-  "Aufforderungsschreiben an Bauträger"; do
+  "Aufforderungsschreiben an Bauträger" \
+  "Keine künstliche Forderung"; do
   grep -Fq "$mini_required" skill/MINI_SKILL.md || fail "MINI_SKILL.md missing required workflow/output phrase: $mini_required"
 done
 
 for full_required in \
+  "## Ausführungskern" \
+  "Ein Befundregister ist die einzige Tatsachenbasis" \
+  "Phasengate vor jeder Handlungsempfehlung" \
+  "Positivkontrolle" \
   "Startsignal: Ich beginne jetzt" \
   "Vollpaket-Abschlussgate" \
   "Dokument 1 — Übersendungsschreiben" \
   "Dokument 2 — Mandantengutachten" \
   "Dokument 3 — Aufforderungsschreiben" \
+  "formbedürftigem Nachtrag" \
   "VII ZR 231/22"; do
   grep -Fq "$full_required" skill/SKILL.md || fail "SKILL.md missing required workflow/legal phrase: $full_required"
 done

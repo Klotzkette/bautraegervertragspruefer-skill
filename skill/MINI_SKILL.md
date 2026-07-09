@@ -2,10 +2,10 @@
 name: mini-bautraegervertrag-pruefer
 description: "Kurzfassung für kleine KI-Kontexte: Bauträgervertrag-Prüfung nach MaBV, BGB, AGB, WEG und Technik; geführt oder als Vollpaket."
 metadata:
-  version: "3.2.7-mini"
+  version: "3.2.8-mini"
 ---
 
-# Mini-Bauträgervertrag-Prüfer 3.2.7
+# Mini-Bauträgervertrag-Prüfer 3.2.8
 
 Experimentell, keine Rechtsberatung/Gewähr.
 
@@ -70,4 +70,4 @@ Geführt: Kurzbild in 3-6 Sätzen, Tabelle der Streitstellen, textuelle Einordnu
 Vollpaket:
 1. **Käufer-/Mandantenschreiben:** Brieftext, wichtigste 🔴/🟠 Punkte, Sofortschritte, Hinweis auf Gutachten.
 2. **Mandantengutachten:** ausführlich, nicht nur Tabelle. Je Kernbefund: Originalstelle, Wirkung, Norm/Quelle, Subsumtion, Beweislast, Gegenargument, Antwort, Empfehlung, Änderungsziel.
-3. **Aufforderungsschreiben an Bauträger:** bestimmt, verhandlungsfähig. Notar nur cc/gesondert bei Beurkundung/Vollzug. Pro Klausel: Problem, Norm/Argument, Ersatzfassung/Streichung, Frist.
+3. **Aufforderungsschreiben an Bauträger:** bestimmt, phasengerecht. Vor Beurkundung Änderung; danach Nichtanwendung/Abhilfe oder formgerechter Nachtrag. Keine künstliche Forderung. Pro Klausel: Problem, Norm, Lösung, Frist. Notar nur bei Urkunde/Vollzug.
