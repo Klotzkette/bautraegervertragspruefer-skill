@@ -139,7 +139,19 @@ for full_required in \
   "Dokument 2 — Mandantengutachten" \
   "Dokument 3 — Aufforderungsschreiben" \
   "formbedürftigem Nachtrag" \
-  "VII ZR 231/22"; do
+  "VII ZR 231/22" \
+  "VII ZR 167/11" \
+  "VII ZR 45/06" \
+  "VII ZR 65/14" \
+  "VII ZR 94/22" \
+  "VII ZR 25/23" \
+  "V ZR 39/24" \
+  "V ZR 144/07" \
+  "V ZR 208/14" \
+  "XI ZR 145/02" \
+  "III ZR 136/07" \
+  "3 U 171/24" \
+  "§ 13c BeurkG"; do
   grep -Fq "$full_required" skill/SKILL.md || fail "SKILL.md missing required workflow/legal phrase: $full_required"
 done
 
@@ -211,6 +223,34 @@ if [[ -s /tmp/btv_invalid_norms.txt ]]; then
   cat /tmp/btv_invalid_norms.txt >&2
   fail "nonexistent statutory subsection found"
 fi
+
+for forbidden_legal_pattern in \
+  'Vermischungsverbot' \
+  'keine Vermischung mit § 3-MaBV' \
+  'Bezugsurkunden \(§ 13a BeurkG\)' \
+  'gemäß § 13a BeurkG' \
+  'nach § 13a BeurkG' \
+  '§ 817 Satz 1 i\. V\. m\. § 818 Abs\. 2' \
+  'Mängelrügen wirken.*verjährungshemmend' \
+  'keine DIN-Vermutung' \
+  'Einzelgewerkvergabe.*offen' \
+  'unter allen Umständen ausgelegt' \
+  'Wohnflächentoleranz über 2' \
+  'Preisanpassung nicht ohne Lösungsrecht akzeptieren'; do
+  if repo_rg -n "$forbidden_legal_pattern" README.md skill docs vertragsdokumente \
+      --glob '!*.pdf' --glob '!*.docx' --glob '!*.zip' >/tmp/btv_legal_regressions.txt 2>/dev/null; then
+    cat /tmp/btv_legal_regressions.txt >&2
+    fail "known legal regression found: ${forbidden_legal_pattern}"
+  fi
+done
+
+for required_legal_phrase in \
+  'Sicherungsaustausch:' \
+  '5 % der nach der ersten Stufe verbleibenden Vertragssumme' \
+  'Rüge/Beschluss hemmt nicht ohne §§203/204'; do
+  grep -Fq "$required_legal_phrase" skill/SKILL.md skill/MINI_SKILL.md \
+    || fail "corrected legal safeguard missing: ${required_legal_phrase}"
+done
 
 contract_sources=(
   vertragsdokumente/bautraegervertrag/bautraegervertrag.md

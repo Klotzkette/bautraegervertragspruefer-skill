@@ -64,7 +64,7 @@ Geringfügige Änderungen der Planung bleiben vorbehalten, soweit sie durch beh�
 
 **0.2** Umfang und Beschränkungen des Wohnungs- und Teileigentums, die Rechtsbeziehungen der Eigentümer zueinander und die Verwaltung des gemeinschaftlichen Eigentums werden geregelt in der Teilungserklärung einschließlich Gemeinschaftsordnung vom 21. Oktober 2025 zur UR-Nr. 1502/2025 der amtierenden Notarin, in der Fassung des 1. Nachtrags vom 09. Februar 2026 zur UR-Nr. 188/2026 — nachfolgend auch „Teilungserklärung" und/oder „Bezugsurkunde 1" genannt.
 
-**0.3** Die Baubeschreibung in der Fassung Mai 2026, Version 3.0 (Anlage Baubeschreibung zu dieser Urkunde) ist Gegenstand der Beurkundung und Bestandteil der vom Verkäufer geschuldeten Leistung. Auf das Verlesen wird nach § 13a BeurkG bzw. durch beigefügte Anlage nicht verzichtet; die Baubeschreibung wurde mitverlesen bzw. als Anlage mitbeurkundet. Visualisierungen, Exposés und die Musterwohnung sind nicht Vertragsbestandteil.
+**0.3** Die Baubeschreibung in der Fassung Mai 2026, Version 3.0 (Anlage Baubeschreibung zu dieser Urkunde) ist Gegenstand der Beurkundung und Bestandteil der vom Verkäufer geschuldeten Leistung. Auf das Verlesen wird nicht verzichtet; die Baubeschreibung wurde mitverlesen und als Anlage mitbeurkundet. Visualisierungen, Exposés und die Musterwohnung sind nicht Vertragsbestandteil.
 
 **0.4** Die Abgeschlossenheitsbescheinigung liegt vor. Die Baugenehmigung für die Häuser A bis D vom 14. April 2026 (Az. HH-Wb-2026/0471) liegt vor und wurde der Notarin nachgewiesen.
 

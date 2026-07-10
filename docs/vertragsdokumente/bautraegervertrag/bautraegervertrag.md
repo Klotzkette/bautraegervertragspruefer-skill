@@ -327,7 +327,7 @@ Verkäufer und Käufer sind über den Eigentumsübergang einig. Sie bewilligen u
 Der Notar hat die Beteiligten belehrt über:
 
 - den Inhalt und die Bedeutung dieses Vertrages,
-- die Bedeutung der Bezugnahme nach § 13a BeurkG,
+- die Bedeutung der Bezugnahme nach § 13c BeurkG,
 - die Eigentumsübertragung erst mit Eintragung im Grundbuch,
 - die Bedeutung der Auflassungsvormerkung,
 - die Bedeutung der Belastungsvollmacht,
@@ -340,7 +340,7 @@ Der Notar hat darauf hingewiesen, dass er als unparteiischer Amtsträger keine w
 
 # Bezugsurkunden, Anlagen und Vollzugshinweise
 
-**Bezugsurkunde 1** — Teilungserklärung einschließlich Gemeinschaftsordnung vom 18. Juli 2024, UR-Nr. 612/2024 W des Notars Egmont Wachtelborn, Berlin, in der Fassung des 1. bis 7. Nachtrags (UR-Nrn. 731/2024 W, 942/2024 W, 28/2025 W, 412/2025 W, 698/2025 W, 1108/2025 W und 187/2026 W). Auf das Verlesen wird gemäß § 13a BeurkG verzichtet (siehe Unterschriftenvermerk).
+**Bezugsurkunde 1** — Teilungserklärung einschließlich Gemeinschaftsordnung vom 18. Juli 2024, UR-Nr. 612/2024 W des Notars Egmont Wachtelborn, Berlin, in der Fassung des 1. bis 7. Nachtrags (UR-Nrn. 731/2024 W, 942/2024 W, 28/2025 W, 412/2025 W, 698/2025 W, 1108/2025 W und 187/2026 W). Auf das Verlesen wird gemäß § 13c BeurkG verzichtet (siehe Unterschriftenvermerk).
 
 **Anhang a** — beglaubigte Fotokopie der Vollmacht der Erschienenen zu 1. vom 22.10.2025, UR-Nr. 1402/2025 W des Notars Egmont Wachtelborn, Berlin.
 
