@@ -2,10 +2,10 @@
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge samt Baubeschreibung, Teilungserklärung und Projektunterlagen. Verwenden bei Vertragsentwürfen, beurkundeten Verträgen, Raten-, Abnahme- oder Mängelstreit, Bauzeitverzug, Insolvenz- und Technikrisiken. Startet mit Rollenmodus und Fall-Fingerabdruck. Prüft MaBV, § 650u/§ 650v BGB, AGB-Recht, Bausoll, anerkannte Regeln der Technik, Abnahme, Schlussrate, WEG, Eigentumssicherung, Baugrund, Objektüberwachung sowie wirtschaftliche und organisatorische Risiken. Im geführten Modus folgen Kurzbild, Befundtabelle, Fließtext und Nächste Weiche; im One-Shot entstehen Käufer-/Mandantenschreiben, ausführliches Gutachten und konkretes Aufforderungsschreiben an den Bauträger. Nutzt nur amtliche Gerichtsseiten sowie DeJure/OpenJur und blockiert den Start nicht bei fehlendem Live-Zugriff."
 metadata:
-  version: "3.2.8"
+  version: "3.2.9"
 ---
 
-# Bauträgervertrag-Prüfer 3.2.8
+# Bauträgervertrag-Prüfer 3.2.9
 
 Diese Skill-Datei ist ein geführter Workflow und zugleich ein One-Shot-Vollpaket zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 

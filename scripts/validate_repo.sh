@@ -37,6 +37,10 @@ for path in \
   docs/MINI_SKILL.md \
   docs/index.html \
   scripts/build_bilingual_contracts.py \
+  vertragsdokumente/README.md \
+  vertragsdokumente/bautraegervertrag/README.md \
+  vertragsdokumente/bautraegervertrag-marewald/README.md \
+  vertragsdokumente/bautraegervertrag-lindenhain/README.md \
   vertragsdokumente/bautraegervertrag/bautraegervertrag.md \
   vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf \
   vertragsdokumente/bautraegervertrag/bautraegervertrag.docx \
@@ -145,21 +149,53 @@ grep -Fq "releases/latest/download/MINI_SKILL.md" README.md || fail "README MINI
 grep -Fq "Bauträgervertrag-Prüfer Skill ${skill_version}" docs/index.html || fail "docs/index.html title/header version stale"
 grep -Fq "Stand ${skill_version}" docs/index.html || fail "docs/index.html stand/version stale"
 
-for asset in \
-  bautraegervertrag-de-en.html \
-  bautraegervertrag-de-en.pdf \
-  bautraegervertrag-de-en.docx \
-  bautraegervertrag-marewald-de-en.html \
-  bautraegervertrag-marewald-de-en.pdf \
-  bautraegervertrag-marewald-de-en.docx \
-  bautraegervertrag-lindenhain-de-en.html \
-  bautraegervertrag-lindenhain-de-en.pdf \
-  bautraegervertrag-lindenhain-de-en.docx; do
+release_assets=(
+  SKILL.md
+  MINI_SKILL.md
+  bautraegervertrag.md
+  bautraegervertrag.pdf
+  bautraegervertrag.docx
+  bautraegervertrag-einzel-pdfs.zip
+  bautraegervertrag-de-en.html
+  bautraegervertrag-de-en.pdf
+  bautraegervertrag-de-en.docx
+  bautraegervertrag-marewald.md
+  bautraegervertrag-marewald.pdf
+  bautraegervertrag-marewald.docx
+  bautraegervertrag-marewald-einzel-pdfs.zip
+  bautraegervertrag-marewald-de-en.html
+  bautraegervertrag-marewald-de-en.pdf
+  bautraegervertrag-marewald-de-en.docx
+  bautraegervertrag-lindenhain.md
+  bautraegervertrag-lindenhain.pdf
+  bautraegervertrag-lindenhain.docx
+  bautraegervertrag-lindenhain-einzel-pdfs.zip
+  bautraegervertrag-lindenhain-de-en.html
+  bautraegervertrag-lindenhain-de-en.pdf
+  bautraegervertrag-lindenhain-de-en.docx
+)
+
+for asset in "${release_assets[@]}"; do
   grep -Fq "releases/latest/download/${asset}" README.md || fail "README missing release download link for ${asset}"
   grep -Fq "releases/latest/download/${asset}" docs/index.html || fail "docs/index.html missing release download link for ${asset}"
 done
 
-versioned_downloads="$(grep -Eo 'releases/download/v[0-9]+\.[0-9]+\.[0-9]+' README.md | sort -u || true)"
+for contract_dir in "${contract_dirs[@]}"; do
+  contract_readme="vertragsdokumente/${contract_dir}/README.md"
+  for suffix in .md .pdf .docx -einzel-pdfs.zip -de-en.html -de-en.pdf -de-en.docx; do
+    grep -Fq "releases/latest/download/${contract_dir}${suffix}" "$contract_readme" \
+      || fail "$contract_readme missing release download link for ${contract_dir}${suffix}"
+  done
+  grep -Fq "**Navigation:**" "$contract_readme" || fail "$contract_readme missing navigation"
+done
+
+for menu_id in skills start workflow akten downloads prompt qualitaet; do
+  grep -Fq "id=\"${menu_id}\"" docs/index.html || fail "docs/index.html missing navigation target: ${menu_id}"
+done
+grep -Fq "**Menü:**" README.md || fail "README navigation menu missing"
+grep -Fq "**Navigation:**" vertragsdokumente/README.md || fail "contract hub navigation missing"
+
+versioned_downloads="$(grep -Eo 'releases/download/v[0-9]+\.[0-9]+\.[0-9]+' README.md docs/index.html vertragsdokumente/README.md vertragsdokumente/*/README.md | sort -u || true)"
 if [[ -n "$versioned_downloads" ]]; then
   fail "README contains version-pinned release download links: ${versioned_downloads}"
 fi
