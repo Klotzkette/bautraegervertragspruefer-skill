@@ -1,6 +1,6 @@
 # Bauträgervertrag — Akte Hohenwartshofen
 
-**Navigation:** [Haupt-README](../../README.md) · [Alle Vertragsakten](../README.md) · [Marewald](../bautraegervertrag-marewald/README.md) · [Lindenhain](../bautraegervertrag-lindenhain/README.md) · [Downloadseite](https://klotzkette.github.io/bautraegervertragspruefer-skill/)
+**Navigation:** [Haupt-README](../../README.md) · [Alle Vertragsakten](../README.md) · [Downloads](#downloads-auf-einen-blick) · [Verwendung](#verwendung-mit-dem-skill) · [Neu erzeugen](#neu-erzeugen) · [Marewald](../bautraegervertrag-marewald/README.md) · [Lindenhain](../bautraegervertrag-lindenhain/README.md) · [Downloadseite](https://klotzkette.github.io/bautraegervertragspruefer-skill/#akten) · [neueste Veröffentlichung](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest)
 
 > **Charakter dieser Akte:** bewusst fehlerhaft. Der Vertrag ist überladen mit unwirksamen und teils nichtigen Klauseln; an ihm lässt sich zeigen, wie viele rote Ampeln der Skill findet. Das wirksame Gegenstück ist die Akte Marewald (`../bautraegervertrag-marewald/`). Übersicht: [`../README.md`](../README.md).
 
@@ -33,16 +33,20 @@ Markdown, Word und PDF enthalten denselben Vertragsstoff einschließlich der Bau
 
 ## Neu erzeugen
 
-Nach Änderungen an `bautraegervertrag.md` werden Word-Fassung, Gesamt-PDF und Akten-ZIP so erzeugt:
+Nach Änderungen an [`bautraegervertrag.md`](bautraegervertrag.md) werden Word-Fassung, Gesamt-PDF und Akten-ZIP mit [`build.sh`](build.sh) so erzeugt:
 
 ```bash
 ./build.sh
 ```
 
-Voraussetzungen: `pandoc` und `weasyprint`. Layout und Seitenumbrüche steuern `build/style.css` und `build/pagebreak.lua`.
+Voraussetzungen: `pandoc` und `weasyprint`. Layout und Seitenumbrüche steuern [`build/style.css`](build/style.css) und [`build/pagebreak.lua`](build/pagebreak.lua).
 
-Die deutsch-englische Lesefassung wird vom Repository-Generator erzeugt:
+Die deutsch-englische Lesefassung wird vom [`Repository-Generator`](../../scripts/build_bilingual_contracts.py) erzeugt:
 
 ```bash
 ../../scripts/build_bilingual_contracts.py
 ```
+
+Danach prüft [`check_contract_builds.py`](../../scripts/check_contract_builds.py) die Dateien gegen das [`Artefaktmanifest`](../artifact-manifest.sha256).
+
+**Weiter:** [Alle Vertragsakten](../README.md) · [Haupt-README](../../README.md) · [Downloadseite](https://klotzkette.github.io/bautraegervertragspruefer-skill/#akten) · [neueste Veröffentlichung](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest)

@@ -207,6 +207,33 @@ grep -Fq "releases/latest/download/MINI_SKILL.md" README.md || fail "README MINI
 grep -Fq "Bauträgervertrag-Prüfer Skill ${skill_version}" docs/index.html || fail "docs/index.html title/header version stale"
 grep -Fq "Stand ${skill_version}" docs/index.html || fail "docs/index.html stand/version stale"
 
+catalog_paths=(
+  skill/SKILL.md
+  skill/MINI_SKILL.md
+  vertragsdokumente/README.md
+  vertragsdokumente/bautraegervertrag/README.md
+  vertragsdokumente/bautraegervertrag-marewald/README.md
+  vertragsdokumente/bautraegervertrag-lindenhain/README.md
+  scripts/build_bilingual_contracts.py
+  scripts/check_contract_builds.py
+  scripts/check_legal_anchors.py
+  scripts/check_navigation.py
+  scripts/validate_repo.sh
+  .github/workflows/validate.yml
+  .github/workflows/sync-docs.yml
+  vertragsdokumente/artifact-manifest.sha256
+  docs/index.html
+  docs/SKILL.md
+  docs/MINI_SKILL.md
+  LICENSE-MIT
+  LICENSE-APACHE
+)
+
+for catalog_path in "${catalog_paths[@]}"; do
+  grep -Fq "](${catalog_path})" README.md \
+    || fail "README file catalog omits: ${catalog_path}"
+done
+
 release_assets=(
   SKILL.md
   MINI_SKILL.md
@@ -245,13 +272,43 @@ for contract_dir in "${contract_dirs[@]}"; do
       || fail "$contract_readme missing release download link for ${contract_dir}${suffix}"
   done
   grep -Fq "**Navigation:**" "$contract_readme" || fail "$contract_readme missing navigation"
+  for nav_anchor in \
+    '#downloads-auf-einen-blick' \
+    '#verwendung-mit-dem-skill' \
+    '#neu-erzeugen'; do
+    grep -Fq "(${nav_anchor})" "$contract_readme" \
+      || fail "$contract_readme missing internal navigation link: ${nav_anchor}"
+  done
+  for build_link in \
+    '](build.sh)' \
+    '](build/style.css)' \
+    '](build/pagebreak.lua)' \
+    '](../../scripts/build_bilingual_contracts.py)' \
+    '](../../scripts/check_contract_builds.py)' \
+    '](../artifact-manifest.sha256)'; do
+    grep -Fq "$build_link" "$contract_readme" \
+      || fail "$contract_readme missing build/provenance link: ${build_link}"
+  done
+  grep -Fq "**Weiter:**" "$contract_readme" || fail "$contract_readme missing onward navigation"
 done
 
-for menu_id in skills start workflow akten downloads prompt qualitaet; do
+for menu_id in skills start workflow files akten downloads prompt qualitaet; do
   grep -Fq "id=\"${menu_id}\"" docs/index.html || fail "docs/index.html missing navigation target: ${menu_id}"
+  grep -Fq "href=\"#${menu_id}\"" docs/index.html || fail "docs/index.html menu does not link target: ${menu_id}"
 done
 grep -Fq "**Menü:**" README.md || fail "README navigation menu missing"
 grep -Fq "**Navigation:**" vertragsdokumente/README.md || fail "contract hub navigation missing"
+for hub_anchor in '#downloads-auf-einen-blick' '#so-testet-man-den-skill-damit' '#selbst-neu-erzeugen'; do
+  grep -Fq "(${hub_anchor})" vertragsdokumente/README.md \
+    || fail "contract hub missing internal navigation link: ${hub_anchor}"
+done
+grep -Fq '](../scripts/build_bilingual_contracts.py)' vertragsdokumente/README.md \
+  || fail "contract hub missing bilingual generator link"
+grep -Fq '](../scripts/check_contract_builds.py)' vertragsdokumente/README.md \
+  || fail "contract hub missing provenance checker link"
+grep -Fq '](artifact-manifest.sha256)' vertragsdokumente/README.md \
+  || fail "contract hub missing artifact manifest link"
+grep -Fq "**Weiter:**" vertragsdokumente/README.md || fail "contract hub missing onward navigation"
 
 versioned_downloads="$(grep -Eo 'releases/download/v[0-9]+\.[0-9]+\.[0-9]+' README.md docs/index.html vertragsdokumente/README.md vertragsdokumente/*/README.md | sort -u || true)"
 if [[ -n "$versioned_downloads" ]]; then

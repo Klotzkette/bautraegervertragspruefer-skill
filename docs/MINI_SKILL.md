@@ -2,10 +2,10 @@
 name: mini-bautraegervertrag-pruefer
 description: "Kurze Bauträgerprüfung nach MaBV, BGB, AGB, WEG und Technik; geführt oder als Vollpaket."
 metadata:
-  version: "3.5.1-mini"
+  version: "3.6.0-mini"
 ---
 
-# Mini-Bauträgervertrag-Prüfer 3.5.1
+# Mini-Bauträgervertrag-Prüfer 3.6.0
 
 Experimentell, keine Rechtsberatung/Gewähr.
 

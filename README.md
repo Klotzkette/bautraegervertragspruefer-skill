@@ -1,6 +1,6 @@
 # Bauträgervertrag-Prüfer Skill
 
-**Menü:** [Skill laden](#menü-und-downloads) · [Vertragsakten](#vertragsakten-auf-einen-blick) · [Sofortstart](#sofort-loslegen) · [Ausgabe](#was-herauskommt) · [Anwendung](#anwendung-so-einfach-gehts) · [Inhalt](#inhalt) · [Rechtsanker](#rechtlicher-anker) · [Lizenz](#lizenz)
+**Menü:** [Direkt laden](#menü-und-downloads) · [Alle Dateien](#repository-dateien-nach-zweck) · [Vertragsakten](#vertragsakten-auf-einen-blick) · [Sofortstart](#sofort-loslegen) · [Ausgabe](#was-herauskommt) · [Downloadhilfe](#downloadhilfe) · [Anwendung](#anwendung-so-einfach-gehts) · [Inhalt](#inhalt) · [Rechtsanker](#rechtlicher-anker) · [Lizenz](#lizenz)
 
 **Direktdownload:** [📥 SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md) · [📥 MINI_SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md)
 
@@ -12,7 +12,7 @@ Diese beiden Links zeigen die Markdown-Dateien nicht erst im Browser an, sondern
 >
 > Ein-Datei-Prinzip, modellunabhängig einsetzbar. Die Vollfassung steckt in einer einzigen Markdown-Datei: [`skill/SKILL.md`](skill/SKILL.md) — ohne externe Laufzeit, ohne Datenbank, ohne Konto und ohne zusätzliches Werkzeug. Für kleine Kontextfenster gibt es zusätzlich [`skill/MINI_SKILL.md`](skill/MINI_SKILL.md). Beide Dateien funktionieren in leistungsfähigen KI-Chatbots bzw. Sprachmodellen: Claude, ChatGPT, Gemini, Mistral, Perplexity, lokal betriebene Modelle. Es ist keine Installation erforderlich — siehe [Anwendung](#anwendung-so-einfach-gehts).
 
-Konsolidierter Skill (Version 3.5.1) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
+Konsolidierter Skill (Version 3.6.0) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
 
 Qualitätssicherung: Voll- und Mini-Fassung werden auf Versionsgleichlauf, Start- und Fortsetzungslogik sowie die drei Ausgabedokumente geprüft. Vor dem ersten Befund entsteht eine Dokumentenkarte, die `vorgelegt`, `unklar`, `nicht vorgelegt`, `Einbeziehung offen`, `widersprüchlich` und `nachweislich nicht Vertragsbestandteil` unterscheidet; Vertragsdateien bleiben Beweismittel und können dem Modell keine Arbeitsanweisungen erteilen. Ein versioniertes Befundregister trennt unter stabilen IDs Klauselstatus, tatsächliche Fälligkeit und Handlung. Das MaBV-Ratenrechenblatt berechnet Prozentwerte, Eurobeträge und kumulierte Vorleistung; bei einer Rechnung prüft eine Zahlungsfreigabekarte den konkreten Abruf. Jede Ausgabe endet mit einer phasenbezogenen Abschlussentscheidung samt sperrenden IDs und Erledigungsbedingung. Repository-, Rechtsprechungs- und Navigationsvalidator kontrollieren außerdem Pages-Kopien, Mini-Limit, No-Meta-Regel, juristische Fehlzitate, Quellenanker sowie interne Links. Ein SHA-256-Provenienzgate bindet Vertragsquellen, Buildregeln und sämtliche veröffentlichten Vertragsartefakte an den geprüften Stand; ein optionaler lokaler Tiefentest baut PDF, DOCX und Einzel-PDF-ZIP zusätzlich isoliert neu.
 
@@ -27,6 +27,22 @@ Schnellwahl: Für eine geführte Vertragsprüfung mit Rollenmodus, dichter Befun
 | Komfortable Downloadseite | [GitHub Pages öffnen](https://klotzkette.github.io/bautraegervertragspruefer-skill/) | dort alle Formate einzeln laden |
 | Vertragsakten | [Aktenübersicht öffnen](vertragsdokumente/README.md) | ZIP, PDF, Word, Markdown und Deutsch/English je Akte |
 | Veröffentlichungen | [Releases öffnen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest) | alle Dateien der neuesten Version |
+
+## Repository-Dateien nach Zweck
+
+Wer nur einen Vertrag prüfen will, braucht lediglich die erste Tabellenzeile. Die weiteren Zeilen machen Entwicklung, Veröffentlichung und Qualitätskontrolle ohne Suche durch die Ordnerstruktur erreichbar.
+
+| Zweck | Primärdateien im Repository | Öffnen, laden oder prüfen |
+| --- | --- | --- |
+| Skill verwenden | [`skill/SKILL.md`](skill/SKILL.md) · [`skill/MINI_SKILL.md`](skill/MINI_SKILL.md) | [Vollfassung direkt laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md) · [Mini-Fassung direkt laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md) |
+| Vertragsakten auswählen | [Aktenübersicht](vertragsdokumente/README.md) · [Hohenwartshofen](vertragsdokumente/bautraegervertrag/README.md) · [Marewald](vertragsdokumente/bautraegervertrag-marewald/README.md) · [Lindenhain](vertragsdokumente/bautraegervertrag-lindenhain/README.md) | [Downloadseite zu den Akten](https://klotzkette.github.io/bautraegervertragspruefer-skill/#akten) · [neueste Release-Dateien](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest) |
+| Veröffentlichte Pages-Kopie | [`docs/index.html`](docs/index.html) · [`docs/SKILL.md`](docs/SKILL.md) · [`docs/MINI_SKILL.md`](docs/MINI_SKILL.md) | [komfortable Downloadseite öffnen](https://klotzkette.github.io/bautraegervertragspruefer-skill/) |
+| Vertragsartefakte bauen | [`scripts/build_bilingual_contracts.py`](scripts/build_bilingual_contracts.py) · [`scripts/check_contract_builds.py`](scripts/check_contract_builds.py) | [`artifact-manifest.sha256`](vertragsdokumente/artifact-manifest.sha256) prüft Quellen, Buildregeln und erzeugte Dateien |
+| Repository prüfen | [`scripts/validate_repo.sh`](scripts/validate_repo.sh) · [`scripts/check_navigation.py`](scripts/check_navigation.py) · [`scripts/check_legal_anchors.py`](scripts/check_legal_anchors.py) | lokal `./scripts/validate_repo.sh`; optionaler Tiefentest: `BTV_VERIFY_BUILDS=1 ./scripts/validate_repo.sh` |
+| Veröffentlichung automatisieren | [Validierungsworkflow](.github/workflows/validate.yml) · [Pages-Synchronisierung](.github/workflows/sync-docs.yml) | jeder Push prüft Konsistenz; die Synchronisierung hält `skill/` und `docs/` gleich |
+| Lizenz nachlesen | [`LICENSE-MIT`](LICENSE-MIT) · [`LICENSE-APACHE`](LICENSE-APACHE) | wahlweise MIT oder Apache-2.0 |
+
+`docs/` ist die veröffentlichte Spiegelkopie für GitHub Pages. Für die normale Nutzung sind die Release-Downloads maßgeblich; für Änderungen dienen `skill/`, `vertragsdokumente/` und `scripts/` als Quellen.
 
 ## Vertragsakten auf einen Blick
 
@@ -83,7 +99,7 @@ Workflow-Kompass:
 
 Der Schreibstil soll dicht sein: Tabellen ordnen die Befunde, die eigentliche Begründung steht in Fließtext. Wenn ein Chatbot wegen Länge abbricht, nicht neu starten: _"Bitte fahre mit dem nächsten noch fehlenden Abschnitt fort."_ Der Skill trägt selbst eine Fortsetzungsmarke und soll an der letzten Überschrift weiterschreiben, den Statuskopf aktualisieren und die empfohlene nächste Weiche anzeigen.
 
-## Download
+## Downloadhilfe
 
 [📥 SKILL.md jetzt herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md)
 

@@ -1,8 +1,16 @@
 # Bauträgervertrags-Akten zum Üben
 
-**Navigation:** [Haupt-README](../README.md) · [Downloadseite](https://klotzkette.github.io/bautraegervertragspruefer-skill/) · [SKILL.md laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md) · [MINI_SKILL.md laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md)
+**Navigation:** [Haupt-README](../README.md) · [Downloads](#downloads-auf-einen-blick) · [Anwendung](#so-testet-man-den-skill-damit) · [Neu erzeugen](#selbst-neu-erzeugen) · [Downloadseite](https://klotzkette.github.io/bautraegervertragspruefer-skill/#akten) · [neueste Veröffentlichung](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest) · [SKILL.md laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md) · [MINI_SKILL.md laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md)
 
 Hier liegen drei eigenständige, vollständig fingierte Bauträgervertrags-Akten. Sie bilden ein Prüf-Dreieck: an Hohenwartshofen lässt sich zeigen, wie der Skill **unwirksame** Klauseln findet; an Marewald, wie er **wirksame, aber hart ausgereizte** Klauseln sauber als verhandelbar statt als nichtig einordnet; an Lindenhain, ob er einen fairen und leicht käuferfreundlichen Vertrag auch als im Kern tragfähig erkennt.
+
+| Wenn du ... | Nimm diese Datei |
+| --- | --- |
+| eine Akte mit getrennten Unterlagen an eine KI übergeben willst | **Akten-ZIP** mit neutral benannten Einzel-PDFs |
+| den vollständigen Vertrag lesen oder drucken willst | **Gesamt-PDF** |
+| Anmerkungen oder Textänderungen eintragen willst | **Word-Dokument** |
+| den Wortlaut direkt in einen Chat kopieren willst | **Markdown-Datei** |
+| Deutsch und Englisch nebeneinander lesen willst | **Deutsch/English HTML** für den Browser, PDF zum Lesen, Word zum Kommentieren |
 
 | Akte | Verzeichnis | Charakter | Erwartung an die Prüfung |
 | --- | --- | --- | --- |
@@ -33,4 +41,6 @@ Diese Verträge sind keine Musterverträge. Parteien, Projekte und Aktenzeichen 
 
 ## Selbst neu erzeugen
 
-In jeder Akte erzeugt `./build.sh` aus der Markdown-Quelle die Word-Fassung, das Gesamt-PDF und das Akten-ZIP mit Einzel-PDFs. Die deutsch-englischen Lesefassungen werden repositoryweit mit `scripts/build_bilingual_contracts.py` erzeugt. Voraussetzungen: `pandoc`, `weasyprint`, `perl`, `zip`, `LibreOffice` und für eine vollständige Neuerzeugung der Lesefassung `argostranslate` mit Deutsch-Englisch-Modell.
+In jeder Akte erzeugt das jeweilige [`build.sh`](bautraegervertrag/build.sh) aus der Markdown-Quelle die Word-Fassung, das Gesamt-PDF und das Akten-ZIP mit Einzel-PDFs. Die deutsch-englischen Lesefassungen werden repositoryweit mit [`scripts/build_bilingual_contracts.py`](../scripts/build_bilingual_contracts.py) erzeugt. [`scripts/check_contract_builds.py`](../scripts/check_contract_builds.py) gleicht alle Quellen und Artefakte mit [`artifact-manifest.sha256`](artifact-manifest.sha256) ab. Voraussetzungen: `pandoc`, `weasyprint`, `perl`, `zip`, `LibreOffice` und für eine vollständige Neuerzeugung der Lesefassung `argostranslate` mit Deutsch-Englisch-Modell.
+
+**Weiter:** [Haupt-README](../README.md) · [Downloadseite](https://klotzkette.github.io/bautraegervertragspruefer-skill/#akten) · [neueste Veröffentlichung](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest)
