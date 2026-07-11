@@ -55,6 +55,7 @@ for path in \
   docs/MINI_SKILL.md \
   docs/index.html \
   scripts/build_bilingual_contracts.py \
+  scripts/check_contract_builds.py \
   scripts/check_legal_anchors.py \
   scripts/check_navigation.py \
   vertragsdokumente/README.md \
@@ -108,6 +109,7 @@ done
 
 for executable in \
   scripts/build_bilingual_contracts.py \
+  scripts/check_contract_builds.py \
   scripts/check_legal_anchors.py \
   scripts/check_navigation.py \
   scripts/validate_repo.sh \
@@ -361,5 +363,8 @@ done
 
 python3 scripts/check_legal_anchors.py
 python3 scripts/check_navigation.py
+if [[ "${BTV_VERIFY_BUILDS:-0}" == "1" ]]; then
+  python3 scripts/check_contract_builds.py
+fi
 
 echo "validate_repo: ok (version ${skill_version}, mini ${mini_chars} chars)"
