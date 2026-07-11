@@ -58,6 +58,7 @@ for path in \
   scripts/check_contract_builds.py \
   scripts/check_legal_anchors.py \
   scripts/check_navigation.py \
+  vertragsdokumente/artifact-manifest.sha256 \
   vertragsdokumente/README.md \
   vertragsdokumente/bautraegervertrag/README.md \
   vertragsdokumente/bautraegervertrag-marewald/README.md \
@@ -364,6 +365,8 @@ done
 python3 scripts/check_legal_anchors.py
 python3 scripts/check_navigation.py
 if [[ "${BTV_VERIFY_BUILDS:-0}" == "1" ]]; then
+  python3 scripts/check_contract_builds.py --rebuild
+else
   python3 scripts/check_contract_builds.py
 fi
 

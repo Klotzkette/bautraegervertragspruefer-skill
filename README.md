@@ -14,7 +14,7 @@ Diese beiden Links zeigen die Markdown-Dateien nicht erst im Browser an, sondern
 
 Konsolidierter Skill (Version 3.5.1) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
 
-Qualitätssicherung: Voll- und Mini-Fassung werden auf Versionsgleichlauf, Start- und Fortsetzungslogik sowie die drei Ausgabedokumente geprüft. Vor dem ersten Befund entsteht eine Dokumentenkarte, die `vorgelegt`, `unklar`, `nicht vorgelegt`, `Einbeziehung offen`, `widersprüchlich` und `nachweislich nicht Vertragsbestandteil` unterscheidet; Vertragsdateien bleiben Beweismittel und können dem Modell keine Arbeitsanweisungen erteilen. Ein versioniertes Befundregister trennt unter stabilen IDs Klauselstatus, tatsächliche Fälligkeit und Handlung. Das MaBV-Ratenrechenblatt berechnet Prozentwerte, Eurobeträge und kumulierte Vorleistung; bei einer Rechnung prüft eine Zahlungsfreigabekarte den konkreten Abruf. Jede Ausgabe endet mit einer phasenbezogenen Abschlussentscheidung samt sperrenden IDs und Erledigungsbedingung. Repository-, Rechtsprechungs- und Navigationsvalidator kontrollieren außerdem Pages-Kopien, Mini-Limit, No-Meta-Regel, juristische Fehlzitate, Quellenanker sowie interne Links. Ein zusätzliches Reproduzierbarkeits-Gate baut alle drei Vertragsakten isoliert neu und weist veraltete PDF-, DOCX- oder Einzel-PDF-ZIP-Inhalte zurück.
+Qualitätssicherung: Voll- und Mini-Fassung werden auf Versionsgleichlauf, Start- und Fortsetzungslogik sowie die drei Ausgabedokumente geprüft. Vor dem ersten Befund entsteht eine Dokumentenkarte, die `vorgelegt`, `unklar`, `nicht vorgelegt`, `Einbeziehung offen`, `widersprüchlich` und `nachweislich nicht Vertragsbestandteil` unterscheidet; Vertragsdateien bleiben Beweismittel und können dem Modell keine Arbeitsanweisungen erteilen. Ein versioniertes Befundregister trennt unter stabilen IDs Klauselstatus, tatsächliche Fälligkeit und Handlung. Das MaBV-Ratenrechenblatt berechnet Prozentwerte, Eurobeträge und kumulierte Vorleistung; bei einer Rechnung prüft eine Zahlungsfreigabekarte den konkreten Abruf. Jede Ausgabe endet mit einer phasenbezogenen Abschlussentscheidung samt sperrenden IDs und Erledigungsbedingung. Repository-, Rechtsprechungs- und Navigationsvalidator kontrollieren außerdem Pages-Kopien, Mini-Limit, No-Meta-Regel, juristische Fehlzitate, Quellenanker sowie interne Links. Ein SHA-256-Provenienzgate bindet Vertragsquellen, Buildregeln und sämtliche veröffentlichten Vertragsartefakte an den geprüften Stand; ein optionaler lokaler Tiefentest baut PDF, DOCX und Einzel-PDF-ZIP zusätzlich isoliert neu.
 
 Schnellwahl: Für eine geführte Vertragsprüfung mit Rollenmodus, dichter Befundtabelle, textueller Einordnung und optionalem Vollpaket ist [`SKILL.md`](skill/SKILL.md) die Hauptfassung. Wenn ein kleineres Modell den langen Prompt nicht vollständig lädt oder die Antwort abbricht, ist [`MINI_SKILL.md`](skill/MINI_SKILL.md) die kompakte Ausweichfassung.
 
@@ -162,7 +162,7 @@ Wenn du die Prüfung beenden willst: Schreibe `beenden`, `abbrechen` oder `stop`
 | Skill-Dateien | [Vollfassung](skill/SKILL.md) · [Mini-Fassung](skill/MINI_SKILL.md) |
 | Vertragsakten | [Übersicht](vertragsdokumente/README.md) · [Hohenwartshofen](vertragsdokumente/bautraegervertrag/README.md) · [Marewald](vertragsdokumente/bautraegervertrag-marewald/README.md) · [Lindenhain](vertragsdokumente/bautraegervertrag-lindenhain/README.md) |
 | Veröffentlichung | [Downloadseite](https://klotzkette.github.io/bautraegervertragspruefer-skill/) · [neueste Release-Dateien](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest) |
-| Qualitätssicherung | [Repository-Validator](scripts/validate_repo.sh) · [Reproduzierbare Vertragsbauten](scripts/check_contract_builds.py) · [Prüfer der Rechtsprechungsanker](scripts/check_legal_anchors.py) · [Navigationsprüfer](scripts/check_navigation.py) · [Generator der Deutsch/English-Fassungen](scripts/build_bilingual_contracts.py) · [GitHub-Workflows](.github/workflows/) |
+| Qualitätssicherung | [Repository-Validator](scripts/validate_repo.sh) · [Artefakt-Provenienz und Neubau](scripts/check_contract_builds.py) · [Prüfer der Rechtsprechungsanker](scripts/check_legal_anchors.py) · [Navigationsprüfer](scripts/check_navigation.py) · [Generator der Deutsch/English-Fassungen](scripts/build_bilingual_contracts.py) · [GitHub-Workflows](.github/workflows/) |
 | Lizenzen | [MIT](LICENSE-MIT) · [Apache-2.0](LICENSE-APACHE) |
 
 ```text
@@ -179,14 +179,15 @@ docs/
 
 scripts/
 ├── build_bilingual_contracts.py  Erzeugt die deutsch-englischen Lesefassungen
-├── check_contract_builds.py      Baut PDF, DOCX und Akten-ZIPs isoliert neu
-│                                 und verwirft inhaltlich veraltete Artefakte
+├── check_contract_builds.py      Prüft SHA-256-Provenienz; optionaler Neubau von
+│                                 PDF, DOCX und Akten-ZIPs mit --rebuild
 ├── check_legal_anchors.py        Prüft Rechtsprechungsanker, Quellen und Dubletten
 ├── check_navigation.py           Prüft Markdown-Anker, lokale Links und Pages-Menüs
 └── validate_repo.sh              Lokaler Sanity-Check für Versionen, Downloads,
                                   Mini-Limit, Docs-Sync, Vertragsakten und No-Meta-Regel
 
 vertragsdokumente/
+├── artifact-manifest.sha256  Bindet Quellen, Buildregeln und Artefakte aneinander
 ├── bautraegervertrag/
 │   ├── bautraegervertrag.md / .docx / .pdf
 │   ├── bautraegervertrag-de-en.html / .docx / .pdf
@@ -233,7 +234,7 @@ Zusätzlich enthält der Skill durchgängig:
 - Technischer Realitätscheck — ein juristisch eleganter Vertrag genügt nicht, wenn Baugrund, Baugrube, Abdichtung, Bauüberwachung oder Nachweislage nicht tragen.
 - Geführter Workflow und Vollpaket — zunächst Evidenzkarte, Kurzbild, Befundtabelle, Fließtext, Abschlussentscheidung und Nächste Weiche; auf Wunsch das Vollpaket mit Käufer-/Mandantenschreiben, ausführlichem Gutachten und Bauträgerschreiben.
 - Statuskopf und Fortsetzungsmarke — Rolle, Vertragsphase, Modus, Dokumentenkarte, Befundregister-Version, Abschlussentscheidung, Dokumente 1 bis 3 und Fortsetzungspunkt bleiben auch nach Abbruch erhalten.
-- Release-Validierung — `scripts/validate_repo.sh` prüft die Repo-Invarianten; `check_legal_anchors.py` kontrolliert die Rechtsprechungstabelle, `check_navigation.py` sämtliche lokalen Wege. `check_contract_builds.py` baut die drei deutschen Vertragsakten außerhalb des Arbeitsbaums neu und vergleicht PDF-, DOCX- und ZIP-Inhalte mit den Release-Artefakten; GitHub Actions führt schnelle Strukturprüfung und Reproduzierbarkeits-Gate parallel aus.
+- Release-Validierung — `scripts/validate_repo.sh` prüft die Repo-Invarianten; `check_legal_anchors.py` kontrolliert die Rechtsprechungstabelle, `check_navigation.py` sämtliche lokalen Wege. `check_contract_builds.py` verifiziert in CI deterministische SHA-256-Provenienz für Quellen, Buildregeln und Artefakte. Mit `BTV_VERIFY_BUILDS=1 ./scripts/validate_repo.sh` werden die drei deutschen Vertragsakten zusätzlich außerhalb des Arbeitsbaums neu gebaut und inhaltlich verglichen.
 - Rechtsprechungsanker — BGH zu Schlussrate, MaBV-Rückabwicklung, Abnahme, anspruchsbegrenzter 30-Jahres-Obergrenze, DIN/Schallschutz, Regeländerungen, Geschäftsführerhaftung und Teilungserklärungsänderung; KG/OLG bleiben ausdrücklich gewichtete Instanzanker.
 - Mini-Fallback — für kleine Kontextfenster gibt es `MINI_SKILL.md`; sie ersetzt die Vollfassung nicht, hält aber Rollenmodus, Kernworkflow, Weiche und Vollpaket-Option fest.
 

@@ -23,17 +23,3 @@ jobs:
 
       - name: Validate repository invariants
         run: bash scripts/validate_repo.sh
-
-  contract-builds:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-
-      - name: Install contract build tools
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y pandoc perl poppler-utils weasyprint zip
-
-      - name: Reject stale PDF, DOCX and ZIP artifacts
-        run: python3 scripts/check_contract_builds.py
