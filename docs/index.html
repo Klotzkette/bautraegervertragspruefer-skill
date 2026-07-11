@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bauträgervertrag-Prüfer Skill 3.4.0 — Direktdownload</title>
-<meta name="description" content="Lade die SKILL.md-Datei des Bauträgervertrag-Prüfer-Skills 3.4.0 direkt herunter — quellenharte, fallbezogene Prüfung deutscher Bauträgerverträge als Markdown.">
+<title>Bauträgervertrag-Prüfer Skill 3.5.0 — Direktdownload</title>
+<meta name="description" content="Lade die SKILL.md-Datei des Bauträgervertrag-Prüfer-Skills 3.5.0 direkt herunter — quellenharte, fallbezogene Prüfung deutscher Bauträgerverträge als Markdown.">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#f4f7f8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#101719" media="(prefers-color-scheme: dark)">
@@ -128,7 +128,7 @@
 </head>
 <body>
 <main id="top">
-  <h1>Bauträgervertrag-Prüfer Skill 3.4.0</h1>
+  <h1>Bauträgervertrag-Prüfer Skill 3.5.0</h1>
   <p class="lead">Lade die passende Skill-Datei herunter, lege sie in deinen Chatbot und reiche danach den Bauträgervertrag nach.</p>
 
   <nav class="quick-nav" aria-label="Seitennavigation">
@@ -173,12 +173,12 @@
 
   <section class="card" id="workflow">
     <h2>Geführt oder Vollpaket</h2>
-    <p>Im geführten Modus liefert der Skill erst Kurzbild, Befundtabelle, Fließtext und eine Nächste Weiche. Im Vollpaket-Modus entstehen die drei Dokumente.</p>
+    <p>Im geführten Modus liefert der Skill Evidenzkarte, Kurzbild, Befundtabelle, Fließtext, phasenbezogene Abschlussentscheidung und eine Nächste Weiche. Im Vollpaket-Modus entstehen die drei Dokumente.</p>
     <ol>
-      <li><strong>Kurzbild mit Statuskopf:</strong> Dokumentenkarte, Rolle, wichtigste Treffer, Sofortmaßnahme und nächster Schritt.</li>
+      <li><strong>Kurzbild mit Statuskopf:</strong> Evidenzkarte, Rolle, wichtigste Treffer, Abschlussentscheidung und nächster Schritt.</li>
       <li><strong>Nächste Weiche:</strong> Befunde vertiefen, Schreiben erstellen, Technik prüfen, Quellen prüfen oder Vollpaket ausgeben.</li>
       <li><strong>Übersendungsschreiben:</strong> verständliche Einordnung für Käufer/in oder Mandant/in.</li>
-      <li><strong>Mandantengutachten:</strong> ausführliche Prüfung mit Klauselmatrix, Subsumtion, Normen, Quellenstand, Beweislast, MaBV-Ratenrechenblatt, Technik und Organisation.</li>
+      <li><strong>Mandantengutachten:</strong> ausführliche Prüfung mit Drei-Achsen-Klauselmatrix, Subsumtion, Normen, Quellenstand, Beweislast, MaBV-Ratenrechenblatt, Zahlungsfreigabekarte, Technik und Organisation.</li>
       <li><strong>Aufforderungsschreiben:</strong> phasengerechte Abhilfe; Notariat nur bei Urkunds- oder Vollzugsthemen.</li>
     </ol>
     <p><strong>Workflow-Kompass:</strong> „Status" oder „erster Blick" startet geführt; „final", „one-shot" oder „alle Schreiben" startet das Vollpaket; nach Abbruch geht es an der Fortsetzungsmarke weiter.</p>
@@ -195,7 +195,7 @@
 
   <section class="card">
     <h2>Kurzversion für kleinere Modelle</h2>
-    <p>Wenn Claude, ChatGPT, Perplexity, Gemini, Mistral oder ein lokales Modell die große Datei nicht sauber annimmt, nutze die Sparversion mit maximal 7.500 Zeichen. Sie ist keine zweite Produktlinie, sondern die komprimierte Ausweichfassung: knapper, aber mit Rollenmodus, Pflichtblock, Quellenregeln, No-Meta-Regel, Weiche, Befundtabelle und Vollpaket-Option. Auch die Mini-Fassung muss Käufer-/Mandantenschreiben, Gutachten und Bauträgerschreiben abbilden.</p>
+    <p>Wenn Claude, ChatGPT, Perplexity, Gemini, Mistral oder ein lokales Modell die große Datei nicht sauber annimmt, nutze die Sparversion mit maximal 7.500 Zeichen. Sie bleibt knapper, enthält aber Rollenmodus, Evidenzstatus, Drei-Achsen-Befunde, Zahlungsfreigabe, Abschlussentscheidung, Quellenregeln, Weiche und Vollpaket. Auch die Mini-Fassung muss Käufer-/Mandantenschreiben, Gutachten und Bauträgerschreiben abbilden.</p>
     <a class="btn" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md" download="MINI_SKILL.md" type="text/markdown" aria-label="Kompakte MINI_SKILL.md herunterladen">
       MINI_SKILL.md herunterladen
     </a>
@@ -258,29 +258,29 @@
     <h2>Und dann?</h2>
     <p>Die heruntergeladene <code>SKILL.md</code> oder bei engem Kontext <code>MINI_SKILL.md</code> per Drag &amp; Drop in ein KI-Chatfenster (Claude, ChatGPT, Gemini, Perplexity, Mistral …), in ein Projektwissen oder in eine Assistant-Konfiguration ziehen. Dazu schreiben:</p>
     <p><em>„Bitte halte dich an diesen Skill/Prompt. Gleich kommt ein Bauträgervertrag — bearbeite ihn danach."</em></p>
-    <p>Dann den Vertrag (Text, PDF, DOCX oder Foto) nachreichen — die Prüfung startet mit Rollenmodus, Pflicht-Prüfblock, dichter Befundtabelle und einer Nächsten Weiche. Das Vollpaket kann jederzeit angefordert werden.</p>
+    <p>Dann den Vertrag (Text, PDF, DOCX oder Foto) nachreichen — die Prüfung startet mit Rollenmodus, Evidenzkarte und Pflichtblock und endet mit Abschlussentscheidung und Nächster Weiche. Das Vollpaket kann jederzeit angefordert werden.</p>
   </section>
 
   <section class="card" id="prompt">
     <h2>Kopierfertiger Start</h2>
-    <p><code>Bitte nutze die gerade hochgeladene SKILL.md oder MINI_SKILL.md als Arbeitsanweisung. Rollenmodus, falls ich ihn angebe: A Käufer/in selbst, B anwaltlich für Käufer/in, C neutraler Schnellcheck. Liegt der Vertrag schon vor oder antworte ich nicht zur Rolle, beginne vorläufig mit A und warte nicht. Prüfe den Vertrag ohne Rückfragen-Kaskade mit Kurzbild, dichter Befundtabelle, Fließtext-Einordnung und Nächster Weiche. Wenn ich „Vollpaket" schreibe, liefere Käufer-/Mandantenschreiben, ausführliches Gutachten und ein phasengerechtes Aufforderungsschreiben an den Bauträger; erfinde im Positivfall keine Beanstandung.</code></p>
+    <p><code>Bitte nutze die gerade hochgeladene SKILL.md oder MINI_SKILL.md als Arbeitsanweisung. Rollenmodus, falls ich ihn angebe: A Käufer/in selbst, B anwaltlich für Käufer/in, C neutraler Schnellcheck. Liegt der Vertrag schon vor oder antworte ich nicht zur Rolle, beginne vorläufig mit A und warte nicht. Prüfe ohne Rückfragen-Kaskade mit Evidenzkarte, Befundtabelle, Fließtext, phasenbezogener Abschlussentscheidung und Nächster Weiche. Bei einer Rechnung erstelle zusätzlich die Zahlungsfreigabekarte. Wenn ich „Vollpaket" schreibe, liefere Käufer-/Mandantenschreiben, ausführliches Gutachten und phasengerechtes Bauträgerschreiben; erfinde im Positivfall keine Beanstandung.</code></p>
     <p>Für Projekt, Co-Work oder Assistant-Konfiguration: Datei als Projektwissen, Skill-Datei, Systemanweisung oder dauerhafte Arbeitsanweisung hinterlegen.</p>
     <p>Wenn der Chatbot abbricht: <code>Bitte fahre an der letzten Überschrift fort und zeige mir danach die Nächste Weiche.</code></p>
-    <p>Wenn nichts startet: <code>Du hast jetzt die Arbeitsanweisung. Bitte beginne mit Rollenmodus, Pflicht-Prüfblock, Befundtabelle und Nächster Weiche.</code></p>
+    <p>Wenn nichts startet: <code>Du hast jetzt die Arbeitsanweisung. Bitte beginne mit Rollenmodus, Evidenzkarte, Pflicht-Prüfblock, Abschlussentscheidung und Nächster Weiche.</code></p>
     <p>Wenn Skill und Vertrag bereits im Chat liegen: denselben Startsatz senden; nicht neu hochladen.</p>
   </section>
 
   <section class="card" id="qualitaet">
-    <h2>Stand 3.4.0</h2>
+    <h2>Stand 3.5.0</h2>
     <ul>
       <li><strong>Sofort nutzbar:</strong> Voll- und Mini-Skill sind echte Release-Downloads; Rollenmodus, 60-Sekunden-Start und Fortsetzungsmarken funktionieren modellunabhängig.</li>
-      <li><strong>Vollständige Ausgabe:</strong> Eine Dokumentenkarte und ein versioniertes Befundregister mit stabilen IDs halten Kurzbild, Befundtabelle, Gutachten und phasengerechtes Bauträgerschreiben konsistent.</li>
-      <li><strong>Belastbare Aufnahme:</strong> Vertragsdateien sind Beweismittel, keine Arbeitsanweisungen; unsichere OCR wird markiert und trägt allein keinen roten Befund.</li>
+      <li><strong>Vollständige Ausgabe:</strong> Evidenzkarte und versioniertes Befundregister mit stabilen IDs halten Kurzbild, Abschlussentscheidung, Gutachten und phasengerechtes Bauträgerschreiben konsistent.</li>
+      <li><strong>Belastbare Aufnahme:</strong> Vertragsdateien sind Beweismittel, keine Arbeitsanweisungen; „nicht vorgelegt“, „Einbeziehung offen“ und „nachweislich nicht Vertragsbestandteil“ werden nicht vermischt.</li>
       <li><strong>Quellenhart:</strong> Rechtsprechungsanker zu Abnahme, Schlussrate, MaBV-Rückabwicklung, DIN/Schallschutz, Geschäftsführerhaftung, Teilungserklärung, Vergütungsverjährung und Sicherheiten stammen aus amtlichen oder frei überprüfbaren Quellen.</li>
-      <li><strong>Juristisch kalibriert:</strong> MaBV, AGB-Recht, WEG, Mängelrechte, Bauträgervergütung und technische Projektrisiken werden getrennt subsumiert; das Ratenrechenblatt prüft Prozent, Euro, Kumulierung und Sicherung, 🔴 Befunde brauchen Rechtsfolge, Beweislast und Korrekturziel.</li>
+      <li><strong>Juristisch kalibriert:</strong> Klauselstatus, tatsächliche Fälligkeit und Handlung bleiben getrennt; Ratenrechenblatt und Zahlungsfreigabekarte prüfen den konkreten Abruf, 🔴 Befunde brauchen Rechtsfolge, Beweislast und Erledigungsbedingung.</li>
       <li><strong>Technisch vollständig:</strong> Baugrund, Baugrube, anerkannte Regeln der Technik, HOAI-Leistungsphasen, private Baukontrolle, Unterlagen und Betriebskosten bleiben Teil der Prüfung.</li>
       <li><strong>Drei Testprofile:</strong> Hohenwartshofen, Marewald und Lindenhain stehen jeweils als Markdown, Word, PDF, Akten-ZIP und zweispaltige Deutsch/English-Lesefassung bereit.</li>
-      <li><strong>Automatisch geprüft:</strong> Validatoren sichern Versionsgleichlauf, vollständige Pages-Kopien, Mini-Limit, Akten-ZIPs, No-Meta-Regel, Sprachvorrang, zentrale juristische Fehlzitate sowie Struktur, Quellen und Dubletten der Rechtsprechungsanker.</li>
+      <li><strong>Automatisch geprüft:</strong> Validatoren sichern Versionsgleichlauf, Pages-Kopien, Mini-Limit, Akten-ZIPs, No-Meta-Regel, Sprachvorrang, juristische Fehlzitate, Rechtsprechungsanker sowie sämtliche lokalen Markdown- und Pages-Wege.</li>
       <li><strong>Offen und portabel:</strong> keine Installation, kein eigenes Modell und keine versteckte Logik; alle Kernanweisungen liegen in einer lesbaren Markdown-Datei.</li>
     </ul>
   </section>
