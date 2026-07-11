@@ -12,9 +12,9 @@ Diese beiden Links zeigen die Markdown-Dateien nicht erst im Browser an, sondern
 >
 > Ein-Datei-Prinzip, modellunabhängig einsetzbar. Die Vollfassung steckt in einer einzigen Markdown-Datei: [`skill/SKILL.md`](skill/SKILL.md) — ohne externe Laufzeit, ohne Datenbank, ohne Konto und ohne zusätzliches Werkzeug. Für kleine Kontextfenster gibt es zusätzlich [`skill/MINI_SKILL.md`](skill/MINI_SKILL.md). Beide Dateien funktionieren in leistungsfähigen KI-Chatbots bzw. Sprachmodellen: Claude, ChatGPT, Gemini, Mistral, Perplexity, lokal betriebene Modelle. Es ist keine Installation erforderlich — siehe [Anwendung](#anwendung-so-einfach-gehts).
 
-Konsolidierter Skill (Version 3.3.0) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
+Konsolidierter Skill (Version 3.4.0) für die Prüfung deutscher Bauträgerverträge nach dem Ampelsystem — Befunde werden als Ampelsymbole 🔴/🟠/🟢 ausgegeben, nicht als Farbwörter. Der Skill arbeitet nicht mit austauschbaren Textbausteinen, sondern zwingt vor jeder Bewertung einen Fall-Fingerabdruck: Urkunde, Parteien, Einheit, Projektgrundstück, Kaufpreis, Ratenplan, Sicherheiten, Baubeschreibung, Teilungserklärung, Baugrund, Technik, WEG-Organisation und Streitstand. Er deckt den vollständigen Bogen ab: Mandanten-Intake, Verbraucherstatus, Beurkundungsphase, MaBV-Ratenplan, Sicherungsmechanik, AGB-Klauselkontrolle, Baubeschreibung, Bausoll, Fertigstellung, Abnahme, Schlussrate, Mängelrechte, Teilungserklärung, Gemeinschaftsordnung, Sondereigentum, Gemeinschaftseigentum, Eigentumssicherung, Insolvenzrisiken, Notar- und Vollzugsrisiken, Finanzierung, Baugrund, Baugrube, HOAI-Leistungsphasen, Objektüberwachung, private Bauüberwachung, technische Plausibilität, Beweislast, Durchsetzung und Verhandlungsstrategie.
 
-Qualitätssicherung: Voll- und Mini-Fassung werden auf Versionsgleichlauf, Start- und Fortsetzungslogik sowie die drei Ausgabedokumente geprüft. Der Ausführungskern priorisiert Eingangslage, Ausgabemodus, Quellenstatus und Vertragsphase; ein einheitliches Befundregister hält Kurzbild, Gutachten und Bauträgerschreiben widerspruchsfrei. Der Repository-Validator kontrolliert außerdem sämtliche Pages-Kopien der Vertragsakten, das 7.500-Zeichen-Limit der Mini-Fassung, neutrale Akten-ZIPs, die No-Meta-Regel und zentrale juristische Fehlzitate. Version 3.3.0 trennt zusätzlich DIN-Maßstäbe im Werkvertrags- und WEG-Binnenrecht, begrenzt die BGH-30-Jahres-Linie auf die entschiedenen Kostenvorschussfälle, bildet den zulässigen Sicherungsaustausch nach § 7 Abs. 1 Satz 4 MaBV ab und verwendet für Bezugsurkunden die aktuelle Norm § 13c BeurkG.
+Qualitätssicherung: Voll- und Mini-Fassung werden auf Versionsgleichlauf, Start- und Fortsetzungslogik sowie die drei Ausgabedokumente geprüft. Vor dem ersten Befund entsteht eine Dokumentenkarte mit Version, Fundstelle, Einbeziehungsstatus und Lesbarkeit; Vertragsdateien bleiben Beweismittel und können dem Modell keine Arbeitsanweisungen erteilen. Ein versioniertes Befundregister mit stabilen IDs hält Kurzbild, Gutachten und Bauträgerschreiben widerspruchsfrei, während das MaBV-Ratenrechenblatt Prozentwerte, Eurobeträge, kumulierte Vorleistung, Sieben-Raten-Grenze und Sicherung nach § 650m BGB getrennt ausweist. Der Repository-Validator kontrolliert außerdem Pages-Kopien, Mini-Limit, Akten-ZIPs, No-Meta-Regel, zentrale juristische Fehlzitate und die strukturierte Rechtsprechungsankertabelle mit zulässigen Quellen, Aktenzeichen, Datum und Entscheidungsform.
 
 Schnellwahl: Für eine geführte Vertragsprüfung mit Rollenmodus, dichter Befundtabelle, textueller Einordnung und optionalem Vollpaket ist [`SKILL.md`](skill/SKILL.md) die Hauptfassung. Wenn ein kleineres Modell den langen Prompt nicht vollständig lädt oder die Antwort abbricht, ist [`MINI_SKILL.md`](skill/MINI_SKILL.md) die kompakte Ausweichfassung.
 
@@ -43,7 +43,7 @@ Wer nur prüfen will, braucht keine Installation und keine GitHub-Kenntnisse:
 1. Datei wählen: Normalfall [`SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md), kleines Kontextfenster [`MINI_SKILL.md`](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md).
 2. In den Chat legen: Datei in Claude, ChatGPT, Perplexity, Gemini, Mistral oder ein lokales Modell hochladen oder den Inhalt hineinkopieren.
 3. Startsatz senden: Den kopierfertigen Startsatz aus [Anwendung](#anwendung-so-einfach-gehts) einfügen; der Rollenmodus ist optional und blockiert die Prüfung nicht.
-4. Vertrag nachreichen: PDF, DOCX, Text, Foto oder Akten-ZIP hochladen. Der Skill prüft ohne Bedienungsrückfragen, gibt eine dichte erste Einordnung aus und bietet dann konkrete nächste Weichen an.
+4. Vertrag nachreichen: PDF, DOCX, Text, Foto oder Akten-ZIP hochladen. Der Skill ordnet zuerst Dokumente und Lesbarkeit, prüft dann ohne Bedienungsrückfragen, gibt eine dichte erste Einordnung aus und bietet konkrete nächste Weichen an.
 
 Robuster Start: Der Skill soll nie still hängen. Nach Upload oder Startsatz muss zuerst ein kurzes Startsignal kommen, danach erst die längere Prüfung. Bei großen PDF-/ZIP-Akten arbeitet er stufenweise: Pflichtblock, Zahlungsplan, Abnahme/Mängel, Technik, Dokumente. Jede längere Antwort trägt eine Fortsetzungsmarke. Wenn du `beenden`, `abbrechen` oder `stop` schreibst, muss der Skill sofort aufhören und erst bei ausdrücklichem `weiter` wieder ansetzen.
 
@@ -76,9 +76,9 @@ Workflow-Kompass:
 | Prüfung soll wirklich enden | `beenden`, `abbrechen` oder `stop`; der Skill bestätigt Ende und arbeitet nicht weiter |
 | nur Bedienfrage oder Uploadproblem | vier einfache Schritte, danach Vertrag/Akten-ZIP hochladen |
 
-1. Kurzbild für die schnelle Orientierung: Vertragsstatus, 🔴/🟠/🟢-Treffer, wichtigste Sofortmaßnahme.
+1. Kurzbild für die schnelle Orientierung: Dokumentenkarte, Vertragsstatus, 🔴/🟠/🟢-Treffer, wichtigste Sofortmaßnahme.
 2. Übersendungsschreiben an den Mandanten: kurze, verständliche Einordnung mit Handlungsempfehlung.
-3. Mandantengutachten: ausführliche Prüfung mit Klauselmatrix, Subsumtion, Normen, Quellenstand, Beweislandkarte, Technik- und Organisationsrisiken.
+3. Mandantengutachten: ausführliche Prüfung mit Klauselmatrix, Subsumtion, Normen, Quellenstand, Beweislandkarte, MaBV-Ratenrechenblatt sowie Technik- und Organisationsrisiken.
 4. Aufforderungsschreiben an den Bauträger: phasengerechte Abhilfe, vor Beurkundung konkrete Streichungen oder Änderungsfassungen, danach Nichtanwendung, Leistung, Unterlagen oder formgerechter Nachtrag; das Notariat nur bei Urkunds- oder Vollzugsthemen.
 
 Der Schreibstil soll dicht sein: Tabellen ordnen die Befunde, die eigentliche Begründung steht in Fließtext. Wenn ein Chatbot wegen Länge abbricht, nicht neu starten: _"Bitte fahre mit dem nächsten noch fehlenden Abschnitt fort."_ Der Skill trägt selbst eine Fortsetzungsmarke und soll an der letzten Überschrift weiterschreiben, den Statuskopf aktualisieren und die empfohlene nächste Weiche anzeigen.
@@ -113,11 +113,11 @@ Deutsch-englische Lesefassungen: Die zweispaltigen Fassungen sind Verständnishi
 
 [📥 MINI_SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md)
 
-Wenn Claude, ChatGPT, Perplexity, Gemini, Mistral oder ein lokal betriebenes Modell die große `SKILL.md` nicht zuverlässig annimmt, zu früh abbricht oder nur ein kleiner Skill-Kontext zur Verfügung steht, ist [`skill/MINI_SKILL.md`](skill/MINI_SKILL.md) die Sparversion. Sie hat maximal 7.500 Zeichen inklusive Leerzeichen und enthält trotzdem den Kern: Rollenmodus, geführter Workflow, harte Quellenregeln, MaBV-/AGB-/WEG-/Technik-Pflichtblock, No-Meta-Regel, Anti-Generik-Regel und Vollpaket-Option.
+Wenn Claude, ChatGPT, Perplexity, Gemini, Mistral oder ein lokal betriebenes Modell die große `SKILL.md` nicht zuverlässig annimmt, zu früh abbricht oder nur ein kleiner Skill-Kontext zur Verfügung steht, ist [`skill/MINI_SKILL.md`](skill/MINI_SKILL.md) die Sparversion. Sie hat maximal 7.500 Zeichen inklusive Leerzeichen und enthält trotzdem den Kern: Rollenmodus, Dokumenten-/OCR-Gate, stabiles Befundregister, Ratenrechenblatt, harte Quellenregeln, MaBV-/AGB-/WEG-/Technik-Pflichtblock, No-Meta-Regel, Anti-Generik-Regel und Vollpaket-Option.
 
 Die Kurzversion ist nicht so tief wie die Vollfassung. Sie ist dafür schnell kopierbar, robust in kleineren Assistenten und gut genug abgehangen, um auch dort Zahlungsplan, Sicherheiten, Abnahme, Bausoll, Bauüberwachung, Preisanpassung, Verzug und die wichtigsten AGB-Risiken strukturiert zu prüfen.
 
-Mini-Output-Garantie: Auch die Kurzfassung endet nicht bei einer bloßen Einschätzung. Sie führt kleine Modelle auf Kurzbild, Befundtabelle, textuelle Einordnung und Nächste Weiche; im Vollpaket zwingt sie zu Käufer-/Mandantenschreiben, Mandantengutachten und Aufforderungsschreiben an den Bauträger.
+Mini-Output-Garantie: Auch die Kurzfassung endet nicht bei einer bloßen Einschätzung. Sie führt kleine Modelle über Dokumentenkarte, Kurzbild, Befundtabelle, Ratenrechenblatt, textuelle Einordnung und Nächste Weiche; im Vollpaket zwingt sie zu Käufer-/Mandantenschreiben, Mandantengutachten und Aufforderungsschreiben an den Bauträger.
 
 ## Anwendung: So einfach geht's
 
@@ -162,7 +162,7 @@ Wenn du die Prüfung beenden willst: Schreibe `beenden`, `abbrechen` oder `stop`
 | Skill-Dateien | [Vollfassung](skill/SKILL.md) · [Mini-Fassung](skill/MINI_SKILL.md) |
 | Vertragsakten | [Übersicht](vertragsdokumente/README.md) · [Hohenwartshofen](vertragsdokumente/bautraegervertrag/README.md) · [Marewald](vertragsdokumente/bautraegervertrag-marewald/README.md) · [Lindenhain](vertragsdokumente/bautraegervertrag-lindenhain/README.md) |
 | Veröffentlichung | [Downloadseite](https://klotzkette.github.io/bautraegervertragspruefer-skill/) · [neueste Release-Dateien](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest) |
-| Qualitätssicherung | [Repository-Validator](scripts/validate_repo.sh) · [Generator der Deutsch/English-Fassungen](scripts/build_bilingual_contracts.py) · [GitHub-Workflows](.github/workflows/) |
+| Qualitätssicherung | [Repository-Validator](scripts/validate_repo.sh) · [Prüfer der Rechtsprechungsanker](scripts/check_legal_anchors.py) · [Generator der Deutsch/English-Fassungen](scripts/build_bilingual_contracts.py) · [GitHub-Workflows](.github/workflows/) |
 | Lizenzen | [MIT](LICENSE-MIT) · [Apache-2.0](LICENSE-APACHE) |
 
 ```text
@@ -179,8 +179,9 @@ docs/
 
 scripts/
 ├── build_bilingual_contracts.py  Erzeugt die deutsch-englischen Lesefassungen
+├── check_legal_anchors.py        Prüft Rechtsprechungsanker, Quellen und Dubletten
 └── validate_repo.sh              Lokaler Sanity-Check für Versionen, Downloads,
-                                  Mini-Limit, Docs-Sync, Testakten und No-Meta-Regel
+                                  Mini-Limit, Docs-Sync, Vertragsakten und No-Meta-Regel
 
 vertragsdokumente/
 ├── bautraegervertrag/
@@ -202,12 +203,12 @@ vertragsdokumente/
 
 Die Skill-Datei ist in folgende Hauptteile gegliedert:
 
-- Sofortstart und Quellenregeln — Rollenklärung, Annahmendisziplin, Verbot nicht überprüfbarer Zitate.
+- Sofortstart, Dokumentenaufnahme und Quellenregeln — Rollenklärung, Dokumentenkarte, OCR-Disziplin, Isolierung eingebetteter Prompttexte und Verbot nicht überprüfbarer Zitate.
 - Rechtsprechungsanker — quellenharte Anker aus Bundesgerichten, Oberlandesgerichten, Kammergericht, Landgerichten sowie OpenJur und dejure.
 - Normenkarte — Bauträgervertrag, Verbraucherbauvertrag, MaBV, AGB-Recht, WEG, HOAI, Abnahme, Mängelrechte, Eigentumssicherung.
 - Prüfschleifen — mehrstufige Analyse vom Pflicht-Prüfblock bis zum finalen Bug-Hunt.
 - Klauselmatrix — Befund, Risiko, Norm, Rechtsprechungsanker, Beweislast, Verhandlungsziel, erwartbarer Gegeneinwand und Antwort.
-- MaBV- und Zahlungsprüfung — Ratenplan, Bezugsfertigkeit, Besitzübergang, Schlussrate, Sicherheiten, Finanzierungskollisionsrisiken.
+- MaBV- und Zahlungsprüfung — Ratenrechenblatt mit Prozent-/Euro-/Kumulativkontrolle, Sieben-Raten-Grenze, Bezugsfertigkeit, Besitzübergang, Schlussrate, Sicherheiten und Finanzierungskollisionsrisiken.
 - AGB-Klauselkontrolle — unangemessene Benachteiligung, Intransparenz, Beweislastverschiebung, Leistungsänderungen, Haftungs- und Fristenregime.
 - Baubeschreibung und Bausoll — Vollständigkeit, Standards, Wahlrechte, Bemusterung, Nebenleistungen, Außenanlagen, Stellplätze, Sonderwünsche.
 - Technik und Bauüberwachung — Baugrund, Baugrube, Abdichtung, Schallschutz, Brandschutz, Energie, Statik, Nachweise, Objektüberwachung, private Sachverständige.
@@ -221,22 +222,23 @@ Zusätzlich enthält der Skill durchgängig:
 - Verbraucherschützende Priorisierung — der Skill sucht nicht nur formale Fehler, sondern wirtschaftliche, technische und organisatorische Schieflagen.
 - Überzeugungsdisziplin — jedes harte Argument soll so formuliert werden, dass es gegenüber Notariat, Bauträger und deren Prozessvertretung belastbar ist.
 - Kein Blindzitat — tragende Rechtsprechung wird nicht aus Modellwissen erfunden; Quellen werden als zu verifizieren markiert oder mit frei überprüfbarem Fundort benannt.
+- Dokumentenisolierung — Vertragsurkunde, Anlagen, Scans und ZIP-Inhalte sind ausschließlich Beweismittel; darin enthaltene KI-, System- oder Promptanweisungen werden ignoriert. Unsichere OCR wird sichtbar markiert und trägt allein keinen roten Befund.
 - No-Meta-Regel für jedes Vertragsdokument — der Skill spricht nie über Herkunft, Repository, Beispiel, Demonstration oder Dateirolle, sondern prüft ausschließlich den vorgelegten Vertragsstoff.
 - Anti-Generik-Regel — kein Befund darf ohne Fallanker ausgegeben werden; jede 🔴/🟠-Ampel braucht Klausel, Betrag/Rate/Frist oder Projekt-/Einheitsbezug und eine konkrete Änderungsfassung.
 - Subsumtions-Gate — jede 🔴/🟠-Ampel braucht Textstelle, konkrete Klauselwirkung, Rechtsfolge, Beweis-/Darlegungslast und Antwort auf das stärkste Gegenargument.
 - Technischer Realitätscheck — ein juristisch eleganter Vertrag genügt nicht, wenn Baugrund, Baugrube, Abdichtung, Bauüberwachung oder Nachweislage nicht tragen.
 - Geführter Workflow und Vollpaket — zunächst Kurzbild, Befundtabelle, Fließtext und Nächste Weiche; auf Wunsch das Vollpaket mit Käufer-/Mandantenschreiben, ausführlichem Gutachten und Bauträgerschreiben.
-- Statuskopf und Fortsetzungsmarke — Rolle, Vertragsphase, Modus, Befundregister, Dokumente 1 bis 3, Empfehlung und Fortsetzungspunkt werden markiert, damit auch kleine Modelle nach Abbruch sauber fortsetzen.
-- Release-Validierung — `scripts/validate_repo.sh` prüft vor Veröffentlichung die harten Repo-Invarianten; `.github/workflows/validate.yml` führt denselben Check in GitHub Actions aus.
+- Statuskopf und Fortsetzungsmarke — Rolle, Vertragsphase, Modus, Dokumentenkarte, Befundregister-Version, Dokumente 1 bis 3, Empfehlung und Fortsetzungspunkt werden markiert, damit auch kleine Modelle nach Abbruch sauber fortsetzen.
+- Release-Validierung — `scripts/validate_repo.sh` prüft vor Veröffentlichung die harten Repo-Invarianten; `scripts/check_legal_anchors.py` kontrolliert die strukturierte Rechtsprechungstabelle offline; `.github/workflows/validate.yml` führt den Gesamtcheck in GitHub Actions aus.
 - Rechtsprechungsanker — BGH zu Schlussrate, MaBV-Rückabwicklung, Abnahme, anspruchsbegrenzter 30-Jahres-Obergrenze, DIN/Schallschutz, Regeländerungen, Geschäftsführerhaftung und Teilungserklärungsänderung; KG/OLG bleiben ausdrücklich gewichtete Instanzanker.
 - Mini-Fallback — für kleine Kontextfenster gibt es `MINI_SKILL.md`; sie ersetzt die Vollfassung nicht, hält aber Rollenmodus, Kernworkflow, Weiche und Vollpaket-Option fest.
 
 ## Workflow in zwölf Stufen
 
-1. Intake, Rollenklärung und Bearbeitungsstand sichern.
+1. Intake, Rollenklärung, Dokumentenkarte, Lesbarkeit und Bearbeitungsstand sichern.
 2. Vertragsart, Verbraucherstatus, Beurkundungs- und Vollzugsstatus bestimmen.
 3. Pflicht-Prüfblock: MaBV, Sicherung, Abnahme, Schlussrate, Verjährung, Eigentumsübergang.
-4. Zahlungsplan, Bautenstand, Ratenfälligkeit und Finanzierungsrisiken prüfen.
+4. Zahlungsplan rechnerisch in Prozent, Euro und kumulierter Vorleistung schließen; Bautenstand, Ratenfälligkeit und Finanzierungsrisiken prüfen.
 5. AGB-Klauseln satzweise mit Ampelsymbolen und Gegenargumenten bewerten.
 6. Baubeschreibung, Bausoll, Leistungsänderungen und Sonderwünsche absichern.
 7. Abnahme, Besitzübergang, Mängelrechte, Vertragsstrafe und Fertigstellungstermine prüfen.
@@ -257,7 +259,7 @@ Zusätzlich enthält der Skill durchgängig:
 - HOAI und Objektüberwachung — HOAI-Leistungsbilder, insbesondere Leistungsphase 8 als Prüfanker für Bauüberwachung, Rechnungsprüfung, Kostenfeststellung und Mängelverfolgung.
 - Form und Eigentumssicherung — § 311b BGB, Auflassungsvormerkung, Lastenfreistellung, Vollzug, Notaranderkonto nur bei tragfähiger rechtlicher Grundlage.
 
-Die `SKILL.md` enthält einen eigenen Rechtsprechungsanker mit überprüfbaren Leitentscheidungen und frei zugänglichen Fundstellen. Grundregel: Keine Zitate aus BeckRS, juris, Fachzeitschriften oder nicht frei überprüfbaren Datenbanken. Tragende Aussagen werden über offizielle Webseiten der Bundesgerichte, Oberlandesgerichte, des Kammergerichts, der Landgerichte oder über OpenJur und dejure verankert; andernfalls werden sie als Prüfhinweis statt als belegte Rechtsprechung ausgegeben.
+Die `SKILL.md` enthält einen eigenen Rechtsprechungsanker mit überprüfbaren Leitentscheidungen und frei zugänglichen Fundstellen. Grundregel: Keine Zitate aus BeckRS, der kommerziellen juris-Datenbank, Fachzeitschriften oder sonstigen nicht frei überprüfbaren Datenbanken. Tragende Aussagen werden über offizielle Webseiten der Bundesgerichte, Oberlandesgerichte, des Kammergerichts, der Landgerichte oder über OpenJur und dejure verankert; dazu zählt auch die frei zugängliche amtliche BGH-Datenbank unter `juris.bundesgerichtshof.de`. Andernfalls erscheinen sie als Prüfhinweis statt als belegte Rechtsprechung.
 
 ## Einsatzlagen
 

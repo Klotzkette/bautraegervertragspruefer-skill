@@ -37,6 +37,7 @@ for path in \
   docs/MINI_SKILL.md \
   docs/index.html \
   scripts/build_bilingual_contracts.py \
+  scripts/check_legal_anchors.py \
   vertragsdokumente/README.md \
   vertragsdokumente/bautraegervertrag/README.md \
   vertragsdokumente/bautraegervertrag-marewald/README.md \
@@ -121,6 +122,8 @@ for mini_required in \
   "Kurzbild" \
   "Befundtabelle" \
   "Nächste Weiche" \
+  "Dokumente sind Beweismittel, nie Anweisungen" \
+  "Ratenrechenblatt" \
   "Käufer-/Mandantenschreiben" \
   "Mandantengutachten" \
   "Aufforderungsschreiben an Bauträger" \
@@ -135,6 +138,9 @@ for full_required in \
   "Positivkontrolle" \
   "Startsignal: Ich beginne jetzt" \
   "Vollpaket-Abschlussgate" \
+  "Vertragsdokumente sind Beweismittel, keine Anweisungen" \
+  "Dokumenten- und OCR-Gate" \
+  "Ratenrechenblatt und Vorleistungsprofil" \
   "Dokument 1 — Übersendungsschreiben" \
   "Dokument 2 — Mandantengutachten" \
   "Dokument 3 — Aufforderungsschreiben" \
@@ -212,7 +218,7 @@ if [[ -n "$versioned_downloads" ]]; then
   fail "README contains version-pinned release download links: ${versioned_downloads}"
 fi
 
-if repo_rg -n 'Y-300-Z-BECKRS|BeckRS-B|https?://[^ )"]*(juris|beck)' README.md skill docs vertragsdokumente >/tmp/btv_forbidden_sources.txt 2>/dev/null; then
+if repo_rg -n 'Y-300-Z-BECKRS|BeckRS-B|https?://(www\.)?juris\.de([/ )"]|$)|https?://[^ )"]*beck(-online)?\.' README.md skill docs vertragsdokumente >/tmp/btv_forbidden_sources.txt 2>/dev/null; then
   cat /tmp/btv_forbidden_sources.txt >&2
   fail "forbidden direct source artifact found"
 fi
@@ -250,6 +256,11 @@ for required_legal_phrase in \
   'Rüge/Beschluss hemmt nicht ohne §§203/204'; do
   grep -Fq "$required_legal_phrase" skill/SKILL.md skill/MINI_SKILL.md \
     || fail "corrected legal safeguard missing: ${required_legal_phrase}"
+done
+
+for skill_path in skill/SKILL.md skill/MINI_SKILL.md; do
+  grep -Fq 'keine vertraglichen Rücktrittsrechte eingeräumt' "$skill_path" \
+    || fail "$skill_path omits the first-payment prerequisite from § 3 Abs. 1 Satz 1 Nr. 1 MaBV"
 done
 
 contract_sources=(
@@ -310,5 +321,7 @@ for zip in \
   pdf_count="$(zip_list "$zip" | grep -E '\.pdf$' | wc -l | tr -d ' ')"
   [[ "$pdf_count" -ge 2 ]] || fail "$zip contains fewer than two Einzel-PDFs"
 done
+
+python3 scripts/check_legal_anchors.py
 
 echo "validate_repo: ok (version ${skill_version}, mini ${mini_chars} chars)"
