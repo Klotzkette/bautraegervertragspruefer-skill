@@ -186,12 +186,17 @@ for full_required in \
   "Dokument 3 — Aufforderungsschreiben" \
   "formbedürftigem Nachtrag" \
   "VII ZR 231/22" \
+  "VII ZR 310/99" \
   "VII ZR 167/11" \
   "VII ZR 45/06" \
   "VII ZR 65/14" \
   "VII ZR 94/22" \
   "VII ZR 25/23" \
+  "V ZR 182/12" \
   "V ZR 39/24" \
+  "V ZR 243/23" \
+  "V ZR 102/24" \
+  "V ZR 18/25" \
   "V ZR 144/07" \
   "V ZR 208/14" \
   "XI ZR 145/02" \

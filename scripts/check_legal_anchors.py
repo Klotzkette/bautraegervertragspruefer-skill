@@ -40,11 +40,23 @@ URL_RE = re.compile(r"https://[^\s|]+")
 FORBIDDEN = (
     "BeckRS",
     "beck-online",
+    "dejure.org/dienste/vernetzung/rechtsprechung?",
     "[wordlim",
     "turn0search",
     "turn1search",
     "nicht quellenhart verifiziert",
 )
+
+REQUIRED_DOCKETS = {
+    "VII ZR 310/99",  # MaBV-Zahlungsplan: Grundsatzentscheidung
+    "VII ZR 167/11",  # Bereicherungsausgleich
+    "V ZR 182/12",  # DIN-Vermutung nur im WEG-Binnenrecht
+    "V ZR 39/24",  # aktuelle Bestätigung der WEG-DIN-Linie
+    "V ZR 243/23",  # Erstherstellungsanspruch: Grundlinie
+    "V ZR 219/24",  # Erstherstellungsanspruch: Umfang
+    "V ZR 102/24",  # Erhaltungslast und GdWE-Kompetenz
+    "V ZR 18/25",  # GdWE-Schadensersatz ohne Garantiehaftung
+}
 
 
 def fail(message: str) -> None:
@@ -88,8 +100,8 @@ def main() -> None:
             fail(f"table line {number} has {len(columns)} columns instead of 4")
         rows.append((number, columns))
 
-    if len(rows) < 30:
-        fail(f"expected at least 30 case-law rows, found {len(rows)}")
+    if len(rows) < 36:
+        fail(f"expected at least 36 case-law rows, found {len(rows)}")
 
     seen_cases: dict[str, int] = {}
     seen_urls: dict[str, int] = {}
@@ -141,6 +153,14 @@ def main() -> None:
                 fail(f"duplicate docket {case} on lines {seen_cases[case]} and {line_number}")
             seen_cases[case] = line_number
             total_cases += 1
+
+    missing_required = sorted(REQUIRED_DOCKETS - set(seen_cases))
+    if missing_required:
+        fail(f"missing required case-law anchors: {', '.join(missing_required)}")
+
+    unanchored = sorted(set(CASE_RE.findall(text)) - set(seen_cases))
+    if unanchored:
+        fail(f"case-law references outside the anchor table: {', '.join(unanchored)}")
 
     print(
         "check_legal_anchors: ok "
