@@ -379,13 +379,21 @@ for skill_path in skill/SKILL.md skill/MINI_SKILL.md; do
 done
 
 grep -Fq "## ${skill_version} -" CHANGELOG.md || fail "CHANGELOG lacks current version"
-changelog_fix_count="$(awk -v version="$skill_version" '
+current_changelog_count="$(awk -v version="$skill_version" '
   index($0, "## " version " ") == 1 {active=1; next}
   /^## / {active=0}
   active && /^[0-9]+\./ {count++}
   END {print count+0}
 ' CHANGELOG.md)"
-[[ "$changelog_fix_count" -eq 100 ]] || fail "CHANGELOG must list exactly 100 audited fixes for ${skill_version}: ${changelog_fix_count}"
+[[ "$current_changelog_count" -ge 1 ]] || fail "CHANGELOG has no numbered changes for ${skill_version}"
+
+audit_380_count="$(awk '
+  /^## 3\.8\.0 / {active=1; next}
+  /^## / {active=0}
+  active && /^[0-9]+\./ {count++}
+  END {print count+0}
+' CHANGELOG.md)"
+[[ "$audit_380_count" -eq 100 ]] || fail "CHANGELOG must preserve the 100-point audit for 3.8.0: ${audit_380_count}"
 
 contract_sources=(
   vertragsdokumente/bautraegervertrag/bautraegervertrag.md

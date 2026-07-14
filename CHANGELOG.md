@@ -1,5 +1,11 @@
 # Änderungsprotokoll
 
+## 3.8.1 - 15. Juli 2026
+
+1. Die Versionsprüfung verlangt für neue Wartungsreleases nicht mehr irrtümlich erneut die historische 100-Punkte-Liste aus Version 3.8.0.
+2. Der Validator sichert weiterhin ausdrücklich, dass der vollständige 100-Punkte-Audit in Version 3.8.0 unverändert erhalten bleibt.
+3. Vollfassung, Mini-Skill, README und Downloadseite sind konsistent auf Version 3.8.1 angehoben; sämtliche Vertragsartefakte werden dem Release erneut vollständig beigefügt.
+
 ## 3.8.0 - 14. Juli 2026
 
 Diese Fassung schließt 100 im Gesamt-Audit festgestellte Fehler- und Risikogruppen:
