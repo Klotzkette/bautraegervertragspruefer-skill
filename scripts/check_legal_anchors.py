@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
-"""Validate the structured case-law anchor table without network access."""
+"""Validate the structured case-law anchor table, optionally including URLs."""
 
 from __future__ import annotations
 
+import argparse
 import re
 import sys
 from pathlib import Path
+from urllib.error import HTTPError, URLError
 from urllib.parse import unquote, urlparse
+from urllib.request import Request, urlopen
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -48,6 +51,7 @@ FORBIDDEN = (
 )
 
 REQUIRED_DOCKETS = {
+    "VII ZR 84/09",  # Mängel-Einbehalt auch aus einer laufenden Bautenstandsrate
     "VII ZR 310/99",  # MaBV-Zahlungsplan: Grundsatzentscheidung
     "VII ZR 167/11",  # Bereicherungsausgleich
     "V ZR 182/12",  # DIN-Vermutung nur im WEG-Binnenrecht
@@ -84,7 +88,52 @@ def extract_urls(citation: str) -> list[str]:
     return [match.rstrip(".,;") for match in URL_RE.findall(citation)]
 
 
+def verify_url(url: str) -> None:
+    headers = {
+        "User-Agent": "bautraegervertragspruefer-source-check/3.7 (+https://github.com/Klotzkette/bautraegervertragspruefer-skill)",
+        "Accept": "text/html,application/pdf;q=0.9,*/*;q=0.5",
+    }
+    last_error: Exception | None = None
+    for method in ("HEAD", "GET"):
+        request_headers = dict(headers)
+        if method == "GET":
+            request_headers["Range"] = "bytes=0-2047"
+        try:
+            request = Request(url, headers=request_headers, method=method)
+            with urlopen(request, timeout=20) as response:
+                if response.status >= 400:
+                    fail(f"source URL returned HTTP {response.status}: {url}")
+                if method == "GET":
+                    payload = response.read(2048)
+                    if urlparse(url).path.lower().endswith(".pdf") and not payload.startswith(
+                        b"%PDF-"
+                    ):
+                        fail(f"source URL does not return a PDF document: {url}")
+                return
+        except HTTPError as exc:
+            last_error = exc
+            # Several official court portals reject or redirect HEAD even when
+            # the same resource is available by GET. HEAD is only a fast path.
+            if method == "HEAD":
+                continue
+            break
+        except (URLError, TimeoutError) as exc:
+            last_error = exc
+            if method == "HEAD":
+                continue
+            break
+    fail(f"source URL is not reachable: {url} ({last_error})")
+
+
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--online",
+        action="store_true",
+        help="Also request every cited source URL (not used in CI).",
+    )
+    args = parser.parse_args()
+
     text = SKILL.read_text(encoding="utf-8")
     section = extract_section(text)
 
@@ -103,8 +152,8 @@ def main() -> None:
             fail(f"table line {number} has {len(columns)} columns instead of 4")
         rows.append((number, columns))
 
-    if len(rows) < 39:
-        fail(f"expected at least 39 case-law rows, found {len(rows)}")
+    if len(rows) < 40:
+        fail(f"expected at least 40 case-law rows, found {len(rows)}")
 
     seen_cases: dict[str, int] = {}
     seen_urls: dict[str, int] = {}
@@ -165,9 +214,14 @@ def main() -> None:
     if unanchored:
         fail(f"case-law references outside the anchor table: {', '.join(unanchored)}")
 
+    if args.online:
+        for url in seen_urls:
+            verify_url(url)
+
     print(
         "check_legal_anchors: ok "
-        f"({len(rows)} rows, {total_cases} dockets, {total_urls} URLs)"
+        f"({len(rows)} rows, {total_cases} dockets, {total_urls} URLs"
+        f"{', online checked' if args.online else ''})"
     )
 
 

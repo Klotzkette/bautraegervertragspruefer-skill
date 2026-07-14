@@ -14,6 +14,7 @@ Rendering dependencies:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html
 import re
 import shutil
@@ -108,6 +109,22 @@ EXACT_TRANSLATIONS = {
     "der Notarin von Person bekannt,": "personally known to the Notary,",
     "ausgewiesen durch gültigen Personalausweis,": "identified by a valid identity card,",
     "Die Erschienenen baten sodann um die Beurkundung des nachstehenden": "The persons appearing then requested the notarisation of the following",
+    "Die Erschienenen erklärten, dass sie auf das Verlesen der Bezugsurkunden verzichten, da ihnen deren Inhalt bekannt ist. Diese Niederschrift wurde den Erschienenen vom Notar vorgelesen, von ihnen genehmigt und sodann eigenhändig wie folgt unterschrieben:": "The persons appearing declared that they waived the reading aloud of the referenced deeds because they were familiar with their contents. This record was read aloud to the persons appearing by the Notary, approved by them and then signed by hand as follows:",
+    "Diese Niederschrift nebst Anlage Baubeschreibung wurde den Erschienenen von der Notarin vorgelesen, von ihnen genehmigt und sodann eigenhändig unterschrieben:": "This record together with the annexed Building Specification was read aloud to the persons appearing by the Notary, approved by them and then signed by hand:",
+    "Diese Niederschrift wurde den Erschienenen von der Notarin vorgelesen, von ihnen genehmigt und eigenhändig unterschrieben.": "This record was read aloud to the persons appearing by the Notary, approved by them and signed by hand.",
+    "7.1 Die Besitzübergabe erfolgt nach Bezugsfertigkeit, Verkehrssicherheit der Zugänge und Zahlung oder berechtigtem Angebot der bis dahin fälligen Raten. Die Verkäuferin darf die Schlüssel nicht wegen streitiger, nicht fälliger oder berechtigt zurückbehaltener Beträge verweigern.": "7.1 Possession shall be transferred once the unit is ready for occupancy, safe access is available and the instalments due up to that point have been paid or duly tendered. The Seller may not withhold the keys on account of disputed amounts, amounts not yet due or amounts properly withheld.",
+    "8.5 Die Gemeinschaft der Wohnungseigentümer übt nach § 9a Abs. 2 WEG die Rechte aus, die sich aus dem gemeinschaftlichen Eigentum ergeben, sowie solche Rechte der Erwerber, die eine einheitliche Rechtsverfolgung erfordern. Individuelle Abnahme- und Vorbehaltsrechte der Käuferin werden dadurch nicht ausgeschlossen.": "8.5 Pursuant to section 9a(2) WEG, the Community of Unit Owners exercises the rights arising from the Common Property and those purchasers' rights that require uniform enforcement. This does not exclude the Buyer's individual rights concerning acceptance or reservations of rights.",
+    "9.4 Die Verkäuferin übergibt der Gemeinschaft die für Betrieb, Wartung und Verwaltung erforderliche geordnete Projektdokumentation spätestens mit Fertigstellung des jeweiligen gemeinschaftlichen Anlagenteils, keinesfalls später als bei dessen Besitzübergabe. Sie umfasst Wartungsverträge, Gewährleistungsübersicht, Prüfprotokolle, Revisionsunterlagen und Kontaktdaten der ausführenden Unternehmen; frühere Herausgabezeitpunkte nach § 5.2 bleiben unberührt.": "9.4 The Seller shall provide the Community of Unit Owners with the organised project documentation required for operation, maintenance and management no later than completion of the relevant part of the Common Property and in no event later than transfer of possession thereof. This includes maintenance agreements, a warranty schedule, inspection records, as-built documentation and contact details of the contractors; any earlier delivery dates under section 5.2 remain unaffected.",
+    "8.5 Die Gemeinschaft der Wohnungseigentümer übt nach § 9a Abs. 2 WEG die sich aus dem gemeinschaftlichen Eigentum ergebenden Rechte sowie solche Rechte der Wohnungseigentümer aus, die eine einheitliche Rechtsverfolgung erfordern. Die individuellen Abnahme- und Vorbehaltsrechte der Käuferin werden dadurch nicht ausgeschlossen.": "8.5 Pursuant to section 9a(2) WEG, the Community of Unit Owners exercises the rights arising from the Common Property and those unit owners' rights that require uniform enforcement. This does not exclude the Buyer's individual rights concerning acceptance or reservations of rights.",
+    "3.1 Kaufpreisraten werden erst fällig, wenn sämtliche allgemeinen Fälligkeitsvoraussetzungen des § 3 Abs. 1 MaBV vorliegen und die Notarin dies der Käuferin schriftlich bestätigt hat:": "3.1 Purchase Price instalments shall not become due until all general conditions set out in section 3(1) MaBV have been satisfied and the Notary has confirmed this to the Buyer in writing:",
+    "wirksamer Vertrag, Vorliegen der für seinen Vollzug erforderlichen Genehmigungen und keine vertraglichen Rücktrittsrechte der Verkäuferin;": "a valid contract, all approvals required for its implementation and no remaining contractual right of the Seller to rescind;",
+    "Eintragung einer Auflassungsvormerkung zugunsten der Käuferin an vereinbarter Rangstelle sowie Vollzug der Begründung des Wohnungseigentums;": "registration of a priority notice of conveyance in favour of the Buyer at the agreed rank and completion of the creation of the condominium ownership;",
+    "gesicherte Freistellung von nicht zu übernehmenden vorrangigen oder gleichrangigen Grundpfandrechten auch bei nicht vollendetem Bauvorhaben und Aushändigung der hierfür erforderlichen Erklärungen an die Käuferin;": "secured release of prior-ranking or equal-ranking land charges that the Buyer is not to assume, including if the development is not completed, and delivery to the Buyer of the declarations required for that purpose;",
+    "erteilte Baugenehmigung oder ein anderer Nachweis nach § 3 Abs. 1 Satz 1 Nr. 4 MaBV einschließlich der dort gegebenenfalls vorgeschriebenen Monatsfrist.": "the building permit or other evidence required by section 3(1), first sentence, no. 4 MaBV, including any one-month waiting period prescribed there.",
+    "10.1 Zur Sicherung des Anspruchs der Käuferin auf Eigentumsverschaffung bewilligt und beantragt die Verkäuferin die Eintragung einer Auflassungsvormerkung im Grundbuch zugunsten der Käuferin.": "10.1 To secure the Buyer's claim to transfer of title, the Seller consents to and applies for registration of a priority notice of conveyance in favour of the Buyer in the Land Register.",
+    "10.3 Die Verkäuferin verpflichtet sich, die Lastenfreistellung des Kaufgegenstands von der Globalgrundschuld zu bewirken, soweit diese nicht der Finanzierung der Käuferin dient. Die der Käuferin vor der ersten Rate auszuhändigende Freistellungserklärung muss gewährleisten, dass bei Vollendung des Bauvorhabens die nicht zu übernehmenden Grundpfandrechte unverzüglich nach Zahlung der geschuldeten Vertragssumme gelöscht werden. Für den Fall der Nichtvollendung muss sie die Löschung nach Zahlung des dem erreichten Bautenstand entsprechenden Vertragsteils oder die nach § 3 Abs. 1 Sätze 2 und 3 MaBV zulässige Rückzahlungslösung sichern.": "10.3 The Seller shall procure release of the Purchased Property from the global land charge to the extent that it does not secure the Buyer's financing. The release undertaking to be delivered to the Buyer before the first instalment must ensure that, if the development is completed, all land charges not to be assumed are deleted without delay after payment of the contract sum owed. If the development is not completed, it must secure deletion upon payment of the portion of the contract sum corresponding to the stage of construction reached or the repayment arrangement permitted by section 3(1), sentences 2 and 3 MaBV.",
+    "10.4 Die Parteien sind über den Eigentumsübergang einig. Sie bewilligen und beantragen die Eigentumsumschreibung auf die Käuferin. Die Notarin wird angewiesen, die Eigentumsumschreibung erst zu beantragen, wenn der Kaufpreis fällig und gezahlt oder hinsichtlich streitiger Restbeträge berechtigt hinterlegt oder gesichert ist, die steuerliche Unbedenklichkeitsbescheinigung vorliegt und die Lastenfreistellung gesichert ist.": "10.4 The parties agree to the transfer of title and consent to and apply for registration of the Buyer as owner. The Notary is instructed not to apply for registration of title until the Purchase Price has become due and has been paid, or any disputed balance has properly been deposited or secured, the tax clearance certificate is available and release from encumbrances is secured.",
+    "**7.2** Der Käufer trägt nur Beiträge und Kosten für nach Besitzübergabe neu beschlossene Maßnahmen, die weder der erstmaligen Erschließung noch der Erfüllung der Herstellungsverpflichtungen des Verkäufers dienen und nicht durch eine Pflichtverletzung des Verkäufers veranlasst sind.": "**7.2** The Buyer shall bear only contributions and costs relating to measures newly resolved after transfer of possession which neither serve the initial development of the property nor discharge the Seller's construction obligations and which were not occasioned by a breach of duty by the Seller.",
 }
 
 
@@ -150,20 +167,37 @@ def polish_translation(text: str) -> str:
         "building description": "Building Specification",
         "division declaration": "Declaration of Division",
         "land register": "Land Register",
-        "special property": "Sondereigentum",
+        "special property": "Unit Property",
+        "Sondereigentum": "Unit Property",
         "common property": "Common Property",
+        "joint ownership": "Common Property",
+        "community of apartment owners": "Community of Unit Owners",
+        "joint property": "Common Property",
         "provision for disposition": "priority notice of conveyance",
         "disposition reservation": "priority notice of conveyance",
         "property reserve": "priority notice of conveyance",
         "property reservation": "priority notice of conveyance",
         "reservation train by train": "priority notice of conveyance concurrently",
         "Global Grundschuld": "global land charge",
+        "global basic liability": "global land charge",
+        "basic liability": "land charge",
         "basic debt": "land charge",
         "basic financing liens": "financing land charges",
         "object monitoring": "site supervision",
+        "construction description": "Building Specification",
+        "description of the building": "Building Specification",
+        "construction target": "contractual construction specification",
+        "contractual production": "contractual construction",
+        "production obligation": "construction obligation",
+        "production obligations": "construction obligations",
+        "complete production": "complete construction",
+        "timely production": "timely construction",
+        "defect-free production": "defect-free construction",
+        "production scope": "construction scope",
         "ready-to-cover production": "readiness for occupancy",
         "subscription readiness": "readiness for occupancy",
         "subscription skill": "readiness for occupancy",
+        "reference skill": "readiness for occupancy",
         "ready to move": "ready for occupancy",
         "ground exploitation and connection costs": "development and connection costs",
         "recognized rules of the technique": "recognised rules of technology",
@@ -178,6 +212,24 @@ def polish_translation(text: str) -> str:
         "resident:": "resident at:",
         "issued by a valid identity card": "identified by a valid identity card",
         "known to the Notary by person": "personally known to the Notary",
+        "WAY": "WEG",
+        "insolvency reserve": "priority notice of conveyance",
+        "property acquisition": "acquisition of title",
+        "owners of the dwelling": "unit owners",
+        "apartment ownership": "condominium ownership",
+        "maturity requirements": "conditions for payment to become due",
+        "form-needed": "subject to mandatory form requirements",
+        "publications": "persons appearing",
+        "publication": "person appearing",
+        "Declaration of partition": "Declaration of Division",
+        "Community order": "Community Rules",
+        "community order": "Community Rules",
+        "sample line": "selection range",
+        "sample series": "selection series",
+        "sample documentation": "selection documentation",
+        "dismissal reservation": "priority notice of conveyance",
+        "burden exemption": "release from encumbrances",
+        "load exemption": "release from encumbrances",
     }
     for old, new in replacements.items():
         text = re.sub(rf"\b{re.escape(old)}\b", new, text)
@@ -193,6 +245,49 @@ def polish_translation(text: str) -> str:
         "dismissal only after receipt": "registration only after receipt",
         "the Purchased Property in the position": "the Purchased Property in its position",
         "if the Seller asks": "when the Seller asks",
+        "Seller asks the Buyer in writing to pay": "Seller requests payment from the Buyer in writing",
+        "Skill of reference and train by train against transfer of ownership": "Readiness for occupancy concurrently with transfer of possession",
+        "skill of reference": "readiness for occupancy",
+        "train by train": "concurrently",
+        "The transfer of ownership takes place according to the readiness for occupancy": "Possession shall be transferred once the unit is ready for occupancy",
+        "Economic transfer of ownership": "Transfer of possession",
+        "Transfer of ownership, Acceptance": "Transfer of Possession and Acceptance",
+        "transfer of ownership, acceptance": "transfer of possession and acceptance",
+        "after the transfer of ownership": "after transfer of possession",
+        "after transfer of ownership": "after transfer of possession",
+        "upon transfer of ownership of unit B-05": "upon transfer of possession of unit B-05",
+        "upon transfer of ownership": "upon transfer of possession",
+        "consultation hours in the sample": "consultation hours during the selection appointment",
+        "framework of a sample": "selection process",
+        "specified in the sample": "specified during selection",
+        "sample from these series": "selection from these series",
+        "Safeguarding of property, reservation, release of burdens, dissolution": "Protection of Title, Priority Notice of Conveyance, Release from Encumbrances and Conveyance",
+        "the disposition": "the conveyance",
+        "disposition only after": "conveyance for registration only after",
+        "A deletion of the reservation": "Deletion of the priority notice of conveyance",
+        "deletion of the reservation": "deletion of the priority notice of conveyance",
+        "the reservation and delivers it": "the consent to deletion of the priority notice of conveyance and delivers it",
+        "Competence requires": "Readiness for occupancy requires",
+        "free of loads": "free from encumbrances",
+        "exemption from loads": "release from encumbrances",
+        "unaccepted loads": "encumbrances not assumed",
+        "load release": "release from encumbrances",
+        "global mortgage": "global land charge",
+        "declaration of exemption": "release undertaking",
+        "Broker and Builders Ordinance": "German Makler- und Bauträgerverordnung",
+        "Broker and property development regulation": "German Makler- und Bauträgerverordnung",
+        "MABV": "MaBV",
+        "apply for the property transfer": "apply for registration of title",
+        "transfer of property only when": "registration of title only when",
+        "You approve and apply": "They consent to and apply",
+        "Readiness to reference Train to train against transfer of ownership": "Readiness for occupancy concurrently with transfer of possession",
+        "shows the readiness for occupancy and invites to a joint walk": "gives notice of readiness for occupancy and invites the Buyer to a joint inspection",
+        "Acquisition of the special ownership unit": "Acceptance of the Unit Property",
+        "Declaration of reference 1": "Referenced Deed 1",
+        "reference documents": "referenced deeds",
+        "load-free property transfer": "registration of title free from encumbrances",
+        "property transfer": "registration of title",
+        "transfer of property": "registration of title",
     }
     for old, new in phrase_replacements.items():
         text = text.replace(old, new)
@@ -282,6 +377,12 @@ def translate_block(block: str) -> str:
             "Sprachvorrang": "Language Precedence",
             "Anlage: Baubeschreibung": "Annex: Building Specification",
             "Schlussbestimmungen der Baubeschreibung": "Final Provisions of the Building Specification",
+            "§ 6 Besitzübergang, Abnahme": "§ 6 Transfer of Possession and Acceptance",
+            "7 Besitzübergabe, Abnahme": "7 Transfer of Possession and Acceptance",
+            "§ 5 Wirtschaftlicher Besitzübergang, Abnahme, Schlüsselübergabe": "§ 5 Transfer of Possession, Acceptance and Handover of Keys",
+            "10 Eigentumssicherung, Vormerkung, Lastenfreistellung, Auflassung": "10 Protection of Title, Priority Notice of Conveyance, Release from Encumbrances and Conveyance",
+            "9 Bemusterung, Auswahlrechte": "9 Selection of Finishes and Selection Rights",
+            "14 Wohnfläche, Bemusterung": "14 Residential Floor Area and Selection of Finishes",
         }
         return f"{prefix} {manual.get(title, translate(title))}"
     if block.startswith("|"):
@@ -332,7 +433,9 @@ def translate_markdown_table(block: str) -> str:
             continue
         translated_cells = []
         for cell in cells:
-            if re.fullmatch(r"[:\-\s]+", cell) or re.fullmatch(r"[0-9., %EUR§/()A-Za-z-]+", cell) and not re.search(r"[ÄÖÜäöüß]", cell):
+            if re.fullmatch(r"[:\-\s]+", cell) or re.fullmatch(
+                r"(?:EUR\s*)?[0-9.,+\-/%€\s]+", cell
+            ):
                 translated_cells.append(cell)
             else:
                 translated_cells.append(translate(cell))
@@ -378,12 +481,16 @@ def bilingual_rows(blocks: list[str], english_blocks: list[str]) -> str:
     return "\n".join(rows)
 
 
-def html_document(title: str, body: str) -> str:
+def html_document(title: str, body: str, source_sha256: str) -> str:
     escaped_title = html.escape(title)
+    provenance = f"btv-source-sha256:{source_sha256}"
     return f"""<!doctype html>
 <html lang="de">
 <head>
 <meta charset="utf-8">
+<meta name="description" content="{provenance}">
+<meta name="keywords" content="{provenance}">
+<meta name="btv-source-sha256" content="{source_sha256}">
 <title>{escaped_title}</title>
 <style>
 @page {{
@@ -616,6 +723,7 @@ def repair_bilingual_docx_tables(path: Path) -> None:
 
 def build_contract(cfg: ContractConfig, render: bool) -> None:
     source = cfg.src.read_text(encoding="utf-8")
+    source_sha256 = hashlib.sha256(cfg.src.read_bytes()).hexdigest()
     blocks = inject_language_notice(split_blocks(source), cfg)
     english_blocks: list[str] = []
     for block in blocks:
@@ -639,6 +747,7 @@ def build_contract(cfg: ContractConfig, render: bool) -> None:
     html_text = html_document(
         f"{cfg.short_title} — Deutsch/English",
         bilingual_rows(blocks, english_blocks),
+        source_sha256,
     )
     out_html.write_text(html_text, encoding="utf-8")
 

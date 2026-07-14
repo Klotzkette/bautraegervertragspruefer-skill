@@ -22,11 +22,17 @@ geschäftsansässig: Mundsburger Damm 5, 22087 Hamburg,
 
 der Notarin von Person bekannt,
 
-handelnd nicht im eigenen Namen, sondern als alleinvertretungsberechtigter, von den Beschränkungen des § 181 BGB befreiter Prokurist für die
+handelnd nicht im eigenen Namen, sondern als alleinvertretungsberechtigter, von den Beschränkungen des § 181 BGB befreiter Geschäftsführer der
+
+**Marewald Verwaltungs GmbH**
+
+(Amtsgericht Hamburg, HRB 158 994),
+
+diese handelnd als persönlich haftende Gesellschafterin für die
 
 **Marewald Wohnbau GmbH & Co. KG**
 
-(Amtsgericht Hamburg, HRA 121 540; Komplementärin: Marewald Verwaltungs GmbH, Amtsgericht Hamburg, HRB 158 994),
+(Amtsgericht Hamburg, HRA 121 540),
 
 Geschäftsanschrift: Mundsburger Damm 5, 22087 Hamburg,
 
@@ -64,7 +70,7 @@ Geringfügige Änderungen der Planung bleiben vorbehalten, soweit sie durch beh�
 
 **0.2** Umfang und Beschränkungen des Wohnungs- und Teileigentums, die Rechtsbeziehungen der Eigentümer zueinander und die Verwaltung des gemeinschaftlichen Eigentums werden geregelt in der Teilungserklärung einschließlich Gemeinschaftsordnung vom 21. Oktober 2025 zur UR-Nr. 1502/2025 der amtierenden Notarin, in der Fassung des 1. Nachtrags vom 09. Februar 2026 zur UR-Nr. 188/2026 — nachfolgend auch „Teilungserklärung" und/oder „Bezugsurkunde 1" genannt.
 
-**0.3** Die Baubeschreibung in der Fassung Mai 2026, Version 3.0 (Anlage Baubeschreibung zu dieser Urkunde) ist Gegenstand der Beurkundung und Bestandteil der vom Verkäufer geschuldeten Leistung. Auf das Verlesen wird nicht verzichtet; die Baubeschreibung wurde mitverlesen und als Anlage mitbeurkundet. Visualisierungen, Exposés und die Musterwohnung sind nicht Vertragsbestandteil.
+**0.3** Die Baubeschreibung in der Fassung Mai 2026, Version 3.0 (Anlage Baubeschreibung zu dieser Urkunde) ist Gegenstand der Beurkundung und Bestandteil der vom Verkäufer geschuldeten Leistung. Auf das Verlesen wird nicht verzichtet; die Baubeschreibung wurde mitverlesen und als Anlage mitbeurkundet. Visualisierungen, Exposés und die Musterwohnung sind keine selbständigen Vertragsbestandteile; ihre Berücksichtigung als vertragsbegleitende Umstände bei der Auslegung unvollständiger oder unklarer Leistungsbeschreibungen bleibt unberührt.
 
 **0.4** Die Abgeschlossenheitsbescheinigung liegt vor. Die Baugenehmigung für die Häuser A bis D vom 14. April 2026 (Az. HH-Wb-2026/0471) liegt vor und wurde der Notarin nachgewiesen.
 
@@ -130,11 +136,11 @@ Diese Voraussetzungen entsprechen § 3 Abs. 1 der Makler- und Bauträgerverordnu
 
 Eine Rate wird fällig, wenn der zugehörige Bautenstand tatsächlich erreicht ist und der Verkäufer den Käufer schriftlich unter Bezeichnung des erreichten Meilensteins zur Zahlung auffordert. Der Käufer ist berechtigt, den Bautenstand vor Zahlung selbst oder durch eine Person seines Vertrauens zu überprüfen (§ 8); ist der bezeichnete Bautenstand nicht erreicht, wird die Rate nicht fällig. Die Schlussrate (7. Rate) wird erst nach vollständiger Fertigstellung einschließlich der dem Kaufgegenstand zugeordneten Außenanlagen und nach Beseitigung der im Abnahmeprotokoll festgehaltenen Mängel und Restarbeiten fällig.
 
-**3.3** Sicherheit für rechtzeitige und mangelfreie Herstellung. Der Verkäufer stellt dem Käufer bei der ersten Abschlagszahlung eine Sicherheit in Höhe von 5 % des Gesamtkaufpreises (§ 650m Abs. 2 BGB) für die rechtzeitige Herstellung des Kaufgegenstandes ohne wesentliche Mängel. Die Sicherheit kann nach Wahl des Verkäufers durch Einbehalt des Käufers von der ersten Rate oder durch unbefristete, selbstschuldnerische Bürgschaft eines im Inland zum Geschäftsbetrieb befugten Kreditinstituts geleistet werden. Die Sicherheit ist zurückzugeben, wenn die Sondereigentumseinheit abgenommen ist, das für den Kaufgegenstand maßgebliche Gemeinschaftseigentum zur Abnahme angeboten wurde und keine wesentlichen, rechtzeitige oder mangelfreie Herstellung betreffenden Mängel mehr offen sind. In Höhe noch nicht beseitigter wesentlicher Mängel bleibt die Sicherheit bestehen.
+**3.3** Sicherheit für rechtzeitige und mangelfreie Herstellung. Der Verkäufer stellt dem Käufer bei der ersten Abschlagszahlung eine Sicherheit in Höhe von 5 % des Gesamtkaufpreises (§ 650m Abs. 2 BGB) für die rechtzeitige Herstellung des Kaufgegenstandes ohne wesentliche Mängel. Die Sicherheit kann durch Einbehalt des Käufers nach Maßgabe des § 650m Abs. 2 Satz 3 BGB oder durch unbefristete, selbstschuldnerische Garantie oder ein sonstiges Zahlungsversprechen eines im Inland zum Geschäftsbetrieb befugten Kreditinstituts oder Kreditversicherers geleistet werden. Sie ist zurückzugeben, sobald der gesamte von ihr erfasste Herstellungsumfang tatsächlich rechtzeitig und ohne wesentliche Mängel fertiggestellt ist. Soweit gesicherte Ansprüche wegen Verzögerung oder wesentlicher Mängel fortbestehen, bleibt die Sicherheit in angemessener Höhe bestehen; sonstige gesetzliche Mängelrechte werden durch ihre Rückgabe nicht berührt.
 
-**3.4** Reservierungsentgelt. Ein vor Beurkundung gezahltes Reservierungsentgelt von 5.000,00 EUR wird mit der ersten Kaufpreisrate verrechnet. Kommt der Vertrag aus vom Käufer nicht zu vertretenden Gründen nicht zustande, wird das Entgelt erstattet.
+**3.4** Vorleistung. Der vor Beurkundung gezahlte Betrag von 5.000,00 EUR wird vorbehaltlos und vollständig auf die erste fällige Kaufpreisrate angerechnet. Mit der Anrechnung sind keine Verzichts-, Anerkenntnis- oder Verfallwirkungen verbunden.
 
-**3.5** Sonderwünsche. Sonderwünsche außerhalb der Ausstattungslinie „Marewald Komfort C" werden gesondert auf Grundlage eines Nachtragsangebots beauftragt. Bauwerksbezogene Sonderwünsche werden mit der Rate fällig, die dem Bautenstand des betroffenen Gewerks entspricht; eine Vorauszahlung vor Leistung wird nur gegen Sicherheit nach § 7 MaBV verlangt. Die ersten drei Beratungsstunden in der Bemusterung sind im Kaufpreis enthalten; weiterer Beratungsaufwand wird mit 150,00 EUR netto je Stunde vergütet.
+**3.5** Sonderwünsche. Sonderwünsche außerhalb der Ausstattungslinie „Marewald Komfort C" werden gesondert auf Grundlage eines Nachtragsangebots beauftragt. Bauwerksbezogene Sonderwünsche werden mit der Rate fällig, die dem Bautenstand des betroffenen Gewerks entspricht; eine Vorauszahlung vor Leistung wird nur gegen Sicherheit nach § 7 MaBV verlangt. Die ersten drei Beratungsstunden in der Bemusterung sind im Kaufpreis enthalten; weiterer Beratungsaufwand wird mit 178,50 EUR je Stunde einschließlich 19 % Umsatzsteuer vergütet.
 
 \newpage
 
@@ -152,13 +158,13 @@ Eine Rate wird fällig, wenn der zugehörige Bautenstand tatsächlich erreicht i
 
 **5.1** Der Verkäufer verpflichtet sich, den Kaufgegenstand entsprechend der mitbeurkundeten Anlage Baubeschreibung (Fassung Mai 2026, Version 3.0), den genehmigten Plänen und den anerkannten Regeln der Technik herzustellen.
 
-**5.2** Planung und Bauüberwachung organisiert der Verkäufer in eigener Verantwortung. Der Käufer erhält die zur Finanzierung, öffentlich-rechtlichen Nachweisführung, Abnahme und späteren Verwaltung erforderlichen Unterlagen nach § 650n BGB; insbesondere werden ihm bzw. der Gemeinschaft die Planungs- und Nachweisunterlagen spätestens mit der Fertigstellung übergeben. Im Übrigen bleiben interne Steuerungsunterlagen dem Verkäufer vorbehalten.
+**5.2** Planung und Bauüberwachung organisiert der Verkäufer in eigener Verantwortung. Planungsunterlagen, welche der Käufer zum Nachweis gegenüber Behörden benötigt, werden ihm rechtzeitig vor Beginn der jeweils betroffenen Ausführung übergeben; die entsprechenden Fertigstellungsnachweise spätestens mit Fertigstellung. Entsprechendes gilt für Nachweise, die ein Darlehensgeber aufgrund einer vom Verkäufer geweckten berechtigten Erwartung verlangt (§ 650n BGB). Darüber hinaus erhält der Käufer oder die Gemeinschaft die vertraglich geschuldeten Bedienungs-, Wartungs-, Prüf- und Revisionsunterlagen zu dem jeweils vereinbarten Übergabezeitpunkt. Reine interne Kalkulations- und Steuerungsunterlagen bleiben vorbehalten.
 
 **5.3** Soweit die Baubeschreibung Wahlmöglichkeiten vorsieht, erhält der Käufer im Bemusterungszentrum „Marewald Auswahl", Mundsburger Damm 5, Hamburg, Gelegenheit zur Auswahl, sofern der Baufortschritt es zulässt. Trifft der Käufer trotz Aufforderung und angemessener Frist von mindestens vier Wochen keine Auswahl, bestimmt der Verkäufer die Ausführung aus der Ausstattungslinie „Marewald Komfort C" nach billigem Ermessen unter Berücksichtigung des einheitlichen Erscheinungsbildes.
 
-**5.4** Auf eine von Baubeschreibung, Plänen und Vertrag abweichende Ausführung besteht kein Anspruch. Verkaufsunterlagen und Musterwohnung begründen keine Beschaffenheitsvereinbarung.
+**5.4** Auf eine von Baubeschreibung, Plänen und Vertrag abweichende Ausführung besteht kein Anspruch. Verkaufsunterlagen und Musterwohnung begründen für sich allein keine zusätzliche Beschaffenheitsvereinbarung; Individualabreden und ihre Berücksichtigung als vertragsbegleitende Umstände bei unvollständigen oder unklaren Leistungsbeschreibungen bleiben unberührt.
 
-**5.5** Enthält die Baubeschreibung zu notwendigen Leistungen keine oder unbestimmte Angaben, schuldet der Verkäufer eine Ausführung mittlerer Art und Güte, die der Ausstattungslinie „Marewald Komfort C" entspricht und die anerkannten Regeln der Technik einhält.
+**5.5** Enthält die Baubeschreibung zu notwendigen Leistungen keine oder unbestimmte Angaben, wird das Bausoll unter Berücksichtigung sämtlicher vertragsbegleitender Umstände, insbesondere des Komfort- und Qualitätsstandards der Ausstattungslinie „Marewald Komfort C", bestimmt; Zweifel gehen zulasten des Verkäufers. Geschuldet sind mindestens die anerkannten Regeln der Technik und die nach diesem Auslegungsmaßstab erforderliche Qualität.
 
 **5.6** Der Verkäufer schuldet die Einhaltung der anerkannten Regeln der Technik **im Zeitpunkt der Abnahme**. Ändern sich die anerkannten Regeln der Technik zwischen Vertragsschluss und Abnahme, klärt der Verkäufer den Käufer über die Änderung und ihre Folgen auf; etwaige Mehrkosten einer über den Vertragsstand hinausgehenden Ausführung trägt der Käufer nur nach gesonderter Vereinbarung.
 
@@ -172,7 +178,7 @@ Eine Rate wird fällig, wenn der zugehörige Bautenstand tatsächlich erreicht i
 
 5.8.3 Bei vom Verkäufer zu vertretender Überschreitung des Termins schuldet er eine Vertragsstrafe von 0,2 % des Gesamtkaufpreises je vollendeter Woche, höchstens 5 % des Gesamtkaufpreises. Die Vertragsstrafe wird auf einen weitergehenden Verzugsschaden angerechnet. Die gesetzliche Haftung für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie für Vorsatz und grobe Fahrlässigkeit bleibt unberührt.
 
-**5.9** Wohnfläche. Die Wohnfläche beträgt ca. 84,6 m² (Berechnung nach Wohnflächenverordnung). Weicht die tatsächliche Wohnfläche um mehr als 3 % nach unten ab, wird der Kaufpreis im Verhältnis der Mehrabweichung angepasst; weitergehende gesetzliche Rechte bleiben unberührt.
+**5.9** Wohnfläche. Die nach der Wohnflächenverordnung ermittelte Plan-Wohnfläche beträgt ca. 84,6 m². Unvermeidbare, geringfügige Maßabweichungen sind nicht allein wegen der Abweichung mangelhaft, sofern sie Gebrauchstauglichkeit, Möblierbarkeit und Wert nicht spürbar beeinträchtigen. Im Übrigen richten sich Kaufpreisanpassung und weitere Rechte nach Bedeutung und Umfang der tatsächlichen Abweichung; eine starre Toleranz oder eine Beschränkung auf den eine Toleranz überschreitenden Flächenanteil wird nicht vereinbart.
 
 **5.10** Energiestandard. Haus C wird nach den Anforderungen des Gebäudeenergiegesetzes (GEG) in der zum Bauantrag geltenden Fassung errichtet und an die Quartiers-Wärmeversorgung (Wärmepumpe mit Spitzenlastkessel) angeschlossen. Eine bestimmte KfW-Effizienzhausklasse oder Förderfähigkeit wird nicht geschuldet, soweit nicht in der Baubeschreibung mit Kennwert vereinbart.
 
@@ -192,9 +198,9 @@ Eine Rate wird fällig, wenn der zugehörige Bautenstand tatsächlich erreicht i
 
 # § 7 Erschließungs- und Anschlusskosten
 
-**7.1** Die Kosten der erstmaligen Erschließung und der Anschlüsse an Ver- und Entsorgungsanlagen trägt der Käufer anteilig nach seinem Miteigentumsanteil, soweit sie nicht bereits im Kaufpreis enthalten sind.
+**7.1** Der Festpreis umfasst sämtliche Kosten der erstmaligen Erschließung des Grundstücks sowie der für die vertragsgemäße Herstellung erforderlichen Ver- und Entsorgungsanschlüsse, auch soweit Bescheide erst nach Beurkundung ergehen.
 
-**7.2** Der Verkäufer schätzt die auf den Käufer entfallenden Erschließungs- und Anschlusskosten auf voraussichtlich 9.000,00 EUR bis 14.000,00 EUR. Die Schätzung beruht auf den derzeit bekannten Bescheiden und Satzungen; maßgeblich ist die spätere behördliche Abrechnung.
+**7.2** Der Käufer trägt nur Beiträge und Kosten für nach Besitzübergabe neu beschlossene Maßnahmen, die weder der erstmaligen Erschließung noch der Erfüllung der Herstellungsverpflichtungen des Verkäufers dienen und nicht durch eine Pflichtverletzung des Verkäufers veranlasst sind.
 
 \newpage
 
@@ -208,7 +214,7 @@ Eine Rate wird fällig, wenn der zugehörige Bautenstand tatsächlich erreicht i
 
 # § 9 Mängelrechte, Verjährung
 
-**9.1** Für das herzustellende Bauwerk gelten die Mängelrechte des Werkvertragsrechts (§§ 633 ff. BGB) ohne Einschränkung. Für den Grund und Boden im Übrigen sind Sachmängelansprüche ausgeschlossen, ausgenommen Vorsatz und arglistig verschwiegene Mängel.
+**9.1** Für das herzustellende Bauwerk gelten die Mängelrechte des Werkvertragsrechts (§§ 633 ff. BGB) ohne Einschränkung. Für den Grund und Boden im Übrigen sind Sachmängelansprüche ausgeschlossen. Unberührt bleiben Ansprüche wegen arglistig verschwiegener Mängel, wegen einer übernommenen Garantie, wegen Vorsatz oder grober Fahrlässigkeit sowie wegen schuldhafter Verletzung von Leben, Körper oder Gesundheit.
 
 **9.2** Die Verjährungsfrist für Mängelansprüche am Bauwerk beträgt fünf Jahre ab Abnahme (§ 634a Abs. 1 Nr. 2 BGB).
 
@@ -230,7 +236,7 @@ Eine Rate wird fällig, wenn der zugehörige Bautenstand tatsächlich erreicht i
 
 # § 11 Auflassung
 
-Verkäufer und Käufer sind über den Eigentumsübergang einig und bewilligen und beantragen die Eintragung. Die Notarin wird angewiesen, die Auflassung erst nach vollständiger Kaufpreiszahlung und nach Vorliegen der Lastenfreistellung für den Kaufgegenstand zur Eintragung zu bringen.
+Verkäufer und Käufer sind über den Eigentumsübergang einig und bewilligen und beantragen die Eintragung. Die Notarin wird angewiesen, die Auflassung erst nach Zahlung aller fälligen, unstreitigen und nicht berechtigt zurückbehaltenen Kaufpreisbeträge sowie nach Vorliegen der Lastenfreistellung für den Kaufgegenstand zur Eintragung zu bringen. Berechtigt zurückbehaltene Restbeträge hindern die Umschreibung nicht, wenn sie durch eine unbefristete selbstschuldnerische Bankbürgschaft oder in anderer insolvenzfester Weise gesichert sind.
 
 \newpage
 
@@ -320,7 +326,7 @@ Bezug: Haus C, Wohnung C-2.14 (2. Obergeschoss) nebst Kellerabteil K-C14, Balkon
 
 ## Vorbemerkungen zur Baubeschreibung
 
-**V.1** Diese Baubeschreibung beschreibt das Bausoll abschließend und ist mitbeurkundeter Bestandteil des Kaufvertrages. Wo sie konkrete Werte, Klassen oder Fabrikatsfamilien nennt, sind diese verbindlich; wo sie „gleichwertig" zulässt, ist die Gleichwertigkeit am genannten Kennwert zu messen.
+**V.1** Diese Baubeschreibung ist mitbeurkundeter Bestandteil des Kaufvertrages und beschreibt das Bausoll für die aufgeführten Gewerke. Wo sie konkrete Werte, Klassen oder Fabrikatsfamilien nennt, sind diese verbindlich; wo sie „gleichwertig" zulässt, ist die Gleichwertigkeit am genannten Kennwert zu messen. Unvollständige oder unklare Angaben werden nach § 5.5 des Vertrages ausgelegt.
 
 **V.2** Benannte Fabrikate sind beispielhaft; der Verkäufer darf gleichwertige Produkte einsetzen, wenn der genannte Mindeststandard (Maß, Klasse, Kennwert) eingehalten wird. Ein Anspruch auf ein bestimmtes Fabrikat besteht nur, wenn es ausdrücklich als verbindlich bezeichnet ist.
 
@@ -332,7 +338,7 @@ Bezug: Haus C, Wohnung C-2.14 (2. Obergeschoss) nebst Kellerabteil K-C14, Balkon
 
 **1.1** Haus C wird in Massivbauweise (Stahlbeton/Mauerwerk) mit Flachdach errichtet. Die Wohnung C-2.14 liegt im 2. Obergeschoss.
 
-**1.2** Die Ausstattung entspricht der Linie „Marewald Komfort C". Soweit einzelne Festlegungen offenbleiben, gilt mittlere Art und Güte nach Abschnitt V und § 5.5 des Vertrages.
+**1.2** Die Ausstattung entspricht der Linie „Marewald Komfort C". Soweit einzelne Festlegungen offenbleiben, gilt der Auslegungsmaßstab nach Abschnitt V und § 5.5 des Vertrages.
 
 # 2 Baugrund, Gründung, Abdichtung
 

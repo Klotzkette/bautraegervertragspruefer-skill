@@ -48,6 +48,7 @@ zip_list() {
 }
 
 for path in \
+  CHANGELOG.md \
   README.md \
   skill/SKILL.md \
   skill/MINI_SKILL.md \
@@ -185,6 +186,7 @@ for full_required in \
   "Dokument 2 — Mandantengutachten" \
   "Dokument 3 — Aufforderungsschreiben" \
   "formbedürftigem Nachtrag" \
+  "VII ZR 84/09" \
   "VII ZR 231/22" \
   "VII ZR 310/99" \
   "VII ZR 167/11" \
@@ -213,6 +215,7 @@ grep -Fq "Bauträgervertrag-Prüfer Skill ${skill_version}" docs/index.html || f
 grep -Fq "Stand ${skill_version}" docs/index.html || fail "docs/index.html stand/version stale"
 
 catalog_paths=(
+  CHANGELOG.md
   skill/SKILL.md
   skill/MINI_SKILL.md
   vertragsdokumente/README.md
@@ -344,7 +347,8 @@ for forbidden_legal_pattern in \
   'Einzelgewerkvergabe.*offen' \
   'unter allen Umständen ausgelegt' \
   'Wohnflächentoleranz über 2' \
-  'Preisanpassung nicht ohne Lösungsrecht akzeptieren'; do
+  'Preisanpassung nicht ohne Lösungsrecht akzeptieren' \
+  'Mängelbeseitigung nach Abnahme richtet sich nach dem Standard der Beseitigung'; do
   if repo_rg -n "$forbidden_legal_pattern" README.md skill docs vertragsdokumente \
       --glob '!*.pdf' --glob '!*.docx' --glob '!*.zip' >/tmp/btv_legal_regressions.txt 2>/dev/null; then
     cat /tmp/btv_legal_regressions.txt >&2
@@ -352,18 +356,22 @@ for forbidden_legal_pattern in \
   fi
 done
 
-for required_legal_phrase in \
-  'Sicherungsaustausch:' \
-  '5 % der nach der ersten Stufe verbleibenden Vertragssumme' \
-  'Rüge/Beschluss hemmt nicht ohne §§203/204'; do
-  grep -Fq "$required_legal_phrase" skill/SKILL.md skill/MINI_SKILL.md \
-    || fail "corrected legal safeguard missing: ${required_legal_phrase}"
-done
-
 for skill_path in skill/SKILL.md skill/MINI_SKILL.md; do
+  for required_legal_phrase in \
+    'Sicherungsaustausch:' \
+    '5 % der nach der ersten Stufe verbleibenden Vertragssumme' \
+    'Rüge/Beschluss hemmt nicht ohne §§203/204' \
+    'VII ZR 84/09'; do
+    grep -Fq "$required_legal_phrase" "$skill_path" \
+      || fail "$skill_path omits corrected legal safeguard: ${required_legal_phrase}"
+  done
   grep -Fq 'keine vertraglichen Rücktrittsrechte eingeräumt' "$skill_path" \
     || fail "$skill_path omits the first-payment prerequisite from § 3 Abs. 1 Satz 1 Nr. 1 MaBV"
 done
+
+grep -Fq "## ${skill_version} -" CHANGELOG.md || fail "CHANGELOG lacks current version"
+changelog_fix_count="$(awk '/^## 3\.7\.0 /{active=1; next} /^## /{active=0} active && /^[0-9]+\./{count++} END{print count+0}' CHANGELOG.md)"
+[[ "$changelog_fix_count" -eq 30 ]] || fail "CHANGELOG must list exactly 30 audited fixes: ${changelog_fix_count}"
 
 contract_sources=(
   vertragsdokumente/bautraegervertrag/bautraegervertrag.md
@@ -383,6 +391,40 @@ for source in "${contract_sources[@]:0:3}"; do
   grep -Fq '# Wohnungsbauträgervertrag mit Auflassung' "$source" || fail "$source missing exact deed title"
 done
 
+marewald="vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md"
+lindenhain="vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md"
+for stale_pattern in \
+  'Prokurist für die' \
+  '150,00 EUR netto' \
+  'mehr als 3 % nach unten' \
+  'beschreibt das Bausoll abschließend'; do
+  ! grep -Fq "$stale_pattern" "$marewald" || fail "$marewald contains stale positive-control clause: $stale_pattern"
+done
+for required_pattern in \
+  'Marewald Verwaltungs GmbH' \
+  '§ 650m Abs. 2 Satz 3 BGB' \
+  '178,50 EUR je Stunde einschließlich 19 % Umsatzsteuer' \
+  'eine starre Toleranz' \
+  'sämtliche Kosten der erstmaligen Erschließung'; do
+  grep -Fq "$required_pattern" "$marewald" || fail "$marewald omits corrected clause: $required_pattern"
+done
+for stale_pattern in \
+  'schriftlich oder in Textform bestätigt' \
+  'Mängelrechte am Gemeinschaftseigentum nach Maßgabe des WEG an sich ziehen' \
+  'spätestens drei Monate nach erster Eigentumsumschreibung' \
+  'Nachträgliche Sonderwünsche bleiben formfrei' \
+  'mindestens nach GEG 2026'; do
+  ! grep -Fq "$stale_pattern" "$lindenhain" || fail "$lindenhain contains stale positive-control clause: $stale_pattern"
+done
+for required_pattern in \
+  'Lindenhain Wohnwerte Verwaltungs GmbH' \
+  'schriftlich bestätigt hat' \
+  '§ 9a Abs. 2 WEG' \
+  'nach § 321 BGB' \
+  'Jahres-Primärenergiebedarf höchstens 40 %'; do
+  grep -Fq "$required_pattern" "$lindenhain" || fail "$lindenhain omits corrected clause: $required_pattern"
+done
+
 bilingual_sources=(
   vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html
   vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html
@@ -396,7 +438,9 @@ for html in "${bilingual_sources[@]}"; do
   grep -Fq "Deutsch-englische Lesefassung" "$html" || fail "$html missing bilingual notice"
   grep -Fq "ausschließlich die deutsche Sprachfassung" "$html" || fail "$html missing notarisation-language clause"
   grep -Fq "the German language version shall be authoritative" "$html" || fail "$html missing English precedence clause"
-  if grep -Eq 'Bound|\*\*|subscription skill|ready-to-cover|statement of insolvency|Published today|Business resident|Housing housing|contract with disposition|Wohnungsbauträgervertrags' "$html"; then
+  grep -Eq '<meta name="btv-source-sha256" content="[0-9a-f]{64}">' "$html" || fail "$html missing source provenance"
+  if grep -Eiq 'MK-Bound|\*\*|subscription skill|reference skill|ready-to-cover|statement of insolvency|insolvency reserve|Published today|Business resident|Housing housing|contract with disposition|Wohnungsbauträgervertrags|joint property|joint ownership|community of apartment owners|global basic liability|basic liability|burden exemption|load exemption|construction target|form-needed|sample line|sample series|skill of reference|train by train|Competence requires' "$html" \
+    || grep -Eq '(^|[^[:alpha:]])WAY([^[:alpha:]]|$)' "$html"; then
     fail "$html contains visible translation artifact"
   fi
 done
@@ -421,7 +465,7 @@ for zip in \
   docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip; do
   require_file "$zip"
   pdf_count="$(zip_list "$zip" | grep -E '\.pdf$' | wc -l | tr -d ' ')"
-  [[ "$pdf_count" -ge 2 ]] || fail "$zip contains fewer than two Einzel-PDFs"
+  [[ "$pdf_count" -eq 2 ]] || fail "$zip must contain exactly two Einzel-PDFs"
 done
 
 python3 scripts/check_legal_anchors.py

@@ -20,7 +20,13 @@ geschäftsansässig: Lindenhain Wohnwerte GmbH & Co. KG, Gereonstraße 18, 50670
 
 der Notarin von Person bekannt,
 
-handelnd nicht im eigenen Namen, sondern als einzelvertretungsberechtigter, von den Beschränkungen des § 181 BGB befreiter Geschäftsführer der Komplementärin
+handelnd nicht im eigenen Namen, sondern als einzelvertretungsberechtigter, von den Beschränkungen des § 181 BGB befreiter Geschäftsführer der
+
+**Lindenhain Wohnwerte Verwaltungs GmbH**
+
+eingetragen im Handelsregister des Amtsgerichts Köln unter HRB 118402,
+
+diese handelnd als persönlich haftende Gesellschafterin für die
 
 **Lindenhain Wohnwerte GmbH & Co. KG**
 
@@ -90,12 +96,12 @@ Er entfällt einheitlich auf Grundstücksanteil, Wohnung, Kellerraum, Tiefgarage
 
 ## 3 Fälligkeit, Ratenplan, Sicherheit
 
-3.1 Kaufpreisraten werden erst fällig, wenn sämtliche allgemeinen Fälligkeitsvoraussetzungen des § 3 Abs. 1 MaBV vorliegen und die Notarin dies der Käuferin schriftlich oder in Textform bestätigt hat:
+3.1 Kaufpreisraten werden erst fällig, wenn sämtliche allgemeinen Fälligkeitsvoraussetzungen des § 3 Abs. 1 MaBV vorliegen und die Notarin dies der Käuferin schriftlich bestätigt hat:
 
-- wirksamer Vertrag;
-- Eintragung einer Auflassungsvormerkung zugunsten der Käuferin;
-- Vorliegen einer den Anforderungen der MaBV entsprechenden Freistellungserklärung der Globalgläubigerin;
-- gesicherte Baugenehmigung oder öffentlich-rechtliche Genehmigungsfreiheit, soweit einschlägig.
+- wirksamer Vertrag, Vorliegen der für seinen Vollzug erforderlichen Genehmigungen und keine vertraglichen Rücktrittsrechte der Verkäuferin;
+- Eintragung einer Auflassungsvormerkung zugunsten der Käuferin an vereinbarter Rangstelle sowie Vollzug der Begründung des Wohnungseigentums;
+- gesicherte Freistellung von nicht zu übernehmenden vorrangigen oder gleichrangigen Grundpfandrechten auch bei nicht vollendetem Bauvorhaben und Aushändigung der hierfür erforderlichen Erklärungen an die Käuferin;
+- erteilte Baugenehmigung oder ein anderer Nachweis nach § 3 Abs. 1 Satz 1 Nr. 4 MaBV einschließlich der dort gegebenenfalls vorgeschriebenen Monatsfrist.
 
 3.2 Die Verkäuferin stellt der Käuferin spätestens mit der ersten Rate eine Sicherheit in Höhe von 5 % des Kaufpreises nach § 650m Abs. 2 BGB. Die Käuferin darf diesen Betrag von der ersten fälligen Rate einbehalten, bis die Verkäuferin eine unbefristete, selbstschuldnerische Bürgschaft eines im Inland zugelassenen Kreditinstituts oder Kreditversicherers übergeben hat. Das Einbehaltsrecht besteht automatisch; es bedarf keiner gesonderten Ausübungserklärung.
 
@@ -129,9 +135,9 @@ Er entfällt einheitlich auf Grundstücksanteil, Wohnung, Kellerraum, Tiefgarage
 
 ## 5 Baupflicht, Bausoll, Unterlagen
 
-5.1 Die Verkäuferin verpflichtet sich, den Kaufgegenstand und das Gemeinschaftseigentum nach dieser Urkunde, der Baubeschreibung, den Plänen, der Baugenehmigung und den anerkannten Regeln der Technik zum Zeitpunkt der Abnahme herzustellen. Geschuldet ist mindestens eine Ausführung mittlerer Art und Güte, soweit die Baubeschreibung keinen höheren Standard vorsieht.
+5.1 Die Verkäuferin verpflichtet sich, den Kaufgegenstand und das Gemeinschaftseigentum nach dieser Urkunde, der Baubeschreibung, den Plänen, der Baugenehmigung und den anerkannten Regeln der Technik zum Zeitpunkt der Abnahme herzustellen. Unvollständige oder unklare Leistungsangaben werden unter Berücksichtigung sämtlicher vertragsbegleitender Umstände, insbesondere des in den übrigen Unterlagen angelegten Komfort- und Qualitätsstandards, ausgelegt; Zweifel gehen zulasten der Verkäuferin.
 
-5.2 Die Verkäuferin übergibt der Käuferin spätestens zur Abnahme, soweit sachlich einschlägig und vorhanden, digital und auf Wunsch in Papierform:
+5.2 Die Verkäuferin übergibt der Käuferin rechtzeitig vor Beginn der jeweils betroffenen Ausführung die Planungsunterlagen, die sie zum öffentlich-rechtlichen Nachweis benötigt. Die entsprechenden Fertigstellungsnachweise erhält sie spätestens mit Fertigstellung; Entsprechendes gilt für Nachweise eines Darlehensgebers, soweit die Voraussetzungen des § 650n Abs. 3 BGB vorliegen. Die nachfolgend vertraglich geschuldeten Unterlagen werden, soweit sie nicht schon vor Ausführung benötigt werden, spätestens zur Abnahme des betroffenen Bereichs digital und auf Wunsch in Papierform übergeben:
 
 - Baugenehmigung und genehmigte Pläne;
 - Energiebedarfsausweis und GEG-Nachweise;
@@ -189,7 +195,7 @@ Er entfällt einheitlich auf Grundstücksanteil, Wohnung, Kellerraum, Tiefgarage
 
 8.4 Rechte wegen arglistig verschwiegener Mängel, Organisationsverschulden, Beschaffenheitsgarantie, Vorsatz, grober Fahrlässigkeit sowie Verletzung von Leben, Körper oder Gesundheit bleiben unberührt.
 
-8.5 Die Gemeinschaft der Wohnungseigentümer kann Mängelrechte am Gemeinschaftseigentum nach Maßgabe des WEG an sich ziehen oder geltend machen. Die individuellen Abnahme- und Vorbehaltsrechte der Käuferin werden dadurch nicht ausgeschlossen.
+8.5 Die Gemeinschaft der Wohnungseigentümer übt nach § 9a Abs. 2 WEG die sich aus dem gemeinschaftlichen Eigentum ergebenden Rechte sowie solche Rechte der Wohnungseigentümer aus, die eine einheitliche Rechtsverfolgung erfordern. Die individuellen Abnahme- und Vorbehaltsrechte der Käuferin werden dadurch nicht ausgeschlossen.
 
 ## 9 Teilungserklärung, Gemeinschaft, Verwaltung
 
@@ -199,7 +205,7 @@ Er entfällt einheitlich auf Grundstücksanteil, Wohnung, Kellerraum, Tiefgarage
 
 9.3 Die Erstverwaltung wird für höchstens zwei Jahre bestellt. Der Verwaltervertrag darf marktübliche Vergütung und Laufzeit nicht überschreiten und muss eine ordentliche Kündigungsmöglichkeit der Gemeinschaft nach Ablauf des ersten Verwaltungsjahres vorsehen.
 
-9.4 Die Verkäuferin übergibt der Gemeinschaft spätestens drei Monate nach erster Eigentumsumschreibung eine geordnete Projektdokumentation mit Wartungsverträgen, Gewährleistungsübersicht, Prüfprotokollen, Revisionsunterlagen und Kontaktdaten der ausführenden Unternehmen.
+9.4 Die Verkäuferin übergibt der Gemeinschaft die für Betrieb, Wartung und Verwaltung erforderliche geordnete Projektdokumentation spätestens mit Fertigstellung des jeweiligen gemeinschaftlichen Anlagenteils, keinesfalls später als bei dessen Besitzübergabe. Sie umfasst Wartungsverträge, Gewährleistungsübersicht, Prüfprotokolle, Revisionsunterlagen und Kontaktdaten der ausführenden Unternehmen; frühere Herausgabezeitpunkte nach § 5.2 bleiben unberührt.
 
 ## 10 Eigentumssicherung, Vormerkung, Lastenfreistellung, Auflassung
 
@@ -207,7 +213,7 @@ Er entfällt einheitlich auf Grundstücksanteil, Wohnung, Kellerraum, Tiefgarage
 
 10.2 Die Vormerkung darf nur gelöscht werden, wenn entweder die Eigentumsumschreibung auf die Käuferin vollzogen ist oder die Käuferin in öffentlich beglaubigter Form zustimmt oder eine rechtskräftige Entscheidung die Löschung erlaubt. Eine Löschung allein aufgrund einseitiger Mitteilung der Verkäuferin ist ausgeschlossen.
 
-10.3 Die Verkäuferin verpflichtet sich, die Lastenfreistellung des Kaufgegenstands von der Globalgrundschuld zu bewirken, soweit diese nicht der Finanzierung der Käuferin dient. Die Freistellungserklärung muss sicherstellen, dass die Käuferin lastenfreies Eigentum erhält, wenn sie die nach diesem Vertrag fälligen Beträge zahlt.
+10.3 Die Verkäuferin verpflichtet sich, die Lastenfreistellung des Kaufgegenstands von der Globalgrundschuld zu bewirken, soweit diese nicht der Finanzierung der Käuferin dient. Die der Käuferin vor der ersten Rate auszuhändigende Freistellungserklärung muss gewährleisten, dass bei Vollendung des Bauvorhabens die nicht zu übernehmenden Grundpfandrechte unverzüglich nach Zahlung der geschuldeten Vertragssumme gelöscht werden. Für den Fall der Nichtvollendung muss sie die Löschung nach Zahlung des dem erreichten Bautenstand entsprechenden Vertragsteils oder die nach § 3 Abs. 1 Sätze 2 und 3 MaBV zulässige Rückzahlungslösung sichern.
 
 10.4 Die Parteien sind über den Eigentumsübergang einig. Sie bewilligen und beantragen die Eigentumsumschreibung auf die Käuferin. Die Notarin wird angewiesen, die Eigentumsumschreibung erst zu beantragen, wenn der Kaufpreis fällig und gezahlt oder hinsichtlich streitiger Restbeträge berechtigt hinterlegt oder gesichert ist, die steuerliche Unbedenklichkeitsbescheinigung vorliegt und die Lastenfreistellung gesichert ist.
 
@@ -217,7 +223,7 @@ Er entfällt einheitlich auf Grundstücksanteil, Wohnung, Kellerraum, Tiefgarage
 
 11.2 Im Fall der Rückabwicklung sind empfangene Leistungen Zug um Zug zurückzugewähren. Eine Löschung der Vormerkung erfolgt erst nach Rückzahlung der von der Käuferin geleisteten Beträge oder nach gesicherter Hinterlegung, soweit nicht eine rechtskräftige Entscheidung etwas anderes bestimmt.
 
-11.3 Im Fall wirtschaftlicher Krise der Verkäuferin darf die Käuferin Zahlungen bis zur Klärung der Fälligkeit, Sicherheitenlage und Lastenfreistellung zurückhalten, soweit konkrete Zweifel an der ordnungsgemäßen Vertragserfüllung bestehen. Gesetzliche Rechte im Insolvenzfall bleiben unberührt.
+11.3 Wird nach Vertragsschluss erkennbar, dass der Anspruch der vorleistungspflichtigen Käuferin auf die Gegenleistung durch mangelnde Leistungsfähigkeit der Verkäuferin gefährdet wird, kann die Käuferin ihre Leistung nach § 321 BGB verweigern, bis die Gegenleistung bewirkt oder hierfür Sicherheit geleistet wird. Bloße Gerüchte oder allgemeine Marktlagen genügen nicht. Gesetzliche Rechte im Insolvenzfall bleiben unberührt.
 
 ## 12 Datenschutz, Kommunikation, Zustellungen
 
@@ -227,7 +233,7 @@ Er entfällt einheitlich auf Grundstücksanteil, Wohnung, Kellerraum, Tiefgarage
 
 ## 13 Schlussbestimmungen, Belehrungen, Kosten
 
-13.1 Änderungen und Ergänzungen dieses Vertrags bedürfen der notariellen Beurkundung, soweit sie vor Erklärung der Auflassung den Grundstücks- oder Herstellungsgegenstand betreffen oder sonst formbedürftig sind. Nachträgliche Sonderwünsche bleiben formfrei, soweit sie keine beurkundungspflichtigen Rechte ändern.
+13.1 Änderungen und Ergänzungen dieses Vertrags bedürfen der notariellen Beurkundung, soweit sie nach § 311b BGB oder aus anderem Grund formbedürftig sind. Für jeden nachträglichen Sonderwunsch ist gesondert zu prüfen, ob er mit dem Grundstücksgeschäft eine rechtliche Einheit bildet oder Umfang des Sondereigentums, Kaufpreis, Bausoll oder sonstige formbedürftige Rechte ändert; eine Textformabrede ersetzt die gesetzlich erforderliche Beurkundung nicht.
 
 13.2 Sollten einzelne Bestimmungen unwirksam sein, bleibt der Vertrag im Übrigen wirksam. An die Stelle der unwirksamen Bestimmung tritt das Gesetz. Eine geltungserhaltende Reduktion zulasten der Käuferin findet nicht statt.
 
@@ -299,7 +305,7 @@ Diese Baubeschreibung ist mit dem Bauträgervertrag mitbeurkundet und bestimmt d
 
 ## 4 Energie, Heizung, Lüftung, Sanitär
 
-4.1 Das Gebäude wird mindestens nach GEG 2026 und nach dem in den Vertragsunterlagen bezeichneten Effizienzhausstandard hergestellt. Die Verkäuferin übergibt Energiebedarfsausweis, GEG-Nachweise und die für Förder- oder Finanzierungszwecke üblichen Bestätigungen, soweit diese vertraglich vorausgesetzt sind.
+4.1 Das Gebäude wird nach dem im Zeitpunkt des Bauantrags geltenden Gebäudeenergiegesetz und zusätzlich mit folgenden vertraglichen Höchstwerten hergestellt: Jahres-Primärenergiebedarf höchstens 40 % und spezifischer Transmissionswärmeverlust höchstens 55 % der Werte des jeweiligen GEG-Referenzgebäudes. Diese Beschaffenheit wird unabhängig von der Verfügbarkeit eines Förderprogramms geschuldet; eine konkrete Förderung oder Förderzusage ist nicht garantiert. Die Verkäuferin übergibt Energiebedarfsausweis, GEG-Nachweise und vertraglich vorausgesetzte Finanzierungsnachweise zu den in § 5.2 bestimmten Zeitpunkten.
 
 4.2 Wärmeversorgung erfolgt über eine zentrale Wärmepumpe mit ergänzender Spitzenlastabdeckung nach Energiekonzept. Die Wohnung erhält Fußbodenheizung mit Einzelraumregelung in Aufenthaltsräumen, Bad und Küche.
 
