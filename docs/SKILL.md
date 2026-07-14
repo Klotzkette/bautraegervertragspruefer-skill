@@ -2,10 +2,10 @@
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge samt Baubeschreibung, Teilungserklärung und Projektunterlagen. Verwenden bei Vertragsentwürfen, beurkundeten Verträgen, Raten-, Abnahme- oder Mängelstreit, Bauzeitverzug, Insolvenz- und Technikrisiken. Startet mit Rollenmodus und Fall-Fingerabdruck. Prüft MaBV, § 650u/§ 650v BGB, AGB-Recht, Bausoll, anerkannte Regeln der Technik, Abnahme, Schlussrate, WEG, Eigentumssicherung, Baugrund, Objektüberwachung sowie wirtschaftliche und organisatorische Risiken. Trennt Evidenz, Klauselstatus, tatsächliche Fälligkeit und phasengerechte Handlung. Im geführten Modus folgen Kurzbild, Befundtabelle, Abschlussentscheidung und Nächste Weiche; im One-Shot entstehen Käufer-/Mandantenschreiben, ausführliches Gutachten und konkretes Aufforderungsschreiben an den Bauträger. Nutzt nur amtliche Gerichtsseiten sowie DeJure/OpenJur und blockiert den Start nicht bei fehlendem Live-Zugriff."
 metadata:
-  version: "3.7.0"
+  version: "3.8.0"
 ---
 
-# Bauträgervertrag-Prüfer 3.7.0
+# Bauträgervertrag-Prüfer 3.8.0
 
 Diese Skill-Datei ist ein geführter Workflow und zugleich ein One-Shot-Vollpaket zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -15,7 +15,7 @@ Diese Skill-Datei ist ein geführter Workflow und zugleich ein One-Shot-Vollpake
 
 ## Ausführungskern
 
-Die nachfolgenden Fachmodule liefern Prüfwissen; sie sind kein nacheinander abzuschreibendes Inhaltsverzeichnis. Für jede Anwendung haben diese acht Regeln Vorrang:
+Die nachfolgenden Fachmodule liefern Prüfwissen; sie sind kein nacheinander abzuschreibendes Inhaltsverzeichnis. Für jede Anwendung haben diese zehn Regeln Vorrang:
 
 1. **Eingangslage entscheidet.** Liegt verwertbarer Vertragsstoff vor, sofort prüfen. Liegt nur der Skill vor, nur den Upload anfordern. Bei `stop` sofort beenden. Die neueste Nutzerweisung geht jedem gespeicherten Zwischenstand vor.
 2. **Ausgabemodus entscheidet.** Eine einfache Prüfbitte führt zum geführten Zwischenstand mit Nächster Weiche. `one-shot`, `vollständig`, `final`, `alles` oder eine ausdrückliche Bitte um Gutachten/Schreiben führt ohne Rückfrage zum Drei-Dokumente-Paket.
@@ -25,8 +25,12 @@ Die nachfolgenden Fachmodule liefern Prüfwissen; sie sind kein nacheinander abz
 6. **Vertragsphase steuert die Rechtsfolge.** Vor Beurkundung werden Streichung, Ersatzwortlaut und Unterlagen verlangt. Nach Beurkundung werden Unwirksamkeit/Nichtanwendbarkeit, Fälligkeit, Einbehalt, Erfüllung und ein gegebenenfalls notariell zu beurkundender Nachtrag getrennt geprüft. In Zahlungs-, Bau-, Abnahme- oder Streitphase werden keine vorvertraglichen Standardforderungen ausgegeben, wenn bereits andere Rechtsbehelfe einschlägig sind.
 7. **Quellenstatus steuert die Behauptungsstärke.** Norm und verifizierte tragende Rechtsprechung dürfen als gesichert erscheinen; vertretbare Ableitungen heißen Argumentationslinie; nicht live verifizierte oder tatsächliche offene Punkte heißen Prüfbedarf. Fehlender Live-Zugriff stoppt die Vertragsprüfung nicht.
 8. **Fortsetzung erhält Zustand.** Nach einem technischen Abbruch nicht neu beginnen. Rolle, Phase, Modus, Dokumentenkarte, Befundregister-Version und Dokumentstatus rekonstruieren und exakt an der Fortsetzungsmarke weiterarbeiten.
+9. **Nur einmal lesen, nur einmal bewerten.** Dokumente nur einmal vollständig lesen und den Vertragsstoff dabei in Dokumentenkarte und Befundregister extrahieren. Fachmodule ergänzen dieses Register, sie starten keine zweite Volllektüre. Dieselbe Klausel, Tatsache oder Quelle wird nicht in parallelen Notizen neu bewertet; alle Ausgaben verweisen auf die stabile Befund-ID.
+10. **Recherche und Ausgabe bündeln.** Zuerst alle entscheidungserheblichen Quellenfragen aus dem Register sammeln, dann in einem gebündelten Quellencheck prüfen. Im geführten Modus werden höchstens sieben priorisierte Befunde vertieft; der Rest bleibt im Register. Im Vollpaket werden alle priorisierten Befunde behandelt, aber Sachverhalt, Norm und Quelle nicht in jedem Dokument vollständig wiederholt.
 
 **Positivkontrolle:** Das Drei-Dokumente-Paket verpflichtet zur vollständigen Ausgabe, nicht zu künstlichen Beanstandungen. Enthält das Befundregister keinen belastbaren 🔴- oder 🟠-Punkt, bestätigt Dokument 3 knapp, dass auf Grundlage der geprüften Unterlagen keine zwingende Korrektur verlangt wird. Enthält es nur 🟠-Punkte, werden diese als Klarstellungs- oder Verhandlungswünsche bezeichnet, nicht als Unwirksamkeit. 🟢-Regelungen werden im Gutachten konkret gewürdigt und nicht vorsorglich angegriffen.
+
+**Schnellpfad ohne Qualitätsverlust:** Die erste sichtbare Antwort entsteht aus demselben Register wie das spätere Gutachten. Sie enthält Statuskopf, Abschlussentscheidung und höchstens sieben priorisierte Zeilen; keine vorgelagerte Inhaltswiedergabe und keine modulweise Wiederholung. Eine Live-Recherche beginnt erst nach der ersten belastbaren Sichtung und wird für alle tragenden Streitfragen gebündelt. Reicht das Ausgabelimit im Vollpaket nicht, wird an einer festen Dokumentüberschrift fortgesetzt; bereits ausgegebener Sachverhalt und bereits begründete IDs werden nicht erneut erzählt.
 
 ## Harte Quellenregeln
 
@@ -75,7 +79,7 @@ Die nachfolgenden Fachmodule liefern Prüfwissen; sie sind kein nacheinander abz
 - [Teil L — Drei-Dokumente-Paket](#teil-l--drei-dokumente-paket)
 - [Teil M — Vertiefte Dogmatik II](#teil-m--vertiefte-dogmatik-ii)
 - [Teil N — Wirtschaft, Organisation, HOAI und Technik](#teil-n--wirtschaft-organisation-hoai-und-technik)
-- [Teil O — Fachmodule Bauträgerrecht 2026](#teil-o--fachmodule-bauträgerrecht-2026)
+- [Teil O — Fachmodul-Triggerindex](#teil-o--fachmodul-triggerindex)
 - [Teil P — Beratungsstellen-Schnellmodus](#teil-p--beratungsstellen-schnellmodus-zeitknappe-verbraucherberatung)
 - [Bug-Hunt vor Ausgabe](#bug-hunt-vor-ausgabe)
 
@@ -97,7 +101,7 @@ Diese Tabelle ist ein reiner Wegweiser: Sie verkürzt den Weg zum einschlägigen
 | Großprojekt-Muster, Serienurkunde, Projektgesellschaft, Fallbezug | Teil J |
 | Preisanpassung, höhere Gewalt/Verzug, Baugruppe statt Bauträger | Teil M.3, Teil M.6, Teil M.7 |
 | Baugrund, Baugrube, Statik, Brand-/Schall-/Wärmeschutz, Haustechnik, HOAI, Bauüberwachung | Teil N |
-| Vorinsolvenz, Geschäftsführer/Notar/Bauleiter, Sonderwünsche, Nachzügler, Sicherheitenschichten | Teil K, Teil O |
+| Vorinsolvenz, Geschäftsführer/Notar/Bauleiter, Sonderwünsche, Nachzügler, Sicherheitenschichten | Teil K; Triggerindex in Teil O |
 | Drei-Dokumente-Paket erstellen | Teil L |
 | Wenig Zeit, schnelles und trotzdem korrektes Gutachten (Beratungsstelle) | Teil P |
 
@@ -321,6 +325,7 @@ Diese Anker sind besonders stark, weil sie direkt Bauträgerrecht, AGB-Kontrolle
 | Sachverständigenabnahme als OLG-Instanzanker | OLG Stuttgart, Urteil vom 06.06.2024 - 13 U 419/19, DeJure: https://dejure.org/2024,15719 | Die Instanzentscheidung zu BGH VII ZR 108/24 ordnet die Abnahme des Gemeinschaftseigentums durch einen vereidigten Sachverständigen als unwirksame Abnahmeklausel ein und behandelt Verjährungsbeginn/Verwirkung nach fehlgeschlagener Abnahme. | Nur als Instanz- und Suchanker verwenden; im Gutachten den BGH-Anker VII ZR 108/24 tragen lassen. |
 | Frühere 15-Jahres-Instanzlinie (dort nicht tragend) | OLG Stuttgart, Urteil vom 13.05.2025 - 10 U 4/25, amtliches Landesrecht BW: https://www.landesrecht-bw.de/bsbw/document/NJRE001609887 | Der 10. Senat griff seine zuvor entwickelte 15-Jahres-Grenze für Mängelansprüche nach fehlgeschlagener Abnahme auf; im entschiedenen Fall war diese Frist aber noch nicht erreicht und die Grenze deshalb nicht entscheidungstragend. Für die von BGH VII ZR 68/24 und VII ZR 108/24 entschiedenen Altrechts-Kostenvorschusskonstellationen gilt nun die anspruchsgenau begrenzte 30-Jahres-Linie. | Nur als Konflikt-/Verfahrenshistorie verwenden; nicht als fortgeltenden harten Rechtssatz zitieren. Aktuelle BGH-Linie anspruchs- und sachverhaltsgenau anwenden. |
 | MaBV-widriger Zahlungsplan und Bereicherungsausgleich | BGH, Urteil vom 22.12.2000 - VII ZR 310/99, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/1999/VII_ZR_310-99.pdf?__blob=publicationFile&v=1; BGH, Urteil vom 07.11.2013 - VII ZR 167/11, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2011/VII_ZR_167-11.pdf?__blob=publicationFile&v=1 | BGH VII ZR 310/99 trägt die Grundlinie: Eine zu Lasten des Erwerbers von § 3 Abs. 2 MaBV abweichende Abschlagsvereinbarung ist insgesamt nichtig; der übrige Bauträgervertrag bleibt grundsätzlich bestehen und § 641 BGB tritt an die Stelle. BGH VII ZR 167/11 bestätigt dies; vor Abnahme vereinnahmte Zahlungen können nach § 817 Satz 1 BGB zurückzugewähren sein, gezogene Nutzungen richten sich nach § 818 Abs. 1, § 100 BGB. | Nicht Gesamtnichtigkeit oder § 818 Abs. 2 BGB als Automatismus behaupten; Zahlungsplan, Abnahme, Empfängerkenntnis und konkreten Bereicherungsumfang prüfen. |
+| Vollstreckungsunterwerfung mit Fälligkeitsnachweisverzicht | BGH, Urteil vom 27.09.2001 - VII ZR 388/00, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2000/VII_ZR_388-00.pdf?__blob=publicationFile&v=1 | Eine vorformulierte Unterwerfung des Erwerbers in die sofortige Zwangsvollstreckung in sein gesamtes Vermögen benachteiligt ihn unangemessen, wenn der Unternehmer ohne weiteren Nachweis eine vollstreckbare Ausfertigung verlangen kann. Die Klausel verschiebt das Risiko fehlender Fälligkeitsvoraussetzungen und eines vorschnellen Zugriffs auf den Erwerber. | Nicht jede notarielle Vollstreckungsunterwerfung pauschal verwerfen. Entscheidend sind AGB-Charakter, Reichweite, Nachweisverzicht, Klauselerteilung und die Gefahr des Zugriffs vor MaBV-/Vertragsfälligkeit. |
 | Leistungsverweigerung bei Mängeln während des Ratenlaufs | BGH, Urteil vom 27.10.2011 - VII ZR 84/09, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2009/VII_ZR__84-09.pdf?__blob=publicationFile&v=1 | Auch eine nach dem Baufortschritt grundsätzlich fällige Rate darf der Erwerber wegen bereits aufgetretener Baumängel in einem angemessenen Verhältnis zum voraussichtlichen Beseitigungsaufwand zurückhalten. Das Leistungsverweigerungsrecht ist nicht auf die letzte Rate begrenzt. | Bei jeder konkreten Zahlungsanforderung objektiven Bautenstand und Gegenrechte getrennt prüfen; eine erreichte MaBV-Stufe beantwortet noch nicht, welcher Betrag tatsächlich zahlbar ist. |
 | Schlussrate und vollständige Fertigstellung | BGH, Urteil vom 22.04.2026 - VII ZR 88/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__88-25.pdf?__blob=publicationFile&v=1 | Die Formulierung `nach vollständiger Fertigstellung` ist zuerst aus dem konkreten Bauträgervertrag auszulegen. Der BGH hat die pauschale Gleichsetzung vollständiger Fertigstellung mit bloßer Abnahmereife im entschiedenen Vertrag nicht getragen; wenn der Vertrag den Bauträger zur Beseitigung protokollierter Mängel/Restarbeiten verpflichtet, kann die Schlussrate bis dahin unfällig bleiben. | Nicht automatisch `abnahmereif = vollständig fertiggestellt`; Vertrag, Protokoll, Außenanlagen, Restarbeiten und Fälligkeitswortlaut prüfen. |
 | Verjährung des einheitlichen Bauträgervergütungsanspruchs | BGH, Urteil vom 07.12.2023 - VII ZR 231/22, amtliches BGH-PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2022/VII_ZR_231-22.pdf?__blob=publicationFile&v=1 | Der einheitlich für Grundstücksanteil und Eigentumswohnung vereinbarte Vergütungsanspruch des Bauträgers verjährt nach § 196 BGB in zehn Jahren. Die Frist beginnt nach § 200 Satz 1 BGB mit Anspruchsentstehung, regelmäßig also nicht vor Fälligkeit. | Bei Rest- und Schlussraten nicht mit der dreijährigen Regelverjährung argumentieren; Fälligkeit, Hemmung und Einreden getrennt prüfen. Nicht mit der fünfjährigen Mängelverjährung des Erwerbers vermischen. |
@@ -338,6 +343,8 @@ Diese Anker sind besonders stark, weil sie direkt Bauträgerrecht, AGB-Kontrolle
 | Änderung der Teilungserklärung/Gemeinschaftsordnung | BGH, Urteil vom 23.01.2026 - V ZR 91/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__91-25.pdf?__blob=publicationFile&v=1 | AGB-Pflichten des Verbrauchers, späteren Änderungen der Teilungserklärung durch den Bauträger zuzustimmen, sind nach § 308 Nr. 4 BGB unwirksam, wenn die Klausel keine im Einzelnen benannten triftigen Gründe erkennen lässt. Aus § 242 BGB folgt dann regelmäßig keine Ersatz-Zustimmungspflicht. Private Vermögensverwaltung kann Verbraucherstatus bleiben, auch bei Gewerbeeinheit. | Weite Vollmachten und Zustimmungspflichten zu Teilungserklärung, Gemeinschaftsordnung, Untergemeinschaften, Nutzungsänderungen rot markieren. |
 | Vertragsstrafe trotz Rücktritt bei Bauträgerverzug | BGH, Urteil vom 22.05.2025 - VII ZR 129/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_129-24.pdf?__blob=publicationFile&v=1 | Tritt der Besteller aufgrund eines vertraglichen Rücktrittsrechts wegen nicht termingerechter Fertigstellung eines abnahmereifen Bauwerks zurück, erlischt eine bereits verwirkte verzugsbedingte Vertragsstrafe nicht, sofern nichts Abweichendes vereinbart ist. | Bei Longstop-Date, Rücktritt und Terminverzug Vertragsstrafe gesondert sichern; Rücktritt nicht vorschnell als Verzicht auf Verzugssanktionen behandeln. |
 | Planabweichung in der Errichtungsphase | BGH, Urteil vom 16.05.2025 - V ZR 270/23, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_270-23.pdf?__blob=publicationFile&v=1 | Der teilende Bauträger handelt bei Errichtung der Anlage nicht als Wohnungseigentümer, sondern in Erfüllung seiner vertraglichen Pflichten. Bei nicht plangerechter Errichtung bestehen grundsätzlich vertragliche Ansprüche gegen den Bauträger, nicht WEG-Beseitigungsansprüche wegen rechtswidriger Beeinträchtigung. | Planabweichungen vor Abnahme/Erstherstellung vertraglich angreifen: Bausoll, Nachbesserung, Einbehalt, Abnahmevorbehalt, nicht vorschnell nur § 1004/WEG. |
+| Mängelrechte in Mehrhausanlagen mit Untergemeinschaften | BGH, Urteil vom 23.02.2024 - V ZR 132/23, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_132-23.pdf?__blob=publicationFile&v=1 | Auch wenn die Gemeinschaftsordnung weitgehend verselbständigte Untergemeinschaften bildet und der Mangel nur deren Gebäudeteil betrifft, kann nur die Gesamt-GdWE die auf ordnungsgemäße Herstellung des Gemeinschaftseigentums gerichteten Erwerberrechte zur alleinigen Durchsetzung an sich ziehen. Auch Prozessführung, Vergleichsverhandlungen und deren Finanzierung fallen dann in ihre Beschlusskompetenz. | Vor Aufforderung oder Klage Beschlussorgan, Anspruchsbündelung, betroffenen Gebäudeteil und Prozessführungsbefugnis prüfen; Untergemeinschaft oder Einzelbeirat nicht vorschnell als anspruchsführungsbefugt behandeln. |
+| Pflichten des bauträgernahen Erstverwalters bei Baumängeln | BGH, Urteil vom 19.07.2019 - V ZR 75/18, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2018/V_ZR__75-18.pdf?__blob=publicationFile&v=1 | Ein mit dem Bauträger identischer, verbundener oder von ihm abhängiger Verwalter muss wie jeder Verwalter Handlungsoptionen aufzeigen, auf mögliche Gewährleistungsansprüche und drohende Verjährung hinweisen und bei Anzeichen fortbestehender Mängel auf sachgerechte Beschlussfassung hinwirken. Der Interessenkonflikt mindert die Pflichten nicht. | Verwaltervertrag, anwendbaren WEG-Rechtsstand, Kenntniszeitpunkt, Warnung, Beschlussvorbereitung, Verjährungsnähe, Kausalität und Schaden belegen; nicht aus bloßer Bauträgernähe automatisch Haftung ableiten. |
 | Steckengebliebener Bau und Erstherstellung | BGH, Urteil vom 20.12.2024 - V ZR 243/23, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_243-23.pdf?__blob=publicationFile&v=1; konkretisiert durch BGH, Urteil vom 27.02.2026 - V ZR 219/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR_219-24.pdf?__blob=publicationFile&v=1 | V ZR 243/23 begründet den durch § 242 BGB begrenzten Anspruch des Wohnungseigentümers gegen die GdWE auf erstmalige Errichtung des Gemeinschaftseigentums, sobald mindestens ein Erwerber (werdender) Wohnungseigentümer ist. V ZR 219/24 konkretisiert den Umfang: Im räumlichen Bereich der Einheit können auch nichttragende Innenwände, unter Putz verlegte Leitungen und Heizungsanschluss erfasst sein. | Nach Bauträgerinsolvenz nicht nur Bauträger-/Insolvenzansprüche prüfen, sondern auch GdWE-Erstherstellung, Zumutbarkeit, Kostenlast, Beschlussersetzung und Abgrenzung zu baulichen Veränderungen. |
 | Gemeinschaftsordnung und anfängliche Mängel | BGH, Urteil vom 23.05.2025 - V ZR 36/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR__36-24.pdf?__blob=publicationFile&v=1 | Eine Gemeinschaftsordnung, die einzelnen Wohnungseigentümern die Kosten für Instandhaltung/Instandsetzung bestimmter Teile des Gemeinschaftseigentums im Bereich ihres Sondereigentums auferlegt, umfasst im Zweifel auch Kosten für die Beseitigung anfänglicher Mängel. | Kosten- und Erhaltungsklauseln zu Fenstern, Türen, Leitungen, Balkonen, Terrassen, Tiefgaragenplätzen streng prüfen; anfängliche Baumängel ausdrücklich aus Erwerber-Sonderkosten ausnehmen oder Regress/Sicherung regeln. |
 | Erhaltungslast und Beschlusskompetenz der GdWE | BGH, Urteil vom 24.04.2026 - V ZR 102/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR_102-24.pdf?__blob=publicationFile&v=1 | Die Übertragung der Erhaltung bestimmter Teile des Gemeinschaftseigentums auf einzelne Wohnungseigentümer nimmt der GdWE nicht die Beschlusskompetenz. Wird die GdWE selbst tätig, bleibt es grundsätzlich bei der vereinbarten individuellen Kostenlast; bei zwingendem Sanierungsbedarf mehrerer Balkone muss die GdWE ihrerseits Erhaltungsmaßnahmen ergreifen. | Erhaltungszuständigkeit, Entscheidungskompetenz und Kostenlast in Teilungserklärung/Gemeinschaftsordnung getrennt prüfen; eine Übertragung auf den Erwerber nicht als vollständigen Rückzug der GdWE lesen. |
@@ -349,7 +356,7 @@ Diese Anker sind besonders stark, weil sie direkt Bauträgerrecht, AGB-Kontrolle
 | Fahrlässiges Organisationsverschulden bei MaBV-Raten | OLG Celle, Urteil vom 25.11.2025 - 3 U 171/24, amtliches NI-VORIS: https://voris.wolterskluwer-online.de/browse/document/80ad4648-2866-428d-9df0-1733d78ed4a0 | Instanzanker: § 3 Abs. 2 und § 5 MaBV wurden als Schutzgesetze angewandt; für die persönliche Haftung genügte fahrlässige Organisation und Überwachung der Ratenanforderung. Delegation ohne Instruktion und Kontrolle entlastete die Geschäftsführer nicht. | Nicht schematisch Vorsatz verlangen oder Haftung behaupten: Ressort, Delegation, Kontrollen, Bautenstandsberichte und konkrete Ratenabrufe beweisen. |
 | Notarielle Belehrung bei ungesicherter Vorleistung | BGH, Urteil vom 17.01.2008 - III ZR 136/07, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/III_ZS/2007/III_ZR_136-07.pdf?__blob=publicationFile&v=1 | Soll der Bauträger Erschließungs-/Anschlusskosten tragen, werden diese aber vor ihrer Festsetzung in eine frühe Abschlagsrate eingerechnet, liegt eine ungesicherte Vorleistung vor, die eine doppelte notarielle Belehrung auslösen kann. | Kostentragung, Fälligkeitsstufe und tatsächliche Festsetzung abgleichen; konkrete Belehrung und Wiederholung unmittelbar vor Vollzug der Vorleistung prüfen. |
 | Abnahme durch bauträgernahe Tochtergesellschaft | BGH, Urteil vom 09.11.2023 - VII ZR 241/22, amtlich: https://www.rechtsprechung-im-internet.de/jportal/?quelle=jlink&docid=KORE305472023&psml=bsjrsprod.psml | Eine Klausel, die die Abnahme des Gemeinschaftseigentums durch eine vom Bauträger als Erstverwalter bestimmte, wirtschaftlich verbundene Tochtergesellschaft ermöglicht, ist unwirksam. Macht die GdWE als Prozessstandschafterin Mängelrechte der Erwerber geltend, kann sich der Bauträger als Klauselverwender nicht darauf zurückziehen, es fehle mangels wirksamer Abnahme noch an Mängelrechten. | Gegen Tochtergesellschaft, Erstverwalter, Projektsteuerer, `neutralen` Bauträgerdienstleister. |
-| Übergabeprotokolle, Nutzung und Kaufpreiszahlung als keine sichere GE-Abnahme | OLG München, Beschluss vom 08.01.2024 - 9 U 1803/23 Bau e, DeJure: https://dejure.org/2024,45298 | Ist im Vertrag eine Abnahme des Gemeinschaftseigentums durch einen Dritten vorgesehen, begründen einzelne Übergabeprotokolle, Kaufpreiszahlung, Nutzung oder längere Rügelosigkeit ohne klare Erklärung und Erklärungsbewusstsein regelmäßig keine Abnahme des Gemeinschaftseigentums. | Gegen Einwände `Schlüsselübergabe`, `voll bezahlt`, `jahrelang genutzt`, `Protokoll unterschrieben`; Vertragskontext und Abnahmewillen konkret prüfen. |
+| Übergabeprotokolle, Nutzung und Kaufpreiszahlung als keine sichere GE-Abnahme | OLG München, Beschluss vom 08.01.2024 - 9 U 1803/23 Bau e, amtlicher bayerischer Bürgerservice: https://www.gesetze-bayern.de/Content/Document/Y-300-Z-BECKRS-B-2024-N-49081?hl=true | Ist im Vertrag eine Abnahme des Gemeinschaftseigentums durch einen Dritten vorgesehen, begründen einzelne Übergabeprotokolle, Kaufpreiszahlung, Nutzung oder längere Rügelosigkeit ohne klare Erklärung und Erklärungsbewusstsein regelmäßig keine Abnahme des Gemeinschaftseigentums. | Gegen Einwände `Schlüsselübergabe`, `voll bezahlt`, `jahrelang genutzt`, `Protokoll unterschrieben`; Vertragskontext und Abnahmewillen konkret prüfen. |
 | Individuell unterschriebenes Abnahmeprotokoll | OLG Braunschweig, Beschluss vom 02.06.2025 - 8 U 29/24, DeJure: https://dejure.org/2025,15291 | Instanzanker gegen Übertreibung: Ein von einem Erwerber individuell unterzeichnetes Abnahmeprotokoll ist gesondert auszulegen und nicht schon wegen einer unvollständigen Protokollierung oder einer danebenstehenden unwirksamen Formularklausel automatisch unwirksam. | Erklärung, Abnahmewillen, Reichweite sowie Sonder-/Gemeinschaftseigentum konkret feststellen; erst danach Verjährungsfolgen ziehen. |
 | GdWE bündelt Mängelrechte und Restkaufpreis | OLG Stuttgart, Urteil vom 28.04.2026 - 10 U 39/25, DeJure: https://dejure.org/2026,14078 | Nicht rechtskräftiger Instanzanker: Verlangt die GdWE nach wirksamer Bündelung Kostenvorschuss für Mängel am Gemeinschaftseigentum, kann der Restkaufpreis trotz fehlender Abnahmereife des Gemeinschaftseigentums fällig sein; in Betracht kommt Zahlung nur Zug um Zug an die GdWE. | Beschluss, Anspruchsbündelung, Nacherfüllungsrecht, konkrete Gegenrechte und den Zahlungsempfänger prüfen; nicht als allgemeine Sperre für Erwerbereinreden verwenden. |
 | Erstverwalter-Abnahme Gemeinschaftseigentum (Grundlinie) | BGH, Beschluss vom 12.09.2013 - VII ZR 308/12, amtlich: https://www.rechtsprechung-im-internet.de/jportal/?quelle=jlink&docid=KORE311712013&psml=bsjrsprod.psml | Eine in AGB eines Bauträger-Erwerbsvertrags enthaltene Klausel, die die Abnahme des Gemeinschaftseigentums durch einen vom Bauträger bestimmbaren Erstverwalter zulässt, benachteiligt die Erwerber unangemessen und ist unwirksam. Grundlegende Linie, auf der die neueren Entscheidungen aufbauen. | Bestätigt seit Langem: Erstverwalter-Abnahme ersetzt nicht das eigene Abnahmerecht des Erwerbers. |
@@ -388,7 +395,7 @@ Findet sich zu einer Frage keine in zulässiger Quelle verifizierte Entscheidung
 | § 650j BGB | Baubeschreibungspflicht nach Art. 249 EGBGB. Bei Bauträgervertrag nicht durch § 650u Abs. 2 ausgeschlossen. |
 | § 650k Abs. 2/3 BGB | Unklare oder unvollständige Baubeschreibung wird unter Berücksichtigung sämtlicher vertragsbegleitender Umstände ausgelegt; Zweifel gehen zulasten des Unternehmers. Der Bauvertrag muss verbindliche Angaben zum Fertigstellungszeitpunkt oder ersatzweise zur Ausführungsdauer enthalten; fehlen sie, werden die entsprechenden vorvertraglichen Angaben Vertragsinhalt. |
 | § 650k Abs. 1 BGB | Wird durch § 650u Abs. 2 ausgeschlossen. Nicht behaupten, die vorvertragliche Baubeschreibung werde bei Bauträgern automatisch über Abs. 1 Vertragsinhalt. Vertragsinhalt muss über Beurkundung/Einbeziehung gesichert werden. |
-| § 650n BGB | Rechtzeitig vor Ausführungsbeginn beziehungsweise spätestens mit Fertigstellung sind die Unterlagen zu erstellen und herauszugeben, die der Verbraucher für gesetzlich bezeichnete Behördennachweise benötigt; Abs. 3 erfasst unter seinen Voraussetzungen Nachweise gegenüber einem finanzierenden Dritten. Kein pauschaler Anspruch auf jede interne Projektunterlage. |
+| § 650n BGB | Rechtzeitig vor Beginn der jeweils geschuldeten Leistung sind benötigte Planungsunterlagen für den behördlichen Vorabnachweis, spätestens mit Fertigstellung die Unterlagen für den behördlichen Ausführungsnachweis herauszugeben; Abs. 3 erfasst unter seinen Voraussetzungen Nachweise gegenüber einem Dritten. Die Planungspflicht aus Abs. 1 entfällt, soweit der Verbraucher oder sein Beauftragter die wesentlichen Planungsvorgaben erstellt. Kein pauschaler Anspruch auf jede interne Projektunterlage. |
 | § 650p BGB | Architekten-/Ingenieurvertrag schuldet die Leistungen, die nach Stand der Planung und Ausführung erforderlich sind, um vereinbarte Planungs- und Überwachungsziele zu erreichen. Beim Bauträger nicht automatisch Anspruch des Erwerbers gegen den Planer, aber starke Systematik für Planung, Überwachung und Dokumentation. |
 | § 34 HOAI i. V. m. Anlage 10.1 HOAI | Leistungsbild Gebäude und Innenräume: neun Leistungsphasen; LPH 8 ist Objektüberwachung, Bauüberwachung und Dokumentation. HOAI ist primär Honorarrecht, liefert aber eine praxisfeste Checkliste, welche Planungs- und Überwachungsleistungen im Projekt organisatorisch abgesichert sein müssen. |
 | § 309 Nr. 12 BGB | Beweislaständerungen zulasten des Kunden, insbesondere Verantwortungsbereich des Verwenders oder pauschale Tatsachenbestätigungen, sind unwirksam. Ausnahme für gesondert unterschriebene Empfangsbekenntnisse. |
@@ -419,11 +426,11 @@ Bei jeder Vollanalyse durchlaufe diese Schleifen intern. Im Ergebnis nur die rel
 11. Baubeschreibung: § 650j, § 650k Abs. 2/3, Art. 249 EGBGB, Bausoll konkret?
 12. Fertigstellungstermin: verbindlich, nicht beliebig verschiebbar; bei Terminverzug bauablaufbezogene Darlegung verlangt?
 13. Bauänderungen: nur triftige, konkret benannte Gründe, kein freies Leistungsänderungsrecht?
-14. Teilungserklärung/Gemeinschaftsordnung: keine pauschalen Änderungsvollmachten?
+14. Teilungserklärung/Gemeinschaftsordnung: keine pauschalen Änderungsvollmachten; bei Mehrhausanlage Gesamt-GdWE, Untergemeinschaft und individuelle Rechte sauber getrennt?
 15. Abnahme Sondereigentum: persönlich, Protokoll, Vorbehalte, keine Fiktion durch Schlüssel?
 16. Abnahme Gemeinschaftseigentum: keine bauträgernahe Person, keine bindende Fremdabnahme ohne Eigenrecht?
 17. Schlussrate: vollständige Fertigstellung, protokollierte Mängel, Zurückbehaltung?
-18. Vormerkung/Lastenfreistellung: keine Löschungsdruckmittel, Rang sauber?
+18. Vormerkung/Lastenfreistellung: keine Löschungsdruckmittel, Rang sauber; keine Vollstreckungsunterwerfung mit formularmäßigem Fälligkeitsnachweisverzicht?
 19. Verjährung/Mängelrechte: fünf Jahre Bauwerk, keine Ausschlussfristen?
 20. Verhandlungsfähigkeit: jedes 🔴 mit gesetzlicher Grundlage, Fallanker, Gegenargument und gewünschter Neufassung?
 21. HOAI-/Planungslogik: Sind LPH 1 bis 9, insbesondere Ausführungsplanung und Objektüberwachung, organisatorisch nachvollziehbar beauftragt, dokumentiert und nachweisbar?
@@ -433,7 +440,7 @@ Bei jeder Vollanalyse durchlaufe diese Schleifen intern. Im Ergebnis nur die rel
 25. Technische Ausrüstung: Heizung, Lüftung, Trinkwasser, Elektro, PV, Aufzug, Tiefgarage, Entwässerung, Gebäudeautomation und Wartung prüfen.
 26. Bauablauf/Qualitätsgates: Sind Terminplan, Bautenstandsprüfung, Mängeltracking und Schlussdokumentation prüfbar?
 27. Wirtschaftliche Tragfähigkeit: Projektgesellschaft, Globalfinanzierung, Freistellung, Nachunternehmer-/Generalunternehmerrisiko, Vorinsolvenzzeichen, Reservierungs-/Sonderwunschzahlungen.
-28. WEG-Organisation: Erstverwalter, Untergemeinschaften, Kostenverteilung, Wartungsverträge, Instandhaltungsrücklage, Übergang der Kontrolle auf Erwerber.
+28. WEG-Organisation: Erstverwalter, Gesamt-GdWE/Untergemeinschaften, Anspruchsbündelung, Verwalterwarnung, Kostenverteilung, Wartungsverträge, Instandhaltungsrücklage und Übergang der Kontrolle auf Erwerber.
 29. Betriebs- und Lebenszykluskosten: Energie, Wartung, Ersatzteile, Tiefgarage, Pumpen, Lüftung, Aufzug, Außenanlagen, Gemeinschaftseinrichtungen.
 30. Gesamtbild: Ergibt die Summe aus Recht, Technik, Wirtschaft und Organisation ein beurkundungsfähiges, finanzierbares und baulich kontrollierbares Projekt?
 
@@ -447,6 +454,7 @@ Dieser Block steht in jeder Vollanalyse ganz oben.
 | Beweislast | Verlagert eine Klausel Verantwortungsbereich des Bauträgers auf den Erwerber? | 🔴 nach § 309 Nr. 12 lit. a BGB. |
 | Tatsachenbestätigung | Bestätigt der Erwerber pauschal Erhalt, Kenntnis, Prüfung, Belehrung, Vollständigkeit oder Risikoaufklärung? | 🔴 nach § 309 Nr. 12 lit. b BGB, außer gesondertes Empfangsbekenntnis. |
 | MaBV-Fälligkeit | Verlangt der Bauträger Geld vor § 3 Abs. 1 MaBV oder außerhalb § 3 Abs. 2/§ 7 MaBV? | 🔴; Zahlung verweigern, Notar/Bauträger korrigieren lassen. |
+| Vollstreckungsunterwerfung | Darf eine vollstreckbare Ausfertigung ohne Nachweis der vertraglichen und MaBV-Fälligkeit erteilt werden? | 🔴 bei formularmäßigem Nachweisverzicht mit Zugriff auf das gesamte Vermögen; BGH VII ZR 388/00. Klausel und konkrete Klauselerteilung getrennt prüfen. |
 | Abnahme Gemeinschaftseigentum | Wird das Recht zur eigenen Prüfung/Abnahme entzogen oder bauträgernah gebündelt? | 🔴 nach aktueller BGH-Linie 2023/2026. |
 | Schlussrate | Wird Schlussrate trotz offener protokollierter Mängel oder Restarbeiten fällig gestellt? | 🔴/🟠; BGH VII ZR 88/25 nutzen. |
 | Teilungserklärung | Darf Bauträger nachträglich beliebig ändern oder Zustimmung verlangen? | 🔴, § 308 Nr. 4 BGB und BGH V ZR 91/25. |
@@ -788,6 +796,7 @@ Regelfolgen:
 | KG-Linie `vollständige Fertigstellung = Abnahmereife` wird pauschal zitiert | BGH VII ZR 88/25; KG 21 U 44/22 | `Das KG lässt Abnahmereife genügen.` | Nach BGH zuerst den Vertrag auslegen; bindet der Vertrag die Schlussrate an Protokollmängel oder Restarbeiten, trägt die KG-Linie nicht pauschal. | 🟠/🔴 |
 | Schlüssel nur gegen vollständige Zahlung | § 307, § 641 Abs. 3 BGB | `Ohne Zahlung kein Besitz.` | Zahlungspflicht kann nicht das gesetzliche Zurückbehaltungsrecht bei Mängeln entwerten. | 🔴 |
 | Vormerkungslöschung bei einseitiger Verzugsmitteilung | § 307 BGB, Eigentumssicherung | `Nur für Zahlungsverzug.` | Die Vormerkung ist Kernschutz gegen Insolvenz; einseitiger Druckmechanismus ist unverhältnismäßig. | 🔴 |
+| Sofortige Zwangsvollstreckung ohne Fälligkeitsnachweis | § 307 BGB, §§ 3, 12 MaBV; BGH VII ZR 388/00 | `Die notarielle Urkunde spart nur einen Zahlungsprozess.` | Ein Nachweisverzicht darf den Bauträger nicht in die Lage versetzen, trotz ungeklärter MaBV-, Bautenstands- oder Gegenrechtslage auf das gesamte Vermögen zuzugreifen. Unterwerfung, Klauselerteilung und konkrete Fälligkeit getrennt prüfen. | 🔴 |
 | Pauschale Änderung Teilungserklärung | § 308 Nr. 4 BGB; BGH V ZR 91/25 | `Bauprojekt braucht Flexibilität.` | Flexibilität nur mit im Einzelnen benannten triftigen Gründen; § 242 ersetzt unwirksame AGB regelmäßig nicht. | 🔴 |
 | Pauschale Bauänderungen `gleichwertig` | § 308 Nr. 4, § 307 BGB | `Technische Anpassungen sind üblich.` | Nur konkret benannte technische Gründe, keine Qualitäts-/Flächen-/Nutzungsverschlechterung, Informationspflicht. | 🟠/🔴 |
 | Beweislast für Mängel/Verzug beim Erwerber vor Abnahme | § 309 Nr. 12 lit. a BGB | `Der Erwerber behauptet den Mangel.` | Umstände im Verantwortungsbereich des Bauträgers dürfen nicht auf den Erwerber verlagert werden. | 🔴 |
@@ -817,7 +826,6 @@ Regelfolgen:
 | Bauhandwerkersicherung vom Verbraucher-Erwerber | § 650f Abs. 6 Nr. 2 BGB | `Der Bauträger braucht Sicherheit.` | Der Verbraucher-Erwerber eines Bauträgervertrags schuldet keine Bauhandwerkersicherung. | 🔴 |
 | VOB/B pauschal einbezogen | §§ 305 ff., § 310 BGB | `Das ist am Bau üblich.` | Gegenüber Verbrauchern greift keine pauschale Privilegierung; jede nachteilige Klausel bleibt kontrollfähig. | 🟠/🔴 |
 | § 637-Selbstvornahme ausgeschlossen | § 307 BGB | `Koordination nur durch Bauträger.` | Koordination darf Mängelbeseitigung nicht praktisch monopolisieren; konkrete Reichweite und Restrechte prüfen. | 🟠/🔴 |
-| Wohnflächentoleranz über Bagatellbereich | § 307 BGB, Beschaffenheitsvereinbarung | `Messungenauigkeiten sind normal.` | Toleranzen dürfen die vereinbarte Wohnfläche nicht formularmäßig entwerten; Berechnungsmethode und Abweichungsschwelle offenlegen. | 🟠/🔴 |
 | Energiestandard ohne konkrete Klasse/Nachweise trotz abweichender Werbung, Förderung oder Finanzierungsvorgabe | § 650k Abs. 2, § 650n BGB | `GEG genügt.` | Der gesetzliche Mindeststandard kann klar vereinbart werden. Eine höhere Effizienzklasse wird aber zum Bausoll, wenn Vertrag, Baubeschreibung oder maßgebliche Begleitumstände sie tragen; erforderliche Nachweise und Übergabezeitpunkte dann konkretisieren. | 🟠/🔴 |
 | Anteilige Sachverständigenkosten für bauträgerseitige Abnahmeorganisation | § 307 BGB | `Die Prüfung dient allen.` | Kosten einer vom Bauträger organisierten oder interessennahen Abnahmestruktur dürfen nicht formularmäßig auf Erwerber verlagert werden. | 🔴 |
 | Unbegrenzte Belastungsvollmacht/Globalgrundschuld | § 307 BGB, Vormerkung/Freistellung | `Banktechnisch erforderlich.` | Belastungen müssen objektbezogen, betragsmäßig und zweckgebunden sein; Freistellung darf nicht ausgehöhlt werden. | 🔴 |
@@ -964,6 +972,8 @@ Bauträger behalten sich häufig vor, Teilungserklärung, Gemeinschaftsordnung, 
 | Erhaltungslast beim Einzelnen als angeblicher Ausschluss der GdWE-Kompetenz | 🔴 | BGH V ZR 102/24: Erhaltungslast, Beschlusskompetenz und Kostenlast getrennt prüfen |
 | Sofortige Garantiehaftung der GdWE für jeden Gemeinschaftsmangel | 🟠/🔴 | BGH V ZR 18/25: erst ab pflichtgemäß möglichem Beschluss und realistischer Ausführung; zulässige Nutzung prüfen |
 | Altverträge vor Entstehen der GdWE | 🟠/🔴 | BGH V ZR 76/25: Übernahme/Genehmigung regelmäßig beschlussbedürftig |
+| Untergemeinschaft verfolgt Herstellungsansprüche am Gemeinschaftseigentum allein | 🟠/🔴 | BGH V ZR 132/23: Nur die Gesamt-GdWE kann die Erwerberrechte zur alleinigen Durchsetzung an sich ziehen; wirksamen Beschluss und Reichweite prüfen |
+| Bauträgernaher Verwalter verschweigt Mangel oder Verjährungsrisiko | 🔴 bei belegter Pflichtverletzung und Kausalität | BGH V ZR 75/18: Interessenkonflikt mindert Hinweis- und Beschlussvorbereitungspflichten nicht |
 | Technische Korrektur ohne Wertänderung | 🟢/🟠 | nur mit enger Begründung |
 
 ### E.3 — Gewünschte Fassung
@@ -987,6 +997,10 @@ Zusatzprüfung nach BGH V ZR 50/25: Eine Änderung des Kostenmaßstabs durch Meh
 Zusatzprüfung nach BGH V ZR 18/25: Schäden am Sondereigentum infolge pflichtwidrig verzögerter Verwaltung des Gemeinschaftseigentums können einen Anspruch gegen die GdWE begründen; der Skill behauptet aber keine Garantiehaftung. Er rekonstruiert Beschlussreife, angemessene Entscheidungszeit, Vergabe- und Ausführungsdauer sowie Kausalität. Miet- oder Pachtausfall wird nur angesetzt, wenn die ausgefallene Nutzung nach Teilungserklärung und Gemeinschaftsordnung zulässig gewesen wäre.
 
 Zusatzprüfung nach BGH V ZR 76/25: Hat der Bauträger oder teilende Eigentümer vor Entstehen der GdWE Verträge für Parkpflege, Energie, Dienstleister, Wartung, Verwaltung, Medienversorgung oder sonstige Dauerleistungen abgeschlossen, wird nicht unterstellt, dass die spätere GdWE automatisch gebunden ist. Zu prüfen sind Vertragspartner, Vertretung, Beschluss, Genehmigung, Vertragsübernahme, Jahresabrechnungen, Entlastung und faktische Verwalterhaftung.
+
+Zusatzprüfung nach BGH V ZR 132/23: Bei Mehrhausanlagen mit Untergemeinschaften darf der Skill die Zuständigkeit nicht aus dem räumlich betroffenen Haus ableiten. Er prüft, ob die Gesamt-GdWE Erwerberrechte wegen Mängeln des Gemeinschaftseigentums wirksam zur alleinigen Durchsetzung an sich gezogen hat; nur sie beschließt dann grundsätzlich auch Prozessführung, Vergleichsverhandlungen und deren Finanzierung. Davon getrennt bleiben individuelles Abnahmerecht, Anspruchsinhaberschaft, gesetzliche Ausübungsbefugnisse nach § 9a Abs. 2 WEG und die konkrete Beschlussreichweite.
+
+Zusatzprüfung nach BGH V ZR 75/18: Ein vom Bauträger eingesetzter, verbundener oder abhängiger Verwalter wird bei Mängeln nicht wegen seines Interessenkonflikts geschont. Er muss Handlungsoptionen, mögliche Gewährleistungsansprüche und drohende Verjährung offenlegen und eine sachgerechte Beschlussfassung vorbereiten. Im Einzelfall werden anwendbarer WEG-Rechtsstand, Verwaltervertrag, Kenntnis, unterlassene Warnung, hypothetischer Beschluss, Verjährungsverlauf, Kausalität und Schaden bewiesen; Bauträgernähe allein genügt nicht für einen Haftungsbefund.
 
 ## Teil F — Eigentumsschutz und Insolvenz
 
@@ -1058,6 +1072,7 @@ Mit freundlichen Grüßen
 | Abnahme GE | `Nach der aktuellen BGH-Linie darf dem einzelnen Erwerber sein eigenes Prüf- und Abnahmerecht nicht formularmäßig entzogen werden.` |
 | Schlussrate | `Offene protokollierte Mängel können bei einer Klausel 'nach vollständiger Fertigstellung' bereits die Fälligkeit der Schlussrate hindern.` |
 | Teilungserklärung | `Ein pauschales Änderungsrecht ohne einzeln benannte triftige Gründe ist nach § 308 Nr. 4 BGB und BGH V ZR 91/25 nicht tragfähig.` |
+| Vollstreckung | `Eine formularmäßige Vollstreckungsunterwerfung darf dem Bauträger nicht erlauben, ohne Nachweis der MaBV- und Vertragsfälligkeit auf das gesamte Vermögen des Erwerbers zuzugreifen; Unterwerfung, Klauselerteilung und konkrete Fälligkeit sind getrennt zu prüfen.` |
 
 ## Teil H — Streit, Rücktritt, Klage
 
@@ -1071,6 +1086,7 @@ Auch nach Beurkundung gilt AGB-Kontrolle. Strategie:
 4. Bei Zahlung: Einbehalt begründen.
 5. Bei Abnahme: Vorbehalte und eigene Sachverständige sichern.
 6. Bei WEG: Beschlusslage zur gemeinschaftlichen Geltendmachung prüfen.
+7. Bei zugestellter vollstreckbarer Ausfertigung oder angekündigter Vollstreckung: Titelwortlaut, Klauselerteilung, Zustellung, Fälligkeit und statthaften Eilrechtsschutz sofort gesondert prüfen; keine Entwurfsverhandlung als ausreichende Reaktion ausgeben.
 
 ### H.2 — Rücktritt
 
@@ -2004,157 +2020,30 @@ Bitte ergänzen Sie eine Regelung, wonach der Erwerber nach angemessener Voranme
 | Lange Wartungs-/Contractingbindung an Verkäuferumfeld | 🟠/🔴 |
 | Technische Unterlagen erst `nach Ermessen` oder gar nicht | 🟠; 🔴 soweit § 650n, Vertrag, Abnahme oder sicherer Betrieb die konkrete Unterlage erfordern |
 
-## Teil O — Fachmodule Bauträgerrecht 2026
+## Teil O — Fachmodul-Triggerindex
 
-Teil O ist die verdichtete Arbeitskarte der fachlichen Erweiterung. Er wird nicht separat ausgegeben, sondern steuert, welche Prüffragen in Teil B, K, L, M und N zwingend mitzudenken sind. Alles, was auf konkrete Rechtsprechung hinausläuft und nicht bereits in den Rechtsprechungsankern mit zulässiger URL steht, wird vor Schriftsatz- oder Gutachtenverwendung live über offizielle Gerichtsseiten, `rechtsprechung-im-internet.de`, `dejure.org` oder `openjur.de` verifiziert.
+Dieser Index aktiviert die zuständigen Fachmodule, ohne deren Regeln ein zweites Mal zu erzählen. Er wird nicht ausgegeben. Nach der Dokumentenkarte werden nur die tatsächlich ausgelösten Pfade vertieft; Pflicht-Prüfblock, 30-Prüfschleifen und finaler Bug-Hunt bleiben davon unberührt.
 
-### O.1 — Vorinsolvenz, MaBV-Druckmuster und Rückforderung
+| Auslöser im Vertrag oder Sachverhalt | Verbindlicher Hauptpfad | Besondere Ausgabekontrolle |
+| --- | --- | --- |
+| vorzeitige Rate, Großrate, `mitgeteilter` Bautenstand, Sonderwunschzahlung | Teil A; Teil F; K.10 | Ratenrechenblatt, Zahlungsfreigabekarte, objektiven Bautenstand und Gegenrechte trennen |
+| Vollstreckungsunterwerfung oder vollstreckbare Ausfertigung | Pflicht-Prüfblock; B.2; Teil H | Nachweisverzicht, Klauselerteilung, Fälligkeit und Eilrechtsschutz getrennt prüfen |
+| Schlüssel-/Besitzdruck, Vormerkungslöschung, Freistellungslücke | Teil F; H.1; K.9 bis K.11 | dinglichen Schutz, Besitzanspruch, Einbehalt und mögliche Anspruchsgegner getrennt führen |
+| Schlussrate, Außenanlagen, Restarbeiten, Protokollmängel | A.2b; D.4; M.2 | Vertragswortlaut zuerst; BGH VII ZR 88/25 nicht als abstrakte MaBV-Definition ausgeben |
+| Erstverwalter-, Vertreter-, Sachverständigen- oder Nachzüglerabnahme | Teil D; K.4; K.7; M.5 | eigenes Prüf-/Abnahmerecht, konkrete Erklärung, Anspruchsart und Verjährung trennen |
+| Mehrhausanlage, Untergemeinschaft, Anspruchsbündelung, bauträgernaher Verwalter | Teil E | Gesamt-GdWE, Untergemeinschaft, Individualrecht, Beschluss und Verwalterpflichten getrennt prüfen |
+| DIN, Schall, anerkannte Regeln, Standardänderung | Teil C; M.1; N.5 | Werkvertragsstandard nicht mit WEG-Verwaltungsmaßstab oder bloßer DIN-Konformität gleichsetzen |
+| Preisanpassung, Materialpreis, Krise | B.2; M.3 | Klauseltyp, Viermonatssperre, Transparenz, Auf-/Abwärtsmechanik, Nachweis und Belastungsfolge prüfen |
+| Fertigstellungstermin, höhere Gewalt, Vertragsstrafe, Nutzungsausfall | K.5; K.6; M.6 | Terminbasis, bauablaufbezogene Darlegung, Schaden und Anrechnung mit Belegen ausweisen |
+| Verbraucherbauvertrag, Widerruf, Einzelgewerke | K.1; M.4 | § 650u, § 650i, §§ 312 ff. und Einzelaufträge nicht vermischen |
+| Baugruppe, Eigenleistungen, direkte Planer-/Gewerkvergabe | K.1; M.7; N.1 bis N.3 | MaBV-Pfad verlassen; Form, Haftung, Koordination und Ersatzsicherheiten aktivieren |
+| Bezugsurkunde, Reservierung, Sonderwunsch, Nachtrag | K.2 | wirtschaftliche Einheit, § 13c BeurkG, Auflassungszeitpunkt und erneuten Formbedarf prüfen |
+| Altbau, Sanierung, bereits fertiggestellte oder vermietete Einheit | K.1; K.4 | Werk-/Kaufrecht, Leistungsumfang und eigene Abnahme fallbezogen bestimmen |
+| Insolvenz, steckengebliebener Bau, Geschäftsführer-/Planer-/Notarrisiko | Teil F; K.10 bis K.12 | Sicherungsschichten, Pflichtverletzung, Verschulden, Kausalität und Schaden je Anspruchsgegner belegen |
+| Baugrund, Baugrube, Brandschutz, Energie, Haustechnik, Überwachung | Teil N | Rechtsbefund, technisches Risiko und Sachverständigenbedarf nicht vermischen |
+| `vollständig`, `final`, `one-shot`, `alle Schreiben` | Teil L | drei Dokumente ohne erneute Angebotsfrage und ohne künstliche Forderung erzeugen |
 
-Wenn der Bauträger in einer angespannten Projektlage früh, großvolumig oder außerhalb sauberer MaBV-Fälligkeit Geld will, wird nicht nur der Zahlungsplan geprüft. Der Skill prüft drei Ebenen:
-
-| Ebene | Prüfauftrag |
-| --- | --- |
-| Zahlungsfälligkeit | § 3 Abs. 1 MaBV vollständig? § 3 Abs. 2 MaBV-Bautenstand real erreicht? § 7 MaBV wirklich alternativ und ausreichend? |
-| Druckmechanik | Schlüssel, Besitz, Sonderwunsch, Vormerkungslöschung, Mahnkosten, Verzugsdrohung oder Notartermin werden als Hebel genutzt? |
-| Anspruchskette | Rückforderung verfrühter Zahlungen, Zurückbehaltung, § 650m-Sicherheit, Geschäftsführer-/Bauleiter-/Notarhaftung mit konkretem Vorsatz-/Pflichtwidrigkeitsanker |
-
-Rote Muster: zwei Großraten, `mitgeteilte` Bautenstände als unwiderlegbarer Fälligkeitsersatz, Herauslösung noch geschuldeter Außenanlagen aus der Schlussratenbedingung, unrichtige Genehmigungsfreiheitsbestätigung, Freistellungserklärung mit Lücken beim steckengebliebenen Bau, praktisch vereitelte §-650m-Sicherheit und einseitige Vormerkungslöschung. Eine Bauleiterbestätigung ohne vertragliche Erwerberkontrolle und eine Ausführungsabweichung ohne Nachtrag bleiben zunächst gesondert auf objektiven Bautenstand, öffentlich-rechtliche Zulässigkeit, Bausoll und Gegenrechte zu prüfen.
-
-Bei steckengebliebenem Bau nach Bauträgerinsolvenz zusätzlich BGH V ZR 243/23 und V ZR 219/24 prüfen: Entstehung und Zumutbarkeitsgrenze des GdWE-Erstherstellungsanspruchs, Beschlussersetzung, Kostenlast für gemeinschafts- und sondereigentumsnahe Gewerke, Abgrenzung zu baulichen Veränderungen sowie Vorrang erfolgversprechender vertraglicher Ansprüche gegen Bauträger oder Insolvenzverwalter.
-
-Zusatzprüfung Baugenehmigung: Ist die erforderliche Genehmigung nur behauptet oder die Monatsfrist bei Bauträgerbestätigung der Genehmigungsfreiheit noch offen, wird keine Rate freigegeben. Weicht die Ausführung wesentlich von einer erteilten Genehmigung ab, wird dagegen nicht schematisch die frühere §-3-Abs.-1-Fälligkeit rückabgewickelt: Der Skill fordert Genehmigung, Auflagenstand, Plan-/Baubeschreibungsabgleich und gegebenenfalls Nachtragsgenehmigung und bestimmt daraus Legalitäts-, Mangel-, Erfüllungs- und Zurückbehaltungsfolgen für die konkrete Rate.
-
-### O.2 — Bauzeitverzug, Schadenspositionen und Restvergütung
-
-Bei verzögerter Übergabe werden Termin, Darlegung und Schaden getrennt:
-
-1. Kalendarischer Termin oder nur `voraussichtlich`?
-2. Verschiebung wirksam vereinbart oder nur einseitig angekündigt?
-3. Bauablaufbezogene Entlastung: Ereignis, Gewerk, Dauer, Folgevorgang, Wiederanlaufzeit.
-4. Schadenspositionen mit Belegen: Ersatzmiete, Umzug, Lager, Hotel, doppelte Miete, Bereitstellungszinsen, Nutzungsausfall.
-5. Vertragsstrafe, pauschalierter Schaden und weiterer Schaden mit Anrechnung prüfen. Nach BGH VII ZR 129/24 erlischt eine bereits verwirkte verzugsbedingte Vertragsstrafe bei Rücktritt wegen nicht termingerechter Fertigstellung nicht automatisch; abweichende Vertragsregelung ausdrücklich prüfen.
-6. Restvergütung des Bauträgers nur bei Abnahme, wirksamer Abnahmefiktion oder sonstiger Fälligkeitsgrundlage.
-
-§ 313 BGB wird nur als enges Korrektiv geprüft. War die Krise bei Vertragsschluss bereits erkennbar, darf der Bauträger sie nicht als nachträgliches Überraschungsrisiko recyceln.
-
-### O.3 — Technikrecht: DIN, anerkannte Regeln und Standardänderung
-
-DIN-Konformität ist kein Vollbeweis für Mangelfreiheit. Der Skill trennt:
-
-| Kategorie | Funktion |
-| --- | --- |
-| anerkannte Regeln der Technik | werkvertraglicher Mindeststandard; wissenschaftliche Anerkennung plus praktische Bewährung |
-| Stand der Technik | höherer aktueller Erkenntnisstand; zivilrechtlich nur bei Vereinbarung oder spezieller Norm |
-| Stand von Wissenschaft und Technik | Spitzenstandard für Hochrisikobereiche |
-
-Stichtag für das Bausoll ist grundsätzlich die Abnahme. Standardänderungen zwischen Vertragsschluss und Abnahme lösen Aufklärungs- und Entscheidungsbedarf aus. Nach Abnahme bleibt zuerst das bei Abnahme geschuldete und verfehlte Vertragssoll maßgeblich. Aktuelle technische oder öffentlich-rechtliche Anforderungen können die zulässige Art und die Kosten der Nacherfüllung beeinflussen, erhöhen aber nicht automatisch die geschuldete Beschaffenheit. Deshalb Ausführungsnotwendigkeit, Sowieso-Kosten, Vorteilsausgleich, Unverhältnismäßigkeit und konkrete Vertragslage getrennt prüfen.
-
-### O.4 — Verbraucherbauvertrag, Bauträgervertrag und allgemeines Verbraucherrecht
-
-Der Skill hält die Spuren auseinander:
-
-| Spur | Bauträgerfolge |
-| --- | --- |
-| § 650i BGB Verbraucherbauvertrag i. e. S. | Bauträgervertrag ist eigener Typ nach § 650u BGB; nicht mechanisch gleichsetzen |
-| § 650l BGB Widerruf | beim beurkundeten Bauträgervertrag durch § 650u Abs. 2 BGB ausgeschlossen |
-| § 650k Abs. 2/3 BGB | bleibt beim Bauträger nutzbar; lückenhafte Baubeschreibung wird zulasten des Unternehmers ausgelegt |
-| § 650n BGB | Behörden- und Finanzierungsnachweise im gesetzlichen Anwendungsbereich verlangen; weitere Unterlagen auf Vertragsgrundlage prüfen |
-| §§ 312 ff. BGB | beim beurkundeten Grundstücks-/Bauträgervertrag Einschränkung nach § 312 Abs. 2 Nr. 1/2 beachten; situative Widerrufsrechte nur bei eigenständigen, nicht formbedürftigen Zusatzverträgen prüfen |
-| Einzelgewerkvergabe | nach BGH VII ZR 94/22 kein §-650i-Vertrag; auch sukzessive selbständige Aufträge werden nach VII ZR 25/23 nicht zusammengerechnet; Umgehung gesondert prüfen |
-
-### O.5 — Baugruppen-GbR statt Bauträger
-
-Wenn mehrere Verbraucher gemeinsam Grundstück und Bauleistungen organisieren, verlässt die Prüfung den Bauträgerpfad. MaBV greift mangels Bauträgerleistung nicht. Dafür entstehen Form-, Haftungs- und Gesellschaftsrisiken: Beurkundung des eigentumsbezogenen Gesellschaftsvertrags, Heilungsproblem im WEG-Modell, Nachschüsse, persönliche Gesellschafterhaftung, Ausscheiden, Insolvenz einzelner Gesellschafter, Finanzierung und spätere Aufteilung.
-
-Der Skill muss im Mandantenanschreiben klar sagen: Die Baugruppe vermeidet Bauträgerrisiken, verliert aber zugleich MaBV-Schutzschichten. Das ist kein automatisch verbraucherfreundlicher Ersatz.
-
-### O.6 — Beurkundung, Bezugsurkunden, Sonderwünsche
-
-Prüfung vor Beurkundung:
-
-- Sind Baubeschreibung, Pläne, Teilungserklärung und Sonderwünsche konkret beurkundet oder eindeutig bezogen?
-- Gibt es entgeltliche Reservierungsvereinbarungen oder Vorausleistungen mit Erwerbsdruck?
-- Werden wesentliche Vertragsbedingungen in Bezugsurkunden versteckt?
-- Haben Sonderwünsche Auswirkungen auf Ratenplan, Bausoll, Gewährleistung, Termine oder Sondereigentum?
-- Wird die VOB/B oder ein externer Standard nur pauschal einbezogen?
-
-Bei Formrisiko nicht reflexhaft Gesamtnichtigkeit behaupten. Vertragsstand, Auflassung, Eintragung und Heilung prüfen.
-
-### O.7 — Nachzügler, Altbau und Sanierungsobjekte
-
-Nachzüglerfälle brauchen einen eigenen Block im Gutachten. Erfasst werden: Errichtung/Fertigstellung, vorherige Abnahmeakte, Vermietungsdauer, Zustand bei Erwerb, eigener Abnahmetermin, Klausel zur Anerkennung fremder Abnahme und Art der übernommenen Sanierungsleistung. BGH VII ZR 49/15 und VII ZR 171/15 sind die vorrangigen Nachzügler-Anker: keine formularmäßige Bindung an fremde Abnahme, keine vorverlegte Mängelverjährung und keine automatische Verdrängung des Werkvertragsrechts nur wegen Fertigstellung vor Vertragsschluss. Bei längerer Vermietung und echtem Bestandsverkauf ist Kaufrechtsnähe gesondert zu prüfen.
-
-### O.8 — Persönliche und notarielle Anspruchsketten
-
-Der Skill nutzt persönliche Haftung nur mit Tatsachenunterbau:
-
-| Beteiligter | Wann prüfen |
-| --- | --- |
-| Geschäftsführer | vorzeitige MaBV-Ratenanforderung, eigene Verursachung, Organisations-/Überwachungsverantwortung, Verschulden und Schaden; BGH V ZR 144/07 sowie OLG Celle 3 U 171/24 als getrennt gewichtete Anker |
-| Bauleiter/Architekt | Bautenstandsbestätigung, Abnahmeprotokoll, technische Freigabe, auf die der Erwerber zahlt |
-| Notar | erkennbare MaBV-/AGB-Risiken, Freistellung, Preisanpassung, § 650m, Vormerkung, Belehrung und Dokumentation |
-| Vertrieb | Prospektangaben zu Energie, Schall, Baugrund, Fertigstellung, Finanzierung oder Förderfähigkeit |
-
-Keine pauschalen Vorwürfe. Jeder Vorwurf braucht Handlung, Zeitpunkt, Kenntnis, Adressat und Schaden.
-
-### O.9 — Großkommentar-Check: anwendbar, ausgeschlossen, modifiziert
-
-Bei jedem vollständigen Gutachten wird eine knappe Anwendungskarte gebaut:
-
-| Vorschriftengruppe | Bauträger-Status |
-| --- | --- |
-| §§ 633 ff. BGB | für Errichtung/Umbau grundsätzlich anwendbar |
-| § 640 BGB | Abnahme anwendbar; Abnahmefiktion bei Verbraucher nur mit Belehrung |
-| § 650j BGB | Baubeschreibungspflicht nicht ausgeschlossen |
-| § 650k Abs. 1 BGB | durch § 650u Abs. 2 ausgeschlossen; Baubeschreibung muss beurkundet/einbezogen werden |
-| § 650k Abs. 2/3 BGB | weiter anwendbar |
-| § 650l BGB | ausgeschlossen |
-| § 650m Abs. 1 BGB | ausgeschlossen |
-| § 650m Abs. 2/3 BGB | weiter zu prüfen |
-| § 650n BGB | weiter zu prüfen |
-| §§ 648, 648a, 650b bis 650e BGB | durch § 650u Abs. 2 ausgeschlossen |
-| § 650v BGB i. V. m. §§ 3, 12 MaBV | Abschläge nur in MaBV-konformer Vereinbarung; MaBV-Pflichten dürfen vertraglich nicht zulasten des Erwerbers ausgeschlossen oder beschränkt werden |
-| §§ 642, 643 BGB | bei Mitwirkungsfragen anwendbar, aber kein Pauschalventil für Bauträgerverzug |
-
-### O.10 — Klauselmatrix: 25 harte Treffer
-
-Die Matrix in Teil B ist bei Vollanalysen mindestens mit diesen Treffern abzugleichen:
-
-| Treffer | Kernbefund |
-| --- | --- |
-| Großraten ohne eigenständige Fertigstellungsstufe oder Vorabrate ohne Bautenstand | MaBV-/AGB-rot; bloße zulässige Ratenzusammenfassung nicht miterfassen |
-| Schlussrate vor Besitzübergabe oder vollständiger Fertigstellung | MaBV-/Fälligkeitsproblem |
-| `mitgeteilte` Bezugsfertigkeit/Fertigstellung | Mitteilung und objektiven Bautenstand trennen; 🔴 erst, wenn die Erklärung unwiderlegbar genügen oder Gegenrechte abschneiden soll |
-| Geschuldete Außenanlagen aus der Schlussratenbedingung ausgenommen | Bausoll/Fälligkeit konkret auslegen; 🔴 bei unzulässiger Vorverlagerung |
-| § 650m-Sicherheit in AGB ausgeschlossen, gekürzt oder praktisch vereitelt | § 309 Nr. 15 lit. b BGB; bloßes Vertragsschweigen lässt den gesetzlichen Anspruch bestehen, Abwicklung vor erster Zahlung klären |
-| Erforderliche Baugenehmigung fehlt oder Genehmigungsfreiheit ist nicht nach § 3 Abs. 1 Nr. 4 MaBV belegt | allgemeine Fälligkeitsvoraussetzung offen; spätere Ausführungsabweichung getrennt als öffentlich-rechtliches/Bausoll-Risiko prüfen |
-| Vormerkungslöschung per Bauträgervollmacht | § 309 Nr. 2 lit. a/Nr. 12/§ 307 prüfen |
-| Beweislastumkehr/Empfangsbestätigung | § 309 Nr. 12 lit. a/b |
-| Mängelrügefrist, Verjährungsverkürzung, Selbstvornahmeausschluss | Mängelrechte entwertet |
-| Abnahme durch Erstverwalter, Tochter, Sachverständigen oder Vertreter | Eigenrecht des Erwerbers fehlt |
-| Wohnflächen-/Schallschutz-/Energiestandard-Lücken | Bausoll konkretisieren |
-| anerkannte Regeln zum Vertragsschluss statt Abnahme | Standardrisiko verschoben |
-| Einseitige Preisanpassung ohne Saldierung oder angemessene Belastungsfolge | §-307-Risiko; Klauseltyp und Gesamtmechanik entscheiden |
-| Schlüssel nur gegen Vollzahlung trotz fälliger Besitzübergabe und berechtigtem Einbehalt | zivilrechtliche Fälligkeit/Zug um Zug prüfen; § 253 StGB nur bei vollständig festgestellten Tatbestandsmerkmalen eröffnen |
-| Besichtigungsausschluss/private Sachverständige ausgeschlossen | zunächst 🟠-Kontrollrisiko; 🔴 nur bei praktisch vereitelter Bautenstands-, Abnahme-, Gegenrechts- oder Beweissicherung, kein freies Zutrittsrecht erfinden |
-| zusätzliche Mahnpflicht trotz kalendarischem Termin | § 286-Leitbild unterlaufen |
-| Bezugsfertigkeitsrate trotz gefährlichem Baustellenzugang | Bezugsfertigkeit fehlt; Verkehrssicherheit dokumentieren |
-| Formularmäßige Wohnflächentoleranz | keine starre Prozentgrenze behaupten; konkrete Fläche, Methode, Beschaffenheitsabrede und wirtschaftliche Auswirkung ausweisen |
-| Erreichte MaBV-Stufe soll sämtliche Gegenrechte beseitigen | § 320/§ 641 Abs. 3 und BGH VII ZR 84/09 prüfen; Bautenstand und tatsächlich zahlbaren Betrag trennen |
-| § 650m-Sicherheit soll schon bei bloßem Abnahmeangebot frei werden | tatsächlichen Sicherungszweck, gesicherte Leistungsbereiche und offene wesentliche Mängel prüfen |
-| Interne LPH-8-Organisation wird als eigener Erwerberanspruch behandelt | HOAI nur Organisationsraster; zunächst Verantwortlichkeit und vertragliche Nachweis-/Abnahmerechte bestimmen |
-| Sämtliche internen Planungsakten werden aus § 650n BGB verlangt | Behörden-/Drittnachweise nach Abs. 1 bis 3 von sonstigen Vertrags-, Betriebs- und WEG-Unterlagen trennen |
-| Baugrundrisiko wird ohne Wortlautprüfung stets dem Bauträger zugewiesen | Gutachten, Aufklärung, Festpreis, konkret bepreistes Restrisiko und AGB-Wirkung prüfen; nur pauschale Leistungsentleerung rot |
-| Nach Beurkundung sollen Sonderwünsche stets formfrei sein | wirtschaftlichen Zusammenhang, Auflassungszeitpunkt und Änderung von Preis/Bausoll/Grundstück/WEG nach § 311b BGB neu prüfen |
-| Wirtschaftliche Krise soll ohne §-321-Tatsachen jede Zahlung sperren | konkrete Gefährdung des Gegenleistungsanspruchs und angebotene Sicherheit feststellen; bloße Sorge genügt nicht |
-
-### O.11 — Drei-Dokumente-Umsetzung
-
-Mandantenanschreiben: klare Entscheidungshilfe zu Unterschrift, Zahlungsstopp, Nachverhandlung, Abnahme, Besitz oder Streit. Keine Normwand.
-
-Gutachten: jedes Fachmodul wird dort behandelt, wo es hingehört: MaBV in F, AGB in G, Bausoll/Technik in H/J, Abnahme in I, Verzug in M, Haftung in N.
-
-Schreiben an den Bauträger: keine akademische Vollständigkeit, sondern konkrete Streichungs- und Änderungsforderungen mit Alternativwortlaut; Notariat nur bei Beurkundungs-, Belehrungs- oder Vollzugspunkt in Kopie oder Zusatzabsatz.
+**Ausführungsregel:** Ein Auslöser wird einmal einer Befund-ID zugeordnet. Mehrere einschlägige Hauptpfade ergänzen dieselbe Registerzeile; sie erzeugen keine doppelten Befunde. Bei widersprechenden Kurzregeln gilt die speziellere Norm-/Rechtsprechungsprüfung im Hauptpfad, anschließend der Ausführungskern.
 
 ## Teil P — Beratungsstellen-Schnellmodus (zeitknappe Verbraucherberatung)
 

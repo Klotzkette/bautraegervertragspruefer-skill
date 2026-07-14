@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import os
 import re
 import shutil
 import subprocess
@@ -12,6 +13,7 @@ import sys
 import tempfile
 import unicodedata
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from zipfile import ZipFile
 
@@ -113,9 +115,10 @@ def read_manifest() -> dict[str, str]:
     return result
 
 
-def verify_manifest() -> None:
-    verify_zip_structures()
-    verify_bilingual_provenance()
+def verify_manifest(*, check_artifacts: bool = True) -> None:
+    if check_artifacts:
+        verify_zip_structures()
+        verify_bilingual_provenance()
     expected = expected_hashes()
     recorded = read_manifest()
     missing = sorted(expected.keys() - recorded.keys())
@@ -286,13 +289,24 @@ def compare_text(label: str, committed: str, rebuilt: str) -> None:
         fail(f"stale or divergent generated content: {label}")
 
 
-def compare_contract(name: str, temporary_root: Path) -> int:
+def compare_contract(name: str, temporary_root: Path) -> tuple[int, str]:
     committed_dir = ROOT / "vertragsdokumente" / name
     rebuilt_dir = temporary_root / name
     shutil.copytree(committed_dir, rebuilt_dir)
 
     build_script = rebuilt_dir / "build.sh"
-    subprocess.run([str(build_script)], cwd=rebuilt_dir, check=True)
+    build = subprocess.run(
+        [str(build_script)],
+        cwd=rebuilt_dir,
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if build.returncode != 0:
+        details = "\n".join(
+            part.strip() for part in (build.stdout, build.stderr) if part.strip()
+        )
+        fail(f"rebuild failed for {name}:\n{details}")
 
     committed_pdf = committed_dir / f"{name}.pdf"
     rebuilt_pdf = rebuilt_dir / f"{name}.pdf"
@@ -315,7 +329,19 @@ def compare_contract(name: str, temporary_root: Path) -> int:
         compare_text(
             f"{archive_name}:{member}", committed_zip[member], rebuilt_zip[member]
         )
-    return 2 + len(committed_zip)
+    build_log = "\n".join(
+        part.strip() for part in (build.stdout, build.stderr) if part.strip()
+    )
+    return 2 + len(committed_zip), build_log
+
+
+def build_worker_count() -> int:
+    raw_value = os.environ.get("BTV_BUILD_WORKERS", str(len(CONTRACTS)))
+    try:
+        value = int(raw_value)
+    except ValueError:
+        fail(f"BTV_BUILD_WORKERS must be an integer, got: {raw_value}")
+    return max(1, min(len(CONTRACTS), value))
 
 
 def rebuild_contracts() -> None:
@@ -326,8 +352,16 @@ def rebuild_contracts() -> None:
     artifact_count = 0
     with tempfile.TemporaryDirectory(prefix="btv-contract-builds-") as temporary:
         temporary_root = Path(temporary)
-        for name in CONTRACTS:
-            artifact_count += compare_contract(name, temporary_root)
+        with ThreadPoolExecutor(max_workers=build_worker_count()) as executor:
+            futures = {
+                name: executor.submit(compare_contract, name, temporary_root)
+                for name in CONTRACTS
+            }
+            for name in CONTRACTS:
+                compared, build_log = futures[name].result()
+                artifact_count += compared
+                if build_log:
+                    print(f"[{name}]\n{build_log}")
 
     print(
         "check_contract_builds: ok "
@@ -352,7 +386,7 @@ def main() -> None:
 
     if args.write:
         write_manifest()
-        verify_manifest()
+        verify_manifest(check_artifacts=False)
         return
 
     verify_manifest()

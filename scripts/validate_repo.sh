@@ -3,6 +3,8 @@ set -euo pipefail
 
 root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$root"
+tmp_dir="$(mktemp -d "${TMPDIR:-/tmp}/btv-validate.XXXXXX")"
+trap 'rm -rf "$tmp_dir"' EXIT HUP INT TERM
 
 fail() {
   echo "FAIL: $*" >&2
@@ -59,6 +61,7 @@ for path in \
   scripts/check_contract_builds.py \
   scripts/check_legal_anchors.py \
   scripts/check_navigation.py \
+  scripts/check_skill_quality.py \
   vertragsdokumente/artifact-manifest.sha256 \
   vertragsdokumente/README.md \
   vertragsdokumente/bautraegervertrag/README.md \
@@ -114,6 +117,7 @@ for executable in \
   scripts/check_contract_builds.py \
   scripts/check_legal_anchors.py \
   scripts/check_navigation.py \
+  scripts/check_skill_quality.py \
   scripts/validate_repo.sh \
   vertragsdokumente/bautraegervertrag/build.sh \
   vertragsdokumente/bautraegervertrag-marewald/build.sh \
@@ -170,6 +174,7 @@ done
 
 for full_required in \
   "## Ausführungskern" \
+  "Schnellpfad ohne Qualitätsverlust" \
   "Ein Befundregister ist die einzige Tatsachenbasis" \
   "Phasengate vor jeder Handlungsempfehlung" \
   "Positivkontrolle" \
@@ -199,10 +204,13 @@ for full_required in \
   "V ZR 243/23" \
   "V ZR 102/24" \
   "V ZR 18/25" \
+  "V ZR 132/23" \
+  "V ZR 75/18" \
   "V ZR 144/07" \
   "V ZR 208/14" \
   "XI ZR 145/02" \
   "III ZR 136/07" \
+  "VII ZR 388/00" \
   "3 U 171/24" \
   "§ 13c BeurkG"; do
   grep -Fq "$full_required" skill/SKILL.md || fail "SKILL.md missing required workflow/legal phrase: $full_required"
@@ -226,6 +234,7 @@ catalog_paths=(
   scripts/check_contract_builds.py
   scripts/check_legal_anchors.py
   scripts/check_navigation.py
+  scripts/check_skill_quality.py
   scripts/validate_repo.sh
   .github/workflows/validate.yml
   .github/workflows/sync-docs.yml
@@ -323,15 +332,15 @@ if [[ -n "$versioned_downloads" ]]; then
   fail "README contains version-pinned release download links: ${versioned_downloads}"
 fi
 
-if repo_rg -n 'Y-300-Z-BECKRS|BeckRS-B|https?://(www\.)?juris\.de([/ )"]|$)|https?://[^ )"]*beck(-online)?\.' README.md skill docs vertragsdokumente >/tmp/btv_forbidden_sources.txt 2>/dev/null; then
-  cat /tmp/btv_forbidden_sources.txt >&2
+if repo_rg -n 'BeckRS[[:space:]]+[0-9]|https?://(www\.)?juris\.de([/ )"]|$)|https?://[^ )"]*beck(-online)?\.' README.md skill docs vertragsdokumente >"$tmp_dir/forbidden-sources.txt" 2>/dev/null; then
+  cat "$tmp_dir/forbidden-sources.txt" >&2
   fail "forbidden direct source artifact found"
 fi
 
 repo_rg -n '§ 650v Abs\. 4 BGB' README.md skill docs vertragsdokumente 2>/dev/null \
-  | grep -Ev 'Keinen|kein ' >/tmp/btv_invalid_norms.txt || true
-if [[ -s /tmp/btv_invalid_norms.txt ]]; then
-  cat /tmp/btv_invalid_norms.txt >&2
+  | grep -Ev 'Keinen|kein ' >"$tmp_dir/invalid-norms.txt" || true
+if [[ -s "$tmp_dir/invalid-norms.txt" ]]; then
+  cat "$tmp_dir/invalid-norms.txt" >&2
   fail "nonexistent statutory subsection found"
 fi
 
@@ -350,8 +359,8 @@ for forbidden_legal_pattern in \
   'Preisanpassung nicht ohne Lösungsrecht akzeptieren' \
   'Mängelbeseitigung nach Abnahme richtet sich nach dem Standard der Beseitigung'; do
   if repo_rg -n "$forbidden_legal_pattern" README.md skill docs vertragsdokumente \
-      --glob '!*.pdf' --glob '!*.docx' --glob '!*.zip' >/tmp/btv_legal_regressions.txt 2>/dev/null; then
-    cat /tmp/btv_legal_regressions.txt >&2
+      --glob '!*.pdf' --glob '!*.docx' --glob '!*.zip' >"$tmp_dir/legal-regressions.txt" 2>/dev/null; then
+    cat "$tmp_dir/legal-regressions.txt" >&2
     fail "known legal regression found: ${forbidden_legal_pattern}"
   fi
 done
@@ -370,8 +379,13 @@ for skill_path in skill/SKILL.md skill/MINI_SKILL.md; do
 done
 
 grep -Fq "## ${skill_version} -" CHANGELOG.md || fail "CHANGELOG lacks current version"
-changelog_fix_count="$(awk '/^## 3\.7\.0 /{active=1; next} /^## /{active=0} active && /^[0-9]+\./{count++} END{print count+0}' CHANGELOG.md)"
-[[ "$changelog_fix_count" -eq 30 ]] || fail "CHANGELOG must list exactly 30 audited fixes: ${changelog_fix_count}"
+changelog_fix_count="$(awk -v version="$skill_version" '
+  index($0, "## " version " ") == 1 {active=1; next}
+  /^## / {active=0}
+  active && /^[0-9]+\./ {count++}
+  END {print count+0}
+' CHANGELOG.md)"
+[[ "$changelog_fix_count" -eq 100 ]] || fail "CHANGELOG must list exactly 100 audited fixes for ${skill_version}: ${changelog_fix_count}"
 
 contract_sources=(
   vertragsdokumente/bautraegervertrag/bautraegervertrag.md
@@ -382,8 +396,8 @@ contract_sources=(
   docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md
 )
 
-if repo_rg -n 'aus der Hölle|Horror|schrecklich|Schulungsfall|Lösungsschlüssel|Dossier Bauträgervertragsrecht|Teil A — Dossier|bewusst fehlerhaft|Kontrollakte|Fehlerakte' "${contract_sources[@]}" >/tmp/btv_meta_tells.txt 2>/dev/null; then
-  cat /tmp/btv_meta_tells.txt >&2
+if repo_rg -n 'aus der Hölle|Horror|schrecklich|Schulungsfall|Lösungsschlüssel|Dossier Bauträgervertragsrecht|Teil A — Dossier|bewusst fehlerhaft|Kontrollakte|Fehlerakte' "${contract_sources[@]}" >"$tmp_dir/meta-tells.txt" 2>/dev/null; then
+  cat "$tmp_dir/meta-tells.txt" >&2
   fail "contract document contains meta/test tell"
 fi
 
@@ -468,6 +482,7 @@ for zip in \
   [[ "$pdf_count" -eq 2 ]] || fail "$zip must contain exactly two Einzel-PDFs"
 done
 
+python3 scripts/check_skill_quality.py
 python3 scripts/check_legal_anchors.py
 python3 scripts/check_navigation.py
 if [[ "${BTV_VERIFY_BUILDS:-0}" == "1" ]]; then

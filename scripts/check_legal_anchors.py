@@ -4,9 +4,14 @@
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import sys
+import time
+from concurrent.futures import ThreadPoolExecutor
+from functools import lru_cache
 from pathlib import Path
+from threading import BoundedSemaphore
 from urllib.error import HTTPError, URLError
 from urllib.parse import unquote, urlparse
 from urllib.request import Request, urlopen
@@ -22,8 +27,13 @@ ALLOWED_HOSTS = {
     "www.bundesgerichtshof.de",
     "juris.bundesgerichtshof.de",
     "www.rechtsprechung-im-internet.de",
+    "www.rechtsinformationen.bund.de",
     "gesetze.berlin.de",
+    "nrwe.justiz.nrw.de",
+    "www.gesetze-bayern.de",
     "www.landesrecht-bw.de",
+    "rechtsprechung.hessen.de",
+    "rechtsprechung.niedersachsen.de",
     "voris.wolterskluwer-online.de",
     "dejure.org",
     "openjur.de",
@@ -34,6 +44,13 @@ OFFICIAL_BGH_HOSTS = {
     "www.bundesgerichtshof.de",
     "juris.bundesgerichtshof.de",
     "www.rechtsprechung-im-internet.de",
+}
+
+HOST_SEMAPHORES = {
+    host: BoundedSemaphore(
+        1 if host in {"dejure.org", "openjur.de", "www.openjur.de"} else 4
+    )
+    for host in ALLOWED_HOSTS
 }
 
 CASE_RE = re.compile(r"(?<!\w)(?:[IVX]{1,4}|[0-9]{1,2})\s+(?:ZR|ZB|U)\s+\d+/\d{2}(?!\d)")
@@ -63,7 +80,14 @@ REQUIRED_DOCKETS = {
     "V ZR 219/24",  # Erstherstellungsanspruch: Umfang
     "V ZR 102/24",  # Erhaltungslast und GdWE-Kompetenz
     "V ZR 18/25",  # GdWE-Schadensersatz ohne Garantiehaftung
+    "V ZR 132/23",  # Gesamt-GdWE bündelt Ansprüche auch bei Untergemeinschaften
+    "V ZR 75/18",  # Warnpflichten des bauträgernahen Verwalters
+    "VII ZR 388/00",  # Vollstreckungsunterwerfung mit Nachweisverzicht
 }
+
+
+class SourceCheckError(RuntimeError):
+    pass
 
 
 def fail(message: str) -> None:
@@ -88,41 +112,84 @@ def extract_urls(citation: str) -> list[str]:
     return [match.rstrip(".,;") for match in URL_RE.findall(citation)]
 
 
+@lru_cache(maxsize=1)
+def skill_version() -> str:
+    match = re.search(
+        r'^\s+version:\s+"([^"]+)"',
+        SKILL.read_text(encoding="utf-8"),
+        re.MULTILINE,
+    )
+    return match.group(1) if match else "dev"
+
+
+def worker_count() -> int:
+    raw_value = os.environ.get("BTV_URL_WORKERS", "8")
+    try:
+        value = int(raw_value)
+    except ValueError:
+        fail(f"BTV_URL_WORKERS must be an integer, got: {raw_value}")
+    return max(1, min(12, value))
+
+
 def verify_url(url: str) -> None:
     headers = {
-        "User-Agent": "bautraegervertragspruefer-source-check/3.7 (+https://github.com/Klotzkette/bautraegervertragspruefer-skill)",
+        "User-Agent": (
+            f"bautraegervertragspruefer-source-check/{skill_version()} "
+            "(+https://github.com/Klotzkette/bautraegervertragspruefer-skill)"
+        ),
         "Accept": "text/html,application/pdf;q=0.9,*/*;q=0.5",
     }
+    parsed_url = urlparse(url)
+    is_pdf = parsed_url.path.lower().endswith(".pdf")
+    semaphore = HOST_SEMAPHORES[parsed_url.hostname or ""]
     last_error: Exception | None = None
-    for method in ("HEAD", "GET"):
+    with semaphore:
         request_headers = dict(headers)
-        if method == "GET":
-            request_headers["Range"] = "bytes=0-2047"
-        try:
-            request = Request(url, headers=request_headers, method=method)
-            with urlopen(request, timeout=20) as response:
-                if response.status >= 400:
-                    fail(f"source URL returned HTTP {response.status}: {url}")
-                if method == "GET":
-                    payload = response.read(2048)
-                    if urlparse(url).path.lower().endswith(".pdf") and not payload.startswith(
-                        b"%PDF-"
-                    ):
-                        fail(f"source URL does not return a PDF document: {url}")
-                return
-        except HTTPError as exc:
-            last_error = exc
-            # Several official court portals reject or redirect HEAD even when
-            # the same resource is available by GET. HEAD is only a fast path.
-            if method == "HEAD":
-                continue
-            break
-        except (URLError, TimeoutError) as exc:
-            last_error = exc
-            if method == "HEAD":
-                continue
-            break
-    fail(f"source URL is not reachable: {url} ({last_error})")
+        request_headers["Range"] = "bytes=0-4095"
+        for attempt in range(3):
+            try:
+                request = Request(url, headers=request_headers, method="GET")
+                with urlopen(request, timeout=15) as response:
+                    if response.status >= 400:
+                        raise HTTPError(
+                            url,
+                            response.status,
+                            "HTTP error",
+                            response.headers,
+                            None,
+                        )
+                    final_host = (urlparse(response.geturl()).hostname or "").lower()
+                    if final_host not in ALLOWED_HOSTS:
+                        raise SourceCheckError(
+                            f"source URL redirects to disallowed host {final_host}: {url}"
+                        )
+                    payload = response.read(4096)
+                    if not payload:
+                        raise SourceCheckError(
+                            f"source URL returns an empty document: {url}"
+                        )
+                    if is_pdf and not payload.startswith(b"%PDF-"):
+                        raise SourceCheckError(
+                            f"source URL does not return a PDF document: {url}"
+                        )
+                    return
+            except HTTPError as exc:
+                last_error = exc
+                if (
+                    exc.code in {408, 420, 425, 429, 500, 502, 503, 504}
+                    and attempt < 2
+                ):
+                    base_delay = 1.0 if exc.code in {420, 429} else 0.4
+                    time.sleep(base_delay * (2**attempt))
+                    continue
+                break
+            except (URLError, TimeoutError) as exc:
+                last_error = exc
+                if attempt < 2:
+                    time.sleep(0.4 * (2**attempt))
+                    continue
+                break
+    raise SourceCheckError(f"source URL is not reachable: {url} ({last_error})")
 
 
 def main() -> None:
@@ -152,8 +219,8 @@ def main() -> None:
             fail(f"table line {number} has {len(columns)} columns instead of 4")
         rows.append((number, columns))
 
-    if len(rows) < 40:
-        fail(f"expected at least 40 case-law rows, found {len(rows)}")
+    if len(rows) < 43:
+        fail(f"expected at least 43 case-law rows, found {len(rows)}")
 
     seen_cases: dict[str, int] = {}
     seen_urls: dict[str, int] = {}
@@ -215,8 +282,12 @@ def main() -> None:
         fail(f"case-law references outside the anchor table: {', '.join(unanchored)}")
 
     if args.online:
-        for url in seen_urls:
-            verify_url(url)
+        try:
+            with ThreadPoolExecutor(max_workers=worker_count()) as executor:
+                # map preserves source-table order, so a failure remains reproducible.
+                list(executor.map(verify_url, seen_urls))
+        except SourceCheckError as exc:
+            fail(str(exc))
 
     print(
         "check_legal_anchors: ok "

@@ -32,6 +32,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: sync-docs-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -44,32 +48,18 @@ jobs:
 
       - name: Copy skill files to docs/
         run: |
-          mkdir -p docs/vertragsdokumente/bautraegervertrag
-          mkdir -p docs/vertragsdokumente/bautraegervertrag-marewald
-          mkdir -p docs/vertragsdokumente/bautraegervertrag-lindenhain
+          set -euo pipefail
           cp skill/SKILL.md docs/SKILL.md
           cp skill/MINI_SKILL.md docs/MINI_SKILL.md
-          cp vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf  docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf
-          cp vertragsdokumente/bautraegervertrag/bautraegervertrag.docx docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.docx
-          cp vertragsdokumente/bautraegervertrag/bautraegervertrag.md   docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.md
-          cp vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html
-          cp vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.pdf  docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.pdf
-          cp vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.docx docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.docx
-          cp vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip
-          cp vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf  docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf
-          cp vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx
-          cp vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md   docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md
-          cp vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html
-          cp vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf  docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf
-          cp vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx
-          cp vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip
-          cp vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf  docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf
-          cp vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.docx docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.docx
-          cp vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md   docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md
-          cp vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html
-          cp vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.pdf  docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.pdf
-          cp vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx
-          cp vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip
+          contracts=(bautraegervertrag bautraegervertrag-marewald bautraegervertrag-lindenhain)
+          suffixes=(.md .pdf .docx -de-en.html -de-en.pdf -de-en.docx -einzel-pdfs.zip)
+          for contract in "${contracts[@]}"; do
+            destination="docs/vertragsdokumente/${contract}"
+            mkdir -p "$destination"
+            for suffix in "${suffixes[@]}"; do
+              cp "vertragsdokumente/${contract}/${contract}${suffix}" "$destination/"
+            done
+          done
 
       - name: Commit and push if changed
         run: |

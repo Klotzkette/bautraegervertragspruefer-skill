@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import re
 import sys
+from bisect import bisect_right
 from collections import Counter
 from html.parser import HTMLParser
 from pathlib import Path
@@ -43,6 +44,15 @@ def visible_markdown(text: str) -> str:
         else:
             visible.append(line)
     return "".join(visible)
+
+
+def newline_offsets(text: str) -> list[int]:
+    """Return offsets once so diagnostics do not rescan a large skill per link."""
+    return [match.start() for match in re.finditer("\n", text)]
+
+
+def line_number(offsets: list[int], position: int) -> int:
+    return bisect_right(offsets, position) + 1
 
 
 def heading_anchors(text: str) -> set[str]:
@@ -109,17 +119,21 @@ def main() -> None:
     for source in markdown_files:
         text = source.read_text(encoding="utf-8")
         visible = visible_markdown(text)
+        line_offsets = newline_offsets(visible)
         anchor_cache[source.resolve()] = heading_anchors(visible)
         for match in LINK_RE.finditer(visible):
             markdown_links += 1
             target = link_target(match.group(1))
-            line = visible.count("\n", 0, match.start()) + 1
+            line = line_number(line_offsets, match.start())
             label = f"{source.relative_to(ROOT)}:{line} -> {target}"
             if not target:
                 errors.append(f"empty Markdown link: {label}")
                 continue
             parsed = urlparse(target)
             if parsed.scheme.lower() in EXTERNAL_SCHEMES:
+                continue
+            if parsed.scheme or parsed.netloc:
+                errors.append(f"unsupported link scheme or host: {label}")
                 continue
             destination, fragment = resolve_local(source, target)
             if not inside_repo(destination):
@@ -154,6 +168,9 @@ def main() -> None:
         label = f"docs/index.html:{line} -> {target}"
         if not target:
             errors.append(f"empty HTML link: {label}")
+            continue
+        if parsed.scheme or parsed.netloc:
+            errors.append(f"unsupported link scheme or host: {label}")
             continue
         destination, fragment = resolve_local(page, target)
         if not inside_repo(destination):
