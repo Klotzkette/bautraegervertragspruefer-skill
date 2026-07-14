@@ -51,7 +51,10 @@ REQUIRED_DOCKETS = {
     "VII ZR 310/99",  # MaBV-Zahlungsplan: Grundsatzentscheidung
     "VII ZR 167/11",  # Bereicherungsausgleich
     "V ZR 182/12",  # DIN-Vermutung nur im WEG-Binnenrecht
-    "V ZR 39/24",  # aktuelle Bestätigung der WEG-DIN-Linie
+    "V ZR 39/24",  # Wiederholung der WEG-DIN-Linie in den Gründen
+    "V ZR 34/25",  # Technikraum kann trotz gemeinschaftsdienender Anlagen SE sein
+    "V ZR 50/25",  # Kostenverteilung: Angemessenheit statt bloßer Willkürkontrolle
+    "VII ZR 119/24",  # Koordination bei getrennter Planer-/Unternehmervergabe
     "V ZR 243/23",  # Erstherstellungsanspruch: Grundlinie
     "V ZR 219/24",  # Erstherstellungsanspruch: Umfang
     "V ZR 102/24",  # Erhaltungslast und GdWE-Kompetenz
@@ -100,8 +103,8 @@ def main() -> None:
             fail(f"table line {number} has {len(columns)} columns instead of 4")
         rows.append((number, columns))
 
-    if len(rows) < 36:
-        fail(f"expected at least 36 case-law rows, found {len(rows)}")
+    if len(rows) < 39:
+        fail(f"expected at least 39 case-law rows, found {len(rows)}")
 
     seen_cases: dict[str, int] = {}
     seen_urls: dict[str, int] = {}
