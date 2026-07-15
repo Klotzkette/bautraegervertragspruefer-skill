@@ -49,6 +49,8 @@ REQUIRED_WORKFLOW_PHRASES = (
     "Vollpaket-Abschlussgate",
     "Dokumenten- und OCR-Gate",
     "Evidenz- und Drei-Achsen-Gate",
+    "Zeitstands- und Entscheidungs-Fit-Gate",
+    "Erstantwort-Vertrag",
     "Ratenrechenblatt und Vorleistungsprofil",
     "Zahlungsfreigabekarte",
     "Abschlussentscheidung",
@@ -65,6 +67,9 @@ REQUIRED_LEGAL_PHRASES = (
     "Untergemeinschaft",
     "vollstreckbare Ausfertigung",
     "soweit der Verbraucher oder sein Beauftragter die wesentlichen Planungsvorgaben erstellt",
+    "Art. 229 § 39 EGBGB",
+    "§ 13a BeurkG a. F.",
+    "29. Dezember 2025",
 )
 
 TEXT_SUFFIXES = {".css", ".html", ".lua", ".md", ".py", ".sh", ".sha256", ".yaml", ".yml"}

@@ -62,6 +62,7 @@ for path in \
   scripts/check_legal_anchors.py \
   scripts/check_navigation.py \
   scripts/check_skill_quality.py \
+  scripts/check_workflow_contract.py \
   vertragsdokumente/artifact-manifest.sha256 \
   vertragsdokumente/README.md \
   vertragsdokumente/bautraegervertrag/README.md \
@@ -118,6 +119,7 @@ for executable in \
   scripts/check_legal_anchors.py \
   scripts/check_navigation.py \
   scripts/check_skill_quality.py \
+  scripts/check_workflow_contract.py \
   scripts/validate_repo.sh \
   vertragsdokumente/bautraegervertrag/build.sh \
   vertragsdokumente/bautraegervertrag-marewald/build.sh \
@@ -235,6 +237,7 @@ catalog_paths=(
   scripts/check_legal_anchors.py
   scripts/check_navigation.py
   scripts/check_skill_quality.py
+  scripts/check_workflow_contract.py
   scripts/validate_repo.sh
   .github/workflows/validate.yml
   .github/workflows/sync-docs.yml
@@ -491,6 +494,7 @@ for zip in \
 done
 
 python3 scripts/check_skill_quality.py
+python3 scripts/check_workflow_contract.py
 python3 scripts/check_legal_anchors.py
 python3 scripts/check_navigation.py
 if [[ "${BTV_VERIFY_BUILDS:-0}" == "1" ]]; then

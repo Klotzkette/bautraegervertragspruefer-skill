@@ -1,5 +1,17 @@
 # Änderungsprotokoll
 
+## 3.9.0 - 15. Juli 2026
+
+1. Ein verbindliches Zeitstands-Gate trennt Schuldrechtsmodernisierung 2002, Bauvertragsrechtsreform 2018, WEG-Reform 2020 und die BeurkG-Neunummerierung 2025.
+2. Bezugsurkunden werden nun urkundszeitbezogen geprüft: § 13a BeurkG a. F. bis 28. Dezember 2025, § 13c BeurkG seit 29. Dezember 2025; ältere richtige Verweise erzeugen keinen Scheinfehler mehr.
+3. Ein Entscheidungs-Fit-Test verlangt Übereinstimmung von Normfassung, Vertragstyp, Klauselwirkung, Anspruch und Verfahrenslage, bevor Rechtsprechung einen gesicherten Befund trägt.
+4. Die erste MaBV-Zeile stellt klar, dass die objektiven Voraussetzungen des § 3 Abs. 1 MaBV gelten und eine notarielle Fälligkeitsmitteilung fehlende Voraussetzungen nicht ersetzt.
+5. Der Eingangsrouter behandelt konkrete Rechnungen/Ratenabrufe mit einer sofortigen Zahlungsfreigabekarte und beendet bei Abbruchbefehlen ohne Nachlauf.
+6. Der Erstantwort-Vertrag begrenzt den geführten Erstbefund auf sieben Prioritäten und nennt sofort Auswirkung, Handlung, Frist, Sperr-ID und fehlenden Beleg.
+7. Voll- und Mini-Skill führen denselben Zeitstands-, Quellen- und Ausgabekern; die Mini-Fassung bleibt mit höchstens 7.500 Zeichen für kleine Kontextfenster nutzbar.
+8. Der neue Szenario-Prüfer `check_workflow_contract.py` sichert sieben typische Eingänge sowie Zeitstands-, Fortsetzungs- und Drei-Dokumente-Invarianten.
+9. README und Downloadseite bieten einen verkürzten 30-Sekunden-Start und erklären die direkte Zahlungsprüfung sowie die neue juristische Kalibrierung.
+
 ## 3.8.1 - 15. Juli 2026
 
 1. Die Versionsprüfung verlangt für neue Wartungsreleases nicht mehr irrtümlich erneut die historische 100-Punkte-Liste aus Version 3.8.0.
