@@ -50,6 +50,7 @@ REQUIRED_WORKFLOW_PHRASES = (
     "Dokumenten- und OCR-Gate",
     "Evidenz- und Drei-Achsen-Gate",
     "Zeitstands- und Entscheidungs-Fit-Gate",
+    "Fristen- und Eiltriage",
     "Erstantwort-Vertrag",
     "Ratenrechenblatt und Vorleistungsprofil",
     "Zahlungsfreigabekarte",

@@ -1,5 +1,13 @@
 # Änderungsprotokoll
 
+## 3.9.1 - 15. Juli 2026
+
+1. Eine Fristen- und Eiltriage zieht mögliche kurzfristige Rechtsverluste vor die Langprüfung, ohne Fristablauf, Hemmung oder Verlängerung zu erfinden.
+2. Der Eilhinweis trennt Fristart, Auslöser, Zugang oder Zustellung, Berechnungsstand, Sofortmaßnahme und fehlenden Beleg.
+3. README und Downloadseite bieten getrennte kopierfertige Startsätze für Überblick, konkrete Zahlungsanforderung und vollständiges Drei-Dokumente-Paket.
+4. Voll- und Mini-Skill führen denselben Eilfristenkern; die Mini-Fassung bleibt mit 7.498 Zeichen innerhalb des Limits.
+5. Der Workflow-Validator prüft nun acht Eingangsszenarien einschließlich kurzfristiger Fristen und stellt sicher, dass offene Fristberechnung nicht als feststehender Ablauf ausgegeben wird.
+
 ## 3.9.0 - 15. Juli 2026
 
 1. Ein verbindliches Zeitstands-Gate trennt Schuldrechtsmodernisierung 2002, Bauvertragsrechtsreform 2018, WEG-Reform 2020 und die BeurkG-Neunummerierung 2025.

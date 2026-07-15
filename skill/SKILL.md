@@ -2,10 +2,10 @@
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge samt Baubeschreibung, Teilungserklärung und Projektunterlagen. Verwenden bei Vertragsentwürfen, beurkundeten Verträgen, Raten-, Abnahme- oder Mängelstreit, Bauzeitverzug, Insolvenz- und Technikrisiken. Startet mit Rollenmodus und Fall-Fingerabdruck. Prüft MaBV, § 650u/§ 650v BGB, AGB-Recht, Bausoll, anerkannte Regeln der Technik, Abnahme, Schlussrate, WEG, Eigentumssicherung, Baugrund, Objektüberwachung sowie wirtschaftliche und organisatorische Risiken. Trennt Evidenz, Klauselstatus, tatsächliche Fälligkeit und phasengerechte Handlung. Im geführten Modus folgen Kurzbild, Befundtabelle, Abschlussentscheidung und Nächste Weiche; im One-Shot entstehen Käufer-/Mandantenschreiben, ausführliches Gutachten und konkretes Aufforderungsschreiben an den Bauträger. Nutzt nur amtliche Gerichtsseiten sowie DeJure/OpenJur und blockiert den Start nicht bei fehlendem Live-Zugriff."
 metadata:
-  version: "3.9.0"
+  version: "3.9.1"
 ---
 
-# Bauträgervertrag-Prüfer 3.9.0
+# Bauträgervertrag-Prüfer 3.9.1
 
 Diese Skill-Datei ist ein geführter Workflow und zugleich ein One-Shot-Vollpaket zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
@@ -179,6 +179,7 @@ Vor jeder Antwort wird kurz geroutet. Der Router ist intern, wird aber in der An
 | Vertrag liegt vor, Rolle unklar | Rolle A vorläufig, Pflichtblock starten | nicht auf Rollenwahl warten |
 | Nutzer will `Status` oder `erster Blick` | Kurzbild, Befundtabelle, Fließtext, Weiche | kein Vollpaket erzwingen |
 | Nutzer will `one-shot`, `final`, `alle Schreiben` | Drei-Dokumente-Paket sofort beginnen | keine Angebotsfrage stellen |
+| bekannte oder mögliche kurzfristige Frist, Termin, Zustellung oder Vollstreckung | Fristen- und Eiltriage vor die Sachprüfung ziehen; danach ohne Leerlauf weiterprüfen | Frist weder erfinden noch stillschweigend verlängern oder als sicher abgelaufen behandeln |
 | konkrete Rechnung, Ratenabruf oder Zahlungsfrist | Zahlungsfreigabekarte mit Betrag, Stufe, Voraussetzungen, Einbehalt, Sperr-IDs und Entscheidung erstellen | Vertragsklausel und tatsächliche Fälligkeit nicht vermischen |
 | OCR/Fotos/Auszug lückenhaft | offene Tatsachen, Prüfvorbehalt und konkrete Unterlagenliste ausweisen | nicht wegen fehlender Anlagen stoppen; keine Nichtexistenz unterstellen |
 | mehrere Fassungen oder widersprüchliche Anlagen | Dokumentenkarte anlegen, Rang/Datum/Einbeziehung klären, jüngere Fassung nicht automatisch bevorzugen | Textstände nicht vermischen |
@@ -187,6 +188,16 @@ Vor jeder Antwort wird kurz geroutet. Der Router ist intern, wird aber in der An
 | reine Bedienfrage | vier Schritte, Vertrag anfordern | keine Plattformdebatte |
 | Bedienfrage und Vertrag liegen gemeinsam vor | ein Satz Bedienorientierung, dann Pflichtblock | nicht in Upload-Hilfe hängen bleiben |
 | `stop`, `abbrechen`, `beenden`, `halt`, `cancel` | sofort mit der festgelegten Beendigungszeile enden | keine Zusammenfassung oder neue Prüfung anhängen |
+
+### Fristen- und Eiltriage
+
+Vor jeder längeren Prüfung werden alle erkennbaren Daten, Termine, Zugänge und Zustellungen auf möglichen Handlungsbedarf gesichtet. Das betrifft insbesondere Beurkundung, Zahlungsanforderung, Abnahmeverlangen oder Abnahmefiktion, Mängel-/Nacherfüllungsfrist, Kündigungs- oder Rücktrittserklärung, Verjährung, gerichtliche Frist, Klauselzustellung und angekündigte Vollstreckung. Droht eine Handlung vor dem nächsten regulären Ausgabeschritt, steht unmittelbar nach dem Startsignal und noch vor dem Kurzbild:
+
+```text
+EILHINWEIS — Vorgang: [...] | Frist/Termin: [...] | Grundlage und Berechnung: belegt/offen | Sofortmaßnahme: [...] | fehlender Beleg: [...]
+```
+
+Eine Frist wird nur mit Art, Auslöser, maßgeblichem Zugang/Zustellung, Berechnungsweg, Ende und Beleg als feststehend ausgegeben. Gesetzliche, gerichtliche, vertragliche und rein organisatorische Termine bleiben getrennt. Fehlt eine dieser Tatsachen, lautet der Status `Fristberechnung offen`; der Skill nennt die fehlende Angabe und empfiehlt bei möglichem Rechtsverlust sofortige anwaltliche beziehungsweise fachkundige Prüfung, ohne einen Ablauf zu behaupten. Ein Eilhinweis ersetzt weder Rechtsbehelf noch Fristwahrung, unterstellt keine Hemmung oder Verlängerung und stoppt die übrige Vertragsprüfung nicht.
 
 ### Nächste Weiche
 
@@ -596,7 +607,7 @@ Empfehlung: [...] | Frist/Termin: [...] | Nächster Beleg/Fortsetzen bei: [...]
 
 Dieser Checkpoint wird bei jeder Fortsetzung aktualisiert. Er verhindert, dass kleine Modelle nach einem Abbruch neu anfangen, Vertragsphase oder Rolle verlieren, Ampeln verändern oder das Bauträgerschreiben vergessen.
 
-**Erstantwort-Vertrag:** Nach dem Startsignal folgen ohne Quellen- oder Inhaltsverzeichnis-Vorrede (1) eine Ein-Satz-Entscheidung, (2) der obige Checkpoint, (3) höchstens sieben priorisierte Befunde und (4) im geführten Modus die Nächste Weiche. Zu jedem priorisierten Befund stehen `heutige Auswirkung`, `nächste Handlung`, `Frist/Termin` und `fehlender Beleg`. Ist eine konkrete Rechnung vorgelegt, ersetzt die Zahlungsfreigabekarte allgemeine Ausführungen zum Zahlungsplan. Quellen werden pro Befund einmal vollständig im Gutachten genannt; Kurzbild und Schreiben verwenden die Befund-ID. So erhält die Nutzerseite zuerst eine handlungsfähige Antwort und nicht erst eine Fundstellensammlung.
+**Erstantwort-Vertrag:** Nach dem Startsignal folgt bei möglichem kurzfristigem Rechtsverlust zuerst der Eilhinweis. Danach kommen ohne Quellen- oder Inhaltsverzeichnis-Vorrede (1) eine Ein-Satz-Entscheidung, (2) der obige Checkpoint, (3) höchstens sieben priorisierte Befunde und (4) im geführten Modus die Nächste Weiche. Zu jedem priorisierten Befund stehen `heutige Auswirkung`, `nächste Handlung`, `Frist/Termin` und `fehlender Beleg`. Ist eine konkrete Rechnung vorgelegt, ersetzt die Zahlungsfreigabekarte allgemeine Ausführungen zum Zahlungsplan. Quellen werden pro Befund einmal vollständig im Gutachten genannt; Kurzbild und Schreiben verwenden die Befund-ID. So erhält die Nutzerseite zuerst eine handlungsfähige Antwort und nicht erst eine Fundstellensammlung.
 
 ### Stilregel: dichter Text, Tabellen statt Bullet-Wände
 

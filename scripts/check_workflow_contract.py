@@ -46,6 +46,11 @@ SCENARIOS = (
         ("Rechnung/Ratenabruf: sofort Zahlungsfreigabekarte",),
     ),
     Scenario(
+        "urgent_deadline",
+        ("bekannte oder mögliche kurzfristige Frist", "Fristen- und Eiltriage"),
+        ("Frist zuerst: Art, Auslöser, Zugang/Zustellung",),
+    ),
+    Scenario(
         "stop",
         ("`stop`, `abbrechen`, `beenden`, `halt`, `cancel`", "sofort mit der festgelegten Beendigungszeile"),
         ("Bei `stop/abbrechen/beenden/halt/cancel`",),
@@ -68,13 +73,15 @@ FULL_OUTPUT_MARKERS = (
     "Dokument 3 — Aufforderungsschreiben",
     "heutige Auswirkung",
     "Bis wann/benötigter Beleg",
+    "EILHINWEIS — Vorgang:",
+    "Fristberechnung offen",
 )
 
 MINI_OUTPUT_MARKERS = (
     "Käufer-/Mandantenschreiben",
     "Mandantengutachten",
     "Aufforderungsschreiben an Bauträger",
-    "Entscheidung, Sperr-IDs, Frist, nächster Beleg/Fortsetzung",
+    "Dann Status: Rolle/Phase, D1-D3, Entscheidung, Sperr-IDs, Fortsetzung",
 )
 
 TEMPORAL_MARKERS = (

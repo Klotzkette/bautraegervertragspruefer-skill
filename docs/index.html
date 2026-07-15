@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bauträgervertrag-Prüfer Skill 3.9.0 — Direktdownload</title>
-<meta name="description" content="Lade die SKILL.md-Datei des Bauträgervertrag-Prüfer-Skills 3.9.0 direkt herunter — quellenharte, zeitstandsgenaue Prüfung deutscher Bauträgerverträge als Markdown.">
+<title>Bauträgervertrag-Prüfer Skill 3.9.1 — Direktdownload</title>
+<meta name="description" content="Lade die SKILL.md-Datei des Bauträgervertrag-Prüfer-Skills 3.9.1 direkt herunter — quellenharte, zeitstandsgenaue Prüfung deutscher Bauträgerverträge als Markdown.">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#f4f7f8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#101719" media="(prefers-color-scheme: dark)">
@@ -128,7 +128,7 @@
 </head>
 <body>
 <main id="top">
-  <h1>Bauträgervertrag-Prüfer Skill 3.9.0</h1>
+  <h1>Bauträgervertrag-Prüfer Skill 3.9.1</h1>
   <p class="lead">Lade die passende Skill-Datei herunter, lege sie in deinen Chatbot und reiche danach den Bauträgervertrag nach.</p>
 
   <nav class="quick-nav" aria-label="Seitennavigation">
@@ -163,6 +163,17 @@
       <li><strong>Vertrag hochladen:</strong> PDF, DOCX, Text, Foto oder Akten-ZIP nachreichen.</li>
     </ol>
     <p>Wenn Skill und Vertrag schon zusammen hochgeladen wurden: Startsatz senden. Das Modell soll mit Rollenmodus, Kurzbild und Pflicht-Prüfblock beginnen.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Ziel</th><th>Kopierfertiger Startsatz</th></tr></thead>
+        <tbody>
+          <tr><td>erster Überblick</td><td><code>Prüfe diesen Bauträgervertrag. Beginne sofort im geführten Modus.</code></td></tr>
+          <tr><td>Rechnung oder Rate</td><td><code>Prüfe zuerst diese Zahlungsanforderung und entscheide mit Zahlungsfreigabekarte, welche Voraussetzungen oder Belege fehlen.</code></td></tr>
+          <tr><td>alle drei Dokumente</td><td><code>Vollpaket jetzt: Käufer-/Mandantenschreiben, ausführliches Gutachten und Aufforderungsschreiben an den Bauträger.</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Bei möglichem kurzfristigem Rechtsverlust Datum und Zugang oder Zustellung nennen. Der Skill beginnt dann mit einem Eilhinweis, ohne eine Frist zu erfinden.</p>
     <p><strong>60-Sekunden-Regel:</strong> keine Recherchevorrede, keine Plattformdebatte. Erst sichtbares Startsignal, dann Rollenstatus und Pflichtblock. Bei Abbruch: <code>Bitte fahre exakt an der letzten Überschrift fort und zeige danach die Nächste Weiche.</code></p>
   </section>
 
@@ -182,7 +193,7 @@
       <li><strong>Mandantengutachten:</strong> ausführliche Prüfung mit Drei-Achsen-Klauselmatrix, Subsumtion, Normen, Quellenstand, Beweislast, MaBV-Ratenrechenblatt, Zahlungsfreigabekarte, Technik und Organisation.</li>
       <li><strong>Aufforderungsschreiben:</strong> phasengerechte Abhilfe; Notariat nur bei Urkunds- oder Vollzugsthemen.</li>
     </ol>
-    <p><strong>Workflow-Kompass:</strong> „Status" oder „erster Blick" startet geführt; eine konkrete Rechnung startet mit der Zahlungsfreigabekarte; „final", „one-shot" oder „alle Schreiben" startet das Vollpaket; nach Abbruch geht es an der Fortsetzungsmarke weiter.</p>
+    <p><strong>Workflow-Kompass:</strong> Eine mögliche kurzfristige Frist startet mit der Eiltriage; „Status" oder „erster Blick" startet geführt; eine konkrete Rechnung startet mit der Zahlungsfreigabekarte; „final", „one-shot" oder „alle Schreiben" startet das Vollpaket; nach Abbruch geht es an der Fortsetzungsmarke weiter.</p>
   </section>
 
   <section class="card">
@@ -307,7 +318,7 @@
 
   <section class="card" id="prompt">
     <h2>Kopierfertiger Start</h2>
-    <p><code>Bitte nutze die gerade hochgeladene SKILL.md oder MINI_SKILL.md als Arbeitsanweisung. Rollenmodus, falls ich ihn angebe: A Käufer/in selbst, B anwaltlich für Käufer/in, C neutraler Schnellcheck. Liegt der Vertrag schon vor oder antworte ich nicht zur Rolle, beginne vorläufig mit A und warte nicht. Prüfe ohne Rückfragen-Kaskade mit Evidenzkarte, Befundtabelle, Fließtext, phasenbezogener Abschlussentscheidung und Nächster Weiche. Bei einer Rechnung erstelle zusätzlich die Zahlungsfreigabekarte. Wenn ich „Vollpaket" schreibe, liefere Käufer-/Mandantenschreiben, ausführliches Gutachten und phasengerechtes Bauträgerschreiben; erfinde im Positivfall keine Beanstandung.</code></p>
+    <p><code>Bitte nutze die gerade hochgeladene SKILL.md oder MINI_SKILL.md als Arbeitsanweisung. Rollenmodus, falls ich ihn angebe: A Käufer/in selbst, B anwaltlich für Käufer/in, C neutraler Schnellcheck. Liegt der Vertrag schon vor oder antworte ich nicht zur Rolle, beginne vorläufig mit A und warte nicht. Prüfe erkennbare Fristen, Termine, Zugänge und Zustellungen zuerst; bei möglichem kurzfristigem Rechtsverlust beginne mit einem Eilhinweis, ohne eine Frist zu erfinden. Prüfe danach ohne Rückfragen-Kaskade mit Evidenzkarte, Befundtabelle, Fließtext, phasenbezogener Abschlussentscheidung und Nächster Weiche. Bei einer Rechnung erstelle zusätzlich die Zahlungsfreigabekarte. Wenn ich „Vollpaket" schreibe, liefere Käufer-/Mandantenschreiben, ausführliches Gutachten und phasengerechtes Bauträgerschreiben; erfinde im Positivfall keine Beanstandung.</code></p>
     <p>Für Projekt, Co-Work oder Assistant-Konfiguration: Datei als Projektwissen, Skill-Datei, Systemanweisung oder dauerhafte Arbeitsanweisung hinterlegen.</p>
     <p>Wenn der Chatbot abbricht: <code>Bitte fahre an der letzten Überschrift fort und zeige mir danach die Nächste Weiche.</code></p>
     <p>Wenn nichts startet: <code>Du hast jetzt die Arbeitsanweisung. Bitte beginne mit Rollenmodus, Evidenzkarte, Pflicht-Prüfblock, Abschlussentscheidung und Nächster Weiche.</code></p>
@@ -315,7 +326,7 @@
   </section>
 
   <section class="card" id="qualitaet">
-    <h2>Stand 3.9.0</h2>
+    <h2>Stand 3.9.1</h2>
     <ul>
       <li><strong>Sofort nutzbar:</strong> Voll- und Mini-Skill sind echte Release-Downloads; Rollenmodus, 60-Sekunden-Start und Fortsetzungsmarken funktionieren modellunabhängig.</li>
       <li><strong>Vollständige Ausgabe:</strong> Evidenzkarte und versioniertes Befundregister mit stabilen IDs halten Kurzbild, Abschlussentscheidung, Gutachten und phasengerechtes Bauträgerschreiben konsistent. Jede Akte wird nur einmal vollständig gelesen; Fachmodule und Schreiben arbeiten aus demselben Register.</li>
@@ -325,7 +336,7 @@
       <li><strong>Juristisch kalibriert:</strong> Klauselstatus, tatsächliche Fälligkeit und Handlung bleiben getrennt; Ratenrechenblatt und Zahlungsfreigabekarte prüfen den konkreten Abruf, 🔴 Befunde brauchen Rechtsfolge, Beweislast und Erledigungsbedingung.</li>
       <li><strong>Technisch vollständig:</strong> Baugrund, Baugrube, anerkannte Regeln der Technik, HOAI-Leistungsphasen, private Baukontrolle, Unterlagen und Betriebskosten bleiben Teil der Prüfung.</li>
       <li><strong>Drei Testprofile:</strong> Hohenwartshofen, Marewald und Lindenhain stehen jeweils als Markdown, Word, PDF, Akten-ZIP und zweispaltige Deutsch/English-Lesefassung bereit.</li>
-      <li><strong>Automatisch geprüft:</strong> Validatoren sichern mehr als 1.000 Struktur- und Redundanzpunkte sowie sieben Eingangsszenarien, Versionsgleichlauf, Pages-Kopien, Mini-Limit, No-Meta-Regel, Sprachvorrang, Rechtsanker und sämtliche lokalen Markdown- und Pages-Wege. Jede zweisprachige HTML-, PDF- und DOCX-Fassung weist den SHA-256-Stand ihrer deutschen Quelle nach; jedes Akten-ZIP darf nur die zwei erwarteten Einzel-PDFs enthalten. Die statische Prüfung ersetzt keine aktuelle Rechtsrecherche, eine optionale Online-Prüfung ruft alle Quellenadressen live ab.</li>
+      <li><strong>Automatisch geprüft:</strong> Validatoren sichern mehr als 1.000 Struktur- und Redundanzpunkte sowie acht Eingangsszenarien einschließlich Eilfristen, Versionsgleichlauf, Pages-Kopien, Mini-Limit, No-Meta-Regel, Sprachvorrang, Rechtsanker und sämtliche lokalen Markdown- und Pages-Wege. Jede zweisprachige HTML-, PDF- und DOCX-Fassung weist den SHA-256-Stand ihrer deutschen Quelle nach; jedes Akten-ZIP darf nur die zwei erwarteten Einzel-PDFs enthalten. Die statische Prüfung ersetzt keine aktuelle Rechtsrecherche, eine optionale Online-Prüfung ruft alle Quellenadressen live ab.</li>
       <li><strong>Offen und portabel:</strong> keine Installation, kein eigenes Modell und keine versteckte Logik; alle Kernanweisungen liegen in einer lesbaren Markdown-Datei.</li>
     </ul>
   </section>
