@@ -53,6 +53,7 @@ REQUIRED_WORKFLOW_PHRASES = (
     "Fristen- und Eiltriage",
     "Erstantwort-Vertrag",
     "Ratenrechenblatt und Vorleistungsprofil",
+    "Mehrdokumenten-Abgleich bei Zahlungsakten",
     "Zahlungsfreigabekarte",
     "Abschlussentscheidung",
     "Dokument 1 — Übersendungsschreiben",

@@ -1,5 +1,16 @@
 # Änderungsprotokoll
 
+## 4.0.0 - 26. Juli 2026
+
+1. Jede der drei Vertragsakten ist zu einer vierteiligen Zahlungsakte aus Vertragsurkunde, Baubeschreibung, Bautenstandsbericht und Zahlungsanforderung ausgebaut.
+2. Die Aktenprofile prüfen nun zusätzlich, ob der Skill einen widersprüchlichen Bautenstandsbericht sperrt, einen dokumentierten Grenzfall rechnerisch freigibt und einen transparenten Positivfall ohne künstliche Beanstandung bestätigt.
+3. Voll- und Mini-Skill gleichen bei Zahlungsakten Vertragsmeilenstein, Fälligkeits- und Sicherungsbelege, Einzelpositionen des Bautenstands, Vorzahlungen, Gutschriften und den verlangten Betrag miteinander ab.
+4. Ein zusammenfassendes Berichtsergebnis darf offene oder widersprüchliche Einzelgewerke nicht überstimmen; Klauselstatus, objektiver Bautenstand, Gegenrechte und konkrete Zahlungsfreigabe bleiben getrennt.
+5. README, Aktenübersichten und mobile Downloadseite führen direkt zu sämtlichen neuen Markdown- und PDF-Unterlagen sowie zu den vierteiligen Akten-ZIPs.
+6. Der Aktenprüfer validiert Urkundsbezug, Berichts- und Anforderungsreihenfolge, Vertragspreis, beurkundeten Ratenanteil sowie Prozent-, Euro- und Kumulationsrechnung der Zahlungsanforderungen.
+7. Build-, Pages-Sync-, No-Meta-, Navigations- und Release-Prüfungen erfassen die neuen Unterlagen und verlangen in jedem ZIP exakt vier neutral benannte Einzel-PDFs.
+8. Die Veröffentlichung umfasst 35 direkt herunterladbare Artefakte; Vertragsquellen, zweisprachige Lesefassungen, Aktenunterlagen und ZIPs bleiben über Manifest und reproduzierbaren Tiefen-Build abgesichert.
+
 ## 3.9.1 - 15. Juli 2026
 
 1. Eine Fristen- und Eiltriage zieht mögliche kurzfristige Rechtsverluste vor die Langprüfung, ohne Fristablauf, Hemmung oder Verlängerung zu erfinden.

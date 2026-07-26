@@ -42,8 +42,15 @@ SCENARIOS = (
     ),
     Scenario(
         "payment_request",
-        ("konkrete Rechnung, Ratenabruf oder Zahlungsfrist", "Zahlungsfreigabekarte"),
-        ("Rechnung/Ratenabruf: sofort Zahlungsfreigabekarte",),
+        (
+            "konkrete Rechnung, Ratenabruf oder Zahlungsfrist",
+            "Mehrdokumenten-Abgleich bei Zahlungsakten",
+            "Zahlungsfreigabekarte",
+        ),
+        (
+            "Rechnung/Ratenabruf: sofort Zahlungsfreigabekarte",
+            "Berichts-Fazit überstimmt keine offenen Teilgewerke",
+        ),
     ),
     Scenario(
         "urgent_deadline",

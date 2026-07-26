@@ -14,6 +14,10 @@ on:
       - 'vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.pdf'
       - 'vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.docx'
       - 'vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip'
+      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag-bautenstandsbericht.md'
+      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag-bautenstandsbericht.pdf'
+      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag-zahlungsanforderung.md'
+      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag-zahlungsanforderung.pdf'
       - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf'
       - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx'
       - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md'
@@ -21,6 +25,10 @@ on:
       - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf'
       - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx'
       - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip'
+      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-bautenstandsbericht.md'
+      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-bautenstandsbericht.pdf'
+      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-zahlungsanforderung.md'
+      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-zahlungsanforderung.pdf'
       - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf'
       - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.docx'
       - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md'
@@ -28,6 +36,10 @@ on:
       - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.pdf'
       - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx'
       - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip'
+      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-bautenstandsbericht.md'
+      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-bautenstandsbericht.pdf'
+      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-zahlungsanforderung.md'
+      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-zahlungsanforderung.pdf'
 
 permissions:
   contents: write
@@ -52,7 +64,7 @@ jobs:
           cp skill/SKILL.md docs/SKILL.md
           cp skill/MINI_SKILL.md docs/MINI_SKILL.md
           contracts=(bautraegervertrag bautraegervertrag-marewald bautraegervertrag-lindenhain)
-          suffixes=(.md .pdf .docx -de-en.html -de-en.pdf -de-en.docx -einzel-pdfs.zip)
+          suffixes=(.md .pdf .docx -de-en.html -de-en.pdf -de-en.docx -einzel-pdfs.zip -bautenstandsbericht.md -bautenstandsbericht.pdf -zahlungsanforderung.md -zahlungsanforderung.pdf)
           for contract in "${contracts[@]}"; do
             destination="docs/vertragsdokumente/${contract}"
             mkdir -p "$destination"

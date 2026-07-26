@@ -14,6 +14,8 @@ import tempfile
 import unicodedata
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
+from datetime import date
+from decimal import Decimal, InvalidOperation
 from pathlib import Path
 from zipfile import ZipFile
 
@@ -29,16 +31,23 @@ ZIP_MEMBERS = {
     "bautraegervertrag": (
         "01-wohnungsbautraegervertrag-mit-auflassung.pdf",
         "02-baubeschreibung-birkenpfuhl-komfort-b4.pdf",
+        "03-bautenstandsbericht-birkenpfuhl-haus-4.pdf",
+        "04-zahlungsanforderung-birkenpfuhl-wohnung-4-27.pdf",
     ),
     "bautraegervertrag-marewald": (
         "01-wohnungsbautraegervertrag-mit-auflassung.pdf",
         "02-baubeschreibung-marewald-komfort-c.pdf",
+        "03-bautenstandsbericht-marewald-haus-c.pdf",
+        "04-zahlungsanforderung-marewald-wohnung-c-2-14.pdf",
     ),
     "bautraegervertrag-lindenhain": (
         "01-wohnungsbautraegervertrag-mit-auflassung.pdf",
         "02-baubeschreibung-lindenhain-komfort.pdf",
+        "03-bautenstandsbericht-lindenhain-12.pdf",
+        "04-zahlungsanforderung-lindenhain-wohnung-b-05.pdf",
     ),
 }
+CASE_DOCUMENT_SUFFIXES = ("-bautenstandsbericht", "-zahlungsanforderung")
 REQUIRED_TOOLS = ("pandoc", "weasyprint", "perl", "zip", "pdftotext", "pdfinfo")
 WORD_NS = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 CORE_NS = {
@@ -46,6 +55,20 @@ CORE_NS = {
     "dc": "http://purl.org/dc/elements/1.1/",
 }
 PROVENANCE_PREFIX = "btv-source-sha256:"
+GERMAN_MONTHS = {
+    "Januar": 1,
+    "Februar": 2,
+    "März": 3,
+    "April": 4,
+    "Mai": 5,
+    "Juni": 6,
+    "Juli": 7,
+    "August": 8,
+    "September": 9,
+    "Oktober": 10,
+    "November": 11,
+    "Dezember": 12,
+}
 
 
 def fail(message: str) -> None:
@@ -54,7 +77,10 @@ def fail(message: str) -> None:
 
 
 def protected_paths() -> list[Path]:
-    paths = [Path("scripts/build_bilingual_contracts.py")]
+    paths = [
+        Path("scripts/build_bilingual_contracts.py"),
+        Path("vertragsdokumente/case-style.css"),
+    ]
     for name in CONTRACTS:
         base = Path("vertragsdokumente") / name
         paths.extend(
@@ -66,6 +92,14 @@ def protected_paths() -> list[Path]:
                 base / f"{name}.md",
                 base / f"{name}.pdf",
                 base / f"{name}.docx",
+                *(
+                    item
+                    for suffix in CASE_DOCUMENT_SUFFIXES
+                    for item in (
+                        base / f"{name}{suffix}.md",
+                        base / f"{name}{suffix}.pdf",
+                    )
+                ),
                 base / f"{name}-einzel-pdfs.zip",
                 base / f"{name}-de-en.html",
                 base / f"{name}-de-en.pdf",
@@ -117,6 +151,7 @@ def read_manifest() -> dict[str, str]:
 
 def verify_manifest(*, check_artifacts: bool = True) -> None:
     if check_artifacts:
+        verify_case_documents()
         verify_zip_structures()
         verify_bilingual_provenance()
     expected = expected_hashes()
@@ -140,6 +175,7 @@ def verify_manifest(*, check_artifacts: bool = True) -> None:
 
 def write_manifest() -> None:
     rebuild_contracts()
+    verify_case_documents()
     verify_zip_structures()
     verify_bilingual_provenance()
     hashes = expected_hashes()
@@ -157,6 +193,172 @@ def canonical_text(value: str) -> str:
     value = re.sub(r"(?m)^\s*\d+\s*$", "", value)
     value = re.sub(r"(?<=\w)-\s*\n\s*(?=\w)", "", value)
     return re.sub(r"\s+", " ", value).strip()
+
+
+def required_match(pattern: str, text: str, label: str) -> re.Match[str]:
+    match = re.search(pattern, text, re.MULTILINE)
+    if match is None:
+        fail(f"case document lacks {label}")
+    return match
+
+
+def markdown_field(value: str) -> str:
+    return re.sub(r"\s*<br\s*/?>\s*$", "", value, flags=re.IGNORECASE)
+
+
+def parse_german_date(value: str, label: str) -> date:
+    value = markdown_field(value)
+    match = re.fullmatch(r"(\d{1,2})\.\s+([A-ZÄÖÜ][a-zäöüß]+)\s+(\d{4})", value)
+    if match is None or match.group(2) not in GERMAN_MONTHS:
+        fail(f"invalid German date in {label}: {value}")
+    return date(int(match.group(3)), GERMAN_MONTHS[match.group(2)], int(match.group(1)))
+
+
+def parse_german_decimal(value: str, label: str) -> Decimal:
+    normalized = value.replace(".", "").replace(",", ".").replace(" ", "")
+    try:
+        return Decimal(normalized)
+    except InvalidOperation as exc:
+        fail(f"invalid decimal in {label}: {value} ({exc})")
+
+
+def payment_rows(text: str, label: str) -> list[tuple[str, Decimal, Decimal]]:
+    rows: list[tuple[str, Decimal, Decimal]] = []
+    for raw_line in text.splitlines():
+        if not raw_line.startswith("|"):
+            continue
+        cells = [cell.strip().replace("**", "") for cell in raw_line.strip("|").split("|")]
+        if len(cells) != 3 or "%" not in cells[1] or "EUR" not in cells[2]:
+            continue
+        percent = parse_german_decimal(cells[1].split("%", 1)[0], f"{label} percent")
+        amount = parse_german_decimal(cells[2].split("EUR", 1)[0], f"{label} amount")
+        rows.append((cells[0], percent, amount))
+    if len(rows) != 4:
+        fail(f"{label} must contain exactly four payment calculation rows")
+    return rows
+
+
+def contract_rate_percentages(text: str, label: str) -> dict[int, Decimal]:
+    rates: dict[int, Decimal] = {}
+    for raw_line in text.splitlines():
+        if not raw_line.startswith("|"):
+            continue
+        cells = [cell.strip().replace("**", "") for cell in raw_line.strip("|").split("|")]
+        if len(cells) != 3 or "%" not in cells[2]:
+            continue
+        rate_match = re.fullmatch(r"(\d+)(?:\.\s*Rate)?", cells[0])
+        if rate_match is None:
+            continue
+        rate_number = int(rate_match.group(1))
+        if rate_number in rates:
+            fail(f"{label}: duplicate contract rate {rate_number}")
+        rates[rate_number] = parse_german_decimal(
+            cells[2].split("%", 1)[0],
+            f"{label} contract rate {rate_number}",
+        )
+    if set(rates) != set(range(1, 8)):
+        fail(f"{label}: contract must contain one complete seven-rate table")
+    return rates
+
+
+def german_currency(value: Decimal) -> str:
+    formatted = f"{value:,.2f}"
+    return formatted.replace(",", "\0").replace(".", ",").replace("\0", ".")
+
+
+def verify_case_documents() -> None:
+    cent = Decimal("0.01")
+    for name in CONTRACTS:
+        directory = ROOT / "vertragsdokumente" / name
+        contract = (directory / f"{name}.md").read_text(encoding="utf-8")
+        report = (directory / f"{name}-bautenstandsbericht.md").read_text(encoding="utf-8")
+        request = (directory / f"{name}-zahlungsanforderung.md").read_text(encoding="utf-8")
+
+        if not report.startswith("# Bautenstandsbericht\n"):
+            fail(f"{name}: report title is not neutral and exact")
+        if not request.startswith("# Zahlungsanforderung\n"):
+            fail(f"{name}: payment-request title is not neutral and exact")
+
+        report_id = required_match(
+            r"^\*\*Berichtsnummer:\*\*\s+(.+?)\s*$",
+            report,
+            f"{name} report number",
+        ).group(1)
+        report_id = markdown_field(report_id)
+        if report_id not in request:
+            fail(f"{name}: payment request does not identify its report")
+
+        report_date_text = required_match(
+            r"^\*\*Berichtsdatum:\*\*\s+(.+?)\s*$",
+            report,
+            f"{name} report date",
+        ).group(1)
+        request_date_text = required_match(
+            r"^[A-ZÄÖÜ][A-Za-zÄÖÜäöüß -]+, den (.+?)$",
+            request,
+            f"{name} payment-request date",
+        ).group(1)
+        if parse_german_date(report_date_text, name) > parse_german_date(
+            request_date_text, name
+        ):
+            fail(f"{name}: payment request predates its report")
+
+        contract_urn = required_match(
+            r"UR-Nr\.\s*([0-9]+/\d{4}\s+[A-Z]+)",
+            contract,
+            f"{name} contract deed number",
+        ).group(1)
+        for document_label, document in (("report", report), ("payment request", request)):
+            if contract_urn not in document:
+                fail(f"{name}: {document_label} does not match contract deed number")
+
+        rows = payment_rows(request, name)
+        total_label, total_percent, total_amount = rows[0]
+        previous_label, previous_percent, previous_amount = rows[1]
+        rate_label, rate_percent, rate_amount = rows[2]
+        cumulative_label, cumulative_percent, cumulative_amount = rows[3]
+        if "Gesamtkaufpreis" not in total_label or total_percent != Decimal("100.0"):
+            fail(f"{name}: malformed total-price row")
+        if "bisher" not in previous_label.lower() or "Rate" not in rate_label:
+            fail(f"{name}: malformed prior-payment or current-rate row")
+        if "kumuliert" not in cumulative_label.lower():
+            fail(f"{name}: malformed cumulative-payment row")
+        formatted_total = german_currency(total_amount)
+        if (
+            formatted_total not in contract
+            and formatted_total.replace(".", " ") not in contract
+        ):
+            fail(f"{name}: payment-request total does not match the contract price")
+        rate_number_match = re.search(r"(\d+)\.\s*Rate", rate_label)
+        if rate_number_match is None:
+            fail(f"{name}: current payment row lacks its contract rate number")
+        rate_number = int(rate_number_match.group(1))
+        contract_rates = contract_rate_percentages(contract, name)
+        if contract_rates.get(rate_number) != rate_percent:
+            fail(f"{name}: requested rate percentage does not match the contract")
+        if (total_amount * previous_percent / 100).quantize(cent) != previous_amount:
+            fail(f"{name}: prior-payment arithmetic is inconsistent")
+        if (total_amount * rate_percent / 100).quantize(cent) != rate_amount:
+            fail(f"{name}: current-rate arithmetic is inconsistent")
+        if previous_amount + rate_amount != cumulative_amount:
+            fail(f"{name}: cumulative euro amount is inconsistent")
+        if previous_percent + rate_percent != cumulative_percent:
+            fail(f"{name}: cumulative percentage is inconsistent")
+
+        report_rows = [
+            line
+            for line in report.splitlines()
+            if line.startswith("| ")
+            and not line.startswith("| ---")
+            and "Leistungsbereich" not in line
+        ]
+        if len(report_rows) < 3:
+            fail(f"{name}: report has too few itemized findings")
+
+    print(
+        "check_contract_builds: case documents ok "
+        f"({len(CONTRACTS)} reports, {len(CONTRACTS)} payment requests)"
+    )
 
 
 def pdf_text(path: Path) -> str:
@@ -316,6 +518,14 @@ def compare_contract(name: str, temporary_root: Path) -> tuple[int, str]:
     rebuilt_docx = rebuilt_dir / f"{name}.docx"
     compare_text(f"{name}.docx", docx_text(committed_docx), docx_text(rebuilt_docx))
 
+    for suffix in CASE_DOCUMENT_SUFFIXES:
+        filename = f"{name}{suffix}.pdf"
+        compare_text(
+            filename,
+            pdf_text(committed_dir / filename),
+            pdf_text(rebuilt_dir / filename),
+        )
+
     archive_name = f"{name}-einzel-pdfs.zip"
     committed_zip = archive_pdf_texts(
         committed_dir / archive_name, temporary_root / f"committed-{name}"
@@ -332,7 +542,7 @@ def compare_contract(name: str, temporary_root: Path) -> tuple[int, str]:
     build_log = "\n".join(
         part.strip() for part in (build.stdout, build.stderr) if part.strip()
     )
-    return 2 + len(committed_zip), build_log
+    return 2 + len(CASE_DOCUMENT_SUFFIXES) + len(committed_zip), build_log
 
 
 def build_worker_count() -> int:
@@ -352,6 +562,10 @@ def rebuild_contracts() -> None:
     artifact_count = 0
     with tempfile.TemporaryDirectory(prefix="btv-contract-builds-") as temporary:
         temporary_root = Path(temporary)
+        shutil.copy2(
+            ROOT / "vertragsdokumente" / "case-style.css",
+            temporary_root / "case-style.css",
+        )
         with ThreadPoolExecutor(max_workers=build_worker_count()) as executor:
             futures = {
                 name: executor.submit(compare_contract, name, temporary_root)

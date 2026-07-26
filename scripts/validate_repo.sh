@@ -63,6 +63,7 @@ for path in \
   scripts/check_navigation.py \
   scripts/check_skill_quality.py \
   scripts/check_workflow_contract.py \
+  vertragsdokumente/case-style.css \
   vertragsdokumente/artifact-manifest.sha256 \
   vertragsdokumente/README.md \
   vertragsdokumente/bautraegervertrag/README.md \
@@ -147,9 +148,22 @@ contract_dirs=(
 
 for contract_dir in "${contract_dirs[@]}"; do
   stem="$contract_dir"
-  for suffix in .md .pdf .docx -de-en.html -de-en.pdf -de-en.docx -einzel-pdfs.zip; do
+  for suffix in \
+    .md \
+    .pdf \
+    .docx \
+    -de-en.html \
+    -de-en.pdf \
+    -de-en.docx \
+    -einzel-pdfs.zip \
+    -bautenstandsbericht.md \
+    -bautenstandsbericht.pdf \
+    -zahlungsanforderung.md \
+    -zahlungsanforderung.pdf; do
     source="vertragsdokumente/${contract_dir}/${stem}${suffix}"
     public="docs/vertragsdokumente/${contract_dir}/${stem}${suffix}"
+    require_file "$source"
+    require_file "$public"
     cmp -s "$source" "$public" || fail "published contract copy differs: ${public}"
   done
 done
@@ -166,6 +180,7 @@ for mini_required in \
   "Nicht vorgelegt beweist weder Nichtexistenz noch fehlende Einbeziehung" \
   "Ratenrechenblatt" \
   "Zahlungsfreigabekarte" \
+  "Berichts-Fazit überstimmt keine offenen Teilgewerke" \
   "Abschlussentscheidung" \
   "Käufer-/Mandantenschreiben" \
   "Mandantengutachten" \
@@ -188,6 +203,7 @@ for full_required in \
   "Nicht vorgelegt beweist weder Nichtexistenz noch fehlende Einbeziehung" \
   "Ratenrechenblatt und Vorleistungsprofil" \
   "Zahlungsfreigabekarte" \
+  "Mehrdokumenten-Abgleich bei Zahlungsakten" \
   "Abschlussentscheidung" \
   "Dokument 1 — Übersendungsschreiben" \
   "Dokument 2 — Mandantengutachten" \
@@ -239,6 +255,7 @@ catalog_paths=(
   scripts/check_skill_quality.py
   scripts/check_workflow_contract.py
   scripts/validate_repo.sh
+  vertragsdokumente/case-style.css
   .github/workflows/validate.yml
   .github/workflows/sync-docs.yml
   vertragsdokumente/artifact-manifest.sha256
@@ -264,6 +281,10 @@ release_assets=(
   bautraegervertrag-de-en.html
   bautraegervertrag-de-en.pdf
   bautraegervertrag-de-en.docx
+  bautraegervertrag-bautenstandsbericht.md
+  bautraegervertrag-bautenstandsbericht.pdf
+  bautraegervertrag-zahlungsanforderung.md
+  bautraegervertrag-zahlungsanforderung.pdf
   bautraegervertrag-marewald.md
   bautraegervertrag-marewald.pdf
   bautraegervertrag-marewald.docx
@@ -271,6 +292,10 @@ release_assets=(
   bautraegervertrag-marewald-de-en.html
   bautraegervertrag-marewald-de-en.pdf
   bautraegervertrag-marewald-de-en.docx
+  bautraegervertrag-marewald-bautenstandsbericht.md
+  bautraegervertrag-marewald-bautenstandsbericht.pdf
+  bautraegervertrag-marewald-zahlungsanforderung.md
+  bautraegervertrag-marewald-zahlungsanforderung.pdf
   bautraegervertrag-lindenhain.md
   bautraegervertrag-lindenhain.pdf
   bautraegervertrag-lindenhain.docx
@@ -278,6 +303,10 @@ release_assets=(
   bautraegervertrag-lindenhain-de-en.html
   bautraegervertrag-lindenhain-de-en.pdf
   bautraegervertrag-lindenhain-de-en.docx
+  bautraegervertrag-lindenhain-bautenstandsbericht.md
+  bautraegervertrag-lindenhain-bautenstandsbericht.pdf
+  bautraegervertrag-lindenhain-zahlungsanforderung.md
+  bautraegervertrag-lindenhain-zahlungsanforderung.pdf
 )
 
 for asset in "${release_assets[@]}"; do
@@ -287,7 +316,18 @@ done
 
 for contract_dir in "${contract_dirs[@]}"; do
   contract_readme="vertragsdokumente/${contract_dir}/README.md"
-  for suffix in .md .pdf .docx -einzel-pdfs.zip -de-en.html -de-en.pdf -de-en.docx; do
+  for suffix in \
+    .md \
+    .pdf \
+    .docx \
+    -einzel-pdfs.zip \
+    -de-en.html \
+    -de-en.pdf \
+    -de-en.docx \
+    -bautenstandsbericht.md \
+    -bautenstandsbericht.pdf \
+    -zahlungsanforderung.md \
+    -zahlungsanforderung.pdf; do
     grep -Fq "releases/latest/download/${contract_dir}${suffix}" "$contract_readme" \
       || fail "$contract_readme missing release download link for ${contract_dir}${suffix}"
   done
@@ -400,11 +440,23 @@ audit_380_count="$(awk '
 
 contract_sources=(
   vertragsdokumente/bautraegervertrag/bautraegervertrag.md
+  vertragsdokumente/bautraegervertrag/bautraegervertrag-bautenstandsbericht.md
+  vertragsdokumente/bautraegervertrag/bautraegervertrag-zahlungsanforderung.md
   vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md
+  vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-bautenstandsbericht.md
+  vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-zahlungsanforderung.md
   vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md
+  vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-bautenstandsbericht.md
+  vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-zahlungsanforderung.md
   docs/vertragsdokumente/bautraegervertrag/bautraegervertrag.md
+  docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-bautenstandsbericht.md
+  docs/vertragsdokumente/bautraegervertrag/bautraegervertrag-zahlungsanforderung.md
   docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md
+  docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-bautenstandsbericht.md
+  docs/vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-zahlungsanforderung.md
   docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md
+  docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-bautenstandsbericht.md
+  docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-zahlungsanforderung.md
 )
 
 if repo_rg -n 'aus der Hölle|Horror|schrecklich|Schulungsfall|Lösungsschlüssel|Dossier Bauträgervertragsrecht|Teil A — Dossier|bewusst fehlerhaft|Kontrollakte|Fehlerakte' "${contract_sources[@]}" >"$tmp_dir/meta-tells.txt" 2>/dev/null; then
@@ -412,7 +464,10 @@ if repo_rg -n 'aus der Hölle|Horror|schrecklich|Schulungsfall|Lösungsschlüsse
   fail "contract document contains meta/test tell"
 fi
 
-for source in "${contract_sources[@]:0:3}"; do
+for source in \
+  vertragsdokumente/bautraegervertrag/bautraegervertrag.md \
+  vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md \
+  vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md; do
   grep -Fq '# Wohnungsbauträgervertrag mit Auflassung' "$source" || fail "$source missing exact deed title"
 done
 
@@ -490,7 +545,7 @@ for zip in \
   docs/vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip; do
   require_file "$zip"
   pdf_count="$(zip_list "$zip" | grep -E '\.pdf$' | wc -l | tr -d ' ')"
-  [[ "$pdf_count" -eq 2 ]] || fail "$zip must contain exactly two Einzel-PDFs"
+  [[ "$pdf_count" -eq 4 ]] || fail "$zip must contain exactly four Einzel-PDFs"
 done
 
 python3 scripts/check_skill_quality.py
