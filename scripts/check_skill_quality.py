@@ -72,6 +72,8 @@ REQUIRED_LEGAL_PHRASES = (
     "Art. 229 § 39 EGBGB",
     "§ 13a BeurkG a. F.",
     "29. Dezember 2025",
+    "Die Notarmitteilung ist selbst Voraussetzung",
+    "Die Zahlungsfrist in Rechnung oder Ratenabruf erzeugt keine Fälligkeit",
 )
 
 TEXT_SUFFIXES = {".css", ".html", ".lua", ".md", ".py", ".sh", ".sha256", ".yaml", ".yml"}

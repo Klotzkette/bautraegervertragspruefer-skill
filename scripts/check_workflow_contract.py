@@ -46,10 +46,13 @@ SCENARIOS = (
             "konkrete Rechnung, Ratenabruf oder Zahlungsfrist",
             "Mehrdokumenten-Abgleich bei Zahlungsakten",
             "Zahlungsfreigabekarte",
+            "Die Zahlungsfrist in Rechnung oder Ratenabruf erzeugt keine Fälligkeit",
+            "Bautenstandsbericht ist ein privates Tatsachendokument",
         ),
         (
-            "Rechnung/Ratenabruf: sofort Zahlungsfreigabekarte",
+            "Ratenabruf: Zahlungsfreigabekarte",
             "Berichts-Fazit überstimmt keine offenen Teilgewerke",
+            "Rechnungsfrist schafft keine Fälligkeit",
         ),
     ),
     Scenario(

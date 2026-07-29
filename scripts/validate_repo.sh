@@ -519,7 +519,7 @@ for html in "${bilingual_sources[@]}"; do
   grep -Fq "ausschließlich die deutsche Sprachfassung" "$html" || fail "$html missing notarisation-language clause"
   grep -Fq "the German language version shall be authoritative" "$html" || fail "$html missing English precedence clause"
   grep -Eq '<meta name="btv-source-sha256" content="[0-9a-f]{64}">' "$html" || fail "$html missing source provenance"
-  if grep -Eiq 'MK-Bound|\*\*|subscription skill|reference skill|ready-to-cover|statement of insolvency|insolvency reserve|Published today|Business resident|Housing housing|contract with disposition|Wohnungsbauträgervertrags|joint property|joint ownership|community of apartment owners|global basic liability|basic liability|burden exemption|load exemption|construction target|form-needed|sample line|sample series|skill of reference|train by train|Competence requires' "$html" \
+  if grep -Eiq 'MK-Bound|\*\*|subscription skill|reference skill|ready-to-cover|statement of insolvency|insolvency reserve|Published today|Business resident|Housing housing|contract with disposition|Wohnungsbauträgervertrags|joint property|joint ownership|community of apartment owners|global basic liability|basic liability|burden exemption|load exemption|construction target|form-needed|sample line|sample series|skill of reference|train by train|Competence requires|wholesale input' "$html" \
     || grep -Eq '(^|[^[:alpha:]])WAY([^[:alpha:]]|$)' "$html"; then
     fail "$html contains visible translation artifact"
   fi

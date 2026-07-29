@@ -2,16 +2,16 @@
 name: bautraegervertrag-pruefer
 description: "Verbraucherseitige, quellenharte Prüfung deutscher Bauträgerverträge samt Baubeschreibung, Teilungserklärung, Bautenstandsbericht, Zahlungsanforderung und Projektunterlagen. Verwenden bei Vertragsentwürfen, beurkundeten Verträgen, Raten-, Abnahme- oder Mängelstreit, Bauzeitverzug, Insolvenz- und Technikrisiken. Startet mit Rollenmodus und Fall-Fingerabdruck. Prüft MaBV, § 650u/§ 650v BGB, AGB-Recht, Bausoll, anerkannte Regeln der Technik, Abnahme, Schlussrate, WEG, Eigentumssicherung, Baugrund, Objektüberwachung sowie wirtschaftliche und organisatorische Risiken. Gleicht bei Zahlungsakten Vertrag, Fälligkeitsmitteilung, Sicherheit, Bautenstand und Rechnung belegweise ab. Trennt Evidenz, Klauselstatus, tatsächliche Fälligkeit und phasengerechte Handlung. Im geführten Modus folgen Kurzbild, Befundtabelle, Abschlussentscheidung und Nächste Weiche; im One-Shot entstehen Käufer-/Mandantenschreiben, ausführliches Gutachten und konkretes Aufforderungsschreiben an den Bauträger. Nutzt nur amtliche Gerichtsseiten sowie DeJure/OpenJur und blockiert den Start nicht bei fehlendem Live-Zugriff."
 metadata:
-  version: "4.0.0"
+  version: "4.1.0"
 ---
 
-# Bauträgervertrag-Prüfer 4.0.0
+# Bauträgervertrag-Prüfer 4.1.0
 
 Diese Skill-Datei ist ein geführter Workflow und zugleich ein One-Shot-Vollpaket zur verbraucherseitigen Prüfung deutscher Bauträgerverträge. Ziel ist nicht nur, Risiken zu finden, sondern sie so zu begründen, dass Bauträger, Notar, finanzierende Bank und Gericht erkennen können: Der Einwand steht auf Gesetz, aktueller Rechtsprechung, sauberer Vertragsauslegung und belastbarer technischer Projektprüfung.
 
 **Befunde werden mit Ampelsymbolen ausgegeben:** 🔴 / 🟠 / 🟢. Keine Farbwörter als Ersatz. 🔴 bedeutet einen konkret belegten erheblichen Rechts-, Fälligkeits-, Sicherungs- oder Projektrisikobefund. 🟠 bedeutet echten Klärungs-, Nachweis- oder Verhandlungsbedarf, aber noch keinen bewiesenen Rechtsverstoß oder Sachmangel. 🟢 bedeutet, dass sich aus den vorgelegten Unterlagen zu diesem Punkt kein wesentlicher Einwand ergibt; es ist kein allgemeines Gütesiegel. Die Gesamtbewertung ist keine Mittelwertrechnung: Ein einzelner fälligkeits- oder sicherheitskritischer 🔴-Befund kann den gesamten Beurkundungs-, Zahlungs- oder Abnahmeschritt sperren.
 
-**Rechtsstand der eingebauten Anker:** 26. Juli 2026. Vor jeder echten Vertragsausgabe aktuelle Quellen und den für den Fall maßgeblichen historischen Normstand live prüfen.
+**Rechtsstand der eingebauten Anker:** 29. Juli 2026. Vor jeder echten Vertragsausgabe aktuelle Quellen und den für den Fall maßgeblichen historischen Normstand live prüfen.
 
 ## Ausführungskern
 
@@ -404,7 +404,7 @@ Diese Anker sind besonders stark, weil sie direkt Bauträgerrecht, AGB-Kontrolle
 
 **Senats- und Instanzzuordnung.** Der VII. Zivilsenat prägt regelmäßig Werkvertrags-, Abnahme- und Bauträgervergütungsfragen; der V. Zivilsenat Grundstücks- und WEG-Binnenfragen. Entscheidend bleibt aber der konkrete Streitgegenstand: BGH V ZR 144/07 behandelt gerade die MaBV-Sicherheit und Geschäftsführerhaftung im Zusammenhang mit der Eigentumsverschaffung. Ein V.-Senats-Satz zur ordnungsmäßigen WEG-Verwaltung ist deshalb nicht automatisch der werkvertragliche Bauträgerstandard. KG-/OLG-Sätze bleiben Instanzrecht und werden bei abweichender oder nachfolgender BGH-Entscheidung entsprechend gewichtet.
 
-**Rechtsprechungs-Refresh (Pflicht vor jeder echten Ausgabe).** Die vorstehenden Anker sind ein Startbestand mit Stand 15. Juli 2026, keine abschließende Sammlung. Vor einer echten Vertragsausgabe ist der Stand an den zulässigen amtlichen Quellen (BGH, OLG, KG, LG, `rechtsprechung-im-internet.de`, `rechtsinformationen.bund.de`, DeJure, OpenJur) zu prüfen und um neuere Entscheidungen zu ergänzen. Für die folgenden Streitfragen ist gezielt nach aktueller Rechtsprechung zu suchen; jede gefundene Entscheidung wird nur mit Gericht, Datum, Aktenzeichen, Kernaussage, Zeitstands-/Entscheidungs-Fit und zulässiger URL zitiert, andernfalls als `prüfbedürftig` ausgewiesen — niemals wird eine Fundstelle erfunden:
+**Rechtsprechungs-Refresh (Pflicht vor jeder echten Ausgabe).** Die vorstehenden Anker sind ein Startbestand mit Stand 29. Juli 2026, keine abschließende Sammlung. Vor einer echten Vertragsausgabe ist der Stand an den zulässigen amtlichen Quellen (BGH, OLG, KG, LG, `rechtsprechung-im-internet.de`, `rechtsinformationen.bund.de`, DeJure, OpenJur) zu prüfen und um neuere Entscheidungen zu ergänzen. Für die folgenden Streitfragen ist gezielt nach aktueller Rechtsprechung zu suchen; jede gefundene Entscheidung wird nur mit Gericht, Datum, Aktenzeichen, Kernaussage, Zeitstands-/Entscheidungs-Fit und zulässiger URL zitiert, andernfalls als `prüfbedürftig` ausgewiesen — niemals wird eine Fundstelle erfunden:
 
 - Abnahme des Gemeinschaftseigentums durch Erstverwalter, bauträgernahe Person oder Sachverständigen; Folgen unwirksamer Abnahmeklauseln samt Verjährungs- und Höchstgrenzenlogik.
 - Fälligkeit der Schlussrate und Auslegung der „vollständigen Fertigstellung" einschließlich Außenanlagen und protokollierter Restarbeiten.
@@ -532,6 +532,8 @@ Sobald neben dem Vertrag mindestens eine Zahlungsanforderung, ein Bautenstandsbe
 | Gegenrechte | Einbehalt, Mängel, Abnahme, Besitz | Reichweite und Fortbestand der Sicherheit | erkennbare Mängel, Provisorien, fehlende Nachweise | Vorbehalte, Ausschlussfristen, Druckmittel | Handlung und Erledigungsbedingung getrennt |
 
 Eine pauschale Aussage `Meilenstein erreicht` trägt die Freigabe nicht, wenn derselbe Bericht ausweist, dass ein zur gebündelten Rate gehörendes Gewerk noch nicht vollständig hergestellt ist. Umgekehrt rechtfertigen spätere Endmontagen, die nicht zum abgerechneten Rohinstallationsstand gehören, keine künstliche Sperre. Entscheidend sind Wortlaut der konkreten Rate, sämtliche ihr zugeordneten MaBV-Bausteine und der tatsächlich dokumentierte Stand am Rechnungsdatum.
+
+Die Zahlungsfrist in Rechnung oder Ratenabruf erzeugt keine Fälligkeit und heilt keine fehlende Voraussetzung. Ein Bautenstandsbericht ist ein privates Tatsachendokument: Im Prozess kann er substantiierten Parteivortrag stützen, ist aber kein bindendes Sachverständigengutachten. Eine unterschriebene Privaturkunde belegt nach § 416 ZPO grundsätzlich die Abgabe der in ihr enthaltenen Erklärung, nicht automatisch die technische Richtigkeit des erklärten Bautenstands; diese ist nach § 286 ZPO und erforderlichenfalls durch Sachverständigenbeweis zu würdigen. Weder die Beauftragung durch den Bauträger noch Berufsbezeichnung, Stempel oder Schlussformel machen den Bericht für den Erwerber bindend. Umgekehrt ist eine Rate nicht allein deshalb unfällig, weil kein unabhängiger Sachverständiger unterschrieben hat. Abzugleichen sind Auftrag und Prüfumfang, Ortstermin, Einheit/Bauabschnitt, alle Bestandteile der abgerufenen Stufe, erkennbare Provisorien und Restleistungen, zugrunde gelegte Pläne/Protokolle, Bildbezug und Widersprüche. Erst danach werden objektiver Bautenstand, vertragliche Fälligkeit, Gegenrechte und Zahlungsfrist getrennt entschieden.
 
 ### 2 — Quellenrefresh
 
@@ -715,7 +717,7 @@ Der Bauträger darf Vermögenswerte erst entgegennehmen oder sich zu deren Verwe
 
 | Voraussetzung | Verbrauchercheck | Befund |
 | --- | --- | --- |
-| Wirksamer Vertrag, Vollzugsgenehmigungen, keine vertraglichen Rücktrittsrechte | Objektiv müssen Vertragswirksamkeit und erforderliche Vollzugsgenehmigungen vorliegen und dem Bauträger dürfen keine vertraglichen Rücktrittsrechte eingeräumt sein; gesetzliche Rechte nicht mit vertraglich eingeräumten Rechten verwechseln. Eine notarielle Fälligkeitsmitteilung ist ein wichtiger Nachweis- und Vollzugsschritt, ersetzt aber keine fehlende gesetzliche Voraussetzung. | Voraussetzung fehlt oder ist vor Zahlung nicht belegt: 🔴 bzw. keine analytische Zahlungsfreigabe |
+| Wirksamer Vertrag, Vollzugsgenehmigungen, schriftliche Notarmitteilung, keine vertraglichen Rücktrittsrechte | Vertragswirksamkeit und erforderliche Vollzugsgenehmigungen müssen vorliegen, diese Voraussetzungen müssen durch eine schriftliche Mitteilung des Notars bestätigt sein und dem Bauträger dürfen keine vertraglichen Rücktrittsrechte eingeräumt sein; gesetzliche Rechte nicht mit vertraglich eingeräumten Rechten verwechseln. Die Notarmitteilung ist selbst Voraussetzung nach § 3 Abs. 1 Satz 1 Nr. 1 MaBV, beweist aber nicht unwiderlegbar, dass jede mitgeteilte Tatsache wirklich vorliegt, und heilt keinen objektiven Mangel. | Voraussetzung oder schriftliche Notarmitteilung fehlt: 🔴 bzw. keine analytische Zahlungsfreigabe |
 | Vormerkung | Anspruch auf Eigentum/Erbbaurecht an vereinbarter Rangstelle eingetragen; bei WEG auch Begründung des Wohnungs-/Teileigentums vollzogen | Fehlt/Nachrang: 🔴 |
 | Freistellung | Nicht zu übernehmende Grundpfandrechte müssen auch bei Nichtvollendung freigestellt oder Zahlungen zurückgeführt werden | Lücke: 🔴 |
 | Baugenehmigung/Bestätigung | Erforderliche Genehmigung oder gesetzlich genügende Genehmigungsfreiheitsbestätigung; bei Bauträgerbestätigung Monatsfrist beachten. Eine spätere Ausführungsabweichung beseitigt eine erteilte Genehmigung nicht automatisch rückwirkend, sondern ist getrennt auf Nachtragsbedarf, Legalität, Bausoll, Mangel und Gegenrechte zu prüfen. | Genehmigung/Bestätigung fehlt: 🔴; bloße Abweichung zunächst 🟠/🔴 nach konkreter Wirkung |
@@ -2211,6 +2213,7 @@ Vor jeder finalen Analyse diese Fehler ausschließen:
 - Klauselstatus, Tatsachen-/Fälligkeitsstatus und Handlung nicht zu einer einzigen Ampel verschmelzen; eine tragfähige Klausel kann aktuell unfällig sein.
 - Bei konkreter Rechnung die Zahlungsfreigabekarte und bei jeder Ausgabe die phasenbezogene Abschlussentscheidung mit sperrenden IDs und Erledigungsbedingung ausgeben.
 - Bei mehreren Aktenunterlagen Vertrag, Fälligkeitsmitteilung, Sicherheit, Bautenstandsbericht, Fotos/Protokolle und Zahlungsanforderung zeitlich und rechnerisch abgleichen; keine Berichtsschlussformel über widersprechende Einzelfeststellungen stellen.
+- Eine in Rechnung oder Ratenabruf gesetzte Zahlungsfrist niemals als Ersatz für fehlende MaBV-, Vertrags- oder Gegenrechtsprüfung behandeln; Berichtsurheber, Prüfumfang und Einzelfeststellungen würdigen, ohne eine gesetzlich nicht verlangte unabhängige Bescheinigung zu erfinden.
 - Auch im Vollpaket keine Beanstandung erfinden: Bei ausschließlich 🟢 Befunden in Dokument 3 keine zwingende Korrektur verlangen; reine 🟠 Punkte als Klarstellungs- oder Verhandlungswünsche kennzeichnen.
 
 > **Ende des Skills.** Bei Anwendung: Vertrag einfügen. Der Skill startet mit Pflicht-Prüfblock, arbeitet die 30 Prüfschleifen ab, zitiert nur zulässige Quellen und liefert ein verhandlungsfähiges Verbraucherpaket.

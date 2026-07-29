@@ -17,7 +17,7 @@ Hamburg, den 18. Juni 2027
 
 Sehr geehrte Frau Dr. Salentin-Voßkamp,
 
-die Notarin hat den Eintritt der allgemeinen Fälligkeitsvoraussetzungen mit Schreiben vom 27. Juni 2026 bestätigt. Die Sicherheit über 33.700,00 EUR nach § 3.3 des Bauträgervertrags wurde Ihnen bei der ersten Rate als unbefristete Bankgarantie übergeben. Der vor Beurkundung gezahlte Betrag von 5.000,00 EUR wurde vollständig auf die erste Rate angerechnet.
+die Notarin hat den Eintritt der allgemeinen Fälligkeitsvoraussetzungen mit Schreiben vom 27. Juni 2026 bestätigt. Die Sicherheit über 33.700,00 EUR nach § 3.3 des Bauträgervertrags wurde Ihnen bei der ersten Rate als unbefristete Bankgarantie übergeben. Vor Eintritt der allgemeinen Fälligkeitsvoraussetzungen hat die Verkäuferin keine Zahlungen auf den Kaufpreis entgegengenommen.
 
 Der beigefügte Bautenstandsbericht MH-C-2027-06-16/03 bestätigt, dass der dritte Bautenstand tatsächlich erreicht ist. Damit ergibt sich folgende Abrechnung:
 

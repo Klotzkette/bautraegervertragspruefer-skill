@@ -1,5 +1,19 @@
 # Änderungsprotokoll
 
+## 4.1.0 - 29. Juli 2026
+
+1. Die Zahlungsaktenprüfung trennt nun ausdrücklich Rechnungsfrist, objektiven Bautenstand, vertragliche Fälligkeit und Gegenrechte; eine gesetzte Zahlungsfrist heilt keine fehlende Voraussetzung.
+2. Bautenstandsberichte werden nach Auftraggeber, Prüfumfang, Ortstermin, Einheit, Einzelgewerken, Plänen, Protokollen und Bildbezug gewürdigt. Weder Schlussformel noch Berufsbezeichnung binden den Erwerber; zugleich wird keine gesetzlich nicht verlangte unabhängige Bescheinigung erfunden.
+3. § 3 Abs. 1 Satz 1 Nr. 1 MaBV ist präzisiert: Die schriftliche Notarmitteilung ist selbst Fälligkeitsvoraussetzung, beweist die zugrunde gelegten Tatsachen aber nicht unwiderlegbar und heilt keinen objektiven Mangel.
+4. Der zuvor widersprüchliche Rechtsprechungsstand im Kopf und im Refresh-Abschnitt ist einheitlich auf den 29. Juli 2026 gesetzt; alle 47 Quellenadressen wurden online erreicht.
+5. Der Aktenvalidator bindet jede Zahlungsanforderung an Projekt, Einheit, Urkunde, Berichtsnummer, Berichtsrate und Vertragsrate.
+6. Frühere Zahlungen und kumulierter Stand werden nicht mehr nur intern addiert, sondern gegen die Summe der tatsächlich vorausgehenden Vertragsraten und gegen die vollständige 100-%-Ratefolge geprüft.
+7. Berichtsdatum, Rechnungsdatum, Fälligkeitsdatum, Anlagenzeile, wiederholter Zahlbetrag und ausgewiesene 5-%-Sicherheit der positiven Profile werden maschinell gegengeprüft.
+8. Bautenstandsbericht und Zahlungsanforderung müssen als einseitige A4-PDFs vorliegen, dürfen auch im extrahierten PDF-/ZIP-Text keinen Fall-Metahinweis enthalten und müssen im Akten-ZIP byte-identisch mit den einzeln veröffentlichten PDFs sein.
+9. Der Mini-Skill enthält dieselbe Fälligkeits- und Berichtskalibrierung und bleibt mit 7.480 Zeichen innerhalb des 7.500-Zeichen-Limits.
+10. README und mobile Downloadseite erklären die vertiefte Provenienz- und Zahlungsaktenprüfung; alle dauerhaften Direktdownload-Links bleiben unverändert.
+11. Die Marewald-Grenzakte enthält keine widersprüchliche Kaufpreiszahlung vor Beurkundung mehr: Vertrag und Zahlungsanforderung dokumentieren nun ausdrücklich, dass vor Eintritt der allgemeinen Fälligkeitsvoraussetzungen keine Vorleistung entgegengenommen wurde; sämtliche ein- und zweisprachigen Artefakte wurden daraus neu gebaut.
+
 ## 4.0.0 - 26. Juli 2026
 
 1. Jede der drei Vertragsakten ist zu einer vierteiligen Zahlungsakte aus Vertragsurkunde, Baubeschreibung, Bautenstandsbericht und Zahlungsanforderung ausgebaut.
