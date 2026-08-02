@@ -1,5 +1,8 @@
 # Bauträgervertrag-Prüfer Skill
 
+> **Hinweis nach Art. 50 KI-VO (EU AI Act).** Alle Inhalte dieses Repositoriums wurden von einem Menschen überprüft und redaktionell kontrolliert. Ein Mensch trägt die redaktionelle Verantwortung (Art. 50 Abs. 4 Unterabsatz 2 Satz 5 KI-VO).
+
+
 **Menü:** [Direkt laden](#menü-und-downloads) · [Alle Dateien](#repository-dateien-nach-zweck) · [Vertragsakten](#vertragsakten-auf-einen-blick) · [Sofortstart](#sofort-loslegen) · [Ausgabe](#was-herauskommt) · [Downloadhilfe](#downloadhilfe) · [Anwendung](#anwendung-so-einfach-gehts) · [Inhalt](#inhalt) · [Rechtsanker](#rechtlicher-anker) · [Änderungen](CHANGELOG.md) · [Lizenz](#lizenz)
 
 **Direktdownload:** [📥 SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md) · [📥 MINI_SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md)
