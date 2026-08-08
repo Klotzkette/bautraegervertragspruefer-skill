@@ -1,5 +1,19 @@
 # Änderungsprotokoll
 
+## 4.2.0 - 9. August 2026
+
+1. Sechs amtliche BGH-Entscheidungen aus 2026 wurden neu verankert: `V ZR 189/24`, `V ZR 98/25`, `V ZR 190/25`, `V ZR 162/25`, `VII ZR 169/25` und `XI ZR 12/25`.
+2. Der Skill prüft Gemeinschaftsordnungen jetzt ausdrücklich auf eindeutige objektbezogene Stimmrechtsbeschränkungen; Ausschlüsse bei Verwalterbestellung, Jahresabrechnung oder Wirtschaftsplan werden nach `V ZR 189/24` als nichtig behandelt.
+3. Für Streit über konkrete Rechte und Pflichten aus der Gemeinschaftsordnung werden Feststellung gegen die GdWE und Beschlussersetzung nach `V ZR 98/25` als passende Rechtsschutzziele getrennt.
+4. Absenkungs- und nachfolgende Umlaufbeschlüsse erhalten nach `V ZR 190/25` getrennte Beschluss- und Fristenprüfung; eine automatische Fehlerfortpflanzung wird nicht unterstellt.
+5. Klima-Splitgeräte werden nach `V ZR 162/25` in Gestattung, technische Ausführung und spätere Betriebsfolgen aufgeteilt, statt sie pauschal freizugeben oder zu verbieten.
+6. `VII ZR 169/25` und `XI ZR 12/25` stehen als Verfahrensradar im Ankerbestand. Der Skill verbietet ausdrücklich, daraus eine materielle Ratenplan- oder §-7-MaBV-Bürgschaftsentscheidung abzuleiten.
+7. Ein eigener Gesetzgebungsstatus trennt geltendes Recht, gestuftes Inkrafttreten und Entwurf. Er verarbeitet die MaBV-Novellen vom 20./28. Juli 2026, den digitalen Immobilienvollzug vom 22. Juni 2026 und den weiterhin nicht in Kraft getretenen Gebäudetyp-E-Entwurf.
+8. Die Juli-MaBV-Änderungen werden exakt eingeordnet: Sie ändern Verwaltungs-, Weiterbildungs-, Anwendungsbereichs- und Verweisungsregeln, nicht die Kernschutzregeln der §§ 3, 7 und 12 MaBV.
+9. Voll- und Mini-Skill, README und Pages-Downloadseite stehen einheitlich auf Version 4.2.0 und Rechtsstand 9. August 2026; die Mini-Fassung bleibt unter 7.500 Zeichen.
+10. Der Quellenvalidator verlangt nun mindestens 49 Entscheidungszeilen, die sechs neuen Aktenzeichen und fünf amtliche Gesetzgebungsquellen; der Online-Modus prüft Rechtsprechungs- und Gesetzeslinks gemeinsam.
+11. Der neu hinzugekommene KI-VO-Hinweis wurde in die laufende Arbeit integriert und rechtlich kalibriert: Er legt KI-Unterstützung offen, behauptet aber weder eine lückenlose menschliche Einzelprüfung noch eine abschließende Ausnahme nach Art. 50 Abs. 4 KI-VO.
+
 ## 4.1.0 - 29. Juli 2026
 
 1. Die Zahlungsaktenprüfung trennt nun ausdrücklich Rechnungsfrist, objektiven Bautenstand, vertragliche Fälligkeit und Gegenrechte; eine gesetzte Zahlungsfrist heilt keine fehlende Voraussetzung.

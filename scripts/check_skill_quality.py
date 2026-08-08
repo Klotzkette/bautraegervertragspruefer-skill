@@ -24,6 +24,7 @@ REQUIRED_FULL_SECTIONS = (
     "## Fall-Fingerabdruck und Anti-Generik-Regel",
     "## Aktuelle Rechtsprechungsanker",
     "## Normenkarte",
+    "## Gesetzgebungsstatus 2026",
     "## 30-Prüfschleifen",
     "## Pflicht-Prüfblock",
     "## Workflow",
@@ -74,6 +75,15 @@ REQUIRED_LEGAL_PHRASES = (
     "29. Dezember 2025",
     "Die Notarmitteilung ist selbst Voraussetzung",
     "Die Zahlungsfrist in Rechnung oder Ratenabruf erzeugt keine Fälligkeit",
+    "V ZR 189/24",
+    "V ZR 98/25",
+    "V ZR 190/25",
+    "V ZR 162/25",
+    "VII ZR 169/25",
+    "XI ZR 12/25",
+    "BGBl. 2026 I Nr. 215",
+    "BGBl. 2026 I Nr. 229",
+    "Eine zivilrechtliche Gebäudetyp-E-Sonderregel ist bis zum Stichtag nicht in Kraft getreten",
 )
 
 TEXT_SUFFIXES = {".css", ".html", ".lua", ".md", ".py", ".sh", ".sha256", ".yaml", ".yml"}

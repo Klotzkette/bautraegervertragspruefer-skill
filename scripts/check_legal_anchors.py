@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the structured case-law anchor table, optionally including URLs."""
+"""Validate case-law anchors and the 2026 legislation gate, including URLs."""
 
 from __future__ import annotations
 
@@ -22,6 +22,8 @@ SKILL = ROOT / "skill" / "SKILL.md"
 
 START = "## Aktuelle Rechtsprechungsanker"
 END = "## Normenkarte"
+LEGISLATION_START = "## Gesetzgebungsstatus 2026"
+LEGISLATION_END = "## 30-Prüfschleifen"
 
 ALLOWED_HOSTS = {
     "www.bundesgerichtshof.de",
@@ -38,6 +40,9 @@ ALLOWED_HOSTS = {
     "dejure.org",
     "openjur.de",
     "www.openjur.de",
+    "www.recht.bund.de",
+    "www.gesetze-im-internet.de",
+    "www.bundestag.de",
 }
 
 OFFICIAL_BGH_HOSTS = {
@@ -83,7 +88,22 @@ REQUIRED_DOCKETS = {
     "V ZR 132/23",  # Gesamt-GdWE bündelt Ansprüche auch bei Untergemeinschaften
     "V ZR 75/18",  # Warnpflichten des bauträgernahen Verwalters
     "VII ZR 388/00",  # Vollstreckungsunterwerfung mit Nachweisverzicht
+    "VII ZR 169/25",  # Verfahrensradar: keine Sachentscheidung zum Ratenplan
+    "XI ZR 12/25",  # Verfahrensradar: keine materielle §-7-MaBV-Klärung
+    "V ZR 189/24",  # Stimmrechtsbeschränkungen in der Gemeinschaftsordnung
+    "V ZR 98/25",  # Feststellung/Beschlussersetzung zur Gemeinschaftsordnung
+    "V ZR 190/25",  # Absenkungs- und Umlaufbeschluss
+    "V ZR 162/25",  # Gestattung eines Klima-Splitgeräts
 }
+
+REQUIRED_LEGISLATION_TOKENS = (
+    "BGBl. 2026 I Nr. 192",
+    "BGBl. 2026 I Nr. 215",
+    "BGBl. 2026 I Nr. 229",
+    "§§ 3, 7 und 12 MaBV wurden nicht geändert",
+    "Gebäudetyp E",
+    "§ 650a BGB",
+)
 
 
 class SourceCheckError(RuntimeError):
@@ -105,6 +125,15 @@ def extract_section(text: str) -> str:
         end = text.index(END, start)
     except ValueError as exc:
         fail(f"missing section marker: {exc}")
+    return text[start:end]
+
+
+def extract_legislation_section(text: str) -> str:
+    try:
+        start = text.index(LEGISLATION_START)
+        end = text.index(LEGISLATION_END, start)
+    except ValueError as exc:
+        fail(f"missing legislation section marker: {exc}")
     return text[start:end]
 
 
@@ -203,6 +232,7 @@ def main() -> None:
 
     text = SKILL.read_text(encoding="utf-8")
     section = extract_section(text)
+    legislation = extract_legislation_section(text)
 
     for token in FORBIDDEN:
         if token in section:
@@ -219,8 +249,8 @@ def main() -> None:
             fail(f"table line {number} has {len(columns)} columns instead of 4")
         rows.append((number, columns))
 
-    if len(rows) < 43:
-        fail(f"expected at least 43 case-law rows, found {len(rows)}")
+    if len(rows) < 49:
+        fail(f"expected at least 49 case-law rows, found {len(rows)}")
 
     seen_cases: dict[str, int] = {}
     seen_urls: dict[str, int] = {}
@@ -281,17 +311,37 @@ def main() -> None:
     if unanchored:
         fail(f"case-law references outside the anchor table: {', '.join(unanchored)}")
 
+    for token in REQUIRED_LEGISLATION_TOKENS:
+        if token not in legislation:
+            fail(f"legislation gate misses required statement: {token}")
+
+    legislation_urls = extract_urls(legislation)
+    if len(legislation_urls) < 5:
+        fail(f"expected at least 5 official legislation URLs, found {len(legislation_urls)}")
+    for url in legislation_urls:
+        parsed = urlparse(url)
+        if parsed.scheme != "https":
+            fail(f"legislation gate uses non-HTTPS URL: {url}")
+        host = (parsed.hostname or "").lower()
+        if host not in {"www.recht.bund.de", "www.gesetze-im-internet.de", "www.bundestag.de"}:
+            fail(f"legislation gate uses disallowed host {host}: {url}")
+        if url in seen_urls:
+            fail(f"legislation URL duplicates a case-law source: {url}")
+    if len(legislation_urls) != len(set(legislation_urls)):
+        fail("legislation gate contains duplicate source URLs")
+
     if args.online:
         try:
             with ThreadPoolExecutor(max_workers=worker_count()) as executor:
                 # map preserves source-table order, so a failure remains reproducible.
-                list(executor.map(verify_url, seen_urls))
+                list(executor.map(verify_url, [*seen_urls, *legislation_urls]))
         except SourceCheckError as exc:
             fail(str(exc))
 
     print(
         "check_legal_anchors: ok "
-        f"({len(rows)} rows, {total_cases} dockets, {total_urls} URLs"
+        f"({len(rows)} rows, {total_cases} dockets, {total_urls} case URLs, "
+        f"{len(legislation_urls)} legislation URLs"
         f"{', online checked' if args.online else ''})"
     )
 

@@ -2,10 +2,10 @@
 name: mini-bautraegervertrag-pruefer
 description: "Bauträgerprüfung: MaBV, BGB, AGB, WEG und Technik."
 metadata:
-  version: "4.1.0-mini"
+  version: "4.2.0-mini"
 ---
 
-# Mini-Bauträgervertrag-Prüfer 4.1.0
+# Mini-Bauträgervertrag-Prüfer 4.2.0
 
 Experimentell; keine Rechtsberatung.
 
@@ -15,13 +15,13 @@ Prüfe verbraucherseitig Bauträgerverträge (§650u BGB), Baubeschreibung, TE/G
 
 ## Quellen
 
-Rspr. nur amtliche Portale, `dejure.org`/`openjur.de`; Normen `gesetze-im-internet.de`. Kein BeckRS/Blog; nichts erfinden. Prüfe Normstand, Typ, Anspruch, tragenden Satz: Fit = gesichert, Teilfit = Argument, sonst Prüfbedarf. Ohne Livezugriff starten.
+Rspr. nur amtlich, `dejure.org`/`openjur.de`; Normen amtlich. Kein BeckRS/Blog; nichts erfinden. Normstand, Typ, Anspruch, tragenden Satz prüfen: Fit = gesichert, Teilfit = Argument, sonst Prüfbedarf. Ohne Livezugriff starten.
 
 ## Arbeitsmodus
 
 - Rolle A Käufer/in, B Anwalt, C neutral; mit Vertrag A starten.
-- Geführt = Kurzbild, Befundtabelle, Fließtext, Entscheidung, Nächste Weiche. Vollpaket bei `vollständig/one-shot/Schreiben/final`.
-- Keine Fragenkaskade; Fehlendes als offen führen, nur fragen, wenn sonst falsch.
+- Geführt = Kurzbild, Befundtabelle, Text, Entscheidung, Nächste Weiche. Vollpaket bei `vollständig/one-shot/Schreiben/final`.
+- Keine Fragenkaskade; Fehlendes offen, nur entscheidende Rückfrage.
 - 60s-Start: `Ich beginne jetzt`; Kurzbild/Pflichtblock, Fortsetzungsmarke.
 - Bei `stop/abbrechen/beenden/halt/cancel`: `Beendet. Keine weiteren Prüfschritte.` Nur bei `weiter` fortsetzen.
 - Keine Meta-Hinweise.
@@ -29,18 +29,18 @@ Rspr. nur amtliche Portale, `dejure.org`/`openjur.de`; Normen `gesetze-im-intern
 - Einmal lesen; Befundregister mit IDs als Basis. Klausel, Tatsachen/Fälligkeit und Handlung trennen. Jede 🔴/🟠 braucht Fundort, Beweis, Folge, Erledigung.
 - Stil: Tabelle plus begründender Text.
 - Ampel: 🔴/🟠/🟢, keine Farbwörter.
-- Frist zuerst: Art, Auslöser, Zugang/Zustellung, Ende, Beleg; Offenes nicht erfinden. Dann Status: Rolle/Phase, D1-D3, Entscheidung, Sperr-IDs, Fortsetzung.
+- Frist zuerst: Art, Auslöser, Zugang/Zustellung, Ende, Beleg; nichts erfinden. Dann Status: Rolle/Phase, D1-D3, Entscheidung, Sperr-IDs, Fortsetzung.
 - Ratenabruf: Zahlungsfreigabekarte; Vertrag↔Fälligkeit/Sicherheit↔Bericht/Fotos↔Abruf. Berichts-Fazit überstimmt keine offenen Teilgewerke; Rechnungsfrist schafft keine Fälligkeit. Urheber/Umfang würdigen.
 - Weiche: A Befunde, B Anschreiben, C Gutachten, D Bauträgerschreiben, E Technik, F Quellen, G Vollpaket; 1 Empfehlung.
 
 ## Workflow
 
-1. Fingerabdruck: Parteien, Verbraucher, Objekt/Einheit, Preis, Phase, Vertrags-/Erklärungs-/Abnahmedatum, Fristen, Anlagen, TE/GO, Sonderwünsche.
+1. Fingerabdruck: Parteien, Verbraucher, Einheit, Preis, Phase, Daten/Fristen, Anlagen, TE/GO, Sonderwünsche.
 2. Pflichtblock: MaBV/Fälligkeit, Vormerkung, Freistellung, §650m/§7, Abnahme, Schlussrate, Besitz, Verjährung, Umschreibung.
 3. Klauseln satzweise: 🔴/🟠/🟢; Norm, Beweis, Problem, Gegeneinwand, Antwort, Erledigung.
-4. Bausoll/Technik: Rang, Pläne, Fläche, SE/GE, Außenanlagen, Energie, Schall, Brand, Abdichtung, Haustechnik, Baugrund/-grube, Statik, Feuchte, GEG, Qualitätsgates; HOAI-LPH 8 nur Raster.
+4. Bausoll/Technik: Rang, Pläne, Fläche, SE/GE, Außenanlagen, Energie, Schall, Brand, Abdichtung, Haustechnik, Baugrund/-grube, Statik, Feuchte, GEG; HOAI-LPH 8 nur Raster.
 5. WEG/Wirtschaft: TE/GO, Sondernutzung, Vollmachten, Kosten, Verwaltung, Gemeinschaftsmängel, Finanzierung, Insolvenz, Mehrkosten.
-6. Bug-Hunt: DIN ≠ Bausoll; Bezugsfertigkeit ≠ Fertigstellung; §650m-Schweigen ≠ Ausschluss; kein freier Baustellenzutritt; Technikraum ≠ stets GE; Bezugsurkunde bis 28.12.2025 §13a a.F., danach §13c; kein Beurkundungswiderruf, keine §650f-Sicherheit vom Verbraucher, kein §650v Abs.4; §309 Nr.12; höhere Gewalt nie pauschal.
+6. Bug-Hunt: DIN ≠ Bausoll; Bezugsfertigkeit ≠ Fertigstellung; §650m-Schweigen ≠ Ausschluss; kein freier Baustellenzutritt oder Beurkundungswiderruf, keine §650f-Sicherheit vom Verbraucher, kein §650v Abs.4; §309 Nr.12; höhere Gewalt nie pauschal.
 
 ## Kernprüfung
 
@@ -54,17 +54,17 @@ Rspr. nur amtliche Portale, `dejure.org`/`openjur.de`; Normen `gesetze-im-intern
 
 **Bausoll/Technik:** aRdT zur Abnahme; DIN erschöpft Bausoll nicht (VII ZR 45/06); WEG-Linie V ZR 182/12/V ZR 39/24 nicht übertragen. Regeländerung: Aufklärung/Preis/Sowieso-Kosten (VII ZR 65/14). §650k Abs.2/3. §650n zeitgerecht; Planungspflicht entfällt bei wesentlichen Vorgaben des Verbrauchers/Beauftragten; sonstige Unterlagen nur mit Anspruch.
 
-**WEG:** Erhaltungslast beseitigt GdWE-Kompetenz nicht (V ZR 102/24); Ersatz erst ab möglicher Ausführung, keine Garantie (V ZR 18/25). Gesamt-GdWE bündelt trotz Untergemeinschaft (V ZR 132/23). Bauträgernaher Verwalter warnt vor Verjährung (V ZR 75/18). Technikraum ≠ stets GE (V ZR 34/25); Kostenänderung nach Angemessenheit (V ZR 50/25).
+**WEG:** Erhaltungslast ≠ Kompetenzverlust (V ZR 102/24); Ersatz erst ab möglicher Ausführung (V ZR 18/25); Gesamt-GdWE bündelt (V ZR 132/23). GO: kein Stimmrechtsausschluss bei Verwalterbestellung, Jahresabrechnung/Wirtschaftsplan (V ZR 189/24); Feststellung/Beschlussersetzung gegen GdWE (V ZR 98/25); Absenkung/Umlauf getrennt angreifen (V ZR 190/25). Klima-Splitgerät: Gestattung, Bau, Betrieb trennen (V ZR 162/25). Technikraum ≠ stets GE (V ZR 34/25); Kostenänderung angemessen (V ZR 50/25).
 
 **Bauzeit/Verzug:** Kalendertag: ohne Mahnung (§286 Abs.2 Nr.1). Entlastung nur mit Plan, Ereignis, Gewerk, Dauer/Folgen/Wiederanlauf; Pandemie/Lieferkette/Wetter pauschal reicht nicht. Schäden: Ersatz-/Doppelmiete, Hotel, Umzug, Lager, Bereitstellungszins, Nutzungsausfall. Vertragsstrafe ggf. anrechnen (§§340,341).
 
 **Preisanpassung:** AGB: §309 Nr.1, §307-Transparenz, Bezugsgrößen, Auf-/Abwärtslogik, Nachweis/Folge prüfen; keine 5-%-Schwelle erfinden. §315 heilt nicht automatisch. Rücktritt gefährdet Erwerbsziel/Vormerkung; §648a ist über §650u Abs.2 ausgeschlossen.
 
-**Zeitstand/Beurkundung:** Vor 1.1.2002 Art.229 §§5/6 EGBGB, vor 1.1.2018 Art.229 §39 EGBGB, WEG ab 1.12.2020 §§47/48 WEG prüfen. §311b: wirtschaftliche Einheit samt Baubeschreibung/Plänen beurkunden. Bezugsurkunde: bis 28.12.2025 §13a a.F., danach §13c. Sonderwünsche/Formbedarf und MaBV neu prüfen.
+**Zeitstand/Beurkundung:** Vor 1.1.2002 Art.229 §§5/6 EGBGB, vor 1.1.2018 Art.229 §39 EGBGB, WEG ab 1.12.2020 §§47/48 WEG prüfen. §311b: wirtschaftliche Einheit beurkunden. Bezugsurkunde bis 28.12.2025 §13a a.F., danach §13c. 2026: Gebäudetyp E ist kein Gesetz; §650a unverändert. MaBV-Juliänderungen lassen §§3/7/12 unberührt. Digitalvollzug ändert Übermittlung, nicht Fälligkeit.
 
 **Insolvenz/Haftung:** Vormerkung (§106 InsO) schützt Eigentum, nicht Vollendung. Prüfe §103, Bürgschaft, Mehrkosten, Rückforderung. GF: §823 Abs.2 mit §§3/7 MaBV (V ZR 144/07); Fahrlässigkeit/Organisation kann genügen (OLG Celle 3 U 171/24). Notar (§19 BNotO), §263, Planer nur quellenhart.
 
-**Sonderfälle:** Nachzügler nicht an alte Abnahme binden. Einzelgewerke sind keine §650i-Verträge (VII ZR 94/22; VII ZR 25/23). Echte Baugruppen-GbR ohne externen Bauträger: keine MaBV; §311b, Haftung, Sicherung und Koordination getrennter Planer/Gewerke prüfen (VII ZR 119/24).
+**Sonderfälle:** Nachzügler nicht an alte Abnahme binden. Einzelgewerke sind keine §650i-Verträge (VII ZR 94/22; VII ZR 25/23). Baugruppen-GbR: keine MaBV; §311b, Haftung, Sicherung und Schnittstellen prüfen (VII ZR 119/24).
 
 ## Ausgabe
 

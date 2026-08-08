@@ -229,8 +229,17 @@ for full_required in \
   "XI ZR 145/02" \
   "III ZR 136/07" \
   "VII ZR 388/00" \
+  "VII ZR 169/25" \
+  "XI ZR 12/25" \
+  "V ZR 189/24" \
+  "V ZR 98/25" \
+  "V ZR 190/25" \
+  "V ZR 162/25" \
   "3 U 171/24" \
-  "§ 13c BeurkG"; do
+  "§ 13c BeurkG" \
+  "BGBl. 2026 I Nr. 215" \
+  "BGBl. 2026 I Nr. 229" \
+  "Gebäudetyp E"; do
   grep -Fq "$full_required" skill/SKILL.md || fail "SKILL.md missing required workflow/legal phrase: $full_required"
 done
 

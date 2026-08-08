@@ -108,6 +108,9 @@ TEMPORAL_MARKERS = (
     "Vertragstyp und Rolle:",
     "Klausel und Anspruch:",
     "Verfahrenslage:",
+    "Gesetzgebungsstatus 2026",
+    "BGBl. 2026 I Nr. 215",
+    "BGBl. 2026 I Nr. 229",
 )
 
 
@@ -140,6 +143,8 @@ def main() -> None:
         "WEG ab 1.12.2020 §§47/48 WEG",
         "bis 28.12.2025 §13a a.F., danach §13c",
         "Fit = gesichert, Teilfit = Argument, sonst Prüfbedarf",
+        "Gebäudetyp E ist kein Gesetz",
+        "MaBV-Juliänderungen lassen §§3/7/12 unberührt",
     )
     checks += require(mini_temporal, mini, "mini/temporal", errors)
 
