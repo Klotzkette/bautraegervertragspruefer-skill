@@ -1,5 +1,20 @@
 # Änderungsprotokoll
 
+## 4.3.0 - 9. August 2026
+
+1. Die Vollfassung ist zur ausdrücklichen Werkstattfassung ausgebaut und wächst von 281.206 auf 376.376 Zeichen (plus 33,84 Prozent), damit moderne große Kontextfenster einen vollständigen, zusammenhängenden Bauträger-Workflow erhalten.
+2. Ein Zehn-Sekunden-Quickstart erkennt Entwurf, anwaltliche Prüfung, beurkundete Urkunde, Ratenabruf, Bauphase, Abnahme, Mängel, Verzug, Insolvenz und neutralen Qualitätscheck ohne Fragenkaskade.
+3. Ein eindeutiger Zustandsautomat führt vom Upload über Dokumentenkarte, Pflichtblock, Befundregister und Quellenprüfung bis zum Drei-Dokumente-Paket und zur Versandkontrolle.
+4. Eigene phasengerechte Werkstattläufe verhindern, dass vorvertragliche Änderungswünsche nach Beurkundung, pauschale Zahlstopps, künstliche Abnahmeverweigerungen oder formwidrige Nachträge ausgegeben werden.
+5. Zahlungs-, Technik-, WEG-, Insolvenz-, Notar-, AGB- und MaBV-Labore verbinden jeweils Tatsachen, Belege, Rechtsfolge, Gegenargument und konkrete Korrektur.
+6. Die verifizierten BGH-Anker aus 2026 sind in einer operativen Karte mit Einsatzbereich und ausdrücklicher Grenze gegen Überdehnung hinterlegt; Verfahrensradar und Gesetzesentwurf bleiben von geltendem materiellen Recht getrennt.
+7. Großakten-, OCR-, Beweis- und Recherchewerkstatt sichern Dateifassungen, Lesestatus, Seitenfundorte, Chronologie, Darlegungsstand und Quellen-Fit auch bei unvollständigem Plattformzugriff.
+8. Drei getrennte Qualitätsgates prüfen Käufer-/Mandantenanschreiben, ausführliches Gutachten und Bauträgerschreiben auf Registergleichlauf, Zahlen, Fristen, Adressaten, Form und Versandfähigkeit.
+9. Zehn kopierfertige Startrezepte und ein neunstufiger Sitzungsplan machen den Workflow in Claude, ChatGPT, Gemini, Perplexity, Mistral und lokalen Modellen unmittelbar bedienbar.
+10. Fortsetzungskapsel, Delta-Anzeige und Plattformgrenzen verhindern Neustarts nach Antwortabbruch; die Vollpaketproduktion läuft ohne erneute Bestätigungsfragen bis Dokument 3.
+11. README, Pages, Voll- und Mini-Fassung stehen auf Version 4.3.0; der Mini-Skill bleibt unverändert kompakt unter 7.500 Zeichen.
+12. Die Workflow-Prüfung deckt nun 16 Eingangsszenarien ab und die Qualitätsprüfung sichert Umfang, Werkstattstationen, Quickstart-Rezepte sowie Produktions- und Wiederanlauflogik automatisiert.
+
 ## 4.2.0 - 9. August 2026
 
 1. Sechs amtliche BGH-Entscheidungen aus 2026 wurden neu verankert: `V ZR 189/24`, `V ZR 98/25`, `V ZR 190/25`, `V ZR 162/25`, `VII ZR 169/25` und `XI ZR 12/25`.

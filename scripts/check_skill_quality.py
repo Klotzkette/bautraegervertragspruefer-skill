@@ -21,6 +21,7 @@ REQUIRED_FULL_SECTIONS = (
     "## Ausführungskern",
     "## Harte Quellenregeln",
     "## Sofortstart",
+    "## Werkstattmodus — universeller Arbeitslauf",
     "## Fall-Fingerabdruck und Anti-Generik-Regel",
     "## Aktuelle Rechtsprechungsanker",
     "## Normenkarte",
@@ -60,6 +61,12 @@ REQUIRED_WORKFLOW_PHRASES = (
     "Dokument 1 — Übersendungsschreiben",
     "Dokument 2 — Mandantengutachten",
     "Dokument 3 — Aufforderungsschreiben",
+    "Quickstart in zehn Sekunden",
+    "Zustandsautomat statt Fragenkaskade",
+    "Drei-Dokumente-Produktionsstraße",
+    "WERKSTATT-FORTSETZUNG",
+    "Kopierfertige Startrezepte für jeden Einsatz",
+    "Sitzungsplan vom Upload bis zum Versand",
 )
 
 REQUIRED_LEGAL_PHRASES = (
@@ -299,6 +306,10 @@ def main() -> None:
     )
     audit.require(len(mini) <= 7500, f"mini exceeds 7,500 characters: {len(mini)}")
     audit.require(len(mini) >= 6000, f"mini is unexpectedly incomplete: {len(mini)} characters")
+    audit.require(
+        len(full) >= 370_000,
+        f"full workshop skill is unexpectedly short: {len(full)} characters",
+    )
 
     last_position = -1
     full_lines = full.splitlines()
@@ -323,6 +334,19 @@ def main() -> None:
     audit.require(
         loop_numbers == list(range(1, 31)),
         "30-Prüfschleifen are incomplete or misnumbered",
+    )
+
+    workshop = section(
+        full,
+        "## Werkstattmodus — universeller Arbeitslauf",
+        "## Fall-Fingerabdruck und Anti-Generik-Regel",
+        "full skill",
+        audit,
+    )
+    workshop_numbers = [int(value) for value in re.findall(r"(?m)^### W\.(\d+)\s", workshop)]
+    audit.require(
+        workshop_numbers == list(range(1, 32)),
+        "workshop stations are incomplete or misnumbered",
     )
 
     anchors = section(

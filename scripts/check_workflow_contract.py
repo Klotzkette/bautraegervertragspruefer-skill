@@ -70,6 +70,38 @@ SCENARIOS = (
         ("Fortsetzungsprotokoll", "nächste feste Überschrift"),
         ("Fortsetzungsmarke",),
     ),
+    Scenario(
+        "pre_notarization_workshop",
+        ("Werkstattlauf vor der Beurkundung", "beurkundungsfähig nach benannten Klarstellungen"),
+    ),
+    Scenario(
+        "post_notarization_workshop",
+        ("Werkstattlauf nach der Beurkundung", "notariellen Nachtrag vereinbaren"),
+    ),
+    Scenario(
+        "acceptance_workshop",
+        ("Werkstattlauf vor und bei Abnahme", "Abnahmeentscheidung"),
+    ),
+    Scenario(
+        "defects_workshop",
+        ("Werkstattlauf bei Mängeln und Restarbeiten", "Mängelanzeige beschreibt nicht nur Symptome"),
+    ),
+    Scenario(
+        "insolvency_workshop",
+        ("Werkstattlauf bei Vorinsolvenz und Insolvenz", "Sofortliste bei belastbarem Insolvenzsignal"),
+    ),
+    Scenario(
+        "weg_workshop",
+        ("Werkstattlauf bei WEG, Teilungserklärung und Gemeinschaftsordnung", "WEG-Doppelausgabe"),
+    ),
+    Scenario(
+        "positive_contract",
+        ("Rezept 8 — neutraler Test eines guten Vertrags", "keine zwingende Änderung verlangt wird"),
+    ),
+    Scenario(
+        "platform_recovery",
+        ("WERKSTATT-FORTSETZUNG", "Nicht wiederholen"),
+    ),
 )
 
 FULL_OUTPUT_MARKERS = (

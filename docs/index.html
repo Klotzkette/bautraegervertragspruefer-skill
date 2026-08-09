@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bauträgervertrag-Prüfer Skill 4.2.0 — Direktdownload</title>
-<meta name="description" content="Lade die SKILL.md-Datei des Bauträgervertrag-Prüfer-Skills 4.2.0 direkt herunter — quellenharte, zeitstandsgenaue Prüfung deutscher Bauträgerverträge und Zahlungsakten als Markdown.">
+<title>Bauträgervertrag-Prüfer Skill 4.3.0 — Direktdownload</title>
+<meta name="description" content="Lade die Werkstattfassung des Bauträgervertrag-Prüfer-Skills 4.3.0 direkt herunter — quellenharte, zeitstandsgenaue Prüfung deutscher Bauträgerverträge und Zahlungsakten als Markdown.">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#f4f7f8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#101719" media="(prefers-color-scheme: dark)">
@@ -128,12 +128,13 @@
 </head>
 <body>
 <main id="top">
-  <h1>Bauträgervertrag-Prüfer Skill 4.2.0</h1>
+  <h1>Bauträgervertrag-Prüfer Skill 4.3.0</h1>
   <p class="lead">Lade die passende Skill-Datei herunter, lege sie in deinen Chatbot und reiche danach den Bauträgervertrag oder die vollständige Zahlungsakte nach.</p>
 
   <nav class="quick-nav" aria-label="Seitennavigation">
     <a href="#skills">Skill laden</a>
     <a href="#start">Sofortstart</a>
+    <a href="#werkstatt">Werkstatt</a>
     <a href="#workflow">Workflow</a>
     <a href="#files">Dateien</a>
     <a href="#akten">Vertragsakten</a>
@@ -170,11 +171,20 @@
           <tr><td>erster Überblick</td><td><code>Prüfe diesen Bauträgervertrag. Beginne sofort im geführten Modus.</code></td></tr>
           <tr><td>Rechnung oder Rate</td><td><code>Prüfe zuerst diese Zahlungsanforderung und entscheide mit Zahlungsfreigabekarte, welche Voraussetzungen oder Belege fehlen.</code></td></tr>
           <tr><td>alle drei Dokumente</td><td><code>Vollpaket jetzt: Käufer-/Mandantenschreiben, ausführliches Gutachten und Aufforderungsschreiben an den Bauträger.</code></td></tr>
+          <tr><td>vor der Beurkundung</td><td><code>Prüfe diesen Notarentwurf vor dem Termin und liefere im Vollpaket konkrete, beurkundungsfähige Ersatztexte.</code></td></tr>
+          <tr><td>bereits beurkundet</td><td><code>Der Vertrag ist unterschrieben. Prüfe Wirksamkeit, heutige Rechtsfolge, Fälligkeit und formgerechten Handlungsweg.</code></td></tr>
+          <tr><td>Abnahme oder Mängel</td><td><code>Bereite Entscheidung, Beweisplan, Protokoll, Vorbehalte und alle drei Schreiben phasengerecht vor.</code></td></tr>
         </tbody>
       </table>
     </div>
     <p>Bei möglichem kurzfristigem Rechtsverlust Datum und Zugang oder Zustellung nennen. Der Skill beginnt dann mit einem Eilhinweis, ohne eine Frist zu erfinden.</p>
     <p><strong>60-Sekunden-Regel:</strong> keine Recherchevorrede, keine Plattformdebatte. Erst sichtbares Startsignal, dann Rollenstatus und Pflichtblock. Bei Abbruch: <code>Bitte fahre exakt an der letzten Überschrift fort und zeige danach die Nächste Weiche.</code></p>
+  </section>
+
+  <section class="card" id="werkstatt">
+    <h2>Ausführliche Werkstattfassung</h2>
+    <p><code>SKILL.md</code> enthält jetzt 31 Werkstattstationen und ist gegenüber Version 4.2.0 um 33,84 Prozent erweitert. Sie führt vom Zehn-Sekunden-Start über Dokumentenkarte, Zustandsautomat und phasengerechte Prüfung bis zur Versandkontrolle von Käufer-/Mandantenschreiben, Gutachten und Bauträgerschreiben.</p>
+    <p>Zehn kopierfertige Rezepte decken Entwurf, anwaltliches Vollpaket, Ratenabruf, Abnahme, Bauzeit, Technik, beurkundete Urkunde, positive Kontrollprüfung, WEG und Insolvenz ab. Bei langen Antworten konserviert eine Fortsetzungskapsel den Arbeitsstand, damit die nächste Nachricht an der richtigen Überschrift weiterläuft.</p>
   </section>
 
   <section class="card">
@@ -357,7 +367,7 @@
   </section>
 
   <section class="card" id="qualitaet">
-    <h2>Stand 4.2.0</h2>
+    <h2>Stand 4.3.0</h2>
     <ul>
       <li><strong>Sofort nutzbar:</strong> Voll- und Mini-Skill sind echte Release-Downloads; Rollenmodus, 60-Sekunden-Start und Fortsetzungsmarken funktionieren modellunabhängig.</li>
       <li><strong>Vollständige Ausgabe:</strong> Evidenzkarte und versioniertes Befundregister mit stabilen IDs halten Kurzbild, Abschlussentscheidung, Gutachten und phasengerechtes Bauträgerschreiben konsistent. Jede Akte wird nur einmal vollständig gelesen; Fachmodule und Schreiben arbeiten aus demselben Register.</li>
@@ -367,7 +377,8 @@
       <li><strong>Juristisch kalibriert:</strong> Klauselstatus, tatsächliche Fälligkeit und Handlung bleiben getrennt; Ratenrechenblatt und Zahlungsfreigabekarte prüfen den konkreten Abruf, 🔴 Befunde brauchen Rechtsfolge, Beweislast und Erledigungsbedingung.</li>
       <li><strong>Technisch vollständig:</strong> Baugrund, Baugrube, anerkannte Regeln der Technik, HOAI-Leistungsphasen, private Baukontrolle, Unterlagen und Betriebskosten bleiben Teil der Prüfung.</li>
       <li><strong>Drei Testprofile:</strong> Hohenwartshofen, Marewald und Lindenhain stehen jeweils als Vertrag in Markdown, Word und PDF, als vierteilige Zahlungsakte, als Akten-ZIP und als zweispaltige Deutsch/English-Lesefassung bereit.</li>
-      <li><strong>Automatisch geprüft:</strong> Validatoren sichern mehr als 1.000 Struktur- und Redundanzpunkte sowie acht Eingangsszenarien einschließlich Eilfristen, Versionsgleichlauf, Pages-Kopien, Mini-Limit, No-Meta-Regel, Sprachvorrang, Rechtsanker und sämtliche lokalen Markdown- und Pages-Wege. Jede zweisprachige HTML-, PDF- und DOCX-Fassung weist den SHA-256-Stand ihrer deutschen Quelle nach. Bei jeder Zahlungsakte werden außerdem Projekt, Einheit, Rate, Vertragskumulation, Beträge, Chronologie und A4-Layout geprüft; die beiden laufenden Akten-PDFs müssen im Vier-Dokumente-ZIP byte-identisch vorliegen. Die statische Prüfung ersetzt keine aktuelle Rechtsrecherche, eine optionale Online-Prüfung ruft alle Quellenadressen live ab.</li>
+      <li><strong>Werkstattgeführt:</strong> 31 Stationen verbinden zehn Quickstarts, Zustandsautomat, Ereignisrouter, Akten-/OCR-Aufnahme, Quellen-Fit, Beweis- und Verhandlungslogik sowie getrennte Versandgates für alle drei Dokumente.</li>
+      <li><strong>Automatisch geprüft:</strong> Validatoren sichern mehr als 1.000 Struktur- und Redundanzpunkte sowie 16 Eingangsszenarien einschließlich Eilfristen, Versionsgleichlauf, Pages-Kopien, Mini-Limit, No-Meta-Regel, Sprachvorrang, Rechtsanker und sämtliche lokalen Markdown- und Pages-Wege. Jede zweisprachige HTML-, PDF- und DOCX-Fassung weist den SHA-256-Stand ihrer deutschen Quelle nach. Bei jeder Zahlungsakte werden außerdem Projekt, Einheit, Rate, Vertragskumulation, Beträge, Chronologie und A4-Layout geprüft; die beiden laufenden Akten-PDFs müssen im Vier-Dokumente-ZIP byte-identisch vorliegen. Die statische Prüfung ersetzt keine aktuelle Rechtsrecherche, eine optionale Online-Prüfung ruft alle Quellenadressen live ab.</li>
       <li><strong>Offen und portabel:</strong> keine Installation, kein eigenes Modell und keine versteckte Logik; alle Kernanweisungen liegen in einer lesbaren Markdown-Datei.</li>
     </ul>
   </section>

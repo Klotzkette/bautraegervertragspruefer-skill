@@ -171,6 +171,9 @@ done
 mini_chars="$(wc -m < skill/MINI_SKILL.md | tr -d ' ')"
 [[ "$mini_chars" -le 7500 ]] || fail "MINI_SKILL.md exceeds 7500 chars: $mini_chars"
 
+full_chars="$(wc -m < skill/SKILL.md | tr -d ' ')"
+[[ "$full_chars" -ge 370000 ]] || fail "SKILL.md workshop expansion is incomplete: $full_chars chars"
+
 for mini_required in \
   "60s-Start" \
   "Kurzbild" \
@@ -191,6 +194,12 @@ done
 
 for full_required in \
   "## Ausführungskern" \
+  "## Werkstattmodus — universeller Arbeitslauf" \
+  "### W.1 — Quickstart in zehn Sekunden" \
+  "### W.19 — Operative Rechtsprechungskarte 2026" \
+  "### W.23 — Drei-Dokumente-Produktionsstraße" \
+  "### W.31 — Sitzungsplan vom Upload bis zum Versand" \
+  "WERKSTATT-FORTSETZUNG" \
   "Schnellpfad ohne Qualitätsverlust" \
   "Ein Befundregister ist die einzige Tatsachenbasis" \
   "Phasengate vor jeder Handlungsempfehlung" \
