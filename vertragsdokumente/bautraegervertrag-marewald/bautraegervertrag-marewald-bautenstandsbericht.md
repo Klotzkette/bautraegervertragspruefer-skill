@@ -8,7 +8,7 @@
 
 ## Prüfauftrag
 
-Im Auftrag der Marewald Wohnbau GmbH & Co. KG wurde geprüft, ob der in § 3.2 des Bauträgervertrags, UR-Nr. 744/2026 BS, bezeichnete dritte Bautenstand für Haus C tatsächlich erreicht ist. Gegenstand des Meilensteins sind die Dachflächen und Dachrinnen, die Rohinstallationen für Heizung, Sanitär und Elektro sowie der Fenstereinbau einschließlich Verglasung.
+Im Auftrag der Marewald Wohnbau GmbH & Co. KG wurde geprüft, ob der in § 3.2 des Bauträgervertrags bezeichnete dritte Bautenstand für Haus C tatsächlich erreicht ist. Für dieses spätere Zahlungsszenario wird ein Vertragsschluss am 12. Juni 2026 unterstellt; die beigefügte Vertragsfassung bleibt Entwurf. Gegenstand des Meilensteins sind die Dachflächen und Dachrinnen, die Rohinstallationen für Heizung, Sanitär und Elektro sowie der Fenstereinbau einschließlich Verglasung.
 
 Die Feststellungen beruhen auf der Begehung sämtlicher Geschosse des Hauses C, der Wohnung C-2.14, des Technikgeschosses und der Tiefgaragenanbindung sowie auf den Ausführungsplänen C-AR-201 bis C-AR-248, den TGA-Revisionsständen HLS-C-12 und ELT-C-14 und der Fotodokumentation der Objektüberwachung.
 

@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-04",
+  "version": "4.4.0",
+  "runner": "Codex subagents with fresh context",
+  "model_id": null,
+  "prompt_sha256": {
+    "SKILL.md": "51e73c6c364370ab9985443df9dda4aae94f915e61f0b93d9e91457514b308e1",
+    "MINI_SKILL.md": "5fc350a7ed0ccd02e3fb0fc52e582507a1f64446618f0747e1da402869a6255d"
+  },
+  "runs": [
+    {
+      "scenario": "H-Z",
+      "status": "complete",
+      "inputs_sha256": {
+        "00-dokumentliste.md": "17bb664e1a737aeee06cb26862a6ac4da8a34455a1bf20992a222dbe8f31c10a",
+        "bautraegervertrag-bautenstandsbericht.md": "ed69560def6078ec300c4660484de08191cc801f7419c5b46817c454b07cf282",
+        "bautraegervertrag-zahlungsanforderung.md": "ccc9c0400c35d189738792a4806396f345a7940a9625abed030b830bd30b8ad5",
+        "bautraegervertrag.docx": "7297484b217245eeb7d155906fb5f3f8cf118b94b3aa28c6a872f1657dca7d01",
+        "h-zahlung.md": "1b7b2d9b81f9dcd1361e3352bdf781152a50e95d72558c39dfba0526ade6f81d"
+      },
+      "response": "h-z-mini.md",
+      "response_sha256": "8461b244785f379d36198809545c3e938820efe7f46e6873b6535575590dd0ba"
+    },
+    {
+      "scenario": "M-E",
+      "status": "complete",
+      "inputs_sha256": {
+        "00-dokumentliste.md": "cf02619942e4a78e3c215781b2806f3bae132320b88194aa4753717276b97d09",
+        "bautraegervertrag-marewald.docx": "d047208d83b3393354e0fe2c6e79c41eb10071bea5482058960fdd6f0838ff88",
+        "m-entwurf.md": "5b926cd868fe209f60e2fe2786ece2558fa1d8cb14efa045230985611afd3785"
+      },
+      "response": "m-e-plugin.md",
+      "response_sha256": "ccdb5ce03a44f94659adf4c4a86b21ae70072738e90a61775bd08638b450abfc"
+    },
+    {
+      "scenario": "M-Z+",
+      "status": "provisional_agent_interrupted",
+      "inputs_sha256": {
+        "00-dokumentliste.md": "66f95dc3a9b5900f2be5d50530d7f80a09cbb36b817013d690f6c4155a2b91c3",
+        "bautraegervertrag-marewald-bautenstandsbericht.md": "8e554e6e5b0847989289f35f645bdc3a86f9b1aeaa87e68924bf29cf5a568883",
+        "bautraegervertrag-marewald-zahlungsanforderung.md": "d2999d4571e9ebbaea0774761ef068c9c13abdc300fc8853c587615f1d438581",
+        "bautraegervertrag-marewald.docx": "d047208d83b3393354e0fe2c6e79c41eb10071bea5482058960fdd6f0838ff88",
+        "m-zahlung-ergänzt.md": "6f673fe3817a7eac942aa1b9cd4a2249a0c4d088f7298c0499a3d72ba844adba",
+        "m-zahlung.md": "e7863c565344b198d52eaeadb60494177f2d09781adbc2550d7c2dc854c297c0"
+      },
+      "response": "m-zplus-vorlaeufig.md",
+      "response_sha256": "c44f1c663cd339f4eeaa265f0bab694f817ee803cde1fec20b7c83d619e3bd79"
+    }
+  ]
+}

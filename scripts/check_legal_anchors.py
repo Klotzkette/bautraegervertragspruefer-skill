@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / "skill" / "SKILL.md"
 
 START = "## Aktuelle Rechtsprechungsanker"
-END = "## Normenkarte"
+END = "## Gesetzgebungsstatus 2026"
 LEGISLATION_START = "## Gesetzgebungsstatus 2026"
 LEGISLATION_END = "## 30-Prüfschleifen"
 
@@ -131,7 +131,8 @@ def extract_section(text: str) -> str:
 def extract_legislation_section(text: str) -> str:
     try:
         start = text.index(LEGISLATION_START)
-        end = text.index(LEGISLATION_END, start)
+        next_heading = re.search(r"(?m)^## ", text[start + len(LEGISLATION_START):])
+        end = start + len(LEGISLATION_START) + next_heading.start() if next_heading else len(text)
     except ValueError as exc:
         fail(f"missing legislation section marker: {exc}")
     return text[start:end]

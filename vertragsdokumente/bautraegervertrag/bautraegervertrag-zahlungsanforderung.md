@@ -12,7 +12,7 @@ Berlin, den 18. August 2027
 
 **Bauvorhaben:** Quartier „Am Birkenpfuhl“, Haus 4<br>
 **Kaufgegenstand:** Wohnung 4.27, Keller K-4.27, Terrasse T-4.27, TG-127<br>
-**Urkunde:** UR-Nr. 188/2026 KQ vom 14. März 2026<br>
+**Vertragsbezug:** Vertragsschluss am 14. März 2026 für das spätere Zahlungsszenario unterstellt; beigefügte Vertragsfassung bleibt Entwurf.<br>
 **Zahlungsanforderung:** BQ-H4-4.27/2027-03
 
 Sehr geehrter Herr Dr. Übelacker-Strohmeyer,

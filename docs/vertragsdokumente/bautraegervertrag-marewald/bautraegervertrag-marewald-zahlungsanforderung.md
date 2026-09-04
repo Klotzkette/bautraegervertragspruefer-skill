@@ -12,7 +12,7 @@ Hamburg, den 18. Juni 2027
 
 **Bauvorhaben:** Marewald Höfe, Haus C<br>
 **Kaufgegenstand:** Wohnung C-2.14, Keller K-C14, Balkon B-C14, TG-58<br>
-**Urkunde:** UR-Nr. 744/2026 BS vom 12. Juni 2026<br>
+**Vertragsbezug:** Vertragsschluss am 12. Juni 2026 für das spätere Zahlungsszenario unterstellt; beigefügte Vertragsfassung bleibt Entwurf.<br>
 **Zahlungsanforderung:** MH-C-2.14/2027-03
 
 Sehr geehrte Frau Dr. Salentin-Voßkamp,

@@ -1,5 +1,18 @@
 # Änderungsprotokoll
 
+## 4.4.0 - 4. September 2026
+
+1. Werkstatt- und Mini-Prompt als eigenständig ausführbare Prüfaufträge überarbeitet: vollständige Word-Aufnahme, phasenabhängige Rechtsfolgen, konkrete Fundstellen, Gegenargumente, Ersatzklauseln und nachvollziehbare Zahlungsentscheidung. Historische Rechtsanker bleiben ausdrücklich als Recherchebestand erhalten.
+2. Drei eindeutig benannte Plugin-Skills mit Codex- und Claude-Code-Manifesten ergänzt: Vertragsprüfung, Zahlungsratenprüfung und Word-Entwurfsprüfung. Das lokale Paket bündelt seine Referenzen und Helfer ohne Konten oder externe Dateiabfragen.
+3. Alle drei deutschen und drei zweisprachigen Word-Vertragsvorlagen auf einen eindeutigen Entwurfsrahmen umgestellt: Entwurf oben, leere eigene Urkundennummer, künftige Beurkundungsschritte statt vergangenheitlicher Bestätigung und kein KI-Herkunftsvermerk im Vertrag. Referenzurkunden behalten ihre Nummern.
+4. Die Testlogik trennt Word-Entwürfe von späteren Zahlungs-/Abnahmeszenarien. Zwölf neutrale Testaufträge und eine separate Erwartungsmatrix mit 32 Befunden prüfen Klauseln, Beleglücken, Zahlen, positive Fortsetzungen und neue Gegenbelege.
+5. Marewald nicht länger pauschal als rechtmäßig vorbewertet. Die Abnahmefiktion mit „wesentlichen Mängeln“ wird als konkreter Kontrollbefund behandelt; Abnahmepflicht und Verhinderung der Fiktion sind zu unterscheiden.
+6. Lokale Dezimal-Rechenhilfe und DOCX-Inventur ergänzt, einschließlich Tabellen, Kommentaren, Änderungen und ausgewiesenen Lesegrenzen. Ausgeführte Werkzeugtests werden von Modelltests getrennt dokumentiert.
+7. Prompt-Mindestlänge und Schlagwortzählung durch Paket-, Verweis- und Verhaltenskontrollen ersetzt. Der Paketbau prüft bytegleiche Spiegel und ein reproduzierbares Plugin-ZIP. Die bisherigen Artefakt-/Rechtsankerprüfungen bleiben erhalten und wurden an den Entwurfsstatus angepasst.
+8. Dokumentation und Downloadseite auf die neuen Prompts, Skills und Testfälle abgestimmt. Release-Downloads und aktuelle Repository-Fassung werden ausdrücklich unterschieden.
+9. Englische Lesefassungen inhaltlich überarbeitet und an vollständige, versionierte Quellblöcke gebunden. Veraltete Übersetzungen, ausgelassene Word-Inhalte und abweichende Downloadkopien führen zu Prüfungsfehlern. Tabellen, Überschriften und Unterschriftsbereiche wurden nach dem Rendern korrigiert.
+10. Zwei abgeschlossene blinde Codex-Einzeltests mit Rohantworten und Auswertung dokumentiert; eine zusätzliche positive Gegenprobe bleibt wegen unterbrochenem Agentenabschluss ausdrücklich vorläufig. Keine herstellerübergreifende Leistungsbehauptung.
+
 ## 4.3.0 - 9. August 2026
 
 1. Die Vollfassung ist zur ausdrücklichen Werkstattfassung ausgebaut und wächst von 281.206 auf 376.376 Zeichen (plus 33,84 Prozent), damit moderne große Kontextfenster einen vollständigen, zusammenhängenden Bauträger-Workflow erhalten.

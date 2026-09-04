@@ -2,7 +2,7 @@
 
 **Navigation:** [Haupt-README](../../README.md) · [Alle Vertragsakten](../README.md) · [Downloads](#downloads-auf-einen-blick) · [Verwendung](#verwendung-mit-dem-skill) · [Neu erzeugen](#neu-erzeugen) · [Hohenwartshofen](../bautraegervertrag/README.md) · [Lindenhain](../bautraegervertrag-lindenhain/README.md) · [Downloadseite](https://klotzkette.github.io/bautraegervertragspruefer-skill/#akten) · [neueste Veröffentlichung](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest)
 
-> **Charakter dieser Akte:** rechtmäßig, aber grenzwertig verkäuferfreundlich. Der Vertrag reizt den zulässigen Spielraum aus, ohne rote Pflichtverletzung oder erkennbare Nichtigkeit — der Skill soll ihn als hart und ausgereizt, aber im Rahmen des Rechts einordnen (überwiegend 🟠). Das bewusst fehlerhafte Gegenstück ist die Akte Hohenwartshofen (`../bautraegervertrag/`). Übersicht: [`../README.md`](../README.md).
+> **Prüfstoff:** Vertragsentwurf „Marewald Höfe“, Einheit C-2.14, mit verkäuferorientierten Regelungen und ausdrücklichen Schutzmechanismen. Eine pauschale Wirksamkeitszusage ist nicht vorgegeben. Der dritte Zahlungsabruf im Juni 2027 bildet ein eigenes Szenario. Die [Erwartungsmatrix](../../tests/erwartungsmatrix.md) enthält positive und negative Kontrollen und gehört nicht in den Prüfinput.
 
 ## Downloads auf einen Blick
 
@@ -30,10 +30,10 @@ Markdown, Word und Gesamt-PDF enthalten denselben Vertragsstoff einschließlich 
 
 ## Verwendung mit dem Skill
 
-1. Lade für den vollständigen Lauf das Akten-ZIP hoch; für eine reine Klauselprüfung genügt der Bauträgervertrag als PDF, DOCX oder Markdown.
-2. Lade [SKILL.md](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md) oder kompakt [MINI_SKILL.md](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md).
-3. Übergib beides einer KI und schreibe: `Prüfe die gesamte Akte und entscheide über die Zahlungsfreigabe.`
-4. Erwartung: Der Skill soll Rate, Anrechnung, Sicherheit und vollständig dokumentierten dritten Bautenstand rechnerisch freigeben, verbleibende Verhandlungsfragen aber weiterhin als 🟠 statt als Nichtigkeit einordnen.
+1. Vor Beurkundung die Word-Fassung einschließlich Baubeschreibung mit dem [Entwurfs-Sachverhalt](../../tests/inputs/m-entwurf.md) prüfen. Die leere Haupt-UR ist Teil des Entwurfsstatus.
+2. Für den späteren Zahlungsabruf Bericht, Zahlungsanforderung und [Zahlungs-Sachverhalt](../../tests/inputs/m-zahlung.md) hinzufügen. Der angenommene Vertragsschluss ist keine reale Beurkundungsbestätigung.
+3. Gesonderte Läufe mit dem [ergänzten Sachverhalt](../../tests/inputs/m-zahlung-ergänzt.md) und dem [Abnahmeszenario](../../tests/inputs/m-abnahme.md) prüfen, ob sich Ergebnisse mit den Tatsachen ändern. Varianten nicht vermischen.
+4. Werkstatt-Prompt und Mini-Prompt jeweils in frischen Chats mit denselben Eingaben vergleichen. Die [Testanleitung](../../tests/README.md) trennt Vertragsklauseln, konkrete Änderungsbedarfe und die Beleglage des Zahlungsabrufs.
 
 ## Neu erzeugen
 

@@ -1,24 +1,26 @@
+# ENTWURF
+
 # Bauträgervertrag
 
-**UR-Nr. 921/2026 LF**
+**UR-Nr. ____________________**
 
-## Verhandelt
+## Vorgesehener Beurkundungstermin
 
-zu Köln, am 18. September 2026
+Köln, vorgesehen für den 18. September 2026
 
-Vor mir, der unterzeichnenden Notarin im Bezirk des Oberlandesgerichts Köln
+Vorgesehene Notarin im Bezirk des Oberlandesgerichts Köln
 
 **Dr. Miriam Falkenried**
 
 Hohenzollernring 42, 50672 Köln
 
-erschienen heute:
+Vorgesehene Beteiligte:
 
 **Herr Jonas Reuter**, geboren am 03.04.1979,
 
 geschäftsansässig: Lindenhain Wohnwerte GmbH & Co. KG, Gereonstraße 18, 50670 Köln,
 
-der Notarin von Person bekannt,
+Identität im Beurkundungstermin festzustellen,
 
 handelnd nicht im eigenen Namen, sondern als einzelvertretungsberechtigter, von den Beschränkungen des § 181 BGB befreiter Geschäftsführer der
 
@@ -42,15 +44,15 @@ und
 
 wohnhaft: Aachener Straße 117, 50674 Köln,
 
-ausgewiesen durch gültigen Personalausweis,
+Identität im Beurkundungstermin durch gültigen Personalausweis festzustellen,
 
 handelnd im eigenen Namen,
 
 nachfolgend **Käuferin**.
 
-Die Käuferin erklärte, ihr sei der beabsichtigte Text dieser Urkunde einschließlich Baubeschreibung, Teilungserklärung, Gemeinschaftsordnung, Freistellungserklärungsmuster, Energie- und Schallschutznachweis sowie Baugrundkurzbericht am 28. August 2026 elektronisch und in Papierform zur Verfügung gestellt worden. Die Notarin wies darauf hin, dass die Zweiwochenfrist des § 17 Abs. 2a Satz 2 Nr. 2 BeurkG eingehalten ist, und erläuterte der Käuferin die wesentlichen Rechtswirkungen dieses Bauträgervertrags, insbesondere Ratenfälligkeit, Sicherheiten, Abnahme, Mängelrechte, Eigentumsumschreibung und Kosten.
+Nach Angabe der Käuferin wurde ihr der beabsichtigte Text einschließlich Baubeschreibung, Teilungserklärung, Gemeinschaftsordnung, Freistellungserklärungsmuster, Energie- und Schallschutznachweis sowie Baugrundkurzbericht am 28. August 2026 elektronisch und in Papierform zur Verfügung gestellt. Für den vorgesehenen Termin am 18. September 2026 ergibt dies mehr als zwei Wochen. Die tatsächliche Bereitstellung und Vollständigkeit sind im Hinblick auf § 17 Abs. 2a Satz 2 Nr. 2 BeurkG festzustellen. Die Belehrung über Ratenfälligkeit, Sicherheiten, Abnahme, Mängelrechte, Eigentumsumschreibung und Kosten ist im Beurkundungstermin vorgesehen.
 
-Die Erschienenen baten sodann um die Beurkundung des nachstehenden
+Zur Beurkundung vorgesehener Vertragstext
 
 # Wohnungsbauträgervertrag mit Auflassung
 
@@ -237,7 +239,7 @@ Er entfällt einheitlich auf Grundstücksanteil, Wohnung, Kellerraum, Tiefgarage
 
 13.2 Sollten einzelne Bestimmungen unwirksam sein, bleibt der Vertrag im Übrigen wirksam. An die Stelle der unwirksamen Bestimmung tritt das Gesetz. Eine geltungserhaltende Reduktion zulasten der Käuferin findet nicht statt.
 
-13.3 Die Notarin belehrte insbesondere über die Wirkungen der Auflassungsvormerkung, die MaBV-Fälligkeitsvoraussetzungen, den 5-%-Sicherheitseinbehalt, die Bedeutung der Abnahme, die Mängelverjährung, die Lastenfreistellung, die Grunderwerbsteuer, die Eigentumsumschreibung und die Bedeutung der mitbeurkundeten Baubeschreibung.
+13.3 Im Beurkundungstermin soll die Notarin insbesondere über die Wirkungen der Auflassungsvormerkung, die MaBV-Fälligkeitsvoraussetzungen, den 5-%-Sicherheitseinbehalt, die Bedeutung der Abnahme, die Mängelverjährung, die Lastenfreistellung, die Grunderwerbsteuer, die Eigentumsumschreibung und die Bedeutung der zur Mitbeurkundung vorgesehenen Baubeschreibung belehren.
 
 13.4 Die Kosten dieser Urkunde, ihres Vollzugs und der Eigentumsumschreibung trägt die Käuferin, soweit sie nicht durch eine Pflichtverletzung der Verkäuferin verursacht sind. Die Kosten der Lastenfreistellung, der Löschung nicht übernommener Belastungen und der vertragsgerechten Herstellung trägt die Verkäuferin.
 
@@ -249,9 +251,9 @@ Die Verkäuferin und die Käuferin sind darüber einig, dass das Eigentum an dem
 
 ## 15 Vorlesen, Genehmigung, Ausfertigungen
 
-Diese Niederschrift wurde den Erschienenen von der Notarin vorgelesen, von ihnen genehmigt und eigenhändig unterschrieben.
+Verlesung, Genehmigung und Unterzeichnung dieser Niederschrift einschließlich der Anlage Baubeschreibung stehen noch aus. Die nachstehenden Unterschriftsfelder bleiben im Entwurf frei.
 
-Köln, den 18. September 2026
+Ort und Datum: ____________________
 
 **Lindenhain Wohnwerte GmbH & Co. KG**
 
@@ -265,6 +267,8 @@ vertreten durch Herrn Jonas Reuter
 
 # Anlage: Baubeschreibung
 
+**ENTWURF**
+
 ## Bauvorhaben und Planstand
 
 Projekt: Wohngebäude **Lindenhain 12**, Lindenhainstraße 12, 50825 Köln-Ehrenfeld
@@ -275,7 +279,7 @@ Einheit: Wohnung B-05, zweites Obergeschoss, Kellerraum K-B05, Tiefgaragenstellp
 
 Planstand: 20. August 2026, Baubeschreibung Fassung 1.0
 
-Diese Baubeschreibung ist mit dem Bauträgervertrag mitbeurkundet und bestimmt das Bausoll für die Einheit B-05 sowie das für ihre Nutzung erforderliche Gemeinschaftseigentum.
+Diese Baubeschreibung ist zur Mitbeurkundung mit dem Bauträgervertrag vorgesehen und bestimmt das Bausoll für die Einheit B-05 sowie das für ihre Nutzung erforderliche Gemeinschaftseigentum.
 
 ## 1 Grundstück, Erschließung, Außenanlagen
 

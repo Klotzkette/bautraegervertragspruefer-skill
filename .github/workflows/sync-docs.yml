@@ -1,86 +1,35 @@
-name: Sync skill files to docs/
+name: Check published mirrors
 
 on:
   workflow_dispatch:
+  pull_request:
   push:
     branches: [main]
-    paths:
-      - 'skill/SKILL.md'
-      - 'skill/MINI_SKILL.md'
-      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf'
-      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag.docx'
-      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag.md'
-      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html'
-      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.pdf'
-      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.docx'
-      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag-einzel-pdfs.zip'
-      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag-bautenstandsbericht.md'
-      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag-bautenstandsbericht.pdf'
-      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag-zahlungsanforderung.md'
-      - 'vertragsdokumente/bautraegervertrag/bautraegervertrag-zahlungsanforderung.pdf'
-      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf'
-      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.docx'
-      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md'
-      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html'
-      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.pdf'
-      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.docx'
-      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-einzel-pdfs.zip'
-      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-bautenstandsbericht.md'
-      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-bautenstandsbericht.pdf'
-      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-zahlungsanforderung.md'
-      - 'vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-zahlungsanforderung.pdf'
-      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf'
-      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.docx'
-      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md'
-      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html'
-      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.pdf'
-      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.docx'
-      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-einzel-pdfs.zip'
-      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-bautenstandsbericht.md'
-      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-bautenstandsbericht.pdf'
-      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-zahlungsanforderung.md'
-      - 'vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-zahlungsanforderung.pdf'
 
 permissions:
-  contents: write
-
-concurrency:
-  group: sync-docs-${{ github.ref }}
-  cancel-in-progress: true
+  contents: read
 
 jobs:
-  sync:
+  mirrors:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-        with:
-          fetch-depth: 1
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Copy skill files to docs/
-        run: |
-          set -euo pipefail
-          cp skill/SKILL.md docs/SKILL.md
-          cp skill/MINI_SKILL.md docs/MINI_SKILL.md
-          contracts=(bautraegervertrag bautraegervertrag-marewald bautraegervertrag-lindenhain)
-          suffixes=(.md .pdf .docx -de-en.html -de-en.pdf -de-en.docx -einzel-pdfs.zip -bautenstandsbericht.md -bautenstandsbericht.pdf -zahlungsanforderung.md -zahlungsanforderung.pdf)
-          for contract in "${contracts[@]}"; do
-            destination="docs/vertragsdokumente/${contract}"
-            mkdir -p "$destination"
-            for suffix in "${suffixes[@]}"; do
-              cp "vertragsdokumente/${contract}/${contract}${suffix}" "$destination/"
-            done
-          done
+      - name: Check prompt and plugin mirrors
+        run: python3 scripts/package_plugin.py --check
 
-      - name: Commit and push if changed
+      - name: Check contract mirrors
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet docs/SKILL.md docs/MINI_SKILL.md docs/vertragsdokumente/; then
-            echo "docs files unchanged — nothing to commit."
-            exit 0
-          fi
-          git add docs/SKILL.md docs/MINI_SKILL.md docs/vertragsdokumente/
-          git commit -m "chore(docs): sync files for GitHub Pages"
-          git push
+          python3 - <<'PY'
+          from pathlib import Path
+          root = Path(".")
+          for case in ("bautraegervertrag", "bautraegervertrag-marewald", "bautraegervertrag-lindenhain"):
+              directory = root / "vertragsdokumente" / case
+              public = root / "docs/vertragsdokumente" / case
+              for source in directory.iterdir():
+                  if source.suffix not in {".md", ".docx", ".pdf", ".zip", ".html"} or source.name == "README.md":
+                      continue
+                  target = public / source.name
+                  assert target.is_file() and source.read_bytes() == target.read_bytes(), str(target)
+          PY

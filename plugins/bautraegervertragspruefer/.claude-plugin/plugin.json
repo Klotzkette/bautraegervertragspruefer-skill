@@ -1,0 +1,8 @@
+{
+  "name": "bautraegervertragspruefer",
+  "version": "4.4.0",
+  "description": "Prüft Bauträgerverträge, MaBV-Zahlungsraten und Word-Entwürfe aus Erwerbersicht.",
+  "author": {"name": "Klotzkette"},
+  "repository": "https://github.com/Klotzkette/bautraegervertragspruefer-skill",
+  "license": "MIT OR Apache-2.0"
+}

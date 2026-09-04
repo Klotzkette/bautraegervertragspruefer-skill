@@ -1,26 +1,26 @@
+# ENTWURF
+
 # Bauträgervertrag
 
-\newpage
+**UR-Nr. ____________________**
 
-# UR-Nr. 744/2026 BS
+## Vorgesehener Beurkundungstermin
 
-## Verhandelt
+Hamburg, vorgesehen für den 12. Juni 2026
 
-zu Hamburg, am 12. Juni 2026
-
-Vor mir, der unterzeichnenden Notarin im Bezirk des Hanseatischen Oberlandesgerichts
+Vorgesehene Notarin im Bezirk des Hanseatischen Oberlandesgerichts
 
 **Dr. Cornelia Brakelmann-Stüve**
 
 Ballindamm 17, 20095 Hamburg
 
-erschienen heute:
+Vorgesehene Beteiligte:
 
 Herr **Gisbert Tönnemann-Loose**, geboren am 24.09.1972,
 
 geschäftsansässig: Mundsburger Damm 5, 22087 Hamburg,
 
-der Notarin von Person bekannt,
+Identität im Beurkundungstermin festzustellen,
 
 handelnd nicht im eigenen Namen, sondern als alleinvertretungsberechtigter, von den Beschränkungen des § 181 BGB befreiter Geschäftsführer der
 
@@ -38,23 +38,23 @@ Geschäftsanschrift: Mundsburger Damm 5, 22087 Hamburg,
 
 — nachstehend auch „Verkäufer" genannt —.
 
-Die Vertretungsberechtigung wurde der Notarin durch Einsicht in das Handelsregister am heutigen Tage nachgewiesen.
+Die Vertretungsberechtigung ist im Beurkundungstermin anhand des Handelsregisters nachzuweisen.
 
 Frau **Dr. Henrike Salentin-Voßkamp**, geboren am 07.05.1979,
 
 wohnhaft: Wandsbeker Chaussee 162, 22089 Hamburg,
 
-ausgewiesen durch gültigen Personalausweis,
+Identität im Beurkundungstermin durch gültigen Personalausweis festzustellen,
 
 — nachstehend auch „Käufer" genannt —.
 
-Auf Befragen der Notarin erklärten der Erschienene zu 1. auf Rechnung des von ihm Vertretenen und die Erschienene zu 2. auf eigene Rechnung zu handeln.
+Im Beurkundungstermin sollen der Beteiligte zu 1. das Handeln auf Rechnung des Vertretenen und die Beteiligte zu 2. das Handeln auf eigene Rechnung erklären.
 
-Die Notarin hat die Beteiligten befragt, ob bei der nachstehend zu beurkundenden Angelegenheit eine der mit ihr zur gemeinsamen Berufsausübung verbundenen Personen oder sie selbst außerhalb der Amtstätigkeit bereits tätig war oder ist. Die Beteiligten erklärten, dass dies nicht der Fall sei.
+Vor der Protokollierung hat die Notarin die Beteiligten zu einer möglichen Vorbefassung außerhalb ihrer Amtstätigkeit zu befragen. Ihre Erklärungen sind erst im Beurkundungstermin aufzunehmen.
 
-Der Käufer erklärte im Hinblick auf § 17 Abs. 2a Satz 2 Nr. 2 BeurkG, dass ihm der beabsichtigte Text dieses Vertrages einschließlich der in Bezug genommenen Baubeschreibung und der Teilungserklärung am 26. Mai 2026 — somit mehr als zwei Wochen vor dem heutigen Beurkundungstag — von der Notarin zur Verfügung gestellt wurde und dass er ausreichend Gelegenheit zur Prüfung hatte.
+Nach Angabe des Käufers wurde ihm der beabsichtigte Text dieses Vertrages einschließlich Baubeschreibung und Teilungserklärung am 26. Mai 2026 von der Notarin zur Verfügung gestellt. Für den vorgesehenen Termin am 12. Juni 2026 ergibt dies mehr als zwei Wochen. Die tatsächliche Bereitstellung, Vollständigkeit und Prüfungsgelegenheit sind im Beurkundungstermin im Hinblick auf § 17 Abs. 2a Satz 2 Nr. 2 BeurkG festzustellen.
 
-Die Erschienenen baten sodann um die Beurkundung des nachstehenden
+Zur Beurkundung vorgesehener Vertragstext
 
 # Wohnungsbauträgervertrag mit Auflassung
 
@@ -70,7 +70,7 @@ Geringfügige Änderungen der Planung bleiben vorbehalten, soweit sie durch beh�
 
 **0.2** Umfang und Beschränkungen des Wohnungs- und Teileigentums, die Rechtsbeziehungen der Eigentümer zueinander und die Verwaltung des gemeinschaftlichen Eigentums werden geregelt in der Teilungserklärung einschließlich Gemeinschaftsordnung vom 21. Oktober 2025 zur UR-Nr. 1502/2025 der amtierenden Notarin, in der Fassung des 1. Nachtrags vom 09. Februar 2026 zur UR-Nr. 188/2026 — nachfolgend auch „Teilungserklärung" und/oder „Bezugsurkunde 1" genannt.
 
-**0.3** Die Baubeschreibung in der Fassung Mai 2026, Version 3.0 (Anlage Baubeschreibung zu dieser Urkunde) ist Gegenstand der Beurkundung und Bestandteil der vom Verkäufer geschuldeten Leistung. Auf das Verlesen wird nicht verzichtet; die Baubeschreibung wurde mitverlesen und als Anlage mitbeurkundet. Visualisierungen, Exposés und die Musterwohnung sind keine selbständigen Vertragsbestandteile; ihre Berücksichtigung als vertragsbegleitende Umstände bei der Auslegung unvollständiger oder unklarer Leistungsbeschreibungen bleibt unberührt.
+**0.3** Die Baubeschreibung in der Fassung Mai 2026, Version 3.0 (Anlage Baubeschreibung zu dieser Urkunde) soll Gegenstand der Beurkundung und Bestandteil der vom Verkäufer geschuldeten Leistung werden. Auf das Verlesen soll nicht verzichtet werden; die Baubeschreibung ist im Beurkundungstermin mitzuverlesen und als Anlage mitbeurkunden zu lassen. Visualisierungen, Exposés und die Musterwohnung sind keine selbständigen Vertragsbestandteile; ihre Berücksichtigung als vertragsbegleitende Umstände bei der Auslegung unvollständiger oder unklarer Leistungsbeschreibungen bleibt unberührt.
 
 **0.4** Die Abgeschlossenheitsbescheinigung liegt vor. Die Baugenehmigung für die Häuser A bis D vom 14. April 2026 (Az. HH-Wb-2026/0471) liegt vor und wurde der Notarin nachgewiesen.
 
@@ -86,7 +86,7 @@ Geringfügige Änderungen der Planung bleiben vorbehalten, soweit sie durch beh�
 
 **1.2** Die Sondereigentumseinheit nebst Sondernutzungsrecht am Stellplatz TG-58 und den unter § 5 beschriebenen Bauleistungen wird nachfolgend „Kaufgegenstand" genannt.
 
-**1.3** Die Notarin hat das Grundbuch gemäß § 1.1 am heutigen Tage elektronisch eingesehen.
+**1.3** Die Notarin soll das Grundbuch gemäß § 1.1 im Beurkundungstermin elektronisch einsehen und den Stand dokumentieren.
 
 In Abteilung II sind beschränkte persönliche Dienstbarkeiten zugunsten der Versorgungs- und Netzbetreiber sowie der Freien und Hansestadt Hamburg eingetragen; diese werden vom Käufer übernommen.
 
@@ -264,7 +264,7 @@ Verkäufer und Käufer sind über den Eigentumsübergang einig und bewilligen un
 
 # § 14 Belehrungen
 
-Die Notarin hat die Beteiligten belehrt über Inhalt und Bedeutung des Vertrages, die Eigentumsübertragung erst mit Grundbucheintragung, die Bedeutung der Auflassungsvormerkung und der Belastungsvollmacht, die MaBV-Fälligkeitsvoraussetzungen, die 5-%-Sicherheit nach § 650m Abs. 2 BGB, die fünfjährige Mängelverjährung sowie die Möglichkeit, eigene technische Berater hinzuzuziehen. Sie hat darauf hingewiesen, dass sie als unparteiische Amtsträgerin keine wirtschaftliche, steuerliche oder bautechnische Beratung übernimmt und Baugrund, Bauüberwachung und Wirtschaftlichkeit von Wartungsverträgen nicht geprüft hat.
+Im Beurkundungstermin soll die Notarin über Inhalt und Bedeutung des Vertrages, die Eigentumsübertragung erst mit Grundbucheintragung, Auflassungsvormerkung, Belastungsvollmacht, MaBV-Fälligkeitsvoraussetzungen, die 5-%-Sicherheit nach § 650m Abs. 2 BGB, die fünfjährige Mängelverjährung und die Möglichkeit eigener technischer Beratung belehren. Sie soll auf die Grenzen ihrer unparteiischen Amtstätigkeit hinweisen; wirtschaftliche, steuerliche und bautechnische Fragen bleiben gesondert zu prüfen.
 
 \newpage
 
@@ -272,7 +272,7 @@ Die Notarin hat die Beteiligten belehrt über Inhalt und Bedeutung des Vertrages
 
 **Bezugsurkunde 1** — Teilungserklärung einschließlich Gemeinschaftsordnung vom 21. Oktober 2025, UR-Nr. 1502/2025, nebst 1. Nachtrag vom 09. Februar 2026, UR-Nr. 188/2026.
 
-**Anlage Baubeschreibung** — Baubeschreibung Fassung Mai 2026, Version 3.0; mitbeurkundeter Bestandteil dieser Urkunde und des geschuldeten Bausolls.
+**Anlage Baubeschreibung** — Baubeschreibung Fassung Mai 2026, Version 3.0; zur Mitbeurkundung vorgesehener Bestandteil dieser Urkunde und des geschuldeten Bausolls.
 
 Die Notarin wird mit dem Vollzug beauftragt und stellt Anträge erst, wenn die erforderlichen Erklärungen und Nachweise vorliegen. Mitteilungen über den Eintritt der Fälligkeitsvoraussetzungen nach § 3 erfolgen schriftlich an beide Parteien.
 
@@ -286,7 +286,7 @@ Der Geschäftswert dieser Urkunde wird mit dem Gesamtkaufpreis von 674.000,00 EU
 
 # Unterschriften
 
-Diese Niederschrift nebst Anlage Baubeschreibung wurde den Erschienenen von der Notarin vorgelesen, von ihnen genehmigt und sodann eigenhändig unterschrieben:
+Verlesung, Genehmigung und Unterzeichnung dieser Niederschrift einschließlich der Anlage Baubeschreibung stehen noch aus. Die nachstehenden Unterschriftsfelder bleiben im Entwurf frei.
 
 \
 
@@ -316,6 +316,8 @@ Dr. Cornelia Brakelmann-Stüve, Notarin
 
 # Anlage: Baubeschreibung
 
+**ENTWURF**
+
 Bauvorhaben: Wohnquartier „Marewald Höfe", Gemarkung Eilbek, Flur 12, Flurstück 344/9
 
 Bauträgerin: Marewald Wohnbau GmbH & Co. KG, Mundsburger Damm 5, 22087 Hamburg
@@ -326,7 +328,7 @@ Bezug: Haus C, Wohnung C-2.14 (2. Obergeschoss) nebst Kellerabteil K-C14, Balkon
 
 ## Vorbemerkungen zur Baubeschreibung
 
-**V.1** Diese Baubeschreibung ist mitbeurkundeter Bestandteil des Kaufvertrages und beschreibt das Bausoll für die aufgeführten Gewerke. Wo sie konkrete Werte, Klassen oder Fabrikatsfamilien nennt, sind diese verbindlich; wo sie „gleichwertig" zulässt, ist die Gleichwertigkeit am genannten Kennwert zu messen. Unvollständige oder unklare Angaben werden nach § 5.5 des Vertrages ausgelegt.
+**V.1** Diese Baubeschreibung soll mit dem Kaufvertrag beurkundet werden und beschreibt das Bausoll für die aufgeführten Gewerke. Wo sie konkrete Werte, Klassen oder Fabrikatsfamilien nennt, sind diese verbindlich; wo sie „gleichwertig" zulässt, ist die Gleichwertigkeit am genannten Kennwert zu messen. Unvollständige oder unklare Angaben werden nach § 5.5 des Vertrages ausgelegt.
 
 **V.2** Benannte Fabrikate sind beispielhaft; der Verkäufer darf gleichwertige Produkte einsetzen, wenn der genannte Mindeststandard (Maß, Klasse, Kennwert) eingehalten wird. Ein Anspruch auf ein bestimmtes Fabrikat besteht nur, wenn es ausdrücklich als verbindlich bezeichnet ist.
 
@@ -404,4 +406,4 @@ Bezug: Haus C, Wohnung C-2.14 (2. Obergeschoss) nebst Kellerabteil K-C14, Balkon
 
 # Schlussbestimmungen der Baubeschreibung
 
-Diese Baubeschreibung ist mit dem Kaufvertrag mitbeurkundet. Bei Widersprüchen zwischen Baubeschreibung, Plänen und Vertragstext gilt die für den Käufer günstigere Auslegung, soweit sich aus dem Vertrag nichts Eindeutiges ergibt (§ 305c Abs. 2 BGB).
+Diese Baubeschreibung ist zur Mitbeurkundung mit dem Kaufvertrag vorgesehen. Bei Widersprüchen zwischen Baubeschreibung, Plänen und Vertragstext gilt die für den Käufer günstigere Auslegung, soweit sich aus dem Vertrag nichts Eindeutiges ergibt (§ 305c Abs. 2 BGB).

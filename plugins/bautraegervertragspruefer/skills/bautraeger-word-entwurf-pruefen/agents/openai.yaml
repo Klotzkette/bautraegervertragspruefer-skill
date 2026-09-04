@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bauträger Word-Entwurf prüfen"
+  short_description: "Word-Inhalte und eindeutigen Entwurfstatus prüfen"
+  default_prompt: "Prüfe mit $bautraeger-word-entwurf-pruefen diesen Word-Vertrag einschließlich Entwurfstatus und Änderungen."

@@ -8,7 +8,7 @@
 
 ## Auftrag und Unterlagen
 
-Die BQ-Controlling Projektsteuerung GmbH wurde von der Hohenwartshofen Quartiersentwicklung GmbH & Co. KG beauftragt, den Baufortschritt des Hauses 4 für den dritten Zahlungsmeilenstein nach § 3.2 des Bauträgervertrags, UR-Nr. 188/2026 KQ, festzustellen.
+Die BQ-Controlling Projektsteuerung GmbH wurde von der Hohenwartshofen Quartiersentwicklung GmbH & Co. KG beauftragt, den Baufortschritt des Hauses 4 für den dritten Zahlungsmeilenstein nach § 3.2 des Bauträgervertrags festzustellen. Für dieses spätere Zahlungsszenario wird ein Vertragsschluss am 14. März 2026 unterstellt; die beigefügte Vertragsfassung bleibt Entwurf.
 
 Grundlage der Begehung waren die Ausführungspläne B4-A-100 bis B4-A-612, die TGA-Planstände B4-HLS-17 und B4-ELT-19, das Dachdetailblatt B4-D-08 sowie die Bautagesberichte 154 bis 161. Geprüft wurden die für Haus 4 und die Wohnung 4.27 sichtbaren Leistungen. Verdeckte Leitungsabschnitte wurden anhand der Bautagesberichte und der Fotodokumentation der Objektüberwachung bewertet.
 

@@ -2,7 +2,7 @@
 
 **Navigation:** [Haupt-README](../../README.md) · [Alle Vertragsakten](../README.md) · [Downloads](#downloads-auf-einen-blick) · [Verwendung](#verwendung-mit-dem-skill) · [Neu erzeugen](#neu-erzeugen) · [Marewald](../bautraegervertrag-marewald/README.md) · [Lindenhain](../bautraegervertrag-lindenhain/README.md) · [Downloadseite](https://klotzkette.github.io/bautraegervertragspruefer-skill/#akten) · [neueste Veröffentlichung](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest)
 
-> **Charakter dieser Akte:** bewusst fehlerhaft. Der Vertrag ist überladen mit unwirksamen und teils nichtigen Klauseln; an ihm lässt sich zeigen, wie viele rote Ampeln der Skill findet. Das wirksame Gegenstück ist die Akte Marewald (`../bautraegervertrag-marewald/`). Übersicht: [`../README.md`](../README.md).
+> **Prüfstoff:** Vertragsentwurf zum Quartier „Am Birkenpfuhl“, Einheit 4.27, und Unterlagen zum dritten Zahlungsabruf im August 2027. Die Bewertung folgt den einzelnen Klauseln und Nachweisen. Dieses README gehört nicht in den Prüfinput; die getrennten Sollbefunde stehen in der [Erwartungsmatrix](../../tests/erwartungsmatrix.md).
 
 ## Downloads auf einen Blick
 
@@ -30,10 +30,10 @@ Markdown, Word und Gesamt-PDF enthalten denselben Vertragsstoff einschließlich 
 
 ## Verwendung mit dem Skill
 
-1. Lade für den vollständigen Lauf das Akten-ZIP hoch; für eine reine Klauselprüfung genügt der Bauträgervertrag als PDF, DOCX oder Markdown.
-2. Lade [SKILL.md](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md) oder kompakt [MINI_SKILL.md](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md).
-3. Übergib beides einer KI und schreibe: `Prüfe die gesamte Akte und entscheide über die Zahlungsfreigabe.`
-4. Erwartung: Die KI muss den behaupteten dritten Meilenstein mit den Einzelfeststellungen des Berichts abgleichen und darf die abschließende Bestätigung nicht ungeprüft übernehmen. Für alle Schreiben `Vollpaket` anfordern.
+1. Vor Beurkundung die Word-Fassung einschließlich Baubeschreibung mit dem [Entwurfs-Sachverhalt](../../tests/inputs/h-entwurf.md) verwenden. „ENTWURF“ und die leere Haupt-UR bleiben erhalten; Bezugsurkunden sind davon zu unterscheiden.
+2. Für den späteren Zahlungsabruf Bericht, Zahlungsanforderung und [Zahlungs-Sachverhalt](../../tests/inputs/h-zahlung.md) hinzufügen. Der Vertragsschluss wird ausschließlich für dieses Szenario angenommen.
+3. Werkstatt-Prompt und Mini-Prompt jeweils in frischen Chats mit denselben Eingaben prüfen. Nur die im Sachverhalt genannten Dateien hochladen; dieses README und die Sollbefunde weglassen.
+4. Mit der [Testanleitung](../../tests/README.md) auswerten. Die Zahl roter Ampeln genügt nicht: Fundstelle, Begründung, Maßnahme und offene Belegfrage müssen zusammenpassen.
 
 ## Neu erzeugen
 

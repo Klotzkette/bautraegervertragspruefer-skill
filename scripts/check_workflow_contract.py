@@ -1,201 +1,54 @@
 #!/usr/bin/env python3
-"""Guard the user-facing routing and legal decision gates of both skills."""
+"""Validate discoverable skill entrypoints and executable helper packaging."""
 
-from __future__ import annotations
-
-import sys
-from dataclasses import dataclass
+import json
+import re
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
-FULL = ROOT / "skill" / "SKILL.md"
-MINI = ROOT / "skill" / "MINI_SKILL.md"
+PLUGIN = ROOT / "plugins/bautraegervertragspruefer"
+EXPECTED = {
+    "bautraegervertrag-pruefen": "references/werkstatt.md",
+    "bautraeger-zahlungsrate-pruefen": "scripts/mabv_rechner.py",
+    "bautraeger-word-entwurf-pruefen": "scripts/docx_pruefen.py",
+}
 
 
-@dataclass(frozen=True)
-class Scenario:
-    name: str
-    full_markers: tuple[str, ...]
-    mini_markers: tuple[str, ...] = ()
-
-
-SCENARIOS = (
-    Scenario(
-        "skill_without_contract",
-        ("nur Skill/Prompt, kein Vertrag", "nur den Upload anfordern"),
-    ),
-    Scenario(
-        "contract_without_role",
-        ("Vertrag liegt vor, Rolle unklar", "Rolle A vorläufig"),
-        ("mit Vertrag A starten",),
-    ),
-    Scenario(
-        "guided_review",
-        ("Geführter Workflow", "höchstens sieben priorisierte Befunde"),
-        ("Geführt = Kurzbild", "Nächste Weiche"),
-    ),
-    Scenario(
-        "one_shot_package",
-        ("Nutzer will `one-shot`, `final`, `alle Schreiben`", "Drei-Dokumente-Paket sofort"),
-        ("Vollpaket bei `vollständig/one-shot/Schreiben/final`", "Vollpaket:"),
-    ),
-    Scenario(
-        "payment_request",
-        (
-            "konkrete Rechnung, Ratenabruf oder Zahlungsfrist",
-            "Mehrdokumenten-Abgleich bei Zahlungsakten",
-            "Zahlungsfreigabekarte",
-            "Die Zahlungsfrist in Rechnung oder Ratenabruf erzeugt keine Fälligkeit",
-            "Bautenstandsbericht ist ein privates Tatsachendokument",
-        ),
-        (
-            "Ratenabruf: Zahlungsfreigabekarte",
-            "Berichts-Fazit überstimmt keine offenen Teilgewerke",
-            "Rechnungsfrist schafft keine Fälligkeit",
-        ),
-    ),
-    Scenario(
-        "urgent_deadline",
-        ("bekannte oder mögliche kurzfristige Frist", "Fristen- und Eiltriage"),
-        ("Frist zuerst: Art, Auslöser, Zugang/Zustellung",),
-    ),
-    Scenario(
-        "stop",
-        ("`stop`, `abbrechen`, `beenden`, `halt`, `cancel`", "sofort mit der festgelegten Beendigungszeile"),
-        ("Bei `stop/abbrechen/beenden/halt/cancel`",),
-    ),
-    Scenario(
-        "resume",
-        ("Fortsetzungsprotokoll", "nächste feste Überschrift"),
-        ("Fortsetzungsmarke",),
-    ),
-    Scenario(
-        "pre_notarization_workshop",
-        ("Werkstattlauf vor der Beurkundung", "beurkundungsfähig nach benannten Klarstellungen"),
-    ),
-    Scenario(
-        "post_notarization_workshop",
-        ("Werkstattlauf nach der Beurkundung", "notariellen Nachtrag vereinbaren"),
-    ),
-    Scenario(
-        "acceptance_workshop",
-        ("Werkstattlauf vor und bei Abnahme", "Abnahmeentscheidung"),
-    ),
-    Scenario(
-        "defects_workshop",
-        ("Werkstattlauf bei Mängeln und Restarbeiten", "Mängelanzeige beschreibt nicht nur Symptome"),
-    ),
-    Scenario(
-        "insolvency_workshop",
-        ("Werkstattlauf bei Vorinsolvenz und Insolvenz", "Sofortliste bei belastbarem Insolvenzsignal"),
-    ),
-    Scenario(
-        "weg_workshop",
-        ("Werkstattlauf bei WEG, Teilungserklärung und Gemeinschaftsordnung", "WEG-Doppelausgabe"),
-    ),
-    Scenario(
-        "positive_contract",
-        ("Rezept 8 — neutraler Test eines guten Vertrags", "keine zwingende Änderung verlangt wird"),
-    ),
-    Scenario(
-        "platform_recovery",
-        ("WERKSTATT-FORTSETZUNG", "Nicht wiederholen"),
-    ),
-)
-
-FULL_OUTPUT_MARKERS = (
-    "Status: Rolle A/B/C",
-    "Phasenentscheidung:",
-    "Sperrende IDs:",
-    "Frist/Termin:",
-    "Nächster Beleg/Fortsetzen bei:",
-    "Dokument 1 — Übersendungsschreiben",
-    "Dokument 2 — Mandantengutachten",
-    "Dokument 3 — Aufforderungsschreiben",
-    "heutige Auswirkung",
-    "Bis wann/benötigter Beleg",
-    "EILHINWEIS — Vorgang:",
-    "Fristberechnung offen",
-)
-
-MINI_OUTPUT_MARKERS = (
-    "Käufer-/Mandantenschreiben",
-    "Mandantengutachten",
-    "Aufforderungsschreiben an Bauträger",
-    "Dann Status: Rolle/Phase, D1-D3, Entscheidung, Sperr-IDs, Fortsetzung",
-)
-
-TEMPORAL_MARKERS = (
-    "Art. 229 § 5 EGBGB",
-    "Art. 229 § 6 EGBGB",
-    "Art. 229 § 39 EGBGB",
-    "1. Dezember 2020",
-    "§ 47 und § 48 WEG",
-    "29. Dezember 2025",
-    "§ 13a BeurkG a. F.",
-    "§ 13c BeurkG",
-    "Entscheidungs-Fit-Test",
-    "Normstand:",
-    "Vertragstyp und Rolle:",
-    "Klausel und Anspruch:",
-    "Verfahrenslage:",
-    "Gesetzgebungsstatus 2026",
-    "BGBl. 2026 I Nr. 215",
-    "BGBl. 2026 I Nr. 229",
-)
-
-
-def require(markers: tuple[str, ...], text: str, label: str, errors: list[str]) -> int:
-    checks = 0
-    for marker in markers:
-        checks += 1
-        if marker not in text:
-            errors.append(f"{label}: missing {marker!r}")
-    return checks
-
-
-def main() -> None:
-    full = FULL.read_text(encoding="utf-8")
-    mini = MINI.read_text(encoding="utf-8")
-    errors: list[str] = []
-    checks = 0
-
-    for scenario in SCENARIOS:
-        checks += require(scenario.full_markers, full, f"full/{scenario.name}", errors)
-        checks += require(scenario.mini_markers, mini, f"mini/{scenario.name}", errors)
-
-    checks += require(FULL_OUTPUT_MARKERS, full, "full/output", errors)
-    checks += require(MINI_OUTPUT_MARKERS, mini, "mini/output", errors)
-    checks += require(TEMPORAL_MARKERS, full, "full/temporal", errors)
-
-    mini_temporal = (
-        "Vor 1.1.2002 Art.229 §§5/6 EGBGB",
-        "vor 1.1.2018 Art.229 §39 EGBGB",
-        "WEG ab 1.12.2020 §§47/48 WEG",
-        "bis 28.12.2025 §13a a.F., danach §13c",
-        "Fit = gesichert, Teilfit = Argument, sonst Prüfbedarf",
-        "Gebäudetyp E ist kein Gesetz",
-        "MaBV-Juliänderungen lassen §§3/7/12 unberührt",
-    )
-    checks += require(mini_temporal, mini, "mini/temporal", errors)
-
-    forbidden_absolutes = (
-        "§13c statt §13a BeurkG",
-        "Bezugsurkunden: §13c BeurkG; §13a betrifft E-Signatur",
-    )
-    for marker in forbidden_absolutes:
-        checks += 1
-        if marker in full or marker in mini:
-            errors.append(f"obsolete time-blind rule remains: {marker!r}")
-
+def main():
+    manifest = json.loads((PLUGIN / ".codex-plugin/plugin.json").read_text())
+    claude = json.loads((PLUGIN / ".claude-plugin/plugin.json").read_text())
+    version = re.search(r'^  version: "([^"]+)"$', (ROOT / "skill/SKILL.md").read_text(), re.M)[1]
+    errors = []
+    if manifest["name"] != PLUGIN.name or manifest["version"] != version or claude["version"] != version:
+        errors.append("Plugin identity/version differs from prompt")
+    found = {p.parent.name for p in (PLUGIN / "skills").glob("*/SKILL.md")}
+    if found != set(EXPECTED):
+        errors.append(f"Skill entrypoints differ: {found}")
+    for name, resource in EXPECTED.items():
+        directory = PLUGIN / "skills" / name
+        text = (directory / "SKILL.md").read_text()
+        if f"name: {name}\n" not in text:
+            errors.append(f"Skill name differs from folder: {name}")
+        description = re.search(r"^description: (.+)$", text, re.M)
+        if not description or len(description[1]) > 1024:
+            errors.append(f"Missing or excessive discovery description: {name}")
+        metadata = (directory / "agents/openai.yaml").read_text()
+        if f"${name}" not in metadata:
+            errors.append(f"Default prompt does not invoke its skill: {name}")
+        if not (directory / resource).is_file():
+            errors.append(f"Missing runnable/reference resource: {name}/{resource}")
+        for target in re.findall(r"\[[^\]]*\]\(([^)]+)\)", text):
+            if target.startswith(("https://", "#")):
+                continue
+            resolved = (directory / target).resolve()
+            if not resolved.is_relative_to(PLUGIN) or not resolved.is_file():
+                errors.append(f"Broken/non-contained skill reference: {name}: {target}")
+    prompts = manifest["interface"]["defaultPrompt"]
+    if not isinstance(prompts, list) or not 1 <= len(prompts) <= 3 or any(len(p) > 128 for p in prompts):
+        errors.append("Invalid plugin starter prompts")
     if errors:
-        print("FAIL workflow contract:", file=sys.stderr)
-        for error in errors:
-            print(f"- {error}", file=sys.stderr)
-        raise SystemExit(1)
-
-    print(f"check_workflow_contract: ok ({checks} scenario/output/legal checks)")
+        raise SystemExit("\n".join(errors))
+    print("Plugin routing/package: OK (3 separate entrypoints, local references and helpers). Behavioral evaluation is separate.")
 
 
 if __name__ == "__main__":
