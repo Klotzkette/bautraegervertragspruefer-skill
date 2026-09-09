@@ -142,6 +142,39 @@ def extract_urls(citation: str) -> list[str]:
     return [match.rstrip(".,;") for match in URL_RE.findall(citation)]
 
 
+def extract_case_records(section: str) -> list[tuple[int, list[str]]]:
+    """Read complete full-width records, or legacy four-column Markdown rows."""
+    headings = list(re.finditer(r"^### (.+)$", section, re.MULTILINE))
+    if headings:
+        if any(line.startswith("|") for line in section.splitlines()):
+            fail("mixed case-law records and legacy table rows; use one complete format")
+        records = []
+        for index, heading in enumerate(headings):
+            end = headings[index + 1].start() if index + 1 < len(headings) else len(section)
+            block = section[heading.end():end]
+            number = section[:heading.start()].count("\n") + 1
+            columns = [heading.group(1)]
+            for label in ("Harte Fundstelle", "Kernaussage für Verbraucher", "Einsatz im Vertrag"):
+                values = re.findall(r"^\*\*" + re.escape(label) + r":\*\* (.+)$", block, re.MULTILINE)
+                if len(values) != 1:
+                    fail(f"record at line {number} needs exactly one {label}")
+                columns.append(values[0])
+            records.append((number, columns))
+        return records
+
+    records = []
+    for number, line in enumerate(section.splitlines(), start=1):
+        if not line.startswith("|"):
+            continue
+        columns = [part.strip() for part in line.strip().strip("|").split("|")]
+        if columns[0] == "Thema" or all(set(column) <= {"-", ":"} for column in columns):
+            continue
+        if len(columns) != 4:
+            fail(f"table line {number} has {len(columns)} columns instead of 4")
+        records.append((number, columns))
+    return records
+
+
 @lru_cache(maxsize=1)
 def skill_version() -> str:
     match = re.search(
@@ -239,19 +272,10 @@ def main() -> None:
         if token in section:
             fail(f"forbidden token in anchor section: {token}")
 
-    rows: list[tuple[int, list[str]]] = []
-    for number, line in enumerate(section.splitlines(), start=1):
-        if not line.startswith("|"):
-            continue
-        columns = [part.strip() for part in line.strip().strip("|").split("|")]
-        if columns[0] == "Thema" or all(set(column) <= {"-", ":"} for column in columns):
-            continue
-        if len(columns) != 4:
-            fail(f"table line {number} has {len(columns)} columns instead of 4")
-        rows.append((number, columns))
+    rows = extract_case_records(section)
 
     if len(rows) < 49:
-        fail(f"expected at least 49 case-law rows, found {len(rows)}")
+        fail(f"expected at least 49 case-law records, found {len(rows)}")
 
     seen_cases: dict[str, int] = {}
     seen_urls: dict[str, int] = {}
@@ -310,7 +334,7 @@ def main() -> None:
 
     unanchored = sorted(set(CASE_RE.findall(text)) - set(seen_cases))
     if unanchored:
-        fail(f"case-law references outside the anchor table: {', '.join(unanchored)}")
+        fail(f"case-law references outside the anchor records: {', '.join(unanchored)}")
 
     for token in REQUIRED_LEGISLATION_TOKENS:
         if token not in legislation:
@@ -341,7 +365,7 @@ def main() -> None:
 
     print(
         "check_legal_anchors: ok "
-        f"({len(rows)} rows, {total_cases} dockets, {total_urls} case URLs, "
+        f"({len(rows)} records, {total_cases} dockets, {total_urls} case URLs, "
         f"{len(legislation_urls)} legislation URLs"
         f"{', online checked' if args.online else ''})"
     )

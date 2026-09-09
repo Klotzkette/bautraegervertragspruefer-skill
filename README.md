@@ -1,6 +1,6 @@
 # Bauträgervertragsprüfer
 
-Version 4.4.0 prüft deutsche Bauträgerverträge aus Erwerbersicht: Vertragsklauseln, Anlagen, Zahlungsraten, Abnahme, Bausoll und Eigentumssicherung. Jeder wesentliche Befund muss auf eine lesbare Stelle der vorgelegten Akte zurückgehen und eine begründete, zur Vertragsphase passende Handlung ergeben.
+Version 4.4.1 prüft deutsche Bauträgerverträge aus Erwerbersicht: Vertragsklauseln, Anlagen, Zahlungsraten, Abnahme, Bausoll und Eigentumssicherung. Jeder wesentliche Befund muss auf eine lesbare Stelle der vorgelegten Akte zurückgehen und eine begründete, zur Vertragsphase passende Handlung ergeben.
 
 **Menü:** [Prompts](#werkstatt-und-mini-prompt) · [Plugin](#plugin-mit-drei-skills) · [Word](#word-vertragsvorlagen) · [Testakten](#testakten) · [Prüfung](#qualität-und-grenzen) · [Dateien](#repository-dateien) · [Lizenz](#lizenz)
 
@@ -10,6 +10,10 @@ Version 4.4.0 prüft deutsche Bauträgerverträge aus Erwerbersicht: Vertragskla
 | --- | --- | --- |
 | Gründliche Vertragsprüfung | [Werkstatt-Prompt](skill/SKILL.md) | [SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md) |
 | Kleines Kontextfenster | [Mini-Prompt](skill/MINI_SKILL.md) | [MINI_SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md) |
+
+Für Word gibt es jetzt formatierte Fassungen: [Werkstatt-Prompt 4.4.1 als DOCX](docs/downloads/werkstatt-prompt-4.4.1.docx) mit **38 Seiten** und [Mini-Prompt 4.4.1 als DOCX](docs/downloads/mini-prompt-4.4.1.docx) mit **3 Seiten**. Gemessen mit LibreOffice, Letter, Arial 11 pt und 2,54 cm Rändern; Word-Version und Schriftverfügbarkeit können den Umbruch verändern. Markdown selbst hat keine feste Seitenzahl. Lange Erläuterungstabellen stehen nun schon in Markdown als vollbreite Einträge; sämtliche 49 Rechtsprechungsanker samt Fundstellen, Kernaussagen und Einsatzgrenzen bleiben erhalten. Die Word-Dateien enthalten den vollständigen lesbaren Prompt; der technische YAML-Metadatenblock entfällt und Ampelsymbole werden als ROT/ORANGE/GRÜN ausgeschrieben.
+
+**Achtung bei älteren Downloads:** Am 9. September 2026 verweist `releases/latest` noch auf 4.3.0. Die Änderungen 4.4.0/4.4.1 stehen in [PR 19](https://github.com/Klotzkette/bautraegervertragspruefer-skill/pull/19), bis sie übernommen und veröffentlicht werden. Für diesen Stand die Dateien dieses Branches verwenden.
 
 Eine Datei als Arbeitsanweisung in den gewünschten Chat laden oder ihren Text kopieren. Dann den Vertrag und die dazugehörigen Anlagen hinzufügen. Beide Prompts enthalten die nötigen Prüfanweisungen selbst; sie setzen weder dieses Plugin noch ein bestimmtes KI-Produkt voraus. Datei-, Bild- und Internetzugriff hängen vom verwendeten System ab. Die Prompts verlangen, konkrete Lese- und Quellenlücken offenzulegen.
 
@@ -38,6 +42,10 @@ zahlbaren Betrag nur an, soweit er sich aus den Belegen ableiten lässt.
 „Vollständig prüfen“ verlangt die vollständige Analyse. Wer zusätzlich Schreiben möchte, ergänzt: `Vollpaket: Mandantenanschreiben, ausführliches Gutachten und phasengerechtes Schreiben an den Bauträger.` Ein Abbruch lässt sich anhand der Fortsetzungsnotiz fortführen.
 
 Die Werkstatt enthält einen konzentrierten Arbeitsablauf sowie einen ausdrücklich historischen Rechtsprechungs- und Gesetzgebungsbestand. Der Mini-Prompt priorisiert ausführbare Prüfregeln statt langer Aktenzeichenlisten. Die Verwendung in einem anderen Modell ist möglich; eine gleiche Ergebnisqualität über verschiedene Modelle hinweg wird nicht behauptet.
+
+Beide Fassungen verlangen einen ausdrücklichen Verjährungsbefund: Bauwerksmängel regelmäßig fünf Jahre ab maßgeblicher Abnahme (§ 634a Abs. 1 Nr. 2, Abs. 2 BGB), eine Zweijahresverkürzung in Verbraucher-AGB unwirksam nach § 309 Nr. 8 b ff BGB. Vorgezogener Beginn, technische Gebäudeanlagen und verdeckte Mängelanzeigefristen gehören dazu. Echte Individualvereinbarungen und die gesetzliche Zweijahresfrist für nicht bauwerksbezogene Werke werden gesondert beurteilt. Der Mini bleibt mit 7.497 Zeichen unter 7.500. Dazu gibt es [sieben gezielte Testfälle](tests/limitation/README.md) und [tatsächliche Antworten mit getrennter Auswertung](tests/runs/2026-09-09/README.md). Statische Kontrollen sind keine KI-Erfolgsgarantie.
+
+Reproduzierbarer Word-Export: `python scripts/export_prompt_docx.py skill/SKILL.md neuer-werkstatt-prompt.docx --soffice /pfad/zu/soffice`. Benötigt Python mit `python-docx`, Pandoc, LibreOffice und `pdfinfo`. Das Skript erhält bestehende Zieldateien und verweigert die Ausgabe oberhalb von 100 tatsächlich gerenderten Seiten. Vor Weitergabe alle Seiten visuell prüfen; ein Seitenzähler allein ist keine Layoutkontrolle.
 
 ## Plugin mit drei Skills
 

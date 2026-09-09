@@ -13,6 +13,8 @@ Bei DOCX führe die Word-Aufnahme nach [Word-Prüfung](../bautraeger-word-entwur
 
 Jeder wesentliche Befund nennt Originalklausel/Fundstelle, Wirkung für diesen Käufer, Ampel, Norm und Quellenstatus, stärkstes Gegenargument sowie eine phasengerechte Abhilfe. Halte Klauselwirksamkeit, Nachweisstand und heutige Handlung getrennt. Erläutere die tragende Subsumtion im Fließtext; bloße Normlisten und allgemeine Checklisten sind kein Prüfergebnis.
 
+Die Mängelverjährung braucht einen ausdrücklichen Kontrollbefund nach Abschnitt 9.3 der Werkstatt: Bauwerksmängel regelmäßig fünf Jahre ab maßgeblicher Abnahme (§ 634a Abs. 1 Nr. 2, Abs. 2 BGB); Verkürzung auf zwei Jahre in Verbraucher-AGB nach § 309 Nr. 8 b ff unwirksam. Prüfe auch technische Anlagen, vorgezogenen Fristbeginn und verdeckte Ausschlussfristen. Unwirksamkeit nicht zum bloßen Verhandlungswunsch abschwächen; echte Individualvereinbarung und nicht bauwerksbezogene Ansprüche gesondert beurteilen.
+
 Bei „vollständig prüfen“ liefere die vollständige Analyse. Zusätzliche Mandanten- oder Bauträgerschreiben entstehen auf Wunsch oder bei ausdrücklich verlangtem Vollpaket. Bei belastbaren grünen Punkten benenne das konkret geschützte Interesse; bei offenen Unterlagen begründe den Klärungsbedarf, ohne ihre Nichtexistenz zu behaupten.
 
 Quellen im Werkstatt-Prompt sind Rechercheausgangspunkte. Prüfe entscheidungstragende Rechtsaussagen anhand des für den Fall maßgeblichen Normstands und amtlicher Volltexte. Fehlt der Zugriff, kennzeichne die jeweilige Aussage, statt Recherche oder Rechtsprechungsfundstellen zu erfinden.

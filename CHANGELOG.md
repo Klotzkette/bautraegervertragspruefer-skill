@@ -1,5 +1,13 @@
 # Änderungsprotokoll
 
+## 4.4.1 - 9. September 2026
+
+1. Ausdrückliche Verjährungskontrolle in Werkstatt, Mini und Vertragsprüfungs-Skill: fünf Jahre ab maßgeblicher Abnahme für Bauwerksmängel, § 309 Nr. 8 b ff gegen Zweijahresklauseln in Verbraucher-AGB und § 306 Abs. 2 als Rechtsfolge. Früherer Fristbeginn, technische Anlagen und verdeckte Anzeigefristen werden mitgeprüft. Keine falsche allgemeine Unabdingbarkeit aus § 650o; echte Individualvereinbarungen und nicht bauwerksbezogene Werke bleiben getrennt.
+2. Lange Erläuterungstabellen in vollbreite Markdown-Einträge umgestellt. Alle 49 Rechtsprechungsanker mit 53 Aktenzeichen und Quellenadressen bleiben vollständig erhalten; kein Rechtsprechungsbestand wurde allein für die Seitenzahl gestrichen.
+3. Formatierte Word-Prompts ergänzt: Werkstatt 38 Seiten, Mini 3 Seiten bei Letter, Arial 11 pt und 2,54 cm Rändern im LibreOffice-Render. Exportskript misst die tatsächliche Seitenzahl und verweigert eine Ausgabe über 100 Seiten. Ein anderer Markdown-Import oder Word-Umbruch kann abweichen.
+4. Mini durch sprachliche Verdichtung weiterhin unter 7.500 Zeichen (7.497), ohne Abhängigkeit von Langfassung oder Plugin. Spiegelkopien, Plugin-Manifeste und Paket auf 4.4.1 synchronisiert.
+5. Sieben isolierte Testfälle mit getrenntem Erwartungsschlüssel ergänzen die Vertragsakten. Die vorhandene Zweijahresklausel in der Fehlerakte bleibt bewusst als Prüfgegenstand erhalten. Ergänzte Struktur- und Exporttests werden von tatsächlichen Modellantworten getrennt dokumentiert.
+
 ## 4.4.0 - 4. September 2026
 
 1. Werkstatt- und Mini-Prompt als eigenständig ausführbare Prüfaufträge überarbeitet: vollständige Word-Aufnahme, phasenabhängige Rechtsfolgen, konkrete Fundstellen, Gegenargumente, Ersatzklauseln und nachvollziehbare Zahlungsentscheidung. Historische Rechtsanker bleiben ausdrücklich als Recherchebestand erhalten.

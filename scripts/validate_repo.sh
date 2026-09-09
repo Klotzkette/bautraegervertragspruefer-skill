@@ -10,6 +10,8 @@ btv_python="${BTV_PYTHON:-python3}"
 "$btv_python" scripts/package_plugin.py --check
 "$btv_python" scripts/test_plugin_tools.py
 "$btv_python" scripts/test_contract_artifacts.py
+"$btv_python" scripts/test_limitation_controls.py
+"$btv_python" scripts/test_prompt_layout.py
 "$btv_python" tests/verify_testakten.py
 "$btv_python" scripts/check_legal_anchors.py
 "$btv_python" scripts/check_navigation.py

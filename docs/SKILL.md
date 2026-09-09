@@ -2,14 +2,14 @@
 name: bautraegervertrag-pruefen
 description: "Prüft deutsche Bauträgerverträge aus Erwerbersicht: Word-Entwurf, Baubeschreibung, Teilungserklärung, MaBV-Zahlungsplan, Ratenabruf, Sicherheiten, Abnahme und Mängel. Liefert fundstellenbezogene Befunde, nachgerechnete Beträge und passende Änderungsklauseln oder Schreiben."
 metadata:
-  version: "4.4.0"
+  version: "4.4.1"
 ---
 
-# Bauträgervertrag prüfen — Werkstatt-Prompt 4.4.0
+# Bauträgervertrag prüfen — Werkstatt-Prompt 4.4.1
 
 Prüfe die vom Nutzer vorgelegte deutsche Bauträgerakte aus Erwerbersicht. Verbinde Vertragsauslegung, zwingenden Erwerberschutz, tatsächlichen Baufortschritt und die anstehende Entscheidung. Diese Datei ist ein vollständiger Arbeitsauftrag: Sie funktioniert als kopierter Prompt oder hochgeladene Anweisung ohne Plugin, weitere Promptdateien, besondere Befehle oder verstecktes Gedächtnis.
 
-Der Arbeitskern steht vor dem Rechtsprechungsbestand. Wende die Fachprüfung auf den konkreten Vertrag an; schreibe die Anleitung nicht als allgemeine Checkliste ab. Die hinten stehenden Entscheidungen sind Such- und Prüfanker mit Bestand vom 9. August 2026, keine Zusicherung heutiger Gültigkeit oder Passung. Die grundlegenden Normverknüpfungen und Rechenregeln wurden für diese Fassung am 4. September 2026 anhand amtlicher Normtexte überprüft. Bei einem echten Fall zählt der für sein Datum maßgebliche Rechtsstand.
+Der Arbeitskern steht vor dem Rechtsprechungsbestand. Wende die Fachprüfung auf den konkreten Vertrag an; schreibe die Anleitung nicht als allgemeine Checkliste ab. Die hinten stehenden Entscheidungen sind Such- und Prüfanker mit Bestand vom 9. August 2026, keine Zusicherung heutiger Gültigkeit oder Passung. Die grundlegenden Normverknüpfungen und Rechenregeln wurden am 4. September 2026 anhand amtlicher Normtexte überprüft, die Verjährungskontrolle zusätzlich am 9. September 2026. Bei einem echten Fall zählt der für sein Datum maßgebliche Rechtsstand.
 
 ## 1 — Auftrag und sofortiger Einstieg
 
@@ -230,7 +230,7 @@ Notarielle Beurkundung beseitigt AGB-Charakter nicht. Prüfe Verwender, Mehrfach
 | Änderung von Leistung/TE/Plänen | Benannte triftige Gründe, Gleichwertigkeit, Nutzbarkeit, Information und Zumutbarkeit; § 308 Nr. 4. „Im Kern unverändert“ allein ist kein vollständiger Maßstab. |
 | Preisanpassung | § 309 Nr. 1 betrifft Preissteigerungen für Leistungen, die innerhalb von vier Monaten nach Vertragsschluss erbracht werden sollen; maßgeblich ist der vereinbarte Leistungszeitpunkt, nicht allein der Zeitpunkt der Erhöhung. Zusätzlich § 307: Anlass, Bezugsgröße, tatsächliche Kosten, Saldierung von Senkungen, Nachweise und angemessene Rechtsfolge. Viermonatsabstand oder 3-/5-%-Schwelle ist kein pauschaler Freibrief. |
 | Festpreis-Ausnahmen | Erschließung, Hausanschlüsse, Baugrund, Energie/Contracting, Genehmigungsauflagen und Konzernentgelte auf echte Zusatzlast prüfen; Gesamtbelastung in Euro oder mit Berechnungsweg zeigen. |
-| Haftung/Verjährung | § 309 Nr. 7/8, Vorsatz, grobe Fahrlässigkeit, Personenschäden, wesentliche Pflichten, Mängelrechte, Arglist/Garantie. Den konkreten Ausschluss benennen. |
+| Haftung/Verjährung | § 309 Nr. 7/8, Vorsatz, grobe Fahrlässigkeit, Personenschäden, wesentliche Pflichten, Arglist/Garantie. Bauwerksmängel zwingend gesondert nach Abschnitt 9.3 auf Fristverkürzung prüfen; eine allgemeine Haftungsprüfung ersetzt diesen Befund nicht. |
 | Aufrechnung/Zurückbehaltung | §§ 309 Nr. 2/3 und § 307; keine vollständige Zahlung trotz berechtigter Gegenrechte erzwingen. |
 | Vollstreckungsunterwerfung | Forderung, Umfang, Nachweisverzicht, Klauselerteilung und Rechtsbehelfe. Käuferfinanzierung gegenüber eigener Bank von Kaufpreiszugriff des Bauträgers unterscheiden. |
 | Vormerkungslöschung | Nachgewiesene Vertragsbeendigung, Käuferanhörung, Streitfall, Rückzahlung/Sicherheit und Zeitfolge. Eine Verkäuferbehauptung oder bloße Zahlungsaufstellung darf keinen ungeschützten Eigentumsverlust auslösen. |
@@ -285,9 +285,20 @@ Bezugsfertigkeit, Besitzübergabe, Abnahmereife, Abnahme und vollständige Ferti
 
 Bei Mängeln: Vertrags-Soll, Ist-Zustand, Bereich, Abnahmestatus, Anspruchsinhaber, Nacherfüllungsverlangen und angemessene Frist bestimmen. Selbstvornahme/Vorschuss, Minderung, Rücktritt und Schadensersatz erst nach ihren Voraussetzungen und möglichen Ausnahmen ableiten. Vor Abnahme Erfüllungsstadium und gegebenenfalls Abrechnungsverhältnis beachten. Keine pauschale Selbstvornahmeaufforderung vor Nacherfüllungsmöglichkeit. Bei Bauteilöffnung Beweissicherung, technische Verantwortung und Kosten berücksichtigen.
 
-Mängelverjährung regelmäßig § 634a Abs. 1 Nr. 2 und wirksame Abnahme; Arglist, Garantie, Altvertrag, Hemmung, Neubeginn und Verwirkung gesondert. Die 30-Jahres-Linie der aufgeführten BGH-Altfälle betrifft bestimmte Kostenvorschussansprüche, keine allgemeine Frist für jede unwirksame Abnahme. Bauträgervergütung als einheitlicher Anspruch kann §§ 196, 200 BGB unterliegen; nicht mit fünf Jahren für Bauwerksmängel verwechseln. Ein Aufforderungsschreiben oder GdWE-Beschluss hemmt nicht automatisch nach §§ 203/204.
+### 9.3 Pflichtprüfung der Mängelverjährung
 
-### 9.3 Termin- und Schadensprüfung
+Suche im Vertrag und in Anlagen ausdrücklich nach Verjährung, Gewährleistungsdauer, zwei Jahren/24 Monaten, technischen Anlagen, Wartung, Fristbeginn und Mängelanzeige-/Ausschlussfristen. Prüfe die Wirkung auch ohne diese Wörter. Gib für jede abweichende Regelung einen eigenen Befund mit Originalstelle, betroffenem Anspruch, gesetzlicher Frist, vereinbarter Abweichung und Abhilfe aus; bei unveränderter gesetzlicher Regelung genügt ein kurzer positiver Kontrollvermerk.
+
+- **Gesetzlicher Ausgangspunkt:** Für Bauwerksmängel gelten fünf Jahre nach § 634a Abs. 1 Nr. 2 BGB, Beginn mit wirksamer Abnahme nach Abs. 2. Sonder-/Gemeinschaftseigentum und Erwerber getrennt zuordnen; ohne belegten Beginn kein konkretes Fristende erfinden.
+- **Verbraucher-AGB:** Eine Verkürzung auf zwei Jahre ist nach § 309 Nr. 8 b ff BGB unwirksam, nicht nur verhandlungsbedürftig. Das Klauselverbot ohne Wertungsmöglichkeit erfasst jede Erleichterung dieser Bauwerksverjährung, auch vier Jahre oder einen vorgezogenen Beginn. Notartext, Belehrung, Unterschrift oder das Etikett „individuell vereinbart“ heilen das nicht; § 310 Abs. 3 erfasst unter seinen Voraussetzungen auch einmalig vorformulierte Bedingungen.
+- **Verdeckte Verkürzung:** Prüfe Beginn ab Übergabe, technischer Prüfung oder fremder Erstabnahme statt der maßgeblichen eigenen Abnahme sowie Ausschlussfristen für nicht offensichtliche Mängel (§ 309 Nr. 8 b ee). Technische Gebäudeanlagen nicht pauschal wegen Wartung, Herstellerfristen oder VOB/B-Verweis auf zwei Jahre reduzieren; entscheidend ist ihr Bauwerksbezug. Eine zusätzlich gewährte kürzere Herstellergarantie allein kürzt dagegen keine gesetzlichen Rechte.
+- **Grenzen und Folge:** § 634a enthält gesetzliche Fristen, kein allgemeines Verbot jeder Individualvereinbarung; § 650o erklärt § 634a nicht für unabdingbar. Echtes Aushandeln und verbleibende Grenzen gesondert prüfen, keine formularmäßige Bestätigung genügen lassen. Die gesetzlichen zwei Jahre für ein tatsächlich nicht bauwerksbezogenes Werk (§ 634a Abs. 1 Nr. 1) nicht beanstanden. Bei unwirksamer AGB-Verkürzung tritt nach § 306 Abs. 2 die gesetzliche Regel an deren Stelle; vor Beurkundung Streichung/Korrektur, danach Nichtanwendung und Sicherung der tatsächlich laufenden Frist verlangen. Kein pauschaler Zahlungsstopp oder nichtiger Gesamtvertrag.
+
+Arglist, Garantie, Altvertrag, Hemmung, Neubeginn und Verwirkung gesondert prüfen. Die 30-Jahres-Linie der aufgeführten BGH-Altfälle betrifft bestimmte Kostenvorschussansprüche, keine allgemeine Frist für jede unwirksame Abnahme. Bauträgervergütung als einheitlicher Anspruch kann §§ 196, 200 BGB unterliegen; nicht mit fünf Jahren für Bauwerksmängel verwechseln. Ein Aufforderungsschreiben oder GdWE-Beschluss hemmt nicht automatisch nach §§ 203/204.
+
+Amtliche Prüfbasis: [§ 634a BGB](https://www.gesetze-im-internet.de/bgb/__634a.html), [§ 309 BGB](https://www.gesetze-im-internet.de/bgb/__309.html), [§ 310 BGB](https://www.gesetze-im-internet.de/bgb/__310.html), [§ 306 BGB](https://www.gesetze-im-internet.de/bgb/__306.html), [§ 650o BGB](https://www.gesetze-im-internet.de/bgb/__650o.html).
+
+### 9.4 Termin- und Schadensprüfung
 
 Trenne Bezugsfertigkeitstermin, vollständige Fertigstellung, Longstop, Nachfrist, Abnahmefrist und Gewährleistungsfrist. Bei kalendermäßigem Leistungstermin § 286 Abs. 2 Nr. 1 prüfen; Vertretenmüssen und vereinbarte wirksame Verlängerung bleiben relevant. Höhere Gewalt, Witterung, Pandemie, Lieferketten oder GU-Insolvenz brauchen konkretes Ereignis, betroffenes Gewerk, Bauablaufwirkung, Dauer, Ausweichmöglichkeiten und Wiederanlauf.
 
@@ -369,6 +380,7 @@ Vor Abschluss kontrolliere das tatsächlich erzeugte Ergebnis, nicht die bloße 
 - Die Dokumentenkarte enthält DOCX samt tatsächlich geprüften Bestandteilen, Änderungen und Darstellungsgrenzen. Vertrag, PDF und zweisprachige Fassung wurden nicht ungeprüft für identisch erklärt.
 - Ein Entwurf ist oben als solcher sichtbar, seine eigene Urkundennummer bleibt leer und er bestätigt keine geschehenen Beurkundungsakte. Bei einer Originalurkunde ist die echte Dokumentenidentität erhalten.
 - Abnahmefiktion verlangt zur Abwendung mindestens einen Mangel, nicht einen wesentlichen; Abnahmepflicht bleibt getrennt.
+- Die Mängelverjährung hat einen ausdrücklichen Befund: fünf Jahre ab maßgeblicher Abnahme bei Bauwerksmängeln; Zweijahresklausel, früherer Beginn und verdeckte Ausschlussfrist wurden nicht übersehen. Unwirksame Verbraucher-AGB nach § 309 Nr. 8 b ff nicht bloß als Verbesserungswunsch behandeln.
 - Gegenargument, aktueller Nachweis und konkrete Erledigung passen zu jeder priorisierten ID. Kein Auftrag zu unnötiger neuer Beurkundung, unbegründetem Zahlungsstopp oder pauschaler Rückforderung.
 - Alle wichtigen Rechtsfolgen haben verifizierte Quellen oder einen klaren Vorläufigkeitsstatus. Keine erfundenen Urteile, Randnummern, technischen Grenzwerte oder Eingangs-/Fristdaten.
 - Ergebnis, Gutachten und Schreiben verwenden dieselben Beträge, Fristen, Phasen und Befunde. Eine tragfähige Regelung wird nicht bloß zur Erfüllung einer Beanstandungsquote angegriffen.
@@ -381,57 +393,447 @@ Ein Prompt verbessert den Arbeitsablauf; tatsächliche Zuverlässigkeit wird an 
 
 Historischer Recherchebestand vom 9. August 2026, übernommen aus Fassung 4.3.0. Die Aufnahme einer Zeile bestätigt weder ihre heutige Aktualität noch einen erneuten Volltextabruf. Diese Anker betreffen Bauträgerrecht, AGB-Kontrolle oder Notarabwicklung; sie werden nur bei einer konkreten Streitfrage herangezogen. Vor Ausgabe die Links live prüfen und nur solche Kernaussagen als Rechtsprechung ausgeben, die in der zulässigen Quelle tatsächlich verifiziert sind. BGH-Entscheidungen tragen die harte Linie. KG- und OLG-Entscheidungen sind als Instanzanker, Gegenseitenargumente oder Differenzierungsanker zu verwenden; bei Konflikt geht die aktuelle BGH-Linie vor. Amtliche Bundes- und Landesquellen haben Vorrang. DeJure wird nur als entscheidungsgenauer Navigationsanker verwendet, wenn kein neutraler amtlicher Direktpfad verfügbar oder stabil auffindbar ist.
 
-| Thema | Harte Fundstelle | Kernaussage für Verbraucher | Einsatz im Vertrag |
-| --- | --- | --- | --- |
-| Abnahme Gemeinschaftseigentum durch Erwerbervertreter | BGH, Urteil vom 26.03.2026 - VII ZR 68/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1 | Eine Bauträgerklausel, nach der drei aus der Erwerbermitte zu wählende Vertreter das Gemeinschaftseigentum abnehmen, ist unwirksam, wenn dem einzelnen Erwerber nicht das Recht bleibt, die Abnahmefähigkeit selbst zu prüfen und die Abnahme selbst zu erklären. Für den dortigen Kostenvorschussanspruch nach altem Schuldrecht gilt eine Obergrenze von 30 Jahren ab fehlgeschlagener Abnahme. | Jede Vertreter-, Erstverwaltungs- oder Mehrheitsabnahme streng prüfen. Die 30-Jahres-Aussage nicht auf andere Ansprüche oder Sachverhalte übertragen. |
-| Abnahme Gemeinschaftseigentum durch Sachverständigen | BGH, Urteil vom 26.03.2026 - VII ZR 108/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1 | Eine AGB-Klausel, die die Abnahme des Gemeinschaftseigentums einem vereidigten Sachverständigen überträgt, ohne dem Erwerber eigene Prüf- und Abnahmerechte zu lassen, benachteiligt Erwerber unangemessen. Die 30-Jahres-Obergrenze betrifft auch hier den konkret entschiedenen Kostenvorschussanspruch nach altem Schuldrecht. | Gegen Klauseln `Sachverständiger nimmt bindend ab`, auch wenn die WEG ihn wählt; Rechtsfolge und Anspruchsart getrennt prüfen. |
-| Sachverständigenabnahme als OLG-Instanzanker | OLG Stuttgart, Urteil vom 06.06.2024 - 13 U 419/19, DeJure: https://dejure.org/2024,15719 | Die Instanzentscheidung zu BGH VII ZR 108/24 ordnet die Abnahme des Gemeinschaftseigentums durch einen vereidigten Sachverständigen als unwirksame Abnahmeklausel ein und behandelt Verjährungsbeginn/Verwirkung nach fehlgeschlagener Abnahme. | Nur als Instanz- und Suchanker verwenden; im Gutachten den BGH-Anker VII ZR 108/24 tragen lassen. |
-| Frühere 15-Jahres-Instanzlinie (dort nicht tragend) | OLG Stuttgart, Urteil vom 13.05.2025 - 10 U 4/25, amtliches Landesrecht BW: https://www.landesrecht-bw.de/bsbw/document/NJRE001609887 | Der 10. Senat griff seine zuvor entwickelte 15-Jahres-Grenze für Mängelansprüche nach fehlgeschlagener Abnahme auf; im entschiedenen Fall war diese Frist aber noch nicht erreicht und die Grenze deshalb nicht entscheidungstragend. Für die von BGH VII ZR 68/24 und VII ZR 108/24 entschiedenen Altrechts-Kostenvorschusskonstellationen gilt nun die anspruchsgenau begrenzte 30-Jahres-Linie. | Nur als Konflikt-/Verfahrenshistorie verwenden; nicht als fortgeltenden harten Rechtssatz zitieren. Aktuelle BGH-Linie anspruchs- und sachverhaltsgenau anwenden. |
-| MaBV-widriger Zahlungsplan und Bereicherungsausgleich | BGH, Urteil vom 22.12.2000 - VII ZR 310/99, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/1999/VII_ZR_310-99.pdf?__blob=publicationFile&v=1; BGH, Urteil vom 07.11.2013 - VII ZR 167/11, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2011/VII_ZR_167-11.pdf?__blob=publicationFile&v=1 | BGH VII ZR 310/99 trägt die Grundlinie: Eine zu Lasten des Erwerbers von § 3 Abs. 2 MaBV abweichende Abschlagsvereinbarung ist insgesamt nichtig; der übrige Bauträgervertrag bleibt grundsätzlich bestehen und § 641 BGB tritt an die Stelle. BGH VII ZR 167/11 bestätigt dies; vor Abnahme vereinnahmte Zahlungen können nach § 817 Satz 1 BGB zurückzugewähren sein, gezogene Nutzungen richten sich nach § 818 Abs. 1, § 100 BGB. | Nicht Gesamtnichtigkeit oder § 818 Abs. 2 BGB als Automatismus behaupten; Zahlungsplan, Abnahme, Empfängerkenntnis und konkreten Bereicherungsumfang prüfen. |
-| Vollstreckungsunterwerfung mit Fälligkeitsnachweisverzicht | BGH, Urteil vom 27.09.2001 - VII ZR 388/00, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2000/VII_ZR_388-00.pdf?__blob=publicationFile&v=1 | Eine vorformulierte Unterwerfung des Erwerbers in die sofortige Zwangsvollstreckung in sein gesamtes Vermögen benachteiligt ihn unangemessen, wenn der Unternehmer ohne weiteren Nachweis eine vollstreckbare Ausfertigung verlangen kann. Die Klausel verschiebt das Risiko fehlender Fälligkeitsvoraussetzungen und eines vorschnellen Zugriffs auf den Erwerber. | Nicht jede notarielle Vollstreckungsunterwerfung pauschal verwerfen. Entscheidend sind AGB-Charakter, Reichweite, Nachweisverzicht, Klauselerteilung und die Gefahr des Zugriffs vor MaBV-/Vertragsfälligkeit. |
-| Leistungsverweigerung bei Mängeln während des Ratenlaufs | BGH, Urteil vom 27.10.2011 - VII ZR 84/09, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2009/VII_ZR__84-09.pdf?__blob=publicationFile&v=1 | Auch eine nach dem Baufortschritt grundsätzlich fällige Rate darf der Erwerber wegen bereits aufgetretener Baumängel in einem angemessenen Verhältnis zum voraussichtlichen Beseitigungsaufwand zurückhalten. Das Leistungsverweigerungsrecht ist nicht auf die letzte Rate begrenzt. | Bei jeder konkreten Zahlungsanforderung objektiven Bautenstand und Gegenrechte getrennt prüfen; eine erreichte MaBV-Stufe beantwortet noch nicht, welcher Betrag tatsächlich zahlbar ist. |
-| Schlussrate und vollständige Fertigstellung | BGH, Urteil vom 22.04.2026 - VII ZR 88/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__88-25.pdf?__blob=publicationFile&v=1 | Die Formulierung `nach vollständiger Fertigstellung` ist zuerst aus dem konkreten Bauträgervertrag auszulegen. Der BGH hat die pauschale Gleichsetzung vollständiger Fertigstellung mit bloßer Abnahmereife im entschiedenen Vertrag nicht getragen; wenn der Vertrag den Bauträger zur Beseitigung protokollierter Mängel/Restarbeiten verpflichtet, kann die Schlussrate bis dahin unfällig bleiben. | Nicht automatisch `abnahmereif = vollständig fertiggestellt`; Vertrag, Protokoll, Außenanlagen, Restarbeiten und Fälligkeitswortlaut prüfen. |
-| Verjährung des einheitlichen Bauträgervergütungsanspruchs | BGH, Urteil vom 07.12.2023 - VII ZR 231/22, amtliches BGH-PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2022/VII_ZR_231-22.pdf?__blob=publicationFile&v=1 | Der einheitlich für Grundstücksanteil und Eigentumswohnung vereinbarte Vergütungsanspruch des Bauträgers verjährt nach § 196 BGB in zehn Jahren. Die Frist beginnt nach § 200 Satz 1 BGB mit Anspruchsentstehung, regelmäßig also nicht vor Fälligkeit. | Bei Rest- und Schlussraten nicht mit der dreijährigen Regelverjährung argumentieren; Fälligkeit, Hemmung und Einreden getrennt prüfen. Nicht mit der fünfjährigen Mängelverjährung des Erwerbers vermischen. |
-| Schlussrate: Abnahmereife als KG-Instanzlinie | KG Berlin, Urteil vom 27.05.2025 - 21 U 44/22, amtlich: https://gesetze.berlin.de/bsbe/document/NJRE001609941 | Das KG hat `vollständige Fertigstellung` im Sinn der MaBV mit Abnahmereife gleichgesetzt und einzelne Protokollmängel eher über Mängeleinrede/Zurückbehaltung gelöst. Diese Linie ist nach BGH VII ZR 88/25 kein pauschaler Freibrief, sondern nur ein Instanzargument für Verträge ohne besondere Protokoll-/Restarbeitsbindung. | Wenn Bauträger oder Notariat KG 21 U 44/22 zitieren: mit BGH VII ZR 88/25 antworten und konkrete Vertragsauslegung verlangen. |
-| Bezugsfertigkeit und wesentlicher optischer Mangel | KG Berlin, Urteil vom 24.06.2025 - 21 U 156/24, amtlich: https://gesetze.berlin.de/jportal/perma?d=NJRE001612362&portal=bsbe | Eine Wohneinheit ist nur bezugsfertig im Sinn von § 3 Abs. 2 MaBV, wenn sie dauerhaft bezogen werden kann. Auch ein optischer Mangel kann die Bezugsfertigkeit hindern, wenn er nach Vertrag und Abnahmemaßstab wesentlich ist; anderes nur bei wirksam erhobener Unverhältnismäßigkeitseinrede. | Bezugsfertigkeitsrate nicht allein mit faktischer Nutzbarkeit begründen; vertraglich prägende Gestaltungsmängel, Sicherheit/Zugang und Abnahmeverweigerung prüfen. |
-| Flexibler MaBV-Ratenplan | KG Berlin, Urteil vom 20.05.2025 - 21 U 73/24, amtlich: https://gesetze.berlin.de/jportal/perma?d=NJRE001609926&portal=bsbe | Ein Bauträgervertrag ist nicht schon deshalb unwirksam, weil er offenlässt, wie die in § 3 Abs. 2 MaBV genannten Teilbeträge zu höchstens sieben tatsächlichen Raten gebündelt werden. Entscheidend bleibt, ob die später verlangten Zahlungen echte Bautenstände, die Höchstzahl der Raten und die Schutzmechanik der MaBV einhalten. | Nicht zu früh rot markieren: tatsächliche Abrufe, versteckte achte Rate, `Mitteilung` statt Bautenstand, Schlussrate und § 650m-Sicherheit prüfen. |
-| Ratenplan-Revisionsradar (keine Sachentscheidung) | BGH, Beschluss vom 08.07.2026 - VII ZR 169/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR_169-25.pdf?__blob=publicationFile&v=1 | Der Beschluss entscheidet nur, dass das KG die Revision wirksam auf den Antrag zur Feststellung der Nichtigkeit des Ratenzahlungsplans in einem Bauträgervertrag beschränkt hat, und weist die Beschwerde gegen die teilweise Nichtzulassung zurück. Ob der Zahlungsplan materiell unwirksam ist, entscheidet dieser Beschluss nicht. | Nie als Beleg für die Wirksamkeit oder Nichtigkeit eines Ratenplans zitieren. Das Revisionsverfahren zur Sachfrage bleibt gesondert zu beobachten; bis zu einer Sachentscheidung tragen die vorhandenen materiellen Anker. |
-| 5-%-Sicherheit und intransparenter Zahlungsplan | OLG Karlsruhe, Urteil vom 15.07.2025 - 19 U 128/24, amtliches Landesrecht BW: https://www.landesrecht-bw.de/perma?d=NJRE001622440 | Instanzanker: Wird die 5-%-Sicherheit nach § 650m Abs. 2 BGB unklar in den Zahlungsplan eingebaut und dadurch faktisch eine achte Rate erzeugt, können Transparenzgebot und § 3 Abs. 2 MaBV verletzt sein. | Zahlungsplan und Sicherheit zusammen lesen; die konkrete Klauselwirkung prüfen, nicht jede Einbehaltsregel pauschal verwerfen. |
-| DIN/Schallschutz im Werkvertragsrecht | BGH, Urteil vom 14.06.2007 - VII ZR 45/06, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2006/VII_ZR__45-06.pdf?__blob=publicationFile&v=1 | Das geschuldete Schallschutzniveau folgt aus Vertragsauslegung, Qualitäts- und Komfortstandard sowie vereinbarter Bauweise. Die Mindestwerte der DIN 4109 erschöpfen das Bausoll nicht; regelgerechte Bauweise kann höhere Werte schulden. | Im Bauträger-Werkvertragsrecht DIN-Konformität nie als abschließenden Mangelfreiheitsbeweis behandeln. |
-| Änderung anerkannter Regeln vor Abnahme | BGH, Urteil vom 14.11.2017 - VII ZR 65/14, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2014/VII_ZR__65-14.pdf?__blob=publicationFile&v=1 | Im entschiedenen VOB/B-Vertrag waren grundsätzlich die Regeln bei Abnahme maßgeblich. Bei einer Änderung zwischen Vertragsschluss und Abnahme muss der Unternehmer regelmäßig informieren; der Auftraggeber kann den neuen Standard mit möglicher Vergütungsanpassung verlangen oder nach Aufklärung davon absehen. Mehrkosten können Sowieso-Kosten sein. | Auf Bauträgerverträge nur nach Prüfung von Vertragsinhalt und Vergütungsregime übertragen; die VOB/B-Nachtragsnormen gelten dort nicht automatisch. |
-| Einzelgewerke und sukzessive Bauaufträge | BGH, Urteile vom 16.03.2023 - VII ZR 94/22, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2022/VII_ZR__94-22.pdf?__blob=publicationFile&v=1, und vom 26.10.2023 - VII ZR 25/23, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2023/VII_ZR__25-23.pdf?__blob=publicationFile&v=1 | Ein Vertrag über ein einzelnes Gewerk eines Neubaus ist kein Verbraucherbauvertrag nach § 650i Abs. 1 BGB. Auch mehrere selbständige, sukzessive mit demselben Unternehmer geschlossene Verträge werden nicht rückwirkend oder in ihrer Gesamtheit zu Verbraucherbauverträgen. | Einzelgewerke nicht mit §§ 650i ff. prüfen. Insbesondere kann die Ausnahme von der Bauhandwerkersicherung nach § 650f Abs. 6 Satz 1 Nr. 2 Fall 1 fehlen; allgemeines Verbraucherrecht des konkreten Einzelvertrags gesondert prüfen. |
-| Koordination bei getrennter Planer- und Unternehmervergabe | BGH, Urteil vom 15.01.2026 - VII ZR 119/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_119-24.pdf?__blob=publicationFile&v=1 | Beauftragt der Besteller verschiedene Planer und ausführende Unternehmen, obliegt ihm im Verhältnis zu diesen grundsätzlich die Koordination des Bauablaufs; bedient er sich dafür eines Dritten, kann dessen Verschulden über § 254 Abs. 2 Satz 2, § 278 BGB als Mitverschulden zugerechnet werden. Das betrifft die Besteller-/Bauherrenrolle, nicht den klassischen Erwerber, bei dem der Bauträger selbst Bauherr und Herstellungsverpflichteter bleibt. | Bei Baugruppen, Eigenleistungen und unmittelbarer Einzelvergabe Verantwortungsmatrix für Planstände, Freigaben und Schnittstellen verlangen; die Linie nicht auf den passiven Bauträgererwerber übertragen. |
-| DIN-Vermutung im WEG-Binnenrecht | BGH, Urteil vom 24.05.2013 - V ZR 182/12, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2012/V_ZR_182-12.pdf?__blob=publicationFile&v=1; wiederholt in den Gründen von BGH, Urteil vom 23.05.2025 - V ZR 39/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR__39-24.pdf?__blob=publicationFile&v=1 | Bei ordnungsmäßiger Verwaltung und Sanierung gravierender Mängel des Gemeinschaftseigentums tragen DIN-Normen nach der Rechtsprechung des V. Zivilsenats eine widerlegliche Vermutung, die allgemein anerkannten Regeln der Technik wiederzugeben. V ZR 39/24 wiederholt diese auf V ZR 182/12 zurückgehende Linie nur in den Entscheidungsgründen; sein eigener Streitgegenstand war kein Bauträger-Werksoll. | Diese Verwaltungsregel nicht unbesehen als abschließenden Werkvertragsmaßstab zwischen Erwerber und Bauträger verwenden und V ZR 39/24 nicht als eigenständige Bauträgerentscheidung ausgeben. |
-| Technikräume und Sondereigentum | BGH, Urteil vom 20.02.2026 - V ZR 34/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__34-25.pdf?__blob=publicationFile&v=1 | Ein Raum steht nicht schon deshalb zwingend im Gemeinschaftseigentum, weil er Anlagen oder Einrichtungen enthält, die dem gemeinschaftlichen Gebrauch dienen; der Raum kann Sondereigentum sein. Die gemeinschaftsdienende Anlage selbst, Zugang, Wartung und Mitbenutzungsrechte sind davon getrennt zu bestimmen. | Bei Technik-, Zähler-, Heizungs- und Hausanschlussräumen nicht pauschal `Raum = Gemeinschaftseigentum` behaupten. Teilungserklärung, Aufteilungsplan, Bauteil, Anlage und gesicherte Zutrittsrechte einzeln prüfen. |
-| Änderung des WEG-Kostenverteilungsschlüssels | BGH, Urteil vom 24.04.2026 - V ZR 50/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__50-25.pdf?__blob=publicationFile&v=1 | Eine Mehrheitsentscheidung nach § 16 Abs. 2 Satz 2 WEG über einen anderen Kostenmaßstab unterliegt nicht nur einer Willkürkontrolle. Der neue Maßstab muss den Interessen der Gemeinschaft und der einzelnen Eigentümer angemessen sein und darf niemanden ungerechtfertigt benachteiligen; bei unterschiedlich großen Einheiten ist der Wechsel von Fläche/Miteigentumsanteilen zur Verteilung nach Einheiten für eine Heizungserneuerung regelmäßig nicht ordnungsmäßig. | Kostenklauseln und Öffnungsklauseln nach Grundmaßstab, Beschlusskompetenz, konkreter Maßnahme, Einheitsgrößen und Mehrbelastung prüfen; Mehrheitsmacht nicht als Freibrief darstellen. |
-| Änderung der Teilungserklärung/Gemeinschaftsordnung | BGH, Urteil vom 23.01.2026 - V ZR 91/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__91-25.pdf?__blob=publicationFile&v=1 | AGB-Pflichten des Verbrauchers, späteren Änderungen der Teilungserklärung durch den Bauträger zuzustimmen, sind nach § 308 Nr. 4 BGB unwirksam, wenn die Klausel keine im Einzelnen benannten triftigen Gründe erkennen lässt. Aus § 242 BGB folgt dann regelmäßig keine Ersatz-Zustimmungspflicht. Private Vermögensverwaltung kann Verbraucherstatus bleiben, auch bei Gewerbeeinheit. | Weite Vollmachten und Zustimmungspflichten zu Teilungserklärung, Gemeinschaftsordnung, Untergemeinschaften, Nutzungsänderungen rot markieren. |
-| Stimmrechtsbeschränkungen in der Gemeinschaftsordnung | BGH, Urteil vom 27.02.2026 - V ZR 189/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR_189-24.pdf?__blob=publicationFile&v=1 | Das Stimmrecht von Sondereigentümern kann durch Vereinbarung objektbezogen beschränkt werden, der Umfang muss sich aber eindeutig aus der Gemeinschaftsordnung ergeben; unauflösbare Auslegungszweifel machen die beabsichtigte Beschränkung unwirksam. Ein Ausschluss bestimmter Eigentümer von Verwalterbestellung sowie Beschlüssen über Jahresabrechnung und Wirtschaftsplan ist nichtig. | Gemeinschaftsordnung nicht nur nach Kosten, sondern beschlussgegenstandsgenau nach Teilnahme- und Stimmrechten prüfen. Das Stimmrecht bei Verwalterbestellung, Jahresabrechnung und Wirtschaftsplan darf Teilgruppen nicht entzogen werden. |
-| Gerichtliche Klärung der Gemeinschaftsordnung | BGH, Urteil vom 27.02.2026 - V ZR 98/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__98-25.pdf?__blob=publicationFile&v=1 | Auch nach dem WEMoG kann ein Eigentümer konkrete Rechte und Pflichten aus der Gemeinschaftsordnung, etwa die Kostentragung, gegen die GdWE feststellen lassen; das Urteil wirkt entsprechend § 44 Abs. 3 WEG für und gegen alle Eigentümer. Auslegungs- oder Wirksamkeitsstreit kann außerdem mit einer Beschlussersetzungsklage geklärt werden. | Bei strukturellem Streit richtigen Gegner und Rechtsschutzziel wählen: GdWE, konkrete Feststellung oder Beschlussersetzung. Nicht jeden Auslegungsstreit nur über die Anfechtung einer Einzelabrechnung führen. |
-| Absenkungs- und Umlaufbeschluss | BGH, Urteil vom 17.07.2026 - V ZR 190/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR_190-25.pdf?__blob=publicationFile&v=1 | Ein Absenkungsbeschluss nach § 23 Abs. 3 Satz 2 WEG ist mit der Beschlussmängelklage angreifbar. Seine Nichtigkeit oder Ungültigerklärung macht den nachfolgenden, mit einfacher Mehrheit gefassten Umlaufbeschluss nur anfechtbar, nicht automatisch nichtig; wird der Sachbeschluss bestandskräftig, fehlt der isolierten Klage gegen den Absenkungsbeschluss das Rechtsschutzinteresse. | Bei Beschlussketten Absenkungs- und Sachbeschluss jeweils fristgerecht prüfen und gegebenenfalls beide angreifen. Nie auf eine automatische Fehlerfortpflanzung oder spätere Heilung durch den ersten Prozess vertrauen. |
-| Klima-Splitgerät als bauliche Veränderung | BGH, Urteil vom 17.07.2026 - V ZR 162/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR_162-25.pdf?__blob=publicationFile&v=4 | Eine Beeinträchtigung nach § 20 Abs. 3 WEG setzt voraus, dass sich ein Eigentümer nach der Verkehrsanschauung verständlicherweise beeinträchtigt fühlen kann; die Eigentumspositionen sind abzuwägen. Grundsätzlich kann die Gestattung eines Klima-Splitgeräts auf dem Balkon verlangt werden, wobei erwartbare spätere Betriebsgeräusche die Gestattung regelmäßig nicht schon verhindern. | Pauschale Verbote und Änderungsvollmachten zu Außengeräten, Fassade und Balkon differenziert prüfen. Gestattung der Installation, technische Ausführung sowie spätere Nutzung, Geräusch- und Wartungsfolgen getrennt regeln. |
-| Vertragsstrafe trotz Rücktritt bei Bauträgerverzug | BGH, Urteil vom 22.05.2025 - VII ZR 129/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_129-24.pdf?__blob=publicationFile&v=1 | Tritt der Besteller aufgrund eines vertraglichen Rücktrittsrechts wegen nicht termingerechter Fertigstellung eines abnahmereifen Bauwerks zurück, erlischt eine bereits verwirkte verzugsbedingte Vertragsstrafe nicht, sofern nichts Abweichendes vereinbart ist. | Bei Longstop-Date, Rücktritt und Terminverzug Vertragsstrafe gesondert sichern; Rücktritt nicht vorschnell als Verzicht auf Verzugssanktionen behandeln. |
-| Planabweichung in der Errichtungsphase | BGH, Urteil vom 16.05.2025 - V ZR 270/23, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_270-23.pdf?__blob=publicationFile&v=1 | Der teilende Bauträger handelt bei Errichtung der Anlage nicht als Wohnungseigentümer, sondern in Erfüllung seiner vertraglichen Pflichten. Bei nicht plangerechter Errichtung bestehen grundsätzlich vertragliche Ansprüche gegen den Bauträger, nicht WEG-Beseitigungsansprüche wegen rechtswidriger Beeinträchtigung. | Planabweichungen vor Abnahme/Erstherstellung vertraglich angreifen: Bausoll, Nachbesserung, Einbehalt, Abnahmevorbehalt, nicht vorschnell nur § 1004/WEG. |
-| Mängelrechte in Mehrhausanlagen mit Untergemeinschaften | BGH, Urteil vom 23.02.2024 - V ZR 132/23, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_132-23.pdf?__blob=publicationFile&v=1 | Auch wenn die Gemeinschaftsordnung weitgehend verselbständigte Untergemeinschaften bildet und der Mangel nur deren Gebäudeteil betrifft, kann nur die Gesamt-GdWE die auf ordnungsgemäße Herstellung des Gemeinschaftseigentums gerichteten Erwerberrechte zur alleinigen Durchsetzung an sich ziehen. Auch Prozessführung, Vergleichsverhandlungen und deren Finanzierung fallen dann in ihre Beschlusskompetenz. | Vor Aufforderung oder Klage Beschlussorgan, Anspruchsbündelung, betroffenen Gebäudeteil und Prozessführungsbefugnis prüfen; Untergemeinschaft oder Einzelbeirat nicht vorschnell als anspruchsführungsbefugt behandeln. |
-| Pflichten des bauträgernahen Erstverwalters bei Baumängeln | BGH, Urteil vom 19.07.2019 - V ZR 75/18, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2018/V_ZR__75-18.pdf?__blob=publicationFile&v=1 | Ein mit dem Bauträger identischer, verbundener oder von ihm abhängiger Verwalter muss wie jeder Verwalter Handlungsoptionen aufzeigen, auf mögliche Gewährleistungsansprüche und drohende Verjährung hinweisen und bei Anzeichen fortbestehender Mängel auf sachgerechte Beschlussfassung hinwirken. Der Interessenkonflikt mindert die Pflichten nicht. | Verwaltervertrag, anwendbaren WEG-Rechtsstand, Kenntniszeitpunkt, Warnung, Beschlussvorbereitung, Verjährungsnähe, Kausalität und Schaden belegen; nicht aus bloßer Bauträgernähe automatisch Haftung ableiten. |
-| Steckengebliebener Bau und Erstherstellung | BGH, Urteil vom 20.12.2024 - V ZR 243/23, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_243-23.pdf?__blob=publicationFile&v=1; konkretisiert durch BGH, Urteil vom 27.02.2026 - V ZR 219/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR_219-24.pdf?__blob=publicationFile&v=1 | V ZR 243/23 begründet den durch § 242 BGB begrenzten Anspruch des Wohnungseigentümers gegen die GdWE auf erstmalige Errichtung des Gemeinschaftseigentums, sobald mindestens ein Erwerber (werdender) Wohnungseigentümer ist. V ZR 219/24 konkretisiert den Umfang: Im räumlichen Bereich der Einheit können auch nichttragende Innenwände, unter Putz verlegte Leitungen und Heizungsanschluss erfasst sein. | Nach Bauträgerinsolvenz nicht nur Bauträger-/Insolvenzansprüche prüfen, sondern auch GdWE-Erstherstellung, Zumutbarkeit, Kostenlast, Beschlussersetzung und Abgrenzung zu baulichen Veränderungen. |
-| Gemeinschaftsordnung und anfängliche Mängel | BGH, Urteil vom 23.05.2025 - V ZR 36/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR__36-24.pdf?__blob=publicationFile&v=1 | Eine Gemeinschaftsordnung, die einzelnen Wohnungseigentümern die Kosten für Instandhaltung/Instandsetzung bestimmter Teile des Gemeinschaftseigentums im Bereich ihres Sondereigentums auferlegt, umfasst im Zweifel auch Kosten für die Beseitigung anfänglicher Mängel. | Kosten- und Erhaltungsklauseln zu Fenstern, Türen, Leitungen, Balkonen, Terrassen, Tiefgaragenplätzen streng prüfen; anfängliche Baumängel ausdrücklich aus Erwerber-Sonderkosten ausnehmen oder Regress/Sicherung regeln. |
-| Erhaltungslast und Beschlusskompetenz der GdWE | BGH, Urteil vom 24.04.2026 - V ZR 102/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR_102-24.pdf?__blob=publicationFile&v=1 | Die Übertragung der Erhaltung bestimmter Teile des Gemeinschaftseigentums auf einzelne Wohnungseigentümer nimmt der GdWE nicht die Beschlusskompetenz. Wird die GdWE selbst tätig, bleibt es grundsätzlich bei der vereinbarten individuellen Kostenlast; bei zwingendem Sanierungsbedarf mehrerer Balkone muss die GdWE ihrerseits Erhaltungsmaßnahmen ergreifen. | Erhaltungszuständigkeit, Entscheidungskompetenz und Kostenlast in Teilungserklärung/Gemeinschaftsordnung getrennt prüfen; eine Übertragung auf den Erwerber nicht als vollständigen Rückzug der GdWE lesen. |
-| Schadensersatz gegen die GdWE wegen verzögerter Erhaltung | BGH, Urteil vom 27.02.2026 - V ZR 18/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__18-25.pdf?__blob=publicationFile&v=1 | Verletzt die GdWE ihre Pflicht zur ordnungsmäßigen Verwaltung und entsteht dadurch ein Schaden am Sondereigentum, kommt § 280 Abs. 1 BGB in Betracht. Das ist keine Garantiehaftung: Ersatz beginnt erst ab dem Zeitpunkt, zu dem die Maßnahme bei pflichtgemäßem Handeln beschlossen und ausgeführt worden wäre; Miet- oder Pachtausfall setzt eine nach der Gemeinschaftsordnung zulässige Nutzung voraus. | Bei Mängelfolgen Zeitachse, Beschlussreife, realistische Ausführungsdauer, Kausalität und zulässige Nutzung beweisbar machen; nicht jeden Gemeinschaftsmangel sofort der GdWE zurechnen. |
-| Vor-GdWE-Verträge und faktische Verwaltung | BGH, Urteil vom 30.01.2026 - V ZR 76/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__76-25.pdf?__blob=publicationFile&v=1 | Vor Entstehen der GdWE vom Bauträger/teilenden Eigentümer angebahnte Verträge gehen unter altem WEG-Recht regelmäßig nicht ohne Beschluss auf die spätere GdWE über; faktische Verwalter treffen grundsätzlich Verwalterpflichten und können der GdWE nach § 280 Abs. 1 BGB haften. | Altverträge, Park-/Service-/Energie-/Verwalterkosten und Kontoführung nicht als automatisch übernommene Gemeinschaftslast behandeln; Beschluss, Vertretungsmacht, Genehmigung und Verwalterhaftung prüfen. |
-| Bindung an ein Bauträgerangebot | BGH, Urteil vom 26.02.2016 - V ZR 208/14, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2014/V_ZR_208-14.pdf?__blob=publicationFile&v=1 | Eine AGB-Bindung des Antragenden von mehr als drei Monaten verstößt auch bei einem inhaltlich beschränkten Lösungsrecht gegen § 308 Nr. 1 BGB. Auch eine vom Verwender gestellte aufschiebende Bedingung `Finanzierung gesichert` hielt der Kontrolle nicht stand. | Bei getrennt beurkundetem Angebot und Annahme Bindungsfrist, Fortgeltung, verspätete Annahme und Finanzierungsbedingung prüfen; keine pauschale Drei-Monats-Freigabe für anders gestaltete Klauseln. |
-| MaBV als Schutzgesetz und persönliche Geschäftsführerhaftung | BGH, Urteil vom 05.12.2008 - V ZR 144/07, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2007/V_ZR_144-07A.pdf?__blob=publicationFile&v=1 | §§ 3 und 7 MaBV sind Schutzgesetze im Sinn von § 823 Abs. 2 BGB. Ein GmbH-Geschäftsführer kann persönlich haften, wenn er den Schaden durch eigene Schutzgesetzverletzung verursacht; die §-7-Bürgschaft sichert auch den Eigentumsverschaffungsanspruch. | Organstellung allein genügt nicht: konkrete Handlung oder beherrschte Gefahrenlage, Pflichtverletzung, Verschulden, Kausalität und Schaden feststellen. |
-| §-7-MaBV-Bürgschaft und Bauzeitverzug | BGH, Urteil vom 21.01.2003 - XI ZR 145/02, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/XI_ZS/2002/XI_ZR_145-02.pdf?__blob=publicationFile&v=1 | Eine Bürgschaft nach § 7 MaBV sichert grundsätzlich nicht den Anspruch auf Ersatz eines reinen Bauzeit-Verzugsschadens nach damaligem Recht. | §-7-Sicherheit nicht als Vollkaskodeckung behandeln: Rückgewähr-/Auszahlungs- und Eigentumsverschaffungsrisiko von Verzugs-, Qualitäts- und Folgeschäden trennen; aktuellen Bürgschaftstext prüfen. |
-| §-7-MaBV-Bürgschaftsradar (keine materielle Klärung) | BGH, Beschluss vom 21.04.2026 - XI ZR 12/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/XI_ZS/2025/XI_ZR__12-25.pdf?__blob=publicationFile&v=1 | Der BGH hob die Vorentscheidung wegen einer Verletzung des rechtlichen Gehörs bei der Prüfung fortlaufender Avalzinsen und des Feststellungsinteresses auf. Der Beschluss trifft keine abschließende Sachentscheidung dazu, wann die konkrete §-7-MaBV-Bürgschaft alter Fassung herauszugeben ist oder welche gesicherten Ansprüche fortbestehen. | Nicht als materiellen Leitsatz zu Sicherungszweck, Verjährung oder Rückgabe der Bürgschaft verwenden. Bürgschaftstext, historische MaBV-Fassung, gesicherte Ansprüche, Abnahme und Tatsachennachweis eigenständig prüfen. |
-| Fahrlässiges Organisationsverschulden bei MaBV-Raten | OLG Celle, Urteil vom 25.11.2025 - 3 U 171/24, amtliches NI-VORIS: https://voris.wolterskluwer-online.de/browse/document/80ad4648-2866-428d-9df0-1733d78ed4a0 | Instanzanker: § 3 Abs. 2 und § 5 MaBV wurden als Schutzgesetze angewandt; für die persönliche Haftung genügte fahrlässige Organisation und Überwachung der Ratenanforderung. Delegation ohne Instruktion und Kontrolle entlastete die Geschäftsführer nicht. | Nicht schematisch Vorsatz verlangen oder Haftung behaupten: Ressort, Delegation, Kontrollen, Bautenstandsberichte und konkrete Ratenabrufe beweisen. |
-| Notarielle Belehrung bei ungesicherter Vorleistung | BGH, Urteil vom 17.01.2008 - III ZR 136/07, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/III_ZS/2007/III_ZR_136-07.pdf?__blob=publicationFile&v=1 | Soll der Bauträger Erschließungs-/Anschlusskosten tragen, werden diese aber vor ihrer Festsetzung in eine frühe Abschlagsrate eingerechnet, liegt eine ungesicherte Vorleistung vor, die eine doppelte notarielle Belehrung auslösen kann. | Kostentragung, Fälligkeitsstufe und tatsächliche Festsetzung abgleichen; konkrete Belehrung und Wiederholung unmittelbar vor Vollzug der Vorleistung prüfen. |
-| Abnahme durch bauträgernahe Tochtergesellschaft | BGH, Urteil vom 09.11.2023 - VII ZR 241/22, amtlich: https://www.rechtsprechung-im-internet.de/jportal/?quelle=jlink&docid=KORE305472023&psml=bsjrsprod.psml | Eine Klausel, die die Abnahme des Gemeinschaftseigentums durch eine vom Bauträger als Erstverwalter bestimmte, wirtschaftlich verbundene Tochtergesellschaft ermöglicht, ist unwirksam. Macht die GdWE als Prozessstandschafterin Mängelrechte der Erwerber geltend, kann sich der Bauträger als Klauselverwender nicht darauf zurückziehen, es fehle mangels wirksamer Abnahme noch an Mängelrechten. | Gegen Tochtergesellschaft, Erstverwalter, Projektsteuerer, `neutralen` Bauträgerdienstleister. |
-| Übergabeprotokolle, Nutzung und Kaufpreiszahlung als keine sichere GE-Abnahme | OLG München, Beschluss vom 08.01.2024 - 9 U 1803/23 Bau e, amtlicher bayerischer Bürgerservice: https://www.gesetze-bayern.de/Content/Document/Y-300-Z-BECKRS-B-2024-N-49081?hl=true | Ist im Vertrag eine Abnahme des Gemeinschaftseigentums durch einen Dritten vorgesehen, begründen einzelne Übergabeprotokolle, Kaufpreiszahlung, Nutzung oder längere Rügelosigkeit ohne klare Erklärung und Erklärungsbewusstsein regelmäßig keine Abnahme des Gemeinschaftseigentums. | Gegen Einwände `Schlüsselübergabe`, `voll bezahlt`, `jahrelang genutzt`, `Protokoll unterschrieben`; Vertragskontext und Abnahmewillen konkret prüfen. |
-| Individuell unterschriebenes Abnahmeprotokoll | OLG Braunschweig, Beschluss vom 02.06.2025 - 8 U 29/24, DeJure: https://dejure.org/2025,15291 | Instanzanker gegen Übertreibung: Ein von einem Erwerber individuell unterzeichnetes Abnahmeprotokoll ist gesondert auszulegen und nicht schon wegen einer unvollständigen Protokollierung oder einer danebenstehenden unwirksamen Formularklausel automatisch unwirksam. | Erklärung, Abnahmewillen, Reichweite sowie Sonder-/Gemeinschaftseigentum konkret feststellen; erst danach Verjährungsfolgen ziehen. |
-| GdWE bündelt Mängelrechte und Restkaufpreis | OLG Stuttgart, Urteil vom 28.04.2026 - 10 U 39/25, DeJure: https://dejure.org/2026,14078 | Nicht rechtskräftiger Instanzanker: Verlangt die GdWE nach wirksamer Bündelung Kostenvorschuss für Mängel am Gemeinschaftseigentum, kann der Restkaufpreis trotz fehlender Abnahmereife des Gemeinschaftseigentums fällig sein; in Betracht kommt Zahlung nur Zug um Zug an die GdWE. | Beschluss, Anspruchsbündelung, Nacherfüllungsrecht, konkrete Gegenrechte und den Zahlungsempfänger prüfen; nicht als allgemeine Sperre für Erwerbereinreden verwenden. |
-| Erstverwalter-Abnahme Gemeinschaftseigentum (Grundlinie) | BGH, Beschluss vom 12.09.2013 - VII ZR 308/12, amtlich: https://www.rechtsprechung-im-internet.de/jportal/?quelle=jlink&docid=KORE311712013&psml=bsjrsprod.psml | Eine in AGB eines Bauträger-Erwerbsvertrags enthaltene Klausel, die die Abnahme des Gemeinschaftseigentums durch einen vom Bauträger bestimmbaren Erstverwalter zulässt, benachteiligt die Erwerber unangemessen und ist unwirksam. Grundlegende Linie, auf der die neueren Entscheidungen aufbauen. | Bestätigt seit Langem: Erstverwalter-Abnahme ersetzt nicht das eigene Abnahmerecht des Erwerbers. |
-| Nachzügler-Klausel `Abnahme ist erfolgt` | BGH, Urteil vom 25.02.2016 - VII ZR 49/15 (BGHZ 209, 128), amtlich: https://www.rechtsprechung-im-internet.de/jportal/?quelle=jlink&docid=KORE307992016&psml=bsjrsprod.psml | Eine formularmäßige Klausel im Erwerbsvertrag eines Nachzüglers, nach der die Abnahme des Gemeinschaftseigentums bereits erfolgt sei, ist unwirksam; dem später erwerbenden Käufer darf das Recht, über die Abnahme selbst oder durch eine Person seines Vertrauens zu entscheiden, nicht entzogen werden. | Gegen `die Abnahme ist bereits erfolgt`-Klauseln in Nachzüglerverträgen. |
-| Nachzügler: Ingenieurbüro-/Beschlussabnahme | BGH, Urteil vom 12.05.2016 - VII ZR 171/15 (BGHZ 210, 206), amtlich: https://www.rechtsprechung-im-internet.de/jportal/?quelle=jlink&docid=KORE300832016&psml=bsjrsprod.psml | Für Mängel an neu errichteten Eigentumswohnungen bleibt grundsätzlich Werkvertragsrecht anwendbar, auch wenn das Bauwerk bei Vertragsschluss bereits fertiggestellt ist. Eine frühere Abnahme des Gemeinschaftseigentums durch Ingenieurbüro oder Eigentümerversammlungsbeschluss bindet Nachzügler nicht; Formularklauseln, die Abnahme und Verjährungsbeginn auf sie erstrecken, sind unwirksam. | Nachzüglerverträge getrennt prüfen: keine automatische Bindung an frühere GE-Abnahme, keine vorverlegte Mängelverjährung. |
-| Notaranderkonto bei Bauträgerabwicklung | BGH, Beschluss vom 02.08.2023 - VII ZB 28/20, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2020/VII_ZB__28-20.pdf?__blob=publicationFile&v=1 | § 57 Abs. 2 BeurkG richtet sich an den Notar; ein fehlendes berechtigtes Sicherungsinteresse macht die zivilrechtliche Verwahrungsabrede nicht automatisch unwirksam. Bei Abtretung/Pfändung der Kaufpreisforderung kann der Auszahlungsanspruch gegen den Notar miterfasst sein. | Die Entscheidung nicht als MaBV-Freigabe missverstehen; Verwahrungsvereinbarung, notarielle Amtspflicht, Fälligkeit und Empfangsberechtigung getrennt prüfen. |
+
+### Abnahme Gemeinschaftseigentum durch Erwerbervertreter
+
+**Harte Fundstelle:** BGH, Urteil vom 26.03.2026 - VII ZR 68/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Eine Bauträgerklausel, nach der drei aus der Erwerbermitte zu wählende Vertreter das Gemeinschaftseigentum abnehmen, ist unwirksam, wenn dem einzelnen Erwerber nicht das Recht bleibt, die Abnahmefähigkeit selbst zu prüfen und die Abnahme selbst zu erklären. Für den dortigen Kostenvorschussanspruch nach altem Schuldrecht gilt eine Obergrenze von 30 Jahren ab fehlgeschlagener Abnahme.
+
+**Einsatz im Vertrag:** Jede Vertreter-, Erstverwaltungs- oder Mehrheitsabnahme streng prüfen. Die 30-Jahres-Aussage nicht auf andere Ansprüche oder Sachverhalte übertragen.
+
+
+### Abnahme Gemeinschaftseigentum durch Sachverständigen
+
+**Harte Fundstelle:** BGH, Urteil vom 26.03.2026 - VII ZR 108/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Eine AGB-Klausel, die die Abnahme des Gemeinschaftseigentums einem vereidigten Sachverständigen überträgt, ohne dem Erwerber eigene Prüf- und Abnahmerechte zu lassen, benachteiligt Erwerber unangemessen. Die 30-Jahres-Obergrenze betrifft auch hier den konkret entschiedenen Kostenvorschussanspruch nach altem Schuldrecht.
+
+**Einsatz im Vertrag:** Gegen Klauseln `Sachverständiger nimmt bindend ab`, auch wenn die WEG ihn wählt; Rechtsfolge und Anspruchsart getrennt prüfen.
+
+
+### Sachverständigenabnahme als OLG-Instanzanker
+
+**Harte Fundstelle:** OLG Stuttgart, Urteil vom 06.06.2024 - 13 U 419/19, DeJure: https://dejure.org/2024,15719
+
+**Kernaussage für Verbraucher:** Die Instanzentscheidung zu BGH VII ZR 108/24 ordnet die Abnahme des Gemeinschaftseigentums durch einen vereidigten Sachverständigen als unwirksame Abnahmeklausel ein und behandelt Verjährungsbeginn/Verwirkung nach fehlgeschlagener Abnahme.
+
+**Einsatz im Vertrag:** Nur als Instanz- und Suchanker verwenden; im Gutachten den BGH-Anker VII ZR 108/24 tragen lassen.
+
+
+### Frühere 15-Jahres-Instanzlinie (dort nicht tragend)
+
+**Harte Fundstelle:** OLG Stuttgart, Urteil vom 13.05.2025 - 10 U 4/25, amtliches Landesrecht BW: https://www.landesrecht-bw.de/bsbw/document/NJRE001609887
+
+**Kernaussage für Verbraucher:** Der 10. Senat griff seine zuvor entwickelte 15-Jahres-Grenze für Mängelansprüche nach fehlgeschlagener Abnahme auf; im entschiedenen Fall war diese Frist aber noch nicht erreicht und die Grenze deshalb nicht entscheidungstragend. Für die von BGH VII ZR 68/24 und VII ZR 108/24 entschiedenen Altrechts-Kostenvorschusskonstellationen gilt nun die anspruchsgenau begrenzte 30-Jahres-Linie.
+
+**Einsatz im Vertrag:** Nur als Konflikt-/Verfahrenshistorie verwenden; nicht als fortgeltenden harten Rechtssatz zitieren. Aktuelle BGH-Linie anspruchs- und sachverhaltsgenau anwenden.
+
+
+### MaBV-widriger Zahlungsplan und Bereicherungsausgleich
+
+**Harte Fundstelle:** BGH, Urteil vom 22.12.2000 - VII ZR 310/99, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/1999/VII_ZR_310-99.pdf?__blob=publicationFile&v=1; BGH, Urteil vom 07.11.2013 - VII ZR 167/11, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2011/VII_ZR_167-11.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** BGH VII ZR 310/99 trägt die Grundlinie: Eine zu Lasten des Erwerbers von § 3 Abs. 2 MaBV abweichende Abschlagsvereinbarung ist insgesamt nichtig; der übrige Bauträgervertrag bleibt grundsätzlich bestehen und § 641 BGB tritt an die Stelle. BGH VII ZR 167/11 bestätigt dies; vor Abnahme vereinnahmte Zahlungen können nach § 817 Satz 1 BGB zurückzugewähren sein, gezogene Nutzungen richten sich nach § 818 Abs. 1, § 100 BGB.
+
+**Einsatz im Vertrag:** Nicht Gesamtnichtigkeit oder § 818 Abs. 2 BGB als Automatismus behaupten; Zahlungsplan, Abnahme, Empfängerkenntnis und konkreten Bereicherungsumfang prüfen.
+
+
+### Vollstreckungsunterwerfung mit Fälligkeitsnachweisverzicht
+
+**Harte Fundstelle:** BGH, Urteil vom 27.09.2001 - VII ZR 388/00, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2000/VII_ZR_388-00.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Eine vorformulierte Unterwerfung des Erwerbers in die sofortige Zwangsvollstreckung in sein gesamtes Vermögen benachteiligt ihn unangemessen, wenn der Unternehmer ohne weiteren Nachweis eine vollstreckbare Ausfertigung verlangen kann. Die Klausel verschiebt das Risiko fehlender Fälligkeitsvoraussetzungen und eines vorschnellen Zugriffs auf den Erwerber.
+
+**Einsatz im Vertrag:** Nicht jede notarielle Vollstreckungsunterwerfung pauschal verwerfen. Entscheidend sind AGB-Charakter, Reichweite, Nachweisverzicht, Klauselerteilung und die Gefahr des Zugriffs vor MaBV-/Vertragsfälligkeit.
+
+
+### Leistungsverweigerung bei Mängeln während des Ratenlaufs
+
+**Harte Fundstelle:** BGH, Urteil vom 27.10.2011 - VII ZR 84/09, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2009/VII_ZR__84-09.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Auch eine nach dem Baufortschritt grundsätzlich fällige Rate darf der Erwerber wegen bereits aufgetretener Baumängel in einem angemessenen Verhältnis zum voraussichtlichen Beseitigungsaufwand zurückhalten. Das Leistungsverweigerungsrecht ist nicht auf die letzte Rate begrenzt.
+
+**Einsatz im Vertrag:** Bei jeder konkreten Zahlungsanforderung objektiven Bautenstand und Gegenrechte getrennt prüfen; eine erreichte MaBV-Stufe beantwortet noch nicht, welcher Betrag tatsächlich zahlbar ist.
+
+
+### Schlussrate und vollständige Fertigstellung
+
+**Harte Fundstelle:** BGH, Urteil vom 22.04.2026 - VII ZR 88/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__88-25.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Die Formulierung `nach vollständiger Fertigstellung` ist zuerst aus dem konkreten Bauträgervertrag auszulegen. Der BGH hat die pauschale Gleichsetzung vollständiger Fertigstellung mit bloßer Abnahmereife im entschiedenen Vertrag nicht getragen; wenn der Vertrag den Bauträger zur Beseitigung protokollierter Mängel/Restarbeiten verpflichtet, kann die Schlussrate bis dahin unfällig bleiben.
+
+**Einsatz im Vertrag:** Nicht automatisch `abnahmereif = vollständig fertiggestellt`; Vertrag, Protokoll, Außenanlagen, Restarbeiten und Fälligkeitswortlaut prüfen.
+
+
+### Verjährung des einheitlichen Bauträgervergütungsanspruchs
+
+**Harte Fundstelle:** BGH, Urteil vom 07.12.2023 - VII ZR 231/22, amtliches BGH-PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2022/VII_ZR_231-22.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Der einheitlich für Grundstücksanteil und Eigentumswohnung vereinbarte Vergütungsanspruch des Bauträgers verjährt nach § 196 BGB in zehn Jahren. Die Frist beginnt nach § 200 Satz 1 BGB mit Anspruchsentstehung, regelmäßig also nicht vor Fälligkeit.
+
+**Einsatz im Vertrag:** Bei Rest- und Schlussraten nicht mit der dreijährigen Regelverjährung argumentieren; Fälligkeit, Hemmung und Einreden getrennt prüfen. Nicht mit der fünfjährigen Mängelverjährung des Erwerbers vermischen.
+
+
+### Schlussrate: Abnahmereife als KG-Instanzlinie
+
+**Harte Fundstelle:** KG Berlin, Urteil vom 27.05.2025 - 21 U 44/22, amtlich: https://gesetze.berlin.de/bsbe/document/NJRE001609941
+
+**Kernaussage für Verbraucher:** Das KG hat `vollständige Fertigstellung` im Sinn der MaBV mit Abnahmereife gleichgesetzt und einzelne Protokollmängel eher über Mängeleinrede/Zurückbehaltung gelöst. Diese Linie ist nach BGH VII ZR 88/25 kein pauschaler Freibrief, sondern nur ein Instanzargument für Verträge ohne besondere Protokoll-/Restarbeitsbindung.
+
+**Einsatz im Vertrag:** Wenn Bauträger oder Notariat KG 21 U 44/22 zitieren: mit BGH VII ZR 88/25 antworten und konkrete Vertragsauslegung verlangen.
+
+
+### Bezugsfertigkeit und wesentlicher optischer Mangel
+
+**Harte Fundstelle:** KG Berlin, Urteil vom 24.06.2025 - 21 U 156/24, amtlich: https://gesetze.berlin.de/jportal/perma?d=NJRE001612362&portal=bsbe
+
+**Kernaussage für Verbraucher:** Eine Wohneinheit ist nur bezugsfertig im Sinn von § 3 Abs. 2 MaBV, wenn sie dauerhaft bezogen werden kann. Auch ein optischer Mangel kann die Bezugsfertigkeit hindern, wenn er nach Vertrag und Abnahmemaßstab wesentlich ist; anderes nur bei wirksam erhobener Unverhältnismäßigkeitseinrede.
+
+**Einsatz im Vertrag:** Bezugsfertigkeitsrate nicht allein mit faktischer Nutzbarkeit begründen; vertraglich prägende Gestaltungsmängel, Sicherheit/Zugang und Abnahmeverweigerung prüfen.
+
+
+### Flexibler MaBV-Ratenplan
+
+**Harte Fundstelle:** KG Berlin, Urteil vom 20.05.2025 - 21 U 73/24, amtlich: https://gesetze.berlin.de/jportal/perma?d=NJRE001609926&portal=bsbe
+
+**Kernaussage für Verbraucher:** Ein Bauträgervertrag ist nicht schon deshalb unwirksam, weil er offenlässt, wie die in § 3 Abs. 2 MaBV genannten Teilbeträge zu höchstens sieben tatsächlichen Raten gebündelt werden. Entscheidend bleibt, ob die später verlangten Zahlungen echte Bautenstände, die Höchstzahl der Raten und die Schutzmechanik der MaBV einhalten.
+
+**Einsatz im Vertrag:** Nicht zu früh rot markieren: tatsächliche Abrufe, versteckte achte Rate, `Mitteilung` statt Bautenstand, Schlussrate und § 650m-Sicherheit prüfen.
+
+
+### Ratenplan-Revisionsradar (keine Sachentscheidung)
+
+**Harte Fundstelle:** BGH, Beschluss vom 08.07.2026 - VII ZR 169/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR_169-25.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Der Beschluss entscheidet nur, dass das KG die Revision wirksam auf den Antrag zur Feststellung der Nichtigkeit des Ratenzahlungsplans in einem Bauträgervertrag beschränkt hat, und weist die Beschwerde gegen die teilweise Nichtzulassung zurück. Ob der Zahlungsplan materiell unwirksam ist, entscheidet dieser Beschluss nicht.
+
+**Einsatz im Vertrag:** Nie als Beleg für die Wirksamkeit oder Nichtigkeit eines Ratenplans zitieren. Das Revisionsverfahren zur Sachfrage bleibt gesondert zu beobachten; bis zu einer Sachentscheidung tragen die vorhandenen materiellen Anker.
+
+
+### 5-%-Sicherheit und intransparenter Zahlungsplan
+
+**Harte Fundstelle:** OLG Karlsruhe, Urteil vom 15.07.2025 - 19 U 128/24, amtliches Landesrecht BW: https://www.landesrecht-bw.de/perma?d=NJRE001622440
+
+**Kernaussage für Verbraucher:** Instanzanker: Wird die 5-%-Sicherheit nach § 650m Abs. 2 BGB unklar in den Zahlungsplan eingebaut und dadurch faktisch eine achte Rate erzeugt, können Transparenzgebot und § 3 Abs. 2 MaBV verletzt sein.
+
+**Einsatz im Vertrag:** Zahlungsplan und Sicherheit zusammen lesen; die konkrete Klauselwirkung prüfen, nicht jede Einbehaltsregel pauschal verwerfen.
+
+
+### DIN/Schallschutz im Werkvertragsrecht
+
+**Harte Fundstelle:** BGH, Urteil vom 14.06.2007 - VII ZR 45/06, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2006/VII_ZR__45-06.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Das geschuldete Schallschutzniveau folgt aus Vertragsauslegung, Qualitäts- und Komfortstandard sowie vereinbarter Bauweise. Die Mindestwerte der DIN 4109 erschöpfen das Bausoll nicht; regelgerechte Bauweise kann höhere Werte schulden.
+
+**Einsatz im Vertrag:** Im Bauträger-Werkvertragsrecht DIN-Konformität nie als abschließenden Mangelfreiheitsbeweis behandeln.
+
+
+### Änderung anerkannter Regeln vor Abnahme
+
+**Harte Fundstelle:** BGH, Urteil vom 14.11.2017 - VII ZR 65/14, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2014/VII_ZR__65-14.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Im entschiedenen VOB/B-Vertrag waren grundsätzlich die Regeln bei Abnahme maßgeblich. Bei einer Änderung zwischen Vertragsschluss und Abnahme muss der Unternehmer regelmäßig informieren; der Auftraggeber kann den neuen Standard mit möglicher Vergütungsanpassung verlangen oder nach Aufklärung davon absehen. Mehrkosten können Sowieso-Kosten sein.
+
+**Einsatz im Vertrag:** Auf Bauträgerverträge nur nach Prüfung von Vertragsinhalt und Vergütungsregime übertragen; die VOB/B-Nachtragsnormen gelten dort nicht automatisch.
+
+
+### Einzelgewerke und sukzessive Bauaufträge
+
+**Harte Fundstelle:** BGH, Urteile vom 16.03.2023 - VII ZR 94/22, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2022/VII_ZR__94-22.pdf?__blob=publicationFile&v=1, und vom 26.10.2023 - VII ZR 25/23, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2023/VII_ZR__25-23.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Ein Vertrag über ein einzelnes Gewerk eines Neubaus ist kein Verbraucherbauvertrag nach § 650i Abs. 1 BGB. Auch mehrere selbständige, sukzessive mit demselben Unternehmer geschlossene Verträge werden nicht rückwirkend oder in ihrer Gesamtheit zu Verbraucherbauverträgen.
+
+**Einsatz im Vertrag:** Einzelgewerke nicht mit §§ 650i ff. prüfen. Insbesondere kann die Ausnahme von der Bauhandwerkersicherung nach § 650f Abs. 6 Satz 1 Nr. 2 Fall 1 fehlen; allgemeines Verbraucherrecht des konkreten Einzelvertrags gesondert prüfen.
+
+
+### Koordination bei getrennter Planer- und Unternehmervergabe
+
+**Harte Fundstelle:** BGH, Urteil vom 15.01.2026 - VII ZR 119/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_119-24.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Beauftragt der Besteller verschiedene Planer und ausführende Unternehmen, obliegt ihm im Verhältnis zu diesen grundsätzlich die Koordination des Bauablaufs; bedient er sich dafür eines Dritten, kann dessen Verschulden über § 254 Abs. 2 Satz 2, § 278 BGB als Mitverschulden zugerechnet werden. Das betrifft die Besteller-/Bauherrenrolle, nicht den klassischen Erwerber, bei dem der Bauträger selbst Bauherr und Herstellungsverpflichteter bleibt.
+
+**Einsatz im Vertrag:** Bei Baugruppen, Eigenleistungen und unmittelbarer Einzelvergabe Verantwortungsmatrix für Planstände, Freigaben und Schnittstellen verlangen; die Linie nicht auf den passiven Bauträgererwerber übertragen.
+
+
+### DIN-Vermutung im WEG-Binnenrecht
+
+**Harte Fundstelle:** BGH, Urteil vom 24.05.2013 - V ZR 182/12, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2012/V_ZR_182-12.pdf?__blob=publicationFile&v=1; wiederholt in den Gründen von BGH, Urteil vom 23.05.2025 - V ZR 39/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR__39-24.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Bei ordnungsmäßiger Verwaltung und Sanierung gravierender Mängel des Gemeinschaftseigentums tragen DIN-Normen nach der Rechtsprechung des V. Zivilsenats eine widerlegliche Vermutung, die allgemein anerkannten Regeln der Technik wiederzugeben. V ZR 39/24 wiederholt diese auf V ZR 182/12 zurückgehende Linie nur in den Entscheidungsgründen; sein eigener Streitgegenstand war kein Bauträger-Werksoll.
+
+**Einsatz im Vertrag:** Diese Verwaltungsregel nicht unbesehen als abschließenden Werkvertragsmaßstab zwischen Erwerber und Bauträger verwenden und V ZR 39/24 nicht als eigenständige Bauträgerentscheidung ausgeben.
+
+
+### Technikräume und Sondereigentum
+
+**Harte Fundstelle:** BGH, Urteil vom 20.02.2026 - V ZR 34/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__34-25.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Ein Raum steht nicht schon deshalb zwingend im Gemeinschaftseigentum, weil er Anlagen oder Einrichtungen enthält, die dem gemeinschaftlichen Gebrauch dienen; der Raum kann Sondereigentum sein. Die gemeinschaftsdienende Anlage selbst, Zugang, Wartung und Mitbenutzungsrechte sind davon getrennt zu bestimmen.
+
+**Einsatz im Vertrag:** Bei Technik-, Zähler-, Heizungs- und Hausanschlussräumen nicht pauschal `Raum = Gemeinschaftseigentum` behaupten. Teilungserklärung, Aufteilungsplan, Bauteil, Anlage und gesicherte Zutrittsrechte einzeln prüfen.
+
+
+### Änderung des WEG-Kostenverteilungsschlüssels
+
+**Harte Fundstelle:** BGH, Urteil vom 24.04.2026 - V ZR 50/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__50-25.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Eine Mehrheitsentscheidung nach § 16 Abs. 2 Satz 2 WEG über einen anderen Kostenmaßstab unterliegt nicht nur einer Willkürkontrolle. Der neue Maßstab muss den Interessen der Gemeinschaft und der einzelnen Eigentümer angemessen sein und darf niemanden ungerechtfertigt benachteiligen; bei unterschiedlich großen Einheiten ist der Wechsel von Fläche/Miteigentumsanteilen zur Verteilung nach Einheiten für eine Heizungserneuerung regelmäßig nicht ordnungsmäßig.
+
+**Einsatz im Vertrag:** Kostenklauseln und Öffnungsklauseln nach Grundmaßstab, Beschlusskompetenz, konkreter Maßnahme, Einheitsgrößen und Mehrbelastung prüfen; Mehrheitsmacht nicht als Freibrief darstellen.
+
+
+### Änderung der Teilungserklärung/Gemeinschaftsordnung
+
+**Harte Fundstelle:** BGH, Urteil vom 23.01.2026 - V ZR 91/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__91-25.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** AGB-Pflichten des Verbrauchers, späteren Änderungen der Teilungserklärung durch den Bauträger zuzustimmen, sind nach § 308 Nr. 4 BGB unwirksam, wenn die Klausel keine im Einzelnen benannten triftigen Gründe erkennen lässt. Aus § 242 BGB folgt dann regelmäßig keine Ersatz-Zustimmungspflicht. Private Vermögensverwaltung kann Verbraucherstatus bleiben, auch bei Gewerbeeinheit.
+
+**Einsatz im Vertrag:** Weite Vollmachten und Zustimmungspflichten zu Teilungserklärung, Gemeinschaftsordnung, Untergemeinschaften, Nutzungsänderungen rot markieren.
+
+
+### Stimmrechtsbeschränkungen in der Gemeinschaftsordnung
+
+**Harte Fundstelle:** BGH, Urteil vom 27.02.2026 - V ZR 189/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR_189-24.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Das Stimmrecht von Sondereigentümern kann durch Vereinbarung objektbezogen beschränkt werden, der Umfang muss sich aber eindeutig aus der Gemeinschaftsordnung ergeben; unauflösbare Auslegungszweifel machen die beabsichtigte Beschränkung unwirksam. Ein Ausschluss bestimmter Eigentümer von Verwalterbestellung sowie Beschlüssen über Jahresabrechnung und Wirtschaftsplan ist nichtig.
+
+**Einsatz im Vertrag:** Gemeinschaftsordnung nicht nur nach Kosten, sondern beschlussgegenstandsgenau nach Teilnahme- und Stimmrechten prüfen. Das Stimmrecht bei Verwalterbestellung, Jahresabrechnung und Wirtschaftsplan darf Teilgruppen nicht entzogen werden.
+
+
+### Gerichtliche Klärung der Gemeinschaftsordnung
+
+**Harte Fundstelle:** BGH, Urteil vom 27.02.2026 - V ZR 98/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__98-25.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Auch nach dem WEMoG kann ein Eigentümer konkrete Rechte und Pflichten aus der Gemeinschaftsordnung, etwa die Kostentragung, gegen die GdWE feststellen lassen; das Urteil wirkt entsprechend § 44 Abs. 3 WEG für und gegen alle Eigentümer. Auslegungs- oder Wirksamkeitsstreit kann außerdem mit einer Beschlussersetzungsklage geklärt werden.
+
+**Einsatz im Vertrag:** Bei strukturellem Streit richtigen Gegner und Rechtsschutzziel wählen: GdWE, konkrete Feststellung oder Beschlussersetzung. Nicht jeden Auslegungsstreit nur über die Anfechtung einer Einzelabrechnung führen.
+
+
+### Absenkungs- und Umlaufbeschluss
+
+**Harte Fundstelle:** BGH, Urteil vom 17.07.2026 - V ZR 190/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR_190-25.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Ein Absenkungsbeschluss nach § 23 Abs. 3 Satz 2 WEG ist mit der Beschlussmängelklage angreifbar. Seine Nichtigkeit oder Ungültigerklärung macht den nachfolgenden, mit einfacher Mehrheit gefassten Umlaufbeschluss nur anfechtbar, nicht automatisch nichtig; wird der Sachbeschluss bestandskräftig, fehlt der isolierten Klage gegen den Absenkungsbeschluss das Rechtsschutzinteresse.
+
+**Einsatz im Vertrag:** Bei Beschlussketten Absenkungs- und Sachbeschluss jeweils fristgerecht prüfen und gegebenenfalls beide angreifen. Nie auf eine automatische Fehlerfortpflanzung oder spätere Heilung durch den ersten Prozess vertrauen.
+
+
+### Klima-Splitgerät als bauliche Veränderung
+
+**Harte Fundstelle:** BGH, Urteil vom 17.07.2026 - V ZR 162/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR_162-25.pdf?__blob=publicationFile&v=4
+
+**Kernaussage für Verbraucher:** Eine Beeinträchtigung nach § 20 Abs. 3 WEG setzt voraus, dass sich ein Eigentümer nach der Verkehrsanschauung verständlicherweise beeinträchtigt fühlen kann; die Eigentumspositionen sind abzuwägen. Grundsätzlich kann die Gestattung eines Klima-Splitgeräts auf dem Balkon verlangt werden, wobei erwartbare spätere Betriebsgeräusche die Gestattung regelmäßig nicht schon verhindern.
+
+**Einsatz im Vertrag:** Pauschale Verbote und Änderungsvollmachten zu Außengeräten, Fassade und Balkon differenziert prüfen. Gestattung der Installation, technische Ausführung sowie spätere Nutzung, Geräusch- und Wartungsfolgen getrennt regeln.
+
+
+### Vertragsstrafe trotz Rücktritt bei Bauträgerverzug
+
+**Harte Fundstelle:** BGH, Urteil vom 22.05.2025 - VII ZR 129/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_129-24.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Tritt der Besteller aufgrund eines vertraglichen Rücktrittsrechts wegen nicht termingerechter Fertigstellung eines abnahmereifen Bauwerks zurück, erlischt eine bereits verwirkte verzugsbedingte Vertragsstrafe nicht, sofern nichts Abweichendes vereinbart ist.
+
+**Einsatz im Vertrag:** Bei Longstop-Date, Rücktritt und Terminverzug Vertragsstrafe gesondert sichern; Rücktritt nicht vorschnell als Verzicht auf Verzugssanktionen behandeln.
+
+
+### Planabweichung in der Errichtungsphase
+
+**Harte Fundstelle:** BGH, Urteil vom 16.05.2025 - V ZR 270/23, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_270-23.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Der teilende Bauträger handelt bei Errichtung der Anlage nicht als Wohnungseigentümer, sondern in Erfüllung seiner vertraglichen Pflichten. Bei nicht plangerechter Errichtung bestehen grundsätzlich vertragliche Ansprüche gegen den Bauträger, nicht WEG-Beseitigungsansprüche wegen rechtswidriger Beeinträchtigung.
+
+**Einsatz im Vertrag:** Planabweichungen vor Abnahme/Erstherstellung vertraglich angreifen: Bausoll, Nachbesserung, Einbehalt, Abnahmevorbehalt, nicht vorschnell nur § 1004/WEG.
+
+
+### Mängelrechte in Mehrhausanlagen mit Untergemeinschaften
+
+**Harte Fundstelle:** BGH, Urteil vom 23.02.2024 - V ZR 132/23, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_132-23.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Auch wenn die Gemeinschaftsordnung weitgehend verselbständigte Untergemeinschaften bildet und der Mangel nur deren Gebäudeteil betrifft, kann nur die Gesamt-GdWE die auf ordnungsgemäße Herstellung des Gemeinschaftseigentums gerichteten Erwerberrechte zur alleinigen Durchsetzung an sich ziehen. Auch Prozessführung, Vergleichsverhandlungen und deren Finanzierung fallen dann in ihre Beschlusskompetenz.
+
+**Einsatz im Vertrag:** Vor Aufforderung oder Klage Beschlussorgan, Anspruchsbündelung, betroffenen Gebäudeteil und Prozessführungsbefugnis prüfen; Untergemeinschaft oder Einzelbeirat nicht vorschnell als anspruchsführungsbefugt behandeln.
+
+
+### Pflichten des bauträgernahen Erstverwalters bei Baumängeln
+
+**Harte Fundstelle:** BGH, Urteil vom 19.07.2019 - V ZR 75/18, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2018/V_ZR__75-18.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Ein mit dem Bauträger identischer, verbundener oder von ihm abhängiger Verwalter muss wie jeder Verwalter Handlungsoptionen aufzeigen, auf mögliche Gewährleistungsansprüche und drohende Verjährung hinweisen und bei Anzeichen fortbestehender Mängel auf sachgerechte Beschlussfassung hinwirken. Der Interessenkonflikt mindert die Pflichten nicht.
+
+**Einsatz im Vertrag:** Verwaltervertrag, anwendbaren WEG-Rechtsstand, Kenntniszeitpunkt, Warnung, Beschlussvorbereitung, Verjährungsnähe, Kausalität und Schaden belegen; nicht aus bloßer Bauträgernähe automatisch Haftung ableiten.
+
+
+### Steckengebliebener Bau und Erstherstellung
+
+**Harte Fundstelle:** BGH, Urteil vom 20.12.2024 - V ZR 243/23, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_243-23.pdf?__blob=publicationFile&v=1; konkretisiert durch BGH, Urteil vom 27.02.2026 - V ZR 219/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR_219-24.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** V ZR 243/23 begründet den durch § 242 BGB begrenzten Anspruch des Wohnungseigentümers gegen die GdWE auf erstmalige Errichtung des Gemeinschaftseigentums, sobald mindestens ein Erwerber (werdender) Wohnungseigentümer ist. V ZR 219/24 konkretisiert den Umfang: Im räumlichen Bereich der Einheit können auch nichttragende Innenwände, unter Putz verlegte Leitungen und Heizungsanschluss erfasst sein.
+
+**Einsatz im Vertrag:** Nach Bauträgerinsolvenz nicht nur Bauträger-/Insolvenzansprüche prüfen, sondern auch GdWE-Erstherstellung, Zumutbarkeit, Kostenlast, Beschlussersetzung und Abgrenzung zu baulichen Veränderungen.
+
+
+### Gemeinschaftsordnung und anfängliche Mängel
+
+**Harte Fundstelle:** BGH, Urteil vom 23.05.2025 - V ZR 36/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR__36-24.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Eine Gemeinschaftsordnung, die einzelnen Wohnungseigentümern die Kosten für Instandhaltung/Instandsetzung bestimmter Teile des Gemeinschaftseigentums im Bereich ihres Sondereigentums auferlegt, umfasst im Zweifel auch Kosten für die Beseitigung anfänglicher Mängel.
+
+**Einsatz im Vertrag:** Kosten- und Erhaltungsklauseln zu Fenstern, Türen, Leitungen, Balkonen, Terrassen, Tiefgaragenplätzen streng prüfen; anfängliche Baumängel ausdrücklich aus Erwerber-Sonderkosten ausnehmen oder Regress/Sicherung regeln.
+
+
+### Erhaltungslast und Beschlusskompetenz der GdWE
+
+**Harte Fundstelle:** BGH, Urteil vom 24.04.2026 - V ZR 102/24, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR_102-24.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Die Übertragung der Erhaltung bestimmter Teile des Gemeinschaftseigentums auf einzelne Wohnungseigentümer nimmt der GdWE nicht die Beschlusskompetenz. Wird die GdWE selbst tätig, bleibt es grundsätzlich bei der vereinbarten individuellen Kostenlast; bei zwingendem Sanierungsbedarf mehrerer Balkone muss die GdWE ihrerseits Erhaltungsmaßnahmen ergreifen.
+
+**Einsatz im Vertrag:** Erhaltungszuständigkeit, Entscheidungskompetenz und Kostenlast in Teilungserklärung/Gemeinschaftsordnung getrennt prüfen; eine Übertragung auf den Erwerber nicht als vollständigen Rückzug der GdWE lesen.
+
+
+### Schadensersatz gegen die GdWE wegen verzögerter Erhaltung
+
+**Harte Fundstelle:** BGH, Urteil vom 27.02.2026 - V ZR 18/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__18-25.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Verletzt die GdWE ihre Pflicht zur ordnungsmäßigen Verwaltung und entsteht dadurch ein Schaden am Sondereigentum, kommt § 280 Abs. 1 BGB in Betracht. Das ist keine Garantiehaftung: Ersatz beginnt erst ab dem Zeitpunkt, zu dem die Maßnahme bei pflichtgemäßem Handeln beschlossen und ausgeführt worden wäre; Miet- oder Pachtausfall setzt eine nach der Gemeinschaftsordnung zulässige Nutzung voraus.
+
+**Einsatz im Vertrag:** Bei Mängelfolgen Zeitachse, Beschlussreife, realistische Ausführungsdauer, Kausalität und zulässige Nutzung beweisbar machen; nicht jeden Gemeinschaftsmangel sofort der GdWE zurechnen.
+
+
+### Vor-GdWE-Verträge und faktische Verwaltung
+
+**Harte Fundstelle:** BGH, Urteil vom 30.01.2026 - V ZR 76/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__76-25.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Vor Entstehen der GdWE vom Bauträger/teilenden Eigentümer angebahnte Verträge gehen unter altem WEG-Recht regelmäßig nicht ohne Beschluss auf die spätere GdWE über; faktische Verwalter treffen grundsätzlich Verwalterpflichten und können der GdWE nach § 280 Abs. 1 BGB haften.
+
+**Einsatz im Vertrag:** Altverträge, Park-/Service-/Energie-/Verwalterkosten und Kontoführung nicht als automatisch übernommene Gemeinschaftslast behandeln; Beschluss, Vertretungsmacht, Genehmigung und Verwalterhaftung prüfen.
+
+
+### Bindung an ein Bauträgerangebot
+
+**Harte Fundstelle:** BGH, Urteil vom 26.02.2016 - V ZR 208/14, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2014/V_ZR_208-14.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Eine AGB-Bindung des Antragenden von mehr als drei Monaten verstößt auch bei einem inhaltlich beschränkten Lösungsrecht gegen § 308 Nr. 1 BGB. Auch eine vom Verwender gestellte aufschiebende Bedingung `Finanzierung gesichert` hielt der Kontrolle nicht stand.
+
+**Einsatz im Vertrag:** Bei getrennt beurkundetem Angebot und Annahme Bindungsfrist, Fortgeltung, verspätete Annahme und Finanzierungsbedingung prüfen; keine pauschale Drei-Monats-Freigabe für anders gestaltete Klauseln.
+
+
+### MaBV als Schutzgesetz und persönliche Geschäftsführerhaftung
+
+**Harte Fundstelle:** BGH, Urteil vom 05.12.2008 - V ZR 144/07, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2007/V_ZR_144-07A.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** §§ 3 und 7 MaBV sind Schutzgesetze im Sinn von § 823 Abs. 2 BGB. Ein GmbH-Geschäftsführer kann persönlich haften, wenn er den Schaden durch eigene Schutzgesetzverletzung verursacht; die §-7-Bürgschaft sichert auch den Eigentumsverschaffungsanspruch.
+
+**Einsatz im Vertrag:** Organstellung allein genügt nicht: konkrete Handlung oder beherrschte Gefahrenlage, Pflichtverletzung, Verschulden, Kausalität und Schaden feststellen.
+
+
+### §-7-MaBV-Bürgschaft und Bauzeitverzug
+
+**Harte Fundstelle:** BGH, Urteil vom 21.01.2003 - XI ZR 145/02, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/XI_ZS/2002/XI_ZR_145-02.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Eine Bürgschaft nach § 7 MaBV sichert grundsätzlich nicht den Anspruch auf Ersatz eines reinen Bauzeit-Verzugsschadens nach damaligem Recht.
+
+**Einsatz im Vertrag:** §-7-Sicherheit nicht als Vollkaskodeckung behandeln: Rückgewähr-/Auszahlungs- und Eigentumsverschaffungsrisiko von Verzugs-, Qualitäts- und Folgeschäden trennen; aktuellen Bürgschaftstext prüfen.
+
+
+### §-7-MaBV-Bürgschaftsradar (keine materielle Klärung)
+
+**Harte Fundstelle:** BGH, Beschluss vom 21.04.2026 - XI ZR 12/25, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/XI_ZS/2025/XI_ZR__12-25.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Der BGH hob die Vorentscheidung wegen einer Verletzung des rechtlichen Gehörs bei der Prüfung fortlaufender Avalzinsen und des Feststellungsinteresses auf. Der Beschluss trifft keine abschließende Sachentscheidung dazu, wann die konkrete §-7-MaBV-Bürgschaft alter Fassung herauszugeben ist oder welche gesicherten Ansprüche fortbestehen.
+
+**Einsatz im Vertrag:** Nicht als materiellen Leitsatz zu Sicherungszweck, Verjährung oder Rückgabe der Bürgschaft verwenden. Bürgschaftstext, historische MaBV-Fassung, gesicherte Ansprüche, Abnahme und Tatsachennachweis eigenständig prüfen.
+
+
+### Fahrlässiges Organisationsverschulden bei MaBV-Raten
+
+**Harte Fundstelle:** OLG Celle, Urteil vom 25.11.2025 - 3 U 171/24, amtliches NI-VORIS: https://voris.wolterskluwer-online.de/browse/document/80ad4648-2866-428d-9df0-1733d78ed4a0
+
+**Kernaussage für Verbraucher:** Instanzanker: § 3 Abs. 2 und § 5 MaBV wurden als Schutzgesetze angewandt; für die persönliche Haftung genügte fahrlässige Organisation und Überwachung der Ratenanforderung. Delegation ohne Instruktion und Kontrolle entlastete die Geschäftsführer nicht.
+
+**Einsatz im Vertrag:** Nicht schematisch Vorsatz verlangen oder Haftung behaupten: Ressort, Delegation, Kontrollen, Bautenstandsberichte und konkrete Ratenabrufe beweisen.
+
+
+### Notarielle Belehrung bei ungesicherter Vorleistung
+
+**Harte Fundstelle:** BGH, Urteil vom 17.01.2008 - III ZR 136/07, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/III_ZS/2007/III_ZR_136-07.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** Soll der Bauträger Erschließungs-/Anschlusskosten tragen, werden diese aber vor ihrer Festsetzung in eine frühe Abschlagsrate eingerechnet, liegt eine ungesicherte Vorleistung vor, die eine doppelte notarielle Belehrung auslösen kann.
+
+**Einsatz im Vertrag:** Kostentragung, Fälligkeitsstufe und tatsächliche Festsetzung abgleichen; konkrete Belehrung und Wiederholung unmittelbar vor Vollzug der Vorleistung prüfen.
+
+
+### Abnahme durch bauträgernahe Tochtergesellschaft
+
+**Harte Fundstelle:** BGH, Urteil vom 09.11.2023 - VII ZR 241/22, amtlich: https://www.rechtsprechung-im-internet.de/jportal/?quelle=jlink&docid=KORE305472023&psml=bsjrsprod.psml
+
+**Kernaussage für Verbraucher:** Eine Klausel, die die Abnahme des Gemeinschaftseigentums durch eine vom Bauträger als Erstverwalter bestimmte, wirtschaftlich verbundene Tochtergesellschaft ermöglicht, ist unwirksam. Macht die GdWE als Prozessstandschafterin Mängelrechte der Erwerber geltend, kann sich der Bauträger als Klauselverwender nicht darauf zurückziehen, es fehle mangels wirksamer Abnahme noch an Mängelrechten.
+
+**Einsatz im Vertrag:** Gegen Tochtergesellschaft, Erstverwalter, Projektsteuerer, `neutralen` Bauträgerdienstleister.
+
+
+### Übergabeprotokolle, Nutzung und Kaufpreiszahlung als keine sichere GE-Abnahme
+
+**Harte Fundstelle:** OLG München, Beschluss vom 08.01.2024 - 9 U 1803/23 Bau e, amtlicher bayerischer Bürgerservice: https://www.gesetze-bayern.de/Content/Document/Y-300-Z-BECKRS-B-2024-N-49081?hl=true
+
+**Kernaussage für Verbraucher:** Ist im Vertrag eine Abnahme des Gemeinschaftseigentums durch einen Dritten vorgesehen, begründen einzelne Übergabeprotokolle, Kaufpreiszahlung, Nutzung oder längere Rügelosigkeit ohne klare Erklärung und Erklärungsbewusstsein regelmäßig keine Abnahme des Gemeinschaftseigentums.
+
+**Einsatz im Vertrag:** Gegen Einwände `Schlüsselübergabe`, `voll bezahlt`, `jahrelang genutzt`, `Protokoll unterschrieben`; Vertragskontext und Abnahmewillen konkret prüfen.
+
+
+### Individuell unterschriebenes Abnahmeprotokoll
+
+**Harte Fundstelle:** OLG Braunschweig, Beschluss vom 02.06.2025 - 8 U 29/24, DeJure: https://dejure.org/2025,15291
+
+**Kernaussage für Verbraucher:** Instanzanker gegen Übertreibung: Ein von einem Erwerber individuell unterzeichnetes Abnahmeprotokoll ist gesondert auszulegen und nicht schon wegen einer unvollständigen Protokollierung oder einer danebenstehenden unwirksamen Formularklausel automatisch unwirksam.
+
+**Einsatz im Vertrag:** Erklärung, Abnahmewillen, Reichweite sowie Sonder-/Gemeinschaftseigentum konkret feststellen; erst danach Verjährungsfolgen ziehen.
+
+
+### GdWE bündelt Mängelrechte und Restkaufpreis
+
+**Harte Fundstelle:** OLG Stuttgart, Urteil vom 28.04.2026 - 10 U 39/25, DeJure: https://dejure.org/2026,14078
+
+**Kernaussage für Verbraucher:** Nicht rechtskräftiger Instanzanker: Verlangt die GdWE nach wirksamer Bündelung Kostenvorschuss für Mängel am Gemeinschaftseigentum, kann der Restkaufpreis trotz fehlender Abnahmereife des Gemeinschaftseigentums fällig sein; in Betracht kommt Zahlung nur Zug um Zug an die GdWE.
+
+**Einsatz im Vertrag:** Beschluss, Anspruchsbündelung, Nacherfüllungsrecht, konkrete Gegenrechte und den Zahlungsempfänger prüfen; nicht als allgemeine Sperre für Erwerbereinreden verwenden.
+
+
+### Erstverwalter-Abnahme Gemeinschaftseigentum (Grundlinie)
+
+**Harte Fundstelle:** BGH, Beschluss vom 12.09.2013 - VII ZR 308/12, amtlich: https://www.rechtsprechung-im-internet.de/jportal/?quelle=jlink&docid=KORE311712013&psml=bsjrsprod.psml
+
+**Kernaussage für Verbraucher:** Eine in AGB eines Bauträger-Erwerbsvertrags enthaltene Klausel, die die Abnahme des Gemeinschaftseigentums durch einen vom Bauträger bestimmbaren Erstverwalter zulässt, benachteiligt die Erwerber unangemessen und ist unwirksam. Grundlegende Linie, auf der die neueren Entscheidungen aufbauen.
+
+**Einsatz im Vertrag:** Bestätigt seit Langem: Erstverwalter-Abnahme ersetzt nicht das eigene Abnahmerecht des Erwerbers.
+
+
+### Nachzügler-Klausel `Abnahme ist erfolgt`
+
+**Harte Fundstelle:** BGH, Urteil vom 25.02.2016 - VII ZR 49/15 (BGHZ 209, 128), amtlich: https://www.rechtsprechung-im-internet.de/jportal/?quelle=jlink&docid=KORE307992016&psml=bsjrsprod.psml
+
+**Kernaussage für Verbraucher:** Eine formularmäßige Klausel im Erwerbsvertrag eines Nachzüglers, nach der die Abnahme des Gemeinschaftseigentums bereits erfolgt sei, ist unwirksam; dem später erwerbenden Käufer darf das Recht, über die Abnahme selbst oder durch eine Person seines Vertrauens zu entscheiden, nicht entzogen werden.
+
+**Einsatz im Vertrag:** Gegen `die Abnahme ist bereits erfolgt`-Klauseln in Nachzüglerverträgen.
+
+
+### Nachzügler: Ingenieurbüro-/Beschlussabnahme
+
+**Harte Fundstelle:** BGH, Urteil vom 12.05.2016 - VII ZR 171/15 (BGHZ 210, 206), amtlich: https://www.rechtsprechung-im-internet.de/jportal/?quelle=jlink&docid=KORE300832016&psml=bsjrsprod.psml
+
+**Kernaussage für Verbraucher:** Für Mängel an neu errichteten Eigentumswohnungen bleibt grundsätzlich Werkvertragsrecht anwendbar, auch wenn das Bauwerk bei Vertragsschluss bereits fertiggestellt ist. Eine frühere Abnahme des Gemeinschaftseigentums durch Ingenieurbüro oder Eigentümerversammlungsbeschluss bindet Nachzügler nicht; Formularklauseln, die Abnahme und Verjährungsbeginn auf sie erstrecken, sind unwirksam.
+
+**Einsatz im Vertrag:** Nachzüglerverträge getrennt prüfen: keine automatische Bindung an frühere GE-Abnahme, keine vorverlegte Mängelverjährung.
+
+
+### Notaranderkonto bei Bauträgerabwicklung
+
+**Harte Fundstelle:** BGH, Beschluss vom 02.08.2023 - VII ZB 28/20, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2020/VII_ZB__28-20.pdf?__blob=publicationFile&v=1
+
+**Kernaussage für Verbraucher:** § 57 Abs. 2 BeurkG richtet sich an den Notar; ein fehlendes berechtigtes Sicherungsinteresse macht die zivilrechtliche Verwahrungsabrede nicht automatisch unwirksam. Bei Abtretung/Pfändung der Kaufpreisforderung kann der Auszahlungsanspruch gegen den Notar miterfasst sein.
+
+**Einsatz im Vertrag:** Die Entscheidung nicht als MaBV-Freigabe missverstehen; Verwahrungsvereinbarung, notarielle Amtspflicht, Fälligkeit und Empfangsberechtigung getrennt prüfen.
+
 
 **KG-/OLG-Korrektiv für Schlussrate, Bezugsfertigkeit, Ratenplan und Abnahme.** Nicht mit Automatismen arbeiten. Bei Schlussrate und Bezugsfertigkeitsrate zuerst die konkrete Fälligkeitsklausel auslegen, dann Abnahmereife, Mangelgewicht, Protokollbindung und Zurückbehaltungsrechte trennen. BGH VII ZR 88/25 trägt stark, wenn der Vertrag die letzte Rate an die Beseitigung protokollierter Mängel/Restarbeiten bindet; KG 21 U 44/22 bleibt nur Instanzmaterial für Verträge ohne solche Bindung. KG 21 U 156/24 verschärft die Bezugsfertigkeitsrate bei wesentlichen optischen Vertragsmängeln. KG 21 U 73/24 verhindert zugleich Überbehauptung beim flexiblen Ratenplan: Flexibilität ist nicht automatisch unwirksam, aber jeder tatsächliche Abruf muss MaBV-fest sein. OLG Karlsruhe 19 U 128/24 stärkt die Kontrolle unklarer §-650m-/Einbehalt-Konstruktionen. Bei Abnahme des Gemeinschaftseigentums dürfen Übergabeprotokolle, Nutzung, Kaufpreiszahlung und Rügelosigkeit nicht isoliert als Abnahme gewertet werden; OLG Braunschweig 8 U 29/24 mahnt zugleich, individuell erklärte Abnahmen nicht ohne Einzelfallprüfung wegzuwischen.
 
@@ -455,11 +857,27 @@ Findet sich zu einer Frage keine in zulässiger Quelle verifizierte Entscheidung
 
 Historischer Recherchebestand vom 9. August 2026, übernommen aus Fassung 4.3.0; für den konkreten Fall erneut verifizieren. Dieser Stichtagsblock verhindert zwei Fehler: Eine verkündete, aber noch nicht einschlägig in Kraft getretene Regel wird nicht vorzeitig angewandt; ein Entwurf wird nicht als Gesetz ausgegeben. Maßgeblich ist für jede Handlung das relevante Ereignisdatum, nicht das Datum der Beratung.
 
-| Regelung | Amtlicher Status am 9. August 2026 | Bedeutung für die Prüfung |
-| --- | --- | --- |
-| MaBV-Novellen vom 20. und 28. Juli 2026 | Art. 2 des Gesetzes vom 20.07.2026 (BGBl. 2026 I Nr. 215, in Kraft seit 24.07.2026): https://www.recht.bund.de/bgbl/1/2026/215/regelungstext.pdf?__blob=publicationFile&v=2; Art. 2 der Verordnung vom 28.07.2026 (BGBl. 2026 I Nr. 229, in Kraft seit 01.08.2026): https://www.recht.bund.de/bgbl/1/2026/229/regelungstext.pdf?__blob=publicationFile&v=2. Geändert wurden zunächst § 15b, §§ 18/19 und die Anlagen 1/3, sodann § 1 Abs. 2, § 2 Abs. 5, § 4 Abs. 1 und § 16 Abs. 3 MaBV. §§ 3, 7 und 12 MaBV wurden nicht geändert. | Die aktuelle MaBV-Fassung verwenden, aber keine neue Raten-, Fälligkeits- oder Sicherungslogik erfinden. Für Bauträgerzahlungen gelten die bisherigen Kernregeln der §§ 3, 7 und 12 MaBV fort. |
-| Digitalisierung des Vollzugs von Immobilienverträgen | Gesetz vom 22.06.2026 (BGBl. 2026 I Nr. 192): https://www.recht.bund.de/bgbl/1/2026/192/regelungstext.pdf?__blob=publicationFile&v=2. Nach Art. 20 gilt ein gestuftes Inkrafttreten: einzelne Teile seit dem Tag nach Verkündung, der Grundsatz ab 01.10.2026, die für den elektronischen Notar-Verwaltungs-Austausch zentralen Teile des Art. 1 sowie Art. 16/17 ab 01.01.2027, Art. 7 ab 01.01.2028 und weitere Teile erst nach amtlicher Bekanntgabe der technischen Voraussetzungen. | Datum und konkret betroffenen Artikel prüfen. Elektronische Übermittlung ändert den Kommunikationsweg, nicht die materielle Existenz, Wirksamkeit oder Reichweite einer Genehmigung und ersetzt weder §-3-MaBV-Voraussetzungen noch Vertragsfälligkeit oder Gegenrechte. |
-| Gebäudetyp E | Der amtliche § 650a BGB enthält weiterhin nur die Absätze 1 und 2 zum Bauvertrag: https://www.gesetze-im-internet.de/bgb/__650a.html. Der frühere Entwurf BT-Drs. 20/13959 blieb ein Gesetzgebungsvorhaben: https://www.bundestag.de/presse/hib/kurzmeldungen-1032390. Daraus folgt für den Rechtsstand dieses Skills: Eine zivilrechtliche Gebäudetyp-E-Sonderregel ist bis zum Stichtag nicht in Kraft getreten. | `Gebäudetyp E`, Leitlinie, Eckpunkte oder politische Ankündigung senken das geschuldete Bausoll nicht. Bei Verbrauchern jede konkrete Standardabweichung nach Vertrag, Aufklärung, Funktion, Sicherheit, § 633 BGB und §§ 305 ff. BGB prüfen; Entwurfsrecht nicht zitieren. |
+
+### MaBV-Novellen vom 20. und 28. Juli 2026
+
+**Amtlicher Status am 9. August 2026:** Art. 2 des Gesetzes vom 20.07.2026 (BGBl. 2026 I Nr. 215, in Kraft seit 24.07.2026): https://www.recht.bund.de/bgbl/1/2026/215/regelungstext.pdf?__blob=publicationFile&v=2; Art. 2 der Verordnung vom 28.07.2026 (BGBl. 2026 I Nr. 229, in Kraft seit 01.08.2026): https://www.recht.bund.de/bgbl/1/2026/229/regelungstext.pdf?__blob=publicationFile&v=2. Geändert wurden zunächst § 15b, §§ 18/19 und die Anlagen 1/3, sodann § 1 Abs. 2, § 2 Abs. 5, § 4 Abs. 1 und § 16 Abs. 3 MaBV. §§ 3, 7 und 12 MaBV wurden nicht geändert.
+
+**Bedeutung für die Prüfung:** Die aktuelle MaBV-Fassung verwenden, aber keine neue Raten-, Fälligkeits- oder Sicherungslogik erfinden. Für Bauträgerzahlungen gelten die bisherigen Kernregeln der §§ 3, 7 und 12 MaBV fort.
+
+
+### Digitalisierung des Vollzugs von Immobilienverträgen
+
+**Amtlicher Status am 9. August 2026:** Gesetz vom 22.06.2026 (BGBl. 2026 I Nr. 192): https://www.recht.bund.de/bgbl/1/2026/192/regelungstext.pdf?__blob=publicationFile&v=2. Nach Art. 20 gilt ein gestuftes Inkrafttreten: einzelne Teile seit dem Tag nach Verkündung, der Grundsatz ab 01.10.2026, die für den elektronischen Notar-Verwaltungs-Austausch zentralen Teile des Art. 1 sowie Art. 16/17 ab 01.01.2027, Art. 7 ab 01.01.2028 und weitere Teile erst nach amtlicher Bekanntgabe der technischen Voraussetzungen.
+
+**Bedeutung für die Prüfung:** Datum und konkret betroffenen Artikel prüfen. Elektronische Übermittlung ändert den Kommunikationsweg, nicht die materielle Existenz, Wirksamkeit oder Reichweite einer Genehmigung und ersetzt weder §-3-MaBV-Voraussetzungen noch Vertragsfälligkeit oder Gegenrechte.
+
+
+### Gebäudetyp E
+
+**Amtlicher Status am 9. August 2026:** Der amtliche § 650a BGB enthält weiterhin nur die Absätze 1 und 2 zum Bauvertrag: https://www.gesetze-im-internet.de/bgb/__650a.html. Der frühere Entwurf BT-Drs. 20/13959 blieb ein Gesetzgebungsvorhaben: https://www.bundestag.de/presse/hib/kurzmeldungen-1032390. Daraus folgt für den Rechtsstand dieses Skills: Eine zivilrechtliche Gebäudetyp-E-Sonderregel ist bis zum Stichtag nicht in Kraft getreten.
+
+**Bedeutung für die Prüfung:** `Gebäudetyp E`, Leitlinie, Eckpunkte oder politische Ankündigung senken das geschuldete Bausoll nicht. Bei Verbrauchern jede konkrete Standardabweichung nach Vertrag, Aufklärung, Funktion, Sicherheit, § 633 BGB und §§ 305 ff. BGB prüfen; Entwurfsrecht nicht zitieren.
+
 
 **Anwendungsbefehl:** Vor jeder finalen Ausgabe aktuelle Fassungen von BGB, MaBV, BeurkG, WEG und einschlägigem Landesrecht öffnen. Gesetz, verkündete Übergangsregel, künftiges Inkrafttreten und bloßes Vorhaben im Befundregister getrennt kennzeichnen. Eine spätere Änderung wird im Befundregister mit maßgeblichem Inkrafttreten und Quelle dokumentiert und erst danach auf den Fall angewandt.
 

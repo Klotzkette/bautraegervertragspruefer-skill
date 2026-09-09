@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "evaluation_only": true,
+  "legal_check_date": "2026-09-09",
+  "notice": "Nur für die nachträgliche Auswertung; niemals als Modelleingabe übergeben. Keine automatische Bewertung von KI-Antworten.",
+  "cases": [
+    {
+      "id": "V01",
+      "input": "tests/limitation/inputs/v01.md",
+      "category": "short_building_period",
+      "anchors": ["in zwei Jahren ab Abnahme", "Über die Mängelregelung wurde nicht verhandelt", "als Individualvereinbarung anerkannt"],
+      "required": [
+        "§ 9.4 betrifft Bauwerksmängel; gesetzlich regelmäßig fünf Jahre nach § 634a Abs. 1 Nr. 2 ab wirksamer Abnahme nach Abs. 2.",
+        "Die gestellte Zweijahresklausel ist im Verbrauchervertrag wegen § 309 Nr. 8 Buchst. b Doppelbuchst. ff BGB unwirksam; nicht nur als unvorteilhaft oder offen nach § 307 bezeichnen.",
+        "Das Individual-Etikett und die angekündigte notarielle Erläuterung in § 15.2 ersetzen tatsächliches Aushandeln nicht.",
+        "§ 9.4 ändern: gesetzliche Mängelrechte und Verjährung einschließlich gesetzlichem Beginn erhalten. Bei unwirksamen AGB gesetzlicher Ersatz nach § 306 Abs. 2, keine automatische Gesamtnichtigkeit."
+      ],
+      "forbidden": ["Zwei Jahre als zulässige Standardfrist für Bauwerksmängel akzeptieren.", "Die bloße Bezeichnung als Individualvereinbarung oder notarielle Belehrung als Beweis des Aushandelns behandeln.", "Die Haftungsausnahmen als Heilung der Zweijahresklausel werten."]
+    },
+    {
+      "id": "V02",
+      "input": "tests/limitation/inputs/v02.md",
+      "category": "component_and_four_year_periods",
+      "anchors": ["vier Jahre ab Abnahme", "zwei Jahre ab Abnahme", "ihre rechtliche Zuordnung zur Bauwerksleistung zu unterstellen"],
+      "required": [
+        "§§ 10.1 und 10.2 getrennt prüfen: sowohl vier als auch zwei Jahre erleichtern die fünfjährige Bauwerksmängelverjährung nach § 634a Abs. 1 Nr. 2.",
+        "§ 309 Nr. 8 b ff ist für die gestellten Verbraucher-AGB der unmittelbare Verbotsmaßstab; die Bezugnahme auf VOB/B allein rechtfertigt keine Ausnahme.",
+        "Die ausdrücklich zur Bauwerksleistung gehörenden Anlagen und die Dachabdichtung werden nicht allein durch ein Etikett zu einem sonstigen Werk mit gesetzlich zwei Jahren.",
+        "Beide Verkürzungen streichen beziehungsweise durch gesetzliche Mängelverjährung mit richtigem Beginn ersetzen; keine pauschale Freigabe technisch bezeichneter Bauteile."
+      ],
+      "forbidden": ["Vier Jahre wegen bloßer VOB/B-Bezugnahme im Verbraucher-AGB-Text freigeben.", "Die technische Anlagenklausel mit einer allgemeinen Zweijahresausnahme akzeptieren.", "Nur § 10.2 beanstanden und § 10.1 übersehen."]
+    },
+    {
+      "id": "V03",
+      "input": "tests/limitation/inputs/v03.md",
+      "category": "early_start",
+      "anchors": ["beginnt für alle Erwerber einheitlich mit der ersten Abnahme", "nicht als Vertreter des jetzigen Erwerbers"],
+      "required": [
+        "§ 8.3 verkürzt die effektive Schutzdauer trotz nomineller fünf Jahre durch Übertragung einer fremden Erstabnahme auf den Nachzügler.",
+        "§ 634a Abs. 2 verlangt den für diesen Erwerber wirksamen Abnahmebezug; eine nicht bevollmächtigte fremde Abnahme ersetzt ihn nicht.",
+        "Die Verjährungserleichterung unter § 309 Nr. 8 b ff einordnen; § 8.3 nicht allein wegen der Zahl fünf akzeptieren.",
+        "Frühbeginn und Nachzüglerbindung entfernen; zutreffenden Abnahmebezug herstellen. Ohne eigene wirksame Abnahme kein scheinbar sicher berechnetes Ablaufdatum aus der Klausel ausgeben."
+      ],
+      "forbidden": ["Fünf Jahre ohne Prüfung des Beginns als ausreichend bewerten.", "Die frühere Abnahme eines anderen Erwerbers ohne Vertretung als bindend behandeln.", "Aus dem unwirksamen Frühbeginn ohne weitere Prüfung eine allgemeine 30-Jahres-Frist ableiten."]
+    },
+    {
+      "id": "V04",
+      "input": "tests/limitation/inputs/v04.md",
+      "category": "hidden_notice_cutoff",
+      "anchors": ["nicht offensichtlichen Mängeln", "spätestens binnen zwei Jahren ab Abnahme", "Ansprüche wegen des betreffenden Mangels ausgeschlossen"],
+      "required": [
+        "§ 11.1 und § 11.2 im Zusammenspiel lesen: die nominell richtige Verjährung wird durch eine gesonderte anspruchsvernichtende Anzeigefrist unterlaufen.",
+        "§ 309 Nr. 8 b ee in Verbindung mit ff und der Bauwerksfrist nach § 634a Abs. 1 Nr. 2 nennen; eine Ausschlussfrist für nicht offensichtliche Mängel darf diesen Schutz nicht unterschreiten.",
+        "Die Ausschlussfolge in § 11.2 entfernen; keine bloße Umbenennung oder Empfehlung, sicherheitshalber die unwirksame Frist einzuhalten, als vollständige Abhilfe.",
+        "Nicht behaupten, eine außergerichtliche Mängelanzeige hemme bereits automatisch die Verjährung."
+      ],
+      "forbidden": ["Wegen § 11.1 keinen Handlungsbedarf sehen.", "Die gesonderte Anzeigefrist als von der AGB-Kontrolle unabhängige organisatorische Mitwirkung freigeben.", "Die konkrete Ausschlussfrist nur als gewöhnliche Verjährungsfrist bezeichnen, ohne ihren Mechanismus zu erklären."]
+    },
+    {
+      "id": "V05",
+      "input": "tests/limitation/inputs/v05.md",
+      "category": "valid_building_control",
+      "anchors": ["beträgt fünf Jahre", "mit der wirksamen Abnahme des jeweiligen Werks durch diesen Erwerber", "Eine Abnahme durch andere Erwerber bindet ihn nicht"],
+      "required": [
+        "Im vorgelegten § 9.1 keine Fristverkürzung erkennen: fünf Jahre und gesetzlicher, erwerberbezogener wirksamer Abnahmebeginn sind ausdrücklich erhalten.",
+        "Keinen zwingenden Änderungsbedarf aus der Fristlänge oder der Vertretungsmöglichkeit allein erfinden; eine wirksame Bevollmächtigung ist vorgegeben.",
+        "Ergebnis auf den vorgelegten Ausschnitt begrenzen, ohne eine vollständige Vertragsfreigabe zu behaupten."
+      ],
+      "forbidden": ["Eine verbotene Zweijahresklausel erfinden.", "Jede Abnahme durch einen wirksam bevollmächtigten Vertreter für unwirksam erklären.", "Wegen hypothetischer nicht vorgelegter Klauseln einen festgestellten Mangel des Ausschnitts behaupten."]
+    },
+    {
+      "id": "V06",
+      "input": "tests/limitation/inputs/v06.md",
+      "category": "non_building_control",
+      "anchors": ["Austausch einer verschlissenen Fahrradschaltung", "Ein Bauwerk, eine Bauwerksplanung und ein Grundstücksgeschäft sind nicht beteiligt", "in zwei Jahren ab Abnahme"],
+      "required": [
+        "Die Reparatur eines beweglichen Fahrrads als sonstiges sachbezogenes Werk nach § 634a Abs. 1 Nr. 1 einordnen, nicht als Bauwerk oder Kaufvertrag.",
+        "Zwei Jahre ab Abnahme entsprechen hier dem gesetzlichen Ausgangspunkt nach § 634a Abs. 1 Nr. 1 und Abs. 2; aus der Dauer allein folgt kein Verstoß gegen § 309 Nr. 8 b ff.",
+        "Die Bauwerksprüfung aus dem Bauträger-Prompt nicht unterschiedslos auf jeden Verbrauchervertrag übertragen."
+      ],
+      "forbidden": ["Für jeden Werkvertrag mit Verbrauchern zwingend fünf Jahre verlangen.", "Die Zweijahresregelung allein unter Berufung auf § 309 Nr. 8 b ff verbieten.", "Die Fahrradreparatur als Bauwerksleistung behandeln."]
+    },
+    {
+      "id": "V07",
+      "input": "tests/limitation/inputs/v07.md",
+      "category": "genuine_negotiation_control",
+      "anchors": ["im Einzelnen tatsächlich ausgehandelt", "Es handelt sich insoweit nicht um AGB", "auf zwei Jahre ab Abnahme festgelegt"],
+      "required": [
+        "Die als erwiesen vorgegebene echte Individualvereinbarung von einem bloßen Individual-Etikett unterscheiden; § 309 ist hier nicht als unmittelbares AGB-Verbot anzuwenden.",
+        "§ 634a enthält die gesetzliche Regelfrist, aber kein universelles Verbot jeder individuellen Abweichung; § 650o erklärt § 634a nicht zu einer unabdingbaren Verbraucherschutznorm.",
+        "Keine generelle Wirksamkeitsfreigabe: weitere zwingende Grenzen, insbesondere § 202 Abs. 1 und § 639 sowie gegebenenfalls Umgehung, Arglist und Garantie, bleiben sachverhaltsabhängig zu prüfen.",
+        "Nicht allein wegen zwei Jahren die zwingende Unwirksamkeit behaupten; das Ergebnis ausdrücklich auf die isolierte Frage und die vorgegebenen Tatsachen begrenzen."
+      ],
+      "forbidden": ["Echte Individualvereinbarung trotz ausdrücklicher Tatsachenvorgabe nur wegen Verbraucherbeteiligung als AGB behandeln.", "§ 650o verbiete jede Abweichung von § 634a behaupten.", "Umgekehrt die uneingeschränkte Wirksamkeit der gesamten Regelung oder des gesamten Vertrags bescheinigen."]
+    }
+  ]
+}
