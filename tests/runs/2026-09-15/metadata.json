@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "status": "executed",
+  "checked_on": "2026-09-15",
+  "version": "4.5.0",
+  "model_provider": "OpenAI",
+  "model_id": null,
+  "model_id_note": "Die konkrete Modellkennung wurde nicht verlässlich erfasst; keine Modell- oder Anbieter-Vergleichsaussage.",
+  "system_and_developer_context": "Codex-Agenten mit gemeinsamem System-/Entwicklerrahmen. Jeder Bewertungsfall startete in einem neuen Unteragenten ohne geerbte Gesprächshistorie. Die jeweilige Promptdatei/der Skill und die aktuelle Nutzernachricht wurden explizit zugewiesen. Zusätzliche Anweisungen begrenzten Dateizugriff, Nebenwirkungen und Rohprotokollierung.",
+  "fresh_conversation_per_run": true,
+  "expectations_hidden_during_execution": true,
+  "turns_delivered_sequentially": true,
+  "future_turns_visible": false,
+  "exact_turn_timestamps": null,
+  "timestamp_note": "Die Reihenfolge der Übergaben ist beobachtet; sekundengenaue Zeitstempel wurden nicht erfasst und werden nicht nachträglich geschätzt.",
+  "tools_available": [
+    "lokaler Dateizugriff",
+    "amtliche Webquellen",
+    "Rechenhilfe im Plugin-Lauf",
+    "apply_patch ausschließlich zur Rohprotokollierung"
+  ],
+  "input_and_artifact_sha256": {
+    "plugins/bautraegervertragspruefer/skills/bautraeger-zahlungsrate-pruefen/SKILL.md": "eff3ba441aee02fa1ed49ea1c2034b3c3a8eb6788595e44eb9135edc749b1ce0",
+    "plugins/bautraegervertragspruefer/skills/bautraeger-zahlungsrate-pruefen/scripts/mabv_rechner.py": "65af1f281b66b4b5f4f45494459ffaa05e4fb85d63e6a10e7c6e58cb32056ac5",
+    "skill/MINI_SKILL.md": "cfcfa1cda8fdc70895190b11f0455688a64a2144132af2ad7e614c6a2aa8dc64",
+    "skill/SKILL.md": "5269d0af7317f372086a3f87d497e0574fdd9084dc6379888547058fcdaa4a3a",
+    "tests/inputs/m-zahlung-ergänzt.md": "6f673fe3817a7eac942aa1b9cd4a2249a0c4d088f7298c0499a3d72ba844adba",
+    "tests/inputs/m-zahlung.md": "e7863c565344b198d52eaeadb60494177f2d09781adbc2550d7c2dc854c297c0",
+    "tests/limitation/inputs/v01.md": "4316d9dfdf1a021c8d04bb7e83c836cd895d353c0a7585dff1f9ae45767c63ce",
+    "tests/runs/2026-09-15/mini-w01-raw.md": "b09ce8473cafb721063b74f9b534d9f900d57b28942898a0385e503d7e92d86b",
+    "tests/runs/2026-09-15/plugin-w03-raw.md": "d2eccbc6fc03de0ee63f7f8a95c512e380ac9376e2e711c2482d4bf17b0056a0",
+    "tests/runs/2026-09-15/werkstatt-w01-raw.md": "b17e2a12b26ec6fd2cc27690309e147855792362c7b3ecbbac5337e12db4b530",
+    "tests/workflow/inputs/textfassung.md": "47f47f14e07e62c7be17c0492e8575ad5c758016081c2e44b1396729cef5b6ca",
+    "tests/workflow/inputs/w01-02.md": "f73b692ed7ca8722e49976b18beb8a2e93dc40e4c0f28a7853e06e7e66dc2bfe",
+    "tests/workflow/inputs/w01-03.md": "660b663c5bb5753fc954d50ce675f974bb9ede1ba18bd130811478ce8db5eb26",
+    "tests/workflow/inputs/w03-03.md": "9990686808605b0bf8e00c65a98cebcfc545c7694e58797c67426e1c92068baa",
+    "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-bautenstandsbericht.md": "8e554e6e5b0847989289f35f645bdc3a86f9b1aeaa87e68924bf29cf5a568883",
+    "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-zahlungsanforderung.md": "d2999d4571e9ebbaea0774761ef068c9c13abdc300fc8853c587615f1d438581",
+    "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md": "51418ae0399cdaf5583a0d8b814a166ae107ef266512acab04636d667cbd1820"
+  },
+  "runs": [
+    {
+      "mode": "mini",
+      "case_id": "W01",
+      "status": "completed",
+      "prompt_or_entrypoint": "skill/MINI_SKILL.md",
+      "instruction_sha256": "cfcfa1cda8fdc70895190b11f0455688a64a2144132af2ad7e614c6a2aa8dc64",
+      "raw_response_file": "mini-w01-raw.md",
+      "raw_response_sha256": "b09ce8473cafb721063b74f9b534d9f900d57b28942898a0385e503d7e92d86b",
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/limitation/inputs/v01.md"
+          ],
+          "response_section": "# Turn1",
+          "response_completed_before_next_input": true
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/workflow/inputs/w01-02.md"
+          ],
+          "response_section": "# Turn2",
+          "response_completed_before_next_input": true
+        },
+        {
+          "turn": 3,
+          "after_response_to": 2,
+          "inputs": [
+            "tests/workflow/inputs/w01-03.md"
+          ],
+          "response_section": "# Turn3",
+          "response_completed_before_next_input": true
+        }
+      ],
+      "execution_limits": []
+    },
+    {
+      "mode": "werkstatt",
+      "case_id": "W01",
+      "status": "completed",
+      "prompt_or_entrypoint": "skill/SKILL.md",
+      "instruction_sha256": "8fb8f029d0d9631acaa9bfa2c55cfb4b0a9d67d3ff804180daffd8d179b917c1",
+      "raw_response_file": "werkstatt-w01-raw.md",
+      "raw_response_sha256": "b17e2a12b26ec6fd2cc27690309e147855792362c7b3ecbbac5337e12db4b530",
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/limitation/inputs/v01.md"
+          ],
+          "response_section": "# Turn1",
+          "response_completed_before_next_input": true
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/workflow/inputs/w01-02.md"
+          ],
+          "response_section": "# Turn2",
+          "response_completed_before_next_input": true
+        },
+        {
+          "turn": 3,
+          "after_response_to": 2,
+          "inputs": [
+            "tests/workflow/inputs/w01-03.md"
+          ],
+          "response_section": "# Turn3",
+          "response_completed_before_next_input": true
+        }
+      ],
+      "execution_limits": [
+        "Nach Beginn wurde ausschließlich der redundante letzte Satz entfernt; die Rekonstruktion des getesteten Textes aus der Releasefassung ergibt den dokumentierten Hash. Keine fachliche oder Workflow-Regel änderte sich."
+      ]
+    },
+    {
+      "mode": "plugin",
+      "case_id": "W03",
+      "status": "completed",
+      "prompt_or_entrypoint": "plugins/bautraegervertragspruefer/skills/bautraeger-zahlungsrate-pruefen/SKILL.md",
+      "instruction_sha256": "eff3ba441aee02fa1ed49ea1c2034b3c3a8eb6788595e44eb9135edc749b1ce0",
+      "raw_response_file": "plugin-w03-raw.md",
+      "raw_response_sha256": "d2eccbc6fc03de0ee63f7f8a95c512e380ac9376e2e711c2482d4bf17b0056a0",
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/inputs/m-zahlung.md",
+            "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md",
+            "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-bautenstandsbericht.md",
+            "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-zahlungsanforderung.md",
+            "tests/workflow/inputs/textfassung.md"
+          ],
+          "response_section": "# Turn1",
+          "response_completed_before_next_input": true
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/inputs/m-zahlung-ergänzt.md"
+          ],
+          "response_section": "# Turn2",
+          "response_completed_before_next_input": true
+        },
+        {
+          "turn": 3,
+          "after_response_to": 2,
+          "inputs": [
+            "tests/workflow/inputs/w03-03.md"
+          ],
+          "response_section": "# Turn3",
+          "response_completed_before_next_input": true
+        }
+      ],
+      "execution_limits": [
+        "Ein Unteragent prüfte ausschließlich Primärrecht zu MaBV und Sicherheiten; keine zukünftigen Falldaten oder Erwartungen.",
+        "Die verlinkte Werkstatt-Referenz lag zu Beginn noch mit dem redundanten Schlusssatz vor."
+      ]
+    }
+  ],
+  "not_executed": [
+    "W02",
+    "W04",
+    "W05",
+    "Word-Dateien im Mehrturndialog",
+    "andere KI-Anbieter oder Modelle"
+  ],
+  "evaluation": "README.md"
+}

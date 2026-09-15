@@ -1,4 +1,4 @@
 interface:
   display_name: "Bauträgerzahlungsrate prüfen"
-  short_description: "Rate, Baufortschritt und Sicherheiten abgleichen"
-  default_prompt: "Prüfe mit $bautraeger-zahlungsrate-pruefen, ob diese Rate nach den vorliegenden Belegen fällig ist."
+  short_description: "Zahlungsrate berechnen und Fälligkeit begründet entscheiden"
+  default_prompt: "Prüfe mit $bautraeger-zahlungsrate-pruefen diese Rate, beziffere das tragfähige Zahlungsergebnis und fordere entscheidende fehlende Belege gezielt an."

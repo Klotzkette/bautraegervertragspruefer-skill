@@ -1,5 +1,14 @@
 # Änderungsprotokoll
 
+## 4.5.0 - 15. September 2026
+
+1. Werkstatt, Mini und alle drei Plugin-Skills führen den Auftrag über Unterlagenaufnahme, gezielte Klärung und rechtliche Bewertung bis zu konkreten Änderungen und beauftragten Schreiben. Antworten, neue Fassungen und Gegenbelege werden in die laufende Prüfung eingearbeitet. Die bisherige Begrenzung auf eine bloße Analyse entfällt.
+2. Anwaltlich lesbare Ausgabe: kurze begründete Abschnitte, konkrete Folgen und Ersatztexte; keine erzwungenen Karten, Matrizen, Ampeln oder leeren Rubriken. Gegenargumente nur, wo sie tatsächlich tragen. Interne Prüfregeln sind kein Ausgabeformular.
+3. Fallbezogene Recherche statt obligatorischer Suche zu acht Themen vor jeder Antwort. Bereits geprüfte Rechtsgrundlagen müssen ohne Anlass nicht für jede Folgerunde neu recherchiert werden. Quellen- und Tatsachenlücken bleiben ausdrücklich offen.
+4. Mini mit 9.941 Zeichen und neuem internem Budget von 10.000 statt 7.500: lesbare Sätze und vollständiger Ablauf mit Rückfragen. Werkstatt 38, Mini 4 Seiten im Word-Export mit Arial 11 pt. Alle 49 Rechtsprechungsanker, Verjährungskontrolle und Regeln für Word-Vertragsentwürfe bleiben erhalten.
+5. Fünf getrennte Mehrturn-Szenarien ergänzen die Testakten. Sie prüfen unter anderem Schreiben nach einer Rückfrage, neue Ausschlussfristen in einer korrigierten Fassung, positive Zahlungsnachweise, Gegenfeststellungen sowie begrenzte Aufträge und Stop. Statische Prüfungen und tatsächliche Modellläufe werden getrennt dokumentiert.
+6. Starttexte, Downloadseite, Plugin-Manifeste, Spiegelkopien und Downloadpaket auf 4.5.0 abgestimmt.
+
 ## 4.4.1 - 9. September 2026
 
 1. Ausdrückliche Verjährungskontrolle in Werkstatt, Mini und Vertragsprüfungs-Skill: fünf Jahre ab maßgeblicher Abnahme für Bauwerksmängel, § 309 Nr. 8 b ff gegen Zweijahresklauseln in Verbraucher-AGB und § 306 Abs. 2 als Rechtsfolge. Früherer Fristbeginn, technische Anlagen und verdeckte Anzeigefristen werden mitgeprüft. Keine falsche allgemeine Unabdingbarkeit aus § 650o; echte Individualvereinbarungen und nicht bauwerksbezogene Werke bleiben getrennt.

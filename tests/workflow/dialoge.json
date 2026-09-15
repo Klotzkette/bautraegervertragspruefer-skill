@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "delivery": "one_user_turn_after_previous_response",
+  "fresh_conversation_per_case": true,
+  "future_turns_visible": false,
+  "contract_format": "markdown",
+  "cases": [
+    {
+      "id": "W01",
+      "plugin_entrypoint": "bautraegervertrag-pruefen",
+      "turns": [
+        {"turn": 1, "after_response_to": null, "inputs": ["tests/limitation/inputs/v01.md"]},
+        {"turn": 2, "after_response_to": 1, "inputs": ["tests/workflow/inputs/w01-02.md"]},
+        {"turn": 3, "after_response_to": 2, "inputs": ["tests/workflow/inputs/w01-03.md"]}
+      ]
+    },
+    {
+      "id": "W02",
+      "plugin_entrypoint": "bautraegervertrag-pruefen",
+      "turns": [
+        {"turn": 1, "after_response_to": null, "inputs": ["tests/inputs/m-entwurf.md", "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md", "tests/workflow/inputs/w02-01.md"]},
+        {"turn": 2, "after_response_to": 1, "inputs": ["tests/workflow/inputs/w02-02.md"]},
+        {"turn": 3, "after_response_to": 2, "inputs": ["tests/workflow/inputs/w02-03.md"]}
+      ]
+    },
+    {
+      "id": "W03",
+      "plugin_entrypoint": "bautraeger-zahlungsrate-pruefen",
+      "turns": [
+        {"turn": 1, "after_response_to": null, "inputs": ["tests/inputs/m-zahlung.md", "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md", "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-bautenstandsbericht.md", "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-zahlungsanforderung.md", "tests/workflow/inputs/textfassung.md"]},
+        {"turn": 2, "after_response_to": 1, "inputs": ["tests/inputs/m-zahlung-ergänzt.md"]},
+        {"turn": 3, "after_response_to": 2, "inputs": ["tests/workflow/inputs/w03-03.md"]}
+      ]
+    },
+    {
+      "id": "W04",
+      "plugin_entrypoint": "bautraeger-zahlungsrate-pruefen",
+      "turns": [
+        {"turn": 1, "after_response_to": null, "inputs": ["tests/inputs/l-zahlung.md", "vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md", "vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-bautenstandsbericht.md", "vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-zahlungsanforderung.md", "tests/workflow/inputs/textfassung.md"]},
+        {"turn": 2, "after_response_to": 1, "inputs": ["tests/inputs/l-gegenfeststellung.md"]},
+        {"turn": 3, "after_response_to": 2, "inputs": ["tests/workflow/inputs/w04-03.md"]}
+      ]
+    },
+    {
+      "id": "W05",
+      "plugin_entrypoint": "bautraegervertrag-pruefen",
+      "turns": [
+        {"turn": 1, "after_response_to": null, "inputs": ["tests/workflow/inputs/w05-01.md"]},
+        {"turn": 2, "after_response_to": 1, "inputs": ["tests/workflow/inputs/w05-02.md"]},
+        {"turn": 3, "after_response_to": 2, "inputs": ["tests/workflow/inputs/w05-03.md"]}
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Bauträgervertragsprüfer
 
-Version 4.4.1 prüft deutsche Bauträgerverträge aus Erwerbersicht: Vertragsklauseln, Anlagen, Zahlungsraten, Abnahme, Bausoll und Eigentumssicherung. Jeder wesentliche Befund muss auf eine lesbare Stelle der vorgelegten Akte zurückgehen und eine begründete, zur Vertragsphase passende Handlung ergeben.
+Version 4.5.0 prüft deutsche Bauträgerverträge aus Erwerbersicht und führt den Auftrag bis zum verwendbaren Ergebnis: begründete Vertragsbewertung, gezielte Rückfragen, konkrete Änderungen und beauftragte Schreiben. Neue Unterlagen werden in die laufende Prüfung eingearbeitet. Die Ausgabe verwendet juristische Alltagssprache statt interner Prozessbegriffe.
 
 **Menü:** [Prompts](#werkstatt-und-mini-prompt) · [Plugin](#plugin-mit-drei-skills) · [Word](#word-vertragsvorlagen) · [Testakten](#testakten) · [Prüfung](#qualität-und-grenzen) · [Dateien](#repository-dateien) · [Lizenz](#lizenz)
 
@@ -11,9 +11,7 @@ Version 4.4.1 prüft deutsche Bauträgerverträge aus Erwerbersicht: Vertragskla
 | Gründliche Vertragsprüfung | [Werkstatt-Prompt](skill/SKILL.md) | [SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md) |
 | Kleines Kontextfenster | [Mini-Prompt](skill/MINI_SKILL.md) | [MINI_SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md) |
 
-Für Word gibt es jetzt formatierte Fassungen: [Werkstatt-Prompt 4.4.1 als DOCX](docs/downloads/werkstatt-prompt-4.4.1.docx) mit **38 Seiten** und [Mini-Prompt 4.4.1 als DOCX](docs/downloads/mini-prompt-4.4.1.docx) mit **3 Seiten**. Gemessen mit LibreOffice, Letter, Arial 11 pt und 2,54 cm Rändern; Word-Version und Schriftverfügbarkeit können den Umbruch verändern. Markdown selbst hat keine feste Seitenzahl. Lange Erläuterungstabellen stehen nun schon in Markdown als vollbreite Einträge; sämtliche 49 Rechtsprechungsanker samt Fundstellen, Kernaussagen und Einsatzgrenzen bleiben erhalten. Die Word-Dateien enthalten den vollständigen lesbaren Prompt; der technische YAML-Metadatenblock entfällt und Ampelsymbole werden als ROT/ORANGE/GRÜN ausgeschrieben.
-
-**Achtung bei älteren Downloads:** Am 9. September 2026 verweist `releases/latest` noch auf 4.3.0. Die Änderungen 4.4.0/4.4.1 stehen in [PR 19](https://github.com/Klotzkette/bautraegervertragspruefer-skill/pull/19), bis sie übernommen und veröffentlicht werden. Für diesen Stand die Dateien dieses Branches verwenden.
+Formatierte Word-Fassungen: [Werkstatt-Prompt 4.5.0 als DOCX](docs/downloads/werkstatt-prompt-4.5.0.docx) mit **38 Seiten** und [Mini-Prompt 4.5.0 als DOCX](docs/downloads/mini-prompt-4.5.0.docx) mit **4 Seiten**. Gemessen mit LibreOffice, Letter, Arial 11 pt und 2,54 cm Rändern; Word-Version und Schriftverfügbarkeit können den Umbruch verändern. Markdown selbst hat keine feste Seitenzahl. Alle 49 Rechtsprechungsanker bleiben als gesonderter Nachschlageteil erhalten. Die Word-Dateien enthalten den vollständigen lesbaren Prompt ohne technischen YAML-Metadatenblock.
 
 Eine Datei als Arbeitsanweisung in den gewünschten Chat laden oder ihren Text kopieren. Dann den Vertrag und die dazugehörigen Anlagen hinzufügen. Beide Prompts enthalten die nötigen Prüfanweisungen selbst; sie setzen weder dieses Plugin noch ein bestimmtes KI-Produkt voraus. Datei-, Bild- und Internetzugriff hängen vom verwendeten System ab. Die Prompts verlangen, konkrete Lese- und Quellenlücken offenzulegen.
 
@@ -25,8 +23,9 @@ den beigefügten Werkstatt- bzw. Mini-Prompt. Stelle zuerst fest, welche
 Vertragsfassung und welche Anlagen tatsächlich lesbar vorliegen und ob
 ein Entwurf oder eine beurkundete Fassung belegt ist. Begründe jeden
 wesentlichen Befund an seiner Klausel, rechne die Zahlungsraten nach und
-formuliere konkrete, zur Vertragsphase passende Änderungen. Behandle
-fehlende Belege als offene Punkte und würdige auch tragfähige Regelungen.
+formuliere konkrete, zur Vertragsphase passende Änderungen. Kläre
+entscheidende Lücken mit gezielten Rückfragen. Führe beauftragte
+Folgeschritte nach meiner Antwort aus und prüfe neue Fassungen weiter.
 ```
 
 Für einen Zahlungsfall:
@@ -39,11 +38,13 @@ Widersprüche zwischen Einzelpositionen und Berichts-Fazit. Gib einen
 zahlbaren Betrag nur an, soweit er sich aus den Belegen ableiten lässt.
 ```
 
-„Vollständig prüfen“ verlangt die vollständige Analyse. Wer zusätzlich Schreiben möchte, ergänzt: `Vollpaket: Mandantenanschreiben, ausführliches Gutachten und phasengerechtes Schreiben an den Bauträger.` Ein Abbruch lässt sich anhand der Fortsetzungsnotiz fortführen.
+„Vollständig prüfen“ führt durch die Prüfung bis zu begründeten Ergebnissen und konkreten Änderungen oder Maßnahmen. Ist ein Schreiben bereits beauftragt, wird es ausgearbeitet statt nur angeboten. Ist die anschließende Verwendung offen, folgt eine konkrete Frage nach Empfänger oder Vorgehen. Nachgereichte Unterlagen und Antworten ändern die betroffenen Ergebnisse, ohne die Aufnahme neu zu beginnen. Eine notwendige ausstehende Antwort bleibt ausdrücklich offen; ein begrenzter Auftrag erhält kein ungefragtes Zusatzpaket. Für alle drei Dokumente: `Vollpaket: Mandantenanschreiben, ausführliches Gutachten und phasengerechtes Schreiben an den Bauträger.`
 
 Die Werkstatt enthält einen konzentrierten Arbeitsablauf sowie einen ausdrücklich historischen Rechtsprechungs- und Gesetzgebungsbestand. Der Mini-Prompt priorisiert ausführbare Prüfregeln statt langer Aktenzeichenlisten. Die Verwendung in einem anderen Modell ist möglich; eine gleiche Ergebnisqualität über verschiedene Modelle hinweg wird nicht behauptet.
 
-Beide Fassungen verlangen einen ausdrücklichen Verjährungsbefund: Bauwerksmängel regelmäßig fünf Jahre ab maßgeblicher Abnahme (§ 634a Abs. 1 Nr. 2, Abs. 2 BGB), eine Zweijahresverkürzung in Verbraucher-AGB unwirksam nach § 309 Nr. 8 b ff BGB. Vorgezogener Beginn, technische Gebäudeanlagen und verdeckte Mängelanzeigefristen gehören dazu. Echte Individualvereinbarungen und die gesetzliche Zweijahresfrist für nicht bauwerksbezogene Werke werden gesondert beurteilt. Der Mini bleibt mit 7.497 Zeichen unter 7.500. Dazu gibt es [sieben gezielte Testfälle](tests/limitation/README.md) und [tatsächliche Antworten mit getrennter Auswertung](tests/runs/2026-09-09/README.md). Statische Kontrollen sind keine KI-Erfolgsgarantie.
+Beide Fassungen verlangen eine ausdrückliche Verjährungsprüfung: Bauwerksmängel regelmäßig fünf Jahre ab maßgeblicher Abnahme (§ 634a Abs. 1 Nr. 2, Abs. 2 BGB), eine Zweijahresverkürzung in Verbraucher-AGB unwirksam nach § 309 Nr. 8 b ff BGB. Vorgezogener Beginn, technische Gebäudeanlagen und verdeckte Mängelanzeigefristen gehören dazu. Echte Individualvereinbarungen und die gesetzliche Zweijahresfrist für nicht bauwerksbezogene Werke werden gesondert beurteilt. Dazu gibt es [sieben gezielte Testfälle](tests/limitation/README.md) und [Praxisantworten der früheren Fassung](tests/runs/2026-09-09/README.md).
+
+Der Mini umfasst 9.941 Zeichen. Das frühere interne Limit von 7.500 wurde auf 10.000 angehoben, um den Ablauf mit Rückfragen und Folgeschritten in lesbaren Sätzen abzubilden. Er bleibt eigenständig und enthält keine lange Rechtsprechungssammlung. [Fünf Mehrturn-Testfälle](tests/workflow/README.md) prüfen den Verlauf mit zeitlich getrennten Folgeeingaben; die Erwartungen sind von den Eingaben getrennt. [Drei tatsächliche Dialogproben mit neun Antworten](tests/runs/2026-09-15/README.md) dokumentieren Klauselrücklauf und Zahlungsprüfung einschließlich der beauftragten Schreiben. Statische Kontrollen belegen keine Modellleistung.
 
 Reproduzierbarer Word-Export: `python scripts/export_prompt_docx.py skill/SKILL.md neuer-werkstatt-prompt.docx --soffice /pfad/zu/soffice`. Benötigt Python mit `python-docx`, Pandoc, LibreOffice und `pdfinfo`. Das Skript erhält bestehende Zieldateien und verweigert die Ausgabe oberhalb von 100 tatsächlich gerenderten Seiten. Vor Weitergabe alle Seiten visuell prüfen; ein Seitenzähler allein ist keine Layoutkontrolle.
 
@@ -87,7 +88,7 @@ Im [Testbereich](tests/) liegen neutrale Aufträge, nachvollziehbare Rechenerwar
 bash scripts/validate_repo.sh
 ```
 
-Die Prüfungen kontrollieren Prompt- und Plugin-Konsistenz, Dateien und Verweise, Rechenverhalten, Word-Auswertung, die Quellenstruktur sowie Vertragsartefakte und deren Spiegelkopien. Die frühere Mindestlänge von 370.000 Zeichen und Tests auf vorgeschriebene Schlagwörter wurden durch prüfbare Paket- und Verhaltenskontrollen ersetzt. Ein langer Prompt oder ein bestandener Textvergleich belegt keine gute Rechtsprüfung.
+Die Prüfungen kontrollieren Prompt- und Plugin-Konsistenz, Dateien und Verweise, Rechenverhalten, Word-Auswertung, die Quellenstruktur sowie Vertragsartefakte und deren Spiegelkopien. Die Mehrturn-Tests kontrollieren außerdem Eingabetrennung und gezielte Ablaufregeln; tatsächliche Antworten werden gesondert bewertet. Ein langer Prompt oder ein bestandener Textvergleich belegt keine gute Rechtsprüfung.
 
 Mit `BTV_VERIFY_BUILDS=1 bash scripts/validate_repo.sh` werden zusätzlich die deutschen Vertragsartefakte isoliert nachgebaut. `python3 scripts/check_legal_anchors.py --online` prüft die Erreichbarkeit hinterlegter Quellen. Ein erfolgreicher Abruf bestätigt weder die Richtigkeit einer Zusammenfassung noch die Übertragbarkeit einer Entscheidung. Die konkrete juristische Verwendung erfordert die Prüfung von Normstand, Volltext und Fallbezug.
 

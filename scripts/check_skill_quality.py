@@ -64,8 +64,8 @@ def main():
     errors = check(full, "Werkstatt") + check(mini, "Mini")
     if version(mini) != version(full) + "-mini":
         errors.append("Full/mini versions differ")
-    if len(mini) > 7500:
-        errors.append(f"Mini exceeds the published 7,500-character budget: {len(mini)}")
+    if len(mini) > 10000:
+        errors.append(f"Mini exceeds the published 10,000-character budget: {len(mini)}")
     for name in ("SKILL.md", "MINI_SKILL.md"):
         if (ROOT / "skill" / name).read_bytes() != (ROOT / "docs" / name).read_bytes():
             errors.append(f"Prompt mirror differs: {name}")
