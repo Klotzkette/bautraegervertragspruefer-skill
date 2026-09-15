@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "template_only": true,
+  "status": "not_run",
+  "case_id": null,
+  "started_at": null,
+  "finished_at": null,
+  "model_provider": null,
+  "model_id": null,
+  "prompt_or_entrypoint": null,
+  "version": null,
+  "instruction_files": [],
+  "instruction_sha256": {},
+  "system_and_developer_context": null,
+  "tools_available": [],
+  "research_access": null,
+  "fresh_conversation": null,
+  "expectations_hidden_during_execution": null,
+  "turns_delivered_sequentially": null,
+  "turns": [
+    {"turn": 1, "input_sha256": {}, "user_sent_at": null, "raw_response_file": null, "response_completed_at": null},
+    {"turn": 2, "input_sha256": {}, "user_sent_at": null, "raw_response_file": null, "response_completed_at": null},
+    {"turn": 3, "input_sha256": {}, "user_sent_at": null, "raw_response_file": null, "response_completed_at": null}
+  ],
+  "execution_limits": [],
+  "evaluation": {"evaluator": null, "evaluated_at": null, "turn_results": [], "critical_errors": [], "language_observations": [], "overall_conclusion": null}
+}

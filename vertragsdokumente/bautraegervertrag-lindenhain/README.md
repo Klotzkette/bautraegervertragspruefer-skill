@@ -2,7 +2,7 @@
 
 **Navigation:** [Haupt-README](../../README.md) · [Alle Vertragsakten](../README.md) · [Downloads](#downloads-auf-einen-blick) · [Verwendung](#verwendung-mit-dem-skill) · [Neu erzeugen](#neu-erzeugen) · [Hohenwartshofen](../bautraegervertrag/README.md) · [Marewald](../bautraegervertrag-marewald/README.md) · [Downloadseite](https://klotzkette.github.io/bautraegervertragspruefer-skill/#akten) · [neueste Veröffentlichung](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest)
 
-> **Charakter dieser Akte:** fair, ausgewogen und leicht käuferfreundlich. Der Vertrag ist als positive Kontrollakte gedacht: Der Skill soll nicht reflexhaft rote Befunde produzieren, sondern erkennen, dass Zahlungsplan, Sicherheiten, Abnahme, Unterlagen, Baukontrolle und Sprachfassung verbraucherseitig sauber geregelt sind. Übersicht: [`../README.md`](../README.md).
+> **Prüfstoff:** Vertragsentwurf „Lindenhain 12“, Einheit B-05, mit umfangreichen Käuferrechten sowie Unterlagen zum vierten Zahlungsabruf im Februar 2028. Tragfähige Schutzregeln müssen ebenso erkannt werden wie verbleibende Auslegungs- und Belegfragen. Die [Erwartungsmatrix](../../tests/erwartungsmatrix.md) wird getrennt von der Prüfakte geführt.
 
 ## Downloads auf einen Blick
 
@@ -30,10 +30,10 @@ Markdown, Word und Gesamt-PDF enthalten denselben Vertragsstoff einschließlich 
 
 ## Verwendung mit dem Skill
 
-1. Lade für den vollständigen Lauf das Akten-ZIP hoch; für eine reine Klauselprüfung genügt der Bauträgervertrag als PDF, DOCX oder Markdown.
-2. Lade [SKILL.md](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md) oder kompakt [MINI_SKILL.md](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md).
-3. Übergib beides einer KI und schreibe: `Prüfe die gesamte Akte und entscheide über die Zahlungsfreigabe.`
-4. Erwartung: Der Skill soll den transparent belegten vierten Bautenstand samt Rechnung, Sicherheit und Rechenweg freigeben, den Vertrag überwiegend 🟢 bewerten und keine künstliche Beanstandung erzeugen.
+1. Vor Beurkundung die Word-Fassung einschließlich Baubeschreibung mit dem [Entwurfs-Sachverhalt](../../tests/inputs/l-entwurf.md) prüfen. Im Entwurf wird keine abgeschlossene Beurkundung oder bereits eingetretene Fälligkeit angenommen.
+2. Für den späteren Zahlungsabruf Bericht, Zahlungsanforderung und [Zahlungs-Sachverhalt](../../tests/inputs/l-zahlung.md) hinzufügen.
+3. Der [ergänzte Zahlungs-Sachverhalt](../../tests/inputs/l-zahlung-ergänzt.md), eine [spätere Gegenfeststellung](../../tests/inputs/l-gegenfeststellung.md) und ein [Sonderwunsch](../../tests/inputs/l-sonderwunsch.md) werden jeweils getrennt geprüft.
+4. Werkstatt-Prompt und Mini-Prompt in frischen Chats mit identischen Eingaben vergleichen und nach der [Testanleitung](../../tests/README.md) auswerten. In der Basisakte erwähnte Unterlagen nicht mit tatsächlich vorgelegten Dokumenten verwechseln.
 
 ## Neu erzeugen
 

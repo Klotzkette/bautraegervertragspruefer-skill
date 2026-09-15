@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bauträgervertrag prüfen"
+  short_description: "Vertrag prüfen und konkrete Änderungen ausarbeiten"
+  default_prompt: "Prüfe mit $bautraegervertrag-pruefen diesen Vertrag aus Erwerbersicht, kläre entscheidende Lücken und arbeite die erforderlichen Ersatzklauseln aus."

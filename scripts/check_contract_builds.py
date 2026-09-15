@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import json
 import os
 import re
 import shutil
@@ -13,6 +14,7 @@ import sys
 import tempfile
 import unicodedata
 import xml.etree.ElementTree as ET
+from html.parser import HTMLParser
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date
 from decimal import Decimal, InvalidOperation
@@ -117,6 +119,7 @@ def fail(message: str) -> None:
 def protected_paths() -> list[Path]:
     paths = [
         Path("scripts/build_bilingual_contracts.py"),
+        Path("vertragsdokumente/format_docx.py"),
         Path("vertragsdokumente/case-style.css"),
     ]
     for name in CONTRACTS:
@@ -127,6 +130,7 @@ def protected_paths() -> list[Path]:
                 base / "build/pdf-template.html",
                 base / "build/pagebreak.lua",
                 base / "build/style.css",
+                base / "build/translations.en.json",
                 base / f"{name}.md",
                 base / f"{name}.pdf",
                 base / f"{name}.docx",
@@ -189,6 +193,8 @@ def read_manifest() -> dict[str, str]:
 
 def verify_manifest(*, check_artifacts: bool = True) -> None:
     if check_artifacts:
+        verify_draft_contracts()
+        verify_mirrors()
         verify_case_documents()
         verify_zip_structures()
         verify_bilingual_provenance()
@@ -213,6 +219,8 @@ def verify_manifest(*, check_artifacts: bool = True) -> None:
 
 def write_manifest() -> None:
     rebuild_contracts()
+    verify_draft_contracts()
+    verify_mirrors()
     verify_case_documents()
     verify_zip_structures()
     verify_bilingual_provenance()
@@ -390,14 +398,18 @@ def verify_case_documents() -> None:
         if f"{report_id} vom {markdown_field(report_date_text)}" not in request:
             fail(f"{name}: attachment line does not match report number and date")
 
-        contract_urn = required_match(
-            r"UR-Nr\.\s*([0-9]+/\d{4}\s+[A-Z]+)",
-            contract,
-            f"{name} contract deed number",
+        scenario_date = required_match(
+            r"vorgesehen für den (.+?)$", contract, f"{name} proposed date"
         ).group(1)
         for document_label, document in (("report", report), ("payment request", request)):
-            if contract_urn not in document:
-                fail(f"{name}: {document_label} does not match contract deed number")
+            if f"Vertragsschluss am {scenario_date}" not in document:
+                fail(f"{name}: {document_label} does not match the assumed later contract date")
+            if not all(token in document for token in ("Zahlungsszenario", "unterstellt", "Vertragsfassung bleibt Entwurf")):
+                fail(f"{name}: {document_label} fails to separate the later payment scenario from the draft")
+            if re.search(r"UR-Nr\.\s*\d", document):
+                fail(f"{name}: {document_label} invents an executed deed number")
+        if parse_german_date(scenario_date, name) >= report_date:
+            fail(f"{name}: later payment scenario precedes the assumed contract date")
 
         rows = payment_rows(request, name)
         total_label, total_percent, total_amount = rows[0]
@@ -519,6 +531,72 @@ def docx_text(path: Path) -> str:
     return canonical_text("\n".join(paragraphs))
 
 
+FORBIDDEN_DRAFT_RE = re.compile(
+    r"(?i)(?:\bKI[\s-]*generiert\b|\bAI[\s-]*generated\b|"
+    r"erschienen heute|heutigen Tage|unterzeichnenden Notar|"
+    r"(?:wurde|wurden)[^.;\n]{0,180}(?:vorgelesen|mitverlesen|mitbeurkundet|genehmigt|unterschrieben)|"
+    r"(?:was|were)[^.;\n]{0,180}(?:read aloud|signed by hand)|"
+    r"ist (?:mit dem (?:Bauträgervertrag|Kaufvertrag) )?mitbeurkundet\b)"
+)
+
+
+def assert_draft_text(text: str, label: str, *, opening: bool = True) -> None:
+    if opening:
+        if "ENTWURF" not in text[:250]:
+            fail(f"{label}: missing prominent draft heading")
+        if not re.search(r"UR-Nr\.\s+_{8,}", text[:4000]):
+            fail(f"{label}: main deed number is not blank")
+        front = text.split("Vorgesehener Beurkundungstermin", 1)[0]
+        if re.search(r"(?:UR[- ](?:Nr|No)|Deed no)\.?\s*\d", front, re.I):
+            fail(f"{label}: main deed number is filled")
+    match = FORBIDDEN_DRAFT_RE.search(text)
+    if match:
+        fail(f"{label}: completed-notarisation or generation wording: {match.group(0)}")
+
+
+def verify_draft_contracts() -> None:
+    for name in CONTRACTS:
+        directory = ROOT / "vertragsdokumente" / name
+        assert_draft_text((directory / f"{name}.md").read_text(encoding="utf-8"), name)
+        for suffix in ("", "-de-en"):
+            path = directory / f"{name}{suffix}.docx"
+            verify_draft_docx(path)
+            assert_draft_text(pdf_text(directory / f"{name}{suffix}.pdf"), f"{name}{suffix}.pdf")
+    print("check_contract_builds: draft status ok (6 Word documents, all XML parts, 6 PDFs)")
+
+
+def verify_draft_docx(path: Path) -> None:
+    """Inspect all Word text parts, not merely the visible main document."""
+    assert_draft_text(docx_text(path), path.name)
+    with ZipFile(path) as archive:
+        if any(part.startswith("_xmlsignatures/") for part in archive.namelist()):
+            fail(f"{path.name}: a draft must not contain a document signature")
+        for part in archive.namelist():
+            if not part.endswith(".xml") or not part.startswith(("word/", "docProps/")):
+                continue
+            element = ET.fromstring(archive.read(part))
+            # Include run-split text, tracked deletions, fields, comments,
+            # text boxes, headers, footers, notes and custom metadata.
+            paragraphs = element.findall(f".//{{{WORD_NS}}}p")
+            visible = ("\n".join("".join(p.itertext()) for p in paragraphs)
+                       if paragraphs else " ".join(element.itertext()))
+            assert_draft_text(visible, f"{path.name}:{part}", opening=False)
+
+
+def verify_mirrors() -> None:
+    count = 0
+    for relative in protected_paths():
+        if relative.parts[0] != "vertragsdokumente" or len(relative.parts) != 3:
+            continue
+        mirror = ROOT / "docs" / relative
+        if mirror.suffix not in {".md", ".pdf", ".docx", ".zip", ".html"}:
+            continue
+        if not mirror.is_file() or mirror.read_bytes() != (ROOT / relative).read_bytes():
+            fail(f"public mirror differs: {mirror.relative_to(ROOT)}")
+        count += 1
+    print(f"check_contract_builds: public mirrors ok ({count} files)")
+
+
 def archive_pdf_texts(path: Path, scratch: Path) -> dict[str, str]:
     result: dict[str, str] = {}
     scratch.mkdir(parents=True, exist_ok=True)
@@ -579,6 +657,10 @@ def verify_zip_structures() -> None:
             fail(f"ZIP payment request has the wrong visible title: {path.name}")
         for member_name, text in texts.items():
             assert_no_case_meta(text, f"{path.name}:{member_name}")
+        assert_draft_text(texts[expected_members[0]], f"{path.name}:contract")
+        if "ENTWURF" not in texts[expected_members[1]][:250]:
+            fail(f"{path.name}: standalone specification lacks draft status")
+        assert_draft_text(texts[expected_members[1]], f"{path.name}:specification", opening=False)
     print(f"check_contract_builds: ZIP structures ok ({len(ZIP_MEMBERS)} archives)")
 
 
@@ -620,7 +702,78 @@ def docx_provenance(path: Path) -> str:
     return extract_provenance(metadata, path.name)
 
 
+class EnglishCells(HTMLParser):
+    """Collect visible text of each outer English cell, including nested tables."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.cells: list[str] = []
+        self.depth = 0
+        self.parts: list[str] = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "td":
+            if self.depth:
+                self.depth += 1
+            elif "en" in dict(attrs).get("class", "").split():
+                self.depth = 1
+                self.parts = []
+
+    def handle_endtag(self, tag):
+        if tag == "td" and self.depth:
+            self.depth -= 1
+            if not self.depth:
+                self.cells.append(" ".join(self.parts))
+
+    def handle_data(self, value):
+        if self.depth:
+            self.parts.append(value)
+
+
+def translation_fingerprint(value: str) -> str:
+    # Layout, quote style, decimal separators and table bullets can differ.
+    # Letters/digits (including their order) may not disappear or change.
+    return "".join(c for c in unicodedata.normalize("NFC", value).casefold() if c.isalnum())
+
+
+def verify_english_content() -> None:
+    import build_bilingual_contracts as bilingual
+
+    for config in bilingual.CONFIGS:
+        memory = json.loads((config.src.parent / "build/translations.en.json").read_text())
+        blocks = bilingual.inject_language_notice(bilingual.split_blocks(config.src.read_text()), config)
+        expected = []
+        for block in blocks:
+            if block == r"\newpage":
+                continue
+            parser = EnglishCells()
+            parser.feed('<td class="en">' + bilingual.reviewed_translation(block, memory) + '</td>')
+            expected.append(translation_fingerprint(parser.cells[0]))
+        actual = EnglishCells()
+        actual.feed((config.src.parent / f"{config.out_prefix}.html").read_text())
+        if "".join(expected) != "".join(translation_fingerprint(cell) for cell in actual.cells):
+            fail(f"{config.out_prefix}: HTML diverges from exact English translation memory")
+        with ZipFile(config.src.parent / f"{config.out_prefix}.docx") as archive:
+            root = ET.fromstring(archive.read("word/document.xml"))
+        table = root.find(f".//{{{WORD_NS}}}tbl")
+        if table is None:
+            fail(f"{config.out_prefix}: bilingual Word table missing")
+        actual_word = []
+        for row in table.findall(f"{{{WORD_NS}}}tr")[1:]:
+            cells = row.findall(f"{{{WORD_NS}}}tc")
+            if len(cells) == 2:
+                text = " ".join(node.text or "" for node in cells[1].iter(f"{{{WORD_NS}}}t"))
+                if translation_fingerprint(text):
+                    actual_word.append(translation_fingerprint(text))
+        # Word may merge neighbouring HTML blocks into one cell; the complete
+        # English reading order must nevertheless remain identical.
+        if "".join(expected) != "".join(actual_word):
+            fail(f"{config.out_prefix}: Word content diverges from English translation memory")
+    print("check_contract_builds: English memory, HTML and Word content agree (3 contracts)")
+
+
 def verify_bilingual_provenance() -> None:
+    verify_english_content()
     for name in CONTRACTS:
         directory = ROOT / "vertragsdokumente" / name
         expected = sha256(directory / f"{name}.md")
@@ -721,6 +874,7 @@ def rebuild_contracts() -> None:
             ROOT / "vertragsdokumente" / "case-style.css",
             temporary_root / "case-style.css",
         )
+        shutil.copy2(ROOT / "vertragsdokumente/format_docx.py", temporary_root / "format_docx.py")
         with ThreadPoolExecutor(max_workers=build_worker_count()) as executor:
             futures = {
                 name: executor.submit(compare_contract, name, temporary_root)

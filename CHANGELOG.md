@@ -1,5 +1,35 @@
 # Änderungsprotokoll
 
+## 4.5.0 - 15. September 2026
+
+1. Werkstatt, Mini und alle drei Plugin-Skills führen den Auftrag über Unterlagenaufnahme, gezielte Klärung und rechtliche Bewertung bis zu konkreten Änderungen und beauftragten Schreiben. Antworten, neue Fassungen und Gegenbelege werden in die laufende Prüfung eingearbeitet. Die bisherige Begrenzung auf eine bloße Analyse entfällt.
+2. Anwaltlich lesbare Ausgabe: kurze begründete Abschnitte, konkrete Folgen und Ersatztexte; keine erzwungenen Karten, Matrizen, Ampeln oder leeren Rubriken. Gegenargumente nur, wo sie tatsächlich tragen. Interne Prüfregeln sind kein Ausgabeformular.
+3. Fallbezogene Recherche statt obligatorischer Suche zu acht Themen vor jeder Antwort. Bereits geprüfte Rechtsgrundlagen müssen ohne Anlass nicht für jede Folgerunde neu recherchiert werden. Quellen- und Tatsachenlücken bleiben ausdrücklich offen.
+4. Mini mit 9.941 Zeichen und neuem internem Budget von 10.000 statt 7.500: lesbare Sätze und vollständiger Ablauf mit Rückfragen. Werkstatt 38, Mini 4 Seiten im Word-Export mit Arial 11 pt. Alle 49 Rechtsprechungsanker, Verjährungskontrolle und Regeln für Word-Vertragsentwürfe bleiben erhalten.
+5. Fünf getrennte Mehrturn-Szenarien ergänzen die Testakten. Sie prüfen unter anderem Schreiben nach einer Rückfrage, neue Ausschlussfristen in einer korrigierten Fassung, positive Zahlungsnachweise, Gegenfeststellungen sowie begrenzte Aufträge und Stop. Statische Prüfungen und tatsächliche Modellläufe werden getrennt dokumentiert.
+6. Starttexte, Downloadseite, Plugin-Manifeste, Spiegelkopien und Downloadpaket auf 4.5.0 abgestimmt.
+
+## 4.4.1 - 9. September 2026
+
+1. Ausdrückliche Verjährungskontrolle in Werkstatt, Mini und Vertragsprüfungs-Skill: fünf Jahre ab maßgeblicher Abnahme für Bauwerksmängel, § 309 Nr. 8 b ff gegen Zweijahresklauseln in Verbraucher-AGB und § 306 Abs. 2 als Rechtsfolge. Früherer Fristbeginn, technische Anlagen und verdeckte Anzeigefristen werden mitgeprüft. Keine falsche allgemeine Unabdingbarkeit aus § 650o; echte Individualvereinbarungen und nicht bauwerksbezogene Werke bleiben getrennt.
+2. Lange Erläuterungstabellen in vollbreite Markdown-Einträge umgestellt. Alle 49 Rechtsprechungsanker mit 53 Aktenzeichen und Quellenadressen bleiben vollständig erhalten; kein Rechtsprechungsbestand wurde allein für die Seitenzahl gestrichen.
+3. Formatierte Word-Prompts ergänzt: Werkstatt 38 Seiten, Mini 3 Seiten bei Letter, Arial 11 pt und 2,54 cm Rändern im LibreOffice-Render. Exportskript misst die tatsächliche Seitenzahl und verweigert eine Ausgabe über 100 Seiten. Ein anderer Markdown-Import oder Word-Umbruch kann abweichen.
+4. Mini durch sprachliche Verdichtung weiterhin unter 7.500 Zeichen (7.497), ohne Abhängigkeit von Langfassung oder Plugin. Spiegelkopien, Plugin-Manifeste und Paket auf 4.4.1 synchronisiert.
+5. Sieben isolierte Testfälle mit getrenntem Erwartungsschlüssel ergänzen die Vertragsakten. Die vorhandene Zweijahresklausel in der Fehlerakte bleibt bewusst als Prüfgegenstand erhalten. Ergänzte Struktur- und Exporttests werden von tatsächlichen Modellantworten getrennt dokumentiert.
+
+## 4.4.0 - 4. September 2026
+
+1. Werkstatt- und Mini-Prompt als eigenständig ausführbare Prüfaufträge überarbeitet: vollständige Word-Aufnahme, phasenabhängige Rechtsfolgen, konkrete Fundstellen, Gegenargumente, Ersatzklauseln und nachvollziehbare Zahlungsentscheidung. Historische Rechtsanker bleiben ausdrücklich als Recherchebestand erhalten.
+2. Drei eindeutig benannte Plugin-Skills mit Codex- und Claude-Code-Manifesten ergänzt: Vertragsprüfung, Zahlungsratenprüfung und Word-Entwurfsprüfung. Das lokale Paket bündelt seine Referenzen und Helfer ohne Konten oder externe Dateiabfragen.
+3. Alle drei deutschen und drei zweisprachigen Word-Vertragsvorlagen auf einen eindeutigen Entwurfsrahmen umgestellt: Entwurf oben, leere eigene Urkundennummer, künftige Beurkundungsschritte statt vergangenheitlicher Bestätigung und kein KI-Herkunftsvermerk im Vertrag. Referenzurkunden behalten ihre Nummern.
+4. Die Testlogik trennt Word-Entwürfe von späteren Zahlungs-/Abnahmeszenarien. Zwölf neutrale Testaufträge und eine separate Erwartungsmatrix mit 32 Befunden prüfen Klauseln, Beleglücken, Zahlen, positive Fortsetzungen und neue Gegenbelege.
+5. Marewald nicht länger pauschal als rechtmäßig vorbewertet. Die Abnahmefiktion mit „wesentlichen Mängeln“ wird als konkreter Kontrollbefund behandelt; Abnahmepflicht und Verhinderung der Fiktion sind zu unterscheiden.
+6. Lokale Dezimal-Rechenhilfe und DOCX-Inventur ergänzt, einschließlich Tabellen, Kommentaren, Änderungen und ausgewiesenen Lesegrenzen. Ausgeführte Werkzeugtests werden von Modelltests getrennt dokumentiert.
+7. Prompt-Mindestlänge und Schlagwortzählung durch Paket-, Verweis- und Verhaltenskontrollen ersetzt. Der Paketbau prüft bytegleiche Spiegel und ein reproduzierbares Plugin-ZIP. Die bisherigen Artefakt-/Rechtsankerprüfungen bleiben erhalten und wurden an den Entwurfsstatus angepasst.
+8. Dokumentation und Downloadseite auf die neuen Prompts, Skills und Testfälle abgestimmt. Release-Downloads und aktuelle Repository-Fassung werden ausdrücklich unterschieden.
+9. Englische Lesefassungen inhaltlich überarbeitet und an vollständige, versionierte Quellblöcke gebunden. Veraltete Übersetzungen, ausgelassene Word-Inhalte und abweichende Downloadkopien führen zu Prüfungsfehlern. Tabellen, Überschriften und Unterschriftsbereiche wurden nach dem Rendern korrigiert.
+10. Zwei abgeschlossene blinde Codex-Einzeltests mit Rohantworten und Auswertung dokumentiert; eine zusätzliche positive Gegenprobe bleibt wegen unterbrochenem Agentenabschluss ausdrücklich vorläufig. Keine herstellerübergreifende Leistungsbehauptung.
+
 ## 4.3.0 - 9. August 2026
 
 1. Die Vollfassung ist zur ausdrücklichen Werkstattfassung ausgebaut und wächst von 281.206 auf 376.376 Zeichen (plus 33,84 Prozent), damit moderne große Kontextfenster einen vollständigen, zusammenhängenden Bauträger-Workflow erhalten.

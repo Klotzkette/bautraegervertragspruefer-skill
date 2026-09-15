@@ -1,0 +1,22 @@
+{
+  "name": "bautraegervertragspruefer",
+  "version": "4.5.0",
+  "description": "Prüft Bauträgerverträge, Word-Entwürfe und Zahlungsraten aus Erwerbersicht bis zum begründeten Ergebnis und den beauftragten Änderungen oder Schreiben.",
+  "author": {"name": "Klotzkette", "url": "https://github.com/Klotzkette"},
+  "repository": "https://github.com/Klotzkette/bautraegervertragspruefer-skill",
+  "license": "MIT OR Apache-2.0",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Bauträgervertragsprüfer",
+    "shortDescription": "Vertragsentwurf, Zahlungsrate und Word-Fassung prüfen",
+    "longDescription": "Drei aufeinander abgestimmte Skills prüfen Vertragsklauseln, Zahlungsanforderungen und vollständige Word-Inhalte. Sie klären entscheidende Lücken, unterscheiden die Vertragsphase und führen die Bearbeitung zu konkreten Ersatzklauseln, bezifferten Zahlungsergebnissen und beauftragten Folgeschreiben fort. Enthält den eigenständig nutzbaren Werkstatt-Prompt und lokale Prüfwerkzeuge.",
+    "developerName": "Klotzkette",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Prüfe diesen Bauträgervertrag aus Erwerbersicht, kläre entscheidende Lücken und arbeite erforderliche Ersatzklauseln aus.",
+      "Prüfe diese Zahlungsrate, berechne den tragfähigen Zahlungsbetrag und fordere entscheidende fehlende Belege gezielt an.",
+      "Prüfe den Word-Entwurf samt Entwurfstatus, Kommentaren und offenen Änderungen, ohne das Original zu verändern."
+    ]
+  }
+}

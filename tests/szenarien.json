@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "default_contract_format": "docx",
+  "cases": {
+    "H": {"directory": "vertragsdokumente/bautraegervertrag", "stem": "bautraegervertrag"},
+    "M": {"directory": "vertragsdokumente/bautraegervertrag-marewald", "stem": "bautraegervertrag-marewald"},
+    "L": {"directory": "vertragsdokumente/bautraegervertrag-lindenhain", "stem": "bautraegervertrag-lindenhain"}
+  },
+  "scenarios": [
+    {"id": "H-E", "case": "H", "phase": "entwurf", "word_only": true, "inputs": ["tests/inputs/h-entwurf.md"], "attachments": [], "findings": ["A01", "A02", "A03", "A04", "H01", "H02", "H03", "H04", "H05", "H06", "H07", "H08"]},
+    {"id": "M-E", "case": "M", "phase": "entwurf", "word_only": true, "inputs": ["tests/inputs/m-entwurf.md"], "attachments": [], "findings": ["A01", "A02", "A03", "A04", "M01", "M02", "M03", "M04"]},
+    {"id": "L-E", "case": "L", "phase": "entwurf", "word_only": true, "inputs": ["tests/inputs/l-entwurf.md"], "attachments": [], "findings": ["A01", "A02", "A03", "A04", "L01", "L02", "L03", "L04"]},
+    {"id": "H-Z", "case": "H", "phase": "zahlung", "inputs": ["tests/inputs/h-zahlung.md"], "attachments": ["bautenstandsbericht", "zahlungsanforderung"], "findings": ["A02", "A03", "A04", "H02", "H03", "H09", "H10", "H11"]},
+    {"id": "M-Z", "case": "M", "phase": "zahlung", "inputs": ["tests/inputs/m-zahlung.md"], "attachments": ["bautenstandsbericht", "zahlungsanforderung"], "findings": ["A02", "A03", "A04", "M05", "M06"]},
+    {"id": "L-Z", "case": "L", "phase": "zahlung", "inputs": ["tests/inputs/l-zahlung.md"], "attachments": ["bautenstandsbericht", "zahlungsanforderung"], "findings": ["A02", "A03", "A04", "L05"]},
+    {"id": "M-Z+", "case": "M", "phase": "zahlung", "inputs": ["tests/inputs/m-zahlung.md", "tests/inputs/m-zahlung-ergänzt.md"], "attachments": ["bautenstandsbericht", "zahlungsanforderung"], "findings": ["A02", "A03", "A04", "M05", "M07"]},
+    {"id": "L-Z+", "case": "L", "phase": "zahlung", "inputs": ["tests/inputs/l-zahlung.md", "tests/inputs/l-zahlung-ergänzt.md"], "attachments": ["bautenstandsbericht", "zahlungsanforderung"], "findings": ["A02", "A03", "A04", "L05", "L06"]},
+    {"id": "L-Z-", "case": "L", "phase": "zahlung", "inputs": ["tests/inputs/l-zahlung.md", "tests/inputs/l-gegenfeststellung.md"], "attachments": ["bautenstandsbericht", "zahlungsanforderung"], "findings": ["A02", "A03", "A04", "L05", "L07"]},
+    {"id": "M-A", "case": "M", "phase": "abnahme", "inputs": ["tests/inputs/m-abnahme.md"], "attachments": [], "findings": ["A02", "M01", "M08"]},
+    {"id": "L-S", "case": "L", "phase": "nachtrag", "inputs": ["tests/inputs/l-sonderwunsch.md"], "attachments": [], "findings": ["A02", "A04", "L08"]},
+    {"id": "L-W", "case": "L", "phase": "entwurf", "word_only": true, "bilingual": true, "inputs": ["tests/inputs/l-entwurf.md", "tests/inputs/l-word-zweisprachig.md"], "attachments": [], "findings": ["A01", "A02", "A03", "A04", "L01", "L02", "L03", "L04", "L09"]}
+  ]
+}

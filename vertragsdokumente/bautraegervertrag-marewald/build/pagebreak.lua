@@ -1,6 +1,21 @@
 -- Setzt DOCX-Umbrüche direkt an den Anfang der folgenden Überschrift.
 -- Ein eigener Absatz mit w:br kann bei knapp gefüllter Vorseite auf die
 -- Folgeseite rutschen und dort eine unerwünschte Leerseite erzeugen.
+-- Use the page width for milestone text, not empty rate-number cells.
+-- Reports use a different build path and keep their own column layout.
+function Table(tbl)
+  if FORMAT:match('html') and #tbl.colspecs == 3
+    and tbl.head and tbl.head.rows[1]
+    and pandoc.utils.stringify(tbl.head.rows[1].cells[1]) == 'Rate' then
+    tbl.colspecs = {
+      {pandoc.AlignLeft, 0.08},
+      {pandoc.AlignLeft, 0.76},
+      {pandoc.AlignRight, 0.16}
+    }
+  end
+  return tbl
+end
+
 local function is_page_break(block)
   return block.t == 'RawBlock'
     and block.format:match('tex')

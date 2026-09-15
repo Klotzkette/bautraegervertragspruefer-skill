@@ -2,7 +2,9 @@
 
 **Navigation:** [Haupt-README](../README.md) · [Downloads](#downloads-auf-einen-blick) · [Anwendung](#so-testet-man-den-skill-damit) · [Neu erzeugen](#selbst-neu-erzeugen) · [Downloadseite](https://klotzkette.github.io/bautraegervertragspruefer-skill/#akten) · [neueste Veröffentlichung](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest) · [SKILL.md laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md) · [MINI_SKILL.md laden](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md)
 
-Hier liegen drei eigenständige, vollständig fingierte Bauträgervertrags-Akten. Sie bilden ein Prüf-Dreieck: an Hohenwartshofen lässt sich zeigen, wie der Skill **unwirksame** Klauseln findet; an Marewald, wie er **wirksame, aber hart ausgereizte** Klauseln sauber als verhandelbar statt als nichtig einordnet; an Lindenhain, ob er einen fairen und leicht käuferfreundlichen Vertrag auch als im Kern tragfähig erkennt.
+Hier liegen drei eigenständige, vollständig fingierte Bauträgervertrags-Akten. Jede enthält einen **Vertragsentwurf** und Unterlagen zu einem **gesonderten späteren Zahlungsszenario**. Die Vertragsfassungen tragen oben „ENTWURF“ und lassen ihre eigene Urkundennummer frei. Vorbereitete Unterschriftszeilen und Verweise auf andere Urkunden belegen keine durchgeführte Beurkundung. Der in Zahlungsunterlagen unterstellte Vertragsschluss gilt ausschließlich für das jeweilige Szenario.
+
+Die Akten testen unterschiedliche Interessenlagen und Beweislagen. Ihre Namen geben keine rechtliche Gesamtbewertung vor. Auch eine überwiegend tragfähige Gestaltung kann eine beanstandungswürdige Einzelklausel enthalten. Die getrennte [Testanleitung](../tests/README.md) enthält konkrete Szenarien, Rechenkontrollen und eine nur für die Auswertung bestimmte Erwartungsmatrix.
 
 | Wenn du ... | Nimm diese Datei |
 | --- | --- |
@@ -12,11 +14,11 @@ Hier liegen drei eigenständige, vollständig fingierte Bauträgervertrags-Akten
 | den Wortlaut direkt in einen Chat kopieren willst | **Markdown-Datei** |
 | Deutsch und Englisch nebeneinander lesen willst | **Deutsch/English HTML** für den Browser, PDF zum Lesen, Word zum Kommentieren |
 
-| Akte | Verzeichnis | Charakter | Erwartung an die Prüfung |
+| Akte | Verzeichnis | Prüfstoff | Späteres Zahlungsszenario |
 | --- | --- | --- | --- |
-| Hohenwartshofen | [`bautraegervertrag/`](bautraegervertrag/) | bewusst fehlerhaft — überladen mit unwirksamen und teils nichtigen Klauseln | viele 🔴, klare Pflichtblock-Treffer |
-| Marewald | [`bautraegervertrag-marewald/`](bautraegervertrag-marewald/) | rechtmäßig, aber grenzwertig verkäuferfreundlich — bis an die Grenze ausgereizt, ohne rote Pflichtverletzung | überwiegend 🟠, kein 🔴 wegen Nichtigkeit |
-| Lindenhain | [`bautraegervertrag-lindenhain/`](bautraegervertrag-lindenhain/) | fair, ausgewogen und leicht käuferfreundlich — positive Kontrollakte mit sauberer MaBV-, Sicherungs-, Abnahme- und Unterlagenlogik | überwiegend 🟢, punktuell höchstens 🟠 |
+| Hohenwartshofen | [`bautraegervertrag/`](bautraegervertrag/) | umfangreiche Klauseln zu Fälligkeit, Änderungen, Abnahme und Kosten | dritte Rate, Bericht vom 16. August 2027 |
+| Marewald | [`bautraegervertrag-marewald/`](bautraegervertrag-marewald/) | verkäuferorientierte Gestaltung mit ausdrücklichen Schutzregeln | dritte Rate, Bericht vom 16. Juni 2027 |
+| Lindenhain | [`bautraegervertrag-lindenhain/`](bautraegervertrag-lindenhain/) | umfangreiche Käuferrechte und konkrete Unterlagenpflichten | vierte Rate, Bericht vom 15. Februar 2028 |
 
 Jede Akte enthält vier in sich geschlossene deutsche Dokumente: Wohnungsbauträgervertrag, Baubeschreibung, Bautenstandsbericht und Zahlungsanforderung. Der Vertrag steht zusätzlich als Markdown, Word und Gesamt-PDF bereit; das **Akten-ZIP** bündelt alle vier Bestandteile als neutral benannte Einzel-PDFs, damit auch Modelle mit kleinem Kontext die Akte dokumentweise aufnehmen und den Zahlungsabruf gegen den tatsächlichen Bautenstand prüfen können. Zusätzlich gibt es zu jedem Vertrag eine deutsch-englische Lesefassung als HTML, Word und PDF: links die deutsche Urkundenfassung, rechts eine englische Verständnishilfe. In dieser Lesefassung ist ausdrücklich geregelt, dass bei der Beurkundung nur die deutsche Fassung verlesen wird und bei jedem Widerspruch ausschließlich die deutsche Fassung maßgeblich ist. Details und Download-Links stehen im README der jeweiligen Akte.
 
@@ -38,10 +40,12 @@ Jede Akte enthält vier in sich geschlossene deutsche Dokumente: Wohnungsbauträ
 
 ## So testet man den Skill damit
 
-1. Skill laden: [SKILL.md direkt](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md) oder [MINI_SKILL.md direkt](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md).
-2. Am aussagekräftigsten ist das Akten-ZIP: Die KI muss Vertrag, Baubeschreibung, Bautenstandsbericht und Zahlungsanforderung miteinander abgleichen. Für eine reine Vertragsprüfung genügt PDF, DOCX oder Markdown.
-3. Mit `prüfe das` geführt starten oder mit `Vollpaket` alle drei Dokumente erzeugen: Übersendungsschreiben an die Käuferseite, Mandantengutachten und phasengerechtes Schreiben an den Bauträger.
-4. Gegen die Erwartung in der Tabelle abgleichen: Findet der Skill bei Hohenwartshofen die roten Pflichtblock-Verstöße, ordnet er Marewald als wirksam, aber ausgereizt ein, und erkennt er Lindenhain überwiegend als tragfähig, ohne künstliche rote Befunde zu erzeugen?
+1. Einen frischen Chat mit Werkstatt-Prompt oder Mini-Prompt beginnen. Für Vergleichsläufe dieselben Unterlagen und denselben Auftrag verwenden; Modell, Datum und verfügbare Werkzeuge protokollieren.
+2. **Entwurfsprüfung:** nur die Word-Vertragsfassung einschließlich ihrer Baubeschreibung und den passenden Entwurfs-Sachverhalt aus [tests/inputs](../tests/inputs/) hochladen. Auftrag: `Prüfe diesen Vertragsentwurf vor Beurkundung aus Käufersicht. Belege deine Befunde mit den konkreten Vertrags- und Anlagenstellen und schlage Änderungen vor.` Anschließend einen Vergleichslauf mit Markdown oder PDF durchführen: Tabellen, Kopf-/Fußzeilen und Anlage dürfen bei Word nicht verloren gehen.
+3. **Zahlungsprüfung:** Vertrag, Baubeschreibung, Bautenstandsbericht und Zahlungsanforderung mit dem passenden Zahlungs-Sachverhalt hochladen. Auftrag: `Prüfe den angegebenen späteren Zahlungsabruf. Unterscheide belegte Tatsachen, Parteibehauptungen, ausdrücklich vorgegebene Annahmen und noch benötigte Nachweise.` Die Vertragsdatei bleibt ein Entwurf.
+4. READMEs, Erwartungsmatrix und Auswertungsdaten nicht an die geprüfte KI übergeben. Erst die fertige Antwort mit [tests/erwartungsmatrix.md](../tests/erwartungsmatrix.md) vergleichen. Rechtsbefund, Vertragstextqualität, Rechenergebnis und Zahlungsentscheidung werden getrennt bewertet; eine Farbvorgabe je Akte ist kein Testmaßstab.
+
+Die Basis-ZIPs enthalten keine gesonderten notariellen Fälligkeitsmitteilungen, Bankgarantien, Grundbuchauszüge, Fotos oder Prüfprotokolle. Diese werden in Schreiben erwähnt, sind dadurch aber nicht bereits ausgelesen oder verifiziert. Kontrollvarianten liefern zusätzliche Sachverhaltsangaben und prüfen, ob sich das Ergebnis mit der Beweislage nachvollziehbar ändert.
 
 ## Wichtiger Hinweis
 

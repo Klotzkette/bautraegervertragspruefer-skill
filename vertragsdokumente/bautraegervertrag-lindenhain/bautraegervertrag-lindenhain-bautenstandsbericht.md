@@ -8,7 +8,7 @@
 
 ## Gegenstand der Prüfung
 
-Geprüft wurde der vierte Bautenstand nach § 3.3 des Bauträgervertrags, UR-Nr. 921/2026 LF. Der Meilenstein setzt die vollständige Ausführung von Innenputz, Estrich und Fassadenarbeiten voraus.
+Geprüft wurde der vierte Bautenstand nach § 3.3 des Bauträgervertrags. Für dieses spätere Zahlungsszenario wird ein Vertragsschluss am 18. September 2026 unterstellt; die beigefügte Vertragsfassung bleibt Entwurf. Der Meilenstein setzt die vollständige Ausführung von Innenputz, Estrich und Fassadenarbeiten voraus.
 
 An der Begehung nahmen die Objektüberwachung der Verkäuferin, die Fachbauleitung Fassade und die von der Käuferin benannte Bauingenieurin Dipl.-Ing. Sarah Krampe teil. Herangezogen wurden die freigegebenen Ausführungspläne, die Putz- und Estrichprotokolle, das Fassadenabnahmeblatt FA-12-07, die Feuchtemessreihe ES-B-05 und die Fotodokumentation vom 7. bis 14. Februar 2028.
 

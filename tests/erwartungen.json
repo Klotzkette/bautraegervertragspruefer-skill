@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "legal_sources_checked": "2026-09-04",
+  "cases": {
+    "H": {
+      "purchase_price": "828000.00", "security": "41400.00", "first_rate_less_security": "207000.00",
+      "rates_percent": ["30.0", "28.0", "18.9", "9.1", "8.4", "2.1", "3.5"],
+      "called_rate": 3, "called_amount": "156492.00", "previous_amount": "480240.00", "cumulative_amount": "636732.00",
+      "anchors": [
+        {"document": "contract", "location": "§ 3.1.1 b/c", "text": "eintragungsbereit beantragt"},
+        {"document": "contract", "location": "§ 3.3", "text": "Eine gesonderte Vertragserfüllungssicherheit"},
+        {"document": "contract", "location": "§ 9.4", "text": "zwei Jahre ab"},
+        {"document": "bautenstandsbericht", "location": "Feststellungen / Fenster", "text": "56 von 61 Fensterelementen"},
+        {"document": "bautenstandsbericht", "location": "Feststellungen / HLS", "text": "Sanitärabzweig zum Gäste-WC"},
+        {"document": "bautenstandsbericht", "location": "Gesamtbewertung", "text": "als erreicht bestätigt"}
+      ]
+    },
+    "M": {
+      "purchase_price": "674000.00", "security": "33700.00", "first_rate_less_security": "168500.00",
+      "rates_percent": ["30.0", "28.0", "18.9", "9.1", "8.4", "2.1", "3.5"],
+      "called_rate": 3, "called_amount": "127386.00", "previous_amount": "390920.00", "cumulative_amount": "518306.00",
+      "anchors": [
+        {"document": "contract", "location": "§ 6.2", "text": "ohne Angabe wesentlicher Mängel"},
+        {"document": "contract", "location": "§ 5.7", "text": "saldierten Mehrkosten"},
+        {"document": "contract", "location": "Baubeschreibung 11.1", "text": "R′w ≥ 54 dB"},
+        {"document": "bautenstandsbericht", "location": "Feststellungen / Fenster", "text": "Sämtliche 184 Fenster- und Fenstertürelemente"},
+        {"document": "bautenstandsbericht", "location": "nach Feststellungstabelle", "text": "Heizkreisverteilern"}
+      ]
+    },
+    "L": {
+      "purchase_price": "742000.00", "security": "37100.00", "first_rate_less_security": "185500.00",
+      "rates_percent": ["30.0", "28.0", "18.9", "8.4", "2.8", "8.4", "3.5"],
+      "called_rate": 4, "called_amount": "62328.00", "previous_amount": "570598.00", "cumulative_amount": "632926.00",
+      "anchors": [
+        {"document": "contract", "location": "§ 3.2", "text": "Einbehaltsrecht besteht automatisch"},
+        {"document": "contract", "location": "§ 1.3", "text": "Dachterrasse der Gemeinschaft"},
+        {"document": "contract", "location": "Baubeschreibung 4.1", "text": "höchstens 40 %"},
+        {"document": "contract", "location": "Baubeschreibung 7.1", "text": "bezeichnete erhöhte Schallschutz"},
+        {"document": "bautenstandsbericht", "location": "Feststellungen / Fassade", "text": "an allen Gebäudeseiten fertiggestellt"}
+      ]
+    }
+  },
+  "variations": {
+    "L-S": {"base_price": "742000.00", "increase": "82000.00", "threshold_percent": "10", "new_price": "824000.00", "additional_security": "4100.00", "total_security": "41200.00"},
+    "H-Z": {"reservation_fee": "22000.00", "cash_paid_including_reservation": "502240.00"}
+  }
+}

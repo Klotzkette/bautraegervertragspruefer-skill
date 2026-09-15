@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bauträgerzahlungsrate prüfen"
+  short_description: "Zahlungsrate berechnen und Fälligkeit begründet entscheiden"
+  default_prompt: "Prüfe mit $bautraeger-zahlungsrate-pruefen diese Rate, beziffere das tragfähige Zahlungsergebnis und fordere entscheidende fehlende Belege gezielt an."

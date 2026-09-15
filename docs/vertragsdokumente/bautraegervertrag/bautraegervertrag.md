@@ -1,26 +1,26 @@
+# ENTWURF
+
 # Bauträgervertrag
 
-\newpage
+**UR-Nr. ____________________**
 
-# UR-Nr. 188/2026 KQ
+## Vorgesehener Beurkundungstermin
 
-## Verhandelt
+Berlin, vorgesehen für den 14. März 2026
 
-zu Berlin, am 14. März 2026
-
-Vor mir, dem unterzeichnenden Notar im Bezirk des Kammergerichts
+Vorgesehener Notar im Bezirk des Kammergerichts
 
 **Dr. Adalbert von Sickingen-Querfurt**
 
 Kurfürstendamm 211, 10719 Berlin
 
-erschienen heute:
+Vorgesehene Beteiligte:
 
 Frau **Roswitha Quendel-Bingenheimer**, geboren am 11.08.1971,
 
 geschäftsansässig: Schloßstraße 88, 12163 Berlin,
 
-dem Notar von Person bekannt,
+Identität im Beurkundungstermin festzustellen,
 
 handelnd nachfolgend nicht im eigenen Namen, sondern als Bevollmächtigte für die
 
@@ -32,23 +32,23 @@ Geschäftsanschrift: Schloßstraße 88, 12163 Berlin,
 
 — nachstehend auch „Verkäufer" genannt —,
 
-aufgrund notariell beglaubigter Vollmacht vom 22.10.2025, UR-Nr. 1402/2025 W des Notars Egmont Wachtelborn, Berlin. Das Original der Vollmacht lag bei Beurkundung vor; eine Fotokopie derselben wird in beglaubigter Fotokopie als Anhang a zu dieser Urkunde genommen.
+aufgrund notariell beglaubigter Vollmacht vom 22.10.2025, UR-Nr. 1402/2025 W des Notars Egmont Wachtelborn, Berlin. Das Original der Vollmacht soll im Beurkundungstermin vorgelegt und eine beglaubigte Fotokopie als Anhang a zu dieser Urkunde genommen werden.
 
 Herr **Dr. Eberwein Übelacker-Strohmeyer**, geboren am 03.02.1968,
 
 wohnhaft: Königin-Luise-Straße 47, 14195 Berlin,
 
-ausgewiesen durch gültigen Personalausweis,
+Identität im Beurkundungstermin durch gültigen Personalausweis festzustellen,
 
 — nachstehend auch „Käufer" genannt —.
 
-Auf Befragen des Notars erklärten die Erschienene zu 1. auf Rechnung des von ihr Vertretenen und der Erschienene zu 2. auf eigene Rechnung zu handeln.
+Im Beurkundungstermin sollen die Beteiligte zu 1. das Handeln auf Rechnung des Vertretenen und der Beteiligte zu 2. das Handeln auf eigene Rechnung erklären.
 
-Der Notar hat darauf hingewiesen, dass er vor der Protokollierung die Beteiligten darüber zu befragen hat, ob bei der nachstehend zu beurkundenden Angelegenheit eine der mit ihm zur gemeinsamen Berufsausübung verbundenen Personen oder er selbst außerhalb seiner Amtstätigkeit bereits tätig war oder ist. Die Beteiligten erklärten, dass dies nicht der Fall sei.
+Vor der Protokollierung hat der Notar die Beteiligten zu einer möglichen Vorbefassung außerhalb seiner Amtstätigkeit zu befragen. Ihre Erklärungen sind erst im Beurkundungstermin aufzunehmen.
 
-Der Käufer erklärte im Hinblick auf § 17 Abs. 2a BeurkG, dass ihm ein Entwurf des nachstehenden Kaufvertrages über das vom Verkäufer verwendete Unterlagenportal zur Verfügung gestellt wurde und dass ihm der wesentliche wirtschaftliche Inhalt des Geschäfts aufgrund der vorangegangenen Reservierung, der Vertriebsgespräche und der Einsichtnahme in das digitale Datenraumverzeichnis bekannt sei. Auf Wunsch des Käufers und im Hinblick auf die auslaufende Reservierungsbindung soll die heutige Beurkundung gleichwohl durchgeführt werden; der Käufer erklärte, derzeit keine weitere Bedenkzeit zu benötigen.
+Für den Beurkundungstermin ist folgende Erklärung des Käufers vorgesehen: Im Hinblick auf § 17 Abs. 2a BeurkG sei ihm ein Entwurf des nachstehenden Kaufvertrages über das vom Verkäufer verwendete Unterlagenportal zur Verfügung gestellt worden; der wesentliche wirtschaftliche Inhalt des Geschäfts sei ihm aufgrund der vorangegangenen Reservierung, der Vertriebsgespräche und der Einsichtnahme in das digitale Datenraumverzeichnis bekannt. Auf Wunsch des Käufers und im Hinblick auf die auslaufende Reservierungsbindung soll die geplante Beurkundung gleichwohl durchgeführt werden; der Käufer benötige keine weitere Bedenkzeit.
 
-Die Erschienenen baten sodann um die Beurkundung des nachstehenden
+Zur Beurkundung vorgesehener Vertragstext
 
 # Wohnungsbauträgervertrag mit Auflassung
 
@@ -92,7 +92,7 @@ Der Käufer bestätigt mit Unterzeichnung dieses Vertrages, dass ihm die Baubesc
 
 **1.2** Die Sondereigentumseinheit und das dort näher bezeichnete Sondernutzungsrecht an dem Tiefgaragenstellplatz Nr. TG-127 nebst den unter § 5 dieses Vertrages beschriebenen Bauleistungen werden nachfolgend zusammen als „Kaufgegenstand" bezeichnet.
 
-**1.3** Der Notar hat das Grundbuch gemäß § 1.1 — ohne die Grundakten — elektronisch am heutigen Tage eingesehen.
+**1.3** Der Notar soll das Grundbuch gemäß § 1.1 — ohne die Grundakten — im Beurkundungstermin elektronisch einsehen und den Stand dokumentieren.
 
 In Abteilung II sind eingetragen: beschränkte persönliche Dienstbarkeiten zugunsten der Stadtwerke Kannenberg GmbH, der ENBW Netze AG sowie der Gemeinde Kannenberg-Niederwall. Diese Lasten werden vom Käufer übernommen und sind im Kaufpreis nicht abgegolten.
 
@@ -324,7 +324,7 @@ Verkäufer und Käufer sind über den Eigentumsübergang einig. Sie bewilligen u
 
 # § 14 Belehrungen
 
-Der Notar hat die Beteiligten belehrt über:
+Für den Beurkundungstermin sind Belehrungen vorgesehen über:
 
 - den Inhalt und die Bedeutung dieses Vertrages,
 - die Bedeutung der Bezugnahme nach § 13c BeurkG,
@@ -334,7 +334,7 @@ Der Notar hat die Beteiligten belehrt über:
 - die gesetzliche Verjährungsfrist für Mängelansprüche im Werkvertragsrecht,
 - die Möglichkeit, eigene technische Berater hinzuzuziehen, wobei der Notar keine technische Prüfung des Baugrunds, der Bauüberwachung, der Fachplanung oder der Wirtschaftlichkeit von Betriebs- und Wartungsverträgen vorgenommen hat.
 
-Der Notar hat darauf hingewiesen, dass er als unparteiischer Amtsträger keine wirtschaftliche, steuerliche oder bautechnische Beratung übernimmt und keine Interessenvertretung einer Partei leistet. Fragen der Finanzierung, Rentabilität, technischen Zweckmäßigkeit, Wartungskosten, Förderfähigkeit und individuellen steuerlichen Auswirkungen waren nicht Gegenstand der notariellen Prüfung.
+Der Notar soll darauf hinweisen, dass er als unparteiischer Amtsträger keine wirtschaftliche, steuerliche oder bautechnische Beratung übernimmt und keine Interessenvertretung einer Partei leistet. Fragen der Finanzierung, Rentabilität, technischen Zweckmäßigkeit, Wartungskosten, Förderfähigkeit und individuellen steuerlichen Auswirkungen sind gesondert zu prüfen.
 
 \newpage
 
@@ -344,7 +344,7 @@ Der Notar hat darauf hingewiesen, dass er als unparteiischer Amtsträger keine w
 
 **Anhang a** — beglaubigte Fotokopie der Vollmacht der Erschienenen zu 1. vom 22.10.2025, UR-Nr. 1402/2025 W des Notars Egmont Wachtelborn, Berlin.
 
-**Lose übergebene Unterlagen (nicht Gegenstand der Beurkundung):** Baubeschreibung in der Fassung Februar 2026, Version 7.2; Abgeschlossenheitsbescheinigung; Aufteilungsplan-Auszug zur Einheit 4.27. Diese Unterlagen wurden dem Käufer mit Vertragsunterzeichnung in Druckfassung ausgehändigt.
+**Lose zu übergebende Unterlagen (nicht Gegenstand der Beurkundung):** Baubeschreibung in der Fassung Februar 2026, Version 7.2; Abgeschlossenheitsbescheinigung; Aufteilungsplan-Auszug zur Einheit 4.27. Diese Unterlagen sollen dem Käufer bei Vertragsunterzeichnung in Druckfassung ausgehändigt werden.
 
 Der Notar wird mit dem Vollzug beauftragt. Er soll Anträge erst stellen, wenn die hierfür erforderlichen Erklärungen und Nachweise vorliegen. Mitteilungen über den Eintritt der Fälligkeitsvoraussetzungen nach § 3 erfolgen schriftlich an beide Parteien.
 
@@ -352,13 +352,13 @@ Der Notar wird mit dem Vollzug beauftragt. Er soll Anträge erst stellen, wenn d
 
 # Geschäftswert und Kosten
 
-Der Geschäftswert dieser Urkunde wird mit dem Gesamtkaufpreis von 828.000,00 EUR angegeben. Die Kosten dieser Urkunde und ihres Vollzugs trägt nach § 13.4 der Käufer. Auf die zusätzlich anfallende Grunderwerbsteuer sowie die Erschließungs- und Anschlusskosten nach § 7 wurde hingewiesen.
+Der Geschäftswert dieser Urkunde wird mit dem Gesamtkaufpreis von 828.000,00 EUR angegeben. Die Kosten dieser Urkunde und ihres Vollzugs trägt nach § 13.4 der Käufer. Auf die zusätzlich anfallende Grunderwerbsteuer sowie die Erschließungs- und Anschlusskosten nach § 7 soll im Beurkundungstermin hingewiesen werden.
 
 \newpage
 
 # Unterschriften
 
-Die Erschienenen erklärten, dass sie auf das Verlesen der Bezugsurkunden verzichten, da ihnen deren Inhalt bekannt ist. Diese Niederschrift wurde den Erschienenen vom Notar vorgelesen, von ihnen genehmigt und sodann eigenhändig wie folgt unterschrieben:
+Für den Beurkundungstermin ist folgende Erklärung vorgesehen: Die Beteiligten verzichten auf das Verlesen der Bezugsurkunden, da ihnen deren Inhalt bekannt ist. Verlesung, Genehmigung und Unterzeichnung dieser Niederschrift stehen noch aus. Die nachstehenden Unterschriftsfelder bleiben im Entwurf frei.
 
 \
 
@@ -387,6 +387,8 @@ Dr. Adalbert von Sickingen-Querfurt, Notar
 \newpage
 
 # Anlage: Baubeschreibung
+
+**ENTWURF**
 
 Bauvorhaben: Wohnquartier „Am Birkenpfuhl", Gemarkung Kannenberg-Niederwall, Flur 7, Flurstück 218/4
 

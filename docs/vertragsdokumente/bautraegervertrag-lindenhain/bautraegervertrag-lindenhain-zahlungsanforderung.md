@@ -12,7 +12,7 @@ Köln, den 17. Februar 2028
 
 **Bauvorhaben:** Lindenhain 12<br>
 **Kaufgegenstand:** Wohnung B-05, Keller K-B05, Tiefgaragenstellplatz TG-08<br>
-**Urkunde:** UR-Nr. 921/2026 LF vom 18. September 2026<br>
+**Vertragsbezug:** Vertragsschluss am 18. September 2026 für das spätere Zahlungsszenario unterstellt; beigefügte Vertragsfassung bleibt Entwurf.<br>
 **Zahlungsanforderung:** LH12-B05/2028-04
 
 Sehr geehrte Frau Dr. Brandt,

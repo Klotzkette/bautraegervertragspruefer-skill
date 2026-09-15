@@ -42,6 +42,7 @@ grep -q '^# Zahlungsanforderung$' "$REQUEST_SRC" || { echo "FEHLT: neutraler Tit
 
 echo "→ bautraegervertrag"
 pandoc "$SRC" --lua-filter="$FILTER" -o "$OUT_DOCX"
+"${BTV_PYTHON:-python3}" "$DIR/../format_docx.py" "$OUT_DOCX"
 pandoc "$SRC" --lua-filter="$FILTER" --template="$TEMPLATE" --pdf-engine=weasyprint --css="$CSS" -o "$OUT_PDF"
 pandoc "$REPORT_SRC" --template="$TEMPLATE" --pdf-engine=weasyprint --css="$CSS" --css="$CASE_CSS" -o "$OUT_REPORT_PDF"
 pandoc "$REQUEST_SRC" --template="$TEMPLATE" --pdf-engine=weasyprint --css="$CSS" --css="$CASE_CSS" -o "$OUT_REQUEST_PDF"

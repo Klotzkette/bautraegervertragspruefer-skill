@@ -4,8 +4,9 @@
 The committed bilingual HTML files are generated artifacts, not separate legal
 source documents. The German Markdown source remains authoritative.
 
-Runtime dependency for translation generation:
-  argostranslate with the German -> English package installed.
+Normal builds use versioned, exact-source-block translations in build/translations.en.json.
+Changed source blocks fail closed until their English translation has been reviewed.
+Argos is optional only for manually preparing new candidate translations.
 
 Rendering dependencies:
   pandoc, weasyprint, LibreOffice/soffice.
@@ -16,14 +17,17 @@ from __future__ import annotations
 import argparse
 import hashlib
 import html
+import json
 import re
 import shutil
 import subprocess
+import sys
+import tempfile
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
+from functools import lru_cache
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
-
 
 try:
     import argostranslate.translate
@@ -74,13 +78,13 @@ CONFIGS = [
 
 LANGUAGE_NOTICE = """## Sprachfassung, Verlesung und Verständnishilfe
 
-**S.0** Diese Urkunde ist in einer deutsch-englischen Lesefassung erstellt. {notary_de} {deed_de} und {read_de} im Beurkundungstermin ausschließlich die deutsche Sprachfassung. Die englische Sprachfassung ist keine selbständige Vertragssprache, wird nicht verlesen und dient allein dem besseren Verständnis des Käufers; sie begründet keine von der deutschen Sprachfassung abweichenden Rechte, Pflichten, Fälligkeiten, Fristen, Beschaffenheiten oder Rechtsfolgen.
+**S.0** Diese deutsch-englische Lesefassung ist ein Entwurf. {notary_de} soll im künftigen Beurkundungstermin ausschließlich die deutsche Sprachfassung beurkunden und verlesen. Die englische Sprachfassung ist keine selbständige Vertragssprache, soll nicht verlesen werden und dient allein dem besseren Verständnis des Käufers; sie begründet keine von der deutschen Sprachfassung abweichenden Rechte, Pflichten, Fälligkeiten, Fristen, Beschaffenheiten oder Rechtsfolgen.
 """
 
 
 LANGUAGE_NOTICE_EN = """## Language Version, Reading Aloud and Comprehension Aid
 
-**S.0** This deed has been prepared as a German/English reading version. At the notarisation appointment, the acting notary records and reads aloud only the German language version. The English language version is not an independent contractual language, is not read aloud and serves solely to assist the Buyer in understanding the deed; it does not create any rights, obligations, due dates, time limits, qualities or legal consequences differing from the German language version.
+**S.0** This German/English reading version is a draft. At the future notarisation appointment, the acting notary is to record and read aloud only the German language version. The English language version is not an independent contractual language, is not intended to be read aloud and serves solely to assist the Buyer in understanding the draft; it does not create any rights, obligations, due dates, time limits, qualities or legal consequences differing from the German language version.
 """
 
 
@@ -142,6 +146,17 @@ MANUAL_TRANSLATIONS = {
     .split("\n\n", 1)[1]: LANGUAGE_NOTICE_EN.strip().split("\n\n", 1)[1],
     PRIORITY_CLAUSE_DE.strip().split("\n\n", 1)[1]: PRIORITY_CLAUSE_EN.strip().split("\n\n", 1)[1],
 }
+
+def reviewed_translation(block: str, memory: dict[str, str]) -> str:
+    """Require the complete source block, never a prefix or stale translation."""
+    if block == r"\newpage":
+        return block
+    if block not in memory:
+        raise RuntimeError(
+            "Missing reviewed English translation for the exact source block: "
+            f"{block[:120]!r}. Review and add the complete block to build/translations.en.json."
+        )
+    return memory[block]
 
 
 def translate(text: str) -> str:
@@ -369,6 +384,8 @@ def translate_block(block: str) -> str:
         return block
     if block in MANUAL_TRANSLATIONS:
         return MANUAL_TRANSLATIONS[block]
+    if block in EXACT_TRANSLATIONS:
+        return EXACT_TRANSLATIONS[block]
     if block.startswith("#"):
         prefix, title = re.match(r"^(#+)\s+(.*)$", block).groups()  # type: ignore[union-attr]
         manual = {
@@ -385,7 +402,7 @@ def translate_block(block: str) -> str:
             "9 Bemusterung, Auswahlrechte": "9 Selection of Finishes and Selection Rights",
             "14 Wohnfläche, Bemusterung": "14 Residential Floor Area and Selection of Finishes",
         }
-        return f"{prefix} {manual.get(title, translate(title))}"
+        return f"{prefix} {manual[title] if title in manual else translate_clause_text(title)}"
     if block.startswith("|"):
         return translate_markdown_table(block)
     if re.match(r"^\s*[-*]\s+", block):
@@ -444,11 +461,14 @@ def translate_markdown_table(block: str) -> str:
     return "\n".join(translated)
 
 
+@lru_cache(maxsize=4096)
 def markdown_to_html(block: str) -> str:
     if block == r"\newpage":
         return ""
     if not block.strip():
         return ""
+    if re.match(r"\s*<(?:p|h[1-6]|table|ul|ol|blockquote)\b", block):
+        return block
     proc = subprocess.run(
         ["pandoc", "--from=markdown", "--to=html"],
         input=block,
@@ -466,18 +486,45 @@ def bilingual_rows(blocks: list[str], english_blocks: list[str]) -> str:
         "<thead><tr><th>Deutsche Fassung</th><th>English convenience translation</th></tr></thead>",
         "<tbody>",
     ]
+    pending_de: list[str] = []
+    pending_en: list[str] = []
+
+    def flush() -> None:
+        if pending_de:
+            rows.append('<tr><td class="de">' + "\n".join(pending_de)
+                        + '</td><td class="en">' + "\n".join(pending_en) + '</td></tr>')
+            pending_de.clear()
+            pending_en.clear()
+
+    def print_ready(fragment: str) -> str:
+        # WeasyPrint does not consistently honour ol[start] when each source
+        # clause is a separate list. Keep the original markers explicitly.
+        fragment = re.sub(r'<ol start="(\d+)"',
+                          lambda m: f'<ol style="counter-reset: list-item {int(m[1]) - 1}" start="{m[1]}"', fragment)
+        if "<table>" in fragment:
+            fragment = re.sub(r"<colgroup>.*?</colgroup>", "", fragment, flags=re.S)
+            fragment = fragment.replace("<table>", '<table><colgroup><col style="width:13%"><col style="width:72%"><col style="width:15%"></colgroup>')
+        return fragment
+
     for de, en in zip(blocks, english_blocks):
         if de == r"\newpage":
+            flush()
             rows.append('<tr class="pagebreak"><td colspan="2"></td></tr>')
             continue
-        de_html = markdown_to_html(de)
-        en_html = markdown_to_html(en)
-        rows.append(
-            "<tr>"
-            f'<td class="de">{de_html}</td>'
-            f'<td class="en">{en_html}</td>'
-            "</tr>"
+        de_html = print_ready(markdown_to_html(de))
+        en_html = print_ready(markdown_to_html(en))
+        visible = re.sub(r"<[^>]+>", "", de_html).strip()
+        keep_next = (
+            bool(re.match(r"^\s*#{1,6}\s", de))
+            or bool(re.fullmatch(r"[\s_—–−-]{3,}", visible))
+            or (bool(re.fullmatch(r"\d+(?:\.\d+)+\s+[^.!?;:\n]{1,100}", visible))
+                and len(visible.split()) <= 8)
         )
+        pending_de.append(de_html)
+        pending_en.append(en_html)
+        if not keep_next:
+            flush()
+    flush()
     rows.append("</tbody></table>")
     return "\n".join(rows)
 
@@ -526,6 +573,7 @@ table.bilingual-table {{
   table-layout: fixed;
 }}
 .bilingual-table > colgroup > col {{ width: 50%; }}
+.bilingual-table > tbody > tr {{ break-inside: avoid; }}
 .bilingual-table > thead th {{
   border: 0.8px solid #555;
   background: #eeeeee;
@@ -570,6 +618,7 @@ blockquote {{
 }}
 td table {{
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   font-size: 7.6pt;
   margin: 0.35em 0;
@@ -581,12 +630,18 @@ td table th, td table td {{
   text-align: left;
 }}
 td table th {{ background: #f0f0f0; }}
+td table th:first-child, td table td:first-child {{ width: 13%; }}
+td table th:nth-child(2), td table td:nth-child(2) {{ width: 72%; }}
+td table th:last-child, td table td:last-child {{ width: 15%; }}
+ol[type="a"] {{ list-style-type: lower-alpha; }}
+ol[type="A"] {{ list-style-type: upper-alpha; }}
 ul, ol {{ margin: 0.3em 0 0.3em 1.15em; padding: 0; }}
 li {{ margin: 0.2em 0; }}
 strong {{ font-weight: bold; }}
 </style>
 </head>
 <body>
+<p class="doc-note"><strong>ENTWURF / DRAFT</strong></p>
 <h1 class="doc-title">{escaped_title}</h1>
 <p class="doc-note">Deutsch-englische Lesefassung. Bei Abweichungen ist die deutsche Sprachfassung maßgeblich.</p>
 {body}
@@ -722,21 +777,37 @@ def repair_bilingual_docx_tables(path: Path) -> None:
     temporary.replace(path)
 
 
+def seed_translations(cfg: ContractConfig, *, refresh: bool = False) -> None:
+    """Import the existing reviewed English column into a versioned memory once."""
+    from lxml import html as lxml_html
+
+    memory_path = cfg.src.parent / "build/translations.en.json"
+    if memory_path.exists() and not refresh:
+        raise RuntimeError(f"Translation memory already exists: {memory_path}")
+    blocks = inject_language_notice(split_blocks(cfg.src.read_text(encoding="utf-8")), cfg)
+    blocks = [block for block in blocks if block != r"\newpage"]
+    tree = lxml_html.fromstring((cfg.src.parent / f"{cfg.out_prefix}.html").read_text(encoding="utf-8"))
+    rows = tree.xpath('//table[@class="bilingual-table"]/tbody/tr[td[@class="de"]]')
+    if len(rows) != len(blocks):
+        raise RuntimeError(f"Cannot align existing translation memory: {cfg.src}")
+    memory = {}
+    for block, row in zip(blocks, rows):
+        de, en = row.xpath('./td[@class="de" or @class="en"]')
+        de_html = markdown_to_html(block)
+        expected = lxml_html.fromstring(f"<div>{de_html}</div>").text_content()
+        if re.sub(r"\s+", " ", de.text_content()).strip() != re.sub(r"\s+", " ", expected).strip():
+            raise RuntimeError(f"Unaligned translation for {block[:80]}")
+        memory[block] = "".join(lxml_html.tostring(child, encoding="unicode") for child in en)
+    memory_path.write_text(json.dumps(memory, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
 def build_contract(cfg: ContractConfig, render: bool) -> None:
     source = cfg.src.read_text(encoding="utf-8")
     source_sha256 = hashlib.sha256(cfg.src.read_bytes()).hexdigest()
     blocks = inject_language_notice(split_blocks(source), cfg)
-    english_blocks: list[str] = []
-    for block in blocks:
-        if block.strip() == LANGUAGE_NOTICE.format(
-            notary_de=cfg.notary_de, deed_de=cfg.deed_de, read_de=cfg.read_de
-        ).strip():
-            english_blocks.extend(split_blocks(LANGUAGE_NOTICE_EN.strip()))
-            continue
-        if block.strip() == PRIORITY_CLAUSE_DE.strip():
-            english_blocks.extend(split_blocks(PRIORITY_CLAUSE_EN.strip()))
-            continue
-        english_blocks.append(translate_block(block))
+    memory_path = cfg.src.parent / "build/translations.en.json"
+    memory = json.loads(memory_path.read_text(encoding="utf-8")) if memory_path.exists() else {}
+    english_blocks = [reviewed_translation(block, memory) for block in blocks]
 
     if len(blocks) != len(english_blocks):
         raise RuntimeError(f"Block count mismatch for {cfg.src}: {len(blocks)} != {len(english_blocks)}")
@@ -757,9 +828,12 @@ def build_contract(cfg: ContractConfig, render: bool) -> None:
         tmp_odt = out_dir / f"{cfg.out_prefix}.odt"
         for stale in [tmp_odt, out_docx]:
             stale.unlink(missing_ok=True)
-        subprocess.run(["soffice", "--headless", "--convert-to", "odt", "--outdir", str(out_dir), str(out_html)], check=True)
-        subprocess.run(["soffice", "--headless", "--convert-to", "docx", "--outdir", str(out_dir), str(tmp_odt)], check=True)
+        with tempfile.TemporaryDirectory(prefix="btv-lo-") as profile:
+            command = ["soffice", "--headless", f"-env:UserInstallation={Path(profile).as_uri()}"]
+            subprocess.run([*command, "--convert-to", "odt", "--outdir", str(out_dir), str(out_html)], check=True)
+            subprocess.run([*command, "--convert-to", "docx", "--outdir", str(out_dir), str(tmp_odt)], check=True)
         repair_bilingual_docx_tables(out_docx)
+        subprocess.run([sys.executable, str(ROOT / "vertragsdokumente/format_docx.py"), str(out_docx)], check=True)
         tmp_odt.unlink(missing_ok=True)
         print(f"built {out_html.relative_to(ROOT)}, {out_pdf.relative_to(ROOT)}, {out_docx.relative_to(ROOT)}")
     else:
@@ -769,12 +843,19 @@ def build_contract(cfg: ContractConfig, render: bool) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--no-render", action="store_true", help="Only generate bilingual HTML.")
+    parser.add_argument("--seed-translations", action="store_true", help="Import existing bilingual HTML into a versioned translation memory once.")
+    parser.add_argument("--refresh-translations", action="store_true", help="Refresh exact-block translations from the current reviewed bilingual HTML.")
     parser.add_argument(
         "--repair-docx",
         type=Path,
         help="Repair an already generated bilingual DOCX without running translation.",
     )
     args = parser.parse_args()
+
+    if args.seed_translations or args.refresh_translations:
+        for cfg in CONFIGS:
+            seed_translations(cfg, refresh=args.refresh_translations)
+        return
 
     if args.repair_docx is not None:
         repair_bilingual_docx_tables(args.repair_docx.resolve())

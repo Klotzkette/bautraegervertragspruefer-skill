@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-09-09",
+  "purpose": "Seitenlimit, Quellstand und vollständige visuelle Kontrolle der Word-Prompts 4.4.1",
+  "exporter": "scripts/export_prompt_docx.py",
+  "renderer": "documents/render_docx.py (Bundle 26.905.11957), LibreOffice PDF und PNG-Seitenansichten",
+  "tool_versions": {
+    "libreoffice": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5",
+    "pandoc": "3.9.0.2",
+    "python_docx": "1.2.0"
+  },
+  "normalizations": [
+    "Nur der führende YAML-Metadatenblock wird beim Word-Export ausgelassen; der vollständige menschlich nutzbare Prompt folgt unverändert in seiner Reihenfolge.",
+    "Markdown-Auszeichnungen werden als Word-Überschriften, Absätze, Listen, Tabellen und Hyperlinks dargestellt.",
+    "Die Ampelzeichen 🔴, 🟠 und 🟢 werden im Word-Export durch die bedeutungsgleichen sichtbaren Beschriftungen ROT, ORANGE und GRÜN ersetzt, weil farbige Emoji im PDF-Renderer verschwinden können.",
+    "Nur im Word-Tabellenlabel Vollstreckungsunterwerfung wird nach Vollstreckungs eine optionale Trennstelle U+00AD eingefügt; der Begriff und die Markdown-Quelle bleiben inhaltlich unverändert.",
+    "Die vollständigen Rechtsprechungseinträge liegen bereits in der Markdown-Quelle als Vollbreiteneinträge vor; beim finalen Export werden keine Einträge oder Begründungen gekürzt."
+  ],
+  "content_integrity": {
+    "status": "passed",
+    "method": "Nach Pandoc-Konvertierung wird die geordnete Folge sämtlicher w:t-Textknoten des Hauptdokuments erfasst. Der Export wird abgebrochen, falls die anschließende Word-Formatierung diese Folge verändert. Beide endgültigen Exporte haben diese Prüfung bestanden.",
+    "scope": "Texttreue der Formatierung nach den offengelegten Darstellungsnormalisierungen; kein juristischer oder modellübergreifender Leistungstest."
+  },
+  "page_count_scope": "Die Seitenzahlen wurden aus den mit dem genannten Renderer erzeugten PDFs ermittelt und anhand aller PNG-Seiten kontrolliert. Andere Word-Versionen oder ein eigener Markdown-Import können anders umbrechen; dafür wird keine identische Seitenzahl behauptet.",
+  "artifacts": [
+    {
+      "source": "skill/SKILL.md",
+      "output": "docs/downloads/werkstatt-prompt-4.4.1.docx",
+      "source_sha256": "8e45b6921141043417aba6570d9a623bda2afbb38f5089dbba5b72cd1c0e7834",
+      "docx_sha256": "2faef1cb2563196cbd32596cba993ebec76063221ed09bdd019ceba65ef2d29a",
+      "pages": 38,
+      "max_pages": 100,
+      "paper": "Letter",
+      "font": { "family": "Arial", "body_pt": 11 },
+      "margins": { "top_cm": 2.54, "bottom_cm": 2.54, "left_cm": 2.54, "right_cm": 2.54 },
+      "visual_qa": {
+        "status": "passed",
+        "pages_checked": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38],
+        "method": "Alle 38 Seiten in Originalauflösung visuell geprüft. Nach der letzten optionalen Worttrennung wurde Seite 12 erneut geprüft; sämtliche übrigen 37 PNG-Seiten sind byteidentisch mit den bereits geprüften Seiten.",
+        "checks": ["Lesbarkeit", "keine abgeschnittenen oder überlappenden Texte", "sichtbare Ampelbeschriftungen", "Tabellen ohne isolierte Zeilenreste", "Überschriften und Tabellenbeschriftungen zusammengehalten", "lesbare URL-Umbrüche", "Seitenzahlen", "Verjährungsprüfung auf Seiten 15 und 16"]
+      }
+    },
+    {
+      "source": "skill/MINI_SKILL.md",
+      "output": "docs/downloads/mini-prompt-4.4.1.docx",
+      "source_sha256": "9557edbe3480bc9be64807fd83c7c7d12385841c13b35024b41de2b57557582d",
+      "docx_sha256": "fa827fd33b6e7127906bc75355f5bb916eaae261b17e197adadfad56c149dadf",
+      "pages": 3,
+      "max_pages": 100,
+      "paper": "Letter",
+      "font": { "family": "Arial", "body_pt": 11 },
+      "margins": { "top_cm": 2.54, "bottom_cm": 2.54, "left_cm": 2.54, "right_cm": 2.54 },
+      "visual_qa": {
+        "status": "passed",
+        "pages_checked": [1, 2, 3],
+        "method": "Alle drei endgültigen PNG-Seiten in Originalauflösung visuell geprüft.",
+        "checks": ["Lesbarkeit", "keine abgeschnittenen oder überlappenden Texte", "sichtbare Ampelbeschriftungen", "Überschriften", "Seitenzahlen", "Verjährungsprüfung auf Seite 3"]
+      }
+    }
+  ]
+}

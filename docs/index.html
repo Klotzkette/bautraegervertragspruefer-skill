@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bauträgervertrag-Prüfer Skill 4.3.0 — Direktdownload</title>
-<meta name="description" content="Lade die Werkstattfassung des Bauträgervertrag-Prüfer-Skills 4.3.0 direkt herunter — quellenharte, zeitstandsgenaue Prüfung deutscher Bauträgerverträge und Zahlungsakten als Markdown.">
+<title>Bauträgervertrag-Prüfer Skill 4.5.0 — Direktdownload</title>
+<meta name="description" content="Werkstatt- und Mini-Prompt 4.5.0: Bauträgerverträge verständlich prüfen, gezielt rückfragen und bis zu Ersatzklauseln, Zahlungsentscheidung oder beauftragtem Schreiben weiterarbeiten.">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#f4f7f8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#101719" media="(prefers-color-scheme: dark)">
@@ -12,7 +12,7 @@
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="Bauträgervertrag-Prüfer Skill">
 <meta property="og:title" content="Bauträgervertrag-Prüfer Skill — Direktdownload">
-<meta property="og:description" content="Quellenharte, fallbezogene Prüfung deutscher Bauträgerverträge als Markdown-Skill. SKILL.md oder kompakte MINI_SKILL.md in einem Klick laden.">
+<meta property="og:description" content="Begründete Prüfung deutscher Bauträgerverträge mit gezielten Rückfragen und konkreten Ergebnissen. Werkstatt- und Mini-Prompt als Markdown oder Word herunterladen.">
 <meta property="og:url" content="https://klotzkette.github.io/bautraegervertragspruefer-skill/">
 <meta name="twitter:card" content="summary">
 <style>
@@ -128,11 +128,12 @@
 </head>
 <body>
 <main id="top">
-  <h1>Bauträgervertrag-Prüfer Skill 4.3.0</h1>
+  <h1>Bauträgervertrag-Prüfer Skill 4.5.0</h1>
   <p class="lead">Lade die passende Skill-Datei herunter, lege sie in deinen Chatbot und reiche danach den Bauträgervertrag oder die vollständige Zahlungsakte nach.</p>
 
   <nav class="quick-nav" aria-label="Seitennavigation">
-    <a href="#skills">Skill laden</a>
+    <a href="#skills">Prompts laden</a>
+    <a href="#plugin">Plugin</a>
     <a href="#start">Sofortstart</a>
     <a href="#werkstatt">Werkstatt</a>
     <a href="#workflow">Workflow</a>
@@ -147,12 +148,22 @@
   <section class="card" id="skills">
     <h2>Sofort laden und starten</h2>
     <p>Normalfall: erst <code>SKILL.md</code>, dann Startsatz, dann Vertrag oder Akten-ZIP. Wenn ein kleiner Chatbot die Vollfassung nicht annimmt, nimm <code>MINI_SKILL.md</code> und lade möglichst das Akten-ZIP mit Einzel-PDFs hoch.</p>
-    <a class="btn" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md" download="SKILL.md" type="text/markdown" aria-label="Vollständige SKILL.md sofort herunterladen">
+    <a class="btn" href="SKILL.md" download="SKILL.md" type="text/markdown" aria-label="Vollständige SKILL.md sofort herunterladen">
       SKILL.md sofort herunterladen
     </a>
-    <a class="btn" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md" download="MINI_SKILL.md" type="text/markdown" aria-label="Kompakte MINI_SKILL.md sofort herunterladen">
+    <a class="btn" href="MINI_SKILL.md" download="MINI_SKILL.md" type="text/markdown" aria-label="Kompakte MINI_SKILL.md sofort herunterladen">
       MINI_SKILL.md sofort herunterladen
     </a>
+    <p>Für Word: <a href="downloads/werkstatt-prompt-4.5.0.docx" download>Werkstatt 4.5.0 als DOCX</a> (38 Seiten) · <a href="downloads/mini-prompt-4.5.0.docx" download>Mini 4.5.0 als DOCX</a> (4 Seiten). Gemessen im LibreOffice-Export mit Letter, Arial 11 pt und 2,54 cm Rändern. Der Word-Umbruch kann je nach Umgebung abweichen; Markdown hat keine feste Seitenzahl. Alle Rechtsprechungsanker bleiben enthalten.</p>
+    <p>Version 4.5.0 führt die Bearbeitung von der Prüfung über gezielte Rückfragen bis zu den beauftragten Ergebnissen fort. Die Ausgabe verwendet verständliche anwaltliche Überschriften wie Ergebnis, Begründung, Änderungsvorschlag und Weiteres Vorgehen.</p>
+    <p>Beide Prompts verlangen jetzt ausdrücklich die Prüfung einer Verkürzung der Bauwerksmängelverjährung: fünf Jahre ab maßgeblicher Abnahme als Ausgangspunkt und § 309 Nr. 8 b ff BGB gegen eine Zweijahresklausel in Verbraucher-AGB. Auch versteckte Verkürzungen und zulässige Gegenfälle werden geprüft.</p>
+  </section>
+
+  <section class="card" id="plugin">
+    <h2>Plugin mit drei benannten Skills</h2>
+    <p>Vertragsprüfung, Zahlungsratenprüfung und Word-Entwurfsprüfung sind getrennt auffindbar und übernehmen bereits erhobene Angaben voneinander. Die Skills klären entscheidende Lücken und führen zum begründeten Ergebnis, zu Ersatzklauseln und zu beauftragten Schreiben. Das Paket enthält Manifeste für Codex und Claude Code, den Werkstatt-Prompt und lokale Werkzeuge zur Ratenrechnung und DOCX-Aufnahme.</p>
+    <a class="btn" href="downloads/bautraegervertragspruefer-plugin.zip" download>Plugin-ZIP herunterladen</a>
+    <p><code>bautraegervertrag-pruefen</code> · <code>bautraeger-zahlungsrate-pruefen</code> · <code>bautraeger-word-entwurf-pruefen</code></p>
   </section>
 
   <section class="card" id="start">
@@ -163,69 +174,69 @@
       <li><strong>Startsatz senden:</strong> kopierfertigen Text unten verwenden.</li>
       <li><strong>Vertrag hochladen:</strong> PDF, DOCX, Text, Foto oder Akten-ZIP nachreichen.</li>
     </ol>
-    <p>Wenn Skill und Vertrag schon zusammen hochgeladen wurden: Startsatz senden. Das Modell soll mit Rollenmodus, Kurzbild und Pflicht-Prüfblock beginnen.</p>
+    <p>Wenn Prompt und Vertrag schon zusammen hochgeladen wurden, genügt der Startsatz. Die Prüfung beginnt mit den vorhandenen Unterlagen; bereits bekannte Angaben werden nicht erneut abgefragt.</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Ziel</th><th>Kopierfertiger Startsatz</th></tr></thead>
         <tbody>
-          <tr><td>erster Überblick</td><td><code>Prüfe diesen Bauträgervertrag. Beginne sofort im geführten Modus.</code></td></tr>
-          <tr><td>Rechnung oder Rate</td><td><code>Prüfe zuerst diese Zahlungsanforderung und entscheide mit Zahlungsfreigabekarte, welche Voraussetzungen oder Belege fehlen.</code></td></tr>
-          <tr><td>alle drei Dokumente</td><td><code>Vollpaket jetzt: Käufer-/Mandantenschreiben, ausführliches Gutachten und Aufforderungsschreiben an den Bauträger.</code></td></tr>
-          <tr><td>vor der Beurkundung</td><td><code>Prüfe diesen Notarentwurf vor dem Termin und liefere im Vollpaket konkrete, beurkundungsfähige Ersatztexte.</code></td></tr>
-          <tr><td>bereits beurkundet</td><td><code>Der Vertrag ist unterschrieben. Prüfe Wirksamkeit, heutige Rechtsfolge, Fälligkeit und formgerechten Handlungsweg.</code></td></tr>
-          <tr><td>Abnahme oder Mängel</td><td><code>Bereite Entscheidung, Beweisplan, Protokoll, Vorbehalte und alle drei Schreiben phasengerecht vor.</code></td></tr>
+          <tr><td>Vertrag prüfen</td><td><code>Prüfe diesen Bauträgervertrag aus Erwerbersicht. Begründe die wesentlichen Ergebnisse und arbeite erforderliche Ersatzklauseln aus.</code></td></tr>
+          <tr><td>Rechnung oder Rate</td><td><code>Prüfe diese Zahlungsanforderung, berechne den tragfähigen Zahlungsbetrag und fordere entscheidende fehlende Belege gezielt an.</code></td></tr>
+          <tr><td>alle drei Dokumente</td><td><code>Erstelle ein Mandantenschreiben, ein ausführliches Gutachten und den sachlich erforderlichen Schreibenentwurf an den Bauträger. Erfinde keine Beanstandung.</code></td></tr>
+          <tr><td>vor der Beurkundung</td><td><code>Prüfe diesen Notarentwurf vor dem Termin. Liefere begründete Ergebnisse, einsetzbare Ersatzklauseln und einen Entwurf der Änderungsanforderung an das Notariat.</code></td></tr>
+          <tr><td>bereits beurkundet</td><td><code>Der Vertrag ist beurkundet. Prüfe die bestehenden Rechte und Einwendungen und arbeite das nach den Unterlagen mögliche weitere Vorgehen aus.</code></td></tr>
+          <tr><td>Abnahme oder Mängel</td><td><code>Prüfe anhand der Unterlagen, ob ich abnehmen muss, welche Vorbehalte erforderlich sind und welche Nachweise noch fehlen. Entwirf die nötigen Erklärungen für das Abnahmeprotokoll.</code></td></tr>
         </tbody>
       </table>
     </div>
     <p>Bei möglichem kurzfristigem Rechtsverlust Datum und Zugang oder Zustellung nennen. Der Skill beginnt dann mit einem Eilhinweis, ohne eine Frist zu erfinden.</p>
-    <p><strong>60-Sekunden-Regel:</strong> keine Recherchevorrede, keine Plattformdebatte. Erst sichtbares Startsignal, dann Rollenstatus und Pflichtblock. Bei Abbruch: <code>Bitte fahre exakt an der letzten Überschrift fort und zeige danach die Nächste Weiche.</code></p>
+    <p>Rückfragen betreffen nur Informationen oder Entscheidungen, die das Ergebnis oder die weitere Bearbeitung ändern. Pro Antwort werden höchstens drei solcher Fragen gestellt; unabhängig davon geht die Prüfung der vorhandenen Unterlagen weiter.</p>
   </section>
 
   <section class="card" id="werkstatt">
     <h2>Ausführliche Werkstattfassung</h2>
-    <p><code>SKILL.md</code> enthält jetzt 31 Werkstattstationen und ist gegenüber Version 4.2.0 um 33,84 Prozent erweitert. Sie führt vom Zehn-Sekunden-Start über Dokumentenkarte, Zustandsautomat und phasengerechte Prüfung bis zur Versandkontrolle von Käufer-/Mandantenschreiben, Gutachten und Bauträgerschreiben.</p>
-    <p>Zehn kopierfertige Rezepte decken Entwurf, anwaltliches Vollpaket, Ratenabruf, Abnahme, Bauzeit, Technik, beurkundete Urkunde, positive Kontrollprüfung, WEG und Insolvenz ab. Bei langen Antworten konserviert eine Fortsetzungskapsel den Arbeitsstand, damit die nächste Nachricht an der richtigen Überschrift weiterläuft.</p>
+    <p><code>SKILL.md</code> enthält einen konzentrierten Arbeitsablauf mit vollständiger Word-Aufnahme, Phasenprüfung, Ratenrechnung, Klauselanalyse und konkreten Korrekturen. Die frühere Mindestlänge wurde abgeschafft. Der historische Rechtsprechungsbestand bleibt als gekennzeichneter Rechercheausgangspunkt erhalten.</p>
+    <p>Werkstatt und Mini-Prompt können als eigenständige Arbeitsanweisung in anderen KI-Systemen verwendet werden. Sie verlangen konkrete Klauselfundstellen, nachvollziehbare Rechtsfolgen und offen benannte Lese- und Quellenlücken. Eine gleiche Prüfleistung über alle Modelle hinweg ist nicht nachgewiesen.</p>
   </section>
 
   <section class="card">
-    <h2>Robust auf PC, Mac und Mobilgeräten</h2>
-    <p>Der Skill soll nie still hängen. Nach Startsatz oder Upload kommt zuerst ein kurzes Startsignal, danach die Prüfung in sichtbaren Etappen: Pflichtblock, Zahlungsplan, Abnahme/Mängel, Technik und Dokumente.</p>
-    <p>Bei langen Antworten setzt der Skill Fortsetzungsmarken wie <code>Pflichtblock erledigt</code>, <code>Dokument 1 fertig</code> oder <code>Fortsetzen bei ...</code>. Wenn du <code>beenden</code>, <code>abbrechen</code> oder <code>stop</code> schreibst, muss er sofort aufhören und darf erst nach ausdrücklichem <code>weiter</code> fortsetzen.</p>
+    <h2>Nach Rückfragen und neuen Unterlagen fortsetzen</h2>
+    <p>Eine Antwort oder neue Vertragsfassung führt zur erneuten Prüfung der betroffenen Punkte. Das Modell erläutert, was sich geändert hat, rechnet gegebenenfalls neu und passt bereits beauftragte Schreiben an. Fortgeltende Ergebnisse werden übernommen.</p>
+    <p>Mit <code>weiter</code> wird am offenen Arbeitsschritt angeschlossen, nicht die Aufnahme wiederholt. Wenn du <code>beenden</code>, <code>abbrechen</code> oder <code>stop</code> schreibst, endet die Bearbeitung. Ein technischer Abbruch lässt sich mit dem Fortsetzungstext unten überbrücken.</p>
   </section>
 
   <section class="card" id="workflow">
-    <h2>Geführt oder Vollpaket</h2>
-    <p>Im geführten Modus liefert der Skill Evidenzkarte, Kurzbild, Befundtabelle, Fließtext, phasenbezogene Abschlussentscheidung und eine Nächste Weiche. Im Vollpaket-Modus entstehen die drei Dokumente.</p>
+    <h2>Von der Prüfung zum verwendbaren Ergebnis</h2>
+    <p>Der Auftrag und die Vertragsphase bestimmen den Ablauf. Eine rechtliche Analyse allein genügt nicht, wenn Ersatzklauseln, eine Zahlungsentscheidung oder ein Schreiben beauftragt sind.</p>
     <ol>
-      <li><strong>Kurzbild mit Statuskopf:</strong> Evidenzkarte, Rolle, wichtigste Treffer, Abschlussentscheidung und nächster Schritt.</li>
-      <li><strong>Nächste Weiche:</strong> Befunde vertiefen, Schreiben erstellen, Technik prüfen, Quellen prüfen oder Vollpaket ausgeben.</li>
-      <li><strong>Übersendungsschreiben:</strong> verständliche Einordnung für Käufer/in oder Mandant/in.</li>
-      <li><strong>Mandantengutachten:</strong> ausführliche Prüfung mit Drei-Achsen-Klauselmatrix, Subsumtion, Normen, Quellenstand, Beweislast, MaBV-Ratenrechenblatt, Zahlungsfreigabekarte, Technik und Organisation.</li>
-      <li><strong>Aufforderungsschreiben:</strong> phasengerechte Abhilfe; Notariat nur bei Urkunds- oder Vollzugsthemen.</li>
+      <li><strong>Vorhandenes lesen:</strong> Vertrag, Anlagen, bisherige Angaben und erkennbare Termine auswerten; fehlenden Vertrag oder entscheidende Unterlagen gezielt anfordern.</li>
+      <li><strong>Vor Beurkundung:</strong> Beanstandungen am Wortlaut begründen und passende Ersatzklauseln liefern. Ist die weitere Verwendung offen, gezielt nach Mandantenberatung, Änderungsanforderung oder Vertragsüberarbeitung fragen.</li>
+      <li><strong>Nach Beurkundung:</strong> Bestehende Rechte, Einwendungen und Fristen prüfen. Eine mögliche Vertragsänderung nicht als schon wirksame Neufassung behandeln.</li>
+      <li><strong>Bei Zahlungsabruf:</strong> Voraussetzungen und Beträge abgleichen, das nachgewiesene Zahlungsergebnis beziffern und fehlende Belege mit ihrer konkreten Bedeutung benennen.</li>
+      <li><strong>Auftrag zu Ende führen:</strong> Bereits beauftragte Schreiben und Änderungen ausarbeiten, ohne deren Erstellung nur anzubieten. Nach einer Antwort betroffene Ergebnisse fortschreiben. Zum Abschluss bleiben nur die konkrete noch nötige Mitwirkung oder der sachlich nächste Schritt.</li>
     </ol>
-    <p><strong>Workflow-Kompass:</strong> Eine mögliche kurzfristige Frist startet mit der Eiltriage; „Status" oder „erster Blick" startet geführt; eine konkrete Rechnung startet mit der Zahlungsfreigabekarte; „final", „one-shot" oder „alle Schreiben" startet das Vollpaket; nach Abbruch geht es an der Fortsetzungsmarke weiter.</p>
+    <p>Adressaten, offene Tatsachen und wirtschaftlich erhebliche Entscheidungen werden nicht erfunden. Ein begrenzter Prüfauftrag bleibt begrenzt. Der Entwurf eines Schreibens ist keine Erlaubnis zum Versenden; eine reine Word-Prüfung erlaubt keine Änderung der Originaldatei.</p>
   </section>
 
   <section class="card">
     <h2>Vollfassung</h2>
     <p>Für Kanzlei-, Projekt- und gründliche Einzelvertragsprüfung. Ein Klick lädt die Datei direkt herunter.</p>
     <p>Wenn eine App die Datei trotzdem nur anzeigt: Link gedrückt halten und „Link herunterladen“ wählen oder diese Seite im normalen Browser öffnen.</p>
-    <a class="btn" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md" download="SKILL.md" type="text/markdown" aria-label="Vollständige SKILL.md herunterladen">
+    <a class="btn" href="SKILL.md" download="SKILL.md" type="text/markdown" aria-label="Vollständige SKILL.md herunterladen">
       SKILL.md herunterladen
     </a>
   </section>
 
   <section class="card">
     <h2>Kurzversion für kleinere Modelle</h2>
-    <p>Wenn Claude, ChatGPT, Perplexity, Gemini, Mistral oder ein lokales Modell die große Datei nicht sauber annimmt, nutze die Sparversion mit maximal 7.500 Zeichen. Sie bleibt knapper, enthält aber Rollenmodus, Evidenzstatus, Drei-Achsen-Befunde, Zahlungsfreigabe, Abschlussentscheidung, Quellenregeln, Weiche und Vollpaket. Auch die Mini-Fassung muss Käufer-/Mandantenschreiben, Gutachten und Bauträgerschreiben abbilden.</p>
-    <a class="btn" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md" download="MINI_SKILL.md" type="text/markdown" aria-label="Kompakte MINI_SKILL.md herunterladen">
+    <p>Wenn Claude, ChatGPT, Perplexity, Gemini, Mistral oder ein lokales Modell die große Datei nicht sauber annimmt, nutze die Mini-Fassung mit 9.941 Zeichen bei einer Grenze von 10.000. Sie enthält denselben fortsetzbaren Ablauf in kürzerer Form: Prüfung, gezielte Rückfragen, Ersatzklauseln oder Zahlungsentscheidung und beauftragte Folgeschreiben. Die neue Grenze lässt Platz für verständliche Sätze; eine gleiche Prüfleistung über alle Modelle wird nicht zugesichert.</p>
+    <a class="btn" href="MINI_SKILL.md" download="MINI_SKILL.md" type="text/markdown" aria-label="Kompakte MINI_SKILL.md herunterladen">
       MINI_SKILL.md herunterladen
     </a>
   </section>
 
   <section class="card" id="files">
     <h2>Alle Dateien nach Zweck</h2>
-    <p>Die Release-Links laden sofort herunter. Die Repository-Links öffnen Quellen, Dokumentation und Prüfwerkzeuge; die Vertragsmatrix darunter führt zu jedem einzelnen Aktenformat.</p>
+    <p>Die Release-Links laden sofort herunter. Die Repository-Links öffnen Quellen, Dokumentation und Prüfwerkzeuge; die Vertragsübersicht darunter führt zu jedem einzelnen Aktenformat.</p>
     <div class="table-wrap">
       <table>
         <thead>
@@ -239,7 +250,7 @@
           <tr>
             <td data-label="Bereich"><strong>Skill-Dateien</strong></td>
             <td data-label="Öffnen"><a class="link" href="SKILL.md">SKILL.md ansehen</a> · <a class="link" href="MINI_SKILL.md">MINI_SKILL.md ansehen</a></td>
-            <td data-label="Direkter Weg"><a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md">Vollfassung laden</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md">Mini laden</a></td>
+            <td data-label="Direkter Weg"><a class="link" href="SKILL.md">Vollfassung laden</a> · <a class="link" href="MINI_SKILL.md">Mini laden</a></td>
           </tr>
           <tr>
             <td data-label="Bereich"><strong>Vertragsakten</strong></td>
@@ -283,21 +294,21 @@
         <tbody>
           <tr>
             <td data-label="Akte"><strong>Hohenwartshofen</strong></td>
-            <td data-label="Prüfprofil">Fehlerakte mit groben MaBV-, AGB-, Abnahme-, Sicherungs-, Bauüberwachungs- und Baubeschreibungsproblemen; der Skill soll 🔴 Pflichtbefunde finden.</td>
+            <td data-label="Prüfprofil">Mehrere Sicherungs-, Zahlungs- und Abnahmeklauseln sowie widersprüchliche Baufortschrittsangaben am konkreten Wortlaut prüfen.</td>
             <td data-label="Akten-ZIP"><a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-einzel-pdfs.zip">ZIP laden</a></td>
             <td data-label="Deutsch"><a class="link" href="vertragsdokumente/bautraegervertrag/bautraegervertrag.pdf">PDF ansehen</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag.pdf">PDF laden</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag.docx">Word laden</a> · <a class="link" href="vertragsdokumente/bautraegervertrag/bautraegervertrag.md">Markdown ansehen</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag.md">Markdown laden</a></td>
             <td data-label="Deutsch/English"><a class="link" href="vertragsdokumente/bautraegervertrag/bautraegervertrag-de-en.html">HTML ansehen</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-de-en.html">HTML laden</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-de-en.pdf">PDF laden</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-de-en.docx">Word laden</a></td>
           </tr>
           <tr>
             <td data-label="Akte"><strong>Marewald</strong></td>
-            <td data-label="Prüfprofil">Rechtmäßiger, aber deutlich verkäuferfreundlicher Grenzvertrag; der Skill soll belastbare 🟠 Verhandlungsbefunde liefern, aber keine Nichtigkeit behaupten.</td>
+            <td data-label="Prüfprofil">Überwiegend tragfähige Regelungen, einzelne prüfbedürftige Klauseln und gesondert zu bewertende Zahlungsbelege. Keine pauschale Wirksamkeitsvorgabe.</td>
             <td data-label="Akten-ZIP"><a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-marewald-einzel-pdfs.zip">ZIP laden</a></td>
             <td data-label="Deutsch"><a class="link" href="vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.pdf">PDF ansehen</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-marewald.pdf">PDF laden</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-marewald.docx">Word laden</a> · <a class="link" href="vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md">Markdown ansehen</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-marewald.md">Markdown laden</a></td>
             <td data-label="Deutsch/English"><a class="link" href="vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-de-en.html">HTML ansehen</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-marewald-de-en.html">HTML laden</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-marewald-de-en.pdf">PDF laden</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-marewald-de-en.docx">Word laden</a></td>
           </tr>
           <tr>
             <td data-label="Akte"><strong>Lindenhain</strong></td>
-            <td data-label="Prüfprofil">Faire, ausgewogene und leicht käuferfreundliche Kontrollakte; der Skill soll tragfähige Regelungen bestätigen und nur echte Präzisierungspunkte markieren.</td>
+            <td data-label="Prüfprofil">Tragfähige Erwerberschutzregeln würdigen, Nachweislücken offenhalten und auf neue Gegenfeststellungen reagieren.</td>
             <td data-label="Akten-ZIP"><a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-lindenhain-einzel-pdfs.zip">ZIP laden</a></td>
             <td data-label="Deutsch"><a class="link" href="vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.pdf">PDF ansehen</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-lindenhain.pdf">PDF laden</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-lindenhain.docx">Word laden</a> · <a class="link" href="vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md">Markdown ansehen</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-lindenhain.md">Markdown laden</a></td>
             <td data-label="Deutsch/English"><a class="link" href="vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-de-en.html">HTML ansehen</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-lindenhain-de-en.html">HTML laden</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-lindenhain-de-en.pdf">PDF laden</a> · <a class="link" href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/bautraegervertrag-lindenhain-de-en.docx">Word laden</a></td>
@@ -354,33 +365,24 @@
     <h2>Und dann?</h2>
     <p>Die heruntergeladene <code>SKILL.md</code> oder bei engem Kontext <code>MINI_SKILL.md</code> per Drag &amp; Drop in ein KI-Chatfenster (Claude, ChatGPT, Gemini, Perplexity, Mistral …), in ein Projektwissen oder in eine Assistant-Konfiguration ziehen. Dazu schreiben:</p>
     <p><em>„Bitte halte dich an diesen Skill/Prompt. Gleich kommt ein Bauträgervertrag — bearbeite ihn danach."</em></p>
-    <p>Dann den Vertrag (Text, PDF, DOCX oder Foto) nachreichen — die Prüfung startet mit Rollenmodus, Evidenzkarte und Pflichtblock und endet mit Abschlussentscheidung und Nächster Weiche. Das Vollpaket kann jederzeit angefordert werden.</p>
+    <p>Dann den Vertrag als Text, PDF, DOCX oder Foto nachreichen. Die Prüfung beginnt mit den vorhandenen Angaben, klärt entscheidende Lücken und führt bis zum beauftragten Ergebnis. Weitere Schreiben oder eine Vertragsüberarbeitung können konkret beauftragt werden.</p>
   </section>
 
   <section class="card" id="prompt">
     <h2>Kopierfertiger Start</h2>
-    <p><code>Bitte nutze die gerade hochgeladene SKILL.md oder MINI_SKILL.md als Arbeitsanweisung. Rollenmodus, falls ich ihn angebe: A Käufer/in selbst, B anwaltlich für Käufer/in, C neutraler Schnellcheck. Liegt der Vertrag schon vor oder antworte ich nicht zur Rolle, beginne vorläufig mit A und warte nicht. Prüfe erkennbare Fristen, Termine, Zugänge und Zustellungen zuerst; bei möglichem kurzfristigem Rechtsverlust beginne mit einem Eilhinweis, ohne eine Frist zu erfinden. Prüfe danach ohne Rückfragen-Kaskade mit Evidenzkarte, Befundtabelle, Fließtext, phasenbezogener Abschlussentscheidung und Nächster Weiche. Bei einer Rechnung erstelle zusätzlich die Zahlungsfreigabekarte. Wenn ich „Vollpaket" schreibe, liefere Käufer-/Mandantenschreiben, ausführliches Gutachten und phasengerechtes Bauträgerschreiben; erfinde im Positivfall keine Beanstandung.</code></p>
+    <p><code>Nutze die hochgeladene SKILL.md oder MINI_SKILL.md für die Prüfung dieses Bauträgervertrags aus Erwerbersicht. Lies zuerst die vorhandenen Unterlagen. Berücksichtige Vertragsphase und Termine; frage nur nach entscheidenden fehlenden Angaben. Liefere verständlich begründete Ergebnisse und vor Beurkundung die erforderlichen Ersatzklauseln. Bei einer Zahlungsanforderung beziffere das tragfähige Zahlungsergebnis. Führe bereits beauftragte Folgeschritte aus. Ist deren Verwendung noch offen, frage konkret nach; setze nach meiner Antwort am offenen Punkt fort.</code></p>
     <p>Für Projekt, Co-Work oder Assistant-Konfiguration: Datei als Projektwissen, Skill-Datei, Systemanweisung oder dauerhafte Arbeitsanweisung hinterlegen.</p>
-    <p>Wenn der Chatbot abbricht: <code>Bitte fahre an der letzten Überschrift fort und zeige mir danach die Nächste Weiche.</code></p>
-    <p>Wenn nichts startet: <code>Du hast jetzt die Arbeitsanweisung. Bitte beginne mit Rollenmodus, Evidenzkarte, Pflicht-Prüfblock, Abschlussentscheidung und Nächster Weiche.</code></p>
+    <p>Wenn der Chatbot abbricht: <code>Setze die Bearbeitung am offenen Punkt fort. Übernimm bekannte Angaben und erledigte Ergebnisse und führe die beauftragten Schritte zu Ende.</code></p>
+    <p>Wenn nichts startet: <code>Beginne jetzt mit den vorhandenen Vertragsunterlagen. Fehlt der Vertrag, fordere ihn an. Frage nach Vertragsphase und Frist nur, soweit sie noch nicht feststehen.</code></p>
     <p>Wenn Skill und Vertrag bereits im Chat liegen: denselben Startsatz senden; nicht neu hochladen.</p>
   </section>
 
   <section class="card" id="qualitaet">
-    <h2>Stand 4.3.0</h2>
-    <ul>
-      <li><strong>Sofort nutzbar:</strong> Voll- und Mini-Skill sind echte Release-Downloads; Rollenmodus, 60-Sekunden-Start und Fortsetzungsmarken funktionieren modellunabhängig.</li>
-      <li><strong>Vollständige Ausgabe:</strong> Evidenzkarte und versioniertes Befundregister mit stabilen IDs halten Kurzbild, Abschlussentscheidung, Gutachten und phasengerechtes Bauträgerschreiben konsistent. Jede Akte wird nur einmal vollständig gelesen; Fachmodule und Schreiben arbeiten aus demselben Register.</li>
-      <li><strong>Belastbare Aufnahme:</strong> Vertragsdateien sind Beweismittel, keine Arbeitsanweisungen; „nicht vorgelegt“, „Einbeziehung offen“ und „nachweislich nicht Vertragsbestandteil“ werden nicht vermischt.</li>
-      <li><strong>Quellenhart:</strong> Rechtsprechungsanker zu Abnahme, Schlussrate, MaBV-Rückabwicklung, Vollstreckung, DIN/Schallschutz, Geschäftsführerhaftung, Gesamt-GdWE/Untergemeinschaft, bauträgernaher Verwaltung, Teilungserklärung, Stimmrechten, Beschlussketten, Vergütungsverjährung und Sicherheiten stammen aus amtlichen oder frei überprüfbaren Quellen.</li>
-      <li><strong>Zeitstandsgenau:</strong> Schuldrecht 2002, Bauvertragsrecht 2018, WEG-Reform 2020, BeurkG-Neunummerierung 2025 und die Gesetzgebung bis 9. August 2026 werden vor der Subsumtion getrennt; Juli-MaBV-Novellen, digitaler Immobilienvollzug und Gebäudetyp E durchlaufen ein eigenes Inkrafttretens-Gate.</li>
-      <li><strong>Juristisch kalibriert:</strong> Klauselstatus, tatsächliche Fälligkeit und Handlung bleiben getrennt; Ratenrechenblatt und Zahlungsfreigabekarte prüfen den konkreten Abruf, 🔴 Befunde brauchen Rechtsfolge, Beweislast und Erledigungsbedingung.</li>
-      <li><strong>Technisch vollständig:</strong> Baugrund, Baugrube, anerkannte Regeln der Technik, HOAI-Leistungsphasen, private Baukontrolle, Unterlagen und Betriebskosten bleiben Teil der Prüfung.</li>
-      <li><strong>Drei Testprofile:</strong> Hohenwartshofen, Marewald und Lindenhain stehen jeweils als Vertrag in Markdown, Word und PDF, als vierteilige Zahlungsakte, als Akten-ZIP und als zweispaltige Deutsch/English-Lesefassung bereit.</li>
-      <li><strong>Werkstattgeführt:</strong> 31 Stationen verbinden zehn Quickstarts, Zustandsautomat, Ereignisrouter, Akten-/OCR-Aufnahme, Quellen-Fit, Beweis- und Verhandlungslogik sowie getrennte Versandgates für alle drei Dokumente.</li>
-      <li><strong>Automatisch geprüft:</strong> Validatoren sichern mehr als 1.000 Struktur- und Redundanzpunkte sowie 16 Eingangsszenarien einschließlich Eilfristen, Versionsgleichlauf, Pages-Kopien, Mini-Limit, No-Meta-Regel, Sprachvorrang, Rechtsanker und sämtliche lokalen Markdown- und Pages-Wege. Jede zweisprachige HTML-, PDF- und DOCX-Fassung weist den SHA-256-Stand ihrer deutschen Quelle nach. Bei jeder Zahlungsakte werden außerdem Projekt, Einheit, Rate, Vertragskumulation, Beträge, Chronologie und A4-Layout geprüft; die beiden laufenden Akten-PDFs müssen im Vier-Dokumente-ZIP byte-identisch vorliegen. Die statische Prüfung ersetzt keine aktuelle Rechtsrecherche, eine optionale Online-Prüfung ruft alle Quellenadressen live ab.</li>
-      <li><strong>Offen und portabel:</strong> keine Installation, kein eigenes Modell und keine versteckte Logik; alle Kernanweisungen liegen in einer lesbaren Markdown-Datei.</li>
-    </ul>
+    <h2>Stand 4.5.0</h2>
+    <p>Die Word-Vorlagen tragen oben „Entwurf“ und eine leere eigene Urkundennummer. Der Vorlagenrahmen behauptet keine erfolgte Beurkundung. Hinweise wie „KI generiert“ stehen nicht in den Word-Vertragsvorlagen. Nummern bestehender Bezugsurkunden bleiben erhalten.</p>
+    <p>Die Testakten trennen Entwurfsprüfung und späteres Zahlungsszenario. Neutrale Eingaben und Erwartungsmatrix sind getrennt. Neben Klauselrisiken werden unbegründete Beanstandungen, falsche Beurkundungsannahmen, fehlende Belege und widersprüchliche Baufortschrittsberichte geprüft.</p>
+    <p>Automatische Kontrollen prüfen Paketkonsistenz, Rechenverhalten, DOCX-Inhalte, Artefakte, Spiegelkopien und Verweise. Quellenprüfungen kontrollieren die hinterlegte Struktur; ein erreichbarer Link beweist keine zutreffende Rechtsauffassung. Modellübergreifende Erfolgsquoten werden nicht behauptet.</p>
+    <p><a href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/tree/main/tests">Testaufträge und Erwartungsmatrix</a></p>
   </section>
 
   <footer>
