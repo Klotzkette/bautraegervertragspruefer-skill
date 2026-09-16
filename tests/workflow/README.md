@@ -1,5 +1,7 @@
 # Dialogprüfung der Prompts und Plugin-Einstiege
 
+Tatsächliche Läufe: [15. September 2026](../runs/2026-09-15/README.md) und [16. September 2026](../runs/2026-09-16/README.md). Der jüngere Bericht trennt abgeschlossene Dialoge der Fassung 4.5.0 von wegen Nutzungslimits unterbrochenen Läufen des Arbeitsstands 4.5.1.
+
 Diese fünf Verläufe prüfen die Bearbeitung über mehrere Nachrichten: gezielte Rückfrage, vereinbarte Ausarbeitung, neue Fassung, geänderter Nachweisstand sowie Begrenzung und Abbruch. Sie ergänzen die juristischen Einzeltests und die gesonderten Word-Artefakttests. Ein vorhandenes Testszenario ist noch kein durchgeführter Modelllauf.
 
 ## Eingaben nacheinander übergeben

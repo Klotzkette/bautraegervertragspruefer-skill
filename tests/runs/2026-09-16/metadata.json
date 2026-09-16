@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "status": "mixed_completed_and_interrupted",
+  "checked_on": "2026-09-16",
+  "model_provider": "OpenAI",
+  "model_id": null,
+  "exact_turn_timestamps": null,
+  "model_id_note": "Nicht zuverlässig erfasst; keine nachträgliche Schätzung.",
+  "system_and_developer_context": "Neue Codex-Unteragenten ohne geerbte Gesprächshistorie; bestehender System-/Entwicklerrahmen wirksam. Instruktion und aktuelle Eingaben explizit zugewiesen; Dateizugriff und Nebenwirkungen begrenzt; Rohtextarchivierung angeordnet.",
+  "fresh_conversation_per_run": true,
+  "expectations_hidden_during_execution": true,
+  "turns_delivered_sequentially": true,
+  "future_turns_visible": false,
+  "tools_available": [
+    "lokaler Dateizugriff",
+    "amtliche Webquellen",
+    "Plugin-Rechenhilfe",
+    "apply_patch zur Rohtextarchivierung"
+  ],
+  "input_and_current_artifact_sha256": {
+    "tests/workflow/inputs/w05-01.md": "d631165e9b83dc9e9ca6ac00024e268a4959098f3fac28d2cc509af47676c51c",
+    "tests/workflow/inputs/w05-02.md": "f82e5b8188e7ae2c9ba8e2bcde9df6031d21e023bb1074fa5d75d96280c5850d",
+    "tests/workflow/inputs/w05-03.md": "44c0f9ca42a7c471365f9b36c89b0e12aec83ae8f18535460ea9b562cd455ff0",
+    "tests/inputs/l-zahlung.md": "6ad49b4da7ad66713dd7c9f79b1b7faad730ceab9b6bbd05490b47b0082aab2a",
+    "vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md": "44ab492d4b5e330df532709f50954544d2192b6244f46405f263aaf0cc03919f",
+    "vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-bautenstandsbericht.md": "50782c698e81c0407c6d38d3e97473237f86dc06d1453f7412e89171f45ba650",
+    "vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-zahlungsanforderung.md": "3bf11c47865c43064a3b62ee8c26d4298a3bb4e8227962392b556babf50a47bb",
+    "tests/workflow/inputs/textfassung.md": "47f47f14e07e62c7be17c0492e8575ad5c758016081c2e44b1396729cef5b6ca",
+    "tests/inputs/l-gegenfeststellung.md": "06ad6bc3b24990bc2ff826956bb42ee07dd9d4f8e7a67b708734c63aebe4717b",
+    "tests/workflow/inputs/w04-03.md": "e5616da2f9566b576b51b1ae27950938028dc9f92204174123e4f80489868b13",
+    "tests/inputs/m-entwurf.md": "5b926cd868fe209f60e2fe2786ece2558fa1d8cb14efa045230985611afd3785",
+    "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md": "51418ae0399cdaf5583a0d8b814a166ae107ef266512acab04636d667cbd1820",
+    "tests/workflow/inputs/w02-01.md": "279a8b64327ff8b2c08290207b5a4ff519d8513650f9844152b5b0d537b635c6",
+    "tests/workflow/inputs/w02-02.md": "15406f8f6ecc6d453f540cc149d86203ee72656d2ffd71cb6ae70989238d483c",
+    "tests/workflow/inputs/w02-03.md": "bfce91c9b951e293e860368feb61c75a4001df1a6a58b26aa379e450aadeccb3",
+    "skill/MINI_SKILL.md": "1c587c24866c2e88892407bfc951a8fb3ccea37d6504edae4b6017057f6310f1",
+    "skill/SKILL.md": "e07ef14ba92cef01503fe3cf339b67b14e06cce47a2d222e0bf38310dbc9aefd",
+    "plugins/bautraegervertragspruefer/skills/bautraeger-zahlungsrate-pruefen/SKILL.md": "7649bdb29852b321d9ce248a8a1bd8430931782221372e1d390e60424769e515",
+    "plugins/bautraegervertragspruefer/skills/bautraegervertrag-pruefen/references/werkstatt.md": "e07ef14ba92cef01503fe3cf339b67b14e06cce47a2d222e0bf38310dbc9aefd"
+  },
+  "runs": [
+    {
+      "mode": "mini",
+      "case_id": "W05",
+      "version": "4.5.0",
+      "status": "completed",
+      "prompt_or_entrypoint": "skill/MINI_SKILL.md",
+      "instruction_sha256": "cfcfa1cda8fdc70895190b11f0455688a64a2144132af2ad7e614c6a2aa8dc64",
+      "raw_response_file": "mini-w05-4.5.0-raw.md",
+      "raw_response_sha256": "74014ba163aedde07459f8c79eadcafb1d8262037405acb51fc8b380ec0a8e3e",
+      "final_answers_observed": 3,
+      "archived_response_texts": 3,
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/workflow/inputs/w05-01.md"
+          ],
+          "response_section": "# Turn1",
+          "status": "completed_final",
+          "response_completed_before_next_input": true
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/workflow/inputs/w05-02.md"
+          ],
+          "response_section": "# Turn2",
+          "status": "completed_final",
+          "response_completed_before_next_input": true
+        },
+        {
+          "turn": 3,
+          "after_response_to": 2,
+          "inputs": [
+            "tests/workflow/inputs/w05-03.md"
+          ],
+          "response_section": "# Turn3",
+          "status": "completed_final",
+          "response_completed_before_next_input": null
+        }
+      ]
+    },
+    {
+      "mode": "plugin",
+      "case_id": "W04",
+      "version": "4.5.0",
+      "status": "completed",
+      "prompt_or_entrypoint": "plugins/bautraegervertragspruefer/skills/bautraeger-zahlungsrate-pruefen/SKILL.md",
+      "instruction_sha256": "eff3ba441aee02fa1ed49ea1c2034b3c3a8eb6788595e44eb9135edc749b1ce0",
+      "raw_response_file": "plugin-w04-4.5.0-raw.md",
+      "raw_response_sha256": "023fb053d2476b833ee71d5f39f78a879a397d34d0ffe933da369d019df3afaf",
+      "final_answers_observed": 3,
+      "archived_response_texts": 3,
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/inputs/l-zahlung.md",
+            "vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md",
+            "vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-bautenstandsbericht.md",
+            "vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-zahlungsanforderung.md",
+            "tests/workflow/inputs/textfassung.md"
+          ],
+          "response_section": "# Turn1",
+          "status": "completed_final",
+          "response_completed_before_next_input": true
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/inputs/l-gegenfeststellung.md"
+          ],
+          "response_section": "# Turn2",
+          "status": "completed_final",
+          "response_completed_before_next_input": true
+        },
+        {
+          "turn": 3,
+          "after_response_to": 2,
+          "inputs": [
+            "tests/workflow/inputs/w04-03.md"
+          ],
+          "response_section": "# Turn3",
+          "status": "completed_final",
+          "response_completed_before_next_input": null
+        }
+      ],
+      "werkstatt_reference_sha256": "5269d0af7317f372086a3f87d497e0574fdd9084dc6379888547058fcdaa4a3a"
+    },
+    {
+      "mode": "werkstatt",
+      "case_id": "W02",
+      "version": "4.5.0",
+      "status": "completed",
+      "prompt_or_entrypoint": "skill/SKILL.md",
+      "instruction_sha256": "5269d0af7317f372086a3f87d497e0574fdd9084dc6379888547058fcdaa4a3a",
+      "raw_response_file": "werkstatt-w02-4.5.0-raw.md",
+      "raw_response_sha256": "b8047b0be6f8ffd271a5a36d1c6b11af08474171a6cd53b46b98b5aa0b9b840c",
+      "final_answers_observed": 3,
+      "archived_response_texts": 3,
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/inputs/m-entwurf.md",
+            "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md",
+            "tests/workflow/inputs/w02-01.md"
+          ],
+          "response_section": "# Turn1",
+          "status": "completed_final",
+          "response_completed_before_next_input": true
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/workflow/inputs/w02-02.md"
+          ],
+          "response_section": "# Turn2",
+          "status": "completed_final",
+          "response_completed_before_next_input": true
+        },
+        {
+          "turn": 3,
+          "after_response_to": 2,
+          "inputs": [
+            "tests/workflow/inputs/w02-03.md"
+          ],
+          "response_section": "# Turn3",
+          "status": "completed_final",
+          "response_completed_before_next_input": null
+        }
+      ]
+    },
+    {
+      "mode": "mini",
+      "case_id": "W04",
+      "version": "4.5.1-working",
+      "status": "interrupted_usage_limit",
+      "prompt_or_entrypoint": "skill/MINI_SKILL.md",
+      "instruction_sha256": "1c587c24866c2e88892407bfc951a8fb3ccea37d6504edae4b6017057f6310f1",
+      "raw_response_file": "mini-w04-4.5.1-partial-raw.md",
+      "raw_response_sha256": "5da6e1e2138ed9c9f1723ed1be08c4b0c68cbc7018f2f34bb92fcff31c3a9900",
+      "final_answers_observed": 2,
+      "archived_response_texts": 3,
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/inputs/l-zahlung.md",
+            "vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md",
+            "vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-bautenstandsbericht.md",
+            "vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-zahlungsanforderung.md",
+            "tests/workflow/inputs/textfassung.md"
+          ],
+          "response_section": "# Turn1",
+          "status": "completed_final",
+          "response_completed_before_next_input": true
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/inputs/l-gegenfeststellung.md"
+          ],
+          "response_section": "# Turn2",
+          "status": "completed_final",
+          "response_completed_before_next_input": true
+        },
+        {
+          "turn": 3,
+          "after_response_to": 2,
+          "inputs": [
+            "tests/workflow/inputs/w04-03.md"
+          ],
+          "response_section": "# Turn3",
+          "status": "archived_before_agent_error",
+          "response_completed_before_next_input": null
+        }
+      ]
+    },
+    {
+      "mode": "plugin",
+      "case_id": "W04",
+      "version": "4.5.1-working",
+      "status": "interrupted_usage_limit",
+      "prompt_or_entrypoint": "plugins/bautraegervertragspruefer/skills/bautraeger-zahlungsrate-pruefen/SKILL.md",
+      "instruction_sha256": "7649bdb29852b321d9ce248a8a1bd8430931782221372e1d390e60424769e515",
+      "raw_response_file": "plugin-w04-4.5.1-partial-raw.md",
+      "raw_response_sha256": "052a022628718e4dd73a4eb3f25d45818a56e381f624a94b209b4c7c482fc14f",
+      "final_answers_observed": 1,
+      "archived_response_texts": 2,
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/inputs/l-zahlung.md",
+            "vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain.md",
+            "vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-bautenstandsbericht.md",
+            "vertragsdokumente/bautraegervertrag-lindenhain/bautraegervertrag-lindenhain-zahlungsanforderung.md",
+            "tests/workflow/inputs/textfassung.md"
+          ],
+          "response_section": "# Turn1",
+          "status": "completed_final",
+          "response_completed_before_next_input": true
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/inputs/l-gegenfeststellung.md"
+          ],
+          "response_section": "# Turn2",
+          "status": "archived_before_agent_error",
+          "response_completed_before_next_input": null
+        }
+      ],
+      "werkstatt_reference_sha256": "589f439cf876baffca5eb3a4c43825a0eafa5377e283f443ca79c62c7f7f9910"
+    }
+  ],
+  "execution_limits": [
+    "Nutzungslimit unterbrach die beiden 4.5.1-Läufe vor vollständigem Abschluss.",
+    "Nur Markdown-Akten; keine tatsächliche Word-Prüfung in diesen Dialogen.",
+    "Keine Vergleichsläufe bei fremden KI-Anbietern und keine Wiederholungsmessung.",
+    "Werkstatt-Referenz nach Beginn der 4.5.1-Läufe in Abschnitt 6.2 von ausgeben zu intern prüfen geändert; endgültige Referenz nicht vollständig modellgetestet.",
+    "Zusätzlicher unabhängiger Bewertungslauf ebenfalls am Nutzungslimit gescheitert."
+  ]
+}

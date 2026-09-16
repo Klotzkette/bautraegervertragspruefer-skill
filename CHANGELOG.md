@@ -1,5 +1,13 @@
 # Änderungsprotokoll
 
+## 4.5.1 - Arbeitsstand vom 16. September 2026, noch nicht veröffentlicht
+
+1. Vollständige interne Ratenprüfung und erforderlicher Ausgabeumfang werden getrennt: im konkreten Zahlungsabruf kein obligatorischer vollständiger Ratenplan, keine Nullbetragstabellen und keine mehrfach wiederholte Berechnung. Die widersprechende Ausgabeanweisung in Abschnitt 6.2 ist ebenfalls bereinigt.
+2. Beauftragte Schreiben sollen ihre tragende Begründung selbst enthalten; ein zusätzliches vollständiges Gutachten benötigt einen eigenen Auftrag. Werkstatt, Mini und Zahlungs-Skill sind darauf abgestimmt.
+3. Drei ergänzende Dialoge der Ausgangsfassung 4.5.0 zu neuer Vertragsfassung, negativem Zahlungsrücklauf und Stop/Weiter abgeschlossen. Zwei weitere Zahlungsdialoge mit dem Arbeitsstand 4.5.1 sind wegen Nutzungslimits nicht vollständig abgeschlossen und ausdrücklich nicht als bestanden bezeichnet. Die beobachtete Kürze bleibt uneinheitlich.
+4. Mini mit 9.986 Zeichen, aktualisierte Word-Fassungen und synchronisiertes Plugin-Paket. Keine Änderung der Vertragsvorlagen oder des Rechtsprechungsbestands.
+
+
 ## 4.5.0 - 15. September 2026
 
 1. Werkstatt, Mini und alle drei Plugin-Skills führen den Auftrag über Unterlagenaufnahme, gezielte Klärung und rechtliche Bewertung bis zu konkreten Änderungen und beauftragten Schreiben. Antworten, neue Fassungen und Gegenbelege werden in die laufende Prüfung eingearbeitet. Die bisherige Begrenzung auf eine bloße Analyse entfällt.
