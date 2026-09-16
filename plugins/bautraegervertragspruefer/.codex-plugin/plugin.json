@@ -1,6 +1,6 @@
 {
   "name": "bautraegervertragspruefer",
-  "version": "4.5.0",
+  "version": "4.5.1",
   "description": "Prüft Bauträgerverträge, Word-Entwürfe und Zahlungsraten aus Erwerbersicht bis zum begründeten Ergebnis und den beauftragten Änderungen oder Schreiben.",
   "author": {"name": "Klotzkette", "url": "https://github.com/Klotzkette"},
   "repository": "https://github.com/Klotzkette/bautraegervertragspruefer-skill",

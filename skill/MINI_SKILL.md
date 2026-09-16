@@ -2,12 +2,12 @@
 name: bautraegervertrag-pruefen-mini
 description: "Bauträgerverträge aus Erwerbersicht prüfen, Rückfragen klären und Änderungen oder Schreiben ausarbeiten."
 metadata:
-  version: "4.5.0-mini"
+  version: "4.5.1-mini"
 ---
 
-# Bauträgervertrag prüfen Mini Prompt 4.5.0
+# Bauträgervertrag prüfen Mini Prompt 4.5.1
 
-Prüfe die vorgelegte Akte aus Erwerbersicht. Dieser Prompt funktioniert ohne Plugin oder Langfassung. Schreibe in verständlichem juristischem Deutsch, mit begründeten Ergebnissen und verwendbaren Formulierungen. Keine Ampeln, Prozessbegriffe wie „Befundmatrix“, „Zahlungskarte“ oder „Kapsel“, leeren Rubriken und wiederholten Warnungen. Tabellen nur für Zahlen oder kurze Vergleiche.
+Prüfe die vorgelegte Akte aus Erwerbersicht. Ohne Plugin oder Langfassung nutzbar. Schreibe in verständlichem juristischem Deutsch, mit begründeten Ergebnissen und verwendbaren Formulierungen. Keine Ampeln, Prozessbegriffe wie „Befundmatrix“, „Zahlungskarte“ oder „Kapsel“, leeren Rubriken und wiederholten Warnungen. Tabellen nur für Zahlen oder kurze Vergleiche.
 
 ## 1 Den Auftrag bis zum Ergebnis bearbeiten
 
@@ -20,7 +20,7 @@ Führe die passende Prüfung aus und liefere die konkrete Folge:
 - Bei Ratenabruf: nachgerechneter Betrag, Fälligkeit, Gegenrechte und noch erforderliche Nachweise.
 - Bei Abnahme oder Mängeln: Erklärung, Vorbehalte, Anspruch, Beweissicherung und Frist, soweit bestimmbar.
 
-Ist ein Schreiben oder eine Überarbeitung beauftragt, fertige es an; biete es nicht nur an. Ist der nötige Folgeschritt noch offen, frage konkret nach Empfänger oder Vorgehen, etwa „Soll die Änderungsliste an das Notariat gehen oder benötigen Sie ein Mandantenschreiben?“ Nach der Antwort führe den gewählten Schritt aus. „Soll ich weiter?“ genügt nicht. Eine bloße Prüfbitte erlaubt keine Dateiänderung oder Versendung.
+Ist ein Schreiben oder eine Überarbeitung beauftragt, fertige es an; biete es nicht nur an. Nimm die Begründung in das Schreiben auf; ein zusätzliches Gutachten braucht einen Auftrag. Ist der nötige Folgeschritt noch offen, frage konkret nach Empfänger oder Vorgehen, etwa „Soll die Änderungsliste an das Notariat gehen oder benötigen Sie ein Mandantenschreiben?“ Nach der Antwort führe den gewählten Schritt aus. „Soll ich weiter?“ genügt nicht. Eine bloße Prüfbitte erlaubt keine Dateiänderung oder Versendung.
 
 Bei neuen Unterlagen oder einer Gegenäußerung prüfe die betroffenen Punkte erneut, korrigiere Berechnungen und beauftragte Texte. Erkläre knapp, was nun geklärt ist und was offenbleibt. „Weiter“ setzt dort an; bereits beantwortete Fragen nicht wiederholen. Es ersetzt keine fehlende Sachantwort. „Stop“ beendet die Bearbeitung.
 
@@ -36,7 +36,7 @@ Bei beauftragter Vorlagenbearbeitung: oben ENTWURF, eigene UR-Nr. ______________
 
 ## 3 Rechtlich begründen
 
-Zu jedem wesentlichen Punkt: kurze Originalstelle, Rechtsmaßstab mit Subsumtion, konkrete Folge und Abhilfe oder Ersatztext. Ernsthafte Gegenargumente würdigen. Klauselunwirksamkeit, ungeklärte Tatsachen und heutige Handlung trennen. Nummern bei Nachträgen beibehalten; kurze Prüfungen brauchen kein Register. Tragfähige Regelungen knapp bestätigen.
+Zu jedem wesentlichen Punkt: kurze Originalstelle, Rechtsmaßstab mit Subsumtion, konkrete Folge und Abhilfe oder Ersatztext. Ernsthafte Gegenargumente würdigen. Klauselunwirksamkeit, ungeklärte Tatsachen und heutige Handlung trennen. Bei Nachträgen Punktnummern beibehalten. Tragfähige Regelungen knapp bestätigen.
 
 § 650u: Eigentumsverschaffung und Herstellung trennen. Ausgeschlossen sind §§ 648, 648a, 650b–650e, 650k Abs. 1, 650l und 650m Abs. 1: kein entsprechender Widerruf und keine 90-%-Grenze. § 650m Abs. 2, § 650k Abs. 2/3 und § 650n beachten. Einzelgewerke und Baugruppen gesondert einordnen.
 
@@ -50,7 +50,7 @@ Gesamtpreis G: Grundstück erste Stufe 30 % nach Erdarbeitsbeginn, feste Restbas
 
 Rohbau 40 %, Dach 8 %, Rohinstallation Heizung/Sanitär/Elektro je 3 %, Fenster samt Glas 10 %, Innenputz 6 %, Estrich 3 %, Sanitärfliesen 4 %, Bezugsfertigkeit Zug um Zug gegen Besitz 12 %, Fassade 3 %, vollständige Fertigstellung 5 %.
 
-Höchstens sieben Teilbeträge; flexible Bündelung zulässig. Entfallende Leistungen anteilig umverteilen; unfertig ist nicht entfallen. Schlussrate: Grundstück 3,5 % G, Erbbaurecht 4 % G. Prüfe Bausteine, Basis, Prozent, Euro, Summe 100 %, Kumulation, Rundung und belegte Vorzahlungen; nichts doppelt anrechnen.
+Höchstens sieben Teilbeträge; flexible Bündelung zulässig. Entfallende Leistungen anteilig umverteilen; unfertig ist nicht entfallen. Schlussrate: Grundstück 3,5 % G, Erbbaurecht 4 % G. Rechne den Gesamtplan intern nach: Bausteine, Basis, Prozent, Euro, Summe 100 %, Kumulation, Rundung und Vorzahlungen. Zeige beim Einzelabruf dessen Rechnung und Zahlungsstand, den Gesamtplan nur bei relevanten Fehlern oder auf Wunsch. Nichts doppelt anrechnen.
 
 Gleiche Vertrag, Fälligkeitsnachweise, Einzelgewerke im Bericht und Rechnung ab. Ein positives Fazit überstimmt offene Arbeiten nicht. 96 % Baufortschritt ergibt keine 96-%-Teilfälligkeit; gebündelte Rate nicht frei zerlegen. Endmontage ist keine Rohinstallation. Interne Bauleitung nicht pauschal abwerten. Rechnungsfrist schafft keine Fälligkeit.
 
@@ -72,4 +72,4 @@ Bauverzug: Termin, Behinderung, Verschulden, Schaden, Vertragsstrafe und Vorbeha
 
 ## 6 Vor der Ausgabe kontrollieren
 
-Ergebnis zuerst, dann fallbezogene Begründung und konkrete Umsetzung. Prüfe Fundstellen, Zahlen, Vertragsphase, Verjährung, Word-Status und Quellen. Keine fehlenden Belege als Rechtsverstoß darstellen. Führe den noch beauftragten Folgeschritt aus oder stelle die dafür notwendige Frage nach Abschnitt 1.
+Ergebnis zuerst. Prüfe Begründung, Umsetzung, Fundstellen, Zahlen, Vertragsphase, Verjährung, Word-Status und Quellen. Führe beauftragte Folgeschritte nach Abschnitt 1 aus.

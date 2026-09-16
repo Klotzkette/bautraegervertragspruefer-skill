@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-09-16",
+  "method": "Unabhängiger Codex-Agent las die fünf vollständigen Rohdialoge, Eingaben und getrennte Bewertungsrubrik. Hauptagent überprüfte die Bewertung; Antworten nicht verändert.",
+  "rubric": "tests/workflow/erwartungen.json",
+  "score_order": "Reihenfolge der required-Kriterien im jeweiligen Fall und Turn; 0 fehlt/falsch, 1 teilweise, 2 konkret und brauchbar.",
+  "limits": [
+    "Einzelne Codex-Läufe, kein anwaltliches Audit und keine statistische Aussage.",
+    "Rechtliche Nebenbemerkungen nicht umfassend zertifiziert.",
+    "Verfahrensabschottung und Werkzeugaufrufe nicht allein aus Antworttext belegbar; hierfür Metadaten und tatsächliches Ausführungsprotokoll."
+  ],
+  "runs": [
+    {
+      "mode": "mini",
+      "case_id": "W05",
+      "version": "4.5.0",
+      "raw_response_file": "mini-w05-4.5.0-raw.md",
+      "turns": [
+        {
+          "turn": 1,
+          "scores": [
+            2,
+            2
+          ],
+          "reason": "Unwirksame Zweijahres-AGB und gesetzliche Bauwerksfrist; keine Abnahme oder Fristende erfunden, fehlender Nachweis benannt."
+        },
+        {
+          "turn": 2,
+          "scores": [
+            2
+          ],
+          "reason": "Ausschließlich kurze Stop-Bestätigung."
+        },
+        {
+          "turn": 3,
+          "scores": [
+            2
+          ],
+          "reason": "Ein Satz mit Datum und Umfang der benötigten wirksamen Abnahme."
+        }
+      ],
+      "forbidden_observed": [],
+      "critical_observed": [],
+      "shared_required_scores": [
+        2,
+        2,
+        2
+      ],
+      "shared_reason": "Tatsächliche Fortsetzung verarbeitet, beauftragte Ergebnisse ausformuliert und neue Tatsachen zugeordnet; Stop benötigt keine weitere rechtliche Begründung."
+    },
+    {
+      "mode": "werkstatt",
+      "case_id": "W02",
+      "version": "4.5.0",
+      "raw_response_file": "werkstatt-w02-4.5.0-raw.md",
+      "turns": [
+        {
+          "turn": 1,
+          "scores": [
+            2,
+            2
+          ],
+          "reason": "Wesentlichkeitsfehler der Fiktion vom Abnahmeanspruch getrennt; Anlagenlücken und konkrete Anschlussklärung zum bekannten Termin."
+        },
+        {
+          "turn": 2,
+          "scores": [
+            2,
+            2
+          ],
+          "reason": "Notariatsschreiben trotz fehlender Anlagen tatsächlich geliefert; vier Änderungsabschnitte und gesonderte Unterlagenanforderung."
+        },
+        {
+          "turn": 3,
+          "scores": [
+            2,
+            2,
+            2
+          ],
+          "reason": "Neue Fiktionsregel insoweit akzeptiert, offene übrige Briefpunkte und Anlagen erhalten; konkrete kurze Notariatsrückmeldung."
+        }
+      ],
+      "limitations": [
+        "T1 sehr ausführlich; T2 enthält nicht sämtliche weiteren Empfehlungen aus T1 und erklärt die Auswahl nicht. Kein Nachweis eines vollständigen konsolidierten Änderungsauftrags."
+      ],
+      "forbidden_observed": [],
+      "critical_observed": [],
+      "shared_required_scores": [
+        2,
+        2,
+        2
+      ],
+      "shared_reason": "Tatsächliche Fortsetzung verarbeitet, beauftragte Ergebnisse ausformuliert und neue Tatsachen zugeordnet; Stop benötigt keine weitere rechtliche Begründung."
+    },
+    {
+      "mode": "plugin",
+      "case_id": "W04",
+      "version": "4.5.0",
+      "raw_response_file": "plugin-w04-4.5.0-raw.md",
+      "turns": [
+        {
+          "turn": 1,
+          "scores": [
+            2,
+            2
+          ],
+          "reason": "62.328 EUR aus 8,4 % von 742.000 EUR; positiver Bericht und nicht vorgelegte weitere Nachweise getrennt."
+        },
+        {
+          "turn": 2,
+          "scores": [
+            2,
+            2,
+            2
+          ],
+          "reason": "45-m²-Gegenfeststellung berücksichtigt, gesamter gebündelter Abruf nun nicht fällig; tatsächlich formulierter Brief ohne freie Teilrate oder unbelegten Kosteneinbehalt."
+        },
+        {
+          "turn": 3,
+          "scores": [
+            2,
+            2
+          ],
+          "reason": "Kurzer Käuferbrief mit konkreten Beträgen und Fassadenumfang; kein Rücktritt, neuer Ratenplan oder Vertretungshandeln."
+        }
+      ],
+      "forbidden_observed": [],
+      "critical_observed": [],
+      "shared_required_scores": [
+        2,
+        2,
+        2
+      ],
+      "shared_reason": "Tatsächliche Fortsetzung verarbeitet, beauftragte Ergebnisse ausformuliert und neue Tatsachen zugeordnet; Stop benötigt keine weitere rechtliche Begründung."
+    },
+    {
+      "mode": "plugin",
+      "case_id": "W04",
+      "version": "4.5.1",
+      "raw_response_file": "plugin-w04-4.5.1-raw.md",
+      "turns": [
+        {
+          "turn": 1,
+          "scores": [
+            2,
+            2
+          ],
+          "reason": "62.328 EUR aus 8,4 % von 742.000 EUR; positiver Bericht und nicht vorgelegte weitere Nachweise getrennt."
+        },
+        {
+          "turn": 2,
+          "scores": [
+            2,
+            2,
+            2
+          ],
+          "reason": "45-m²-Gegenfeststellung berücksichtigt, gesamter gebündelter Abruf nun nicht fällig; tatsächlich formulierter Brief ohne freie Teilrate oder unbelegten Kosteneinbehalt."
+        },
+        {
+          "turn": 3,
+          "scores": [
+            2,
+            2
+          ],
+          "reason": "Kurzer Käuferbrief mit konkreten Beträgen und Fassadenumfang; kein Rücktritt, neuer Ratenplan oder Vertretungshandeln."
+        }
+      ],
+      "forbidden_observed": [],
+      "critical_observed": [],
+      "shared_required_scores": [
+        2,
+        2,
+        2
+      ],
+      "shared_reason": "Tatsächliche Fortsetzung verarbeitet, beauftragte Ergebnisse ausformuliert und neue Tatsachen zugeordnet; Stop benötigt keine weitere rechtliche Begründung."
+    },
+    {
+      "mode": "mini",
+      "case_id": "W04",
+      "version": "4.5.1",
+      "raw_response_file": "mini-w04-4.5.1-raw.md",
+      "turns": [
+        {
+          "turn": 1,
+          "scores": [
+            2,
+            2
+          ],
+          "reason": "Richtige Rate und Zahlungsstand; Aktenlücke nicht mit Nichtexistenz der Fälligkeitsvoraussetzungen gleichgesetzt."
+        },
+        {
+          "turn": 2,
+          "scores": [
+            2,
+            2,
+            2
+          ],
+          "reason": "Konkreter Gegenbefund ändert Entscheidung auf Nichtfälligkeit der Bündelrate; konkrete Antwort auf Teilzahlungsverlangen."
+        },
+        {
+          "turn": 3,
+          "scores": [
+            2,
+            2
+          ],
+          "reason": "Tatsächlicher auftragsgemäßer Käuferbrief ohne Rücktritt, neue Zahlungskonditionen oder Versand."
+        }
+      ],
+      "limitations": [
+        "T1 1.236 Wörter; T2 787 Wörter mit weitgehender Verdoppelung der Begründung vor und im Brief. Keine durchgehend knappe Ausgabe."
+      ],
+      "forbidden_observed": [],
+      "critical_observed": [],
+      "shared_required_scores": [
+        2,
+        2,
+        2
+      ],
+      "shared_reason": "Tatsächliche Fortsetzung verarbeitet, beauftragte Ergebnisse ausformuliert und neue Tatsachen zugeordnet; Stop benötigt keine weitere rechtliche Begründung."
+    }
+  ]
+}

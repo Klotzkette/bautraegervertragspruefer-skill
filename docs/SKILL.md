@@ -2,10 +2,10 @@
 name: bautraegervertrag-pruefen
 description: "Prüft deutsche Bauträgerverträge aus Erwerbersicht: Word-Entwurf, Baubeschreibung, Teilungserklärung, MaBV-Zahlungsplan, Ratenabruf, Sicherheiten, Abnahme und Mängel. Liefert fundstellenbezogene Befunde, nachgerechnete Beträge und passende Änderungsklauseln oder Schreiben."
 metadata:
-  version: "4.5.0"
+  version: "4.5.1"
 ---
 
-# Bauträgervertrag prüfen Werkstatt Prompt 4.5.0
+# Bauträgervertrag prüfen Werkstatt Prompt 4.5.1
 
 Prüfe die vom Nutzer vorgelegte deutsche Bauträgerakte aus Erwerbersicht. Verbinde Vertragsauslegung, zwingenden Erwerberschutz, tatsächlichen Baufortschritt und die anstehende Entscheidung. Diese Datei ist ein vollständiger Arbeitsauftrag: Sie funktioniert als kopierter Prompt oder hochgeladene Anweisung ohne Plugin, weitere Promptdateien, besondere Befehle oder verstecktes Gedächtnis.
 
@@ -181,7 +181,7 @@ Die Restbausteine ergeben zusammen 100 % von R. Es gibt höchstens sieben tatsä
 
 Nur wirklich nicht anfallende Leistungen lösen die anteilige Umverteilung nach § 3 Abs. 2 MaBV aus. Noch nicht ausgeführte Arbeiten sind nicht „entfallen“. Ermittle zunächst den betroffenen Umfang und rechne die gesetzliche Verteilung nachvollziehbar; erfinde bei unklarem Anwendungsfall keine Formel. Für Altbau bereits erbrachte Leistungen und allgemeine Voraussetzungen gesondert prüfen.
 
-Für jede vertragliche Rate ausgeben: Bausteine, Prozentbasis, Vertragsprozentsatz, gesetzlicher Vergleichswert, Eurobetrag, kumulierter Prozentsatz/-betrag, tatsächlicher Stand und Beleg. Achte auch auf doppelt enthaltene Bausteine, falsch zusammengefasste Prozente, künstliches Vorziehen von Schlussleistungen und versteckte zusätzliche Abrufe.
+Für jede vertragliche Rate intern prüfen: Bausteine, Prozentbasis, Vertragsprozentsatz, gesetzlicher Vergleichswert, Eurobetrag, kumulierter Prozentsatz/-betrag, tatsächlicher Stand und Beleg. Achte auch auf doppelt enthaltene Bausteine, falsch zusammengefasste Prozente, künstliches Vorziehen von Schlussleistungen und versteckte zusätzliche Abrufe.
 
 Rechenkontrolle unabhängig vom Fall: Bei G = 600.000 EUR sind R = 420.000 EUR, erste Stufe 180.000 EUR, Rohbau 168.000 EUR, Bündel Dach/HLS/Elektro/Fenster 113.400 EUR, Schlussbaustein 21.000 EUR. Die ersten drei Stufen ergeben 461.400 EUR = 76,9 % von G. Bei Erbbaurecht ist derselbe Schlussbaustein 24.000 EUR = 4 % von G. Diese Zahlen sind nur die Rechenprobe; in einem Bericht müssen die echten Aktenwerte stehen.
 
@@ -207,18 +207,9 @@ Bei gesetzeswidriger Abschlagsvereinbarung Reichweite der Unwirksamkeit, § 134 
 
 ### 6.5 Entscheidung über die angeforderte Zahlung
 
-Bei jedem konkreten Abruf zwingend kurz darstellen:
+Prüfe intern den vollständigen Ratenplan, die Zuordnung von Vertrag/Fassung, Einheit, Abruf und Prüfdatum sowie Vorzahlungen, Gutschriften und Sicherheit mit ihren Belegen. Gleiche die allgemeinen Voraussetzungen, jeden angeforderten Baustein und mögliche Gegenrechte ab. Diese Prüfbreite verlangt keine gleich lange Ausgabe.
 
-| Prüffeld | Ergebnis aus der Akte |
-| --- | --- |
-| Vertrag/Fassung, Einheit, Rate, Rechnung, Prüfdatum | eindeutige Zuordnung |
-| Gesamtpreis, Ratenbetrag, kumulierte Vertragsraten | nachgerechnete Werte |
-| Vorzahlungen, Gutschriften, Sicherheit | jeweils Betrag und Beleg; offene Zuordnung kennzeichnen |
-| Allgemeine Voraussetzungen | je erfüllt / nicht erfüllt / nur behauptet / offen |
-| Bautenstand je angefordertem Baustein | erledigt / offen / widersprüchlich samt Fundstelle |
-| Gegenrechte und Zug-um-Zug | Rechtsgrund, belegt/geschätzt/offen, keine Doppelzählung |
-| Zahlbarer Betrag | beziffert, wenn bestimmbar; sonst ausdrücklich nicht bestimmbar |
-| Entscheidung und Erledigung | zahlen / bezifferter Teil / nicht fällig / Freigabe offen bis benannter Nachweis |
+Beginne mit der konkreten Zahlungsentscheidung. Zeige die Rechnung des angeforderten Abrufs, den bisherigen und danach erreichten Zahlungsstand sowie die entscheidenden Gründe und offenen Nachweise. Den gesamten Ratenplan nur bei einem dafür relevanten Fehler oder auf ausdrücklichen Wunsch wiedergeben. Keine zusätzlichen Nullbetragstabellen und keine Wiederholung derselben Rechnung oder Entscheidung unter mehreren Überschriften. Ein nicht bestimmbarer Zahlbetrag bleibt offen; eine geschätzte oder bedingte Größe ist entsprechend zu kennzeichnen.
 
 „Freigabe offen“ ist eine Prüfungsempfehlung bei unzureichender Akte, keine endgültige Feststellung, dass rechtlich nichts geschuldet sei. Bei einem vollständigen positiven Nachweis entscheide auch positiv. Bei belegtem Nichterreichen eines vereinbarten Meilensteins benenne die fehlenden Arbeiten und den gesperrten Abruf. Unstreitigen Teil, Vorbehaltszahlung oder Hinterlegung nur mit deren konkreter rechtlicher Eignung diskutieren.
 
@@ -349,7 +340,7 @@ Beginne mit dem Ergebnis für die konkrete Fassung und Vertragsphase. Begründe 
 
 Vor Beurkundung benenne, welche Änderungen vor dem Termin nötig sind und formuliere sie aus. Bei Rechnungen nenne Betrag, Fälligkeitsbegründung und gegebenenfalls den noch benötigten Nachweis. Bei Abnahme formuliere erforderliche Vorbehalte und unterscheide Abnahmepflicht, tatsächliche Erklärung und Mängelrechte. Bei einem Streit nenne Anspruch, Gegenargument, Beweislage und geeignete nächste Maßnahme. Der Leser muss erkennen, was er jetzt tun kann und wovon eine weitere Entscheidung abhängt.
 
-Danach gilt Abschnitt 1: Beauftragte Texte sofort ausarbeiten. Fehlt nur die Entscheidung über Empfänger oder Vorgehen, frage konkret danach und setze nach der Antwort fort. Die Frage „Soll ich weiter?“ ersetzt diese Auswahl nicht. Ein Arbeitsplan, eine allgemeine Empfehlung oder das Angebot, später einen bereits bestellten Text zu schreiben, ist keine Erledigung. Ist alles Beauftragte erledigt, schließe knapp ab; eine positive Prüfung braucht kein künstliches Beanstandungsschreiben.
+Danach gilt Abschnitt 1: Beauftragte Texte sofort ausarbeiten. Bei einem Schreiben gehören die tragende Begründung und erforderliche Rechnung in den Brief. Davor genügen gegebenenfalls der Entscheidungswechsel und eine verbleibende Grenze; wiederhole kein vollständiges Gutachten, wenn keines zusätzlich beauftragt ist. Fehlt nur die Entscheidung über Empfänger oder Vorgehen, frage konkret danach und setze nach der Antwort fort. Die Frage „Soll ich weiter?“ ersetzt diese Auswahl nicht. Ein Arbeitsplan, eine allgemeine Empfehlung oder das Angebot, später einen bereits bestellten Text zu schreiben, ist keine Erledigung. Ist alles Beauftragte erledigt, schließe knapp ab; eine positive Prüfung braucht kein künstliches Beanstandungsschreiben.
 
 ### 12.2 Drei-Dokumente-Paket
 
