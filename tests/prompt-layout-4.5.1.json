@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "checked_on": "2026-09-16",
-  "purpose": "Seitenlimit, Quellstand und vollständige visuelle Kontrolle der Word-Prompts im unveröffentlichten Arbeitsstand 4.5.1",
+  "purpose": "Seitenlimit, Quellstand und vollständige visuelle Kontrolle der Word-Prompts 4.5.1",
   "exporter": "scripts/export_prompt_docx.py",
   "renderer": "documents/render_docx.py (Bundle 26.905.11957), gebündelte LibreOffice-Version",
   "normalizations": [

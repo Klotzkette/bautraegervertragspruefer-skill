@@ -1,6 +1,6 @@
 # Testakten: getrennte Eingaben und belegbare Erwartungen
 
-Ergänzender [Teststand vom 16. September 2026](runs/2026-09-16/README.md): drei weitere abgeschlossene Dialoge mit 4.5.0 sowie ausdrücklich unvollständige Zahlungsdialoge mit dem Arbeitsstand 4.5.1.
+Ergänzender [Teststand vom 16. September 2026](runs/2026-09-16/README.md): drei weitere abgeschlossene Dialoge mit 4.5.0 sowie zwei Zahlungsdialoge mit 4.5.1, nach dokumentierter Unterbrechung im selben Kontext abgeschlossen. Alle 15 tatsächlichen Antworten sind gesichert.
 
 Diese Tests prüfen die konkrete Vertrags- und Aktenarbeit: liest ein System die Word-Datei einschließlich Baubeschreibung, unterscheidet es Entwurf und späteren Sachverhalt, findet es relevante Klauseln und widersprüchliche Nachweise und rechnet es mit dem richtigen Kaufpreis? Die Fallnamen enthalten keine vorgegebene Rechtsbewertung.
 

@@ -1,6 +1,6 @@
 # Bauträgervertragsprüfer
 
-**Arbeitsstand 4.5.1, noch nicht veröffentlicht.** Die ergänzenden Dialogtests sind wegen eines Nutzungslimits nicht vollständig abgeschlossen; siehe [Teststand vom 16. September](tests/runs/2026-09-16/README.md). Die letzte veröffentlichte Fassung bleibt 4.5.0.
+Fassung 4.5.1 trennt die vollständige interne Ratenprüfung vom notwendigen Umfang der Antwort. Beauftragte Schreiben enthalten ihre Begründung unmittelbar; ein zusätzliches Gutachten wird nicht ungefragt angehängt. Die [ergänzenden Dialogproben](tests/runs/2026-09-16/README.md) dokumentieren Ergebnisse und verbleibende Unterschiede in der Kürze.
 
 Version 4.5.1 prüft deutsche Bauträgerverträge aus Erwerbersicht und führt den Auftrag bis zum verwendbaren Ergebnis: begründete Vertragsbewertung, gezielte Rückfragen, konkrete Änderungen und beauftragte Schreiben. Neue Unterlagen werden in die laufende Prüfung eingearbeitet. Die Ausgabe verwendet juristische Alltagssprache statt interner Prozessbegriffe.
 

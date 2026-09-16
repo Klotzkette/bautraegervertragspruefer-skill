@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "mixed_completed_and_interrupted",
+  "status": "completed_with_documented_resumptions",
   "checked_on": "2026-09-16",
   "model_provider": "OpenAI",
   "model_id": null,
@@ -181,13 +181,13 @@
     {
       "mode": "mini",
       "case_id": "W04",
-      "version": "4.5.1-working",
-      "status": "interrupted_usage_limit",
+      "version": "4.5.1",
+      "status": "completed_after_resume",
       "prompt_or_entrypoint": "skill/MINI_SKILL.md",
       "instruction_sha256": "1c587c24866c2e88892407bfc951a8fb3ccea37d6504edae4b6017057f6310f1",
-      "raw_response_file": "mini-w04-4.5.1-partial-raw.md",
+      "raw_response_file": "mini-w04-4.5.1-raw.md",
       "raw_response_sha256": "5da6e1e2138ed9c9f1723ed1be08c4b0c68cbc7018f2f34bb92fcff31c3a9900",
-      "final_answers_observed": 2,
+      "final_answers_observed": 3,
       "archived_response_texts": 3,
       "turns": [
         {
@@ -221,22 +221,28 @@
             "tests/workflow/inputs/w04-03.md"
           ],
           "response_section": "# Turn3",
-          "status": "archived_before_agent_error",
+          "status": "completed_final",
           "response_completed_before_next_input": null
         }
-      ]
+      ],
+      "interruption_snapshot": {
+        "status": "interrupted_usage_limit",
+        "final_answers_observed": 2,
+        "raw_response_file": "mini-w04-4.5.1-partial-raw.md",
+        "raw_response_sha256": "5da6e1e2138ed9c9f1723ed1be08c4b0c68cbc7018f2f34bb92fcff31c3a9900"
+      }
     },
     {
       "mode": "plugin",
       "case_id": "W04",
-      "version": "4.5.1-working",
-      "status": "interrupted_usage_limit",
+      "version": "4.5.1",
+      "status": "completed_after_resume",
       "prompt_or_entrypoint": "plugins/bautraegervertragspruefer/skills/bautraeger-zahlungsrate-pruefen/SKILL.md",
       "instruction_sha256": "7649bdb29852b321d9ce248a8a1bd8430931782221372e1d390e60424769e515",
-      "raw_response_file": "plugin-w04-4.5.1-partial-raw.md",
-      "raw_response_sha256": "052a022628718e4dd73a4eb3f25d45818a56e381f624a94b209b4c7c482fc14f",
-      "final_answers_observed": 1,
-      "archived_response_texts": 2,
+      "raw_response_file": "plugin-w04-4.5.1-raw.md",
+      "raw_response_sha256": "3a7116e1cbabe903a0282c62c987fad74b8387129b2e029488d2d71d3e1709aa",
+      "final_answers_observed": 3,
+      "archived_response_texts": 3,
       "turns": [
         {
           "turn": 1,
@@ -259,18 +265,35 @@
             "tests/inputs/l-gegenfeststellung.md"
           ],
           "response_section": "# Turn2",
-          "status": "archived_before_agent_error",
+          "status": "completed_final",
+          "response_completed_before_next_input": true
+        },
+        {
+          "turn": 3,
+          "after_response_to": 2,
+          "inputs": [
+            "tests/workflow/inputs/w04-03.md"
+          ],
+          "response_section": "# Turn3",
+          "status": "completed_final",
           "response_completed_before_next_input": null
         }
       ],
-      "werkstatt_reference_sha256": "589f439cf876baffca5eb3a4c43825a0eafa5377e283f443ca79c62c7f7f9910"
+      "werkstatt_reference_sha256": "589f439cf876baffca5eb3a4c43825a0eafa5377e283f443ca79c62c7f7f9910",
+      "interruption_snapshot": {
+        "status": "interrupted_usage_limit",
+        "final_answers_observed": 1,
+        "raw_response_file": "plugin-w04-4.5.1-partial-raw.md",
+        "raw_response_sha256": "052a022628718e4dd73a4eb3f25d45818a56e381f624a94b209b4c7c482fc14f"
+      }
     }
   ],
   "execution_limits": [
-    "Nutzungslimit unterbrach die beiden 4.5.1-Läufe vor vollständigem Abschluss.",
     "Nur Markdown-Akten; keine tatsächliche Word-Prüfung in diesen Dialogen.",
     "Keine Vergleichsläufe bei fremden KI-Anbietern und keine Wiederholungsmessung.",
     "Werkstatt-Referenz nach Beginn der 4.5.1-Läufe in Abschnitt 6.2 von ausgeben zu intern prüfen geändert; endgültige Referenz nicht vollständig modellgetestet.",
-    "Zusätzlicher unabhängiger Bewertungslauf ebenfalls am Nutzungslimit gescheitert."
-  ]
+    "Die Wiederaufnahme ist keine unabhängige Wiederholungsmessung; die Originalkontexte und ihre bisherigen Antworten blieben erhalten."
+  ],
+  "resumption_date": "2026-09-16",
+  "resumption_note": "Dieselben Agentenkontexte wurden fortgesetzt. Mini Turn3 und Plugin Turn2 wurden unverändert als Final ausgegeben; erst danach erhielt das Plugin Nachricht3 und gab seine neue Antwort als Final aus. Kein erneuter Erstlauf, keine Musterantworten oder Erwartungen zugespielt."
 }
