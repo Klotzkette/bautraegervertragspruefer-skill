@@ -17,9 +17,9 @@
     {
       "source": "skill/SKILL.md",
       "output": "docs/downloads/werkstatt-prompt-4.6.0.docx",
-      "source_sha256": "60cdc7a80b3db60c4f8bf459d23a10d3565fd4290ce0b4157aa326d9f9bf3249",
-      "docx_sha256": "e86c29a7bcc7f01c678db9c151ee2743b8a79b2026e2734a6af148a0a0774ad0",
-      "pages": 43,
+      "source_sha256": "3dd33f1c8f73084cd091c4ae1d4e226651dd5c50dafe865acfc7f2d75981edf7",
+      "docx_sha256": "03f70070e8bdedf5eca9e5421a2ff93095f70ba46e0f5c3d8c35339eab86a873",
+      "pages": 44,
       "max_pages": 100,
       "paper": "Letter",
       "font": {
@@ -77,9 +77,10 @@
           40,
           41,
           42,
-          43
+          43,
+          44
         ],
-        "method": "Hauptagent hat alle 43 endgültigen PNG-Seiten einzeln visuell geprüft. Finaler Render: /tmp/btv-460-layout-149fCl/werkstatt-final.",
+        "method": "Alle 44 Seiten visuell abgedeckt: Seiten 1–23 byteidentisch mit den zuvor einzeln geprüften PNG-Seiten; Seiten 24–44 nach Ergänzung der tatsächlich ausgearbeiteten Änderungsanlage vom Hauptagenten erneut einzeln geprüft. Finaler Render: /tmp/btv-460-release-eDpVHc/werkstatt.",
         "checks": [
           "lesbare vollständige Absätze",
           "keine Überlappung oder abgeschnittenen Texte",
@@ -91,8 +92,8 @@
     {
       "source": "skill/MINI_SKILL.md",
       "output": "docs/downloads/mini-prompt-4.6.0.docx",
-      "source_sha256": "5140cedb442c0864c56980228595e2e59d20849076714dd9250ce94382dacf45",
-      "docx_sha256": "8e3271b5d92aee571aa291d45bc5ec343c8a2ffa0ef299da467b16994a76363c",
+      "source_sha256": "880e951a276f6a2fcac1d1e2e0e69dded97c345050f1a7ca157019e2e0212bf2",
+      "docx_sha256": "0c1c9234a78752b5f435851498e5e861ce46ca0a3505dfa0f6795df25b6564bd",
       "pages": 6,
       "max_pages": 100,
       "paper": "Letter",
@@ -116,7 +117,7 @@
           5,
           6
         ],
-        "method": "Hauptagent hat alle 6 endgültigen PNG-Seiten einzeln visuell geprüft. Finaler Render: /tmp/btv-460-layout-149fCl/mini.",
+        "method": "Alle 6 Seiten visuell abgedeckt: Seite 1 byteidentisch mit der zuvor einzeln geprüften PNG-Seite; Seiten 2–6 nach Ergänzung der tatsächlich ausgearbeiteten Änderungsanlage vom Hauptagenten erneut einzeln geprüft. Finaler Render: /tmp/btv-460-release-eDpVHc/mini.",
         "checks": [
           "lesbare Überschriften und vollständige Sätze",
           "keine Überlappung oder abgeschnittenen Texte",

@@ -284,6 +284,33 @@ class DefaultPackageFixtureTests(unittest.TestCase):
 
 
 class WorkflowInstructionTests(unittest.TestCase):
+    def test_finding_continuity_has_an_actual_shared_deliverable(self):
+        for relative in ("skill/SKILL.md", "skill/MINI_SKILL.md"):
+            text = (ROOT / relative).read_text(encoding="utf-8")
+            for anchor in ("Änderungen und benötigte Unterlagen", "Beide Briefe", "vollständig aktualisiert"):
+                self.assertIn(anchor, text)
+            self.assertRegex(text, r"(?i)vertraulichen internen Erwägungen")
+
+    def test_technical_reference_rule_is_concrete_in_both_prompts(self):
+        for path in PROMPTS:
+            with self.subTest(path=path.relative_to(ROOT)):
+                paragraphs = path.read_text(encoding="utf-8").split("\n\n")
+                rule = next((p for p in paragraphs if "DIN 18015-2" in p), "")
+                for anchor in ("RAL-RG 678", "Ausgabe", "raumweise", "Normvolltext", "Tür"):
+                    self.assertIn(anchor, rule)
+                self.assertRegex(rule, r"Mindestausstattung")
+
+    def test_technical_probe_keeps_expectations_separate(self):
+        probe = ROOT / "tests" / "technical-references"
+        request = (probe / "input.md").read_text(encoding="utf-8")
+        expected = json.loads((probe / "erwartungen.json").read_text(encoding="utf-8"))
+        self.assertTrue(expected["evaluation_only"])
+        self.assertTrue(expected["not_model_input"])
+        self.assertEqual(len(expected["required"]), 5)
+        self.assertNotRegex(request, r"NR0[1-5]|erwartungen\.json|§ 309")
+        self.assertIn("Keine Gesamtprüfung", request)
+        self.assertIn("24 Monate", request)
+
     def test_old_analysis_only_defaults_are_removed(self):
         for path in PROMPTS + SKILLS:
             with self.subTest(path=path.relative_to(ROOT)):
