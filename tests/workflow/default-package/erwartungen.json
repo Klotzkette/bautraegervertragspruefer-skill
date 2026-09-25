@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "evaluation_only": true,
+  "not_model_input": true,
+  "actual_runs": [],
+  "acceptance": {
+    "products": ["gutachten", "mandantenschreiben", "externes_schreiben"],
+    "finding_coverage": "Für jeden Pflichtbefund und jeden zusätzlich tatsächlich erhobenen erheblichen Befund je Nachricht die Fundstelle im Gutachten, die adressatengerechte Aufnahme in beiden Schreiben oder den konkreten sachlichen Grund für seine Nichtaufnahme dokumentieren. Ein bloßer Hinweis auf ein unsichtbares Register genügt nicht. Positive Kontrollen müssen nicht zu externen Änderungsforderungen werden; diese Auswahl muss nachvollziehbar sein.",
+    "revision_coverage": "In Nachricht zwei jeden bisherigen Befund als fortgeltend, erledigt oder aufgrund neuen Wortlauts geändert zuordnen. Erledigung nur für die ersetzte Regelung, unveränderte Befunde mit ihren Folgen und Maßnahmen erhalten; neu hinzugekommene Befunde in alle betroffenen Produkte übernehmen. Ein klar zugeordneter Nachtrag ist zulässig, wenn alle Produkte damit nutzbar und widerspruchsfrei bleiben.",
+    "priority_separation": "Unwirksame/rechtlich erforderliche Korrekturen, entscheidungsrelevante Nachweis- oder Tatsachenlücken und bloße Verhandlungswünsche erkennbar unterscheiden. Keine gleichrangige Sammelliste und kein Mehrheitsurteil aus positiven Klauseln.",
+    "passing_rule": "Jedes der drei Produkte muss tatsächlich ausformuliert sein; Ankündigung, Angebot oder Rückfrage nach einem Zusatzauftrag ersetzt kein Produkt. Jeder Pflichtbefund muss fachlich geprüft und die Befundweitergabe belegt sein. Ein kritischer Fehler oder ein still verlorener erheblicher Befund verhindert das Bestehen. Statische Repository-Prüfungen sind kein Beleg für diese Akzeptanz."
+  },
+  "mandatory_findings": [
+    {"id": "DP-F01", "source": "§ 6.2", "outcome": "Das Wesentlichkeitserfordernis für die Abwendung der Fiktion beanstanden; § 640 Abs. 1 und 2 BGB trennen und einen einsetzbaren Ersatz liefern.", "second_turn": "Die ausgetauschte Fiktionsregel als insoweit bereinigt erkennen; den alten Wortlaut nicht weiter beanstanden."},
+    {"id": "DP-F02", "source": "Vorbemerkungen 0.2/0.4, §§ 1.3, 5.11, 12 und externe Anlagen", "outcome": "Teilungserklärung/Gemeinschaftsordnung, Pläne, Baugrund- und einschlägige Nachweise anhand ihrer Entscheidungsbedeutung gezielt anfordern. Erwähnung oder geschilderte Übersendung ist keine eigene Inhaltsprüfung. Kosten, Stimm- und Sondernutzungsrechte sowie Vollmachtsgrenzen nur nach der belegten Reichweite bewerten.", "second_turn": "Unverändert fehlende Unterlagen und davon abhängige Grenzen bleiben offen; keine Erledigung durch § 6.2."},
+    {"id": "DP-F03", "source": "§§ 5.5/5.10 und Baubeschreibung 4.1, 7.1, 9.1, 11.1/11.2", "outcome": "Konkrete Fenster-/Türwerte anerkennen und den Schallschutz mit Komfortbeschreibung, Ausschluss erhöhten Standards und fehlendem Nachweis abgleichen. Die Elektro-Referenz und den geschuldeten Ausstattungsumfang klären, keine Normwerte erfinden.", "second_turn": "Diese unveränderten Qualitätsfragen und ihre konkreten Abhilfen erhalten."},
+    {"id": "DP-F04", "source": "§§ 2.1, 3.1–3.4, 8 und 10.2", "outcome": "674.000 EUR, sieben Raten mit insgesamt 100 Prozent und 33.700 EUR Herstellungssicherheit nachvollziehbar prüfen; tatsächlichen Bautenstand, eigene Kontrolle, protokollbezogene Schlussrate und gesicherte Vormerkungslöschung als vorhandenen Schutz würdigen. Ohne Zahlungsabruf keine erfundene aktuelle Zahlungsentscheidung.", "second_turn": "Unveränderten Schutz erhalten; weder wegen der neuen Klausel den gesamten Vertrag für nichtig erklären noch einen unbegründeten Zahlungsstopp ausgeben."},
+    {"id": "DP-F05", "source": "§§ 2.2, 5.7, 5.8 und Baubeschreibung 13.1", "outcome": "Den eingegrenzten Mehrkostenmechanismus einschließlich Viermonatsregel, Saldierung und 3-Prozent-Schwelle von 20.220 EUR konkret bewerten. Bezugsfertigkeit am 31. März 2028 und vollständige Fertigstellung einschließlich Außenanlagen unterscheiden; fehlende zeitliche Festlegung der vollständigen Fertigstellung als konkrete Klärungs-/Verhandlungsfrage behandeln.", "second_turn": "Unveränderte Kosten- und Terminfragen einschließlich der Einordnung ihrer Priorität fortführen."},
+    {"id": "DP-F06", "source": "§§ 6.3, 9.2–9.4", "outcome": "Eigene Abnahmeentscheidung und fünf Jahre für Bauwerksmängel ab maßgeblicher Abnahme positiv kontrollieren. Im ersten Stand keine Zweijahresfrist oder Ausschlussfolge erfinden; gesetzliche Selbstvornahmerechte und fehlende Wartungsverkürzung anerkennen.", "second_turn": "Fünf Jahre in § 9.2 bleiben bestehen, beseitigen aber nicht die neue Ausschlussfolge in § 9.3; bisherige positive Bewertung von § 9.3 ausdrücklich ändern."},
+    {"id": "DP-F07", "source": "Eingangstext, Nutzernachricht und Entwurfstatus", "outcome": "Prüfung vor Beurkundung am 9. Juni 2026; 17 Kalendertage zwischen geschilderter Notariatsübersendung und geplantem Termin, ohne eigene Bestätigung der Anlagenvollständigkeit. Erwerberinneninteresse und Entwurfsstatus in allen Produkten erhalten; keine Word-Seitenprüfung behaupten.", "second_turn": "Phase und Termin unverändert; weder Beurkundung noch tatsächliche Versendung behaupten."},
+    {"id": "DP-F08", "introduced_in_turn": 2, "source": "neuer § 9.3", "outcome": "Die 14-Tage-Anzeige mit Anspruchsausschluss als neue eigenständige Klausel beanstanden und nach § 309 Nr. 8 b ee BGB sowie gegebenenfalls ff einordnen; bloßer Fortbestand von fünf Jahren genügt nicht. Streichung der Ausschlussfolge und verwendbaren Ersatz ohne Rechtsverlust ausarbeiten.", "second_turn": "Neu in Gutachten, Beratung und externem Änderungsentwurf berücksichtigen; nicht bloß als freiwilligen Verbesserungswunsch bezeichnen."}
+  ],
+  "cases": [
+    {"id": "DP01", "turns": [
+      {
+        "turn": 1,
+        "required": [
+          "Ohne Hinweis auf Vollpaket und ohne zweite Beauftragung sofort vollständiges fallbezogenes Gutachten, Mandantenschreiben an die Erwerberin und phasengerechten externen Entwurf liefern.",
+          "Im Entwurfsstadium konkrete Änderungen und Unterlagen von Bauträgerin beziehungsweise Notariat verlangen; Funktion und Adressat sachgerecht wählen und keine anwaltliche Vertretung erfinden.",
+          "DP-F01 bis DP-F07 und weitere erhebliche eigene Befunde nach der acceptance.finding_coverage-Regel nachvollziehbar in die Produkte überführen oder die Nichtaufnahme erklären.",
+          "Höchstens drei gezielte entscheidungsrelevante Rückfragen stellen und gleichzeitig gesicherte Prüfung und nötigenfalls bedingte Entwürfe ausarbeiten. Keine nochmalige Frage nach Verbraucherrolle, Termin oder gewünschtem Standardpaket.",
+          "Rechtliche Korrektur, offene Prüfung und Verhandlungswunsch trennen; positive Schutzregeln und offene Fragen am tatsächlichen Wortlaut begründen."
+        ],
+        "forbidden": [
+          "Nach einem Bericht erst fragen, ob Gutachten oder Schreiben gewünscht werden, oder deren Ausarbeitung lediglich anbieten.",
+          "Wegen fehlender Teilungserklärung oder anderer Anlagen sämtliche Produkte zurückstellen.",
+          "Nur die Abnahmefiktion behandeln und unveränderte technische, wirtschaftliche oder WEG-Fragen still auslassen.",
+          "Nicht beigefügte Originale als gelesen ausgeben oder aus Nichtvorlage sicher auf Nichtexistenz schließen."
+        ],
+        "critical": [
+          "Eines der drei Standardprodukte fehlt ohne ausdrückliche nutzerseitige Begrenzung.",
+          "Verkäufer- oder neutrale Interessenabwägung ersetzt die Erwerberinnenberatung.",
+          "Die Wesentlichkeitsklausel zur Fiktion freigeben, den Vertrag pauschal für nichtig erklären oder Versand/Beurkundung erfinden.",
+          "Ein erheblicher Befund verschwindet ohne nachvollziehbare sachliche Entscheidung aus den betroffenen Produkten."
+        ]
+      },
+      {
+        "turn": 2,
+        "required": [
+          "Den bestehenden vollständigen Prüfauftrag ohne erneute Beauftragung fortführen und alle drei Produkte anhand des Rücklaufs aktualisieren.",
+          "DP-F01 als insoweit erledigt und DP-F08 als neue rechtliche Korrektur behandeln; die veränderte Bewertung von § 9.3 auch in beiden Schreiben umsetzen.",
+          "DP-F02 bis DP-F07 sowie alle weiteren zuvor erheblichen Befunde gemäß acceptance.revision_coverage fortschreiben; offene Unterlagen nicht als durch § 6.2 erledigt behandeln.",
+          "Die neue Ausschlussfolge konkret begründen und einen zusammenpassenden Ersatz liefern, ohne unveränderte Bausoll-, Kosten- oder Terminfragen still zu verlieren."
+        ],
+        "forbidden": [
+          "Den alten § 6.2 weiterhin als aktuellen Wortlaut angreifen oder den gesamten Vertrag wegen der Einzelkorrektur freigeben.",
+          "Nur eine Antwort zur neuen Ausschlussfrist liefern und die übrigen Produkte oder bisherigen Befunde fallenlassen.",
+          "Fünf Jahre in § 9.2 mit der Beseitigung der gesonderten Anspruchsausschlussfrist gleichsetzen."
+        ],
+        "critical": [
+          "Die neue 14-Tage-Ausschlussfolge übersehen oder trotz erfasster Klausel freigeben.",
+          "Unveränderte erhebliche Befunde still als erledigt behandeln oder aus der Fortsetzung verlieren.",
+          "Ein aktualisiertes Schreiben enthält weiterhin die beseitigte Beanstandung als aktuelle Forderung."
+        ]
+      }
+    ]}
+  ]
+}

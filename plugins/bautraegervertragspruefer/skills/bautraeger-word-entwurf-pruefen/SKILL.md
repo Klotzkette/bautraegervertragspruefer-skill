@@ -7,7 +7,7 @@ description: Prüft Bauträgerverträge in Word einschließlich Tabellen, Kopfze
 
 ## Auftrag und Fassung klären
 
-Lies zuerst die bereitgestellte Datei und den Gesprächsstand. Unterscheide eine technische Prüfung von Inhalt und Entwurfstatus, eine rechtliche Vertragsprüfung und einen Änderungsauftrag. Stelle bei entscheidungserheblichen Unklarheiten höchstens drei konkrete Fragen pro Antwort und erledige unabhängig davon die möglichen Prüfschritte. Eine Prüfbitte allein erlaubt weder das Ändern der Originaldatei noch das Annehmen offener Änderungen.
+Lies zuerst die bereitgestellte Datei und den Gesprächsstand. Unterscheide eine ausdrücklich nur technische Prüfung, eine rechtliche Vertragsprüfung aus Sicht der Erwerberin und einen Änderungsauftrag. Eine gewöhnliche Bitte, den Word-Vertrag zu prüfen, ist keine bloße Dateiinventur: Sie umfasst die Vertragsprüfung mit Gutachten, Mandantenschreiben und passendem Entwurf an Bauträger beziehungsweise Notariat ohne Zusatzauftrag. Stelle bei entscheidungserheblichen Unklarheiten höchstens drei konkrete Fragen pro Antwort und erledige unabhängig davon die möglichen Prüfschritte und darauf gestützten Schreiben. Eine Prüfbitte allein erlaubt weder das Ändern der Originaldatei noch das Annehmen offener Änderungen. „Nur technische Prüfung“, „keine Schreiben“ und „Stop“ werden respektiert.
 
 ## Word-Inhalte vollständig aufnehmen
 
@@ -30,5 +30,7 @@ Prüfe Originalvorlagen außerdem mit `python3 scripts/docx_pruefen.py vertrag.d
 - **Beauftragte Überarbeitung:** Erhalte die Ausgangsdatei unverändert und arbeite in einer getrennten Fassung. Übernimm feststehende tatsächliche Angaben; erfinde keine fehlenden Vertragsdaten und ändere keine ungeklärte wirtschaftliche Entscheidung. Fertige die vereinbarten Änderungen sofort an, statt ihre Erstellung nur anzubieten. Dokumentiere ersetzte Klausel, Ersatzwortlaut und Grund. Prüfe die fertige Datei erneut strukturell und nach Rendern jede Seite auf Lesbarkeit, Umbruch und Entwurfstatus. Benenne eine nicht mögliche Darstellungsprüfung ausdrücklich.
 
 ## Fortsetzen und abschließen
+
+Übernimm alle erheblichen Word- und Rechtsbefunde in die betroffenen Gutachten und Schreiben oder begründe eine Nichtaufnahme konkret. Ein fehlender Beleg hält unabhängige Prüfergebnisse und bereits mögliche Schreiben nicht auf.
 
 Prüfe nach einer neuen Fassung oder Antwort die betroffenen Inhalte erneut und erläutere, welche Feststellungen erledigt sind oder fortgelten. „Weiter“ führt den offenen Arbeitsschritt fort; bekannte Angaben werden nicht erneut abgefragt. Der Abschluss enthält das beauftragte Ergebnis beziehungsweise die geprüfte neue Datei und nur die noch erforderliche konkrete Mitwirkung oder den sachlich nächsten Schritt. Weder eine bloße Dateiinventur bei beauftragter Vertragsprüfung noch „Soll ich weiter?“ ersetzt den Abschluss.

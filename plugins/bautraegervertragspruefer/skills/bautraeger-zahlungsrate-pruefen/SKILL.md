@@ -1,11 +1,13 @@
 ---
 name: bautraeger-zahlungsrate-pruefen
-description: Prüft konkrete Bauträger-Zahlungsanforderungen gegen Vertrag, MaBV, Fälligkeitsunterlagen, Sicherheiten und Bautenstand. Berechnet das tragfähige Zahlungsergebnis, fordert fehlende Belege gezielt an und setzt die Prüfung nach deren Eingang bis zum beauftragten Schreiben fort.
+description: Prüft konkrete Bauträger-Zahlungsanforderungen aus Sicht der Erwerberin gegen Vertrag, MaBV, Fälligkeitsunterlagen, Sicherheiten und Bautenstand. Erstellt eine begründete Zahlungsentscheidung, Nachricht an die Erwerberin und passende Antwort auf den Abruf unmittelbar; arbeitet nachgereichte Belege ein.
 ---
 
 # Bauträgerzahlungsrate prüfen
 
 ## Vorhandene Angaben auswerten
+
+Arbeite stets aus Sicht der Erwerberin. Der gewöhnliche Zahlungsprüfauftrag umfasst die begründete Zahlungsentscheidung, eine verständliche Nachricht an die Erwerberin und den passenden Antwortentwurf an den Bauträger beziehungsweise die konkrete Nachweisanforderung. Erstelle diese drei Ergebnisse ohne Zusatzauftrag; ein ausdrücklich begrenzter Auftrag wie „nur berechnen“, „nur Analyse“ oder „keine Schreiben“ bleibt begrenzt. „Stop“ beendet die Arbeit.
 
 Lies zuerst Vertrag, Abruf und vorhandene Belege sowie den Gesprächsstand. Ermittle Rate, Betrag, Objekt, Vertragsstatus und Zahlungsfrist daraus; frage nicht erneut nach bekannten Angaben. Verknüpfe notarielle Mitteilung, Vormerkung, Freistellung, Bautenstandsbericht, Anlagen/Fotos, Rechnung, bisherige Zahlungen und Sicherheiten zeitlich. Ein Vertragsentwurf beweist keinen wirksamen Vertrag; bei ausdrücklich vorgegebenem späterem Testszenario führe Annahme und Urkundenbeleg getrennt.
 
@@ -33,6 +35,6 @@ Für umstrittene Klauseln, Sicherungsaustausch nach § 7 MaBV, Insolvenz oder un
 
 ## Belege nachfordern, fortsetzen, Schreiben fertigen
 
-Unter **Noch benötigt** stehen nur die konkreten offenen Belege oder Entscheidungen. Erkläre unter **Weiteres Vorgehen**, welche Handlung bis zur Klärung tragfähig ist und welcher Termin berücksichtigt werden muss. Leere Abschnitte entfallen. Ist ein Einwendungsschreiben oder eine Antwort auf den Abruf beauftragt, fertige den Entwurf mit beziffertem Ergebnis und konkreter Begründung unmittelbar an; biete nicht bloß an, ihn später zu schreiben. Nimm die tragende Begründung und Rechnung in das Schreiben auf. Davor genügen gegebenenfalls der Entscheidungswechsel und eine verbleibende Grenze; wiederhole kein vollständiges Gutachten, wenn keines zusätzlich beauftragt ist. Ist der notwendige Adressat oder das Begehren unklar, frage gezielt nach. Entwerfen ist keine Erlaubnis zum Versenden.
+Unter **Noch benötigt** stehen nur die konkreten offenen Belege oder Entscheidungen. Erkläre, welche Handlung bis zur Klärung tragfähig ist und welcher Termin berücksichtigt werden muss. Leere Abschnitte entfallen. Fertige Nachricht und Antwortentwurf mit beziffertem Ergebnis und konkreter Begründung unmittelbar an; biete nicht bloß an, sie später zu schreiben. Nimm sämtliche erheblichen Einwände, erforderlichen Nachweise und die tragende Rechnung in das passende Schreiben auf oder begründe eine Auslassung konkret. Eine Nachweislücke stoppt nicht bereits mögliche, gegebenenfalls bedingte Schreiben. Fehlende Anschriften erhalten Platzhalter. Ein positiver Zahlungsbefund führt zu einer entsprechend neutralen Antwort; erfinde keine Einwendung. Entwerfen ist keine Erlaubnis zum Versenden, Zahlen oder Abgeben rechtsgeschäftlicher Erklärungen.
 
-Nach Eingang weiterer Angaben prüfe die betroffenen Einwände erneut und rechne die Zahlung neu. Übernimm fortgeltende Ergebnisse, berichtige gegebenenfalls den Schreibenentwurf und erläutere die Änderung. „Weiter“ setzt den offenen Schritt fort, ohne Neuaufnahme. Der Auftrag endet mit der Zahlungsentscheidung und den beauftragten Ergebnissen oder mit einer genau bezeichneten noch erforderlichen Mitwirkung, nicht mit „Soll ich weiter?“.
+Nach Eingang weiterer Angaben prüfe die betroffenen Einwände erneut und rechne die Zahlung neu. Übernimm fortgeltende Ergebnisse und aktualisiere sämtliche dazugehörigen Texte; zeige erledigte, offene und neue Punkte. „Weiter“ setzt den offenen Schritt fort, ohne Neuaufnahme. Der gewöhnliche Auftrag endet erst mit Zahlungsentscheidung, Nachricht und Antwortentwurf, einschließlich präziser noch erforderlicher Mitwirkung; nicht mit „Soll ich weiter?“.

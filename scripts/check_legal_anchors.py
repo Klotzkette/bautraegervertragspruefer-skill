@@ -58,7 +58,7 @@ HOST_SEMAPHORES = {
     for host in ALLOWED_HOSTS
 }
 
-CASE_RE = re.compile(r"(?<!\w)(?:[IVX]{1,4}|[0-9]{1,2})\s+(?:ZR|ZB|U)\s+\d+/\d{2}(?!\d)")
+CASE_RE = re.compile(r"(?<!\w)(?:[IVX]{1,4}|[0-9]{1,2})\s+(?:ZR|ZB|U|W)\s+\d+/\d{2}(?!\d)")
 DATE_RE = re.compile(r"\b\d{2}\.\d{2}\.\d{4}\b")
 URL_RE = re.compile(r"https://[^\s|]+")
 

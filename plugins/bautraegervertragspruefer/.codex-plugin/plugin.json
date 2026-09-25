@@ -1,7 +1,7 @@
 {
   "name": "bautraegervertragspruefer",
-  "version": "4.5.1",
-  "description": "Prüft Bauträgerverträge, Word-Entwürfe und Zahlungsraten aus Erwerbersicht bis zum begründeten Ergebnis und den beauftragten Änderungen oder Schreiben.",
+  "version": "4.6.0",
+  "description": "Prüft Bauträgerverträge, Word-Entwürfe und Zahlungsraten aus Sicht der Erwerberin mit Gutachten, Mandantenschreiben und passenden Schreiben an Bauträger oder Notariat.",
   "author": {"name": "Klotzkette", "url": "https://github.com/Klotzkette"},
   "repository": "https://github.com/Klotzkette/bautraegervertragspruefer-skill",
   "license": "MIT OR Apache-2.0",
@@ -9,12 +9,12 @@
   "interface": {
     "displayName": "Bauträgervertragsprüfer",
     "shortDescription": "Vertragsentwurf, Zahlungsrate und Word-Fassung prüfen",
-    "longDescription": "Drei aufeinander abgestimmte Skills prüfen Vertragsklauseln, Zahlungsanforderungen und vollständige Word-Inhalte. Sie klären entscheidende Lücken, unterscheiden die Vertragsphase und führen die Bearbeitung zu konkreten Ersatzklauseln, bezifferten Zahlungsergebnissen und beauftragten Folgeschreiben fort. Enthält den eigenständig nutzbaren Werkstatt-Prompt und lokale Prüfwerkzeuge.",
+    "longDescription": "Drei aufeinander abgestimmte Skills prüfen Vertragsklauseln, Zahlungsanforderungen und vollständige Word-Inhalte. Sie klären entscheidende Lücken, unterscheiden die Vertragsphase und führen die Bearbeitung zu konkreten Ersatzklauseln, bezifferten Zahlungsergebnissen und unmittelbar erstellten Mandanten- und Adressatenschreiben fort. Enthält den eigenständig nutzbaren Werkstatt-Prompt und lokale Prüfwerkzeuge.",
     "developerName": "Klotzkette",
     "category": "Productivity",
     "capabilities": [],
     "defaultPrompt": [
-      "Prüfe diesen Bauträgervertrag aus Erwerbersicht, kläre entscheidende Lücken und arbeite erforderliche Ersatzklauseln aus.",
+      "Prüfe den Bauträgervertrag aus Sicht der Erwerberin und erstelle Gutachten, Mandantenschreiben und Änderungsanforderung.",
       "Prüfe diese Zahlungsrate, berechne den tragfähigen Zahlungsbetrag und fordere entscheidende fehlende Belege gezielt an.",
       "Prüfe den Word-Entwurf samt Entwurfstatus, Kommentaren und offenen Änderungen, ohne das Original zu verändern."
     ]

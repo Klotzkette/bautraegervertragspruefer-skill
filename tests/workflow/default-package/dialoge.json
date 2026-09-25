@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "delivery": "one_user_turn_after_previous_response",
+  "fresh_conversation_per_case": true,
+  "future_turns_visible": false,
+  "contract_format": "markdown",
+  "cases": [
+    {
+      "id": "DP01",
+      "plugin_entrypoint": "bautraegervertrag-pruefen",
+      "turns": [
+        {"turn": 1, "after_response_to": null, "inputs": ["tests/workflow/default-package/inputs/dp01-01.md", "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md"]},
+        {"turn": 2, "after_response_to": 1, "inputs": ["tests/workflow/default-package/inputs/dp01-02.md"]}
+      ]
+    }
+  ]
+}
