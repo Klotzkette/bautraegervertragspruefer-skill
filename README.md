@@ -1,8 +1,8 @@
 # Bauträgervertragsprüfer
 
-Fassung 4.5.1 trennt die vollständige interne Ratenprüfung vom notwendigen Umfang der Antwort. Beauftragte Schreiben enthalten ihre Begründung unmittelbar; ein zusätzliches Gutachten wird nicht ungefragt angehängt. Die [ergänzenden Dialogproben](tests/runs/2026-09-16/README.md) dokumentieren Ergebnisse und verbleibende Unterschiede in der Kürze.
+Fassung 4.6.0 stellt die vollständige Erwerberinnenprüfung wieder in den Mittelpunkt: Beim normalen Prüfauftrag entstehen unmittelbar ein ausführliches Gutachten, ein Mandantenschreiben und die passenden Schreiben an Bauträger beziehungsweise Notariat. Kein Zusatzauftrag und kein Kennwort „Vollpaket“ nötig.
 
-Version 4.5.1 prüft deutsche Bauträgerverträge aus Erwerbersicht und führt den Auftrag bis zum verwendbaren Ergebnis: begründete Vertragsbewertung, gezielte Rückfragen, konkrete Änderungen und beauftragte Schreiben. Neue Unterlagen werden in die laufende Prüfung eingearbeitet. Die Ausgabe verwendet juristische Alltagssprache statt interner Prozessbegriffe.
+Version 4.6.0 prüft deutsche Bauträgerverträge stets aus Sicht der Erwerberin. Konkrete fachliche Prüfschritte und fallbezogene Rechtsprechung verbinden Vertragsbewertung, Ersatzklauseln und unmittelbar ausgearbeitete Schreiben. Neue Unterlagen werden in die laufende Prüfung eingearbeitet. Die Ausgabe verwendet juristische Alltagssprache statt interner Prozessbegriffe.
 
 **Menü:** [Prompts](#werkstatt-und-mini-prompt) · [Plugin](#plugin-mit-drei-skills) · [Word](#word-vertragsvorlagen) · [Testakten](#testakten) · [Prüfung](#qualität-und-grenzen) · [Dateien](#repository-dateien) · [Lizenz](#lizenz)
 
@@ -13,7 +13,7 @@ Version 4.5.1 prüft deutsche Bauträgerverträge aus Erwerbersicht und führt d
 | Gründliche Vertragsprüfung | [Werkstatt-Prompt](skill/SKILL.md) | [SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/SKILL.md) |
 | Kleines Kontextfenster | [Mini-Prompt](skill/MINI_SKILL.md) | [MINI_SKILL.md herunterladen](https://github.com/Klotzkette/bautraegervertragspruefer-skill/releases/latest/download/MINI_SKILL.md) |
 
-Formatierte Word-Fassungen: [Werkstatt-Prompt 4.5.1 als DOCX](docs/downloads/werkstatt-prompt-4.5.1.docx) mit **38 Seiten** und [Mini-Prompt 4.5.1 als DOCX](docs/downloads/mini-prompt-4.5.1.docx) mit **4 Seiten**. Gemessen mit LibreOffice, Letter, Arial 11 pt und 2,54 cm Rändern; Word-Version und Schriftverfügbarkeit können den Umbruch verändern. Markdown selbst hat keine feste Seitenzahl. Alle 49 Rechtsprechungsanker bleiben als gesonderter Nachschlageteil erhalten. Die Word-Dateien enthalten den vollständigen lesbaren Prompt ohne technischen YAML-Metadatenblock.
+Formatierte Word-Fassungen: [Werkstatt-Prompt 4.6.0 als DOCX](docs/downloads/werkstatt-prompt-4.6.0.docx) mit **44 Seiten** und [Mini-Prompt 4.6.0 als DOCX](docs/downloads/mini-prompt-4.6.0.docx) mit **6 Seiten**. Gemessen mit LibreOffice, Letter, Arial 11 pt und 2,54 cm Rändern; Word-Version und Schriftverfügbarkeit können den Umbruch verändern. Markdown selbst hat keine feste Seitenzahl. Die bisherigen 49 Katalogeinträge bleiben erhalten und sind um drei Entscheidungen ergänzt; die Notarentscheidung III ZR 136/07 ist inhaltlich berichtigt. Vertiefungen zu Preis, Verzug, Selbstvornahme, Eilbesitz, Haftung, Technik und Betriebskosten stehen unmittelbar in den jeweiligen Prüfkapiteln. Die Word-Dateien enthalten den vollständigen lesbaren Prompt ohne technischen YAML-Metadatenblock.
 
 Eine Datei als Arbeitsanweisung in den gewünschten Chat laden oder ihren Text kopieren. Dann den Vertrag und die dazugehörigen Anlagen hinzufügen. Beide Prompts enthalten die nötigen Prüfanweisungen selbst; sie setzen weder dieses Plugin noch ein bestimmtes KI-Produkt voraus. Datei-, Bild- und Internetzugriff hängen vom verwendeten System ab. Die Prompts verlangen, konkrete Lese- und Quellenlücken offenzulegen.
 
@@ -26,8 +26,9 @@ Vertragsfassung und welche Anlagen tatsächlich lesbar vorliegen und ob
 ein Entwurf oder eine beurkundete Fassung belegt ist. Begründe jeden
 wesentlichen Befund an seiner Klausel, rechne die Zahlungsraten nach und
 formuliere konkrete, zur Vertragsphase passende Änderungen. Kläre
-entscheidende Lücken mit gezielten Rückfragen. Führe beauftragte
-Folgeschritte nach meiner Antwort aus und prüfe neue Fassungen weiter.
+entscheidende Lücken mit gezielten Rückfragen. Erstelle unmittelbar das
+Gutachten, ein Mandantenschreiben und passende Entwürfe an Bauträger oder
+Notariat. Arbeite Antworten und neue Fassungen in alle betroffenen Texte ein.
 ```
 
 Für einen Zahlungsfall:
@@ -40,13 +41,13 @@ Widersprüche zwischen Einzelpositionen und Berichts-Fazit. Gib einen
 zahlbaren Betrag nur an, soweit er sich aus den Belegen ableiten lässt.
 ```
 
-„Vollständig prüfen“ führt durch die Prüfung bis zu begründeten Ergebnissen und konkreten Änderungen oder Maßnahmen. Ist ein Schreiben bereits beauftragt, wird es ausgearbeitet statt nur angeboten. Ist die anschließende Verwendung offen, folgt eine konkrete Frage nach Empfänger oder Vorgehen. Nachgereichte Unterlagen und Antworten ändern die betroffenen Ergebnisse, ohne die Aufnahme neu zu beginnen. Eine notwendige ausstehende Antwort bleibt ausdrücklich offen; ein begrenzter Auftrag erhält kein ungefragtes Zusatzpaket. Für alle drei Dokumente: `Vollpaket: Mandantenanschreiben, ausführliches Gutachten und phasengerechtes Schreiben an den Bauträger.`
+„Bitte prüfe den Vertrag vollständig“ umfasst schon die drei ausgearbeiteten Produkte. Erhebliche erforderliche Änderungen und Nachweise werden in die passenden Schreiben übernommen; Verhandlungswünsche bleiben als solche erkennbar. Fehlende Anlagen führen zu gezielten Fragen und bedingten Ergebnissen, nicht zum Stillstand. Nachgereichte Unterlagen ändern sämtliche betroffenen Texte; unveränderte offene Punkte bleiben erhalten. Ausdrückliche Begrenzungen wie „nur Analyse“, „keine Schreiben“ oder „nur technische Word-Prüfung“ werden respektiert. Entwerfen erlaubt weder Versand noch Zahlung oder rechtsgeschäftliche Erklärungen.
 
 Die Werkstatt enthält einen konzentrierten Arbeitsablauf sowie einen ausdrücklich historischen Rechtsprechungs- und Gesetzgebungsbestand. Der Mini-Prompt priorisiert ausführbare Prüfregeln statt langer Aktenzeichenlisten. Die Verwendung in einem anderen Modell ist möglich; eine gleiche Ergebnisqualität über verschiedene Modelle hinweg wird nicht behauptet.
 
 Beide Fassungen verlangen eine ausdrückliche Verjährungsprüfung: Bauwerksmängel regelmäßig fünf Jahre ab maßgeblicher Abnahme (§ 634a Abs. 1 Nr. 2, Abs. 2 BGB), eine Zweijahresverkürzung in Verbraucher-AGB unwirksam nach § 309 Nr. 8 b ff BGB. Vorgezogener Beginn, technische Gebäudeanlagen und verdeckte Mängelanzeigefristen gehören dazu. Echte Individualvereinbarungen und die gesetzliche Zweijahresfrist für nicht bauwerksbezogene Werke werden gesondert beurteilt. Dazu gibt es [sieben gezielte Testfälle](tests/limitation/README.md) und [Praxisantworten der früheren Fassung](tests/runs/2026-09-09/README.md).
 
-Der Mini umfasst 9.986 Zeichen. Das frühere interne Limit von 7.500 wurde auf 10.000 angehoben, um den Ablauf mit Rückfragen und Folgeschritten in lesbaren Sätzen abzubilden. Er bleibt eigenständig und enthält keine lange Rechtsprechungssammlung. [Fünf Mehrturn-Testfälle](tests/workflow/README.md) prüfen den Verlauf mit zeitlich getrennten Folgeeingaben; die Erwartungen sind von den Eingaben getrennt. [Drei tatsächliche Dialogproben mit neun Antworten](tests/runs/2026-09-15/README.md) dokumentieren Klauselrücklauf und Zahlungsprüfung einschließlich der beauftragten Schreiben. Statische Kontrollen belegen keine Modellleistung.
+Der Mini umfasst 17.622 Zeichen bei einer Grenze von 18.000. Die zusätzliche Länge dient konkreten juristischen Prüfschritten, ausgewählten Rechtsprechungsankern und dem vollständigen Ablauf, nicht wiederholten Prozessanweisungen. Er bleibt eigenständig. Der neue [DP01-Dialogfall](tests/workflow/default-package/dialoge.json) beginnt ohne ausdrückliche Bestellung von Schreiben und prüft anschließend einen Klauselrücklauf. [Fünf Mehrturn-Testfälle](tests/workflow/README.md) prüfen den Verlauf mit zeitlich getrennten Folgeeingaben; die Erwartungen sind von den Eingaben getrennt. [Drei tatsächliche Dialogproben mit neun Antworten](tests/runs/2026-09-15/README.md) dokumentieren Klauselrücklauf und Zahlungsprüfung einschließlich der beauftragten Schreiben. Statische Kontrollen belegen keine Modellleistung.
 
 Reproduzierbarer Word-Export: `python scripts/export_prompt_docx.py skill/SKILL.md neuer-werkstatt-prompt.docx --soffice /pfad/zu/soffice`. Benötigt Python mit `python-docx`, Pandoc, LibreOffice und `pdfinfo`. Das Skript erhält bestehende Zieldateien und verweigert die Ausgabe oberhalb von 100 tatsächlich gerenderten Seiten. Vor Weitergabe alle Seiten visuell prüfen; ein Seitenzähler allein ist keine Layoutkontrolle.
 
@@ -94,7 +95,7 @@ Die Prüfungen kontrollieren Prompt- und Plugin-Konsistenz, Dateien und Verweise
 
 Mit `BTV_VERIFY_BUILDS=1 bash scripts/validate_repo.sh` werden zusätzlich die deutschen Vertragsartefakte isoliert nachgebaut. `python3 scripts/check_legal_anchors.py --online` prüft die Erreichbarkeit hinterlegter Quellen. Ein erfolgreicher Abruf bestätigt weder die Richtigkeit einer Zusammenfassung noch die Übertragbarkeit einer Entscheidung. Die konkrete juristische Verwendung erfordert die Prüfung von Normstand, Volltext und Fallbezug.
 
-Der Workflow für Word-Dateien umfasst Text- und Strukturkontrolle sowie Rendern und visuelle Prüfung. Der [Prüfbericht 4.4.0](tests/QA-4.4.0.md) und die [gesicherten Praxisantworten](tests/runs/2026-09-04/README.md) dokumentieren die tatsächlich ausgeführten Kontrollen; fehlende Tests werden nicht als bestanden dargestellt.
+Der Workflow für Word-Dateien umfasst Text- und Strukturkontrolle sowie Rendern und visuelle Prüfung. Der [Prüfbericht 4.6.0](tests/QA-4.6.0.md) und die [aktuellen Praxisantworten mit Auswertung](tests/runs/2026-09-25/README.md) dokumentieren die ausgeführten Kontrollen und ihre Grenzen. Die Gesamtvertragsproben lieferten die Produkte unmittelbar, zeigten aber fachliche Lücken und unvollständige Schreiben. Daraus abgeleitete Ergänzungen wurden gezielt nachgeprüft, nicht erneut im vollständigen Gesamtvertragsdialog. Frühere [Prüfberichte](tests/QA-4.4.0.md) und [Praxisantworten](tests/runs/2026-09-04/README.md) bleiben als historische Nachweise erhalten.
 
 ## Repository-Dateien
 

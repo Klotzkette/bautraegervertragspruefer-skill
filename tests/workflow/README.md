@@ -37,3 +37,17 @@ python3 scripts/test_workflow_dialogue.py
 ```
 
 Dieses Programm kontrolliert Reihenfolge, vorhandene Eingaben, Trennung von Erwartungen und einige ausdrückliche Arbeitsanweisungen. Es führt **keine Modellgespräche** aus, bewertet **keine juristische Richtigkeit** und belegt **keine allgemeine KI-Leistung**. Die Kontrollen auf Arbeitsanweisungen sind bewusst nur statische Rückfallsicherungen.
+
+## Ergänzung ab 4.6.0: vollständiger Auftrag ohne Paketkennwort
+
+Der neue Fall **DP01** liegt im eigenen [Register](default-package/dialoge.json); W01–W05 und ihre historischen Laufnachweise bleiben unverändert. DP01 wurde noch nicht als Modellgespräch durchgeführt. Seine zwei Nachrichten werden ebenfalls einzeln in einem frischen Chat übergeben, jeweils erst nach der tatsächlichen vorangegangenen Antwort. Das gilt gesondert für Werkstatt, Mini und den Einstieg `bautraegervertrag-pruefen`.
+
+Die erste Nachricht bittet schlicht um vollständige Prüfung des vorhandenen Marewald-Vertrags in Markdown. Sie benennt weder das Standardpaket noch bestimmte Rechtsfehler oder erwartete Ergebnisse. Nur die im Register bezeichneten Eingabedateien dürfen an das prüfende Modell gehen. Register, README und [Erwartungen](default-package/erwartungen.json) bleiben außerhalb seines Kontexts. Die zweite Nachricht ersetzt zwei Klauseln, ohne deren rechtliche Bewertung vorzugeben; sie wird nicht vorab gezeigt.
+
+Die Auswertung verlangt bereits in Antwort eins ein ausgearbeitetes Gutachten, ein Mandantenschreiben und einen zur Phase passenden externen Entwurf. Fehlende Anlagen erfordern konkrete Fragen und bedingte Aussagen, verhindern aber die auf dem vorhandenen Vertrag beruhende Ausarbeitung nicht. Erforderliche Rechtskorrekturen, offene Tatsachen oder Belege und bloße Verhandlungswünsche sind erkennbar zu unterscheiden.
+
+Für jeden Pflichtbefund **und jeden zusätzlich erhobenen erheblichen Befund** hält die Auswertung je Nachricht die Fundstelle im Gutachten sowie die Aufnahme in den beiden Schreiben fest. Wo ein Punkt nicht in ein Schreiben gehört, ist der konkrete sachliche Grund zu erfassen; ein positives Schutzergebnis muss beispielsweise keine Änderungsforderung erzeugen. Für Antwort zwei sind fortgeltende, erledigte, geänderte und neue Befunde mit ihren Folgen zuzuordnen. Die korrigierte Einzelklausel darf weder unveränderte Punkte noch die neue Ausschlussfolge verdrängen. Nutzbare, eindeutig zugeordnete Nachträge zu allen drei Produkten sind zulässig; bloße Zusagen ihrer späteren Erstellung nicht.
+
+Für einen späteren echten Lauf die vorhandene [Laufvorlage](laufvorlage.json) in einen neuen Laufordner kopieren, `case_id` auf `DP01` setzen und ausschließlich die beiden tatsächlich vorgesehenen Nachrichten erfassen. Modellkennung, Version, Prüfsummen, Werkzeuge, Rohantworten, Reihenfolge und Ausführungsgrenzen sind erst nach realer Ausführung einzutragen; historische Metadaten nicht umdeuten. Die Befundzuordnung mit Antwortfundstellen gehört in die spätere Auswertung. Es werden hier weder Rohantworten noch erfolgreiche Modellläufe vorgetäuscht.
+
+Das oben genannte Testprogramm prüft auch dieses getrennte Register sowie wenige zentrale Anweisungsinvarianten. Mutationen kontrollieren, dass pauschale Regeln wie „keine ungefragt angehängten drei Schreiben“ und ein zusätzlicher Paketauftrag auffallen, ausdrückliche begrenzte Aufträge aber zulässig bleiben. Das ersetzt weder den blinden Dialoglauf noch dessen juristische und sprachliche Bewertung.

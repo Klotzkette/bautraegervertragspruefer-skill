@@ -1,5 +1,16 @@
 # Änderungsprotokoll
 
+## 4.6.0 - 25. September 2026
+
+1. Feste Erwerberinnenperspektive und vollständiger Standardauftrag: Gutachten, Mandantenschreiben und phasengerechte externe Entwürfe entstehen unmittelbar, ohne Zusatzauftrag oder „Vollpaket“-Kennwort. Die in 4.5.x eingeführte Einschränkung wird zurückgenommen. Ausdrückliche Einzelaufträge und Stop bleiben verbindlich.
+2. Fehlende Anlagen führen zu präzisen Rückfragen und gekennzeichneten Teilbewertungen, nicht zum Zurückstellen aller Texte. Erhebliche notwendige Änderungen und Nachweise müssen in den passenden Schreiben erhalten bleiben; Nachträge aktualisieren die betroffenen Produkte und lassen unbeantwortete Punkte offen.
+3. Neun fachliche Vertiefungen direkt in den jeweiligen Prüfkapiteln: Preisöffnung, Bauzeit, Vertragsstrafe, Selbstvornahme, Eilbesitz, Dritthaftung, Notarhaftung, Technik/Baugrund und Betriebspflichten. Rechtsprechung muss im Gutachten fallbezogen angewandt werden. Der Katalog enthält nun 52 Einträge mit 56 Aktenzeichen; III ZR 136/07 ist zur Bedeutung der doppelten Belehrung berichtigt.
+4. Mini auf 17.622 Zeichen erweitert (Grenze 18.000), mit konkreten Rechtsprüfungen und Rechercheankern. Verlustfreier Word-Export: Werkstatt 44, Mini 6 Seiten bei Letter/Arial 11 pt; bestehende Vertragsvorlagen bleiben unverändert.
+5. Neuer getrennter Dialogtest DP01: gewöhnliche Gesamtprüfbitte ohne Produktbestellung, danach neue Vertragsklauseln. Bewertet werden tatsächlich ausgearbeitete Produkte, rechtliche Prioritäten und die Weitergabe aller erheblichen Befunde. Historische Eingaben und Läufe bleiben unverändert.
+6. Plugin-Einstiege, Manifeste, Starttexte, Downloadseite und Paket synchronisiert. Der Zahlungs-Skill erstellt die zum Abruf gehörende Beratung und Antwort unmittelbar; eine ausdrücklich technische Word-Prüfung bleibt auf diesen Umfang beschränkt.
+7. Aus einer tatsächlichen Modellantwort abgeleitete Normreferenz-Korrektur: DIN-Mindestausstattung und RAL-Ausstattungswerte nicht vermischen; vorhandene Fenster-/Türwerte positiv würdigen. Drei frische, begrenzte Klauselproben prüfen diese Ergänzung zusammen mit der unzulässigen 24-Monats-Frist und einem ausdrücklich begrenzten Auftrag.
+8. Der DP01-Praxistest zeigt trotz sofort ausgearbeiteter Produkte Verluste beim Übertragen erheblicher Befunde in die Schreiben. Deshalb verlangen beide Prompts jetzt bei umfangreichen Befunden eine tatsächlich ausgearbeitete gemeinsame Änderungs- und Unterlagenanlage; erledigte, offene und verhandelbare Punkte bleiben unterscheidbar. Gezielte Schreibproben prüfen diesen Zusatz. Der vollständige DP01-Dialog wurde danach nicht erneut ausgeführt; seine dokumentierten Fehler bleiben sichtbar.
+
 ## 4.5.1 - 16. September 2026
 
 1. Vollständige interne Ratenprüfung und erforderlicher Ausgabeumfang werden getrennt: im konkreten Zahlungsabruf kein obligatorischer vollständiger Ratenplan, keine Nullbetragstabellen und keine mehrfach wiederholte Berechnung. Die widersprechende Ausgabeanweisung in Abschnitt 6.2 ist ebenfalls bereinigt.

@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-09-25",
+  "status": "completed_with_documented_resumptions",
+  "model_provider": "OpenAI",
+  "model_id": null,
+  "exact_turn_timestamps": null,
+  "model_id_note": "Nicht zuverlässig erfasst; keine nachträgliche Schätzung.",
+  "system_and_developer_context": "Neue Codex-Unteragenten ohne geerbte Gesprächshistorie; wirksamer System-/Entwicklerrahmen. Zugewiesene Instruktionen und Eingaben vollständig gelesen; Nebenwirkungen auf Rohtextarchivierung begrenzt.",
+  "fresh_conversation_per_run": true,
+  "expectations_hidden_during_execution": true,
+  "future_turns_visible": false,
+  "turns_delivered_sequentially": true,
+  "raw_texts_edited_after_execution": false,
+  "total_runs": 9,
+  "total_answer_texts": 12,
+  "tools_available": [
+    "lokaler Dateizugriff auf freigegebene Dateien",
+    "Webrecherche in amtlichen/primären Quellen",
+    "apply_patch zur unveränderten Rohtextarchivierung"
+  ],
+  "provenance_notes": [
+    "Werkstatt und Plugin luden im DP01-Lauf die Vollfassung fe702743… vor der zusätzlichen Erschließung von drei bereits im Fachteil vorhandenen Entscheidungen im Katalog. Der unveränderte geladene Text ist archiviert.",
+    "Die im Plugin-DP01-Abschluss nachträglich gemessene Referenz-Prüfsumme 60cdc7a8… betraf die zwischenzeitlich weiterentwickelte Datei, nicht den tatsächlich zuerst eingelesenen Text. Maßgeblich ist der archivierte Instruktionsstand fe702743….",
+    "Alle DP01-Läufe gingen der Normreferenz- und Anlagen-Ergänzung voraus. NR01 verwendet den Normreferenz-Stand vor der anschließenden Anlagen-Ergänzung; FC01 verwendet den finalen Stand. Die gezielten Gegenproben ersetzen keinen erneuten Gesamtvertragslauf.",
+    "Die drei NR01-Ausführenden erhielten erst nach ihrem Abschluss getrennte Bewertungsaufträge für die DP01-Rohantworten. Sie hatten diese DP01-Antworten nicht erzeugt. Hauptagent prüfte die NR01-Antworten.",
+    "Die NR01-Instruktionsarchive wurden aus dem finalen Text durch Entfernung exakt des später hinzugefügten Anlagen-Absatzes rekonstruiert und gegen die von den Ausführenden erfassten Prüfsummen verifiziert.",
+    "FC01 gibt eine bereits fachlich geprüfte Befundlage vor. Alle drei Schreibproben wurden in neuen Kontexten ohne Erwartungen ausgeführt und anschließend durch den Hauptagenten vollständig gelesen und bewertet."
+  ],
+  "sha256": {
+    "docs/downloads/bautraegervertragspruefer-plugin.zip": "c3b15d526011f7e92bd281652e681cbebedbd0f948190ac9a33682fa64f13331",
+    "docs/downloads/mini-prompt-4.6.0.docx": "0c1c9234a78752b5f435851498e5e861ce46ca0a3505dfa0f6795df25b6564bd",
+    "docs/downloads/werkstatt-prompt-4.6.0.docx": "03f70070e8bdedf5eca9e5421a2ff93095f70ba46e0f5c3d8c35339eab86a873",
+    "plugins/bautraegervertragspruefer/skills/bautraegervertrag-pruefen/SKILL.md": "9e9b7cf3eb6e248257076c42c130c666ed7d15abd1fe9d7709e8e26ef946c84f",
+    "skill/MINI_SKILL.md": "880e951a276f6a2fcac1d1e2e0e69dded97c345050f1a7ca157019e2e0212bf2",
+    "skill/SKILL.md": "3dd33f1c8f73084cd091c4ae1d4e226651dd5c50dafe865acfc7f2d75981edf7",
+    "tests/finding-continuity/erwartungen.json": "01434cdeb6fade07798c86ff5b8722cde6e35f6202dc509c52a24bf35e174457",
+    "tests/finding-continuity/input.md": "896223feddf0e371570e8f187c69e62f7591a25b2d7aad47d789f750d9280f0e",
+    "tests/runs/2026-09-25/README.md": "ea95ba0bc479d42d5504b643431f2fcbb00cfc04df3929e13b03c4580f764af9",
+    "tests/runs/2026-09-25/fc01-auswertung.md": "7b53bfdeab30a77c985d2633a004220104bc3f0fc0062d8799d1c059b222f1ec",
+    "tests/runs/2026-09-25/instructions/mini-nr-run.md": "f4a86f327c43c7da9e745375a174df8406b046756194c2cdaccbf1e948d0b646",
+    "tests/runs/2026-09-25/instructions/mini-run.md": "5140cedb442c0864c56980228595e2e59d20849076714dd9250ce94382dacf45",
+    "tests/runs/2026-09-25/instructions/plugin-entry-run.txt": "9e9b7cf3eb6e248257076c42c130c666ed7d15abd1fe9d7709e8e26ef946c84f",
+    "tests/runs/2026-09-25/instructions/werkstatt-nr-run.md": "4f7fa651cb19e13649b27a7f459237571caff21b841016fd8697d121b33917d8",
+    "tests/runs/2026-09-25/instructions/werkstatt-run.md": "fe702743ebe5b3306ced9e6aecd3ebe6e9f0c1e106982e563c5f5222cdab1ad8",
+    "tests/runs/2026-09-25/mini-dp01-auswertung.md": "2b63c6db76b45d91116885ef5a18235799cb21c35059c8da22cea7da61b782cf",
+    "tests/runs/2026-09-25/mini-dp01-turn1-raw.md": "ddba83e96f4d397cbb5f2b4cf949c58538abded47fadfa621a1fc891d7781466",
+    "tests/runs/2026-09-25/mini-dp01-turn2-raw.md": "98c7c67ddb448c72a73c21f156d707f550880061d39a6070173e543b56fe6963",
+    "tests/runs/2026-09-25/mini-fc01-raw.md": "ff4288fafd2bd2273c86327f6530d82af20ee5ecbdeb159c09b13cedba8d8ee2",
+    "tests/runs/2026-09-25/mini-nr01-raw.md": "b363ebbf4ce3524e06d95125fe5bd41008320c8ba9017973f85a09173155424b",
+    "tests/runs/2026-09-25/nr01-auswertung.md": "49e2bbcbdb1573e370b5b9ff6e66144c2083b47cc8e94c9468074ba1a594f878",
+    "tests/runs/2026-09-25/plugin-dp01-auswertung.md": "6c7084fe0850145e92c97666deb8d8f865b731a1d211d4c5e8e46f0b01fbf703",
+    "tests/runs/2026-09-25/plugin-dp01-turn1-raw.md": "e3185c021047b32ced3cde67b13efb6aba7c4edef871b8a10a9ad622667627cd",
+    "tests/runs/2026-09-25/plugin-dp01-turn2-raw.md": "8e12aa9a8b2e849c043de913890f58fc91fe41fb401627d0e04a35c237233f7c",
+    "tests/runs/2026-09-25/plugin-fc01-raw.md": "cce510a47d97237845d91264703bb3c783e96ca161f74da0ae2485be639c5813",
+    "tests/runs/2026-09-25/plugin-nr01-raw.md": "1d8faf8f1e2e1e1c58f360f09712c878418522c498752dfa051f2332b9d53fe7",
+    "tests/runs/2026-09-25/werkstatt-dp01-auswertung.md": "c6b159588eceb4bbcf2597685ad459c1a897e7897cd0ad0a4b85be49ba9e717c",
+    "tests/runs/2026-09-25/werkstatt-dp01-turn1-raw.md": "f89a6c99f5d4882ade8a2bd6fbce50ada62b2ae31ec649ee8100e2bbc4eac1e7",
+    "tests/runs/2026-09-25/werkstatt-dp01-turn2-raw.md": "4e14f976d6085f2b31a373cda9f491b6ad8064b357f24603704001a2b99dd495",
+    "tests/runs/2026-09-25/werkstatt-fc01-raw.md": "eaef39cf2b582c5e6308b873c82cbdba7fe3f94cd90c6ffec2f70a256aced637",
+    "tests/runs/2026-09-25/werkstatt-nr01-raw.md": "36e3821eaa335a1e9e3001876f2c4f659a6f4b90d3aad953cd365eeb6297c947",
+    "tests/technical-references/erwartungen.json": "7a5632c27b3f6851041e9093b035f11a6449d87bf99f5950ac4022d4f8aca30d",
+    "tests/technical-references/input.md": "b009bd90a1f9e7999b8b4fe67e0d54edb0f01f2c6669d19784c4bf45dcdc1094",
+    "tests/workflow/default-package/erwartungen.json": "122b9eff67bb636c98ca33a9af931682ec05be3c627b83bf0e4d7f380642068f",
+    "tests/workflow/default-package/inputs/dp01-01.md": "d97ece4acfd156a905734745ff86e8c5da19477851087e6718c4aefe03056290",
+    "tests/workflow/default-package/inputs/dp01-02.md": "c01ebe9849deda482713fa19fb6a7db7065bc3ee6f9cc4607e3703e42db42a3a",
+    "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md": "51418ae0399cdaf5583a0d8b814a166ae107ef266512acab04636d667cbd1820"
+  },
+  "runs": [
+    {
+      "mode": "werkstatt",
+      "case_id": "DP01",
+      "status": "completed_with_technical_resumption",
+      "instruction_snapshot": "instructions/werkstatt-run.md",
+      "instruction_sha256": "fe702743ebe5b3306ced9e6aecd3ebe6e9f0c1e106982e563c5f5222cdab1ad8",
+      "turns": [
+        {
+          "turn": 1,
+          "input": "tests/workflow/default-package/inputs/dp01-01.md",
+          "additional_input": "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md",
+          "previous_answer_preserved": false,
+          "raw_response_file": "werkstatt-dp01-turn1-raw.md",
+          "raw_response_sha256": "f89a6c99f5d4882ade8a2bd6fbce50ada62b2ae31ec649ee8100e2bbc4eac1e7"
+        },
+        {
+          "turn": 2,
+          "input": "tests/workflow/default-package/inputs/dp01-02.md",
+          "additional_input": null,
+          "previous_answer_preserved": true,
+          "raw_response_file": "werkstatt-dp01-turn2-raw.md",
+          "raw_response_sha256": "4e14f976d6085f2b31a373cda9f491b6ad8064b357f24603704001a2b99dd495"
+        }
+      ],
+      "notes": [
+        "Erste Antwort erst nach technischer Unterbrechung und Fortsetzung desselben Kontexts abgeschlossen; keine rechtlichen Lösungen oder Erwartungen hinzugegeben.",
+        "Folgeeingabe erst nach Abschluss der ersten Antwort; derselbe geladene Instruktionsstand blieb wirksam.",
+        "Vor Ergänzung der Normreferenz- und Anlagen-Regeln ausgeführt; kein vollständiger DP01-Nachtest der finalen Fassung."
+      ]
+    },
+    {
+      "mode": "werkstatt",
+      "case_id": "NR01",
+      "status": "completed",
+      "instruction_sha256": "4f7fa651cb19e13649b27a7f459237571caff21b841016fd8697d121b33917d8",
+      "input": "tests/technical-references/input.md",
+      "raw_response_file": "werkstatt-nr01-raw.md",
+      "raw_response_sha256": "36e3821eaa335a1e9e3001876f2c4f659a6f4b90d3aad953cd365eeb6297c947",
+      "notes": [
+        "Frischer Kontext ohne Gesprächshistorie, DP01-Antworten oder Erwartungen.",
+        "Gezielte Prüfung von vier Klauselausschnitten, keine vollständige Vertragsprüfung.",
+        "Vor der späteren Ergänzung zur gemeinsamen Anlage; archivierter Instruktionsstand, kein erneuter Gesamtvertragslauf."
+      ],
+      "instruction_snapshot": "instructions/werkstatt-nr-run.md"
+    },
+    {
+      "mode": "mini",
+      "case_id": "DP01",
+      "status": "completed_with_technical_resumption",
+      "instruction_snapshot": "instructions/mini-run.md",
+      "instruction_sha256": "5140cedb442c0864c56980228595e2e59d20849076714dd9250ce94382dacf45",
+      "turns": [
+        {
+          "turn": 1,
+          "input": "tests/workflow/default-package/inputs/dp01-01.md",
+          "additional_input": "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md",
+          "previous_answer_preserved": false,
+          "raw_response_file": "mini-dp01-turn1-raw.md",
+          "raw_response_sha256": "ddba83e96f4d397cbb5f2b4cf949c58538abded47fadfa621a1fc891d7781466"
+        },
+        {
+          "turn": 2,
+          "input": "tests/workflow/default-package/inputs/dp01-02.md",
+          "additional_input": null,
+          "previous_answer_preserved": true,
+          "raw_response_file": "mini-dp01-turn2-raw.md",
+          "raw_response_sha256": "98c7c67ddb448c72a73c21f156d707f550880061d39a6070173e543b56fe6963"
+        }
+      ],
+      "notes": [
+        "Erste Antwort erst nach technischer Unterbrechung und Fortsetzung desselben Kontexts abgeschlossen; keine rechtlichen Lösungen oder Erwartungen hinzugegeben.",
+        "Folgeeingabe erst nach Abschluss der ersten Antwort; derselbe geladene Instruktionsstand blieb wirksam.",
+        "Vor Ergänzung der Normreferenz- und Anlagen-Regeln ausgeführt; kein vollständiger DP01-Nachtest der finalen Fassung."
+      ]
+    },
+    {
+      "mode": "mini",
+      "case_id": "NR01",
+      "status": "completed",
+      "instruction_sha256": "f4a86f327c43c7da9e745375a174df8406b046756194c2cdaccbf1e948d0b646",
+      "input": "tests/technical-references/input.md",
+      "raw_response_file": "mini-nr01-raw.md",
+      "raw_response_sha256": "b363ebbf4ce3524e06d95125fe5bd41008320c8ba9017973f85a09173155424b",
+      "notes": [
+        "Frischer Kontext ohne Gesprächshistorie, DP01-Antworten oder Erwartungen.",
+        "Gezielte Prüfung von vier Klauselausschnitten, keine vollständige Vertragsprüfung.",
+        "Vor der späteren Ergänzung zur gemeinsamen Anlage; archivierter Instruktionsstand, kein erneuter Gesamtvertragslauf."
+      ],
+      "instruction_snapshot": "instructions/mini-nr-run.md"
+    },
+    {
+      "mode": "plugin",
+      "case_id": "DP01",
+      "status": "completed_with_technical_resumption",
+      "instruction_snapshot": "instructions/werkstatt-run.md",
+      "instruction_sha256": "fe702743ebe5b3306ced9e6aecd3ebe6e9f0c1e106982e563c5f5222cdab1ad8",
+      "entrypoint_snapshot": "instructions/plugin-entry-run.txt",
+      "entrypoint_sha256": "9e9b7cf3eb6e248257076c42c130c666ed7d15abd1fe9d7709e8e26ef946c84f",
+      "turns": [
+        {
+          "turn": 1,
+          "input": "tests/workflow/default-package/inputs/dp01-01.md",
+          "additional_input": "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md",
+          "previous_answer_preserved": false,
+          "raw_response_file": "plugin-dp01-turn1-raw.md",
+          "raw_response_sha256": "e3185c021047b32ced3cde67b13efb6aba7c4edef871b8a10a9ad622667627cd"
+        },
+        {
+          "turn": 2,
+          "input": "tests/workflow/default-package/inputs/dp01-02.md",
+          "additional_input": null,
+          "previous_answer_preserved": true,
+          "raw_response_file": "plugin-dp01-turn2-raw.md",
+          "raw_response_sha256": "8e12aa9a8b2e849c043de913890f58fc91fe41fb401627d0e04a35c237233f7c"
+        }
+      ],
+      "notes": [
+        "Erste Antwort erst nach technischer Unterbrechung und Fortsetzung desselben Kontexts abgeschlossen; keine rechtlichen Lösungen oder Erwartungen hinzugegeben.",
+        "Folgeeingabe erst nach Abschluss der ersten Antwort; derselbe geladene Instruktionsstand blieb wirksam.",
+        "Vor Ergänzung der Normreferenz- und Anlagen-Regeln ausgeführt; kein vollständiger DP01-Nachtest der finalen Fassung."
+      ]
+    },
+    {
+      "mode": "plugin",
+      "case_id": "NR01",
+      "status": "completed",
+      "instruction_sha256": "4f7fa651cb19e13649b27a7f459237571caff21b841016fd8697d121b33917d8",
+      "entrypoint_sha256": "9e9b7cf3eb6e248257076c42c130c666ed7d15abd1fe9d7709e8e26ef946c84f",
+      "input": "tests/technical-references/input.md",
+      "raw_response_file": "plugin-nr01-raw.md",
+      "raw_response_sha256": "1d8faf8f1e2e1e1c58f360f09712c878418522c498752dfa051f2332b9d53fe7",
+      "notes": [
+        "Frischer Kontext ohne Gesprächshistorie, DP01-Antworten oder Erwartungen.",
+        "Gezielte Prüfung von vier Klauselausschnitten, keine vollständige Vertragsprüfung.",
+        "Vor der späteren Ergänzung zur gemeinsamen Anlage; archivierter Instruktionsstand, kein erneuter Gesamtvertragslauf."
+      ],
+      "instruction_snapshot": "instructions/werkstatt-nr-run.md",
+      "entrypoint_snapshot": "instructions/plugin-entry-run.txt"
+    },
+    {
+      "mode": "werkstatt",
+      "case_id": "FC01",
+      "status": "completed",
+      "instruction_source": "skill/SKILL.md",
+      "instruction_sha256": "3dd33f1c8f73084cd091c4ae1d4e226651dd5c50dafe865acfc7f2d75981edf7",
+      "input": "tests/finding-continuity/input.md",
+      "raw_response_file": "werkstatt-fc01-raw.md",
+      "raw_response_sha256": "eaef39cf2b582c5e6308b873c82cbdba7fe3f94cd90c6ffec2f70a256aced637",
+      "notes": [
+        "Frischer Kontext ohne Gesprächshistorie, fremde Antworten oder Erwartungen.",
+        "Finaler Instruktionsstand; vorgegebene geprüfte Befundlage, keine eigenständige Gesamtvertragsprüfung."
+      ]
+    },
+    {
+      "mode": "mini",
+      "case_id": "FC01",
+      "status": "completed",
+      "instruction_source": "skill/MINI_SKILL.md",
+      "instruction_sha256": "880e951a276f6a2fcac1d1e2e0e69dded97c345050f1a7ca157019e2e0212bf2",
+      "input": "tests/finding-continuity/input.md",
+      "raw_response_file": "mini-fc01-raw.md",
+      "raw_response_sha256": "ff4288fafd2bd2273c86327f6530d82af20ee5ecbdeb159c09b13cedba8d8ee2",
+      "notes": [
+        "Frischer Kontext ohne Gesprächshistorie, fremde Antworten oder Erwartungen.",
+        "Finaler Instruktionsstand; vorgegebene geprüfte Befundlage, keine eigenständige Gesamtvertragsprüfung."
+      ]
+    },
+    {
+      "mode": "plugin",
+      "case_id": "FC01",
+      "status": "completed",
+      "instruction_source": "skill/SKILL.md",
+      "instruction_sha256": "3dd33f1c8f73084cd091c4ae1d4e226651dd5c50dafe865acfc7f2d75981edf7",
+      "input": "tests/finding-continuity/input.md",
+      "raw_response_file": "plugin-fc01-raw.md",
+      "raw_response_sha256": "cce510a47d97237845d91264703bb3c783e96ca161f74da0ae2485be639c5813",
+      "notes": [
+        "Frischer Kontext ohne Gesprächshistorie, fremde Antworten oder Erwartungen.",
+        "Finaler Instruktionsstand; vorgegebene geprüfte Befundlage, keine eigenständige Gesamtvertragsprüfung."
+      ],
+      "entrypoint_source": "plugins/bautraegervertragspruefer/skills/bautraegervertrag-pruefen/SKILL.md",
+      "entrypoint_sha256": "9e9b7cf3eb6e248257076c42c130c666ed7d15abd1fe9d7709e8e26ef946c84f",
+      "reference_source": "plugins/bautraegervertragspruefer/skills/bautraegervertrag-pruefen/references/werkstatt.md"
+    }
+  ],
+  "final_full_contract_dialogue_repeated": false
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "evaluation_only": true,
+  "not_model_input": true,
+  "case_id": "FC01",
+  "scope": "Gezielte Schreibprobe mit vorgegebener geprüfter Befundlage nach Rücklauf; keine blinde eigene Vertragsanalyse und kein vollständiger DP01-Nachtest.",
+  "open_findings": ["9.3 Ausschlussfolge", "1.3 Teilungserklärung", "3.4 Aushändigung", "5.5 Schallschutz", "Baubeschreibung 7 Raumliste", "5.7 Außenanlagentermin", "2.3 Wohnflächenbasis", "11.2 Einrichtungskosten", "12 Finanzierungssicherung", "5.11 Dokumentationszeitpunkte"],
+  "resolved_findings": ["6.2 Abnahmefiktion", "Baubeschreibung 7 Normzuordnung"],
+  "positive_controls": ["fünf Jahre", "eigenes Abnahmerecht"],
+  "required": ["Mandantenschreiben und passende externe Entwürfe tatsächlich ausarbeiten.", "Alle zehn offenen Befunde in der Beratung und adressatengerecht in externen Texten oder einer tatsächlich beigefügten und ausdrücklich einbezogenen Anlage erhalten.", "Erledigte Teilbefunde von fortbestehenden trennen; kein Fallenlassen der Raumliste wegen korrigierter Normzuordnung.", "Notwendige Korrektur, fehlender Nachweis und verhandelbarer neuer Termin unterscheidbar.", "Kein Versand, Vertragsschluss, Zahlungsstopp oder bereits entstandener Minderungsbetrag behauptet."],
+  "critical": ["Ein wesentlicher offener Punkt fällt ohne sachlichen Grund aus einem betroffenen Produkt heraus.", "Erledigte Forderung wird als weiterhin offen erhoben."]
+}

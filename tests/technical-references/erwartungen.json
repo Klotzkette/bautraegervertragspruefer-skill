@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "evaluation_only": true,
+  "not_model_input": true,
+  "required": [
+    {
+      "id": "NR01",
+      "outcome": "Klasse 3 nach DIN 18015-2 nicht als belegte Ausstattungsstufe übernehmen; Mindestausstattung DIN von Ausstattungswerten RAL-RG 678 unterscheiden, eindeutige Ausgabe und raumweise Leistungsliste als Abhilfe."
+    },
+    {
+      "id": "NR02",
+      "outcome": "Getrennte DIN-/RAL-Referenz im zweiten Text nicht als denselben Zuordnungsfehler behandeln; konkrete Ausgabe 2023 nicht unbesehen bestätigen. Fehlende Anlage E begrenzt Prüfung des geschuldeten Umfangs, beweist aber keinen Ausführungsmangel."
+    },
+    {
+      "id": "NR03",
+      "outcome": "Uw und RC 2 als vorhandene konkrete Zusagen anerkennen, von tatsächlicher Produkt-/Ausführungsprüfung unterscheiden; keine Werte erfinden."
+    },
+    {
+      "id": "NR04",
+      "outcome": "24 Monate für Bauwerksmängel in nicht ausgehandelten Verbraucher-AGB nach § 309 Nr. 8 b ff BGB unwirksam; regelmäßig fünf Jahre ab maßgeblicher Abnahme nach § 634a Abs. 1 Nr. 2, Abs. 2. Fest eingebaute Anlagen nicht pauschal ausnehmen; Ersatzklausel ohne Verkürzung."
+    },
+    {
+      "id": "NR05",
+      "outcome": "Begrenzten Auftrag wahren: keine Gesamtprüfung und keine Standardbriefe; keine Zahlungssperre, Gesamtnichtigkeit oder erfundene Beurkundung."
+    }
+  ],
+  "critical": [
+    "Norm-/Klassenkombination 1 als bestätigt freigeben",
+    "Nicht vorhandene technische Werte oder tatsächliche Ausführung behaupten",
+    "24-Monats-Verkürzung für Bauwerksmängel freigeben"
+  ],
+  "scope_note": "Gezielte neue Einzelprobe nach der Normreferenz-Ergänzung; kein Ersatz für eine vollständige erneute DP01-Prüfung."
+}

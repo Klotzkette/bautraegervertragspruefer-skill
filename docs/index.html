@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bauträgervertrag-Prüfer Skill 4.5.1 — Direktdownload</title>
-<meta name="description" content="Werkstatt- und Mini-Prompt 4.5.1: Bauträgerverträge verständlich prüfen, gezielt rückfragen und bis zu Ersatzklauseln, Zahlungsentscheidung oder beauftragtem Schreiben weiterarbeiten.">
+<title>Bauträgervertrag-Prüfer Skill 4.6.0 — Direktdownload</title>
+<meta name="description" content="Werkstatt- und Mini-Prompt 4.6.0: Bauträgerverträge aus Sicht der Erwerberin prüfen und unmittelbar Gutachten, Mandantenschreiben sowie passende externe Entwürfe erstellen.">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#f4f7f8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#101719" media="(prefers-color-scheme: dark)">
@@ -128,8 +128,8 @@
 </head>
 <body>
 <main id="top">
-  <h1>Bauträgervertrag-Prüfer Skill 4.5.1</h1>
-  <p>4.5.1 trennt die vollständige interne Ratenprüfung vom nötigen Antwortumfang. Beauftragte Schreiben enthalten ihre Begründung unmittelbar; zusätzliche Gutachten werden nicht ungefragt angehängt. Die Kürze der Modellantworten bleibt unterschiedlich.</p>
+  <h1>Bauträgervertrag-Prüfer Skill 4.6.0</h1>
+  <p>4.6.0 führt die vollständige Prüfung stets aus Sicht der Erwerberin durch: Gutachten, Mandantenschreiben und passende Schreiben an Bauträger oder Notariat gehören ohne Zusatzauftrag dazu. Fachliche Vertiefungen stehen wieder direkt in den Prüfkapiteln.</p>
   <p class="lead">Lade die passende Skill-Datei herunter, lege sie in deinen Chatbot und reiche danach den Bauträgervertrag oder die vollständige Zahlungsakte nach.</p>
 
   <nav class="quick-nav" aria-label="Seitennavigation">
@@ -155,14 +155,14 @@
     <a class="btn" href="MINI_SKILL.md" download="MINI_SKILL.md" type="text/markdown" aria-label="Kompakte MINI_SKILL.md sofort herunterladen">
       MINI_SKILL.md sofort herunterladen
     </a>
-    <p>Für Word: <a href="downloads/werkstatt-prompt-4.5.1.docx" download>Werkstatt 4.5.1 als DOCX</a> (38 Seiten) · <a href="downloads/mini-prompt-4.5.1.docx" download>Mini 4.5.1 als DOCX</a> (4 Seiten). Gemessen im LibreOffice-Export mit Letter, Arial 11 pt und 2,54 cm Rändern. Der Word-Umbruch kann je nach Umgebung abweichen; Markdown hat keine feste Seitenzahl. Alle Rechtsprechungsanker bleiben enthalten.</p>
-    <p>Version 4.5.1 führt die Bearbeitung von der Prüfung über gezielte Rückfragen bis zu den beauftragten Ergebnissen fort. Die Ausgabe verwendet verständliche anwaltliche Überschriften wie Ergebnis, Begründung, Änderungsvorschlag und Weiteres Vorgehen.</p>
+    <p>Für Word: <a href="downloads/werkstatt-prompt-4.6.0.docx" download>Werkstatt 4.6.0 als DOCX</a> (44 Seiten) · <a href="downloads/mini-prompt-4.6.0.docx" download>Mini 4.6.0 als DOCX</a> (6 Seiten). Gemessen im LibreOffice-Export mit Letter, Arial 11 pt und 2,54 cm Rändern. Der Word-Umbruch kann je nach Umgebung abweichen; Markdown hat keine feste Seitenzahl. Alle Rechtsprechungsanker bleiben enthalten.</p>
+    <p>Version 4.6.0 führt die Bearbeitung von der Prüfung über gezielte Rückfragen bis zu den drei ausgearbeiteten Dokumenten fort. Die Ausgabe verwendet verständliche anwaltliche Überschriften wie Ergebnis, Begründung, Änderungsvorschlag und Weiteres Vorgehen.</p>
     <p>Beide Prompts verlangen jetzt ausdrücklich die Prüfung einer Verkürzung der Bauwerksmängelverjährung: fünf Jahre ab maßgeblicher Abnahme als Ausgangspunkt und § 309 Nr. 8 b ff BGB gegen eine Zweijahresklausel in Verbraucher-AGB. Auch versteckte Verkürzungen und zulässige Gegenfälle werden geprüft.</p>
   </section>
 
   <section class="card" id="plugin">
     <h2>Plugin mit drei benannten Skills</h2>
-    <p>Vertragsprüfung, Zahlungsratenprüfung und Word-Entwurfsprüfung sind getrennt auffindbar und übernehmen bereits erhobene Angaben voneinander. Die Skills klären entscheidende Lücken und führen zum begründeten Ergebnis, zu Ersatzklauseln und zu beauftragten Schreiben. Das Paket enthält Manifeste für Codex und Claude Code, den Werkstatt-Prompt und lokale Werkzeuge zur Ratenrechnung und DOCX-Aufnahme.</p>
+    <p>Vertragsprüfung, Zahlungsratenprüfung und Word-Entwurfsprüfung sind getrennt auffindbar und übernehmen bereits erhobene Angaben voneinander. Die Skills klären entscheidende Lücken und führen zum begründeten Ergebnis, zu Ersatzklauseln und unmittelbar ausgearbeiteten Schreiben. Das Paket enthält Manifeste für Codex und Claude Code, den Werkstatt-Prompt und lokale Werkzeuge zur Ratenrechnung und DOCX-Aufnahme.</p>
     <a class="btn" href="downloads/bautraegervertragspruefer-plugin.zip" download>Plugin-ZIP herunterladen</a>
     <p><code>bautraegervertrag-pruefen</code> · <code>bautraeger-zahlungsrate-pruefen</code> · <code>bautraeger-word-entwurf-pruefen</code></p>
   </section>
@@ -201,19 +201,19 @@
 
   <section class="card">
     <h2>Nach Rückfragen und neuen Unterlagen fortsetzen</h2>
-    <p>Eine Antwort oder neue Vertragsfassung führt zur erneuten Prüfung der betroffenen Punkte. Das Modell erläutert, was sich geändert hat, rechnet gegebenenfalls neu und passt bereits beauftragte Schreiben an. Fortgeltende Ergebnisse werden übernommen.</p>
+    <p>Eine Antwort oder neue Vertragsfassung führt zur erneuten Prüfung der betroffenen Punkte. Das Modell erläutert, was sich geändert hat, rechnet gegebenenfalls neu und aktualisiert sämtliche betroffenen Schreiben. Erledigte, neue und unverändert offene Punkte bleiben erkennbar. Fortgeltende Ergebnisse werden übernommen.</p>
     <p>Mit <code>weiter</code> wird am offenen Arbeitsschritt angeschlossen, nicht die Aufnahme wiederholt. Wenn du <code>beenden</code>, <code>abbrechen</code> oder <code>stop</code> schreibst, endet die Bearbeitung. Ein technischer Abbruch lässt sich mit dem Fortsetzungstext unten überbrücken.</p>
   </section>
 
   <section class="card" id="workflow">
     <h2>Von der Prüfung zum verwendbaren Ergebnis</h2>
-    <p>Der Auftrag und die Vertragsphase bestimmen den Ablauf. Eine rechtliche Analyse allein genügt nicht, wenn Ersatzklauseln, eine Zahlungsentscheidung oder ein Schreiben beauftragt sind.</p>
+    <p>Der normale Prüfauftrag umfasst bereits Gutachten, Mandantenschreiben und phasengerechte externe Entwürfe. Eine Analyse oder das Angebot, anschließend zu schreiben, genügt nicht. Ausdrücklich begrenzte Aufträge bleiben begrenzt.</p>
     <ol>
       <li><strong>Vorhandenes lesen:</strong> Vertrag, Anlagen, bisherige Angaben und erkennbare Termine auswerten; fehlenden Vertrag oder entscheidende Unterlagen gezielt anfordern.</li>
       <li><strong>Vor Beurkundung:</strong> Beanstandungen am Wortlaut begründen und passende Ersatzklauseln liefern. Ist die weitere Verwendung offen, gezielt nach Mandantenberatung, Änderungsanforderung oder Vertragsüberarbeitung fragen.</li>
       <li><strong>Nach Beurkundung:</strong> Bestehende Rechte, Einwendungen und Fristen prüfen. Eine mögliche Vertragsänderung nicht als schon wirksame Neufassung behandeln.</li>
       <li><strong>Bei Zahlungsabruf:</strong> Voraussetzungen und Beträge abgleichen, das nachgewiesene Zahlungsergebnis beziffern und fehlende Belege mit ihrer konkreten Bedeutung benennen.</li>
-      <li><strong>Auftrag zu Ende führen:</strong> Bereits beauftragte Schreiben und Änderungen ausarbeiten, ohne deren Erstellung nur anzubieten. Nach einer Antwort betroffene Ergebnisse fortschreiben. Zum Abschluss bleiben nur die konkrete noch nötige Mitwirkung oder der sachlich nächste Schritt.</li>
+      <li><strong>Auftrag zu Ende führen:</strong> Gutachten, Mandantenschreiben und passende externe Entwürfe unmittelbar ausarbeiten. Nach einer Antwort betroffene Ergebnisse fortschreiben. Zum Abschluss bleiben nur die konkrete noch nötige Mitwirkung oder der sachlich nächste Schritt.</li>
     </ol>
     <p>Adressaten, offene Tatsachen und wirtschaftlich erhebliche Entscheidungen werden nicht erfunden. Ein begrenzter Prüfauftrag bleibt begrenzt. Der Entwurf eines Schreibens ist keine Erlaubnis zum Versenden; eine reine Word-Prüfung erlaubt keine Änderung der Originaldatei.</p>
   </section>
@@ -229,7 +229,7 @@
 
   <section class="card">
     <h2>Kurzversion für kleinere Modelle</h2>
-    <p>Wenn Claude, ChatGPT, Perplexity, Gemini, Mistral oder ein lokales Modell die große Datei nicht sauber annimmt, nutze die Mini-Fassung mit 9.986 Zeichen bei einer Grenze von 10.000. Sie enthält denselben fortsetzbaren Ablauf in kürzerer Form: Prüfung, gezielte Rückfragen, Ersatzklauseln oder Zahlungsentscheidung und beauftragte Folgeschreiben. Die neue Grenze lässt Platz für verständliche Sätze; eine gleiche Prüfleistung über alle Modelle wird nicht zugesichert.</p>
+    <p>Wenn Claude, ChatGPT, Perplexity, Gemini, Mistral oder ein lokales Modell die große Datei nicht sauber annimmt, nutze die eigenständige Mini-Fassung mit 17.622 Zeichen bei einer Grenze von 18.000. Sie enthält konkrete Rechtsprüfungen, ausgewählte Rechtsprechungsanker und denselben fortsetzbaren Ablauf mit unmittelbar erstellten Schreiben. Eine gleiche Prüfleistung über alle Modelle wird nicht zugesichert.</p>
     <a class="btn" href="MINI_SKILL.md" download="MINI_SKILL.md" type="text/markdown" aria-label="Kompakte MINI_SKILL.md herunterladen">
       MINI_SKILL.md herunterladen
     </a>
@@ -366,12 +366,12 @@
     <h2>Und dann?</h2>
     <p>Die heruntergeladene <code>SKILL.md</code> oder bei engem Kontext <code>MINI_SKILL.md</code> per Drag &amp; Drop in ein KI-Chatfenster (Claude, ChatGPT, Gemini, Perplexity, Mistral …), in ein Projektwissen oder in eine Assistant-Konfiguration ziehen. Dazu schreiben:</p>
     <p><em>„Bitte halte dich an diesen Skill/Prompt. Gleich kommt ein Bauträgervertrag — bearbeite ihn danach."</em></p>
-    <p>Dann den Vertrag als Text, PDF, DOCX oder Foto nachreichen. Die Prüfung beginnt mit den vorhandenen Angaben, klärt entscheidende Lücken und führt bis zum beauftragten Ergebnis. Weitere Schreiben oder eine Vertragsüberarbeitung können konkret beauftragt werden.</p>
+    <p>Dann den Vertrag als Text, PDF, DOCX oder Foto nachreichen. Die Prüfung beginnt mit den vorhandenen Angaben, klärt entscheidende Lücken und erstellt unmittelbar Gutachten, Mandantenschreiben und passende externe Entwürfe. Eine Bearbeitung der Originaldatei ist davon nicht umfasst.</p>
   </section>
 
   <section class="card" id="prompt">
     <h2>Kopierfertiger Start</h2>
-    <p><code>Nutze die hochgeladene SKILL.md oder MINI_SKILL.md für die Prüfung dieses Bauträgervertrags aus Erwerbersicht. Lies zuerst die vorhandenen Unterlagen. Berücksichtige Vertragsphase und Termine; frage nur nach entscheidenden fehlenden Angaben. Liefere verständlich begründete Ergebnisse und vor Beurkundung die erforderlichen Ersatzklauseln. Bei einer Zahlungsanforderung beziffere das tragfähige Zahlungsergebnis. Führe bereits beauftragte Folgeschritte aus. Ist deren Verwendung noch offen, frage konkret nach; setze nach meiner Antwort am offenen Punkt fort.</code></p>
+    <p><code>Nutze die hochgeladene SKILL.md oder MINI_SKILL.md für die Prüfung dieses Bauträgervertrags aus Erwerbersicht. Lies zuerst die vorhandenen Unterlagen. Berücksichtige Vertragsphase und Termine; frage nur nach entscheidenden fehlenden Angaben. Liefere verständlich begründete Ergebnisse und vor Beurkundung die erforderlichen Ersatzklauseln. Bei einer Zahlungsanforderung beziffere das tragfähige Zahlungsergebnis. Erstelle unmittelbar Gutachten, Mandantenschreiben und passende Entwürfe an Bauträger oder Notariat. Kläre wesentliche Lücken, ohne unabhängige Arbeit aufzuhalten. Aktualisiere nach meiner Antwort sämtliche betroffenen Texte.</code></p>
     <p>Für Projekt, Co-Work oder Assistant-Konfiguration: Datei als Projektwissen, Skill-Datei, Systemanweisung oder dauerhafte Arbeitsanweisung hinterlegen.</p>
     <p>Wenn der Chatbot abbricht: <code>Setze die Bearbeitung am offenen Punkt fort. Übernimm bekannte Angaben und erledigte Ergebnisse und führe die beauftragten Schritte zu Ende.</code></p>
     <p>Wenn nichts startet: <code>Beginne jetzt mit den vorhandenen Vertragsunterlagen. Fehlt der Vertrag, fordere ihn an. Frage nach Vertragsphase und Frist nur, soweit sie noch nicht feststehen.</code></p>
@@ -379,11 +379,11 @@
   </section>
 
   <section class="card" id="qualitaet">
-    <h2>Stand 4.5.1</h2>
+    <h2>Stand 4.6.0</h2>
     <p>Die Word-Vorlagen tragen oben „Entwurf“ und eine leere eigene Urkundennummer. Der Vorlagenrahmen behauptet keine erfolgte Beurkundung. Hinweise wie „KI generiert“ stehen nicht in den Word-Vertragsvorlagen. Nummern bestehender Bezugsurkunden bleiben erhalten.</p>
     <p>Die Testakten trennen Entwurfsprüfung und späteres Zahlungsszenario. Neutrale Eingaben und Erwartungsmatrix sind getrennt. Neben Klauselrisiken werden unbegründete Beanstandungen, falsche Beurkundungsannahmen, fehlende Belege und widersprüchliche Baufortschrittsberichte geprüft.</p>
     <p>Automatische Kontrollen prüfen Paketkonsistenz, Rechenverhalten, DOCX-Inhalte, Artefakte, Spiegelkopien und Verweise. Quellenprüfungen kontrollieren die hinterlegte Struktur; ein erreichbarer Link beweist keine zutreffende Rechtsauffassung. Modellübergreifende Erfolgsquoten werden nicht behauptet.</p>
-    <p><a href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/tree/main/tests">Testaufträge und Erwartungsmatrix</a></p>
+    <p><a href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/tree/main/tests">Testaufträge und Erwartungsmatrix</a> · <a href="https://github.com/Klotzkette/bautraegervertragspruefer-skill/tree/main/tests/runs/2026-09-25">Aktuelle Modellantworten und Auswertung</a>. Die Gesamtvertragsproben zeigten trotz sofort erstellter Produkte Lücken bei Normreferenzen und vollständiger Befundübernahme. Die daraus abgeleiteten Ergänzungen wurden gezielt nachgeprüft; ein erneuter vollständiger Gesamtvertragslauf wird nicht behauptet.</p>
   </section>
 
   <footer>
