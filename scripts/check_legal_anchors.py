@@ -34,6 +34,7 @@ ALLOWED_HOSTS = {
     "nrwe.justiz.nrw.de",
     "www.gesetze-bayern.de",
     "www.landesrecht-bw.de",
+    "www.schleswig-holstein.de",
     "rechtsprechung.hessen.de",
     "rechtsprechung.niedersachsen.de",
     "voris.wolterskluwer-online.de",
@@ -73,6 +74,9 @@ FORBIDDEN = (
 )
 
 REQUIRED_DOCKETS = {
+    "VII ZR 187/24",  # Mangelbedingter Nutzungsschaden nach Abnahme ohne Nacherfüllungsverzug
+    "11 U 7/24",  # Eigentumsumschreibung trotz berechtigten Mängeleinbehalts
+    "12 U 12/24",  # Beurkundung eines zusätzlichen Ausbauvertrags: Verknüpfungswille
     "VII ZR 84/09",  # Mängel-Einbehalt auch aus einer laufenden Bautenstandsrate
     "VII ZR 310/99",  # MaBV-Zahlungsplan: Grundsatzentscheidung
     "VII ZR 167/11",  # Bereicherungsausgleich

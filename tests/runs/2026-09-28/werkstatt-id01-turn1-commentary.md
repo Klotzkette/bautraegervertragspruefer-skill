@@ -1,0 +1,5 @@
+Ich nutze die Anleitung zur Prüfung von Bauträgerverträgen. Für den Notartermin am 1. Oktober fällt bereits auf: § 8 überträgt Ihre Abnahmeentscheidung über das Gemeinschaftseigentum auf den vom Bauträger bestellten Erstverwalter; § 9 knüpft daran Ihren Verjährungsbeginn. Ich prüfe diese Verknüpfung und die Folgen für den Termin. Ob es um den erstmaligen Vertragsschluss oder einen Nachtrag geht, ist bislang offen.
+
+Die fünfjährige Frist in § 9 ist für Bauwerksmängel grundsätzlich richtig. Problematisch ist der zweite Satz: Er soll Ihre Frist mit einer fremden Erstabnahme beginnen lassen. Außerdem muss der vollständige Text der angekündigten „kleinen Ergänzung“ geprüft werden; ihre rechtliche Bedeutung lässt sich aus dieser Bezeichnung nicht erkennen.
+
+Die amtlichen BGH-Texte bestätigen den Einwand gegen die Fremdabnahme: Eine formularmäßige Übertragung auf den vom Bauträger bestimmbaren Erstverwalter ist unwirksam. Für Ihre nächsten Schritte bleibt entscheidend, ob bereits eine Urkunde unterschrieben oder eine Abnahme erklärt wurde. Die Schreiben berücksichtigen deshalb beide möglichen Vertragsphasen.

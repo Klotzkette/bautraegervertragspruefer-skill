@@ -1,5 +1,16 @@
 # Änderungsprotokoll
 
+## 4.7.0 — 28. September 2026
+
+1. Werkstatt, Mini und drei Plugin-Einstiege beginnen unmittelbar am vorhandenen Material: konkreter Erstbefund, nächste Prüfung und bereits mögliche Entwürfe, auch bei bloßen Auszügen.
+2. Aktive, begründete Rückfragen in kurzen Runden; Antworten ändern alle betroffenen Ergebnisse und Schreiben. Vertragsphase und Zweck eines Notartermins werden getrennt geklärt. Ein vorgeschlagener Nachtrag gilt nicht als vereinbart.
+3. Fallbezogene Aktualitätsrecherche während der Bearbeitung statt eines vorgelagerten Abrufs sämtlicher Quellen. Gerichtliche DNotI-Entscheidungsabdrucke als überprüfbarer Ersatz bei amtlichen Zugriffsproblemen, keine bloßen redaktionellen Zusammenfassungen.
+4. BGH VII ZR 68/24, VII ZR 108/24 und VII ZR 88/25 direkt mit Prüffragen zu Fremdabnahme, Protokollmängeln und Schlussrate verbunden. Neue Anker: BGH VII ZR 187/24, OLG Köln 11 U 7/24 und OLG Schleswig 12 U 12/24. OLG Stuttgart 10 U 39/25 hinsichtlich Rechtskraft und Zahlungsrichtungen berichtigt; 55 Katalogeinträge mit Übertragungsgrenzen dokumentiert.
+5. Neue getrennte Zweirunden-Probe ID01 sowie sieben Fixturetests zu Eingabetrennung, Reihenfolge und Ausschluss von Evaluatorunterlagen. Statische Tests sind kein Modellleistungsnachweis.
+6. Vollständige Word-Prompts neu exportiert und sämtliche Seiten visuell geprüft: Werkstatt 47, Mini 7 Seiten in der dokumentierten LibreOffice-Umgebung. Mini 21.410 Zeichen, Budget 22.000. Keine Kürzung juristischer Inhalte zur Einhaltung der 100-Seiten-Grenze.
+7. Vertragsvorlagen unverändert: Entwurf, eigene Urkundennummer frei, kein KI-Herkunftshinweis; sechs Word-Verträge und sechs PDFs erneut technisch auf den Entwurfsstatus kontrolliert.
+8. Drei tatsächliche Zweirunden-Proben mit eingefrorenen finalen Instruktionen: sofortige Produkte, aktive Rückfragen und aktualisierte Schreiben beobachtet. Sechs unveränderte Antworten mit Prüfsummen und getrennter Auswertung archiviert; mehrteilige Fragen, eine fehlende ausdrückliche Normnennung im Mini und Grenzen der Quellenprüfung bleiben offen dokumentiert. Kein neuer Gesamtvertrags- oder Anbieter-Vergleichslauf.
+
 ## 4.6.0 - 25. September 2026
 
 1. Feste Erwerberinnenperspektive und vollständiger Standardauftrag: Gutachten, Mandantenschreiben und phasengerechte externe Entwürfe entstehen unmittelbar, ohne Zusatzauftrag oder „Vollpaket“-Kennwort. Die in 4.5.x eingeführte Einschränkung wird zurückgenommen. Ausdrückliche Einzelaufträge und Stop bleiben verbindlich.
