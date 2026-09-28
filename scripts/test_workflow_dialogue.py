@@ -11,6 +11,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 WORKFLOW = ROOT / "tests/workflow"
 DEFAULT_PACKAGE = WORKFLOW / "default-package"
+IMMEDIATE_DIALOGUE = WORKFLOW / "immediate-dialogue"
 ENTRYPOINTS = (
     "bautraegervertrag-pruefen",
     "bautraeger-zahlungsrate-pruefen",
@@ -63,7 +64,7 @@ def extra_commission_rule(text):
 # Explicit instruction-presence checks only. These patterns neither count the
 # number of headings nor evaluate an answer; prohibitions may name old jargon.
 COMMON_INSTRUCTIONS = {
-    "bounded_questions": r"(?:höchstens|maximal)\s+(?:drei|3)\s+(?:konkrete(?:n)?|konkret\s+bezeichnete)\s+(?:Rückfragen|Fragen|Informationen|Belege)",
+    "bounded_questions": r"(?:höchstens|maximal)\s+(?:drei|3)\s+(?:konkrete(?:n)?|konkret\s+bezeichnete[nr]?)\s+(?:Rückfragen|Fragen|Informationen|Belege)",
     "perform_commissioned_work": r"(?:fertige|fertigen|erstelle|ausarbeiten).{0,160}(?:an|Schreiben|Entwurf|Ergebnis)",
     "process_reply": r"(?:nach|bei).{0,60}(?:Antwort|Rückmeldung|neuen?\s+Unterlagen|weiterer\s+Angaben|neuen?\s+Fassung)",
     "resume_existing_work": r"weiter.{0,90}(?:offenen|gewählten|Arbeitsschritt|setzt\s+dort)",
@@ -81,7 +82,7 @@ ACQUISITION_WORKFLOW = {
     "fixed_acquisition_side": r"(?:immer|stets|ausschließlich).{0,65}(?:Erwerberin|Erwerberinnen)|rechtliche\s+Vertragsprüfung\s+aus\s+Sicht\s+der\s+Erwerberin",
     "carry_findings_into_outputs": r"\b(?:jede[rns]?|alle[nrs]?|sämtliche[nr]?)\b.{0,100}(?:Korrektur|Änderung|Befund|Punkt|Feststellung|Einwände).{0,260}(?:übernommen|übernehmen|übertrage|Schreiben)",
     "explain_omissions": r"(?:Weglassen|Nichtaufnahme|nicht\s+aufgenommen|nicht\s+übernommen|nicht\s+übernimmst).{0,100}(?:begründe|Grund|erklär)|(?:sachliche[rmn]?\s+Grund).{0,140}(?:erklär|nicht\s+aufgenommen)|begründe.{0,50}(?:Auslassung|Weglassen|Nichtaufnahme)",
-    "revision_continuity": r"(?:neue[rn]?\s+(?:Vertragsfassung|Fassung)|Antworten|Rückmeldung|weiterer\s+Angaben).{0,260}(?:aktualisiere|überarbeite|erledigt|fortgelt|offen)",
+    "revision_continuity": r"(?:neue[rn]?\s+(?:Vertragsfassung|Fassung)|Antwort(?:en)?|Rückmeldung|weiterer\s+Angaben).{0,260}(?:aktualisiere|überarbeite|erledigt|fortgelt|offen)",
 }
 PACKAGE_INSTRUCTIONS = {
     "ordinary_review_commissions_package": r"(?:normale[rn]?\s+(?:Prüfauftrag|Vertragsprüfung)|Gesamtprüfung).{0,420}(?:Gutachten|Mandantenschreiben)",
@@ -155,6 +156,28 @@ def validate_dialogues(config, expectations, case_ids=None, turn_numbers=(1, 2, 
                 values = evaluation.get(kind)
                 if not isinstance(values, list) or not values or any(not isinstance(value, str) or not value.strip() for value in values):
                     errors.append(f"{case_id}/{evaluation.get('turn')}: missing {kind} outcomes")
+    return errors
+
+
+def validate_immediate_dialogue(config, expectations):
+    """Keep the two blind inputs isolated; do not score a model response."""
+    errors = validate_dialogues(config, expectations, case_ids=("ID01",), turn_numbers=(1, 2))
+    if config.get("case_date") != "2026-09-28":
+        errors.append("ID01: incorrect case date")
+    expected_paths = [
+        "tests/workflow/immediate-dialogue/inputs/id01-01.md",
+        "tests/workflow/immediate-dialogue/inputs/id01-02.md",
+    ]
+    cases = config.get("cases", [])
+    turns = cases[0].get("turns", []) if cases else []
+    for number, relative in enumerate(expected_paths, 1):
+        inputs = turns[number - 1].get("inputs", []) if len(turns) >= number else []
+        if inputs != [relative]:
+            errors.append(f"ID01/{number}: only its own user input may be delivered")
+    available = set((IMMEDIATE_DIALOGUE / "inputs").rglob("*"))
+    available = {path for path in available if path.is_file()}
+    if available != {ROOT / relative for relative in expected_paths}:
+        errors.append("ID01: input inventory differs from the two registered files")
     return errors
 
 
@@ -281,6 +304,83 @@ class DefaultPackageFixtureTests(unittest.TestCase):
         paths = {ROOT / item for case in self.dialogues["cases"] for turn in case["turns"] for item in turn["inputs"]}
         self.assertEqual(set((DEFAULT_PACKAGE / "inputs").glob("*.md")),
                          {path for path in paths if path.parent == DEFAULT_PACKAGE / "inputs"})
+
+
+class ImmediateDialogueFixtureTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.dialogues = json.loads((IMMEDIATE_DIALOGUE / "dialoge.json").read_text(encoding="utf-8"))
+        cls.expectations = json.loads((IMMEDIATE_DIALOGUE / "erwartungen.json").read_text(encoding="utf-8"))
+
+    def test_separate_inputs_paths_order_and_evaluator_separation(self):
+        self.assertEqual(validate_immediate_dialogue(self.dialogues, self.expectations), [])
+
+    def test_future_input_cannot_be_attached_to_first_turn(self):
+        mutated = deepcopy(self.dialogues)
+        turns = mutated["cases"][0]["turns"]
+        turns[0]["inputs"].extend(turns[1]["inputs"])
+        self.assertIn("ID01/1: only its own user input may be delivered",
+                      validate_immediate_dialogue(mutated, self.expectations))
+
+    def test_followup_requires_actual_first_response(self):
+        for field, value, error in (
+            ("future_turns_visible", True, "future turns must be hidden"),
+            ("delivery", "all_turns_at_once", "delivery must wait for the preceding actual response"),
+        ):
+            with self.subTest(field=field):
+                mutated = deepcopy(self.dialogues)
+                mutated[field] = value
+                self.assertIn(error, validate_immediate_dialogue(mutated, self.expectations))
+        mutated = deepcopy(self.dialogues)
+        mutated["cases"][0]["turns"][1]["after_response_to"] = None
+        self.assertIn("ID01/2: incorrect conversational ordering",
+                      validate_immediate_dialogue(mutated, self.expectations))
+
+    def test_evaluator_files_cannot_be_delivered(self):
+        for filename in ("erwartungen.json", "dialoge.json", "README.md"):
+            with self.subTest(filename=filename):
+                mutated = deepcopy(self.dialogues)
+                mutated["cases"][0]["turns"][0]["inputs"].append(
+                    f"tests/workflow/immediate-dialogue/{filename}")
+                errors = validate_immediate_dialogue(mutated, self.expectations)
+                self.assertTrue(any("evaluator/non-text input" in error for error in errors))
+        mutated = deepcopy(self.expectations)
+        mutated["not_model_input"] = False
+        self.assertIn("expectations must remain evaluator-only",
+                      validate_immediate_dialogue(self.dialogues, mutated))
+
+    def test_invalid_or_unregistered_paths_are_rejected(self):
+        for relative in ("tests/workflow/immediate-dialogue/inputs/missing.md",
+                         "../outside-dialogue.md",
+                         "tests/workflow/default-package/inputs/dp01-01.md"):
+            with self.subTest(path=relative):
+                mutated = deepcopy(self.dialogues)
+                mutated["cases"][0]["turns"][0]["inputs"] = [relative]
+                errors = validate_immediate_dialogue(mutated, self.expectations)
+                self.assertIn("ID01/1: only its own user input may be delivered", errors)
+                if relative != "tests/workflow/default-package/inputs/dp01-01.md":
+                    self.assertTrue(any("invalid input path" in error for error in errors))
+
+    def test_inputs_keep_the_clarification_in_the_second_turn(self):
+        first = (IMMEDIATE_DIALOGUE / "inputs/id01-01.md").read_text(encoding="utf-8")
+        second = (IMMEDIATE_DIALOGUE / "inputs/id01-02.md").read_text(encoding="utf-8")
+        for fact in ("Anna Berg", "Parkbogen GmbH", "Notariat Dr. Feld", "28.09.2026", "01.10.2026"):
+            self.assertIn(fact, first)
+        for followup_fact in ("22.09.2026", "eigenen Einzug", "§ 8 soll entfallen",
+                              "§ 9 soll unverändert bleiben", "weder angenommen noch unterschrieben"):
+            self.assertNotIn(followup_fact, first)
+            self.assertIn(followup_fact, second)
+        # User material must not provide the intended products, assessment or sources.
+        for request in (first, second):
+            self.assertNotRegex(request, r"(?i)https?://|erwartungen\.json|Vollpaket|Gutachten|Mandantenschreiben|unwirksam|Pflichtbefund|BGH|evaluation_only")
+
+    def test_acceptance_is_evaluator_only_and_does_not_claim_a_run(self):
+        self.assertEqual(self.expectations["actual_runs"], [])
+        acceptance = self.expectations["acceptance"]
+        self.assertEqual(acceptance["products"], ["gutachten", "mandantenschreiben", "externes_schreiben"])
+        for field in ("first_turn", "dialogue", "research", "continuity", "passing_rule"):
+            self.assertIsInstance(acceptance[field], str)
+            self.assertTrue(acceptance[field].strip(), field)
 
 
 class WorkflowInstructionTests(unittest.TestCase):

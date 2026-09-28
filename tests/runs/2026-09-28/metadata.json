@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-09-28",
+  "release_version": "4.7.0",
+  "status": "completed_with_documented_limits",
+  "model_provider": "OpenAI",
+  "model_id": null,
+  "exact_turn_timestamps": null,
+  "elapsed_seconds": null,
+  "model_id_note": "Keine unabhängig erfasste genaue Modell-ID; keine nachträgliche Schätzung.",
+  "system_and_developer_context": "Frische Codex-Unteragenten ohne geerbte Gesprächshistorie; System-/Entwicklerrahmen und Werkzeuge blieben wirksam. Nur zugewiesene Instruktion, beim Plugin erlaubte Referenz und die jeweils freigegebene Eingabe. Keine Erwartungen oder Musterantworten.",
+  "fresh_conversation_per_run": true,
+  "expectations_hidden_during_execution": true,
+  "future_turns_visible": false,
+  "turns_delivered_sequentially": true,
+  "raw_texts_edited_after_execution": false,
+  "instructions_frozen_during_execution": true,
+  "total_runs": 3,
+  "total_answer_texts": 6,
+  "total_commentary_archives": 6,
+  "tools_available": [
+    "Dateizugriff auf zugewiesene Instruktionen/Eingaben",
+    "Websuche und Abruf primärer Rechtsquellen",
+    "Direkter HTML/PDF-Abruf und Textextraktion",
+    "apply_patch ausschließlich zur nachträglichen Rohtextarchivierung"
+  ],
+  "full_tool_trace_archived": false,
+  "provenance_notes": [
+    "Alle Prompt-Prüfsummen entsprechen der finalen Fassung 4.7.0. Ausführung erfolgte vor Release, ohne nachträgliche Promptänderung.",
+    "Zweite Eingabe jeweils erst nach vollständig abgeschlossener erster Antwort. Keine korrigierenden Lösungshinweise zwischen den beiden Prüfrunden.",
+    "Finalantworten und tatsächlich vorausgegangene Commentary-Mitteilungen wurden von den ausführenden Agenten unverändert archiviert und bytegleich ins Repository kopiert.",
+    "Quellenprotokolle beruhen auf nachträglichen Ausführungsberichten. Sie belegen weder einen vollständigen Tool-Trace noch eine lückenlose Aktualitätsrecherche.",
+    "Plugin las die Werkstattreferenz nur abschnittsweise; einzelne Werkzeugausgaben waren abgeschnitten. DNotI-Ausgabe zur tragenden Entscheidung war beim Plugin ebenfalls nicht vollständig. Diese Grenzen sind dokumentiert.",
+    "Eine Mini-Suchausgabe enthielt ungefragt eine fremde GitHub-Skill-Vorschau; die Datei wurde nicht geöffnet. Der sichtbare amtliche PDF-Link wurde für einen gescheiterten Abruf benutzt.",
+    "Hauptagent las alle sechs Antworten; ein anderer Agent bewertete Werkstatt und Mini zusätzlich. Kein unabhängiges anwaltliches Audit.",
+    "Kein neuer Gesamtvertragslauf und keine Anbieter-Vergleichsmessung. Alte Fehler aus DP01 werden nicht pauschal für behoben erklärt."
+  ],
+  "sha256": {
+    "skill/SKILL.md": "46ff5825c1802c2fc8dbbeec1461a810da70af8fa10cadc795a409ac1eb8594f",
+    "skill/MINI_SKILL.md": "f764e480b5b542c66e4a1d5fb17a200b7c726f6893ae386f89ee45262172a53c",
+    "plugins/bautraegervertragspruefer/skills/bautraegervertrag-pruefen/SKILL.md": "e7538aed656cfd1b8280c0691db002232c9a6cc56d4fc84574850a0025d2a75d",
+    "plugins/bautraegervertragspruefer/skills/bautraegervertrag-pruefen/references/werkstatt.md": "46ff5825c1802c2fc8dbbeec1461a810da70af8fa10cadc795a409ac1eb8594f",
+    "docs/downloads/bautraegervertragspruefer-plugin.zip": "44382b34b2d78ee6bd9d2faf829487a9b1f64fc13ad2a39353725e3cbee34dda",
+    "docs/downloads/werkstatt-prompt-4.7.0.docx": "8c4c27c9e7bd23c0b25b86b129963b00ed4ed4e04244429bfd01c2b0a1e7fee3",
+    "docs/downloads/mini-prompt-4.7.0.docx": "aa79edd08ec1feb0740f8b9c09e4fbb84ba8ccd50757856b575c9072a22c02d0",
+    "tests/workflow/immediate-dialogue/inputs/id01-01.md": "b53f09066dd936eb0da1db15b47a741853aa8756205d5e28b62fc5ecc48ddbab",
+    "tests/workflow/immediate-dialogue/inputs/id01-02.md": "38c904c58ad2d15560ea76bafb294f7ed3219b3f50870db48fa48664a45cb4fa",
+    "tests/runs/2026-09-28/README.md": "ade7af5f986c5eb2f97443da35986d9fde80944410a7f3927281013229a04509",
+    "tests/runs/2026-09-28/id01-auswertung.md": "c0494deced65dae5194747baa6cd16b54f71eaed8143359afeba63aa86ef3c63",
+    "tests/runs/2026-09-28/mini-id01-turn1-commentary.md": "96a54d31e6ae31a822347c631de1c6c01fa2c099ae7199cbb69cc384f05c72c4",
+    "tests/runs/2026-09-28/mini-id01-turn1-raw.md": "35964a3139cd58acdaaf7457265285d1024222f41403b8ab0c08cea30abc9ed3",
+    "tests/runs/2026-09-28/mini-id01-turn2-commentary.md": "3913d1d5eda96ff52919b59ebfd40a8fc7dbc0450bf17fbc448ce56dccb5fa1c",
+    "tests/runs/2026-09-28/mini-id01-turn2-raw.md": "c6be2a2f1974269910b3be981ba6eb129dd84b6f7a46b22b544870742ffb7e7f",
+    "tests/runs/2026-09-28/mini-quellenprotokoll.md": "084d2e1398de17eedf755a06170a58f1cf07a8654f381a8a2038729a8c428b2a",
+    "tests/runs/2026-09-28/plugin-id01-turn1-commentary.md": "321290debc93ca215305c726e848a688f305bd27e9ef04f3a2950d16f98b28ef",
+    "tests/runs/2026-09-28/plugin-id01-turn1-raw.md": "ae12adf5cf92ba11cabb26bc7a4a1c0074432d430d3295aa97932fbad8fab5b0",
+    "tests/runs/2026-09-28/plugin-id01-turn2-commentary.md": "9d54f6d73fe752f6d1bf7f05b8bfa30dc78d8a38fbb66d4d6908125d9c51d2cc",
+    "tests/runs/2026-09-28/plugin-id01-turn2-raw.md": "648de2106fd9197c136aa12d2e661a77fc0c187df0c314809f44f5cb5a866c1f",
+    "tests/runs/2026-09-28/plugin-quellenprotokoll.md": "448f2214f092f7ea5ada49d9e5ab17a6c0ee2fd1ea5b9d5e83e5fce289a8500c",
+    "tests/runs/2026-09-28/werkstatt-id01-turn1-commentary.md": "a9c73841fc2a697f37fbb1287c9895159dec94f6ba328944f99123d37b50a539",
+    "tests/runs/2026-09-28/werkstatt-id01-turn1-raw.md": "715ed7e572ec16feecd8dc21cdd218fba2f751b8849ef3044e653600e326b927",
+    "tests/runs/2026-09-28/werkstatt-id01-turn2-commentary.md": "25cc5775522166c3b482c75e9b886c57c6e8638c23e05e643b94139cf76b2bd7",
+    "tests/runs/2026-09-28/werkstatt-id01-turn2-raw.md": "6f6791a54aae67a1d0de4ec8329b88043f4713339e83bd5912e836f2e8a6f342",
+    "tests/runs/2026-09-28/werkstatt-quellenprotokoll.md": "02d548b65d892bf0334b2973b04634ced56251d317ca76539b11e268c684aa5e"
+  },
+  "runs": [
+    {
+      "mode": "werkstatt",
+      "agent": "/root/blind_immediate_full_470",
+      "instruction": "skill/SKILL.md",
+      "case_id": "ID01",
+      "status": "completed",
+      "instruction_sha256": "46ff5825c1802c2fc8dbbeec1461a810da70af8fa10cadc795a409ac1eb8594f",
+      "turns": [
+        {
+          "turn": 1,
+          "input": "tests/workflow/immediate-dialogue/inputs/id01-01.md",
+          "previous_answer_preserved": false,
+          "raw_response_file": "werkstatt-id01-turn1-raw.md",
+          "raw_response_sha256": "715ed7e572ec16feecd8dc21cdd218fba2f751b8849ef3044e653600e326b927",
+          "commentary_file": "werkstatt-id01-turn1-commentary.md",
+          "commentary_sha256": "a9c73841fc2a697f37fbb1287c9895159dec94f6ba328944f99123d37b50a539"
+        },
+        {
+          "turn": 2,
+          "input": "tests/workflow/immediate-dialogue/inputs/id01-02.md",
+          "previous_answer_preserved": true,
+          "raw_response_file": "werkstatt-id01-turn2-raw.md",
+          "raw_response_sha256": "6f6791a54aae67a1d0de4ec8329b88043f4713339e83bd5912e836f2e8a6f342",
+          "commentary_file": "werkstatt-id01-turn2-commentary.md",
+          "commentary_sha256": "25cc5775522166c3b482c75e9b886c57c6e8638c23e05e643b94139cf76b2bd7"
+        }
+      ]
+    },
+    {
+      "mode": "mini",
+      "agent": "/root/blind_immediate_mini_470",
+      "instruction": "skill/MINI_SKILL.md",
+      "case_id": "ID01",
+      "status": "completed",
+      "instruction_sha256": "f764e480b5b542c66e4a1d5fb17a200b7c726f6893ae386f89ee45262172a53c",
+      "turns": [
+        {
+          "turn": 1,
+          "input": "tests/workflow/immediate-dialogue/inputs/id01-01.md",
+          "previous_answer_preserved": false,
+          "raw_response_file": "mini-id01-turn1-raw.md",
+          "raw_response_sha256": "35964a3139cd58acdaaf7457265285d1024222f41403b8ab0c08cea30abc9ed3",
+          "commentary_file": "mini-id01-turn1-commentary.md",
+          "commentary_sha256": "96a54d31e6ae31a822347c631de1c6c01fa2c099ae7199cbb69cc384f05c72c4"
+        },
+        {
+          "turn": 2,
+          "input": "tests/workflow/immediate-dialogue/inputs/id01-02.md",
+          "previous_answer_preserved": true,
+          "raw_response_file": "mini-id01-turn2-raw.md",
+          "raw_response_sha256": "c6be2a2f1974269910b3be981ba6eb129dd84b6f7a46b22b544870742ffb7e7f",
+          "commentary_file": "mini-id01-turn2-commentary.md",
+          "commentary_sha256": "3913d1d5eda96ff52919b59ebfd40a8fc7dbc0450bf17fbc448ce56dccb5fa1c"
+        }
+      ]
+    },
+    {
+      "mode": "plugin",
+      "agent": "/root/blind_id01_plugin_470",
+      "instruction": "plugins/bautraegervertragspruefer/skills/bautraegervertrag-pruefen/SKILL.md",
+      "reference": "plugins/bautraegervertragspruefer/skills/bautraegervertrag-pruefen/references/werkstatt.md",
+      "case_id": "ID01",
+      "status": "completed",
+      "instruction_sha256": "e7538aed656cfd1b8280c0691db002232c9a6cc56d4fc84574850a0025d2a75d",
+      "reference_sha256": "46ff5825c1802c2fc8dbbeec1461a810da70af8fa10cadc795a409ac1eb8594f",
+      "turns": [
+        {
+          "turn": 1,
+          "input": "tests/workflow/immediate-dialogue/inputs/id01-01.md",
+          "previous_answer_preserved": false,
+          "raw_response_file": "plugin-id01-turn1-raw.md",
+          "raw_response_sha256": "ae12adf5cf92ba11cabb26bc7a4a1c0074432d430d3295aa97932fbad8fab5b0",
+          "commentary_file": "plugin-id01-turn1-commentary.md",
+          "commentary_sha256": "321290debc93ca215305c726e848a688f305bd27e9ef04f3a2950d16f98b28ef"
+        },
+        {
+          "turn": 2,
+          "input": "tests/workflow/immediate-dialogue/inputs/id01-02.md",
+          "previous_answer_preserved": true,
+          "raw_response_file": "plugin-id01-turn2-raw.md",
+          "raw_response_sha256": "648de2106fd9197c136aa12d2e661a77fc0c187df0c314809f44f5cb5a866c1f",
+          "commentary_file": "plugin-id01-turn2-commentary.md",
+          "commentary_sha256": "9d54f6d73fe752f6d1bf7f05b8bfa30dc78d8a38fbb66d4d6908125d9c51d2cc"
+        }
+      ]
+    }
+  ]
+}

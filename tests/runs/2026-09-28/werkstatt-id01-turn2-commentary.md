@@ -1,0 +1,1 @@
+Damit ist die Vertragsphase geklärt: Der Hauptvertrag ist nach Ihrer Angabe seit dem 22. September beurkundet; am 1. Oktober geht es um Sonderwünsche. Der neue Vorschlag ist noch nicht vereinbart. Auch eine vereinbarte Streichung von § 8 würde das eigenständige Problem in § 9 nicht beseitigen: Dort bliebe der Verjährungsbeginn an die Erstverwalterabnahme gekoppelt.

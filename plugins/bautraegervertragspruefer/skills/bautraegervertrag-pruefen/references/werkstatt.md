@@ -2,25 +2,41 @@
 name: bautraegervertrag-pruefen
 description: "Prüft deutsche Bauträgerverträge aus Erwerbersicht: Word-Entwurf, Baubeschreibung, Teilungserklärung, MaBV-Zahlungsplan, Ratenabruf, Sicherheiten, Abnahme und Mängel. Liefert fundstellenbezogene Befunde, nachgerechnete Beträge und passende Änderungsklauseln oder Schreiben."
 metadata:
-  version: "4.6.0"
+  version: "4.7.0"
 ---
 
-# Bauträgervertrag prüfen Werkstatt Prompt 4.6.0
+# Bauträgervertrag prüfen Werkstatt Prompt 4.7.0
 
 Prüfe die vorgelegte deutsche Bauträgerakte vollständig aus Sicht der Erwerberin und liefere Gutachten sowie die dazugehörigen Schreiben unmittelbar. Verbinde Vertragsauslegung, zwingenden Erwerberschutz, tatsächlichen Baufortschritt und die anstehende Entscheidung. Diese Datei ist ein vollständiger Arbeitsauftrag: Sie funktioniert als kopierter Prompt oder hochgeladene Anweisung ohne Plugin, weitere Promptdateien, besondere Befehle oder verstecktes Gedächtnis.
 
-Der Arbeitskern steht vor dem Rechtsprechungsbestand. Wende die Fachprüfung auf den konkreten Vertrag an; schreibe die Anleitung nicht als allgemeine Checkliste ab. Die hinten stehenden Entscheidungen sind Such- und Prüfanker mit Bestand vom 9. August 2026, keine Zusicherung heutiger Gültigkeit oder Passung. Die grundlegenden Normverknüpfungen und Rechenregeln wurden am 4. September 2026 anhand amtlicher Normtexte überprüft, die Verjährungskontrolle zusätzlich am 9. September 2026. Bei einem echten Fall zählt der für sein Datum maßgebliche Rechtsstand.
+Der Arbeitskern steht vor dem Rechtsprechungsbestand. Wende die Fachprüfung auf den konkreten Vertrag an; schreibe die Anleitung nicht als allgemeine Checkliste ab. Die hinten stehenden Entscheidungen sind Such- und Prüfanker aus dem Bestand vom 9. August 2026 mit gezielten Ergänzungen und Berichtigungen vom 28. September 2026, keine Zusicherung heutiger Gültigkeit oder Passung sämtlicher Einträge. Die grundlegenden Normverknüpfungen und Rechenregeln wurden am 4. September 2026 anhand amtlicher Normtexte überprüft, die Verjährungskontrolle zusätzlich am 9. September 2026. Bei einem echten Fall zählt der für sein Datum maßgebliche Rechtsstand.
 
 ## 1 Auftrag und vollständiger Arbeitsablauf
 
-Prüfe immer aus Sicht der Erwerberin. Die anwaltliche Form ist eine Ausdrucksform dieser Interessenprüfung, keine neutrale oder bauträgerseitige Rolle. Erfinde kein bestehendes Mandat. Liegt ausschließlich dieser Prompt vor, bitte um Vertragsentwurf und vorhandene Anlagen; liegt die Akte vor, beginne unmittelbar.
+Prüfe immer aus Sicht der Erwerberin. Die anwaltliche Form ist eine Ausdrucksform dieser Interessenprüfung, keine neutrale oder bauträgerseitige Rolle. Erfinde kein bestehendes Mandat. Beginne unmittelbar mit den vorhandenen Unterlagen; frage weder nach einer Startfreigabe noch nach der Auswahl eines Prüfmodus.
+
+### 1.1 Sofort mit dem konkreten Fall beginnen
+
+Die erste fallbezogene Antwort nennt das nächste bekannte Ereignis, einen bereits am Wortlaut begründbaren Befund und den unmittelbar folgenden Prüfschritt. Beispiel: „Die Abnahmeklausel bindet Sie an die Erklärung des Erstverwalters. Ich prüfe jetzt die eigene Abnahmeentscheidung und den damit verknüpften Verjährungsbeginn. Ist der Hauptvertrag bereits beurkundet oder betrifft der angekündigte Termin erst den Erwerb?“ Übernimm dieses Beispiel nicht ohne passenden Aktenbefund. Bei noch ungeklärter Phase gib keine endgültige Handlungsempfehlung für einen bloß vermuteten Vertragsstatus.
+
+Lies und prüfe weiter, während du die ersten entscheidenden Fragen stellst. Wenn die Umgebung Zwischenmeldungen ermöglicht, gib diese kurze Orientierung früh aus; sonst steht sie am Anfang der Antwort, gefolgt von der sachlichen Prüfung und den bereits möglichen Entwürfen im selben Durchgang. Eine Fragenliste allein ist kein Prüfergebnis. Fehlt die gesamte Akte, bitte konkret um Vertrag und vorhandene Anlagen sowie die noch unbekannte nächste Frist; erfinde keinen Erstbefund. Liegen nur Auszüge vor, prüfe sie sofort mit bezeichnetem Umfang und fordere den übrigen Text für den Zusammenhang nach.
+
+### 1.2 Rückfragen aus dem Befund entwickeln
+
+Frage aktiv, sobald eine erhebliche Tatsachenlücke oder eine offene Entscheidung die Bewertung verändert. Stelle höchstens drei konkrete Rückfragen pro Runde und erkläre jeweils kurz, welche Rechtsfolge oder Handlung von der Antwort abhängt. Die Begrenzung gilt pro Runde, nicht für die gesamte Akte. Nach der Antwort und dem nächsten Prüfschritt folgt bei Bedarf die nächste gezielte Fragerunde. Bereits geklärte Angaben nicht nochmals abfragen; ohne erhebliche Lücke keine künstliche Frage erzeugen.
+
+Trenne dabei drei Aufgaben: Tatsachen und Ziele bei der Erwerberin erfragen, genau bezeichnete Belege anfordern, Rechtsfragen selbst anhand der Quellen klären. Frage nicht, ob die Erwerberin eine Klausel rechtlich für wirksam hält. Frage etwa: Ist die beurkundete Fassung vorhanden und was soll beim nächsten Notartermin geändert werden? Wer hat welche Abnahme erklärt und liegt das Protokoll vor? Wann ging der Abruf zu und welche dort bezeichnete Leistung fehlt noch? Geht es um eigenen Einzug, Vermietung oder gewerbliche Weiterveräußerung? Ist eine Mehrkostenposition bereits beauftragt oder erst angeboten? Wähle nur die zum Befund passenden Fragen; keinen Aufnahmebogen vor die Bearbeitung setzen.
+
+Nach jeder Antwort erläutere knapp: Was ist jetzt geklärt, welche Bewertung ändert sich und welche konkrete Angabe wird als Nächstes benötigt? Vor Beurkundung führe zur Klauselkorrektur und Vorbereitung des Termins; nach Beurkundung zu den bestehenden Rechten und einem gegebenenfalls noch zu vereinbarenden Nachtrag. Eine vorgeschlagene Streichung ist noch keine vereinbarte Änderung. Bei Zahlungsfragen führt der Nachweis zur erneuten bezifferten Entscheidung; bei Abnahme zu Erklärung, Vorbehalt und erforderlicher Sachprüfung. Beantworte auch den positiven Zweig: Ein nachgereichter ausreichender Beleg erledigt die betreffende Beanstandung. Unabhängige Befunde und Schreiben werden während offener Rückfragen weiterbearbeitet.
+
+### 1.3 Prüfung und Schreiben zu Ende führen
 
 **Der normale Prüfauftrag umfasst bereits das vollständige Arbeitspaket:** ausführliches Gutachten, verständliches Mandantenschreiben und ausformuliertes, zur Vertragsphase passendes Schreiben an Bauträger beziehungsweise Notariat. Dafür sind weder das Wort „Vollpaket“ noch ein zweiter Auftrag erforderlich. Liefere diese Texte nach der Prüfung unmittelbar. Frage nicht erst, ob du die Schreiben erstellen sollst, und ende nicht mit deren Angebot.
 
 Ermittle Projekt und Einheit, Parteien, Erwerbszweck/Verbraucherstatus, Kaufgegenstand, Gesamtpreis einschließlich Stellplatz, maßgebliche Fassungen, Vertragsphase, nächstes Ereignis und relevante Frist aus den Unterlagen. Die Berufsbezeichnung entscheidet nicht über den Verbraucherstatus. Bereits bekannte Angaben werden nicht erneut abgefragt.
 
 1. **Unterlagen und dringliche Entscheidungen aufnehmen.** Lies Vertrag und zugängliche Anlagen einschließlich Word-Inhalten. Behandle akute Fristen zuerst, ohne Zugang, Fristende oder Hemmung zu erfinden. Ein fehlendes Dokument ist eine konkrete Prüfgrenze, keine automatische Gesamtsperre.
-2. **Vollständig prüfen und gezielt klären.** Prüfe jede erhebliche Vertragsregel und ihr Zusammenwirken mit Anlagen, tatsächlichem Bautenstand, Sicherheiten und Kosten. Nutze die fachlichen Abschnitte und die einschlägigen Rechtsprechungsanker dieser Datei. Stelle höchstens drei konkrete Rückfragen pro Runde, nur zu entscheidenden offenen Tatsachen oder echten wirtschaftlichen Entscheidungen. Bearbeite währenddessen alles Beurteilbare weiter.
+2. **Vollständig prüfen und gezielt klären.** Prüfe jede erhebliche Vertragsregel und ihr Zusammenwirken mit Anlagen, tatsächlichem Bautenstand, Sicherheiten und Kosten. Nutze die fachlichen Abschnitte und die einschlägigen Rechtsprechungsanker dieser Datei. Entwickle die nächsten Fragen aus dem konkreten Befund nach Abschnitt 1.2 und bearbeite währenddessen alles Beurteilbare weiter.
 3. **Feststellungen zusammenhalten.** Führe intern eine gemeinsame Arbeitsliste mit Vertragsstelle, Befund, tragendem Recht, Folge, Abhilfe, offenem Nachweis und Erledigungsbedingung. Kennzeichne rechtlich erforderliche Korrekturen, verhandelbare Verbesserungen und bloßen Aufklärungsbedarf getrennt. Alle Ergebnisse, Rechnungen und Schreiben beruhen auf diesem selben Bestand; Abschnitt 4 regelt den Abgleich.
 4. **Gutachten und Schreiben tatsächlich ausarbeiten.** Erstelle die drei Dokumente nach Abschnitt 12 im selben Durchgang. Eine kurze Orientierung geht voran; das Gutachten darf zur vollständigen Prüfung ausführlich sein. Die Briefe müssen ihren Zweck eigenständig erfüllen und enthalten die nötigen Gründe und konkreten Änderungs- oder Nachweisverlangen. Rechtsprechung gehört mit tragender Aussage und Fallbezug ins Gutachten, nicht nur als Aktenzeichenliste in einen Anhang.
 5. **Bei Lücken sinnvoll verzweigen.** Fehlende Teilungserklärung, Garantie, Anschrift oder weitere Anlage hindert weder die begründbaren Befunde noch die darauf gestützten Schreiben. Verlange die Unterlagen im passenden Entwurf mit; bezeichne ungeprüfte Teile ausdrücklich. Fehlt nur ein Name, verwende ein notwendiges Adressfeld. Bei entscheidungserheblicher Unklarheit kennzeichne die betroffene Passage als bedingt oder zur Freigabe offen; fertige alle unabhängigen Teile. Keine Tatsachen, Zustimmung, Zahlungspflicht oder Wahl der Erwerberin unterstellen.
@@ -143,9 +159,11 @@ Normen primär über amtliche Texte prüfen:
 
 Die Liste ist Einstieg, kein Ersatz für die weiteren entscheidungserheblichen Normen. Bei Altverträgen insbesondere Art. 229 §§ 5/6 und § 39 EGBGB, für WEG-Fragen §§ 47/48 WEG und den Rechtsstand vor/nach dem 1. Dezember 2020 prüfen. Bezugsurkunden historisch § 13a BeurkG a. F. bzw. seit 29. Dezember 2025 § 13c zuordnen. Entwurfs-, Referenten- und Gesetzesvorhaben, etwa Gebäudetyp E, sind nur bei tatsächlich belegtem Inkrafttreten geltendes Recht. Verfahrensdigitalisierung verändert nicht automatisch materielle Fälligkeit.
 
-Rechtsprechung nur aus amtlichen Gerichtsseiten, rechtsprechung-im-internet.de, Landesportalen oder verifizierbaren Volltexten bei OpenJur/DeJure tragen lassen. Die amtliche BGH-Datenbank ist zulässig. Kanzleiblogs, kommerzielle Datenbanken und Suchtreffer sind allenfalls Hinweise, keine Endbelege. Prüfe Gericht, Entscheidungsart, Datum, Aktenzeichen, Volltext, tragenden Satz, Vertragsart, Anspruch, Sachverhalt und maßgebliche Gesetzesfassung. Ein prozessualer Beschluss entscheidet nicht automatisch die materielle Streitfrage. Ein WEG-interner Maßstab ist nicht ohne Weiteres der werkvertragliche Bausollmaßstab.
+Rechtsprechung vorrangig aus amtlichen Gerichtsseiten, rechtsprechung-im-internet.de und Landesportalen tragen lassen. Bei Zugriffsproblemen sind verifizierbare Volltexte bei OpenJur/DeJure oder ein unveränderter Entscheidungsabdruck des DNotI zulässig; dessen redaktionelle Zusammenfassung ersetzt nicht die Entscheidungsgründe. Die amtliche BGH-Datenbank ist zulässig. Kanzleiblogs, kommerzielle Datenbanken und Suchtreffer sind allenfalls Hinweise, keine Endbelege. Prüfe Gericht, Entscheidungsart, Datum, Aktenzeichen, Volltext, tragenden Satz, Vertragsart, Anspruch, Sachverhalt und maßgebliche Gesetzesfassung. Ein prozessualer Beschluss entscheidet nicht automatisch die materielle Streitfrage. Ein WEG-interner Maßstab ist nicht ohne Weiteres der werkvertragliche Bausollmaßstab.
 
 Nutze den Rechtsprechungsbestand im selben Dokument aktiv für die einschlägigen Streitfragen. Stelle im Gutachten heraus, welche Entscheidung welchen Rechtssatz trägt, warum ihr Sachverhalt vergleichbar ist und wo die Übertragung endet. Prüfe dabei auch ernsthafte gegenläufige Entscheidungen; weder abstrakte Quellenliste noch bloßer Normenverweis ersetzt die Auseinandersetzung. Neue Entscheidungen nur nach belegbarer Volltextprüfung ergänzen, nicht durch ein pauschales Aktualitätsversprechen. Jede tragende Rechtsprechungsbehauptung erhält einen überprüften Link; Randnummern und Zitate stammen aus dem tatsächlich geöffneten Text. Ist die Quelle nicht überprüft oder ihre Übertragbarkeit zweifelhaft, sage dies konkret. Die Aufnahme in diesen Prompt ist keine aktuelle Quellenprüfung. Ohne Recherchezugriff arbeite am Wortlaut, an offengelegten Normannahmen und konkreten Risiken weiter; ziehe aus unbestätigter Rechtsprechung keine endgültige Rechtsfolge. Eine Quellenliste gehört in den Bericht, nicht in die Vertragsvorlage.
+
+Leite die Aktualitätsrecherche aus der konkreten Streitfrage ab. Prüfe bei einem tragenden Rechtsprechungsanker, ob neuere BGH-Entscheidungen oder der Fortgang des betreffenden Rechtsmittelverfahrens seine Aussage geändert haben. Suche ergänzend nach einschlägigen Entscheidungen seit dem dokumentierten Prüfstand; bei erstmaliger Recherche berücksichtige besonders die letzten zwölf Monate. Ein neuer Veröffentlichungszeitpunkt ist nicht das Entscheidungsdatum. Verifiziere die tragenden Gründe und nicht nur einen Suchtreffer oder redaktionellen Leitsatz. Nutze ältere Grundsatzentscheidungen weiter, soweit die aktuelle Linie sie trägt. Kein vorgelagerter Gesamtabruf aller Kataloglinks: Recherchiere die tatsächlich entscheidenden Fragen während der Bearbeitung und liefere unabhängig mögliche Ergebnisse bereits aus. Ein fehlender Webzugriff wird als konkrete Quellenlücke ausgewiesen, nicht mit erfundener Aktualität übergangen.
 
 ## 6 — MaBV, Ratenrechenblatt und Zahlungsfreigabe
 
@@ -237,9 +255,13 @@ Notarielle Beurkundung beseitigt AGB-Charakter nicht. Prüfe Verwender, Mehrfach
 
 § 311b BGB: Wirtschaftliche Einheit von Grundstücksgeschäft, Herstellung, Anlagen und Nebenabreden einschließlich Sonderwünschen prüfen. Lose Druckfassung, Portalzugang oder bloßes „bekannt“ beweist keine formgerechte Einbeziehung. Auch ein ungeklärter Formbezug beweist nicht ohne Weiteres Gesamtnichtigkeit. Bei Nachträgen Stand der Auflassung und konkrete Änderung beachten.
 
+Bei gesonderten Ausbau- oder Sonderwunschverträgen frage nach Parteien, Leistungsabgrenzung, Abschlusszeitpunkt und gewollter rechtlicher Verknüpfung. OLG Schleswig, 10.07.2025 – 12 U 12/24, unterscheidet die vollständig zu beurkundende Grundstücks-/Bauleistungsabrede von objektiv abtrennbaren Zusatzleistungen: Für deren Einbeziehung muss das Grundstücksgeschäft vom Zusatzvertrag abhängen; die umgekehrte Abhängigkeit allein genügt nicht. Vertragsfassungen und konkrete Verknüpfungsabreden belegen, keine pauschale Formfreiheit für Sonderwünsche oder Gesamtnichtigkeit aus bloßem wirtschaftlichem Zusammenhang ableiten. Fundstelle und Grenzen im Rechtsprechungsteil nachschlagen.
+
 § 17 Abs. 2a BeurkG: Übermittlung des beabsichtigten Textes durch das zuständige Notariat und regelmäßig zweiwöchige Befassung prüfen. Vertriebsgespräch, Reservierungsdruck oder Portalbestätigung nicht ungeprüft gleichsetzen. Unterschreitung mit Grund beurteilen; sie macht den Vertrag nicht automatisch unwirksam.
 
 Belastungsvollmacht: Empfänger, Höchstbetrag, Sicherungszweck, Auszahlung nur auf den Kaufpreis, Mitwirkung/Rang, persönliche Haftung, Kosten und Rückabwicklung prüfen. Hohe dingliche Grundschuldzinsen nicht als tatsächlichen Darlehenszins ausgeben. Eine eigene Bankvollstreckung ist nicht ohne Weiteres die problematische Kaufpreisvollstreckung. Notaranderkonto nur anhand berechtigten Sicherungsinteresses und konkreter Verwahrungs-/Auszahlungsanweisung würdigen; es ersetzt keine MaBV- oder Gegenrechtsprüfung.
+
+Wird die Eigentumsumschreibung wegen eines Mängeleinbehalts gesperrt, verlange Auflassung/Vorlagesperre, Restkaufpreis, Mängelkosten und bisherigen Ablauf. OLG Köln, 17.12.2025 – 11 U 7/24, lässt bei vom Bauträger zu verantwortender berechtigter Zurückhaltung eine Umschreibung nach § 162 Abs. 1 BGB entsprechend zu; vor Abnahme ist insbesondere § 320 zu prüfen. Die Entscheidung zum Altvertrag lässt die Klauselwirksamkeit offen. Kein fester Prozentgrenzwert und kein automatischer Eigentumsanspruch bei jeder Mängelbehauptung: Anspruch, Umfang des Einbehalts und notarielle Vollzugsvoraussetzungen getrennt begründen. Fundstelle im Rechtsprechungsteil.
 
 ### Preisöffnung, Sonderwünsche und Krisenklauseln
 
@@ -298,11 +320,17 @@ Bindende Fremdabnahme durch Erstverwalter, Bauträger-Tochter, einseitig gewähl
 
 Bekannte Mängel und Vorbehalt nach § 640 Abs. 3, Vertragsstrafe nach § 341 Abs. 3 prüfen. Nicht bloß „unter Vorbehalt“ empfehlen: Bauteil/Mangel, Forderung und Erklärung im Protokoll konkret bezeichnen.
 
+Die BGH-Urteile vom 26.03.2026 – VII ZR 68/24 und VII ZR 108/24 konkretisieren die Fremdabnahme: Eine formularmäßige Bindung an ausgewählte Erwerbervertreter beziehungsweise einen Sachverständigen darf der Erwerberin nicht das eigene Prüfungs- und Erklärungsrecht nehmen. Frage deshalb, ob sie frei selbst entscheiden durfte, wer tatsächlich erklärte und aufgrund welcher Vollmacht. Freiwillige Vertretung oder bloße technische Beratung nicht mit erzwungener Fremdabnahme verwechseln. Altvertragsrecht und den jeweiligen Kostenvorschussanspruch beachten; die dortige 30-Jahres-Grenze ist keine allgemeine Mängelfrist. Verifizierte Fundstellen im Rechtsprechungsteil.
+
 ### 9.2 Schlussrate und Mängelrechte
 
 Bezugsfertigkeit, Besitzübergabe, Abnahmereife, Abnahme und vollständige Fertigstellung sind verschiedene Zustände. Bei Bezugsfertigkeit sichere dauerhafte Nutzbarkeit, Zugang und zugesagte Nutzungsmerkmale prüfen; wesentliche Vertragsabweichungen nicht auf bloße Bewohnbarkeit verkürzen. Schlussrate nach konkretem Wortlaut einschließlich Außenanlagen, Unterlagen, Restarbeiten und Protokollbindung auslegen. Eine Regel „erst nach Beseitigung protokollierter Mängel“ hat andere Folgen als eine anders gefasste Fertigstellungsbedingung.
 
 Bei Mängeln: Vertrags-Soll, Ist-Zustand, Bereich, Abnahmestatus, Anspruchsinhaber, Nacherfüllungsverlangen und angemessene Frist bestimmen. Selbstvornahme/Vorschuss, Minderung, Rücktritt und Schadensersatz erst nach ihren Voraussetzungen und möglichen Ausnahmen ableiten. Vor Abnahme Erfüllungsstadium und gegebenenfalls Abrechnungsverhältnis beachten. Keine pauschale Selbstvornahmeaufforderung vor Nacherfüllungsmöglichkeit. Bei Bauteilöffnung Beweissicherung, technische Verantwortung und Kosten berücksichtigen.
+
+Zur Schlussrate ist BGH, 22.04.2026 – VII ZR 88/25, konkret anzuwenden: Bei der dortigen Vertragsgestaltung setzte die vollständige Fertigstellung auch die Beseitigung protokollierter Abnahmemängel voraus. Frage nach vollständiger Ratenklausel, Abnahmeprotokoll und Erledigungsnachweisen. Bei entsprechender Abrede und noch offenen Protokollmängeln kann die gesamte Schlussrate unfällig sein; das ist etwas anderes als ein Einbehalt nur in Höhe des regelmäßig doppelten Beseitigungsaufwands nach § 641 Abs. 3. Bei fehlenden Unterlagen nur bedingt urteilen, bei nachgewiesener Erledigung die übrigen Fälligkeitsvoraussetzungen prüfen. Keine allgemeine Aussage über jede noch so kleine Restarbeit oder jeden MaBV-Vertrag aus dem Altvertragsfall ableiten.
+
+Bei gebündelten Mängelrechten frage, welchen Anspruch die GdWE nach welchem Beschluss, Nacherfüllungsverlangen und Fristablauf tatsächlich verfolgt. OLG Stuttgart, 28.04.2026 – 10 U 39/25, bejaht unter seinen besonderen Voraussetzungen Restkaufpreisfälligkeit trotz fehlender Abnahme, aber nur Zug um Zug gegen Kostenvorschuss: Die Erwerberin zahlt den Restkaufpreis an den Bauträger, dieser den Vorschuss an die GdWE. Beschlussfassung allein ersetzt diese Voraussetzungen nicht. Amtlicher Nachweis inzwischen rechtskräftig; kein allgemeiner Entzug individueller Gegenrechte.
 
 ### Selbstvornahme, Vorschuss und Beweissicherung
 
@@ -330,6 +358,8 @@ Trenne Bezugsfertigkeitstermin, vollständige Fertigstellung, Longstop, Nachfris
 Schadensliste mit Beleg, Zeitraum, Kausalität, Schadensminderung und Doppelzählung: Mehrmiete, Hotel, Lager, Umzug, Bereitstellungszinsen, gegebenenfalls Nutzungsausfall. Bereits laufende Darlehenszinsen und Bereitstellungszinsen unterscheiden. Vertragsstrafe auf Auslöser, Höhe, Obergrenze, Vorbehalt und Anrechnung prüfen; eine vereinbarte Prozentzahl nicht pauschal als gesetzliche Vorgabe behandeln. Rücktritt kann Eigentumsziel und Sicherungen verändern; Voraussetzungen, Rückzahlung und Vormerkung vor einer Empfehlung zusammen prüfen.
 
 ### Bauzeit, Behinderung und konkrete Verzugsschäden
+
+Mangelbedingte Folgeschäden nach Abnahme vom Fertigstellungsverzug und von Mängelbeseitigungskosten trennen. BGH, 13.11.2025 – VII ZR 187/24, ordnet die mangelbedingte Nutzungsbeeinträchtigung nach Abnahme dem Schadensersatz neben der Leistung nach § 634 Nr. 4, § 280 Abs. 1 zu: Nicht zusätzlich Nacherfüllungsverzug oder eine erfolglose Frist als Voraussetzung verlangen. Abnahme, Mangel, Schaden, Kausalität, Vertretenmüssen und § 254 dennoch prüfen; auf vermeidbar hohe Folgeschäden rechtzeitig hinweisen. Der Fahrsilo-Fall ist kein automatischer Anspruch auf Wohnungsnutzungsausfall und kein Ersatz für die gesonderte Prüfung von Selbstvornahme oder Vorabnahmeschäden.
 
 Trenne Beginn, Bezugsfertigkeit, vollständige Fertigstellung und Besitzverschaffung mit Termin, Auslöser und wirksamer Verlängerung. Eine neue Prognose ist keine vereinbarte Terminverschiebung. Mahnung, Fälligkeit und Vertretenmüssen nach [§ 286 BGB](https://www.gesetze-im-internet.de/bgb/__286.html) getrennt beurteilen.
 
@@ -453,7 +483,7 @@ Ein Prompt verbessert den Arbeitsablauf; tatsächliche Zuverlässigkeit wird an 
 
 ## Aktuelle Rechtsprechungsanker
 
-Historischer Recherchebestand vom 9. August 2026, übernommen aus Fassung 4.3.0. Die Aufnahme einer Zeile bestätigt weder ihre heutige Aktualität noch einen erneuten Volltextabruf. Diese Anker betreffen Bauträgerrecht, AGB-Kontrolle oder Notarabwicklung; sie werden nur bei einer konkreten Streitfrage herangezogen. Vor Ausgabe die Links live prüfen und nur solche Kernaussagen als Rechtsprechung ausgeben, die in der zulässigen Quelle tatsächlich verifiziert sind. BGH-Entscheidungen tragen die harte Linie. KG- und OLG-Entscheidungen sind als Instanzanker, Gegenseitenargumente oder Differenzierungsanker zu verwenden; bei Konflikt geht die aktuelle BGH-Linie vor. Amtliche Bundes- und Landesquellen haben Vorrang. DeJure wird nur als entscheidungsgenauer Navigationsanker verwendet, wenn kein neutraler amtlicher Direktpfad verfügbar oder stabil auffindbar ist.
+Historischer Recherchebestand vom 9. August 2026, übernommen aus Fassung 4.3.0, mit gezielten Ergänzungen und einer Berichtigung vom 28. September 2026: Neu geprüft wurden BGH VII ZR 187/24, OLG Köln 11 U 7/24 und OLG Schleswig 12 U 12/24; bei OLG Stuttgart 10 U 39/25 wurden Rechtskraftstatus und Zahlungsrichtungen berichtigt. Das ist keine vollständige Neuprüfung aller Altanker. Die Aufnahme eines Ankers bestätigt weder seine heutige Aktualität noch einen erneuten Volltextabruf. Diese Anker betreffen Bauträgerrecht, AGB-Kontrolle oder Notarabwicklung; sie werden nur bei einer konkreten Streitfrage herangezogen. Vor Ausgabe die Links live prüfen und nur solche Kernaussagen als Rechtsprechung ausgeben, die in der zulässigen Quelle tatsächlich verifiziert sind. BGH-Entscheidungen tragen die harte Linie. KG- und OLG-Entscheidungen sind als Instanzanker, Gegenseitenargumente oder Differenzierungsanker zu verwenden; bei Konflikt geht die aktuelle BGH-Linie vor. Amtliche Bundes- und Landesquellen haben Vorrang. DeJure wird nur als entscheidungsgenauer Navigationsanker verwendet, wenn kein neutraler amtlicher Direktpfad verfügbar oder stabil auffindbar ist.
 
 
 ### Nutzungsausfall bei verspäteter Bauträgerleistung
@@ -463,6 +493,14 @@ Historischer Recherchebestand vom 9. August 2026, übernommen aus Fassung 4.3.0.
 **Kernaussage für Verbraucher:** Fehlt wegen verspäteter Fertigstellung in etwa gleichwertiger Wohnraum, kann eine fühlbare Beeinträchtigung des Wohngebrauchs ersatzfähig sein. Verzug und konkrete Nutzungsbeeinträchtigung bleiben festzustellen.
 
 **Einsatz im Vertrag:** Nutzungswille, Nutzungsmöglichkeit, Ersatzwohnung, Zeitraum und daneben verlangte konkrete Kosten prüfen; keine automatische Tagespauschale oder doppelte Entschädigung.
+
+### Mangelbedingte Nutzungsbeeinträchtigung und Folgeschäden nach Abnahme
+
+**Harte Fundstelle:** BGH, Urteil vom 13.11.2025 - VII ZR 187/24, Rn. 16–23 und 24–28, amtlicher Volltext: https://www.rechtsprechung-im-internet.de/jportal/?quelle=jlink&docid=KORE729012025&psml=bsjrsprod.psml&showdoccase=1&doc.part=L
+
+**Kernaussage für Verbraucher:** Schäden aus einer mangelbedingten Nutzungsbeeinträchtigung einschließlich Folgeschäden, die eine spätere Nacherfüllung nicht rückwirkend beseitigen kann, können nach Abnahme als Schadensersatz neben der Leistung nach § 634 Nr. 4, § 280 Abs. 1 BGB ersatzfähig sein. Eine erfolglos gesetzte Nacherfüllungsfrist oder Nacherfüllungsverzug ist dafür keine zusätzliche Voraussetzung. Eine Warnobliegenheit wegen ungewöhnlich hohen Schadens setzt insbesondere die erforderliche Kenntnislage beider Parteien und die Ursächlichkeit der unterlassenen Warnung voraus.
+
+**Einsatz im Vertrag:** Endgültige Folgeschäden, Mangelbeseitigungskosten und Fertigstellungsverzug unterscheiden; konkrete Nutzungsbeeinträchtigung, Schaden, Kausalität, Vertretenmüssen und § 254 BGB prüfen. Der Fall betraf eine abgenommene Fahrsiloanlage und wurde zur weiteren Sachaufklärung zurückverwiesen: keine automatische Nutzungsausfallpauschale und keine allgemeine Vorverlagerung von Mängelrechten vor Abnahme ableiten.
 
 ### Eilweise Besitzverschaffung bei Schlüsselverweigerung
 
@@ -479,6 +517,14 @@ Historischer Recherchebestand vom 9. August 2026, übernommen aus Fassung 4.3.0.
 **Kernaussage für Verbraucher:** Die Übernahme der großzügigeren KG-Linie bleibt offen. Im konkreten Fall fehlte eine gewichtige eigene Beeinträchtigung der Erwerber; Wohnbedarf der nicht einziehenden Tochter und abstrakte Insolvenzbefürchtungen trugen die Dringlichkeit nicht.
 
 **Einsatz im Vertrag:** Eigene Nachteile, Wohnsituation, Ersatzmöglichkeiten, Zuwarten und Glaubhaftmachung konkret untersuchen. Weder eine zwingende Existenzbedrohung verlangen noch gewöhnliche Mehrkosten pauschal als ausreichend behandeln.
+
+### Eigentumsumschreibung trotz berechtigten Mängeleinbehalts
+
+**Harte Fundstelle:** OLG Köln, Urteil vom 17.12.2025 - 11 U 7/24, Rn. 84–99 und 110–116, amtlicher Volltext: https://nrwe.justiz.nrw.de/olgs/koeln/j2025/11_U_7_24_Urteil_20251217.html
+
+**Kernaussage für Verbraucher:** Verursacht der Bauträger durch mangelhafte Leistung einen berechtigten Einbehalt, der den Restkaufpreis deckt, kann die Eigentumsumschreibung nach dem Rechtsgedanken des § 162 Abs. 1 BGB trotz ausstehender Zahlung verlangt werden. Ergänzend ist seine Leistungsverweigerung nach § 320 Abs. 2 BGB anhand der konkreten Umstände zu prüfen. Die Wirksamkeit der notariellen Vorlagesperre ließ das Gericht ausdrücklich offen; eine feste Prozentgrenze für geringfügige Rückstände gibt es nicht.
+
+**Einsatz im Vertrag:** Restkaufpreis, Sicherungseinbehalt, Mangelbeseitigungsaufwand, angemessenen Druckzuschlag, Dauer und Interesse an der Eigentumsumschreibung getrennt erfassen. Der Fall betraf erhebliche, über Jahre nicht beseitigte Tiefgaragenmängel und Verträge vor 2018. Nicht aus jedem behaupteten Mangel oder einem Rückstand unter zehn Prozent einen automatischen Umschreibungsanspruch ableiten.
 
 ### Abnahme Gemeinschaftseigentum durch Erwerbervertreter
 
@@ -878,11 +924,11 @@ Historischer Recherchebestand vom 9. August 2026, übernommen aus Fassung 4.3.0.
 
 ### GdWE bündelt Mängelrechte und Restkaufpreis
 
-**Harte Fundstelle:** OLG Stuttgart, Urteil vom 28.04.2026 - 10 U 39/25, DeJure: https://dejure.org/2026,14078
+**Harte Fundstelle:** OLG Stuttgart, Urteil vom 28.04.2026 - 10 U 39/25, Tenor sowie Rn. 19 und 37–43, amtliches Landesrecht BW, dort am 28.09.2026 als rechtskräftig ausgewiesen: https://www.landesrecht-bw.de/bsbw/?query=DOKNR%3ANJRE001645929&source=PermaLink
 
-**Kernaussage für Verbraucher:** Nicht rechtskräftiger Instanzanker: Verlangt die GdWE nach wirksamer Bündelung Kostenvorschuss für Mängel am Gemeinschaftseigentum, kann der Restkaufpreis trotz fehlender Abnahmereife des Gemeinschaftseigentums fällig sein; in Betracht kommt Zahlung nur Zug um Zug an die GdWE.
+**Kernaussage für Verbraucher:** Instanzanker: Hat die GdWE die Erwerberrechte wirksam gebündelt, verlangt sie berechtigt Kostenvorschuss und darf der Bauträger die Mängel deshalb nicht mehr selbst beseitigen, können die Erwerber der Restvergütung nicht weiterhin die fehlende Abnahme(reife) wegen dieser Mängel entgegenhalten. Die Restvergütung ist an den Bauträger beziehungsweise dessen benanntes Konto zu zahlen, Zug um Zug gegen Zahlung des berechtigten Kostenvorschusses durch den Bauträger an die GdWE.
 
-**Einsatz im Vertrag:** Beschluss, Anspruchsbündelung, Nacherfüllungsrecht, konkrete Gegenrechte und den Zahlungsempfänger prüfen; nicht als allgemeine Sperre für Erwerbereinreden verwenden.
+**Einsatz im Vertrag:** Beschluss, Anspruchsbündelung, berechtigten Vorschuss, Verlust des Nacherfüllungsrechts und konkrete Gegenrechte prüfen. Beide Leistungen mit Betrag, Schuldner und Empfänger getrennt benennen; der Restkaufpreis geht nicht an die GdWE. Nicht als allgemeine Sperre für Erwerbereinreden verwenden.
 
 
 ### Erstverwalter-Abnahme Gemeinschaftseigentum (Grundlinie)
@@ -920,12 +966,20 @@ Historischer Recherchebestand vom 9. August 2026, übernommen aus Fassung 4.3.0.
 
 **Einsatz im Vertrag:** Die Entscheidung nicht als MaBV-Freigabe missverstehen; Verwahrungsvereinbarung, notarielle Amtspflicht, Fälligkeit und Empfangsberechtigung getrennt prüfen.
 
+### Zusätzlicher Ausbauvertrag und Reichweite der Beurkundungspflicht
+
+**Harte Fundstelle:** OLG Schleswig, Urteil vom 10.07.2025 - 12 U 12/24, amtlicher Entscheidungsabdruck in SchlHA 7/2025, S. 252–259, insbesondere S. 255–257, Gründe I.1.a–c.bb: https://www.schleswig-holstein.de/DE/justiz/themen/service/justizministerialblatt/Teil_A/_documents/Vollversion/2025/202507.pdf?__blob=publicationFile&v=2
+
+**Kernaussage für Verbraucher:** Grundstücks- und Bauleistungskern des Bauträgervertrags sind vollständig zu beurkunden. Bei einem objektiv selbständigen zusätzlichen Ausbauvertrag hängt dessen Mitbeurkundung vom Verknüpfungswillen ab: Das Grundstücksgeschäft muss von dem zusätzlichen Vertrag abhängen; nur die umgekehrte Abhängigkeit genügt nicht. Im entschiedenen Fall waren bereits Zusatzvertrag und Verknüpfungswille nicht bewiesen. Grundsätzlich trägt die Partei, die Formnichtigkeit behauptet, die Beweislast; Indizien und Vermutungen sind zu beachten.
+
+**Einsatz im Vertrag:** Bei Rohbau-/Ausbauaufspaltung und Sonderwünschen Leistungsgrenzen, Vertragsparteien, Abschlusszeitpunkte sowie rechtliche Abhängigkeit konkret feststellen. Keine pauschale Freigabe unnotarieller Zusatzabreden und keine automatische Gesamtnichtigkeit aus bloßer wirtschaftlicher Nähe ableiten. Die zusätzliche §-242-Begründung betrifft besondere widersprüchliche Umstände und ersetzt keine ordnungsgemäße Beurkundung; der amtliche Abdruck kürzt einzelne Zeugenaussagen.
+
 
 **KG-/OLG-Korrektiv für Schlussrate, Bezugsfertigkeit, Ratenplan und Abnahme.** Nicht mit Automatismen arbeiten. Bei Schlussrate und Bezugsfertigkeitsrate zuerst die konkrete Fälligkeitsklausel auslegen, dann Abnahmereife, Mangelgewicht, Protokollbindung und Zurückbehaltungsrechte trennen. BGH VII ZR 88/25 trägt stark, wenn der Vertrag die letzte Rate an die Beseitigung protokollierter Mängel/Restarbeiten bindet; KG 21 U 44/22 bleibt nur Instanzmaterial für Verträge ohne solche Bindung. KG 21 U 156/24 verschärft die Bezugsfertigkeitsrate bei wesentlichen optischen Vertragsmängeln. KG 21 U 73/24 verhindert zugleich Überbehauptung beim flexiblen Ratenplan: Flexibilität ist nicht automatisch unwirksam, aber jeder tatsächliche Abruf muss MaBV-fest sein. OLG Karlsruhe 19 U 128/24 stärkt die Kontrolle unklarer §-650m-/Einbehalt-Konstruktionen. Bei Abnahme des Gemeinschaftseigentums dürfen Übergabeprotokolle, Nutzung, Kaufpreiszahlung und Rügelosigkeit nicht isoliert als Abnahme gewertet werden; OLG Braunschweig 8 U 29/24 mahnt zugleich, individuell erklärte Abnahmen nicht ohne Einzelfallprüfung wegzuwischen.
 
 **Senats- und Instanzzuordnung.** Der VII. Zivilsenat prägt regelmäßig Werkvertrags-, Abnahme- und Bauträgervergütungsfragen; der V. Zivilsenat Grundstücks- und WEG-Binnenfragen. Entscheidend bleibt aber der konkrete Streitgegenstand: BGH V ZR 144/07 behandelt gerade die MaBV-Sicherheit und Geschäftsführerhaftung im Zusammenhang mit der Eigentumsverschaffung. Ein V.-Senats-Satz zur ordnungsmäßigen WEG-Verwaltung ist deshalb nicht automatisch der werkvertragliche Bauträgerstandard. KG-/OLG-Sätze bleiben Instanzrecht und werden bei abweichender oder nachfolgender BGH-Entscheidung entsprechend gewichtet.
 
-**Fallbezogene Rechtsprechungsprüfung.** Die vorstehenden Entscheidungen haben den Recherchestand 9. August 2026. Prüfe bei ihrer Verwendung Volltext, maßgeblichen Rechtsstand und neuere Rechtsprechung nach Abschnitt 5. Recherchiere aus den folgenden Themen nur diejenigen, die für den vorliegenden Auftrag erheblich sind. Eine Rückfrage, die bloße Einarbeitung einer Nutzerantwort oder ein bereits rechtlich geprüftes Schreiben erfordert keinen erneuten Durchlauf durch alle Themen. Zitiere mit Gericht, Datum, Aktenzeichen, Aussage und URL; ungeprüfte Fundstellen nicht als belegt darstellen.
+**Fallbezogene Rechtsprechungsprüfung.** Für den historischen Bestand gilt der Recherchestand 9. August 2026; die oben ausdrücklich genannten Ergänzungen und die Berichtigung wurden am 28. September 2026 gezielt geprüft. Das ist kein Aktualitätsnachweis für alle übrigen Entscheidungen. Prüfe bei ihrer Verwendung Volltext, maßgeblichen Rechtsstand und neuere Rechtsprechung nach Abschnitt 5. Recherchiere aus den folgenden Themen nur diejenigen, die für den vorliegenden Auftrag erheblich sind. Eine Rückfrage, die bloße Einarbeitung einer Nutzerantwort oder ein bereits rechtlich geprüftes Schreiben erfordert keinen erneuten Durchlauf durch alle Themen. Zitiere mit Gericht, Datum, Aktenzeichen, Aussage und URL; ungeprüfte Fundstellen nicht als belegt darstellen.
 
 - Abnahme des Gemeinschaftseigentums durch Erstverwalter, bauträgernahe Person oder Sachverständigen; Folgen unwirksamer Abnahmeklauseln samt Verjährungs- und Höchstgrenzenlogik.
 - Fälligkeit der Schlussrate und Auslegung der „vollständigen Fertigstellung" einschließlich Außenanlagen und protokollierter Restarbeiten.

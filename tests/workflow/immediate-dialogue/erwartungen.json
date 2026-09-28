@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "evaluation_only": true,
+  "not_model_input": true,
+  "actual_runs": [],
+  "acceptance": {
+    "products": ["gutachten", "mandantenschreiben", "externes_schreiben"],
+    "first_turn": "Bereits die erste tatsächliche Antwort muss eine fallbezogene Prüfung der vorliegenden Auszüge, begründete Rückfragen und alle drei ausformulierten Produkte enthalten. Der begrenzte Unterlagenstand muss ihren Umfang und gegebenenfalls Bedingungen erkennen lassen. Ein Fragenkatalog, ein Arbeitsplan oder bloß angekündigte Produkte genügen nicht.",
+    "dialogue": "Fragen anhand ihrer Bedeutung für die Entscheidung am 01.10.2026 auswählen und kurz begründen; höchstens drei konkrete Fragen pro Runde. Antworten in den bisherigen Fall und alle betroffenen Produkte einarbeiten. Bekannte Angaben nicht erneut erheben und fehlende Angaben nicht erfinden.",
+    "research": "An der konkreten Fremdabnahme und am Fristbeginn aktuelle einschlägige Rechtsprechung recherchieren und tragende Entscheidungen im geöffneten Volltext prüfen. Gericht, Datum, Aktenzeichen, überprüfbaren Link, tragenden Rechtssatz und konkrete Übertragbarkeit dokumentieren; nach neuerer Rechtsprechung bis zum Fallstichtag 28.09.2026 suchen und spätere Erkenntnisse gesondert kennzeichnen. Ein älteres Grundsatzurteil bleibt bei Passung zulässig; Aktualität weder durch Aktenzeichenlisten noch durch beliebige junge Urteile vortäuschen. Fehlenden Zugriff als Grenze festhalten, keine erfolgreiche Recherche unterstellen.",
+    "continuity": "In der zweiten Antwort die bereits erklärte Unterzeichnung am 22.09.2026 und den Sonderwunschnachtrag am 01.10.2026 übernehmen. Die unangenommene Streichung von § 8 bleibt ein Vorschlag; § 9 bleibt unverändert gesondert zu prüfen. Alle weiterhin offenen Unterlagen und erheblichen Befunde erhalten und die drei Produkte entsprechend aktualisieren.",
+    "passing_rule": "Jedes geforderte Verhalten am tatsächlichen Antworttext mit Fundstelle bewerten. Kritische Fehler verhindern das Bestehen. Statische Fixturetests belegen weder einen durchgeführten Modelllauf noch rechtliche Richtigkeit; bei fehlendem Recherchezugriff ist das Rechercheziel ausdrücklich nicht verifiziert."
+  },
+  "cases": [
+    {
+      "id": "ID01",
+      "turns": [
+        {
+          "turn": 1,
+          "required": [
+            "Unmittelbar fallbezogen bei den vorgelegten §§ 8, 9 und 11 und dem Termin am 01.10.2026 beginnen; bereits mögliche Feststellungen und den nächsten konkreten Prüfschritt nennen.",
+            "Aktiv klären, ob der Hauptvertrag bereits beurkundet wurde und was im kommenden Notartermin ergänzt werden soll; die Bedeutung für bestehende Rechte oder noch zu vereinbarende Änderungen erklären.",
+            "Weitere Fragen auf entscheidende offene Tatsachen oder Nachweise begrenzen und ihren Zweck erklären; beispielsweise Erwerbszweck oder vollständige maßgebliche Vertragsunterlagen. Anna Berg, Parkbogen GmbH, Preis und Notariat stehen bereits fest.",
+            "Das Gutachten, das verständliche Schreiben an Anna Berg und einen sachlich passenden externen Entwurf bereits ausarbeiten. Die offene Vertragsphase und fehlende Gesamtakte als konkrete Prüfgrenzen oder Bedingungen darstellen; keine angeblich vollständige Prüfung der ungelesenen Akte behaupten.",
+            "Fremdabnahme durch den vom Bauträger bestellten Erstverwalter und den daran anknüpfenden Fristbeginn getrennt untersuchen; fünf Jahre als bloße Dauer beseitigen die Frage nach dem maßgeblichen Beginn nicht.",
+            "Die tragende Rechtsprechung nach acceptance.research konkret recherchieren und auf die vorliegenden Regelungen anwenden; Quellenkenntnis nicht durch bloße Ankündigung einer späteren Recherche ersetzen."
+          ],
+          "forbidden": [
+            "Nur Rückfragen, Unterlagenliste, Bearbeitungsplan oder ein Angebot späterer Gutachten und Schreiben liefern.",
+            "Den Termin ohne Rückfrage als erstmalige Beurkundung oder als bereits feststehende Vertragsänderung behandeln.",
+            "Eine vollständige Gesamtprüfung verlangen, bevor die Auszüge geprüft und bedingte Entwürfe erstellt werden.",
+            "Aktuelle Rechtsprechung nur als Liste unüberprüfter Aktenzeichen erwähnen oder ungeöffnete Quellen als geprüft darstellen."
+          ],
+          "critical": [
+            "Eines der drei Produkte fehlt trotz gewöhnlichem Prüfauftrag ohne nutzerseitige Begrenzung.",
+            "Beurkundung, Erwerbszweck, Vollständigkeit der Akte oder rechtliche Folgen werden als gesicherte Tatsachen erfunden.",
+            "Die Erwerberinnensicht wird verlassen oder ein Mandat, tatsächlicher Versand, Zahlung, Abnahme oder eine abgegebene rechtsgeschäftliche Erklärung wird erfunden.",
+            "Erfundene Entscheidungen, Fundstellen oder eine nicht ausgeführte Quellenprüfung tragen ein Ergebnis."
+          ]
+        },
+        {
+          "turn": 2,
+          "required": [
+            "Die Erklärung zur Unterzeichnung am 22.09.2026, Eigennutzung und zum Sonderwunschnachtrag am 01.10.2026 übernehmen; kurz zeigen, welche bisherige Unsicherheit damit geklärt wird und wie dies das weitere Vorgehen ändert.",
+            "Die bereits erarbeiteten Ergebnisse fortführen und alle drei Produkte aktualisieren, ohne die Fallaufnahme oder die gerade beantworteten Fragen zu wiederholen.",
+            "Die vorgeschlagene Streichung von § 8 als noch nicht vereinbart behandeln; bestehende Klausel, vorgeschlagene Änderung und tatsächliche rechtliche Bewertung auseinanderhalten.",
+            "Den unveränderten § 9 mit seinem Fristbeginn als eigenständigen offenen Prüf- und gegebenenfalls Korrekturpunkt erhalten; seine Erledigung nicht aus der vorgeschlagenen Streichung von § 8 ableiten.",
+            "Fehlende Teilungserklärung und vollständige Vertragsfassung mit konkreter Entscheidungsbedeutung weiterführen; unabhängige Beratung und Entwürfe trotzdem fertigstellen.",
+            "Die tragende Rechtsprechung auf den nun geklärten Fall nach Vertragsschluss beziehen und nötige Änderungen der Subsumtion in allen betroffenen Produkten umsetzen."
+          ],
+          "forbidden": [
+            "Erneut fragen, ob bereits unterschrieben wurde, wann der Termin stattfindet oder wofür Anna Berg die Wohnung erwirbt.",
+            "§ 8 als bereits aus dem Hauptvertrag gestrichen oder seine tatsächliche Änderung als erledigt melden.",
+            "Nur den neuen Vorschlag kommentieren und die übrigen Befunde, Unterlagenlücken oder Arbeitsergebnisse still fallenlassen.",
+            "Den bereits unterzeichneten Hauptvertrag insgesamt als frei austauschbaren Entwurf behandeln oder eine bereits wirksame Neufassung behaupten."
+          ],
+          "critical": [
+            "Der unveränderte § 9 verschwindet oder wird allein wegen des Vorschlags zu § 8 als erledigt behandelt.",
+            "Eine Zustimmung zum Streichungsvorschlag oder eine beurkundete Vertragsänderung wird erfunden.",
+            "Versand, Erklärung, Zahlung, Abnahme oder ein sonstiger nicht beauftragter tatsächlicher Vollzug wird vorgenommen oder behauptet.",
+            "Ein erhebliches fortgeltendes Ergebnis geht ohne sachliche Erklärung aus den aktualisierten Produkten verloren."
+          ]
+        }
+      ]
+    }
+  ]
+}

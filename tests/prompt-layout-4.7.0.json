@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-09-28",
+  "purpose": "Seitenlimit, Quellstand und vollständige visuelle Kontrolle der Word-Prompts 4.7.0",
+  "exporter": "scripts/export_prompt_docx.py",
+  "renderer": "documents/render_docx.py (Bundle 26.905.11957), gebündelte LibreOffice-Version",
+  "normalizations": [
+    "YAML-Metadatenblock entfällt; der vollständige lesbare Prompt wird als Word-Absätze, Überschriften, Listen, Tabellen und Links dargestellt.",
+    "Optionale Trennstelle im Tabellenlabel Vollstreckungsunterwerfung; keine inhaltliche Kürzung."
+  ],
+  "content_integrity": {
+    "status": "passed",
+    "method": "Export prüft die identische geordnete Folge aller Hauptdokument-Textknoten vor und nach Formatierung."
+  },
+  "page_count_scope": "Gemessen am LibreOffice-PDF; sämtliche PNG-Seiten einzeln in Originalauflösung geprüft. Andere Word-Versionen oder Markdown-Importe können anders umbrechen.",
+  "artifacts": [
+    {
+      "source": "skill/SKILL.md",
+      "output": "docs/downloads/werkstatt-prompt-4.7.0.docx",
+      "source_sha256": "46ff5825c1802c2fc8dbbeec1461a810da70af8fa10cadc795a409ac1eb8594f",
+      "docx_sha256": "8c4c27c9e7bd23c0b25b86b129963b00ed4ed4e04244429bfd01c2b0a1e7fee3",
+      "pages": 47,
+      "max_pages": 100,
+      "paper": "Letter",
+      "font": {
+        "family": "Arial",
+        "body_pt": 11
+      },
+      "margins": {
+        "top_cm": 2.54,
+        "bottom_cm": 2.54,
+        "left_cm": 2.54,
+        "right_cm": 2.54
+      },
+      "visual_qa": {
+        "status": "passed",
+        "pages_checked": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "method": "Alle finalen PNG-Seiten einzeln geprüft: Seiten 1–24 durch beauftragten Prüfagenten, 25–47 durch Hauptagenten. Render: /tmp/btv-470-qa-jB7e2f/werkstatt.",
+        "checks": [
+          "lesbare vollständige Absätze",
+          "keine Überlappung oder abgeschnittenen Texte",
+          "saubere Tabellen mit wiederholten Köpfen",
+          "Überschriften mit Folgetext und lesbare Quellen"
+        ]
+      }
+    },
+    {
+      "source": "skill/MINI_SKILL.md",
+      "output": "docs/downloads/mini-prompt-4.7.0.docx",
+      "source_sha256": "f764e480b5b542c66e4a1d5fb17a200b7c726f6893ae386f89ee45262172a53c",
+      "docx_sha256": "aa79edd08ec1feb0740f8b9c09e4fbb84ba8ccd50757856b575c9072a22c02d0",
+      "pages": 7,
+      "max_pages": 100,
+      "paper": "Letter",
+      "font": {
+        "family": "Arial",
+        "body_pt": 11
+      },
+      "margins": {
+        "top_cm": 2.54,
+        "bottom_cm": 2.54,
+        "left_cm": 2.54,
+        "right_cm": 2.54
+      },
+      "visual_qa": {
+        "status": "passed",
+        "pages_checked": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "method": "Sämtliche sieben finalen PNG-Seiten einzeln durch den Hauptagenten in Originalauflösung geprüft. Render: /tmp/btv-470-qa-jB7e2f/mini.",
+        "checks": [
+          "lesbare Überschriften und vollständige Sätze",
+          "keine Überlappung oder abgeschnittenen Texte",
+          "sofortiger Dialogablauf am Anfang",
+          "Rechtsprechungsfragen und Verjährungsprüfung enthalten"
+        ]
+      }
+    }
+  ]
+}
