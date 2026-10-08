@@ -127,6 +127,23 @@ class NarrativeTableTests(unittest.TestCase):
 
 
 class CaseRecordTests(unittest.TestCase):
+    def test_procedural_context_is_not_an_independently_reviewed_original(self):
+        text = anchors.START + "\nVerfahrensgeschichte: 27 U 153/24.\n" + anchors.END
+        self.assertEqual(anchors.unanchored_cases_outside_catalog(text, set()), set())
+
+    def test_operational_case_reference_still_requires_primary_record(self):
+        text = "Prüfschritt zu VII ZR 88/25.\n" + anchors.START + "\nKatalog.\n" + anchors.END
+        self.assertEqual(anchors.unanchored_cases_outside_catalog(text, set()), {"VII ZR 88/25"})
+        self.assertEqual(anchors.unanchored_cases_outside_catalog(text, {"VII ZR 88/25"}), set())
+
+    def test_citation_urls_accept_markdown_without_closing_delimiter(self):
+        url = "https://example.invalid/urteil.pdf?v=1"
+        self.assertEqual(anchors.extract_urls(f"[amtlicher Volltext]({url}); {url}."), [url, url])
+
+    def test_citation_urls_keep_balanced_parentheses(self):
+        url = "https://example.invalid/decision(2026)"
+        self.assertEqual(anchors.extract_urls(f"[Volltext]({url})"), [url])
+
     def test_legacy_and_full_width_records_have_identical_fields(self):
         legacy = legacy_table(SAMPLE_RECORDS)
         full_width = exporter.narrative_tables(legacy)

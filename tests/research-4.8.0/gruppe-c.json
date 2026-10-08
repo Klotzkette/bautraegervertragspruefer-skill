@@ -1,0 +1,869 @@
+[
+  {
+    "index": 38,
+    "title": "Erhaltungslast und Beschlusskompetenz der GdWE",
+    "dockets": [
+      "V ZR 102/24"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR_102-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR_102-24.pdf?__blob=publicationFile&v=1",
+        "retrieval": "Primärquelle per curl und Textauszug gelesen",
+        "full_read": true,
+        "scope": "Amtliches PDF, 17 Seiten, gesamter Entscheidungstext einschließlich Rn. 1–37 und Rechtsbehelfsbelehrung gelesen.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn. 4: Versäumnisurteil nach Sachprüfung",
+      "Rn. 9–23: Erhaltungslast, Beschlusskompetenz, Kosten",
+      "Rn. 28–37: Handlungspflicht und Beschlussersetzung"
+    ],
+    "verification_status": "primary_full_read",
+    "procedural_status": "Versäumnisurteil: Aufhebung der Vorentscheidungen, Ungültigerklärung dreier Negativbeschlüsse und gerichtlicher Grundlagenbeschluss. Einspruchsmöglichkeit; kein späterer Verfahrensabschluss verifiziert.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"V ZR 102/24\" Einspruch Urteil September 2026"
+      ],
+      "actual_outcome": "Original und Besprechungen gefunden; kein amtlich belegter späterer Einspruchsausgang. Suchergebnis beweist keine Rechtskraft.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "Entscheidungsart ausdrücklich Versäumnisurteil nennen; technische Durchführung und Kostentragung trennen."
+    ],
+    "expanded_markdown": "### Erhaltungslast und Beschlusskompetenz der GdWE\n\n**Harte Fundstelle:** BGH, Versäumnisurteil vom 24.04.2026 – V ZR 102/24, Rn. 4, 9–23 und 28–37. Amtliche Quelle: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR_102-24.pdf?__blob=publicationFile&v=1\n\n**Kernaussage für Verbraucher:** Eine Gemeinschaftsordnung darf einzelne Eigentümer mit der Erhaltung gemeinschaftlicher Bauteile belasten. Sie kann der GdWE aber nicht die Kompetenz nehmen, erforderliche Erhaltungsmaßnahmen am Gemeinschaftseigentum zu beschließen. Ob sie handeln muss, ist eine zusätzliche Frage; ihre Tätigkeit verlagert nicht automatisch die vereinbarte Kostenlast.\n\n**Sachverhalt und tragende Gründe:** Balkonbrüstungen waren so geschädigt, dass Betonstücke herunterfallen konnten und Grünflächen gesperrt wurden. Obwohl drei Sanierungsvarianten vorlagen, scheiterten sämtliche Anträge. Die Gemeinschaftsordnung wies den betreffenden Eigentümern die Instandhaltung und Instandsetzung ihrer Balkone zu. Der BGH hielt diese Zuweisung nicht für einen Ausschluss gemeinschaftlicher Beschlusskompetenz: Das Recht jedes Eigentümers auf ordnungsmäßige Verwaltung und die Verantwortung für Sicherheit und Substanzerhalt setzen eine Handlungsmöglichkeit der Gemeinschaft voraus (Rn. 13–20). Selbst ein ausdrücklich beabsichtigter vollständiger Kompetenzentzug wäre insoweit unwirksam. Übernimmt die GdWE eine konkrete Maßnahme, darf der einzelne Eigentümer sie nicht konkurrierend selbst durchführen; die Kostenvereinbarung bleibt grundsätzlich gesondert wirksam (Rn. 23).\n\n**Einsatz im Vertrag:** Bei Balkon-, Dachterrassen- oder Fensterklauseln Erhaltungspflicht, Entscheidungskompetenz, Durchführung und Kosten in vier getrennte Prüfpunkte auflösen. Gemeinschaftsordnung im Wortlaut, Schadensgutachten, Gefahrenhinweise, betroffene Gebäudeteile, erforderliche gemeinsame Gerüste, Angebote und abgelehnte Beschlussanträge sichern. Bei mehreren gleichzeitig sanierungsbedürftigen Balkonen oder praktisch nur gemeinsam möglicher Ausführung kann die Gemeinschaft zum Tätigwerden verpflichtet sein; auch Gefahren für andere Eigentümer oder Dritte zählen (Rn. 28–30).\n\n**Grenzen und Verfahrensstand:** Nicht jede individuelle Erhaltungspflicht begründet sofort eine gemeinschaftlich finanzierte Sanierung. Das Gericht ersetzte den notwendigen Grundlagenbeschluss, nicht ohne Weiteres die Auswahl einer bestimmten technischen Variante (Rn. 31–37). Erwerber müssen daher begründen, weshalb gemeinschaftliches Handeln notwendig ist, und dürfen einen Anspruch auf Entscheidung nicht mit dem Anspruch auf ihre bevorzugte Ausführung verwechseln. Die Entscheidung erging trotz Säumnis aufgrund materieller Prüfung; ein späterer Einspruchsausgang wurde nicht verifiziert.\n"
+  },
+  {
+    "index": 39,
+    "title": "Schadensersatz gegen die GdWE wegen verzögerter Erhaltung",
+    "dockets": [
+      "V ZR 18/25"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__18-25.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__18-25.pdf?__blob=publicationFile&v=1",
+        "retrieval": "Primärquelle per curl und Textauszug gelesen",
+        "full_read": true,
+        "scope": "Amtliches PDF, 12 Seiten, gesamter Entscheidungstext Rn. 1–24 gelesen.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn. 6–7: Verwaltungspflicht und Zurechnung",
+      "Rn. 9–13: zulässige Wohnnutzung",
+      "Rn. 16–24: § 280 Abs. 1, hypothetischer Verlauf, § 254"
+    ],
+    "verification_status": "primary_full_read",
+    "procedural_status": "Aufhebung und Zurückverweisung; weder endgültiger Zahlungszuspruch noch abschließende Schadenshöhe.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"V ZR 18/25\" \"2026\" \"aufgehoben\""
+      ],
+      "actual_outcome": "Primärentscheidung und Erläuterungen gefunden; kein amtlich identifizierter nachfolgender Abschluss des zurückverwiesenen Verfahrens.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "Keinen endgültigen Ersatzanspruch in feststehender Höhe behaupten; Mahnung nur für den konkret behandelten Integritätsschaden entbehrlich."
+    ],
+    "expanded_markdown": "### Schadensersatz gegen die GdWE wegen verzögerter Erhaltung\n\n**Harte Fundstelle:** BGH, Urteil vom 27.02.2026 – V ZR 18/25, Rn. 6–24. Amtliche Quelle: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__18-25.pdf?__blob=publicationFile&v=1\n\n**Kernaussage für Verbraucher:** Unterlassene ordnungsmäßige Erhaltung kann Schadensersatz der GdWE nach § 280 Abs. 1 BGB auslösen. Für den hier behandelten Integritätsschaden musste der Eigentümer die Gemeinschaft nicht zusätzlich in Verzug setzen. Ersatzfähig ist aber nur der Verlust ab dem Zeitpunkt, zu dem rechtzeitiges, ordnungsmäßiges Handeln den Schaden verhindert hätte.\n\n**Sachverhalt und tragende Gründe:** Eine als Wohnung vermietete Dachgeschoss-Maisonette verfügte nicht über einen ausreichenden zweiten Rettungsweg. Nach behördlicher Nutzungsuntersagung und Kündigung wurden Mietausfälle für 27 Monate verlangt. Die Vorinstanzen hatten die Forderung unter anderem deshalb abgelehnt, weil eine juristische Person als Mieterin nicht selbst wohnen könne. Der BGH stellte auf die tatsächliche Nutzung durch die Endnutzer ab: Die Zwischenschaltung einer Gesellschaft und Untervermietung machen eine zulässige Wohnnutzung nicht für sich zur unzulässigen gewerblichen Nutzung (Rn. 9–13). Maßgeblich bleiben allerdings konkrete Gemeinschaftsordnung und Gebrauch.\n\n**Einsatz im Vertrag:** Nach Erwerb bei Brandschutz- und Rettungswegdefiziten Kenntnisdatum der Verwaltung, erste erforderliche Beschlussfassung, realistischen Planungs-, Genehmigungs- und Bauzeitraum sowie tatsächliche Vermietbarkeit dokumentieren. Nach WEMoG trifft die Verwaltungspflicht die GdWE; zurechenbar sind Verwalterhandeln, Erfüllungsgehilfen und schuldhafte Beschlussverzögerungen ihrer Organe (Rn. 6–7). Mietvertrag, Untermietnutzung, behördliche Verfügung, Kündigung und entgangene Zahlung belegen. Der Pflichtverletzungsschaden an der Nutzbarkeit ist von bloß verspäteter Leistung zu trennen (Rn. 16–19).\n\n**Grenzen und Verfahrensstand:** Die GdWE ist keine Versicherung gegen jeden Gemeinschaftsmangel. Für Beginn und Dauer der hypothetischen Schadensvermeidung trägt der Anspruchsteller die Darlegungslast; notwendig sind zumindest Kenntnis oder schuldhafte Unkenntnis und der Zeitraum, den pflichtgemäßes Handeln benötigt hätte (Rn. 21–23). Fehlende eigene Anträge können nach § 254 BGB relevant werden, aber nur, wenn sie den Entscheidungsprozess beeinflusst hätten; die normale Vorbereitungszeit begründet kein Mitverschulden (Rn. 24). Der BGH verwies zur tatsächlichen Klärung zurück. Bauträgerhaftung und GdWE-Haftung sind gesonderte Anspruchswege.\n"
+  },
+  {
+    "index": 40,
+    "title": "Vor-GdWE-Verträge und faktische Verwaltung",
+    "dockets": [
+      "V ZR 76/25"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__76-25.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__76-25.pdf?__blob=publicationFile&v=1",
+        "retrieval": "Primärquelle per curl und Textauszug gelesen",
+        "full_read": true,
+        "scope": "Amtliches PDF, 18 Seiten, gesamter Entscheidungstext Rn. 1–43 gelesen.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn. 19–21: faktischer Verwalter",
+      "Rn. 29–34: Entstehung und Vertragsübernahme nach altem WEG",
+      "Rn. 35–43: Schaden, Vorteilsausgleich, Gegenforderungen"
+    ],
+    "verification_status": "primary_full_read",
+    "procedural_status": "Revision teilweise unzulässig, im Übrigen zurückgewiesen; vorinstanzlicher Zahlungszuspruch zugunsten der GdWE bleibt bestehen.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"V ZR 76/25\" \"2026\" \"aufgehoben\""
+      ],
+      "actual_outcome": "Original und spätere Besprechungen, keine amtliche nachfolgende gegenteilige Sachentscheidung identifiziert.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "Entstehungs- und Übernahmesätze ausdrücklich auf WEG bis 30.11.2020 begrenzen; heutige Ein-Personen-GdWE nicht leugnen."
+    ],
+    "expanded_markdown": "### Vor-GdWE-Verträge und faktische Verwaltung\n\n**Harte Fundstelle:** BGH, Urteil vom 30.01.2026 – V ZR 76/25, Rn. 19–43. Amtliche Quelle: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__76-25.pdf?__blob=publicationFile&v=1\n\n**Kernaussage für Verbraucher:** Wer tatsächlich wie ein Verwalter handelt, muss Gemeinschaftsvermögen auch ohne wirksame Bestellung oder gültigen Verwaltervertrag schützen. Vor Entstehung der Gemeinschaft geschlossene Bauträgerverträge wurden nach altem WEG-Recht nicht allein durch späteren Nutzen oder Kontozahlungen automatisch zu Gemeinschaftsverträgen.\n\n**Sachverhalt und tragende Gründe:** Die Verwalterin zahlte aus Gemeinschaftsmitteln unter anderem Parkpflegekosten aufgrund einer Vereinbarung aus der Zeit vor Aufteilung und Entstehung der GdWE. Der Park gehörte nicht der Gemeinschaft. Nach Ablauf ihrer Bestellung führte sie die Verwaltung faktisch fort. Der BGH bestätigte ihre grundsätzlich gleichen Pflichten wie bei wirksamer Bestellung; welche vertragsähnliche Konstruktion dies im Einzelnen trägt, musste er nicht abschließend bestimmen (Rn. 19–21). Der vor Entstehung geschlossene Vertrag konnte die damals noch nicht existente Gemeinschaft nicht unmittelbar verpflichten. Bei Abschluss im eigenen Namen war regelmäßig eine beschlossene Vertragsübernahme, bei vermeintlicher Vertretung eine Genehmigung erforderlich (Rn. 29–34).\n\n**Einsatz im Vertrag:** Erstverwalter-, Park-, Wärme-, Service- und Pflegeverträge chronologisch erfassen: Vertragsschluss, Handelnder, Auftreten im eigenen oder fremden Namen, Teilung, Gemeinschaftsentstehung, Bestellung, Beschluss zur Übernahme und konkreter Zahlungslauf. Eine Verpflichtung des Erwerbers in seinem Kaufvertrag ersetzt nicht ohne Weiteres eine Verpflichtung der GdWE. Genehmigung einer Jahresabrechnung und Entlastung sind nicht schon die notwendige Übernahmeentscheidung. Nutzen oder Mitbenutzung des Parks beweisen keine wirksame vertragliche Schuld. Bei Zahlungsersatz sind Rechtsgrund und Empfänger jeder Ausgabe zu bestimmen.\n\n**Grenzen und Verfahrensstand:** Die Entscheidung betrifft das WEG vor dem 1. Dezember 2020; heutige Entstehung der Ein-Personen-GdWE und Vertretung sind gesondert zu prüfen. Für Geschäfte laufender Verwaltung können andere Anforderungen gelten. Ein Vorteilsausgleich setzt konkret zurechenbare Vorteile voraus, die nicht schon aus bloßer Parkbenutzung folgen; die Darlegung lag bei der Verwalterin (Rn. 35–38). Bewusst geleistete Hausgeldüberzahlungen lassen sich grundsätzlich nicht beliebig außerhalb der Abrechnung zurückholen; versehentliche Doppelzahlungen sind zu unterscheiden (Rn. 42). Das Urteil begründet keine automatische persönliche Haftung jedes Projektbeteiligten.\n"
+  },
+  {
+    "index": 41,
+    "title": "Bindung an ein Bauträgerangebot",
+    "dockets": [
+      "V ZR 208/14"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2014/V_ZR_208-14.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__91-25.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2014/V_ZR_208-14.pdf?__blob=publicationFile&v=1",
+        "retrieval": "Primärquelle per curl und Textauszug gelesen",
+        "full_read": true,
+        "scope": "Amtliches PDF, 16 Seiten, gesamter Entscheidungstext Rn. 1–34 gelesen.",
+        "errors": []
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__91-25.pdf?__blob=publicationFile&v=1",
+        "retrieval": "Amtliches PDF per curl heruntergeladen und selbst punktuell gelesen",
+        "full_read": false,
+        "scope": "Rn. 8–17; entscheidend Rn. 12–14. Ausdrückliche Aufgabe der Auffassung aus V ZR 208/14 Rn. 29 zur Unternehmereigenschaft.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn. 7–12: drei Monate und vier-/sechswöchiger Maßstab",
+      "Rn. 19–27: eingeschränktes Lösungsrecht und Finanzierungsbedingung",
+      "Rn. 28–34: Unternehmereigenschaft, AGB-Zurechnung, Zurückverweisung"
+    ],
+    "verification_status": "primary_full_read",
+    "procedural_status": "Aufhebung und Zurückverweisung; AGB-Stellung und mögliche Widerlegung der Indizwirkung waren weiter aufzuklären.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"V ZR 208/14\" \"2025\" \"2026\"",
+        "\"V ZR 208/14\" Bauträger \"2026\""
+      ],
+      "actual_outcome": "Zunächst nur fortdauernde Zitierung und keine abweichende Angebotsbindungsentscheidung identifiziert. Auf Hinweis der Parallelprüfung amtliches Urteil V ZR 91/25 vom 23.01.2026 Rn. 8–17 selbst gelesen: Rn. 14 erklärt die Ableitung der Unternehmereigenschaft in V ZR 208/14 Rn. 29 ausdrücklich für aufgegeben und verweist auf den Austausch mit dem XI. Senat 2020. Diese historische Teilbegründung darf nicht aktuell übernommen werden. Keine daraus folgende Aufgabe der Angebotsbindungskontrolle festgestellt.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "Altformulierung 'mehr als drei Monate' korrigieren: schon die konkrete dreimonatige Bindung war unangemessen.",
+      "§ 308 Nr. 1 wirkte im konkreten Unternehmerfall über § 307/§ 310 Abs. 1 indiziell.",
+      "Ausdrücklich aufgegebene Unternehmereigenschaftsableitung aus Rn. 29 nicht als aktuellen Maßstab wiedergeben; amtliche Folgequelle V ZR 91/25 Rn. 14."
+    ],
+    "expanded_markdown": "### Bindung an ein Bauträgerangebot\n\n**Harte Fundstelle:** BGH, Urteil vom 26.02.2016 – V ZR 208/14, Rn. 7–12 und 19–34. Amtliche Quelle: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2014/V_ZR_208-14.pdf?__blob=publicationFile&v=1\n\n**Kernaussage für Verbraucher:** Schon die im Streitfall vorgesehene dreimonatige formularmäßige Angebotsbindung war unangemessen; nicht erst eine Bindung von mehr als drei Monaten. Ein sachlich eingeschränktes Lösungsrecht oder eine vorgeschaltete Finanzierungsbedingung beseitigt die vom Bauträger geschaffene Unsicherheit nicht automatisch.\n\n**Sachverhalt und tragende Gründe:** Die Erwerber boten Ende September 2006 den Kauf von 24 vermieteten Wohneinheiten an; die Annahme erfolgte etwa sechs Wochen später. Das Angebot sollte drei Monate unwiderruflich und anschließend bis zu einem Widerruf fortgelten. Der BGH legte für den finanzierten, notariellen Immobilienkauf grundsätzlich eine Annahmezeit von vier Wochen zugrunde. Eine Verlängerung auf mehr als sechs Wochen bedarf besonderer sachlicher Gründe; diese Zeitangaben sind keine gesetzlich starren Fristen (Rn. 7–12). Die Verkäuferseite darf sich eine lange einseitige Dispositionsmöglichkeit nicht ohne ausreichendes Gegeninteresse sichern.\n\n**Einsatz im Vertrag:** Angebot und Annahme getrennt beschaffen; Beurkundungs-, Zugangs- und Finanzierungsdaten, Bindung, Widerruf und Fortgeltung vollständig auf einer Zeitachse abbilden. Ein nur bei bestimmten Finanzierungshindernissen eröffnetes Rücktrittsrecht ersetzt keine freie Entscheidung über die lange Bindung. Auch eine aufschiebende Finanzierungsbedingung kann den Käufer bereits belasten, unter anderem wegen der Regeln über treuwidrige Bedingungsvereitelung (Rn. 19–27). Bei verspäteter Annahme prüfen, ob ein neues Angebot nach § 150 Abs. 1 BGB wirksam angenommen wurde; Zahlung und Eigentumsumschreibung reichen dafür regelmäßig nicht ohne Weiteres (Rn. 31).\n\n**Grenzen und Verfahrensstand:** Historische Teilkorrektur: Der Senat behandelte das Geschäft 2016 wegen Umsatzsteueroption und Vermietung als Existenzgründung und prüfte deshalb §§ 307, 310 Abs. 1 mit Indizwirkung des § 308 Nr. 1 (Rn. 28–30). Diese Ableitung der Unternehmereigenschaft aus dem Umsatzsteuerrecht hat er inzwischen ausdrücklich aufgegeben; die neuere Katalogentscheidung zum Verbraucherstatus bestätigt das in Rn. 14. Dieser Teil des Urteils ist daher nicht mehr als aktueller Maßstab verwendbar. Erwerbszweck, Umfang und Organisation der Vermögensverwaltung gesondert prüfen; die Kontrolle unangemessener Angebotsbindung bleibt davon zu unterscheiden. Außerdem musste noch aufgeklärt werden, ob die Klauseln der Verkäuferseite als AGB zuzurechnen waren und besondere Interessen die Indizwirkung entkräfteten (Rn. 33–34). Das Urteil ist deshalb kein sofortiger Rückabwicklungsbefehl für jede verspätete notarielle Annahme.\n"
+  },
+  {
+    "index": 42,
+    "title": "MaBV als Schutzgesetz und persönliche Geschäftsführerhaftung",
+    "dockets": [
+      "V ZR 144/07"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2007/V_ZR_144-07A.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2007/V_ZR_144-07A.pdf?__blob=publicationFile&v=1",
+        "retrieval": "Primärquelle per curl und Textauszug gelesen",
+        "full_read": true,
+        "scope": "Amtliches PDF, 11 Seiten, gesamter Entscheidungstext Rn. 1–22 gelesen.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn. 10–12: Schutzgesetz und eigener Verursachungsbeitrag",
+      "Rn. 14–17: vollständiges Eigentumsverschaffungsrisiko",
+      "Rn. 18–22: Zurückverweisung, Verschulden und Schutzbereich"
+    ],
+    "verification_status": "primary_full_read",
+    "procedural_status": "Aufhebung und Zurückverweisung hinsichtlich des Geschäftsführers; eigener Beitrag, Verschulden und Schaden bedurften weiterer Feststellungen.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"V ZR 144/07\" \"3 U 171/24\""
+      ],
+      "actual_outcome": "Celle 25.11.2025 zieht diese BGH-Linie ausdrücklich heran (Gründe C); dort Original gelesen. Treffer außerdem zu späteren Verfahrensstationen OLG Brandenburg 2010/2013, deren Originale nicht Gegenstand dieser Volltextprüfung waren.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "Bürgschaft sichert wirtschaftliche Erfüllung/äquivalente Gegenleistung einschließlich vollständigen Eigentums, nicht schlicht jeden Sachleistungs- und Folgeschaden.",
+      "Persönliche Haftung im Ausgangsfall nicht schon abschließend zugesprochen."
+    ],
+    "expanded_markdown": "### MaBV als Schutzgesetz und persönliche Geschäftsführerhaftung\n\n**Harte Fundstelle:** BGH, Urteil vom 05.12.2008 – V ZR 144/07, Rn. 10–22. Amtliche Quelle: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2007/V_ZR_144-07A.pdf?__blob=publicationFile&v=1\n\n**Kernaussage für Verbraucher:** §§ 3 und 7 MaBV schützen Erwerbervermögen und können deliktische Ansprüche nach § 823 Abs. 2 BGB tragen. Ein Geschäftsführer kann persönlich verantwortlich sein, wenn sein eigener zurechenbarer Beitrag zur Schutzgesetzverletzung den Schaden verursacht. Das bloße Amt ersetzt diese Voraussetzungen nicht.\n\n**Sachverhalt und tragende Gründe:** Der Vertrag versprach ein 319 m² großes Grundstück. Tatsächlich konnten nur 237 m² übertragen werden; ein weiterer Teil stand bereits zahlreichen anderen Eigentümern zu, und ein Teil des Hauses lag darauf. Die Käufer hatten gegen eine §-7-Bürgschaft vorgeleistet, deren Umfang später vermindert worden war. Der BGH stellte klar, dass die Sicherung nicht nur die vertragsgerechte Herstellung des Bauwerks erfasst: Zur Gegenleistung für die Vorauszahlung gehört auch die Verschaffung des gesamten versprochenen Grundeigentums (Rn. 14–17). Eine Vormerkung nur auf einem Teil des Vertragsgegenstands beseitigt das Risiko nicht vollständig.\n\n**Einsatz im Vertrag:** Grundstücks- und Miteigentumsanteile, Lageplan, Überbau, Teilung, Vormerkungsumfang und tatsächliche Eigentümer vollständig mit dem Erwerbsvertrag abgleichen. Bei Abschmelzung einer Bürgschaft den exakten Freigabegrund und den gesicherten Anspruch bestimmen. Für eine Organhaftung Schreiben, Freigabeanweisungen, Kenntnis des Eigentumsdefizits, Zahlungsdaten und den eigenen Verantwortungsbeitrag sichern. Der Anspruch ist nicht auf Betrug zu reduzieren; je nach Schutzgesetz kommt fahrlässiges Verhalten in Betracht. Ebenso wenig darf ein insolventer Bauträger pauschal durch seinen Geschäftsführer als Ersatzschuldner ersetzt werden.\n\n**Grenzen und Verfahrensstand:** Der BGH verwies zurück, weil Feststellungen zu Mitwirkung, Verschulden und Schaden fehlten (Rn. 18). Die Verwendung damals üblicher Abschmelzungsmodelle entlastete nicht ohne Weiteres, wenn gerade das Eigentumsverschaffungsrisiko ungesichert blieb (Rn. 20–21). Ein Schaden außerhalb des von § 7 MaBV erfassten Sicherungszwecks wird nicht dadurch ersatzfähig, dass man dieselbe Forderung als deliktisch bezeichnet (Rn. 22). Reine Bauzeitfolgeschäden und der Umfang zusätzlicher Sicherungsversprechen sind daher gesondert zu behandeln. Die spätere Celle-Entscheidung vertieft insbesondere Organisations- und Überwachungspflichten; sie ersetzt diese einzelfallbezogenen Voraussetzungen nicht.\n"
+  },
+  {
+    "index": 43,
+    "title": "§-7-MaBV-Bürgschaft und Bauzeitverzug",
+    "dockets": [
+      "XI ZR 145/02"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/XI_ZS/2002/XI_ZR_145-02.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/XI_ZS/2002/XI_ZR_145-02.pdf?__blob=publicationFile&v=1",
+        "retrieval": "Primärquelle per curl und Textauszug gelesen",
+        "full_read": true,
+        "scope": "Amtliches PDF, 11 Seiten, gesamter Entscheidungstext gelesen; keine gedruckten Randnummern, daher Seiten und Gliederung.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "S. 6–7, II.1: Äquivalenzschutz",
+      "S. 7–9, II.2.a–b: reiner Verzug und Abrechnungssaldo",
+      "S. 9–10, II.2.c–d: Urkundentext und Nebenkosten"
+    ],
+    "verification_status": "primary_full_read",
+    "procedural_status": "Revision zurückgewiesen; Herausgabe der Bürgschaftsurkunde blieb geschuldet. BGH bestätigte nicht die Verwirkungsbegründung der Vorinstanz, sondern verneinte die Deckung der geltend gemachten Forderungen.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"XI ZR 145/02\" \"2025\" \"2026\"",
+        "\"XI ZR 145/02\" MaBV \"2026\" BGH"
+      ],
+      "actual_outcome": "Keine neue amtlich verifizierte Entscheidung zur abweichenden Deckung reiner Bauzeitverzugsschäden identifiziert; neues Bürgschaftsradar XI ZR 12/25 wurde vollständig gelesen, entscheidet diese materielle Frage nicht.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "Mängelkosten nicht pauschal als außerhalb der §-7-Sicherheit darstellen.",
+      "Verwirkungserwägungen des OLG nicht als tragende BGH-Begründung übernehmen."
+    ],
+    "expanded_markdown": "### §-7-MaBV-Bürgschaft und Bauzeitverzug\n\n**Harte Fundstelle:** BGH, Urteil vom 21.01.2003 – XI ZR 145/02, amtliches PDF S. 6–10, Gründe II.1–2. Amtliche Quelle: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/XI_ZS/2002/XI_ZR_145-02.pdf?__blob=publicationFile&v=1\n\n**Kernaussage für Verbraucher:** Die gesetzestypische §-7-MaBV-Bürgschaft schützt den Ausgleich zwischen vorausgezahltem Geld und geschuldeter Gegenleistung. Sie ist grundsätzlich keine zusätzliche Bauzeitversicherung. Reiner Mietausfall wegen verspäteter Fertigstellung wird nicht schon dadurch gedeckt, dass er in eine Schlussabrechnung eingestellt wird.\n\n**Sachverhalt und tragende Gründe:** Für die Sanierung zahlte der Erwerber rund 1,9 Millionen DM im Voraus. Statt Ende 1996 erfolgte die Schlüsselübergabe erst im August 1999. Der Käufer hielt die Bürgschaft wegen Mietausfall und weiterer Rechtsanwalts- und Architektenkosten zurück. Der BGH bestätigte den Herausgabeanspruch, aber nicht mit der von der Vorinstanz angenommenen Verwirkung. Entscheidend war, dass die konkret geltend gemachten Forderungen außerhalb des gesetzlichen Sicherungszwecks lagen. Die Bürgschaft gleicht aus, dass der Käufer sein Geld bereits gezahlt hat, ohne eine gleichwertige Leistung zu erhalten; sie erfasst deshalb insbesondere Rückzahlung wegen Nichterfüllung, Minderung und auf mangelhafte Ausführung bezogene Aufwendungen (S. 6–7).\n\n**Einsatz im Vertrag:** Die Bürgschaftsurkunde neben die einzelnen Schadenspositionen legen. Für jede Position Rechtsgrund, Entstehungsgrund, Zeitraum und Beziehung zur Vorauszahlung notieren. Miet- und Finanzierungsausfälle allein wegen Zeitüberschreitung unterscheiden sich von Kosten, die notwendig sind, die versprochene Sachleistung mängelfrei herzustellen. Bei Anwalts- oder Gutachterkosten ist ihre Aufgabe entscheidend: Im Urteil betrafen sie den Verzug; notwendige Mangelaufklärung kann anders einzuordnen sein (S. 10). Eine ausdrückliche weitergehende Haftung des Bürgen ist anhand des formgerechten Urkundentexts zu prüfen.\n\n**Grenzen und Verfahrensstand:** Eine Saldierung mit noch offenen Vergütungsbestandteilen wandelt einen ungedeckten Verzugsschaden nicht in einen gesicherten Rückzahlungsanspruch um (S. 7–9). Ebenso wenig lässt die Entscheidung jeden Qualitäts- oder Eigentumsverschaffungsschaden aus der Deckung herausfallen. Historische MaBV-Fassung, Bürgschaftswortlaut und aktuelle konkrete Anspruchslage bleiben eigenständig zu prüfen. Die Fünf-Prozent-Verbrauchersicherheit verfolgt einen anderen Sicherungszweck; ihre mögliche Verzugsdeckung darf nicht auf die §-7-Bürgschaft übertragen werden. Aus dem neueren Gehörsbeschluss des XI. Senats folgt keine materielle Änderung dieser Abgrenzung.\n"
+  },
+  {
+    "index": 44,
+    "title": "§-7-MaBV-Bürgschaftsradar (keine materielle Klärung)",
+    "dockets": [
+      "XI ZR 12/25"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/XI_ZS/2025/XI_ZR__12-25.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/XI_ZS/2025/XI_ZR__12-25.pdf?__blob=publicationFile&v=1",
+        "retrieval": "Primärquelle per curl und Textauszug gelesen",
+        "full_read": true,
+        "scope": "Amtliches PDF, 9 Seiten, gesamter Entscheidungstext Rn. 1–19 gelesen.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn. 2–8: Bürgschaft, Avalzinsen und Vorentscheidung",
+      "Rn. 11–19: überspannte Anforderungen an Bestreiten, Art. 103 Abs. 1 GG"
+    ],
+    "verification_status": "primary_full_read",
+    "procedural_status": "Aufhebung des OLG-Urteils vom 27.12.2024 und Zurückverweisung an einen anderen Senat nach § 544 Abs. 9 ZPO; materielle Bürgschaftsfragen nicht abschließend entschieden.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"XI ZR 12/25\" \"3 U\" \"2026\""
+      ],
+      "actual_outcome": "Original und Veröffentlichungsnachweise gefunden; keine neue amtlich identifizierte Sachentscheidung im zurückverwiesenen Verfahren.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "Vorinstanzliche Verwirkung wegen Zeitablaufs/Weiterverkaufs nicht zur Aussage des BGH machen.",
+      "Avalschuld und Feststellungsinteresse brauchen eigene Tatsachengrundlage."
+    ],
+    "expanded_markdown": "### §-7-MaBV-Bürgschaftsradar (keine materielle Klärung)\n\n**Harte Fundstelle:** BGH, Beschluss vom 21.04.2026 – XI ZR 12/25, Rn. 2–8 und 11–19. Amtliche Quelle: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/XI_ZS/2025/XI_ZR__12-25.pdf?__blob=publicationFile&v=1\n\n**Kernaussage für Verbraucher:** Der Beschluss korrigiert die Behandlung streitigen Parteivortrags. Er entscheidet nicht abschließend, ob die konkrete §-7-Bürgschaft zurückzugeben war, Mängelansprüche verjährt waren oder Rechte durch Zeitablauf und Weiterverkauf verwirkt waren.\n\n**Sachverhalt und tragende Gründe:** Nach einem Vertrag von 1998 und vollständiger Vorauszahlung bestand eine Bürgschaft über umgerechnet 157.714,62 Euro. Die Erwerber verkauften die Wohnung 2016, behielten jedoch die Urkunde. Die Bauträgerin verlangte unter anderem die Feststellung fehlender Bürgschaftsrechte und Ersatz von Avalzinsen. Das Berufungsgericht nahm eine fortlaufende Avalverpflichtung als belegt an. Der BGH beanstandete, dass das Bestreiten der Erwerber nicht angemessen berücksichtigt worden war: Unterlagen zum Rahmenaval und Zinsberechnungen ließen die Zuordnung zu gerade dieser Bürgschaft nicht so eindeutig erkennen, dass weitere Details des Bestreitens verlangt werden durften (Rn. 11–19).\n\n**Einsatz im Vertrag:** Bei einer Rückgabeaufforderung Bürgschaftsurkunde, Bürgschaftsnummer, Rahmenavalvertrag, Bankabrechnungen, etwaige Abtretungen und konkrete noch gesicherte Ansprüche getrennt zuordnen. Den Käufer trifft nicht allein deshalb eine Ersatzpflicht für behauptete Avalkosten, weil er die Urkunde weiterhin besitzt. Umgekehrt beweist die fehlende verifizierte Abnahme keinen unbegrenzten Sicherungsanspruch.\n\n**Grenzen und Verfahrensstand:** Im Urteil wiedergegebene Erwägungen des OLG zur Verwirkung sind Prozessgeschichte, kein bestätigter materieller Leitsatz. Die Zurückverweisung an einen anderen Senat lässt das Ergebnis offen. Für Deckungsumfang, historische MaBV-Fassung, Verjährung und Rückgabe müssen die jeweils einschlägigen Sachentscheidungen herangezogen werden; das Schweigen dieses Beschlusses schließt weder einen Rückgabeanspruch noch dessen Abwehr aus.\n"
+  },
+  {
+    "index": 45,
+    "title": "Fahrlässiges Organisationsverschulden bei MaBV-Raten",
+    "dockets": [
+      "3 U 171/24",
+      "27 U 3495/25 Bau e"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://voris.wolterskluwer-online.de/browse/document/80ad4648-2866-428d-9df0-1733d78ed4a0",
+      "https://www.gesetze-bayern.de/Content/Pdf/Y-300-Z-BECKRS-B-2026-N-20441?all=False"
+    ],
+    "read_scope": [
+      {
+        "url": "https://voris.wolterskluwer-online.de/browse/document/80ad4648-2866-428d-9df0-1733d78ed4a0",
+        "retrieval": "Primärquelle per curl und Textauszug gelesen",
+        "full_read": true,
+        "scope": "NI-VORIS vollständiger gerichtlicher Text einschließlich Tenor und Gründe A–C; Extraktion ohne Randnummern.",
+        "errors": []
+      },
+      {
+        "url": "https://www.gesetze-bayern.de/Content/Pdf/Y-300-Z-BECKRS-B-2026-N-20441?all=False",
+        "retrieval": "Amtlicher PDF-Download erfolgreich; web.open nicht verfügbar",
+        "full_read": true,
+        "scope": "Gesamter gerichtlicher Text Rn.1–71 einschließlich Tenor und Abschlussgründe gelesen.",
+        "errors": [
+          "web.open fehlgeschlagen; curl-PDF erfolgreich"
+        ]
+      }
+    ],
+    "pinpoints": [
+      "Celle B.I.1–2: Schutzgesetze, Vertragsumfang, Raten",
+      "Celle B.I.3–5 und B.II: persönliche Verantwortung, Fahrlässigkeit, Schaden",
+      "München Rn. 51–60: eigener Beitrag, Unterlassen, erneute Sicherheit statt zwingender Auszahlung",
+      "München Rn. 61–62 und 71: offene andere Grundlagen, Revision"
+    ],
+    "verification_status": "primary_full_read",
+    "procedural_status": "Celle: gesamtschuldnerischer Ersatz von 46.635,77 Euro nebst Zinsen, Revision nicht zugelassen; aktuelle Rechtskraft nicht verifiziert. München: Berufung eines Geschäftsführers zurückgewiesen, bezüglich des anderen nach Erledigung nur Kostenentscheidung; Revision nicht zugelassen, Rechtskraft nicht verifiziert.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"3 U 171/24\" BGH Revision 2026",
+        "\"27 U 3495/25\" site:gesetze-bayern.de",
+        "\"27 U 3495/25\" \"BECKRS\""
+      ],
+      "actual_outcome": "Keine BGH-Nachentscheidung zu Celle identifiziert. Amtliches Münchener Original 26.08.2026 vollständig gelesen; baut ausdrücklich auf Celle auf, behandelt jedoch die eigenständige §-650m-Sicherheit.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "Neues amtlich verifiziertes Folgeurteil aufnehmen, nicht als BGH-Bestätigung oder automatische Barauszahlungsforderung darstellen.",
+      "Beweislastfrage zur Ratenfälligkeit war in Celle mangels substantiierten Gegenbefunds nicht entscheidungserheblich und blieb offen."
+    ],
+    "expanded_markdown": "### Fahrlässiges Organisationsverschulden bei MaBV-Raten\n\n**Harte Fundstelle:** OLG Celle, Urteil vom 25.11.2025 – 3 U 171/24, Gründe B.I.1–5, B.II und C. Amtliche Quelle: https://voris.wolterskluwer-online.de/browse/document/80ad4648-2866-428d-9df0-1733d78ed4a0 — Fortentwicklung: OLG München, Endurteil vom 26.08.2026 – 27 U 3495/25 Bau e, Rn. 44–62 und 71; amtliches PDF: https://www.gesetze-bayern.de/Content/Pdf/Y-300-Z-BECKRS-B-2026-N-20441?all=False\n\n**Kernaussage für Verbraucher:** Delegation von Ratenabrufen entlastet eine Geschäftsführung nicht, wenn vertraglicher Bautenstand, Instruktion und Überwachung organisatorisch ungesichert bleiben. Für die behandelten MaBV-Verstöße ließ das OLG fahrlässige eigene Pflichtverletzung genügen; eine bloße Organstellung reicht trotzdem nicht.\n\n**Sachverhalt und tragende Gründe:** Bei der Sanierung eines Pflegeheimkomplexes wurden in der Baubeschreibung zugesagte Arbeiten nicht ausgeführt. Ein Bautenstandsbericht erklärte erhebliche Altbausubstanz stattdessen pauschal für verwendbar; die Erwerberverträge wurden nicht entsprechend geändert. Raten wurden aufgrund externer Meldungen ohne tragfähigen Vertragsabgleich abgerufen. Das OLG stellte auf die konkret versprochenen Arbeiten und den tatsächlichen Zahlungszeitpunkt ab. Bereits vorhandene Substanz ersetzt nicht stillschweigend die zugesagte Sanierung. Unbestimmte Änderungsvorbehalte rechtfertigen keine beliebige Leistungsreduzierung (B.I.2).\n\n**Einsatz im Vertrag:** Für jede Rate vertragliche Leistung, Fertigstellungsnachweis, Abruf, Zahlung und verantwortliche Person zuordnen. Organisationspläne, Ressortabreden, Kontrollanweisungen, tatsächliche Überprüfungen und Warnsignale sichern. Der Vorwurf betraf eine Struktur, in der sich keiner der Geschäftsführer verantwortlich um das Baugeschehen kümmerte. Zulässige Delegation kann Verantwortung begrenzen, lässt aber Überwachungspflichten bestehen (B.II). Die Entscheidung stützt sich nicht auf § 43 GmbHG als Schutzgesetz, sondern auf die konkrete MaBV-Verantwortung und deren Zurechnung (B.I.3–4).\n\n**Grenzen und Verfahrensstand:** Der amtlich verifizierte Münchener Folgefall betrifft eine andere Sicherheit: Nach zu früher Vereinnahmung eines Fünf-Prozent-Einbehalts und später bekanntem Quecksilberschaden haftete ein Geschäftsführer wegen eigenen Vorverhaltens und pflichtwidriger Untätigkeit auf erneute Sicherheitsstellung (Rn. 51–58). Es genügte nicht, ihm nachträglich früheren Betrug zu unterstellen; diese Grundlage und MaBV-Fragen blieben offen (Rn. 61–62). Der Verbraucher erhält nicht zwingend fünf Prozent bar: Das Wahlrecht hinsichtlich der Sicherheitsform bleibt erhalten (Rn. 60). Beide Entscheidungen sind Instanzrecht; Schadensart, persönlicher Beitrag, Zeitpunkt des Verschuldens und Sicherungszweck müssen im Erwerberfall konkret bewiesen werden.\n"
+  },
+  {
+    "index": 46,
+    "title": "Notarielle Belehrung bei ungesicherter Vorleistung",
+    "dockets": [
+      "III ZR 136/07"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/III_ZS/2007/III_ZR_136-07.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/III_ZS/2007/III_ZR_136-07.pdf?__blob=publicationFile&v=1",
+        "retrieval": "Primärquelle per curl und Textauszug gelesen",
+        "full_read": true,
+        "scope": "Amtliches PDF, 12 Seiten, gesamter Entscheidungstext Rn. 1–21 gelesen.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn. 7–10: doppelte Belehrung",
+      "Rn. 11–15: MaBV-Mindestschutz und Sicherungsalternativen",
+      "Rn. 16–20: Kausalität und historisches Verjährungsrecht"
+    ],
+    "verification_status": "primary_full_read",
+    "procedural_status": "Revision des Notars zurückgewiesen; Feststellung seiner Ersatzpflicht blieb bestehen.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"III ZR 136/07\" \"2025\" \"2026\"",
+        "\"III ZR 136/07\" Notar \"2025\" \"2026\""
+      ],
+      "actual_outcome": "2026-Literatur zitiert die Entscheidung weiter; keine neuere amtliche Aufhebung oder abweichende konkrete Sachentscheidung identifiziert.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "Doppelte Belehrung betrifft zwei Inhalte, nicht zwei Zeitpunkte.",
+      "Historische Verjährungsausführungen nicht als aktuelle Fristenberechnung übernehmen."
+    ],
+    "expanded_markdown": "### Notarielle Belehrung bei ungesicherter Vorleistung\n\n**Harte Fundstelle:** BGH, Urteil vom 17.01.2008 – III ZR 136/07, Rn. 7–20. Amtliche Quelle: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/III_ZS/2007/III_ZR_136-07.pdf?__blob=publicationFile&v=1\n\n**Kernaussage für Verbraucher:** Wer mit einer frühen Bauträgerrate bereits nicht festgesetzte Erschließungs- und Anschlusskosten bezahlt, kann ungesichert vorleisten. Der beurkundende Notar muss sowohl über dieses Ausfallrisiko als auch über konkrete Sicherungsmöglichkeiten aufklären. MaBV-Konformität allein beendet diese Amtspflicht nicht.\n\n**Sachverhalt und tragende Gründe:** Der Pauschalpreis für ein schlüsselfertiges Haus sollte auch Erschließungs- und Anschlusskosten abdecken. Diese flossen bereits anteilig in die erste Rate ein, obwohl sie gegenüber der Gemeinde noch nicht abgerechnet oder bezahlt waren. Nach Insolvenz des Bauträgers nahm die Gemeinde die Erwerber erneut in Anspruch. Der BGH bestätigte die Haftung des Notars. Die Käufer verloren mit der verfrühten Zahlung ein Druck- und Sicherungsmittel, ohne durch ihre interne Kostentragungsabrede gegen die öffentliche Inanspruchnahme geschützt zu sein (Rn. 7–11). Die besondere Belehrung war bereits bei Gestaltung und Beurkundung erforderlich.\n\n**Einsatz im Vertrag:** Kaufpreisbestandteile, öffentlich-rechtlichen Beitragsschuldner, Zahlungsstand der Gemeinde und Rate zusammenführen. Die Erklärung, der Bauträger trage sämtliche Kosten, schützt nur intern und ist nicht mit einer bereits erfüllten oder abgesicherten Freistellung gleichzusetzen. Zu prüfen sind ausdrücklicher bezifferter Einbehalt, gesonderte Bürgschaft, zweckgebundenes Konto oder Herausnahme des Kostenbestandteils aus der frühen Rate (Rn. 12–15). Beratungsunterlagen und Urkunden müssen erkennen lassen, dass Risiko und passende Alternativen erörtert wurden; ein abstrakter Hinweis auf allgemeine Leistungsverweigerungsrechte genügt nicht ohne Weiteres.\n\n**Grenzen und Verfahrensstand:** Die doppelte Belehrung meint nicht eine nochmalige Warnung unmittelbar vor Zahlung. Auch folgt nicht aus jeder unzureichenden Belehrung automatisch Ersatz: Der Erwerber muss einen schadensvermeidenden hypothetischen Verlauf darlegen. Im Fall hielt der BGH die Annahme für tragfähig, dass eine entsprechende Sicherung vereinbart worden wäre (Rn. 16–17). Für andere Fälle sind Finanzierbarkeit und Bereitschaft der Beteiligten zu prüfen. Die Ausführungen zur Kenntnis und Verjährung betreffen historisches Recht (Rn. 18–20); aktuelle Fristen dürfen daraus nicht unverändert übernommen werden. Notarhaftung bleibt von den primären vertraglichen Ansprüchen gegen den Bauträger zu unterscheiden.\n"
+  },
+  {
+    "index": 47,
+    "title": "Abnahme durch bauträgernahe Tochtergesellschaft",
+    "dockets": [
+      "VII ZR 241/22"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2022/VII_ZR_241-22.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2022/VII_ZR_241-22.pdf?__blob=publicationFile&v=1",
+        "retrieval": "Primärquelle per curl und Textauszug gelesen",
+        "full_read": true,
+        "scope": "Amtliches PDF, 18 Seiten, gesamter Entscheidungstext Rn. 1–48; ergänzend nur bezeichnete Passagen der Folgeentscheidungen.",
+        "errors": []
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1",
+        "retrieval": "VonParallelrecherche heruntergeladenes amtliches PDF selbst punktuell gelesen",
+        "full_read": false,
+        "scope": "Rn.47–70, einleitenderTeilvonRn.47nichtvollständig; Rn.48–70 vollständig im ausgewählten Abschnitt.",
+        "errors": []
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1",
+        "retrieval": "VonParallelrecherche heruntergeladenes amtliches PDF selbst punktuell gelesen",
+        "full_read": false,
+        "scope": "Rn.39–57 vollständig, zusätzlichSchlussteildesRn.38; nichtganzeEntscheidung.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn. 32–35: Bündelung und unwirksame Tochter-Abnahme",
+      "Rn. 36–44: keine künstliche Abnahme wegen früherer Mängelverfolgung",
+      "Rn. 45–48: offengelassene Verjährungsfrage, weitere Tatsachen"
+    ],
+    "verification_status": "primary_full_read",
+    "procedural_status": "Aufhebung und Zurückverweisung; keine abschließende Verjährungs- oder Mängelentscheidung.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"VII ZR 241/22\" \"2026\" \"68/24\""
+      ],
+      "actual_outcome": "Neue BGH-Linie vom26.03.2026 identifiziert; amtliche Folgequellen gezielt gelesen: 68/24 Rn.47–70 sowie108/24 Rn.39–57. Spezifische Altvertrags-Obergrenze und fortbestehende §242-Linie, keine pauschale30-Jahres-Frist.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "Vorherige erfolgreiche Mängelverfolgung nicht automatisch als neue GE-Abnahme werten.",
+      "Die2023offeneFrage nicht als aktuelle endgültige Verjährungslösung darstellen; auf2026Katalogeinträge verweisen."
+    ],
+    "expanded_markdown": "### Abnahme durch bauträgernahe Tochtergesellschaft\n\n**Harte Fundstelle:** BGH, Urteil vom 09.11.2023 – VII ZR 241/22, Rn. 32–48. Amtliche Quelle: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2022/VII_ZR_241-22.pdf?__blob=publicationFile&v=1\n\n**Kernaussage für Verbraucher:** Eine vom Bauträger gestellte Klausel, die die GE-Abnahme einer mit ihm wirtschaftlich verbundenen Erstverwalter-Tochter zuweist, ist unwirksam. Der Bauträger darf sich dann grundsätzlich nicht selbst auf das Fehlen einer Abnahme berufen, um den Erwerbern Mängelrechte zu verweigern.\n\n**Sachverhalt und tragende Gründe:** Die Erwerber hatten aufgrund der vorgesehenen Tochter-Abnahme zunächst einen wirksamen Abschluss angenommen. Die Gemeinschaft verfolgte später Mängel und schloss 2013 eine Vereinbarung; erst danach wurde die Unwirksamkeit der Abnahmeklausel erkannt. Das Berufungsgericht leitete daraus eine Abnahme spätestens 2013 und damit einen frühen Verjährungsbeginn ab. Der BGH widersprach: Dass Erwerber zunächst Mängelrechte in Anspruch nehmen, erlaubt dem Verwender nicht, den durch seine unwirksame Klausel verursachten Zustand zu seinen Gunsten in eine wirksame Abnahme umzudeuten (Rn. 36–44). Der Zweck der Inhaltskontrolle schützt den Vertragspartner, nicht den Klauselverwender.\n\n**Einsatz im Vertrag:** Gesellschaftsverflechtungen, Erstbestellung und genaue Vollmachtskette nachweisen. Frühere Mängelanzeigen, Vergleiche, Zahlungen und Eigentümerversammlungen getrennt darauf prüfen, ob tatsächlich eine eigene Abnahmeerklärung oder nur eine Rechtsverfolgung im Vertrauen auf die vermeintliche Erstabnahme vorlag. Der Zeitpunkt, zu dem Erwerber von der Unwirksamkeit erfuhren, kann entscheidend sein. Die GdWE konnte die zuvor wirksam an sich gezogenen Ansprüche auch nach WEMoG weiter geltend machen (Rn. 32); dies bedeutet keine allgemeine Beschlussmacht zur Abnahme.\n\n**Grenzen und Verfahrensstand:** Eine später selbst und wirksam erklärte Abnahme ist möglich; sie war hier nicht festgestellt (Rn. 46). Auch Verwirkung setzt konkrete zusätzliche Umstände voraus (Rn. 47). Die Frage, welche Folgen die Verjährung eines Herstellungsanspruchs für Mängelrechte hat, ließ dieses Urteil ausdrücklich offen (Rn. 45). Für die heutige Bewertung deshalb die im Katalog erläuterten BGH-Entscheidungen vom März 2026 hinzunehmen: Sie bestätigen den Schutz vor der Berufung des Klauselverwenders auf die fehlgeschlagene Abnahme, begrenzen aber spezifische Altvertragsansprüche und gewähren keine universelle dreißigjährige Gewährleistung.\n"
+  },
+  {
+    "index": 48,
+    "title": "Übergabeprotokolle, Nutzung und Kaufpreiszahlung als keine sichere GE-Abnahme",
+    "dockets": [
+      "9 U 1803/23 Bau e"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.gesetze-bayern.de/Content/Pdf/Y-300-Z-BECKRS-B-2024-N-49081?all=False",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.gesetze-bayern.de/Content/Pdf/Y-300-Z-BECKRS-B-2024-N-49081?all=False",
+        "retrieval": "Primärquelle per curl und Textauszug gelesen",
+        "full_read": true,
+        "scope": "Amtlicher bayerischer PDF-Volltext, gesamter Beschluss Rn.1–49 gelesen; Bezugshinweis15.11.2023 nicht gesondert volltextgelesen.",
+        "errors": []
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1",
+        "retrieval": "VonParallelrecherche heruntergeladenes amtliches PDF selbst punktuell gelesen",
+        "full_read": false,
+        "scope": "Rn.47–70, einleitenderTeilvonRn.47nichtvollständig; Rn.48–70 vollständig im ausgewählten Abschnitt.",
+        "errors": []
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1",
+        "retrieval": "VonParallelrecherche heruntergeladenes amtliches PDF selbst punktuell gelesen",
+        "full_read": false,
+        "scope": "Rn.39–57 vollständig, zusätzlichSchlussteildesRn.38; nichtganzeEntscheidung.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn. 15–24: objektiver Erklärungswert und normatives Erklärungsbewusstsein",
+      "Rn. 27–38: Schreiben und Protokoll im Vertragskontext",
+      "Rn. 40–44: keine Übertragung anders gelagerter freiwilliger Abnahme"
+    ],
+    "verification_status": "primary_full_read",
+    "procedural_status": "Berufung nach §522Abs.2 ZPO zurückgewiesen, Anschlussberufung wirkungslos. Vorausgegangener Hinweis15.11.2023 wird in der Entscheidung in Bezug genommen; als eigenes Original nicht vollständig abgerufen. Aktuelle Rechtskraft nicht verifiziert.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"9 U 1803/23\" \"2026\" BGH",
+        "\"VII ZR 241/22\" \"2026\" \"68/24\""
+      ],
+      "actual_outcome": "Keine verifizierte BGH-Nachentscheidung gerade zu diesem Verfahren; thematisch Folgeurteile März2026 gefunden und punktuell im Original gelesen.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "Fehlendes subjektives Erklärungsbewusstsein nicht als ausnahmsloses Hindernis jeder Abnahme formulieren: normative Zurechnung wird geprüft.",
+      "Die Bezeichnung 'Vertragsobjekt' im Übergabeprotokoll genügt nicht isoliert."
+    ],
+    "expanded_markdown": "### Übergabeprotokolle, Nutzung und Kaufpreiszahlung als keine sichere GE-Abnahme\n\n**Harte Fundstelle:** OLG München, Beschluss vom 08.01.2024 – 9 U 1803/23 Bau e, Rn. 15–44. Amtliche Quelle: https://www.gesetze-bayern.de/Content/Pdf/Y-300-Z-BECKRS-B-2024-N-49081?all=False\n\n**Kernaussage für Verbraucher:** Übergabe, Bezahlung und Nutzung sind im konkreten Vertragszusammenhang zu beurteilen. Sehen beide Seiten eine gesonderte GE-Abnahme durch einen Dritten vor, lässt sich eine eigene Erwerber-Abnahme nicht ohne Weiteres aus dem üblichen Vollzug des Kaufs herauslesen.\n\n**Sachverhalt und tragende Gründe:** Die Gemeinschaft verlangte einen erheblichen Mängelbeseitigungsvorschuss. Der Bauträger berief sich unter anderem auf Übergabeprotokolle, Kaufpreiszahlung, langjährige Nutzung und zunächst fehlende Beanstandungen. Vertraglich sollte jedoch ein Dritter das Gemeinschaftseigentum abnehmen. Das OLG sah deshalb weder einen eindeutigen objektiven Abnahmewillen noch tragfähige Anhaltspunkte, dass der Bauträger das Erwerberverhalten tatsächlich als eigene GE-Abnahme verstanden hatte. Seine eigenen Schreiben aus unterschiedlichen Jahren gingen vielmehr weiterhin von der Dritt-Abnahme aus (Rn. 27–29). Die isolierte weite Lesart des Wortes Vertragsobjekt in einem Protokoll genügte gegenüber dem Gesamtzusammenhang nicht (Rn. 30–38).\n\n**Einsatz im Vertrag:** Notarvertrag, Begleitschreiben, Protokollanlagen, technische Prüfberichte und spätere Korrespondenz gemeinsam auswerten. Für jede Erklärung festhalten, ob sie Besitz, Schlüssel, Sondereigentum, technische Zustandsfeststellung oder rechtsgeschäftliche GE-Abnahme betrifft. Der Bauträger muss die Tatsachen einer ihm günstigen Abnahme darlegen. Auch seine eigenen späteren Äußerungen können zeigen, wie er die Erklärung damals verstand. Beweismittel frühzeitig sichern; ein erst verspätet angebotener Zeuge kann an prozessualen Zulässigkeitsregeln scheitern.\n\n**Grenzen und Verfahrensstand:** Das OLG schloss eine Zurechnung ohne tatsächlich vorhandenes Erklärungsbewusstsein nicht grundsätzlich aus. Dafür wäre unter anderem erforderlich, dass der Erklärende den rechtsgeschäftlichen Sinn bei gehöriger Sorgfalt hätte erkennen können und der Empfänger das Verhalten tatsächlich entsprechend verstand (Rn. 19–24). Eine vom Erwerber bewusst eigenständig erklärte Abnahme kann trotz anderer Vertragsklauseln wirksam sein. Das Urteil zu einem anders gelagerten freiwilligen Abnahmeakt ließ sich daher nicht übertragen (Rn. 40–44). Die Entscheidung ist ein begründeter Einzelfallanker, keine Regel, dass Unterschrift oder langjährige Nutzung rechtlich stets bedeutungslos seien.\n"
+  },
+  {
+    "index": 49,
+    "title": "Individuell unterschriebenes Abnahmeprotokoll",
+    "dockets": [
+      "8 U 29/24"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://dejure.org/2025,15291",
+      "https://www.dnoti.de/download/?cHash=0d5c8dbb9acb42033a34505d209f7124&tx_dnotionlineplusapi_download%5Bnodeid%5D=309c2fc6-4b04-45a1-8766-997fd6180f12",
+      "https://www.gesetze-bayern.de/Content/Pdf/Y-300-Z-BECKRS-B-2026-N-20441?all=False",
+      "https://www.landesrecht-bw.de/bsbw/?query=DOKNR%3ANJRE001645929&source=PermaLink"
+    ],
+    "read_scope": [
+      {
+        "url": "https://dejure.org/2025,15291",
+        "retrieval": "Nachweis/Fragmente, kein Original",
+        "full_read": false,
+        "scope": "DeJure Nachweis und Fragmente, DNotI Metadaten/Leitsatz zum Hinweis; keine vollständige Originalentscheidung. Amtliche Folgeentscheidungen nur als begrenzte mittelbare Bestätigung.",
+        "errors": [
+          "Kein amtlicher Niedersachsen-Volltext auffindbar"
+        ]
+      },
+      {
+        "url": "https://www.dnoti.de/download/?cHash=0d5c8dbb9acb42033a34505d209f7124&tx_dnotionlineplusapi_download%5Bnodeid%5D=309c2fc6-4b04-45a1-8766-997fd6180f12",
+        "retrieval": "Download/Preview nicht erfolgreich",
+        "full_read": false,
+        "scope": "DNotI-Metadaten zum Hinweis17.02.2025; Originalinhalt nicht gelesen.",
+        "errors": [
+          "HTTP429: tägliche Abrufgrenze; nicht umgangen"
+        ]
+      },
+      {
+        "url": "https://www.gesetze-bayern.de/Content/Pdf/Y-300-Z-BECKRS-B-2026-N-20441?all=False",
+        "retrieval": "Amtlicher Volltext",
+        "full_read": true,
+        "scope": "Gesamtentscheidung Rn.1–71 gelesen; für diesen Eintrag ausschließlich begrenzte spätere Bezugnahme inRn.50.",
+        "errors": []
+      },
+      {
+        "url": "https://www.landesrecht-bw.de/bsbw/?query=DOKNR%3ANJRE001645929&source=PermaLink",
+        "retrieval": "Amtliche Indexausgabe",
+        "full_read": false,
+        "scope": "Rn.26 und AnfangRn.32 mit Bezug aufFebruar-Hinweis; ansonsten Scope wieDatensatz50.",
+        "errors": [
+          "Rn.32 nurteilweise"
+        ]
+      }
+    ],
+    "pinpoints": [
+      "Keine selbst verifizierten Randnummern des Braunschweiger Originals.",
+      "Nur mittelbare amtliche Zitierung: Münchener Folgeurteil beim Eintrag Organisationsverschulden, Rn.50, verweist auf Braunschweig02.06.2025Rn.40; Stuttgart10U39/25Rn.26 und32 auf Hinweis17.02.2025."
+    ],
+    "verification_status": "original_unavailable_source_gap",
+    "procedural_status": "Beschlussdatum02.06.2025 durch Nachweis und spätere amtliche Zitierung belegt; Hinweis17.02.2025 gesondert nachgewiesen. Keine selbst überprüfte vollständige Tenor-/Rechtsmittel-/Rechtskraftlage.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"8 U 29/24\" site:rechtsprechung.niedersachsen.de",
+        "\"8 U 29/24\" site:voris.wolterskluwer-online.de",
+        "\"8 U 29/24\" \"Volltext\" \"niedersachsen\"",
+        "\"8 U 29/24\" \"voris\""
+      ],
+      "actual_outcome": "Exact-Suchen amtlicher Niedersachsen-Portale ohne auffindbaren Volltext. DeJure Nachweis/Fragmente und DNotI Nachweis17.02.2025 gefunden. DNotI Download/Preview liefert429Tageslimit, nicht umgangen. SpätereOriginaleStuttgart undMünchen verifizieren Zitierung, nicht den gesamten Inhalt.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "Eintrag auf Quellenlücken-/Prüfstatus zurückstufen: bisherige abstrakte Aussage nicht als vollständig im Original verifiziert ausgeben.",
+      "Hinweis17.02.2025 und abschließendenBeschluss02.06.2025 nicht verwechseln."
+    ],
+    "expanded_markdown": "### Individuell unterschriebenes Abnahmeprotokoll\n\n**Harte Fundstelle:** OLG Braunschweig, Beschluss vom 02.06.2025 – 8 U 29/24, Entscheidungsnachweis DeJure (kein im Recherchelauf vollständig zugängliches Original); zu unterscheiden vom Hinweisbeschluss vom 17.02.2025 desselben Verfahrens. Amtliche Quelle beziehungsweise Nachweis: https://dejure.org/2025,15291\n\n**Kernaussage für Verbraucher:** Dieser Eintrag bleibt ein Prüfhinweis, kein volltextverifizierter Gegenleitsatz. Ein eigenständig unterschriebenes Abnahmeprotokoll ist rechtlich von einer formularmäßig erzwungenen Vertreter-Abnahme zu unterscheiden. Ob der Braunschweiger Beschluss im konkreten Erwerberfall trägt, muss anhand seines vollständigen Originals und des dort geprüften Protokolls nachgeprüft werden.\n\n**Sachverhalt und tragende Gründe:** Für das Aktenzeichen sind ein Hinweis vom Februar und ein Beschluss vom Juni 2025 nachgewiesen. Die frei erreichbaren Nachweise behandeln einen unwirksamen Zahlungsplan, eine persönlich erklärte Abnahme und die Fünf-Prozent-Sicherheit. Der Originalabruf über DNotI scheiterte an einer ausdrücklich gemeldeten täglichen Abrufgrenze; die amtlichen Niedersachsen-Suchen lieferten keinen verlässlich zuordenbaren Volltext. Daher werden aus Fragmenten weder vollständige Tatsachenfeststellungen noch ein bindender allgemeiner Satz über jede Unterschrift rekonstruiert.\n\n**Einsatz im Vertrag:** Im Erwerbervertrag unabhängig davon Erklärungstext, tatsächlichen Unterzeichner, Datum, bezeichnete Bauleistung und begleitende Vorbehalte ermitteln. Eine bloße Zustandsaufnahme, Besitzübergabe oder Bestätigung von Erläuterungen darf nicht ungeprüft mit der Billigung als im Wesentlichen vertragsgerecht gleichgesetzt werden. Umgekehrt zerstört die Unwirksamkeit einer anderen Vertragsklausel nicht zwangsläufig einen später freiwillig und eigenständig abgegebenen Abnahmeakt. Aus einer vermuteten Abnahme dürfen erst nach belastbarer Einordnung Verjährungsbeginn und Wegfall von Sicherheiten abgeleitet werden.\n\n**Grenzen und Verfahrensstand:** Das beim Organisationsverschulden ausgewertete amtliche Münchener Folgeurteil zitiert den Juni-Beschluss lediglich zur Reichweite der Sicherheit bis zur Abnahme. Das Stuttgarter Urteil verweist auf den Februar-Hinweis zur Unwirksamkeit eines Zahlungsplans. Diese selektiven gerichtlichen Bezugnahmen bestätigen die Existenz einschlägiger Entscheidungen, ersetzen aber nicht die fehlende Volltextprüfung ihrer gesamten Begründung. Insbesondere werden keine Aussage zur Rechtskraft, keine vermeintlich gesicherten Original-Randnummern zur Protokollwirkung und keine generelle Wirksamkeitsvermutung zugunsten des Bauträgers behauptet.\n"
+  },
+  {
+    "index": 50,
+    "title": "GdWE bündelt Mängelrechte und Restkaufpreis",
+    "dockets": [
+      "10 U 39/25"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.landesrecht-bw.de/bsbw/?query=DOKNR%3ANJRE001645929&source=PermaLink"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.landesrecht-bw.de/bsbw/?query=DOKNR%3ANJRE001645929&source=PermaLink",
+        "retrieval": "Amtliche Indexfassung; Direktabruf nur JavaScript-Hülle",
+        "full_read": false,
+        "scope": "Amtliche überWebsuche ausgegebeneLangtextfassung:Metadaten,Tenor,Rn1–31 und33–49 vollständig; Rn32nurAnfang. DirekterWeb-/curl-AbrufHTML/JSohneText; Format/xslFehler. Kein verfügbarerComputerbrowser. Deshalb nichtfull_read.",
+        "errors": [
+          "Direktabruf keine Textfassung; format/xsl interner Fehler; Rn.32 im Primärindex abgeschnitten; Browser nicht verfügbar"
+        ]
+      }
+    ],
+    "pinpoints": [
+      "Tenor, Rn.19: konkrete Leistungsrichtungen",
+      "Rn.25–31: mehrfach fehlerhafter Zahlungsplan, Treuhandkonto keine§7Sicherheit",
+      "Rn.33–43: fehlende Abnahme und GdWE-Vorschuss",
+      "Rn.45–49: Verzug, Kosten und Revision"
+    ],
+    "verification_status": "primary_index_read_with_one_paragraph_gap",
+    "procedural_status": "Teilweise Abänderung:14.900Euro an benanntes Bauträgerkonto Zug um Zug gegen430.349,82Euro nebstZinsen vomBauträger anGdWE. Sonderkostenberufung unzulässig; Revisionnichtzugelassen. Amtliche indexierteMetadaten08.10.2026:Rechtskraftja.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"10 U 39/25\" \"Rn.\" \"2026\" site:landesrecht-bw.de",
+        "\"10 U 39/25\" site:landesrecht-bw.de \"Randnummer 4\"",
+        "\"10 U 39/25\" site:landesrecht-bw.de \"Randnummer 22\"",
+        "\"10 U 39/25\" site:landesrecht-bw.de \"Randnummer 32\" \"März\"",
+        "\"10 U 39/25\" \"BGH\" Revision"
+      ],
+      "actual_outcome": "Amtliche Indexausgabe enthält Tenor undRn1–49 mitRn32abgeschnitten; DirektausgabeJS-Hülle. ÄltererJuni-Kommentar nenntnoch'nichtrechtskräftig', aktuellerPrimärindex'Rechtskraftja'. Keine amtlich identifizierteBGH-Nachentscheidung.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "AktuellenMetadatenstatus mitDatum kennzeichnen; keinen gesondertenRechtskraftnachweis vortäuschen.",
+      "KeineallgemeineEinredensperre undkeineZahlungdesRestkaufpreisesandieGdWE formulieren."
+    ],
+    "expanded_markdown": "### GdWE bündelt Mängelrechte und Restkaufpreis\n\n**Harte Fundstelle:** OLG Stuttgart, Urteil vom 28.04.2026 – 10 U 39/25, Tenor und Rn. 19–49; amtliche Metadaten bei Abruf am 08.10.2026: Rechtskraft ja. Amtliche Quelle: https://www.landesrecht-bw.de/bsbw/?query=DOKNR%3ANJRE001645929&source=PermaLink\n\n**Kernaussage für Verbraucher:** Wenn die GdWE die Mängelrechte wirksam gebündelt hat, berechtigt Vorschuss verlangt und dem Bauträger die Nachbesserung nicht mehr gestattet, kann der Erwerber die Restvergütung nicht dauerhaft allein wegen derselben fehlenden Abnahmereife verweigern. Schutz bietet stattdessen die Verurteilung Zug um Zug gegen Zahlung des berechtigten Vorschusses an die GdWE.\n\n**Sachverhalt und tragende Gründe:** Der Bauträger verlangte restliche Vergütung, obwohl das Gemeinschaftseigentum weder wirksam abgenommen noch abnahmereif war. Sein Zahlungsplan verstieß mehrfach gegen die MaBV: Unter anderem sollten bereits 60 Prozent für Grundstück und Altbestand bezahlt werden, obwohl die geschuldeten Zimmerarbeiten der Aufstockung noch fehlten. Auch ein Konto bei der finanzierenden Bank ersetzte keine geeignete §-7-Sicherung (Rn. 25–31). Eine Abnahmefiktion scheiterte zusätzlich an den nicht nachgewiesenen Voraussetzungen einschließlich Belehrung (Rn. 33–34).\n\n**Einsatz im Vertrag:** Zuerst den Ratenplan, dann tatsächliche Abnahme, Abnahmereife und schließlich die Wirkung der GdWE-Rechtsverfolgung prüfen. Beschluss zur Anspruchsbündelung, erfolglose Nachbesserungsfristen, berechtigte Vorschusshöhe und endgültige Ablehnung weiterer Bauträgerarbeiten belegen. Im Fall durfte der Bauträger die Gemeinschaftsmängel gegen deren Willen nicht mehr beseitigen. Gerade deshalb wäre es widersprüchlich, seine Vergütung allein bis zur eigenen Herstellung durch ihn zurückzuhalten (Rn. 37–41). Die Tenorierung muss beide Leistungen mit Schuldner, Empfänger und Betrag nennen: 14.900 Euro vom Erwerber auf das benannte Konto, gegen 430.349,82 Euro nebst Zinsen vom Bauträger an die Gemeinschaft.\n\n**Grenzen und Verfahrensstand:** Eine bloße Beschlussfassung ohne berechtigten Vorschussanspruch und ohne die dargestellte Nachbesserungslage genügt nicht. Eigene weitere Gegenrechte verschwinden nicht pauschal. Das OLG erkannte ausdrücklich das Risiko an, dass der Gemeinschaftsvorschuss später nicht ausreicht (Rn. 42); die Erwerber müssen dessen Bemessung deshalb sorgfältig mitverfolgen. Frühere Verzugszinsen und Anwaltskosten wurden wegen vorheriger fehlender Abnahmereife abgewiesen (Rn. 45). Der aktuelle amtliche Metadatenstatus lautet rechtskräftig; die Leselücke im indexierten Rn. 32 bleibt im Recherchenachweis offengelegt.\n"
+  },
+  {
+    "index": 51,
+    "title": "Erstverwalter-Abnahme Gemeinschaftseigentum (Grundlinie)",
+    "dockets": [
+      "VII ZR 308/12"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2012/VII_ZR_308-12.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2012/VII_ZR_308-12.pdf?__blob=publicationFile&v=1",
+        "retrieval": "Primärquelle per curl und Textauszug gelesen",
+        "full_read": true,
+        "scope": "Amtliches PDF,7Seiten,gesamterBeschlussRn1–14gelesen.",
+        "errors": []
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1",
+        "retrieval": "VonParallelrecherche heruntergeladenes amtliches PDF selbst punktuell gelesen",
+        "full_read": false,
+        "scope": "Rn.47–70, einleitenderTeilvonRn.47nichtvollständig; Rn.48–70 vollständig im ausgewählten Abschnitt.",
+        "errors": []
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1",
+        "retrieval": "VonParallelrecherche heruntergeladenes amtliches PDF selbst punktuell gelesen",
+        "full_read": false,
+        "scope": "Rn.39–57 vollständig, zusätzlichSchlussteildesRn.38; nichtganzeEntscheidung.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn.6–9: Interessenkonflikt durchBestimmungdesErstverwalters",
+      "Rn.10–12: Widerrufsmöglichkeit undTransparenzfrage",
+      "Rn.13–14: Nichtzulassungsbeschwerde"
+    ],
+    "verification_status": "primary_full_read",
+    "procedural_status": "Nichtzulassungsbeschwerde zurückgewiesen; inhaltlich begründete Bestätigung der Unwirksamkeit, keine neue Tatsachenentscheidung.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"VII ZR 308/12\" \"VII ZR 68/24\""
+      ],
+      "actual_outcome": "FolgeentwicklungüberTochter-Abnahme2023undBGH2026identifiziert; Original2023vollständig und2026gezieltgelesen. KeineAbkehrvoneigenemPrüfungs-/Erklärungsrecht festgestellt.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "Kein allgemeines Verbot freiwilliger Vertretung ableiten.",
+      "VomBauträgerbestimmbarerVerwalter genügt alsStrukturrisiko; nicht erstkonkretbewiesenerMissbrauch."
+    ],
+    "expanded_markdown": "### Erstverwalter-Abnahme Gemeinschaftseigentum (Grundlinie)\n\n**Harte Fundstelle:** BGH, Beschluss vom 12.09.2013 – VII ZR 308/12, Rn. 6–14. Amtliche Quelle: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2012/VII_ZR_308-12.pdf?__blob=publicationFile&v=1\n\n**Kernaussage für Verbraucher:** Eine Formularklausel benachteiligt Erwerber unangemessen, wenn sie die GE-Abnahme einem vom Bauträger bestimmbaren Erstverwalter überlässt. Die strukturelle Gefahr einer interessengeleiteten Abnahme genügt; der Käufer muss nicht erst beweisen, dass der konkrete Verwalter tatsächlich pflichtwidrig zugunsten des Bauträgers handelte.\n\n**Sachverhalt und tragende Gründe:** Die Verträge über eine Reihenhausanlage ermächtigten mehrere Personen zur Abnahme, darunter den Verwalter; der Bauträger konnte den ersten Verwalter bestimmen. Die Abnahmeerklärung dieses Verwalters wurde später für den Beginn der Verjährung von Dach- und Schallschutzmängeln herangezogen. Der BGH bestätigte die Unwirksamkeit der Klausel. Wer wirtschaftlich oder organisatorisch vom Bauträger ausgewählt wird, bietet keine ausreichende Gewähr, das zentrale Erwerberrecht unabhängig wahrzunehmen. Die Erklärung kann weitreichende Folgen für Vergütungsfälligkeit, Beweislast und Verjährung haben (Rn. 6–9).\n\n**Einsatz im Vertrag:** Nicht nur die Vollmachtsklausel, sondern auch Teilungserklärung, Erstbestellungsrecht, Verwaltervertrag und tatsächliche Verbindung zum Bauträger lesen. Ermitteln, wer welchen Vertreter bestimmen durfte und ob dem Erwerber ein echtes eigenes Prüfungs- und Entscheidungsrecht verblieb. Die bloße Möglichkeit, eine vorgegebene Vollmacht zu widerrufen, heilt die unangemessene Gestaltung nicht ohne Weiteres: Der Erwerber müsste ihre Problematik erkennen und aktiv korrigieren (Rn. 10–11). Bauträgernahe Erstverwaltung deshalb vor Unterzeichnung aus der Abnahmemechanik lösen oder eine frei gewählte, eindeutig begrenzte Vertretung gestalten.\n\n**Grenzen und Verfahrensstand:** Der BGH ließ offen, ob zusätzlich schon die fehlende Aufklärung über die Widerruflichkeit einen Transparenzverstoß begründete (Rn. 12). Daraus darf kein eigenständiger abschließend entschiedener Leitsatz konstruiert werden. Ebenso bleibt eine später unabhängig und freiwillig erteilte Vertretungsmacht möglich. Der Beschluss betrifft historische Verträge und beantwortet nicht automatisch jede aktuelle WEG-Kompetenzfrage. Die nachfolgenden Entscheidungen zur Tochtergesellschaft und zu Erwerbervertretern führen den Schutz des eigenen Abnahmerechts fort; für Verjährung und zeitliche Obergrenzen müssen jedoch die gesonderten neueren Katalogeinträge hinzugezogen werden. Ohne vollständige Erklärungskette ist weder ein früher Verjährungsbeginn noch zeitlich unbegrenzte Haftung belegt.\n"
+  },
+  {
+    "index": 52,
+    "title": "Nachzügler-Klausel `Abnahme ist erfolgt`",
+    "dockets": [
+      "VII ZR 49/15"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2015/VII_ZR__49-15.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2015/VII_ZR__49-15.pdf?__blob=publicationFile&v=1",
+        "retrieval": "Primärquelle per curl und Textauszug gelesen",
+        "full_read": true,
+        "scope": "AmtlichesPDF,16Seiten,gesamterEntscheidungstextRn1–50gelesen.",
+        "errors": []
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1",
+        "retrieval": "VonParallelrecherche heruntergeladenes amtliches PDF selbst punktuell gelesen",
+        "full_read": false,
+        "scope": "Rn.47–70, einleitenderTeilvonRn.47nichtvollständig; Rn.48–70 vollständig im ausgewählten Abschnitt.",
+        "errors": []
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1",
+        "retrieval": "VonParallelrecherche heruntergeladenes amtliches PDF selbst punktuell gelesen",
+        "full_read": false,
+        "scope": "Rn.39–57 vollständig, zusätzlichSchlussteildesRn.38; nichtganzeEntscheidung.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn.25–29: werkvertraglicheEinordnungwegenSonderwünschen",
+      "Rn.32–40: rückwirkendeAbnahme,Verjährung,förmlicheAbnahme",
+      "Rn.41–49: §242,Verweigerung,Verjährungshemmung"
+    ],
+    "verification_status": "primary_full_read",
+    "procedural_status": "Revision der Bauträgerin zurückgewiesen; Kostenvorschussanspruch blieb bestehen.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"VII ZR 49/15\" \"2026\" \"108/24\""
+      ],
+      "actual_outcome": "BGH26.03.2026 führt diese§242-Linie ausdrücklich fort; amtliche108/24Rn39–57 und68/24Rn47–70 punktuellgelesen. Keinepauschale30-Jahres-Frist auf2006Vertragübertragen.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "Nicht jede reininformatorische Erwähnung frühererAbnahme isoliertfürunwirksamerklären; konkrete Bindungs-/Verjährungswirkung auslegen.",
+      "DieallgemeineWerkrechtsfrage bei bereitsfertigemNeubaubliebhieroffen; folgenderNachzüglerfallentscheidet sie."
+    ],
+    "expanded_markdown": "### Nachzügler-Klausel `Abnahme ist erfolgt`\n\n**Harte Fundstelle:** BGH, Urteil vom 25.02.2016 – VII ZR 49/15, BGHZ 209, 128, Rn. 24–49. Amtliche Quelle: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2015/VII_ZR__49-15.pdf?__blob=publicationFile&v=1\n\n**Kernaussage für Verbraucher:** Ein Nachzügler darf durch formularmäßige Übernahme einer früheren GE-Abnahme nicht um die ihm zustehende Verjährungszeit gebracht werden. Im entschiedenen Vertrag waren Abnahmebindung und bereits laufende Frist miteinander verknüpft; die Unwirksamkeit konnte nicht durch bloße Streichung eines Teilstücks auf ein gerade noch zulässiges Maß reduziert werden.\n\n**Sachverhalt und tragende Gründe:** Für das Gemeinschaftseigentum gab es bereits 2004 eine Teilabnahme. Eine Erwerberin kaufte 2006 eine Penthousewohnung mit zusätzlichen Herstellungsleistungen. Ihr Vertrag erklärte die frühere GE-Abnahme für erfolgt und übernahm deren Folgen. Der BGH behandelte die Mängelrechte nach Werkvertragsrecht, weil weiterhin erhebliche Arbeiten geschuldet waren; die allgemeine Einordnung jedes bereits fertiggestellten Neubauerwerbs musste er hier nicht entscheiden (Rn. 25–29). Die Rückverlegung des Verjährungsbeginns verletzte § 309 Nr. 8 Buchst. b Doppelbuchst. ff BGB (Rn. 32–37).\n\n**Einsatz im Vertrag:** Bei Nachzüglern genau bestimmen, welche Bauteile schon fertig waren, welche Sonderwünsche noch hergestellt werden sollten, welche frühere Abnahme wann und durch wen erklärt wurde und ob der neue Vertrag daran bindet. Eine Vertragsklausel über förmliche Abnahme kann auch das Gemeinschaftseigentum umfassen. Nutzung und Zahlung ersetzen dann nicht ohne Weiteres den vereinbarten Formalakt oder beweisen einen bewussten Verzicht darauf (Rn. 38–40). Abtretung eigener Ansprüche an die GdWE und bloße Prozessführung für Erwerber sind getrennte Grundlagen; hier war die Rechtsübertragung relevant (Rn. 24).\n\n**Grenzen und Verfahrensstand:** Der Klauselverwender konnte sich nach § 242 BGB nicht darauf zurückziehen, wegen fehlender Abnahme seien noch keine Mängelrechte entstanden (Rn. 41–43). Ob die Klage selbst zugleich eine konkludente Abnahme darstellte, blieb offen. Eine Nachfrist war im konkreten Prozess wegen endgültiger Verweigerung entbehrlich; die Gesamtumstände und nicht allein irgendein Bestreiten trugen dies (Rn. 46–48). Ein späterer Verjährungsbeginn bleibt möglich, und Rechtshängigkeit kann gleichzeitig hemmen. Die neuere Altvertragsrechtsprechung bestätigt die Schutzrichtung, darf aber nicht ungeprüft als generelle Dreißigjahresfrist auf diesen Vertrag von 2006 übertragen werden.\n"
+  },
+  {
+    "index": 53,
+    "title": "Nachzügler: Ingenieurbüro-/Beschlussabnahme",
+    "dockets": [
+      "VII ZR 171/15"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2015/VII_ZR_171-15.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2015/VII_ZR_171-15.pdf?__blob=publicationFile&v=1",
+        "retrieval": "Primärquelle per curl und Textauszug gelesen",
+        "full_read": true,
+        "scope": "AmtlichesPDF,24Seiten,gesamterEntscheidungstextRn1–62gelesen;Folge68/24Rn47–70punktuell.",
+        "errors": []
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1",
+        "retrieval": "VonParallelrecherche heruntergeladenes amtliches PDF selbst punktuell gelesen",
+        "full_read": false,
+        "scope": "Rn.47–70, einleitenderTeilvonRn.47nichtvollständig; Rn.48–70 vollständig im ausgewählten Abschnitt.",
+        "errors": []
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1",
+        "retrieval": "VonParallelrecherche heruntergeladenes amtliches PDF selbst punktuell gelesen",
+        "full_read": false,
+        "scope": "Rn.39–57 vollständig, zusätzlichSchlussteildesRn.38; nichtganzeEntscheidung.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn.20–27:WerkvertragsrechtbeifertigemNeubau",
+      "Rn.28–37:keineBindungdurchTeilungserklärung/Beschluss",
+      "Rn.38–56:AGBundkeinekonkludenteAbnahme",
+      "Rn.57–61:MängelrechteundVerjährung"
+    ],
+    "verification_status": "primary_full_read",
+    "procedural_status": "Revision zurückgewiesen; zugesprochener Kostenvorschuss und weitere Ansprüche blieben bestehen.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"VII ZR 171/15\" \"2026\" \"68/24\""
+      ],
+      "actual_outcome": "AmtlicheFolgeurteileMärz2026gezieltgelesen:Fortführungder§242-Linie,zusätzlicheAbgrenzungdesTechnikzeitpunktsbeimNachzüglerundAltvertragsobergrenze.KeinegenerelleAbkehr.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "Beschlusskompetenzentscheidung nach damaligemWEG undPositiondesdamalsnochNichtmitglieds kennzeichnen.",
+      "Werkvertragsrecht bedeutet nicht: neuesterTechnikstand beimspäterenErwerbjedesbereitshergestelltenBauteils."
+    ],
+    "expanded_markdown": "### Nachzügler: Ingenieurbüro-/Beschlussabnahme\n\n**Harte Fundstelle:** BGH, Urteil vom 12.05.2016 – VII ZR 171/15, BGHZ 210, 206, Rn. 20–61. Amtliche Quelle: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2015/VII_ZR_171-15.pdf?__blob=publicationFile&v=1\n\n**Kernaussage für Verbraucher:** Für die Mängelhaftung beim Erwerb einer neu errichteten Eigentumswohnung kann Werkvertragsrecht auch gelten, wenn das Gebäude bei Vertragsschluss schon fertig ist. Eine frühere Ingenieur-Abnahme oder ein Beschluss der damaligen Eigentümer bindet einen späteren Erwerber jedoch nicht ohne tragfähige eigene Rechtsgrundlage.\n\n**Sachverhalt und tragende Gründe:** Die Anlage mit 23 Einheiten wurde 2002 errichtet. Nach einem Eigentümerbeschluss nahm ein Ingenieurbüro das Gemeinschaftseigentum ab. Der spätere Käufer schloss seinen Vertrag erst 2003; dessen Klauseln übernahmen frühere Abnahme und gemeinsames Ende der Mängelfrist. Der BGH bestätigte den Vorschussanspruch. Gegen eine schematische Anwendung des Kaufrechts sprach insbesondere das auf Herstellung und Mängelbeseitigung gerichtete Leistungsprogramm einschließlich des werkvertraglichen Selbstvornahmevorschusses (Rn. 20–27). Die Fertigstellung allein machte den Erwerb nicht zum gewöhnlichen Bestandskauf.\n\n**Einsatz im Vertrag:** Für jeden Nachzügler eine eigene Anspruchs- und Abnahmeakte führen. Maßgeblich sind sein Vertrag, seine Erklärung oder frei erteilte Vollmacht, nicht nur die Sammelunterlagen der Gemeinschaft. Eine Teilungserklärung regelt grundsätzlich das Verhältnis der Eigentümer untereinander und nimmt nicht beliebig Einfluss auf den individuellen Erwerbsvertrag. Der damalige Beschluss konnte den späteren Erwerber, der noch nicht einmal Mitglied der werdenden Gemeinschaft war, nicht binden (Rn. 28–37). Die Zusammenfassung von Mängelrechten zur gemeinsamen Durchsetzung ist hiervon zu unterscheiden. Auch scheinbar informierende Klauseln können im Zusammenhang mit einer einheitlichen Frist eine unzulässige Bindung bewirken (Rn. 38–50).\n\n**Grenzen und Verfahrensstand:** Langes Wohnen und Bezahlen waren keine konkludente Abnahme, wenn die Käufer aufgrund der Klausel glaubten, das sei bereits erledigt; die Kenntnis der Unwirksamkeit fehlte (Rn. 51–56). Der Verwender konnte den Vorschuss nicht durch Berufung auf die fehlende Abnahme abwehren (Rn. 57–59). Das bedeutet weder unbegrenzte Haftung noch automatisch neue technische Anforderungen zum späteren Kaufdatum. Die BGH-Folgeentscheidung vom März 2026 stellt bei erkennbar bereits hergestellten Bauteilen regelmäßig auf die Regeln bei Herstellung ab, sofern nichts Weitergehendes vereinbart wurde. Vertragsqualität, Herstellungszeitpunkt und Verjährung sind deshalb drei getrennte Prüfungen.\n"
+  },
+  {
+    "index": 54,
+    "title": "Notaranderkonto bei Bauträgerabwicklung",
+    "dockets": [
+      "VII ZB 28/20"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2020/VII_ZB__28-20.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2020/VII_ZB__28-20.pdf?__blob=publicationFile&v=1",
+        "retrieval": "Primärquelle per curl und Textauszug gelesen",
+        "full_read": true,
+        "scope": "AmtlichesPDF,17Seiten,gesamterEntscheidungstextRn1–42gelesen.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn.18–20:AmtspflichtvsZivilwirksamkeit",
+      "Rn.21–26:MaBV/AGB-FragenundEvidenzprüfung",
+      "Rn.29–35:AbtretungundgemeinsameVerwahrungsanweisung",
+      "Rn.37–40:StreitüberRechtsverhältniszivilgerichtlich"
+    ],
+    "verification_status": "primary_full_read",
+    "procedural_status": "Beschwerdeentscheidung desLandgerichts aufgehoben; Beschwerde derErwerberin gegen verweigerteRückzahlung zurückgewiesen. KeineabschließendeMaBV-/AGB-Gültigkeitsentscheidung.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"VII ZB 28/20\" \"2025\" \"2026\"",
+        "\"VII ZB 28/20\" Notaranderkonto \"2026\""
+      ],
+      "actual_outcome": "Keineverifizierte neuereSachentscheidung zurAbkehr gefunden. StuttgarterErwerbervergütungsurteil2026 bestätigt fürseinBanktreuhandkonto lediglich,dasseskeine§7Sicherheitersetzt;andererStreitgegenstand.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "OffengelasseneMaBV-/AGB-NichtigkeitnichtinFreigabederKlauselumdeuten.",
+      "EmpfangsberechtigteAbtretungsempfängerbeiAufhebunggemeinsamerAnweisung berücksichtigen."
+    ],
+    "expanded_markdown": "### Notaranderkonto bei Bauträgerabwicklung\n\n**Harte Fundstelle:** BGH, Beschluss vom 02.08.2023 – VII ZB 28/20, Rn. 18–40. Amtliche Quelle: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2020/VII_ZB__28-20.pdf?__blob=publicationFile&v=1\n\n**Kernaussage für Verbraucher:** Fehlt ein berechtigtes Sicherungsinteresse an der notariellen Verwahrung, betrifft das zunächst die Amtspflichten des Notars; die zivilrechtliche Verwahrungsvereinbarung ist nicht schon deshalb nichtig. Ob Geld zurückfließt, hängt zusätzlich von der Anweisung und den Rechten sämtlicher Beteiligter ab.\n\n**Sachverhalt und tragende Gründe:** Beim Erwerb zweier Wohnungen wurden Kaufpreisteile auf einem Notaranderkonto verwahrt, darunter Sicherheits- und Schlussratenanteile. Später wurde eine Teilforderung an einen Dritten abgetreten; nach Insolvenz des Bauträgers stritten die Beteiligten über die Rückzahlung. Das Landgericht hatte dem Notar eine Auszahlung an die Erwerberin aufgegeben. Der BGH hob dies auf. Ein möglicher Verstoß gegen die MaBV oder AGB-Recht blieb offen, weil eine solche Unwirksamkeit im beschränkten Prüfungsrahmen des notariellen Beschwerdeverfahrens nicht evident war (Rn. 21–26). Damit wurde die Vertragsgestaltung materiell gerade nicht umfassend gebilligt.\n\n**Einsatz im Vertrag:** Bei Anderkontomodellen sechs Ebenen auseinanderhalten: zulässige Verwahrung, zivilrechtliche Abrede, MaBV-konforme Fälligkeit, Auszahlungsbedingungen, Abtretung beziehungsweise Pfändung und Insolvenz. Die exakte Anweisung einschließlich aller Nachträge und Zustimmungen beschaffen. Eine Abtretung der Kaufpreisforderung kann den zugehörigen Auszahlungsanspruch gegen den Notar als Nebenrecht erfassen, ohne dass dies nochmals ausdrücklich erklärt wurde (Rn. 29–35). Eine ursprünglich gemeinsame Anweisung kann daher nicht beliebig nur zwischen Käufer und Bauträger aufgehoben werden, wenn inzwischen ein berechtigter Dritter betroffen ist.\n\n**Grenzen und Verfahrensstand:** Der Notar muss schwierige zivilrechtliche Streitfragen nicht anstelle des Prozessgerichts abschließend entscheiden. Über streitige Abtretungswirksamkeit, Fälligkeit und Rückabwicklung kann ein Zivilprozess erforderlich sein (Rn. 37–40). Auch die Erfüllungsablehnung des Insolvenzverwalters beseitigt nicht automatisch sämtliche Ansprüche für bereits erbrachte Teilleistungen. Die im Fall vorgesehene Hinterlegungsoption ist außerdem von einer zwingenden Vorleistungspflicht zu unterscheiden (Rn. 25). Für Erwerber bedeutet das: Verwahrung bindet Liquidität und schafft Verfahrenspositionen weiterer Beteiligter; sie ersetzt weder eine passende Bürgschaft noch die Prüfung der einzelnen Rate. Nicht als allgemeine Empfehlung eines Anderkontos verwenden.\n"
+  },
+  {
+    "index": 55,
+    "title": "Zusätzlicher Ausbauvertrag und Reichweite der Beurkundungspflicht",
+    "dockets": [
+      "12 U 12/24"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.schleswig-holstein.de/DE/justiz/themen/service/justizministerialblatt/Teil_A/_documents/Vollversion/2025/202507.pdf?__blob=publicationFile&v=2"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.schleswig-holstein.de/DE/justiz/themen/service/justizministerialblatt/Teil_A/_documents/Vollversion/2025/202507.pdf?__blob=publicationFile&v=2",
+        "retrieval": "Primärquelle per curl und Textauszug gelesen",
+        "full_read": false,
+        "scope": "AmtlicherAbdruckSchlHA7/2025S252–259 vollständiggelesen,enthält(…)AuslassungeninderZeugenaussagen-/Beweiswürdigungsdarstellung;deshalbpublished_judicial_excerpt_read,nichtfull_read.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "S.255–256,I.1.a–c.bb:einheitlicherKernundVerknüpfungswille",
+      "S.257,I.1.c.cc:hilfsweise§242-Begründung",
+      "S.258–259,I.4:berechtigterEinbehaltundAuflassung"
+    ],
+    "verification_status": "published_judicial_excerpt_read",
+    "procedural_status": "Berufung desBauträgers erfolglos; Auflassungs-/Bewilligungsanspruch bestätigt,Widerklage aufHerausgabe abgewiesen. AktuelleRechtskraftoderRevisionsgangimAbdrucknichtbelegt.",
+    "newer_search": {
+      "cutoff": "2026-10-08",
+      "queries": [
+        "\"12 U 12/24\" \"Revision\" \"2026\"",
+        "\"12 U 12/24\" Revision BGH 2026",
+        "\"12 U 12/24\" site:gesetze-rechtsprechung.sh.juris.de"
+      ],
+      "actual_outcome": "AmtlicherZeitschriftenabdruckundamtlicherEinzelauszuggefunden; beidegekürzt.DNotI/VolltextnachweisnurDiscovery,nachbereitsbekanntem429keineUmgehung.KeineamtlichverifiziertespätereRevisionsentscheidung.",
+      "limitation": "Gezielte dokumentierte Suche, kein Anspruch auf vollständige Erfassung sämtlicher Entscheidungen oder Ausschluss unveröffentlichter Rechtsmittel."
+    },
+    "corrections_required": [
+      "VeröffentlichtenOriginalabdrucknichtmitungekürztemVollurteilgleichsetzen.",
+      "Ausnahmsweise§242Begründungund5%-RestpreisbewertungnichtalsallgemeineForm-/Zahlungsfreigabedarstellen."
+    ],
+    "expanded_markdown": "### Zusätzlicher Ausbauvertrag und Reichweite der Beurkundungspflicht\n\n**Harte Fundstelle:** OLG Schleswig, Urteil vom 10.07.2025 – 12 U 12/24, amtlicher gekürzter Abdruck SchlHA 7/2025, S. 252–259, insbesondere Gründe I.1 auf S. 255–257 und I.4 auf S. 258–259. Amtliche Quelle: https://www.schleswig-holstein.de/DE/justiz/themen/service/justizministerialblatt/Teil_A/_documents/Vollversion/2025/202507.pdf?__blob=publicationFile&v=2\n\n**Kernaussage für Verbraucher:** Grundstücks- und Bauleistungskern eines Bauträgervertrags sind vollständig zu beurkunden. Bei einem objektiv selbständigen zusätzlichen Ausbauvertrag kommt es hingegen auf die rechtliche Verknüpfung an: Das Grundstücksgeschäft muss nach dem Parteiwillen vom Zusatzvertrag abhängen. Nur die umgekehrte Abhängigkeit genügt nicht.\n\n**Sachverhalt und tragende Gründe:** Beurkundet war der Erwerb einer Rohbauwohnung für 179.000 Euro. Der Bauträger behauptete später einen weiteren, nicht beurkundeten Vertrag über schlüsselfertigen Ausbau für 50.000 Euro und leitete daraus Gesamtnichtigkeit ab. Der Käufer verlangte Eigentumsübertragung und hielt wegen Schallschutzmängeln fünf Prozent zurück. Das OLG erhob selbst Zeugenbeweis und hielt weder den behaupteten Zusatzvertrag noch den erforderlichen Verknüpfungswillen für bewiesen (S. 256). Dass ein Ausbau wirtschaftlich auf dem Rohbau aufbaut und ursprünglich schlüsselfertig angeboten wurde, erzwang keine einheitliche rechtliche Behandlung.\n\n**Einsatz im Vertrag:** Bei Rohbau-/Ausbaumodellen das vorvertragliche Angebot, den beurkundeten Umfang, sämtliche Zusatzabreden, Parteien, Preise und zeitliche Reihenfolge erfassen. Entscheidend fragen: Wäre das Grundstücks- und Rohbaugeschäft auch ohne den gesonderten Ausbauvertrag abgeschlossen worden? Wer Formnichtigkeit behauptet, trägt grundsätzlich die Darlegungs- und Beweislast; konkrete Indizien und Vermutungen können die Beweislage verändern. Die Vertragsaufteilung darf nicht als Freigabe informeller Sonderwünsche missverstanden werden. Zusagen, die tatsächlich zum einheitlichen Herstellungskern gehören, bleiben formbedürftig.\n\n**Grenzen und Verfahrensstand:** Hilfsweise hielt das OLG die Berufung des Unternehmers auf den selbst veranlassten Formmangel angesichts seines widersprüchlichen Vorgehens für treuwidrig (S. 257). Das ersetzt keine ordnungsgemäße Beurkundung und darf insbesondere nicht pauschal auf Schwarzarbeitsabreden übertragen werden. Für die Auflassung war zusätzlich entscheidend, dass belegte Schallschutzmängel mit 24.700 Euro Beseitigungskosten seit Jahren nicht beseitigt waren und den Restbetrag von 8.950 Euro deutlich deckten; über § 162 Abs. 1 entsprechend konnte die Vollzahlungsbedingung als eingetreten gelten (S. 258–259). Weder eine starre Fünf-Prozent-Regel noch automatische Unwirksamkeit jeder Vollzahlungsklausel folgt daraus. Der amtliche Abdruck kürzt Teile der Zeugenaussagen; diese Quellenbegrenzung bleibt ausdrücklich bestehen.\n"
+  }
+]

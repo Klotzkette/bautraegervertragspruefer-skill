@@ -1,0 +1,75 @@
+{
+  "model_identifier": "unbekannt",
+  "sha256": {
+    "skill/MINI_SKILL.md": "ef4630c5ae2b4cfa9416fcc6e8aafe059e235e4cd87a0862deb2c2bbeee11cb7",
+    "tests/workflow/word-selection/inputs/ws01-01.md": "73c308771c239b40222bc508d69673c298e0e55d827d7e0b601235e08d908e93",
+    "tests/workflow/word-selection/inputs/ws01-02.md": "f8ca74d462727fe1cd669b3c8befcccd29868bcc7bc2368db579f5c07ab9cb93"
+  },
+  "source_retrievals": [
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__634a.html",
+      "retrieval": "Web-Suchergebnis mit vollständigem Normtext"
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__309.html",
+      "retrieval": "Web-open; Normtext einschließlich Nr. 8 b ff und Nr. 12 gelesen"
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__305.html",
+      "retrieval": "Web-open; Normtext gelesen"
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__306.html",
+      "retrieval": "Web-open; Normtext gelesen"
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__650u.html",
+      "retrieval": "Web-open; Normtext gelesen"
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/beurkg/__17.html",
+      "retrieval": "Web-open; Normtext einschließlich Abs. 2a gelesen"
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__13.html",
+      "retrieval": "Web-open; Normtext gelesen"
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__310.html",
+      "retrieval": "Web-open; Normtext gelesen"
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__650o.html",
+      "retrieval": "Web-open; Normtext gelesen"
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__640.html",
+      "retrieval": "Zwei Web-open-Versuche mit Timeout; anschließend Web-Suchergebnis mit vollständigem Normtext gelesen"
+    },
+    {
+      "url": "https://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Art=en&Blank=1.pdf&Datum=2014-3-20&Gericht=bgh&Sort=1&anz=30&nr=67527&pos=21",
+      "retrieval": "Suchtreffer gefunden; Web-open scheiterte mit 403 Forbidden"
+    },
+    {
+      "url": "https://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Gericht=bgh&Art=en&nr=67527",
+      "retrieval": "Alternativer Web-open-Versuch nicht zugänglich"
+    },
+    {
+      "url": "https://www.dnoti.de/download/?cHash=e56e75903f357f78f13d6e81279e402a&tx_dnotionlineplusapi_download%5Bnodeid%5D=cbd4f35f-b101-404b-9c42-5b0049d7369a&tx_dnotionlineplusapi_download%5Bpreview%5D=1",
+      "retrieval": "Suchtreffer gefunden; Web-open scheiterte beim Parsen"
+    },
+    {
+      "url": "https://www.dnoti.de/entscheidungen/details/?cHash=2431e19663eeda7c28f24e46a794b7f4&tx_dnotionlineplusapi_decisions%5Bnodeid%5D=cbd4f35f-b101-404b-9c42-5b0049d7369a",
+      "retrieval": "Entscheidungsabdruck BGH 20.03.2014, VII ZR 248/13 als HTML gelesen; zunächst ausgelassene Zeilen durch weiteres Web-open ab Zeile 175 nachgelesen"
+    }
+  ],
+  "research_limits": [
+    "Nur der Inhalt des Mini-Prompts und die beiden bezeichneten Nutzereingaben lagen als lokale Fallgrundlage vor; keine Prüfung einer tatsächlichen Word-Datei, des übrigen Vertrags oder seiner Anlagen.",
+    "Der amtliche BGH-Volltext ließ sich nicht öffnen; ersatzweise wurde der beim DNotI wiedergegebene Entscheidungsabdruck gelesen.",
+    "OpenJur wurde von der Websuche als durch robots.txt gesperrt gemeldet.",
+    "Eine kombinierte Rechercheausgabe wurde gekürzt; der konkrete BGH-Nachweis wurde anschließend gezielt neu gesucht und sein DNotI-Abdruck nachgelesen.",
+    "Gezielte Suchen nach neuerer Rechtsprechung mit den Jahreszahlen 2025 und 2026 sowie Domains bundesgerichtshof.de und rechtsprechung-im-internet.de ergaben in der abschließenden Suchrunde keine Treffer. Daraus folgt keine Vollständigkeitsgarantie.",
+    "Die zweite Antwort verwendet die in der ersten Bearbeitung überprüften Normen und den überprüften Entscheidungsabdruck; für sie wurde kein neuer Quellenabruf durchgeführt.",
+    "Die SHA256-Werte wurden nach der ersten Antwort und dem Lesen der zweiten Eingabe mit shasum -a 256 berechnet."
+  ]
+}

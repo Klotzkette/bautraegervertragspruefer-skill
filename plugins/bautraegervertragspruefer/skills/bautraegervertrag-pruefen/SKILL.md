@@ -15,6 +15,8 @@ Frage aktiv nach erheblichen offenen Tatsachen oder Entscheidungen, höchstens d
 
 Ein Entwurf mit freier Urkundennummer belegt keine Beurkundung. Notarielle Formulierungen und Dateinamen ersetzen keinen Nachweis des tatsächlichen Status. Benenne unzugängliche Anlagen und widersprechende Fassungen, ohne fehlenden Nachweis mit Nichtexistenz gleichzusetzen.
 
+Zähle selbständige Rückfragen, nicht Absätze mit mehreren Fragen. Liefere ohne Dateiexport die vollständigen Texte im Chat. Ist in einer Word-Umgebung nur die Auswahl zugänglich, prüfe diese mit benannter Grenze; behaupte keine Lektüre des übrigen Vertrags. Ein Prüfauftrag erlaubt kein Überschreiben der geöffneten Datei. Nutze die Hinweise zur jeweiligen Umgebung in Abschnitt 1.4 des Werkstatt-Prompts; fehlende Werkzeuge ändern nicht den Auftrag, wohl aber den nachweisbar geprüften Umfang.
+
 Nutze den [Werkstatt-Prompt](references/werkstatt.md) als fachliche Vertiefung: Lies die für den Auftrag einschlägigen Abschnitte und bei einer Gesamtprüfung alle betroffenen Prüfgebiete. Die nachfolgenden Arbeitsschritte gelten auch, wenn nur eine Klausel geprüft wird; erweitere einen begrenzten Auftrag nicht ungefragt zur Gesamtprüfung. Quellen im Werkstatt-Prompt sind Rechercheausgangspunkte. Prüfe tragende Rechtsaussagen anhand des maßgeblichen Normstands und amtlicher Volltexte. Kennzeichne fehlenden Zugriff konkret; erfinde keine Fundstellen oder Recherche.
 
 Bei DOCX ergänze die Aufnahme nach [Word-Prüfung](../bautraeger-word-entwurf-pruefen/SKILL.md), bei einem Zahlungsabruf den [Zahlungsabgleich](../bautraeger-zahlungsrate-pruefen/SKILL.md). Übernimm bereits erfasste Unterlagen und Ergebnisse; starte keine wechselseitige Neuaufnahme. Fehlt Python, verwende den verfügbaren Dateileser und benenne dessen Lesegrenzen.
@@ -38,6 +40,8 @@ Die Mängelverjährung ist ausdrücklich zu prüfen: Für Bauwerksmängel gelten
 Adressat, streitentscheidende Tatsachen und wirtschaftlich erhebliche Entscheidungen dürfen nicht erfunden werden. Frage bei einer notwendigen offenen Wahl gezielt nach; formuliere die davon unabhängigen Teile bereits. Ein erteilter Entwurfsauftrag braucht keine erneute Freigabe zum Schreiben. Versenden, Erklärungen abgeben und Originaldateien verändern bedürfen des entsprechenden Auftrags.
 
 ## Fortsetzen und abschließen
+
+Kontrolliere die ausgearbeiteten Texte: Bei erleichterter Verjährung in Verbraucher-AGB § 309 Nr. 8 b ff im Gutachten ausdrücklich anwenden. Interne Fortschrittsmeldungen und Gesprächsverwaltung gehören nicht in externe Briefe. Ein Schreiben muss für seinen Empfänger ohne Kenntnis des KI-Gesprächs verständlich sein.
 
 Nach jeder Antwort erläutere kurz, was geklärt ist, welche Bewertung sich ändert und welche Angabe als Nächstes fehlt. Aktualisiere die betroffenen Feststellungen, Ersatzklauseln, Beträge und sämtliche zugehörigen Schreiben. Zeige erledigte, unverändert offene und neue Punkte; unbeantwortete Feststellungen verschwinden nicht. Eine vorgeschlagene Streichung ist noch keine vereinbarte Änderung; ein ausreichender neuer Beleg erledigt dagegen den betreffenden Einwand. „Weiter“ bedeutet, am offenen Arbeitsschritt anzuschließen; wiederhole weder die Aufnahme noch bereits beantwortete Fragen.
 

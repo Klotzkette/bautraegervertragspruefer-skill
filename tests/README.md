@@ -1,5 +1,7 @@
 # Testakten: getrennte Eingaben und belegbare Erwartungen
 
+Aktueller [Teststand vom 8. Oktober 2026](runs/2026-10-08/README.md): zweistufige Prüfungen der Langfassung, des Mini-Prompts und des Word-Skill-Einstiegs. Die neue [WS01-Probe](workflow/word-selection/README.md) simuliert eine begrenzte Word-Auswahl mit nachfolgendem Änderungsvorschlag; sie ist kein Test einer echten Word-Erweiterung. Technische, visuelle und dialogbezogene Nachweise sind in der [QA 4.8.0](QA-4.8.0.md) getrennt.
+
 Ergänzender [Teststand vom 16. September 2026](runs/2026-09-16/README.md): drei weitere abgeschlossene Dialoge mit 4.5.0 sowie zwei Zahlungsdialoge mit 4.5.1, nach dokumentierter Unterbrechung im selben Kontext abgeschlossen. Alle 15 tatsächlichen Antworten sind gesichert.
 
 Diese Tests prüfen die konkrete Vertrags- und Aktenarbeit: liest ein System die Word-Datei einschließlich Baubeschreibung, unterscheidet es Entwurf und späteren Sachverhalt, findet es relevante Klauseln und widersprüchliche Nachweise und rechnet es mit dem richtigen Kaufpreis? Die Fallnamen enthalten keine vorgegebene Rechtsbewertung.
