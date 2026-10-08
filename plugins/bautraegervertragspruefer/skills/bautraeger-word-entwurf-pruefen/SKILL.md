@@ -13,6 +13,8 @@ Beginne unmittelbar mit der lesbaren Datei. Nenne früh Fassung, ersten verläss
 
 ## Word-Inhalte vollständig aufnehmen
 
+Prüfe in einer Word-Erweiterung den tatsächlichen Leseumfang: ganzes Dokument oder nur markierte Auswahl. Bei einer Auswahl benenne die konkrete Begrenzung und fordere notwendige Verweisstellen an; keine Behauptung einer Gesamtprüfung. Fehlt die Skriptausführung, verwende die verfügbaren Dokumentfunktionen mit benannten Grenzen. Ohne Dateiexport liefere Bericht und Schreiben als ausgearbeiteten Text. Zähle selbständige Rückfragen, nicht Nummern mit mehreren Fragen.
+
 Lies die DOCX selbst; eine gleichnamige PDF- oder Markdown-Datei kann eine andere Fassung sein. Nutze [docx_pruefen.py](scripts/docx_pruefen.py): `python3 scripts/docx_pruefen.py vertrag.docx`. Löse den Skriptpfad relativ zu diesem Skill auf. Der Bericht erfasst Absätze mit stabilen XML-Fundorten, Tabellen, Kopf-/Fußzeilen, Textfelder, Fuß-/Endnoten, Kommentare, Einfügungen, Löschungen, Felder und eingebettete Objekte. Diese Fundorte sind keine Word-Seitenzahlen.
 
 Prüfe den gerenderten Inhalt zusätzlich visuell, soweit die Umgebung das ermöglicht. Der Extraktor ersetzt weder OCR von Bildern noch Layoutprüfung. Bilder, alternative Inhalte und eingebettete Dateien sind gesondert zu lesen oder als Lesegrenze zu benennen. Behaupte bei `.doc`, verschlüsselten Dateien oder unzugänglichen Inhalten keine vollständige Prüfung. Fordere bei einer entscheidenden Lücke die bezeichnete lesbare Fassung an und bearbeite bis dahin die erreichbaren Inhalte.

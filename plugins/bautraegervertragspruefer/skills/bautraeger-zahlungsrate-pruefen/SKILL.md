@@ -15,6 +15,8 @@ Beginne unmittelbar: Nenne früh den verlangten Betrag, den bereits erkennbaren 
 
 ## Voraussetzungen und Beträge prüfen
 
+Zähle selbständige Rückfragen, nicht Nummern mit mehreren Fragen. Ohne Rechner oder Dateiexport bleibt die Aufgabe bestehen: Rechne nachvollziehbar mit den zugänglichen Zahlen und liefere Nachricht und Antwort als ausgearbeiteten Text. Keine technisch nicht ausgeführte Berechnung oder Dateierstellung behaupten. Interne Fortschrittsmeldungen gehören nicht in den Brief an den Bauträger.
+
 Prüfe nach [§ 3 MaBV](https://www.gesetze-im-internet.de/gewo_34cdv/__3.html) getrennt die allgemeinen Voraussetzungen, den vertraglichen Ratenmeilenstein und den tatsächlich belegten Leistungsstand. Die schriftliche Notarmitteilung ersetzt keine Feststellung des Bautenstands. Fehlende Unterlage bedeutet Nachweislücke; ein nachgewiesen offenes, für die verlangte Rate notwendiges Gewerk begründet dagegen einen konkreten Einwand gegen die Fälligkeit. Eine Rechnungsfrist allein begründet keine Fälligkeit.
 
 Bei Grundstückseigentum: erste Stufe 30 % der Gesamtsumme, weitere Stufen aus den verbleibenden 70 %. Bei Erbbaurecht: 20 % und Restbasis 80 %. Restquoten sind 40/8/3/3/3/10/6/3/4/12/3/5 % für Rohbau/Dach/Heizung/Sanitär/Elektro/Fenster/Innenputz/Estrich/Sanitärfliesen/Bezugsfertigkeit/Fassade/vollständige Fertigstellung. Höchstens sieben tatsächlich verlangbare Teilbeträge; die zwölf Restgewerke sind keine zwölf zusätzlichen Abrufe. Bilde den vertraglichen Zusammenfassungsplan ab. Entfällt ein Gewerk tatsächlich, prüfe die anteilige Umverteilung; fehlende Ausführung ist kein Entfallen.

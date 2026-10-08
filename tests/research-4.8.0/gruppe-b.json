@@ -1,0 +1,746 @@
+[
+  {
+    "index": 19,
+    "title": "5-%-Sicherheit und intransparenter Zahlungsplan",
+    "dockets": [
+      "19 U 128/24"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.landesrecht-bw.de/perma?d=NJRE001622440"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.landesrecht-bw.de/perma?d=NJRE001622440",
+        "scope": "Amtlicher recherchierter Kurztext: Metadaten, Leitsätze und darin ausgewiesene Randnummern; amtlicher vollständiger Tatbestand und vollständige Gründe nicht zugänglich.",
+        "full_read": false,
+        "retrieval": "Indexierter amtlicher Kurztext über Landesrecht-BW-format/xsl-Treffer gelesen. Kanonische URL, /part/L und erneuter format/xsl-Abruf lieferten nur JavaScript-Hinweis. Direkter HTTP-Abruf ebenso. Computer-Use-Versuch: IAB nicht verfügbar; Browserinventar leer.",
+        "errors": "Keine amtliche Langtextlektüre. Suche nach exaktem Aktenzeichen + Volltext, filetype:pdf und site:dnoti.de ohne zugängliche DNotI-Originalreproduktion. Nichtamtliche nu:legal-Wiedergabe gefunden, nur Ausschnitte gelesen; für Erweiterung nicht als Volltextnachweis verwendet."
+      }
+    ],
+    "pinpoints": [
+      "Amtliche Leitsatzverweise Rn. 32, 42–43, 45, 48, 50–51; keine über diese amtlichen Auszüge hinausgehenden Randnummernbehauptungen."
+    ],
+    "verification_status": "Begrenzt bestätigt: amtliche Kurztext-/Leitsatzprüfung, kein Volltextstatus.",
+    "procedural_status": "OLG Karlsruhe, Urteil 15.07.2025; amtlicher Kurztext nennt als Vorinstanz LG Karlsruhe, Urteil 19.02.2024–10 O 134/23 und Metadatum Rechtskraft: ja. Keine eigenständig nachgewiesene BGH-Sachentscheidung.",
+    "newer_search": {
+      "queries": [
+        "\"19 U 128/24\" Urteil Revision BGH 2026 Volltext",
+        "\"19 U 128/24\" filetype:pdf",
+        "\"19 U 128/24\" site:dnoti.de"
+      ],
+      "outcome": "Keine spätere aufhebende BGH-Entscheidung oder zugängliche weitere Originalentscheidung gefunden. Dies ist ein dokumentierter Suchbefund, kein lückenloser Instanzenregisterauszug."
+    },
+    "corrections_required": [
+      "Keine Behauptung einer vollständigen Urteilslektüre. Keine pauschale Unwirksamkeit jedes 5-%-Einbehalts oder jedes Zahlungsplans mit gesonderter Sicherungsfreigabe."
+    ],
+    "expanded_markdown": "### 5-%-Sicherheit und intransparenter Zahlungsplan\n\n**Harte Fundstelle:** OLG Karlsruhe, Urteil vom 15.07.2025 – 19 U 128/24, amtlicher Kurztext: https://www.landesrecht-bw.de/perma?d=NJRE001622440. Beleggrenze: amtliche Leitsätze und Metadaten gelesen, vollständiger amtlicher Tatbestand und Gründe nicht zugänglich; die folgenden Randnummern sind die im amtlichen Kurztext zugeordneten Verweise.\n\n**Kernaussage für Verbraucher:** Eine als weitere Rate ausgestaltete 5-%-Position ersetzt keine verständliche Regelung der Verbrauchersicherheit. Der konkrete Zahlungsplan ließ nach den amtlichen Leitsätzen nicht hinreichend erkennen, ob der Erwerber die Sicherheit bereits durch Zurückbehalten früherer Abschläge erhält und unter welchen Voraussetzungen der Betrag wieder auszuzahlen ist. Betroffen war eine Klausel, die die spätere Zahlung bei rechtzeitiger Fertigstellung ohne wesentliche Mängel unter Hinweis auf einen Einbehalt nach § 632a BGB vorsah. Transparenz ist eigenständig zu prüfen; eine wirtschaftlich möglicherweise ausreichende Sicherheit beseitigt die Intransparenz nicht (amtliche Verweise Rn. 32, 42–43, 45). Daneben behandelt der Kurztext die Überschreitung der höchstens sieben MaBV-Raten und die Nichtigkeit des Zahlungsplans (Rn. 48, 50). Bei unwirksamer Abschlagsregelung richtet sich auch die Vergütung von Sonderwünschen nach den gesetzlichen Fälligkeitsregeln, nicht nach einem beliebig fortgeschriebenen Ratenplan (Rn. 51).\n\n**Einsatz im Vertrag:** Gesamtvergütung, jeden Zahlungsauslöser und tatsächlich verlangte Teilzahlungen tabellarisch rekonstruieren. Gesondert ausweisen: Höhe und Zeitpunkt der 5-%-Sicherheit, Sicherungsart, Abzug von früheren Raten, Austausch gegen Bürgschaft sowie sachliche Voraussetzungen ihrer Freigabe. Veraltete Verweise auf § 632a BGB nicht als Erläuterung des heutigen § 650m Abs. 2 BGB akzeptieren. Sonderwunschrechnungen und Nachträge in diese Kontrolle einbeziehen.\n\n**Grenze und Verfahrensstand:** Aus der Entscheidung folgt kein Verbot eines klar vereinbarten gesetzlichen Einbehalts. Vollständige Klausel und Zahlungsmechanik müssen vor einer konkreten Unwirksamkeitsbewertung vorliegen. Landesrecht BW kennzeichnet das Urteil als rechtskräftig; ein weitergehender BGH-Prüfungsstatus wurde nicht nachgewiesen. Wegen der fehlenden Langtextlektüre bleibt dies ein begrenzt belegter Instanzanker."
+  },
+  {
+    "index": 20,
+    "title": "DIN/Schallschutz im Werkvertragsrecht",
+    "dockets": [
+      "VII ZR 45/06",
+      "VII ZR 54/07"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2006/VII_ZR__45-06.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2007/VII_ZR__54-07.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2006/VII_ZR__45-06.pdf?__blob=publicationFile&v=1",
+        "scope": "19 PDF-Seiten; Tatbestand, Gründe Rn. 1–44, Tenor und Schluss vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen; mit pdftotext -layout vollständig gelesen. Etwaige Tool-Ausgabekürzungen durch abschnittsweises Nachlesen geschlossen.",
+        "errors": "Weböffner zunächst HTTP 403; direkter amtlicher PDF-Abruf erfolgreich."
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2007/VII_ZR__54-07.pdf?__blob=publicationFile&v=1",
+        "scope": "11 PDF-Seiten; Rn. 1–21, Tenor und Schluss vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF über curl/pdftotext.",
+        "errors": null
+      }
+    ],
+    "pinpoints": [
+      "VII ZR 45/06 Rn. 24–32, 35–44",
+      "VII ZR 54/07 Rn. 12–16, 19–21"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; Reichweite und Verfahrensausgang anhand der Gründe geprüft. Keine universelle Vollständigkeitsbehauptung für spätere Rechtsprechung.",
+    "procedural_status": "Revision der Erwerber erfolgreich; Aufhebung und Zurückverweisung. Kein vom BGH endgültig festgesetzter allgemeiner Schalldämmwert.",
+    "newer_search": {
+      "queries": [
+        "\"VII ZR 45/06\" \"2026\" Schallschutz BGH",
+        "\"VII ZR 45/06\" \"VII ZR 54/07\" \"2026\" Schallschutz"
+      ],
+      "outcome": "Unmittelbar fortführendes Urteil VII ZR54/07 vom04.06.2009 im Original vollständig gelesen. Keine spätere gegenteilige BGH-Sachentscheidung in dieser begrenzten Suche gefunden."
+    },
+    "corrections_required": [
+      "VII ZR54/07 ergänzen; DIN-Fassung und konkreten Vertragsstandard statt pauschal heutiger Dezibel-Grenzen aus alten Urteilen verwenden."
+    ],
+    "expanded_markdown": "### DIN/Schallschutz im Werkvertragsrecht\n\n**Harte Fundstelle:** BGH, Urteil vom 14.06.2007 – VII ZR 45/06, Rn. 24–32, 35–44, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2006/VII_ZR__45-06.pdf?__blob=publicationFile&v=1; fortgeführt für Eigentumswohnungen durch BGH, Urteil vom 04.06.2009 – VII ZR 54/07, Rn. 12–16, 19–21: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2007/VII_ZR__54-07.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** Im Ausgangsfall einer Doppelhaushälfte hatte die Baubeschreibung einen über Mindestanforderungen liegenden Schallschutz und Maßnahmen gegen Installationsgeräusche erwarten lassen. Der BGH beanstandete eine Auslegung, die den geschuldeten Schutz auf DIN-Mindestwerte verkürzte. Entscheidend ist das insgesamt vereinbarte Qualitätsniveau: Vertrag, präzisierende Erklärungen, Bauweise, architektonischer Anspruch, Nutzung und begleitende Umstände sind zusammen zu würdigen (Rn. 24–29). Die damalige DIN 4109 bezweckte vor allem Schutz vor unzumutbaren Belästigungen; üblicher Wohnkomfort kann weiter reichen. DIN-Normen sind private technische Regelwerke, keine Rechtsnormen; sie können hinter den anerkannten Regeln der Technik zurückbleiben (Rn. 30–32). Bei vereinbarter oder gewählter Bauweise darf der Erwerber grundsätzlich deren fachgerecht erreichbare Leistung erwarten; eine ohne nennenswerten Mehraufwand bessere gleichwertige Bauweise kann maßgeblich sein.\n\n**Einsatz im Vertrag:** Baubeschreibung, Verkaufsunterlagen, erläuterte Komfortversprechen, Wand-/Deckenaufbau und etwaige Schallschutznachweise sichern. Luft-, Tritt- und Installationsschall getrennt durch einen Fachverständigen bewerten lassen, einschließlich Messmethode, Übertragungsweg und maßgeblichem technischen Zeitpunkt. Eine pauschale DIN-Verweisung erklärt einem Verbraucher nicht die konkret hinzunehmenden Geräusche. Das Anschlussurteil VII ZR 54/07 verlangt bei Absenkung des erwartbaren Standards einen deutlichen Hinweis samt Erklärung der Folgen für die Wohnqualität; auch normale Komfortwohnungen benötigen hierfür keinen exklusiven Luxusstandard.\n\n**Grenzen und Ergebnis:** Der BGH verwies beide Verfahren zur weiteren Vertragsauslegung und Tatsachenfeststellung zurück. Die in VII ZR 45/06 diskutierten Mess- und Zielwerte sind deshalb keine universellen Grenzwerte für heutige Neubauten. Technisch andersartige Bauweisen oder ausdrücklich aufgeklärte Abweichungen können anders zu beurteilen sein. Auch eine angebotene Nachbesserung mit Raumverlust ist nicht automatisch hinzunehmen: Vertragsgemäßheit und ein etwaiger Unverhältnismäßigkeitseinwand müssen konkret geprüft werden (Rn. 44)."
+  },
+  {
+    "index": 21,
+    "title": "Änderung anerkannter Regeln vor Abnahme",
+    "dockets": [
+      "VII ZR 65/14"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2014/VII_ZR__65-14.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2014/VII_ZR__65-14.pdf?__blob=publicationFile&v=1",
+        "scope": "16 PDF-Seiten, Rn. 1–39 einschließlich Tenor und Schluss vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen; mit pdftotext -layout vollständig gelesen. Etwaige Tool-Ausgabekürzungen durch abschnittsweises Nachlesen geschlossen.",
+        "errors": "Weböffner zunächst HTTP 403; direkter amtlicher PDF-Abruf erfolgreich."
+      }
+    ],
+    "pinpoints": [
+      "Rn. 23–29, 31–33, 36–39"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; Reichweite und Verfahrensausgang anhand der Gründe geprüft. Keine universelle Vollständigkeitsbehauptung für spätere Rechtsprechung.",
+    "procedural_status": "Revision der Unternehmerseite führte zur Aufhebung und Zurückverweisung; Auswahlentscheidung des Bestellers und Vergütung blieben sachverhaltsabhängig.",
+    "newer_search": {
+      "queries": [
+        "\"VII ZR 65/14\" \"2026\" BGH Regeln Technik",
+        "\"VII ZR 65/14\" \"2026\" bundesgerichtshof"
+      ],
+      "outcome": "Treffer zu VII ZR68/24 vom26.03.2026 erwähnt Zitat zur interessengerechten Vertragsauslegung, nicht als belegte Abkehr vom Technikmaßstab. Diese zusätzliche Entscheidung nicht vollständig gelesen, daher keine eigenständige Sachregel daraus übernommen. Keine aufhebende Entscheidung zu VII ZR65/14 gefunden."
+    },
+    "corrections_required": [
+      "VOB/B-Vergütungsfolgen und Vorschuss-/Kündigungsfrage nicht unbesehen auf einen Bauträgervertrag übertragen."
+    ],
+    "expanded_markdown": "### Änderung anerkannter Regeln vor Abnahme\n\n**Harte Fundstelle:** BGH, Urteil vom 14.11.2017 – VII ZR 65/14, insbesondere Rn. 23–29, 31–33, 36–39, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2014/VII_ZR__65-14.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** Streitgegenstand waren drei gewerblich genutzte Hallen mit vereinbarter Schneelast nach älteren Vorgaben. Vor Abnahme hatten sich die technischen Regeln geändert; das Berufungsgericht hatte dem Besteller einen Kostenvorschuss zugesprochen. Der BGH hob diese Entscheidung auf und stellte klar: Grundsätzlich sind die bei Abnahme geltenden anerkannten Regeln der Technik einzuhalten, auch wenn die Baugenehmigung ältere Anforderungen zugrunde legt (Rn. 23–24). Eine während der Bauzeit eingetretene Änderung löst aber Informations- und Entscheidungsbedarf aus. Der Unternehmer muss grundsätzlich über die Änderung und deren Konsequenzen informieren. Der aufgeklärte Besteller kann die Anpassung verlangen oder sich mit der bisherigen Ausführung begnügen. Eine informierte abweichende Vereinbarung ist möglich; ein abstrakter Verweis auf den bei Vertragsschluss geltenden Normenstand beantwortet diese Frage nicht (Rn. 25–29).\n\n**Einsatz im Vertrag:** Planungs-, Genehmigungs-, Änderungs- und Abnahmezeitpunkte festhalten. Ermitteln, ob wirklich eine anerkannte technische Regel geändert wurde oder lediglich eine neue DIN-Ausgabe erschienen ist. Vom Bauträger eine verständliche Beschreibung von Sicherheits-/Gebrauchsfolgen, Ausführungsalternativen, Terminen und behaupteten Mehrkosten verlangen. Nicht gleichzeitig technische Aktualisierung zusagen und sämtliche Folgen pauschal auf den Erwerber abwälzen. Prüfbelege sind Änderungsmitteilung, Nachweise über Risikoaufklärung, konkrete Entscheidung des Erwerbers und ursprünglicher Leistungsumfang.\n\n**Grenzen und Ergebnis:** Der Fall betraf einen VOB/B-Vertrag, keine schlüsselfertige Verbraucherwohnung. Die dort erörterte Anpassung nach § 1 Abs. 3, § 2 Abs. 5 VOB/B trägt Mehrvergütung nur, soweit zusätzliche Leistungen nicht bereits durch die vereinbarte Vergütung abgegolten sind; Sowieso-Kosten bleiben gesondert zu prüfen (Rn. 36–39). Auch die vor Abnahme relevante Vorschuss- und Kündigungsfrage (Rn. 32–33) darf nicht schematisch übertragen werden. Der Unternehmer kann konkrete Fachkenntnis und bereits erfolgte Risikoaufklärung einwenden (Rn. 31); eine bloße Unterschrift unter eine unverständliche Standardklausel ersetzt deren Nachweis nicht."
+  },
+  {
+    "index": 22,
+    "title": "Einzelgewerke und sukzessive Bauaufträge",
+    "dockets": [
+      "VII ZR 94/22",
+      "VII ZR 25/23"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2022/VII_ZR__94-22.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2023/VII_ZR__25-23.pdf?__blob=publicationFile&v=1",
+      "https://www.schleswig-holstein.de/DE/justiz/themen/service/justizministerialblatt/Teil_A/_documents/Inhaltsverzeichnisse/2025/Inhalt202512.pdf?__blob=publicationFile&v=2"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2022/VII_ZR__94-22.pdf?__blob=publicationFile&v=1",
+        "scope": "15 PDF-Seiten, Rn. 1–37 vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen; mit pdftotext -layout vollständig gelesen. Etwaige Tool-Ausgabekürzungen durch abschnittsweises Nachlesen geschlossen.",
+        "errors": null
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2023/VII_ZR__25-23.pdf?__blob=publicationFile&v=1",
+        "scope": "13 PDF-Seiten, Rn. 1–42 vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen; mit pdftotext -layout vollständig gelesen. Etwaige Tool-Ausgabekürzungen durch abschnittsweises Nachlesen geschlossen.",
+        "errors": null
+      },
+      {
+        "url": "https://www.schleswig-holstein.de/DE/justiz/themen/service/justizministerialblatt/Teil_A/_documents/Inhaltsverzeichnisse/2025/Inhalt202512.pdf?__blob=publicationFile&v=2",
+        "scope": "Amtlicher Suchauszug des Inhaltsverzeichnisses: Datum17.12.2025, Az.12U35/25 und Sachthema; kein vollständiges Urteil.",
+        "full_read": false,
+        "retrieval": "Websuchtreffer; amtliches Einzel-PDF in anderer URL scheiterte mit404/Extraktionsfehler.",
+        "errors": "Zusätzlicher späterer Instanzfall nicht vollständig geprüft."
+      }
+    ],
+    "pinpoints": [
+      "VII ZR94/22 Rn. 19–29, 30–35",
+      "VII ZR25/23 Rn. 24–35, 39–41"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; Reichweite und Verfahrensausgang anhand der Gründe geprüft. Keine universelle Vollständigkeitsbehauptung für spätere Rechtsprechung.",
+    "procedural_status": "VII ZR94/22: Sicherheitsverlangen ursprünglich begründet, nach Zahlung Hauptsache erledigt. VII ZR25/23: Revision gegen Sicherheitsverurteilung zurückgewiesen.",
+    "newer_search": {
+      "queries": [
+        "\"VII ZR 94/22\" \"VII ZR 25/23\" 2025 2026",
+        "\"12 U 35/25\" OLG Schleswig"
+      ],
+      "outcome": "OLG Schleswig17.12.2025–12 U35/25 als spätere Anwendung entdeckt; amtliches Inhaltsverzeichnis bestätigt Fall und fehlende wesentliche Haustechnikgewerke. Einzel-PDF404/Extraktionsfehler, daher keine vollständige Lektüre behauptet und nicht als zusätzlicher tragender Anker verwendet."
+    },
+    "corrections_required": [
+      "Verbraucherbauvertrag und echten Bauträgervertrag strikt trennen; eigenständige Bauträgerausnahme des §650f Abs.6 Satz1 Nr.2 Fall2 BGB erhalten."
+    ],
+    "expanded_markdown": "### Einzelgewerke und sukzessive Bauaufträge\n\n**Harte Fundstelle:** BGH, Urteil vom 16.03.2023 – VII ZR 94/22, Rn. 19–35, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2022/VII_ZR__94-22.pdf?__blob=publicationFile&v=1; Urteil vom 26.10.2023 – VII ZR 25/23, Rn. 24–35, 39–41: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2023/VII_ZR__25-23.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** Die Verbrauchereigenschaft allein macht einen Bauauftrag noch nicht zum Verbraucherbauvertrag nach § 650i BGB. VII ZR 94/22 betraf einen gesonderten Innen-/Außenputzauftrag beim privaten Neubau und eine Bauhandwerkersicherung. Der BGH verlangt für den Neubautatbestand die Verpflichtung zum Bau des Gebäudes, nicht lediglich eines Einzelgewerks. Wortlaut, Abgrenzung zum Bauvertrag nach § 650a BGB und gesetzgeberischer Verbraucherschutzrahmen sprechen gegen eine automatische Erstreckung auf jede Bauleistung (Rn. 19–29). Die Ausnahme von der Sicherungspflicht konnte deshalb nicht allein aus dem privaten Bauzweck folgen.\n\nVII ZR 25/23 betrifft nacheinander an denselben Unternehmer erteilte Aufträge: zunächst Rohbau, später weitere Ausbauleistungen. Selbständige Einzelverträge werden nicht nachträglich zu einem Verbraucherbauvertrag zusammengerechnet. Maßgeblich ist die Verpflichtung beim jeweiligen Vertragsschluss, weil insbesondere vorvertragliche Informationen und Formanforderungen zu diesem Zeitpunkt bestimmbar sein müssen (Rn. 24–35). Die Sicherheitsverurteilung blieb bestehen; streitige Gegenforderungen vermindern die Sicherheit nicht ohne die gesetzlichen Voraussetzungen (Rn. 39–41).\n\n**Einsatz im Vertrag:** Jeden Vertragspartner, Abschlusszeitpunkt, Leistungsumfang und die rechtliche Verbindung zwischen Grundstückserwerb, Rohbau und Ausbau erfassen. Wer die Wohnung insgesamt schuldet, darf nicht nur nach der Zahl der Vertragsurkunden bewertet werden. Bei Baugruppen, Eigenleistungen und direkten Sonderwunschaufträgen Warnung vor unerwarteter Sicherheitspflicht, unterschiedlichen Abnahmen und fragmentierter Mängelverantwortung aufnehmen. Auch ein Verbrauchervertrag außerhalb § 650i BGB behält gegebenenfalls andere Verbraucherschutzrechte.\n\n**Grenzen:** Diese Entscheidungen schaffen keinen Freibrief zur künstlichen Umgehung; § 650o BGB und eine tatsächlich einheitliche Verpflichtung bleiben zu prüfen. Vor allem entfällt bei einem echten Bauträgervertrag nicht deshalb der besondere Schutz, weil einzelne Ausbauleistungen benannt sind: Die eigenständige Bauträgerausnahme des § 650f Abs. 6 Satz 1 Nr. 2 BGB ist getrennt vom Verbraucherbauvertrag zu prüfen."
+  },
+  {
+    "index": 23,
+    "title": "Koordination bei getrennter Planer- und Unternehmervergabe",
+    "dockets": [
+      "VII ZR 119/24"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_119-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_119-24.pdf?__blob=publicationFile&v=1",
+        "scope": "34 PDF-Seiten, Rn. 1–81, einschließlich Tenor und Schluss vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen; mit pdftotext -layout vollständig gelesen. Etwaige Tool-Ausgabekürzungen durch abschnittsweises Nachlesen geschlossen.",
+        "errors": null
+      }
+    ],
+    "pinpoints": [
+      "Rn. 39–46, 48–56, 62–64, 69–77"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; Reichweite und Verfahrensausgang anhand der Gründe geprüft. Keine universelle Vollständigkeitsbehauptung für spätere Rechtsprechung.",
+    "procedural_status": "Grundhaftung: Beklagte1 vollständig, Beklagte2 nach Mitverschuldensabwägung zu20%; Betragsverfahren bleibt erforderlich. Keine abschließende Schadenshöhe.",
+    "newer_search": {
+      "queries": [
+        "\"VII ZR 119/24\" 2026 BGH"
+      ],
+      "outcome": "Urteilsveröffentlichungen und Besprechungen gefunden; keine spätere abändernde BGH-Entscheidung nachgewiesen."
+    },
+    "corrections_required": [
+      "Koordination von Überwachung trennen; Vertragsketten, einzelne Obliegenheit und Schutzzweck statt globale Bauherren-Mitverantwortung."
+    ],
+    "expanded_markdown": "### Koordination bei getrennter Planer- und Unternehmervergabe\n\n**Harte Fundstelle:** BGH, Urteil vom 15.01.2026 – VII ZR 119/24, Rn. 39–56, 62–77, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_119-24.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** Beim Ausbau von Penthousewohnungen blieb eine alte teerhaltige Abdichtung im Gebäude; schadstoffhaltige Ausdünstungen machten später eine Sanierung notwendig. Entwurfsplanung, Ausführungsplanung und Projektkoordination waren getrennt vergeben. Trotz besprochener Materialprobe wurde die Untersuchung nicht veranlasst. Der BGH unterscheidet präzise: Ein Ausführungsplaner muss die Verwendbarkeit der überlassenen Planung prüfen und erkennbare Bedenken ausreichend mitteilen; verschließt sich der angesprochene Verantwortliche, kann eine direkte Warnung des Bauherrn erforderlich werden (Rn. 39–46). Wer die Koordination übernommen hat, muss bei ungeklärten Schnittstellen Entscheidungen, klare Aufgabenverteilung und deren Umsetzung sicherstellen (Rn. 48–56).\n\nIm Verhältnis zum Ausführungsplaner obliegt dem Besteller grundsätzlich die Bereitstellung mangelfreier Entwurfsplanung. Fehler des hierfür eingesetzten Planers können ihm gemäß §§ 254, 278 BGB zugerechnet werden (Rn. 62–64). Entsprechendes gilt für eine geschuldete Koordination anderer Beteiligter (Rn. 70–71). Dagegen besteht keine allgemeine Obliegenheit, den jeweiligen Vertragspartner zu überwachen (Rn. 69). Gegenüber dem Koordinator, dessen Aufgabe gerade die Aufklärung des Problems war, konnten die vorausgegangenen Planungsfehler nicht gleichermaßen eingewandt werden (Rn. 74–77).\n\n**Einsatz im Vertrag:** Bei eigener Direktvergabe eine belastbare Schnittstellenmatrix erstellen: Wer liefert welchen Planstand, prüft Materialien, beauftragt Tests, entscheidet bei Widersprüchen und kontrolliert die Erledigung? Besprechungsprotokolle müssen Auftrag, Frist und tatsächlichen Befund dokumentieren, nicht lediglich einen offenen Prüfpunkt. Bei Schadensersatz für jeden Anspruchsgegner separat Pflicht, Warnung, Mitverursachung und Zurechnungsgrundlage prüfen.\n\n**Grenzen und Ergebnis:** Der BGH bestätigte die Grundhaftung der einen Beklagten vollständig, die der anderen nur zu 20 Prozent; damit war die konkrete Schadenshöhe nicht endgültig entschieden. Diese Quoten sind keine allgemeine Verteilung. Der passive Bauträgererwerber, dessen Vertragspartner die gesamte Herstellung organisiert, ist nicht ohne Weiteres mit einem Bauherrn gleichzusetzen, der selbst mehrere Planer und Unternehmer beauftragt. Eigenleistungen und unmittelbar vergebene Sonderwünsche können diese Abgrenzung allerdings verändern."
+  },
+  {
+    "index": 24,
+    "title": "DIN-Vermutung im WEG-Binnenrecht",
+    "dockets": [
+      "V ZR 182/12",
+      "V ZR 39/24"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2012/V_ZR_182-12.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR__39-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2012/V_ZR_182-12.pdf?__blob=publicationFile&v=1",
+        "scope": "15 PDF-Seiten, verbundene Verfahren VZR182/12 und VZR74/12, Rn. 1–31 vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen; mit pdftotext -layout vollständig gelesen. Etwaige Tool-Ausgabekürzungen durch abschnittsweises Nachlesen geschlossen.",
+        "errors": null
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR__39-24.pdf?__blob=publicationFile&v=1",
+        "scope": "20 PDF-Seiten, Rn. 1–37 vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen; mit pdftotext -layout vollständig gelesen. Etwaige Tool-Ausgabekürzungen durch abschnittsweises Nachlesen geschlossen.",
+        "errors": null
+      }
+    ],
+    "pinpoints": [
+      "V ZR182/12 Rn. 25–31",
+      "V ZR39/24 Rn. 9–12, 16–24, 30"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; Reichweite und Verfahrensausgang anhand der Gründe geprüft. Keine universelle Vollständigkeitsbehauptung für spätere Rechtsprechung.",
+    "procedural_status": "V ZR182/12: teilweise Verwerfung, im übrigen Aufhebung/Zurückverweisung wegen unzureichender Aufklärung des Sanierungsbedarfs. V ZR39/24: Revision zurückgewiesen.",
+    "newer_search": {
+      "queries": [
+        "\"V ZR 182/12\" \"V ZR 39/24\" DIN"
+      ],
+      "outcome": "Wiederholung der DIN-Linie durch VZR39/24 im Original bestätigt; keine weitergehende Bauträger-Werksollentscheidung gefunden."
+    },
+    "corrections_required": [
+      "VZR39/24 eigenen Streitgegenstand und begrenzte Zitierfunktion verdeutlichen. DIN-Vermutung nicht mit unwiderleglichem technischen Standard gleichsetzen."
+    ],
+    "expanded_markdown": "### DIN-Vermutung im WEG-Binnenrecht\n\n**Harte Fundstelle:** BGH, Urteil vom 24.05.2013 – V ZR 182/12, insbesondere Rn. 25–31, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2012/V_ZR_182-12.pdf?__blob=publicationFile&v=1; wiederholt in BGH, Urteil vom 23.05.2025 – V ZR 39/24, Rn. 30: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR__39-24.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** V ZR 182/12 betraf die Sanierung gravierender Holz-/Hausschwammschäden und widerstreitende sachverständige Auffassungen zum erforderlichen Umfang. Ordnungsmäßige Verwaltung verlangt grundsätzlich eine den anerkannten technischen Regeln entsprechende Sanierung. Für DIN-Normen spricht eine widerlegliche Vermutung, diese Regeln wiederzugeben (Rn. 25). Das Gericht durfte substantiierten fachlichen Einwendungen gegen das vorhandene Gutachten nicht ausweichen; ob DIN-gerechte Maßnahmen erforderlich sind oder eine andere gleichwertige Lösung ausreicht, bedarf belastbarer sachverständiger Klärung (Rn. 26–30). Ein Eigentümer kann nicht schon mit einem ungeklärten Gutachtenvergleich die technisch beliebige Billiglösung durchsetzen.\n\nV ZR 39/24 ist dagegen ein Streit innerhalb einer Gemeinschaft der Erbbauberechtigten über kostenintensive Standsicherheitsprüfungen einer Bahnhofsüberbauung. Die Klägerin wollte eigene öffentlich-rechtliche Prüfpflichten durch die Gemeinschaft finanzieren lassen. Der BGH verneinte diese Anspruchsrichtung und wiederholte die DIN-Vermutung lediglich im Rahmen der Verwaltungsanforderungen (Rn. 16–24, 30). Das Urteil bestimmt kein neues vertragliches Qualitätsniveau von Bauträgerwohnungen.\n\n**Einsatz im Vertrag:** Zuerst Rechtsverhältnis und Ziel bestimmen: Welches Werk schuldet der Bauträger vertraglich, welche Erhaltungsmaßnahme muss später die GdWE beschließen und welche Sonderpflicht trifft einen bestimmten Eigentümer selbst? Technische Norm, Ausgabe, tatsächliche Schadensursache, fachliche Gegenmeinung und gleichwertige Sanierungsalternative dokumentieren. Ein Gutachter soll konkrete technische Einwände beantworten, nicht nur das Schlagwort „DIN-konform“ bestätigen.\n\n**Grenzen und Ergebnis:** Der technische Vertragsstandard kann über DIN-Mindestwerte hinausgehen; die WEG-Vermutung begrenzt deshalb nicht den Schallschutzanspruch des Erwerbers. Ebenso darf ein Eigentümer eigene hoheitlich auferlegte Betreiberpflichten nicht ohne Rechtsgrund auf die Gemeinschaft verlagern. Der erste Fall wurde zur weiteren Klärung zurückverwiesen; im zweiten blieb die Revision erfolglos. Technischer Bedarf, Zuständigkeit und Finanzierung sind drei getrennte Prüfschritte."
+  },
+  {
+    "index": 25,
+    "title": "Technikräume und Sondereigentum",
+    "dockets": [
+      "V ZR 34/25"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__34-25.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__34-25.pdf?__blob=publicationFile&v=1",
+        "scope": "18 PDF-Seiten, Rn. 1–33, Tenor und Schluss vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen und mit pdftotext -layout vollständig gelesen; Ausgabekürzungen nötigenfalls durch abschnittsweises Nachlesen geschlossen.",
+        "errors": null
+      }
+    ],
+    "pinpoints": [
+      "Rn. 8, 13, 21–26, 29–32"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; spätere Recherche als begrenzter Suchbefund dokumentiert.",
+    "procedural_status": "Aufhebung des Berufungsurteils; Abweisung der hier behandelten Klage gegen die GdWE. Aufgabe bisheriger Rechtsprechung zur zwingenden Gemeinschaftseigenschaft des Anlagenraums.",
+    "newer_search": {
+      "queries": [
+        "\"V ZR 34/25\" Technikräume 2026"
+      ],
+      "outcome": "Veröffentlichungen und Besprechungen gefunden; keine spätere abändernde BGH-Entscheidung nachgewiesen."
+    },
+    "corrections_required": [
+      "Ausdrückliche Aufgabe der früheren Raumrechtsprechung erwähnen. Raum, Anlage, Zugang und Anspruchsgegner getrennt prüfen."
+    ],
+    "expanded_markdown": "### Technikräume und Sondereigentum\n\n**Harte Fundstelle:** BGH, Urteil vom 20.02.2026 – V ZR 34/25, insbesondere Rn. 8, 13, 21–26, 29–32, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__34-25.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** In einer Zweiergemeinschaft wies die Teilungserklärung hintereinander liegende Kellerräume einschließlich eines Technikraums einer Wohnung als Sondereigentum zu. Nach Austausch der früheren gemeinsamen Ölheizung verblieben unter anderem Messeinrichtungen. Der andere Eigentümer verlangte von der GdWE die Anerkennung gemeinschaftlicher Raumzuordnung und Zugang. Der BGH korrigiert seine frühere Linie: Ein Raum wird nicht allein dadurch zwingendes Gemeinschaftseigentum, dass er gemeinschaftsdienende Anlagen beherbergt. Insoweit gibt er seine bisherige entgegenstehende Rechtsprechung ausdrücklich auf (Rn. 21). Die rechtliche Zuordnung des Raums ist von der darin stehenden Anlage zu trennen.\n\nDie zur Bedienung, Ablesung oder Wartung notwendigen Zutritte können über gesetzliche Duldungspflichten und gesicherte besondere Rechte gewährleistet werden. Dafür muss nicht der gesamte Raum gemeinschaftlich sein (Rn. 22–26). Auch die Anlagenzuordnung ist nicht pauschal: Zähler können einem Versorger gehören, ausschließlich einer Einheit dienende Heizgeräte können anders zu behandeln sein als eine gemeinsame Heizungsanlage (Rn. 8). Unverändert gesondert zu beachten sind Verkehrsflächen, die den Zugang zu anderen Einheiten ermöglichen (Rn. 13).\n\n**Einsatz im Vertrag:** Teilungserklärung, Aufteilungsplan und Anlagenverzeichnis bauteilgenau abgleichen. Für Technikraum, Gerät, Leitungen, Schlüssel, Zugang im Störfall, Wartungsfenster, Ersatzanlage und spätere Nutzungsänderung jeweils Zuständigkeit und Recht bestimmen. Wer einen Raum mit fremder Technik erwirbt, muss die Duldungslasten kennen; wer auf ihn angewiesen ist, benötigt praktisch brauchbare Zutrittsregelungen. Ein unbeschränktes Lager- oder Ausbauversprechen kann damit kollidieren.\n\n**Grenzen und Ergebnis:** Der BGH wies die entsprechenden Ansprüche gegen die GdWE ab. Ein individueller Zutrittsanspruch aus Dienstbarkeit oder § 14 Abs. 2 Nr. 2 WEG richtet sich grundsätzlich gegen den betroffenen Raumeigentümer, nicht automatisch gegen die Gemeinschaft (Rn. 29–32). Die GdWE kann ihrerseits gemeinschaftsbezogene Zutrittsrechte nach § 14 Abs. 1 Nr. 2 WEG verfolgen. „Technikraum = Gemeinschaftseigentum“ und „Sondereigentum = keinerlei fremder Zutritt“ sind gleichermaßen falsche Prüfabkürzungen."
+  },
+  {
+    "index": 26,
+    "title": "Änderung des WEG-Kostenverteilungsschlüssels",
+    "dockets": [
+      "V ZR 50/25",
+      "V ZR 128/23"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__50-25.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_128-23.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__50-25.pdf?__blob=publicationFile&v=1",
+        "scope": "17 Urteilsseiten, Rn. 1–27, dazu angefügter zweiseitiger Berichtigungsbeschluss04.05.2026 vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen und mit pdftotext -layout vollständig gelesen; Ausgabekürzungen nötigenfalls durch abschnittsweises Nachlesen geschlossen.",
+        "errors": null
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_128-23.pdf?__blob=publicationFile&v=1",
+        "scope": "14 Urteilsseiten, Rn.1–36, anschließend zweiseitiger Berichtigungsbeschluss24.02.2025 vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF per curl und pdftotext; vollständige Ausgabe gelesen.",
+        "errors": null
+      }
+    ],
+    "pinpoints": [
+      "Rn. 5–6, 13–24, 25–27; Berichtigung04.05.2026",
+      "V ZR128/23 Rn.7, 14–18, 24–34; Berichtigung24.02.2025"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; spätere Recherche als begrenzter Suchbefund dokumentiert.",
+    "procedural_status": "Teilweise Aufhebung und Zurückverweisung zur Anfechtung der Umlage; weitergehende Revision erfolglos. Berichtigung betrifft nur Datum des LG-Urteils20.02.2025 statt21.02.2025.",
+    "newer_search": {
+      "queries": [
+        "\"V ZR 50/25\" Kostenverteilung 2026"
+      ],
+      "outcome": "Spätere instanzgerichtliche Zitate LG Frankfurt/Main28.05.2026–13 S70/25 und LG BerlinII16.06.2026–56 S56/25 entdeckt, nicht im Original gelesen und daher nicht als zusätzliche Sachregeln übernommen. Keine spätere BGH-Abkehr nachgewiesen."
+    },
+    "corrections_required": [
+      "Keine feste25-%-,50-%- oder55-%-Toleranzschwelle behaupten. Bestandsmaßstab war Wohnfläche; Miteigentumsanteile nur Vergleichsannahme."
+    ],
+    "expanded_markdown": "### Änderung des WEG-Kostenverteilungsschlüssels\n\n**Harte Fundstelle:** BGH, Urteil vom 24.04.2026 – V ZR 50/25, Rn. 5–6, 13–27, mit Berichtigung vom 04.05.2026, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__50-25.pdf?__blob=publicationFile&v=1; ergänzend BGH, Urteil vom 14.02.2025 – V ZR 128/23, Rn. 14–18, 24–34, mit Berichtigung vom 24.02.2025: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_128-23.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** Für eine Heizungserneuerung in einer Anlage mit 15 unterschiedlich großen Wohnungen sollten 25.000 Euro gleichmäßig nach Einheiten verteilt werden. Die Gemeinschaftsordnung sah dagegen flächenbezogene Erhaltungskosten vor. Der BGH trennt Mehrheitsermächtigung und rechtmäßige Ausübung: § 16 Abs. 2 Satz 2 WEG erlaubt grundsätzlich die Änderung, auch gegenüber älteren Vereinbarungen; die damalige Einstimmigkeitsklausel verhinderte dies im konkreten Fall nicht (Rn. 5–6). Inhaltlich genügt jedoch keine bloße Willkürkontrolle. Die Verteilung muss den Gemeinschafts- und Einzelinteressen angemessen sein und darf einzelne Eigentümer nicht ungerechtfertigt benachteiligen (Rn. 13–14).\n\nBei stark unterschiedlich großen Einheiten ist der Wechsel von Fläche beziehungsweise Miteigentumsanteilen zu gleichen Beträgen für Erhaltungsmaßnahmen regelmäßig unangemessen. Der Wert-/Erhaltungsnutzen bemisst sich nicht stets gleich, nur weil alle Bewohner dieselbe Heizung nutzen. Anders können gleich große Einheiten oder gleichartig anfallende bauteilbezogene Kosten liegen (Rn. 15–23). Eine aus anderen Rechtsfragen stammende prozentuale Zumutbarkeitsgrenze ist nicht übertragbar.\n\n**Einsatz im Vertrag:** Vor Kauf die ursprünglichen Schlüssel, spätere Änderungsbeschlüsse, tatsächliche Flächen, Miteigentumsanteile und betroffene Kostenart beschaffen. Den eigenen Eurobetrag nach altem und neuem Schlüssel berechnen und sachliche Gründe für die Abweichung dokumentieren. Bei großen und kleinen Einheiten in einer Anlage birgt ein Objektprinzip erhebliches Umverteilungsrisiko. Öffnungsklauseln nicht als Garantie unveränderlicher Kosten oder als schrankenlose Mehrheitsmacht erklären.\n\n**Grenzen und Ergebnis:** Der BGH verwies zurück, weil die maßgeblichen Wohnflächen noch aufzuklären waren. Die im Urteil angesprochene Mehrbelastung von rund 55 Prozent beruhte auf einer Vergleichsannahme anhand der Miteigentumsanteile und ist keine allgemeine Schwelle. Auch geringere Mehrbelastungen können sachlich ungerechtfertigt sein. Die begehrte alternative Verteilung nach Miteigentumsanteilen musste nicht beschlossen werden, weil schon die bestehende Flächenregel angemessen sein konnte. Frühere fehlerhafte Umlagen rechtfertigen keine Wiederholung.\n\n**Ergänzender Abgleich:** V ZR 128/23 bestätigt die Änderbarkeit des Schlüssels auch für Rücklagenzuführungen und lässt die Korrektur sachlich unbegründeter Privilegien zu. Eine jahrzehntelang günstige, unterdimensionierte Beteiligung gewerblicher Einheiten ist deshalb nicht allein wegen ihrer Dauer geschützt; eine sachgerechte Kostentrennung nach Gebäudeteilen wäre hiervon zu unterscheiden."
+  },
+  {
+    "index": 27,
+    "title": "Änderung der Teilungserklärung/Gemeinschaftsordnung",
+    "dockets": [
+      "V ZR 91/25"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__91-25.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__91-25.pdf?__blob=publicationFile&v=1",
+        "scope": "18 PDF-Seiten, Rn. 1–29, Tenor und Schluss vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen und mit pdftotext -layout vollständig gelesen; Ausgabekürzungen nötigenfalls durch abschnittsweises Nachlesen geschlossen.",
+        "errors": null
+      }
+    ],
+    "pinpoints": [
+      "Rn. 12–14, 15–26, 27"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; spätere Recherche als begrenzter Suchbefund dokumentiert.",
+    "procedural_status": "Revision der Bauträgerin zurückgewiesen; kein Anspruch auf Zustimmung zum verlangten Nachtrag aus unwirksamer AGB-Klausel oder ersatzweise§242BGB.",
+    "newer_search": {
+      "queries": [
+        "\"V ZR 91/25\" 2026 Teilungserklärung"
+      ],
+      "outcome": "Amtliches Original und Veröffentlichungen gefunden; keine spätere abändernde Entscheidung nachgewiesen."
+    },
+    "corrections_required": [
+      "Konkrete triftige Änderungsgründe und Zumutbarkeit sind kumulativ relevant; nicht jede eng begrenzte Vollmacht ist unwirksam."
+    ],
+    "expanded_markdown": "### Änderung der Teilungserklärung/Gemeinschaftsordnung\n\n**Harte Fundstelle:** BGH, Urteil vom 23.01.2026 – V ZR 91/25, Rn. 12–27, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__91-25.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** Erwerber einer Ladeneinheit sollten einer Änderung zustimmen, die in einer anderen Untergemeinschaft die Zahl der Beherbergungseinheiten von 38 auf 58 erhöhte und Abstellräume entfallen ließ. Der Vertrag enthielt eine weitreichende Änderungsvollmacht mit intern formulierten Grenzen sowie eine ergänzende Zustimmungspflicht. Trotz Gewerbeeinheit konnten die Erwerber Verbraucher sein: Private Vermögensverwaltung wird nicht allein wegen Umsatzsteuerstatus oder Investitionszweck unternehmerisch; entscheidend sind Umfang und organisatorischer Geschäftsbetrieb (Rn. 12–14).\n\nDie Zustimmungspflicht unterliegt wie ein einseitiges Änderungsrecht § 308 Nr. 4 BGB. Der Vertrag muss im Einzelnen triftige Änderungsgründe erkennen lassen. Allgemeine Schranken wie keine wesentliche Beeinträchtigung oder keine zusätzlichen Kosten ersetzen diese Gründe nicht (Rn. 15–26). Als konkretisierbare Anlässe kommen etwa behördliche Anforderungen, technische Erfordernisse, Planungsfehler oder bestimmte Sonderwünsche in Betracht; zusätzlich muss die konkrete Änderung dem Erwerber zumutbar sein. Die problematische Gestaltung wird nicht dadurch ausreichend, dass Beschränkungen nur intern gelten, die Vertretungsmacht gegenüber dem Grundbuchamt jedoch umfassend erscheinen soll.\n\n**Einsatz im Vertrag:** Vollmacht, Zustimmungspflicht, Befreiungen, Nachtragsmechanismus und Bindung von Rechtsnachfolgern gemeinsam lesen. Konkrete Änderungsanlässe, sachliche Grenzen, Informationsunterlagen und vorherige Mitteilung verlangen. Auswirkungen auf Nutzungsintensität, Gemeinschaftsflächen, Stellplätze, Stimmen, Kostenquoten und den Charakter der Anlage berücksichtigen; eine Änderung außerhalb der gekauften Einheit kann wirtschaftlich erheblich sein. Privat erworbene Gewerbeeinheiten nicht vorschnell aus der Verbraucherkontrolle ausscheiden.\n\n**Grenzen und Ergebnis:** Die Bauträgerrevision scheiterte. Eine allgemeine Zustimmungspflicht lässt sich im Regelfall nicht über § 242 BGB wiederherstellen, wenn dies die unwirksame AGB-Regel praktisch ersetzen würde (Rn. 27). Das Urteil verbietet nicht jede sachlich begrenzte Änderungsbefugnis; seine Konsequenz ist eine anhand klarer Gründe und konkreter Nachteile prüfbare Regelung. Ob eine bestimmte spätere Änderung zulässig wäre, ist deshalb von der vorgelagerten Wirksamkeit der Klausel zu unterscheiden."
+  },
+  {
+    "index": 28,
+    "title": "Stimmrechtsbeschränkungen in der Gemeinschaftsordnung",
+    "dockets": [
+      "V ZR 189/24"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR_189-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR_189-24.pdf?__blob=publicationFile&v=1",
+        "scope": "13 Urteilsseiten, Rn. 1–24; zweiseitige Berichtigung15.04.2026 vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen und mit pdftotext -layout vollständig gelesen; Ausgabekürzungen nötigenfalls durch abschnittsweises Nachlesen geschlossen.",
+        "errors": null
+      }
+    ],
+    "pinpoints": [
+      "Rn. 9–16, 17–24; Berichtigung15.04.2026"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; spätere Recherche als begrenzter Suchbefund dokumentiert.",
+    "procedural_status": "Aufhebung und Zurückverweisung, insbesondere zur Kausalität des unberechtigten Stimmrechtsausschlusses; keine pauschale Nichtigkeit sämtlicher Beschlüsse. Berichtigung nur LiteraturfundstelleRn15.",
+    "newer_search": {
+      "queries": [
+        "\"V ZR 189/24\" 2026 Stimmrecht"
+      ],
+      "outcome": "Original samt Berichtigung gelesen; weitere Veröffentlichungen, aber keine spätere abändernde BGH-Entscheidung gefunden."
+    },
+    "corrections_required": [
+      "Nichtigkeit unzulässiger Stimmrechtsregel nicht mit automatischer Nichtigkeit jedes unter ihrer Anwendung gefassten Beschlusses verwechseln."
+    ],
+    "expanded_markdown": "### Stimmrechtsbeschränkungen in der Gemeinschaftsordnung\n\n**Harte Fundstelle:** BGH, Urteil vom 27.02.2026 – V ZR 189/24, Rn. 9–24, mit Berichtigung vom 15.04.2026, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR_189-24.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** Eigentümer selbständiger Tiefgarageneinheiten sollten nur bei Angelegenheiten der Tiefgarage abstimmen dürfen. Ihre Stimmen wurden unter anderem bei Vorschüssen beziehungsweise Wirtschaftsplan und bei einer Briefkastenanlage nicht berücksichtigt. Objektbezogene Stimmrechtsbeschränkungen können durch Vereinbarung zulässig sein. Die Gemeinschaftsordnung muss aber zweifelsfrei erkennen lassen, bei welchen Gegenständen welche Eigentümer abstimmen dürfen; unauflösbare Auslegungszweifel gehen nicht zulasten des Stimmrechts (Rn. 9–16).\n\nZudem verbleibt ein nicht entziehbarer Mitwirkungsbereich der allgemeinen Gemeinschaftsverwaltung. Einzelne Eigentümer können insbesondere nicht von der Verwalterbestellung sowie der Beschlussfassung über Wirtschaftsplan und Jahresabrechnung ausgeschlossen werden. Dass eine Teileigentumseinheit wirtschaftlich weniger mit einem Wohngebäude verbunden erscheint, rechtfertigt keinen vollständigen Ausschluss aus diesen Grundentscheidungen. Kostenlast und Sachnähe helfen bei der Auslegung, ersetzen aber keine klare und zulässige Stimmrechtsregelung.\n\n**Einsatz im Vertrag:** Nicht nur die gekaufte Wohnung, sondern auch separat zugeordnetes Garagen-/Stellplatzeigentum samt Stimmen zählen. Für Verwalterbestellung, Hausgeld, Sonderumlagen, Reparaturen und bauliche Veränderungen eine gegenstandsbezogene Zuordnung erstellen. Prüfen, ob Bauträgerrestbestände über Objektstimmen Einfluss behalten und ob die eigene Kostenbelastung mit tatsächlicher Mitwirkung korrespondiert. Bei bereits gefassten Beschlüssen Teilnehmerliste, Vollmachten, Abstimmungsergebnis und nicht gezählte Stimmen sichern.\n\n**Grenzen und Ergebnis:** Der BGH verwies zurück, weil die Auswirkung des Stimmrechtsfehlers auf die Beschlüsse noch geklärt werden musste (Rn. 17–24). Im Fall waren die Betroffenen nicht generell von der Versammlung ausgeschlossen; ihre Stimmen waren fehlerhaft unberücksichtigt geblieben. Eine unwirksame Beschränkung macht daher nicht automatisch jeden Beschluss nichtig. Neben Frist und richtigem Klagegegner ist die konkrete Kausalität des Verfahrensfehlers zu prüfen; auch die Fortgeltung abtrennbarer Teile der Stimmrechtsordnung ist gesondert zu beurteilen. Der Berichtigungsbeschluss ändert nur einen Literaturnachweis, nicht diesen materiellen Befund."
+  },
+  {
+    "index": 29,
+    "title": "Gerichtliche Klärung der Gemeinschaftsordnung",
+    "dockets": [
+      "V ZR 98/25"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__98-25.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__98-25.pdf?__blob=publicationFile&v=1",
+        "scope": "16 PDF-Seiten, Rn. 1–29, Tenor und Schluss vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen und mit pdftotext -layout vollständig gelesen; Ausgabekürzungen nötigenfalls durch abschnittsweises Nachlesen geschlossen.",
+        "errors": null
+      }
+    ],
+    "pinpoints": [
+      "Rn. 9–12, 16–18, 21–28"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; spätere Recherche als begrenzter Suchbefund dokumentiert.",
+    "procedural_status": "Revision der GdWE zurückgewiesen; konkrete Feststellung der Kostenverteilung zulässig und begründet. Das Urteil erwähnt VZR158/25 nur als seinerzeit anhängiges anderes Verfahren.",
+    "newer_search": {
+      "queries": [
+        "\"V ZR 98/25\" 2026 Feststellung",
+        "\"V ZR 158/25\" BGH Urteil 2026",
+        "\"V ZR 158/25\" \"Bundesgerichtshof\""
+      ],
+      "outcome": "Keine veröffentlichte BGH-Entscheidung zu VZR158/25 gefunden. Historische Anhängigkeit am27.02.2026 nicht als aktueller Registerstatus ausgegeben; Suchtreffer zur Vorinstanz von98/25 sind keine nachfolgende Entscheidung."
+    },
+    "corrections_required": [
+      "Auslegung vorhandener Rechte von konstitutiver Änderung nach§10Abs2WEG trennen; für Letzteres keinen durch98/25 schon entschiedenen Gegner behaupten."
+    ],
+    "expanded_markdown": "### Gerichtliche Klärung der Gemeinschaftsordnung\n\n**Harte Fundstelle:** BGH, Urteil vom 27.02.2026 – V ZR 98/25, Rn. 9–12, 16–28, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR__98-25.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** In einer komplexen Anlage mit Wohnblöcken, Stellplätzen und weiteren Flächen war umstritten, wie eine gemeinschaftsordnungsrechtliche Kostenregel auf ein konkretes Bauprojekt anzuwenden war. Die Berechnung knüpfte an teilweise nicht zuverlässig ermittelbare Flächen an. Der BGH bestätigte, dass ein Eigentümer auch nach der WEG-Reform konkrete Rechte und Pflichten aus der Gemeinschaftsordnung gerichtlich feststellen lassen kann. Beklagte ist dafür die GdWE, nicht eine beliebige Gruppe übriger Eigentümer (Rn. 16–18). Das Feststellungsurteil wirkt entsprechend § 44 Abs. 3 WEG gegenüber sämtlichen Eigentümern (Rn. 21–23).\n\nErforderlich bleibt ein gegenwärtiger Streit über ein bestimmtes Rechtsverhältnis; eine nur abstrakte Bitte um Auslegung einzelner Wörter genügt nicht (Rn. 9–12). Neben der Feststellung kann eine Beschlussersetzung das konkrete Verwaltungsziel klären, wenn über Auslegung oder Wirksamkeit der Gemeinschaftsordnung gestritten wird (Rn. 24–27). Im entschiedenen Fall trug die mangels bestimmbarer Berechnungsgrundlagen nicht handhabbare Kostenklausel die begehrte Belastung nicht; der gesetzliche Maßstab griff ein (Rn. 28).\n\n**Einsatz im Vertrag:** Flächen- und Quotendefinitionen schon vor Erwerb rechnerisch testen: Welche Bestands-/Zukunftsflächen zählen, wer kann sie feststellen, wie werden Fremdgrundstücke oder spätere Bauabschnitte berücksichtigt? Bei Streit den Antrag auf konkrete Kostenpflicht oder konkret erforderlichen Beschluss zuschneiden. Urkunde, Grundbuchbezug, Aufteilungspläne, Flächenbelege und die gegensätzlichen Abrechnungspositionen sichern. Parallel laufende Beschlussanfechtungsfristen werden durch eine Feststellungsklage nicht automatisch gegenstandslos.\n\n**Grenzen und Verfahrensstatus:** Das Urteil klärt bestehende Rechte; eine gestaltende Anpassung der Gemeinschaftsordnung nach § 10 Abs. 2 WEG ist eine andere Frage. Die Aussage zur passiven Legitimation für eine Feststellungsklage darf deshalb nicht ohne eigenständige Prüfung auf eine solche Anpassungsklage übertragen werden. Nicht jeder unpraktische Schlüssel ist schon unwirksam: Entscheidend sind objektive Auslegung und tatsächliche Bestimmbarkeit."
+  },
+  {
+    "index": 30,
+    "title": "Absenkungs- und Umlaufbeschluss",
+    "dockets": [
+      "V ZR 190/25"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR_190-25.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR_190-25.pdf?__blob=publicationFile&v=1",
+        "scope": "18 PDF-Seiten, Rn. 1–37, Tenor und Schluss vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen und mit pdftotext -layout vollständig gelesen; Ausgabekürzungen nötigenfalls durch abschnittsweises Nachlesen geschlossen.",
+        "errors": null
+      }
+    ],
+    "pinpoints": [
+      "Rn. 9, 11–18, 22, 30–34"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; spätere Recherche als begrenzter Suchbefund dokumentiert.",
+    "procedural_status": "Revision zurückgewiesen: Nach Bestandskraft des nachfolgenden Sachbeschlusses fehlt Rechtsschutzinteresse an isolierter Absenkungsanfechtung. VZR76/26 im Urteil als seinerzeit anhängig erwähnt.",
+    "newer_search": {
+      "queries": [
+        "\"V ZR 190/25\" \"V ZR 76/26\"",
+        "\"V ZR 76/26\" \"190/25\""
+      ],
+      "outcome": "Keine veröffentlichte spätere Sachentscheidung zu VZR76/26 gefunden; nur Wiederholungen des historischen Anhängigkeitshinweises. Keine aktuelle Anhängigkeitsbehauptung."
+    },
+    "corrections_required": [
+      "Fehler des Absenkungsbeschlusses und eigenständige Nichtigkeitsgründe des Sachbeschlusses auseinanderhalten; kein generelles Nie-nichtig des Sachbeschlusses."
+    ],
+    "expanded_markdown": "### Absenkungs- und Umlaufbeschluss\n\n**Harte Fundstelle:** BGH, Urteil vom 17.07.2026 – V ZR 190/25, Rn. 11–18, 22, 30–34, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR_190-25.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** Die Eigentümer wollten über eine Heizungsvariante später im Umlaufverfahren mit Mehrheit statt der sonst erforderlichen Zustimmung aller Eigentümer entscheiden. Der zunächst angegriffene Beschluss senkte dafür das Abstimmungsquorum. Während des Prozesses wurden der nachfolgende Sach- und Finanzierungsbeschluss bestandskräftig. Der BGH hält den Absenkungsbeschluss für selbständig mit der Beschlussmängelklage angreifbar: Er verändert die Regeln einer konkreten künftigen Abstimmung und entfaltet eigene rechtliche Wirkung (Rn. 11–18).\n\nDer Fehler dieser vorgelagerten Entscheidung macht den späteren Mehrheits-Umlaufbeschluss jedoch nicht automatisch nichtig. Das gilt auch bei fehlendem oder nichtigem Absenkungsbeschluss, sofern es lediglich um den Abstimmungsmodus geht und für den Sachgegenstand Beschlusskompetenz besteht. Der nachfolgende Beschluss ist dann anfechtbar und kann bestandskräftig werden (Rn. 30–34). Nach dieser Bestandskraft nützt die isolierte Beseitigung der Quorumsabsenkung im entschiedenen Fall nichts mehr; das Rechtsschutzinteresse entfällt.\n\n**Einsatz im Vertrag:** Bei Bauträger- und Erstverwaltungsphasen die gesamte Beschlusskette erfassen: Einladung, genauer Gegenstand der Absenkung, Abstimmungsverfahren, Frist, späterer Sachbeschluss, Ergebnisverkündung und Finanzierung. Für jede Entscheidung getrennt die Klage- und Begründungsfristen prüfen und erforderlichenfalls beide angreifen. Eine laufende Anfechtung des ersten Beschlusses ersetzt keine fristwahrende Prüfung des zweiten. Prozesse können gegebenenfalls verbunden werden; eine Aussetzung ist nicht die vom BGH vorgesehene automatische Lösung.\n\n**Grenzen und Verfahrensstatus:** Eigene Nichtigkeitsgründe des Sachbeschlusses, etwa fehlende Kompetenz für dessen Inhalt, werden nicht geheilt, nur weil ein Umlaufverfahren gewählt wurde. Ob eine Absenkung auch mehrere spätere Umlaufbeschlüsse tragen kann, ließ der BGH in Rn. 22 offen. Für Erwerber ist die wichtigste Folgerung rechtzeitige Kontrolle jeder einzelnen Beschlussstufe."
+  },
+  {
+    "index": 31,
+    "title": "Klima-Splitgerät als bauliche Veränderung",
+    "dockets": [
+      "V ZR 162/25"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR_162-25.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR_162-25.pdf?__blob=publicationFile&v=1",
+        "scope": "20 PDF-Seiten, Rn. 1–38, Tenor und Schluss vollständig gelesen; Abrufversionv1 statt im Ausgangskatalogv4.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen und mit pdftotext -layout vollständig gelesen; Ausgabekürzungen nötigenfalls durch abschnittsweises Nachlesen geschlossen.",
+        "errors": null
+      }
+    ],
+    "pinpoints": [
+      "Rn. 5–8, 11–18, 19–32, 35–36"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; spätere Recherche als begrenzter Suchbefund dokumentiert.",
+    "procedural_status": "Revision der GdWE zurückgewiesen; gerichtliche Gestattung mit konkreten technischen und betrieblichen Vorgaben bleibt bestehen.",
+    "newer_search": {
+      "queries": [
+        "\"V ZR 162/25\" 2026 Klimagerät"
+      ],
+      "outcome": "Keine spätere abändernde BGH-Entscheidung gefunden. Veröffentlichungen imSeptember2026 betreffen dasselbe Urteil. Die im Urteil zitierten Vorentscheidungen wurden hier nicht als eigene vollständig gelesene Anker ausgegeben."
+    },
+    "corrections_required": [
+      "Kein eigenmächtiges Einbaurecht, keine analoge Privilegierung nach§20Abs2WEG. Geräuschprüfung zwischen Installation und Gebrauch differenzieren."
+    ],
+    "expanded_markdown": "### Klima-Splitgerät als bauliche Veränderung\n\n**Harte Fundstelle:** BGH, Urteil vom 17.07.2026 – V ZR 162/25, Rn. 5–8, 11–32, 35–36, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2025/V_ZR_162-25.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** Eigentümer wollten ein Klima-Splitgerät auf ihrem Balkon installieren. Nach Ablehnung durch die Versammlung ersetzte das Landgericht den Gestattungsbeschluss mit Vorgaben zum Gerät und Betrieb; die Revision der GdWE blieb erfolglos. Auch eine grundsätzlich beanspruchbare Maßnahme benötigt zunächst einen Gestattungsbeschluss. Klimageräte gehören nicht schon kraft ausdrücklicher oder analoger Privilegierung zu § 20 Abs. 2 WEG; ein Anspruch kann aber aus § 20 Abs. 3 WEG folgen (Rn. 5–8).\n\nBei der Beeinträchtigung sind die durch Art. 14 GG geschützten Positionen der bauwilligen und der widersprechenden Eigentümer abzuwägen. Nicht jede wahrnehmbare Veränderung reicht; entscheidend ist eine nach der Verkehrsanschauung verständliche Beeinträchtigung (Rn. 11–17). Erwartete spätere Betriebsgeräusche hindern die bauliche Gestattung grundsätzlich noch nicht. Anders kann es liegen, wenn bereits feststeht, dass ein zulässiger Betrieb unvermeidbar zu nicht hinzunehmenden Nachteilen führt. Spätere Abwehransprüche und Nutzungsregelungen bleiben erhalten; TA-Lärm-Werte sind Orientierung, keine umfassende Freizeichnung für jede konkrete Störung (Rn. 18–32).\n\n**Einsatz im Vertrag:** Soll Kühlung zur Ausstattung gehören, Gerät, Standort, Befestigung, Leitungsweg, Kondensat, Schwingungsentkopplung, Betriebszeiten, Schallwerte und Wartung konkretisieren. Bei späterem Einbau technische Unterlagen und Fotodarstellung im Gesamtgebäude vorlegen; Rechte am Balkon bedeuten keine freie Verfügung über die Außenwand. Darlegen, weshalb keine zustimmungsbedürftige Beeinträchtigung entsteht; die Gemeinschaft muss konkrete Gegenbeeinträchtigungen benennen (Rn. 16). Kostenlast nach § 21 WEG gesondert beachten.\n\n**Grenzen:** Das Urteil gestattet nicht jedes Gerät an jeder Fassade. Die Sichtbarkeit ist am Gesamtgebäude, nicht nur am isolierten Detail zu beurteilen. Der gerichtliche Antrag muss die geplante Veränderung hinreichend bestimmen; Schutzauflagen können ein zulässiges Weniger bilden (Rn. 35). Eine fachgerechte kleine Wanddurchführung verlangte im konkreten Fall keinen pauschalen zusätzlichen Statiknachweis (Rn. 36), ersetzt aber nicht die Prüfung bei tatsächlich statisch relevanten Eingriffen."
+  },
+  {
+    "index": 32,
+    "title": "Vertragsstrafe trotz Rücktritt bei Bauträgerverzug",
+    "dockets": [
+      "VII ZR 129/24"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_129-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_129-24.pdf?__blob=publicationFile&v=1",
+        "scope": "12 PDF-Seiten, Rn. 1–33, Tenor und Schluss vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen und mit pdftotext -layout vollständig gelesen; Ausgabekürzungen nötigenfalls durch Nachlesen geschlossen.",
+        "errors": null
+      }
+    ],
+    "pinpoints": [
+      "Rn. 17, 20, 23–31"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; spätere Recherche als begrenzter Suchbefund dokumentiert.",
+    "procedural_status": "Revision der Bauträgerin zurückgewiesen; Zahlung von365.000Euro Vertragsstrafe Zug um Zug gegen Löschungsbewilligung für Vormerkung bleibt bestehen.",
+    "newer_search": {
+      "queries": [
+        "\"VII ZR 129/24\" 2026 Vertragsstrafe"
+      ],
+      "outcome": "Keine spätere abändernde Entscheidung gefunden. Sekundärtreffer mit abweichender Datumsangabe19.05.2025 nicht übernommen; Originaldatum22.05.2025."
+    },
+    "corrections_required": [
+      "Nicht als generelle AGB-Freigabe einer5-%-Vertragsstrafe ausgeben; Gültigkeit war nicht angegriffen. Schon verwirkte von zukünftiger Vertragsstrafe trennen."
+    ],
+    "expanded_markdown": "### Vertragsstrafe trotz Rücktritt bei Bauträgerverzug\n\n**Harte Fundstelle:** BGH, Urteil vom 22.05.2025 – VII ZR 129/24, insbesondere Rn. 17, 20, 23–31, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_129-24.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** Beim Umbau eines Fabrikgeländes in 27 Wohnungen waren ein Fertigstellungstermin, eine tägliche Vertragsstrafe bis zu fünf Prozent des Kaufpreises und ein späteres vertragliches Rücktrittsrecht vereinbart. Der Besteller erklärte wegen weiter ausbleibender Fertigstellung den Rücktritt und verlangte die bereits aufgelaufene Höchststrafe. Der BGH bestätigte 365.000 Euro, im konkreten Urteil Zug um Zug gegen Bewilligung der Vormerkungslöschung. Rücktritt lässt einen bereits entstandenen Strafanspruch grundsätzlich bestehen, sofern die Parteien nicht anderes vereinbart haben (Rn. 23–30).\n\nDer Rücktritt wandelt das Vertragsverhältnis in ein Rückgewährschuldverhältnis um, beseitigt aber nicht rückwirkend jeden bereits entstandenen Anspruch. Die Vertragsstrafe dient sowohl dem Druck auf rechtzeitige Erfüllung als auch dem pauschalierten Ausgleich von Verzugsfolgen. Ihr Zweck würde verfehlt, wenn gerade fortdauernde Nichterfüllung und darauf beruhender Rücktritt den säumigen Unternehmer von der verwirkten Sanktion befreiten. Der Besteller muss nicht allein zum Erhalt der Strafe auf einen vertraglich vorgesehenen Rücktritt verzichten (Rn. 31).\n\n**Einsatz im Vertrag:** Fertigstellungs- und Rücktrittstermine, Tagesbetrag, Bezugsgröße, Obergrenze und Anrechnung auf weitere Schäden präzise abstimmen. Ermitteln, ab welchem Tag Verzug vorliegt, welche Entschuldigungsgründe behauptet werden und wann die Höchstgrenze erreicht ist. Rücktrittsklauseln auf versteckte Ausschlüsse bereits entstandener Ansprüche prüfen. Terminmitteilungen, Baufortschritt, Fristsetzungen und Rücktrittszugang beweisbar sichern; auch Finanzierung und Rückgewährsicherheit vor Ausübung des Rücktritts prüfen.\n\n**Grenzen:** Die Wirksamkeit der konkreten Vertragsstrafenvereinbarung wurde im Revisionsverfahren nicht beanstandet (Rn. 17); das Urteil ist daher keine allgemeine AGB-Freigabe jeder fünfprozentigen Klausel und keine speziell verbraucherschützende Klauselkontrolle. Ohne wirksame Vereinbarung entsteht nicht automatisch ein Strafanspruch. Der Fortbestand bereits verwirkter Beträge sagt nichts über ein weiteres tägliches Anwachsen nach Rücktritt. Bei tatsächlicher Annahme der Leistung bleibt außerdem die gesonderte Vorbehaltsfrage nach § 341 Abs. 3 BGB zu beachten."
+  },
+  {
+    "index": 33,
+    "title": "Planabweichung in der Errichtungsphase",
+    "dockets": [
+      "V ZR 270/23"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_270-23.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_270-23.pdf?__blob=publicationFile&v=1",
+        "scope": "16 PDF-Seiten, Rn. 1–31, Tenor und Schluss vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen und mit pdftotext -layout vollständig gelesen; Ausgabekürzungen nötigenfalls durch Nachlesen geschlossen.",
+        "errors": null
+      }
+    ],
+    "pinpoints": [
+      "Rn. 10–19, 22–29"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; spätere Recherche als begrenzter Suchbefund dokumentiert.",
+    "procedural_status": "Revision der Bauträgerin erfolgreich; Berufung eines Klägers wegen unzureichender Begründung unzulässig, übrige WEG-Beseitigungsansprüche unbegründet. Vertragliche Ansprüche waren nicht Streitgegenstand.",
+    "newer_search": {
+      "queries": [
+        "\"V ZR 270/23\" 2026 Bauphase"
+      ],
+      "outcome": "Fortführende Bezugnahme in VZR219/24 im Original mitgelesen. Keine spätere entgegenstehende BGH-Sachentscheidung gefunden."
+    },
+    "corrections_required": [
+      "Errichtungsphase nicht schematisch mit 'vor jeder Abnahme' gleichsetzen; Abnahmeverlangen und spätere Mängelbeseitigung differenzieren."
+    ],
+    "expanded_markdown": "### Planabweichung in der Errichtungsphase\n\n**Harte Fundstelle:** BGH, Urteil vom 16.05.2025 – V ZR 270/23, Rn. 10–19, 22–29, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_270-23.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** Der teilende Bauträger behielt eine als Restaurant genutzte Einheit und errichtete hierfür während der Bauphase Lüftung, Kühlung, Ventilator und Gastank unter Inanspruchnahme gemeinschaftlicher Flächen. Erwerber mit Vormerkung und Besitz wollten diese Anlagen ausschließlich über wohnungseigentumsrechtliche Beseitigungsansprüche entfernen lassen. Der BGH unterscheidet die Rollen des Bauträgers: Bei erstmaliger Errichtung erfüllt er seine Erwerberverträge und handelt insoweit nicht als gewöhnlicher Wohnungseigentümer, der gemeinschaftliches Eigentum nachträglich verändert. Auch eine abredewidrige Errichtung ist dann grundsätzlich über vertragliche Ansprüche zu korrigieren, nicht über § 1004 BGB wegen einer rechtswidrigen WEG-Veränderung (Rn. 22–25).\n\nWerdende Wohnungseigentümer können zwar grundsätzlich eigentumsbezogenen Schutz genießen; seit der Reform übt regelmäßig die GdWE entsprechende gemeinschaftsbezogene Rechte aus (Rn. 13–19). Das macht aber einen Streit um die vom Bauträger geschuldete erstmalige Herstellung nicht zu einer WEG-Beseitigungssache. Der Senat gibt insoweit eine entgegenstehende frühere Aussage ausdrücklich auf.\n\n**Einsatz im Vertrag:** Vertragliches Bausoll aus Baubeschreibung, Plänen und Nachträgen herstellen und die konkrete Abweichung verorten. Festhalten, wer wann welche Anlage eingebaut hat, ob Herstellung oder spätere eigenständige Umgestaltung vorlag und wann der Bauträger Abnahme verlangte. Gegen den Bauträger vertragliche Erfüllung/Nacherfüllung und gegebenenfalls Einbehalte oder weitere Mängelrechte prüfen; die erforderliche Bündelung gemeinschaftsbezogener Erwerberrechte gesondert klären. Ein fortbestehender Bauträger-Miteigentumsanteil allein ändert den Rechtsweg zum materiellen Anspruch nicht.\n\n**Grenzen und Ergebnis:** Für das Ende der Errichtungsphase ist grundsätzlich das Abnahmeverlangen wesentlich, nicht erst die letzte tatsächlich erklärte Abnahme sämtlicher Erwerber; nachfolgende Mängelbeseitigung kann weiterhin Vertragserfüllung sein (Rn. 26–29). Das Urteil erlaubt daher keine unbegrenzte, einseitige Bauänderung. Vertragliche Ansprüche waren hier gerade nicht Gegenstand der gerichtlichen Entscheidung. Auch die besondere Prozessführungsbefugnis einer bereits 2019 erhobenen Klage im Übergangsrecht (Rn. 10) darf nicht auf neu erhobene Individualklagen übertragen werden."
+  },
+  {
+    "index": 34,
+    "title": "Mängelrechte in Mehrhausanlagen mit Untergemeinschaften",
+    "dockets": [
+      "V ZR 132/23"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_132-23.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_132-23.pdf?__blob=publicationFile&v=1",
+        "scope": "15 PDF-Seiten, Rn. 1–24, Tenor und Schluss vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen und mit pdftotext -layout vollständig gelesen; Ausgabekürzungen nötigenfalls durch Nachlesen geschlossen.",
+        "errors": null
+      }
+    ],
+    "pinpoints": [
+      "Rn. 13–17, 19–23"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; spätere Recherche als begrenzter Suchbefund dokumentiert.",
+    "procedural_status": "Revision der Bauträgerin zurückgewiesen; angegriffene Gesamtgemeinschaftsbeschlüsse wirksam. Mängelursache und Erfolg der zugrunde liegenden Baumängelklage wurden nicht abschließend entschieden.",
+    "newer_search": {
+      "queries": [
+        "\"V ZR 132/23\" 2025 2026 Mängel",
+        "\"V ZR 132/23\" BGH 2026"
+      ],
+      "outcome": "VZR128/23 vom14.02.2025 im Original vollständig gelesen: zitiert132/23Rn22 ausschließlich zur objektiven Beschlussauslegung/erkennbaren Unterlagen. Keine abändernde BGH-Entscheidung zur Bündelungskompetenz gefunden."
+    },
+    "corrections_required": [
+      "Beschlusskompetenz von materiellem Anspruchserfolg und endgültiger Kostenlast trennen; höchstpersönliche Gestaltungsrechte nicht pauschal mitvergemeinschaften."
+    ],
+    "expanded_markdown": "### Mängelrechte in Mehrhausanlagen mit Untergemeinschaften\n\n**Harte Fundstelle:** BGH, Urteil vom 23.02.2024 – V ZR 132/23, Rn. 13–23, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_132-23.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** In einer Zweihäuseranlage waren weitgehend selbständige Untergemeinschaften vorgesehen. Mängel, insbesondere Feuchtigkeit und Schimmel, betrafen einen Gebäudeteil. Die Gesamtgemeinschaft hatte Erwerberrechte zur ordnungsgemäßen Herstellung an sich gezogen und später über Fortführung des Prozesses, Vergleichsverhandlungen und eine Prozesskostenumlage von 6.000 Euro beschlossen. Der Bauträger wandte ein, allein die betroffene Untergemeinschaft sei zuständig. Der BGH verneinte dies: Die Bündelung der auf ordnungsgemäße Herstellung des Gemeinschaftseigentums gerichteten Erwerberansprüche steht allein der Gesamt-GdWE zu, auch bei weitgehender Verselbständigung und zunächst örtlich beschränktem Mangel (Rn. 13–17).\n\nUntergemeinschaften besitzen keine eigene Rechtspersönlichkeit. Zudem können Ursachen und Sanierung mehrerer Gebäudeteile zusammenhängen; unterschiedliche Erwerberverträge und mögliche Rechtsfolgen müssen einheitlich koordiniert werden. Der Bündelung folgt die Zuständigkeit für gerichtliche Durchsetzung, Vergleichsverhandlungen und damit verbundene Finanzierung (Rn. 19–23). Für die Umlage genügt ein objektiv eindeutig aus Gesamtbetrag und erkennbarem Schlüssel errechenbarer Einzelbetrag.\n\n**Einsatz im Vertrag:** Bei Mehrhausanlagen nicht allein die Überschrift „Untergemeinschaft“ lesen. Gesamt- und Teilzuständigkeiten, Kostenverteilung, Prozessrechte und Regelungen über gemeinschaftsübergreifende Bauteile vergleichen. Vor Mängelverfolgung den vollständigen Bündelungsbeschluss, erfasste Rechte, Vertragspartner, Mängelbereich und Prozessfinanzierung beschaffen. Der Beschluss sollte erkennen lassen, welche Ansprüche verfolgt und welche Vergleichsvollmachten erteilt werden. Beirat oder Untergemeinschaft nicht ohne Rechtsgrund als selbständig anspruchsführende Partei behandeln.\n\n**Grenzen und Ergebnis:** Die Zurückweisung der Bauträgerrevision bestätigt die Beschlusszuständigkeit, nicht bereits das Vorliegen sämtlicher Baumängel oder deren Kosten. Erwerberindividuelle Rechte wie Rücktritt beziehungsweise großer Schadensersatz sind nicht unterschiedslos mit erfasst (Rn. 14). Ebenso entscheidet Prozessfinanzierung nicht automatisch, wer sämtliche späteren Sanierungskosten endgültig trägt. Die Bestimmbarkeitslinie wird in der späteren Rücklagen-/Kostenverteilungsentscheidung im benachbarten Anker aufgegriffen; sie ersetzt keine verständliche Unterlage, aus der der eigene Betrag tatsächlich berechnet werden kann."
+  },
+  {
+    "index": 35,
+    "title": "Pflichten des bauträgernahen Erstverwalters bei Baumängeln",
+    "dockets": [
+      "V ZR 75/18",
+      "V ZR 34/24"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2018/V_ZR__75-18.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR__34-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2018/V_ZR__75-18.pdf?__blob=publicationFile&v=1",
+        "scope": "20 PDF-Seiten, Rn. 1–42, Tenor und Schluss vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen und mit pdftotext -layout vollständig gelesen; Ausgabekürzungen nötigenfalls durch Nachlesen geschlossen.",
+        "errors": null
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR__34-24.pdf?__blob=publicationFile&v=1",
+        "scope": "15 PDF-Seiten, Rn. 1–26, Tenor und Schluss vollständig gelesen; anfänglich gekürzten Schlussteil gesondert nachgelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar per curl/pdftotext.",
+        "errors": null
+      }
+    ],
+    "pinpoints": [
+      "VZR75/18 Rn. 9–22, 24–33, 35–42",
+      "VZR34/24 Rn. 5–7, 10–24"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; spätere Recherche als begrenzter Suchbefund dokumentiert.",
+    "procedural_status": "VZR75/18: Aufhebung/Zurückverweisung im Altfall. VZR34/24: Revision des Eigentümers gegen unmittelbare vertragliche Inanspruchnahme des Verwalters zurückgewiesen.",
+    "newer_search": {
+      "queries": [
+        "\"V ZR 75/18\" \"V ZR 34/24\"",
+        "\"V ZR 34/24\" bundesgerichtshof"
+      ],
+      "outcome": "Maßgebliche Rechtsstandsänderung durch BGH05.07.2024–VZR34/24 vollständig im amtlichen Original geprüft. Das Urteil zitiert75/18 ausdrücklich als frühere Rechtslage. Keine Fortgeltungsbehauptung des alten Direktanspruchs."
+    },
+    "corrections_required": [
+      "Für heutige Fälle unmittelbaren Verwaltervertragsanspruch des Erwerbers nicht aus75/18 ableiten; grundsätzlich GdWE-Anspruch und Regress trennen."
+    ],
+    "expanded_markdown": "### Pflichten des bauträgernahen Erstverwalters bei Baumängeln\n\n**Harte Fundstelle:** BGH, Urteil vom 19.07.2019 – V ZR 75/18, Rn. 9–22, 24–42, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2018/V_ZR__75-18.pdf?__blob=publicationFile&v=1; zum nachfolgenden Rechtsstand BGH, Urteil vom 05.07.2024 – V ZR 34/24, Rn. 5–24: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR__34-24.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** Im Altfall war der Geschäftsführer des Bauträgers zugleich mit der Erstverwaltung verbunden. Feuchtigkeit war bekannt; nach Gutachten und einer behaupteten Reparatur bestanden Hinweise auf fortdauernde Probleme. Der Verwalter musste Ursachenklärung, Handlungsalternativen, mögliche Gewährleistungsansprüche und drohende Verjährung so aufbereiten, dass die Eigentümer sachgerecht entscheiden konnten. Seine wirtschaftliche Nähe zum Bauträger mindert diese Pflichten nicht (Rn. 9–11). Die bloße Weitergabe einer beruhigenden Reparaturmitteilung konnte bei konkreten Gegenanzeichen unzureichend sein; neue Anzeichen lösen erneuten Handlungsbedarf aus (Rn. 16–22).\n\nNicht jede frühere Pflichtverletzung verursachte jedoch den späteren Schaden: Wenn zwischenzeitlich die bestmögliche Reparatur zugesagt war, musste die Kausalität neu betrachtet werden (Rn. 13–14). Die Vermutung sachgerechter Beschlussfassung nach ordnungsgemäßer Information ist widerlegbar. Mangelursache, Folgeschaden und hypothetischer Verlauf bleiben nachzuweisen (Rn. 35–42). Auch eine pauschale vertragliche Zweijahresbegrenzung der Haftung bedurfte gesonderter AGB- und Verjährungsprüfung (Rn. 24–33).\n\n**Einsatz im Vertrag:** Bauträgerbindung offenlegen lassen; Verwaltervertrag, Gutachten, Mängelmeldungen, Reparaturzusagen, Kontrollbefunde und Beschlussvorlagen zeitlich ordnen. Für jeden Zeitraum dokumentieren, welche Informationen vorlagen, welche Maßnahme geboten war und welcher Schaden dadurch vermeidbar gewesen wäre. Entlastungs- und Haftungsklauseln nicht ungeprüft akzeptieren.\n\n**Entscheidende Aktualisierung:** V ZR 34/24 verneint nach dem seit 01.12.2020 geltenden WEG-Recht die Schutzwirkung des Verwaltervertrags zugunsten einzelner Eigentümer. Wegen solcher Verwaltungspflichtverletzungen richtet sich ihr Anspruch grundsätzlich gegen die GdWE aus § 280 Abs. 1 BGB in Verbindung mit § 18 Abs. 2 WEG; die Gemeinschaft nimmt gegebenenfalls Regress beim Verwalter. Eigenständige deliktische Ansprüche bleiben möglich, benötigen aber ihre eigenen Voraussetzungen (Rn. 24). Die alte unmittelbare Anspruchsrichtung aus V ZR 75/18 darf daher nicht unverändert für einen heutigen Erwerberfall eingesetzt werden."
+  },
+  {
+    "index": 36,
+    "title": "Steckengebliebener Bau und Erstherstellung",
+    "dockets": [
+      "V ZR 243/23",
+      "V ZR 219/24"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_243-23.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR_219-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_243-23.pdf?__blob=publicationFile&v=1",
+        "scope": "23 PDF-Seiten, Rn. 1–45 vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen und mit pdftotext -layout vollständig gelesen; Ausgabekürzungen nötigenfalls durch Nachlesen geschlossen.",
+        "errors": null
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR_219-24.pdf?__blob=publicationFile&v=1",
+        "scope": "27 PDF-Seiten, Rn. 1–55 vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen und mit pdftotext -layout vollständig gelesen; Ausgabekürzungen nötigenfalls durch Nachlesen geschlossen.",
+        "errors": null
+      }
+    ],
+    "pinpoints": [
+      "VZR243/23 Rn. 5–22, 25–41, 45",
+      "VZR219/24 Rn. 22–35, 37–50"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; spätere Recherche als begrenzter Suchbefund dokumentiert.",
+    "procedural_status": "VZR243/23: Aufhebung/Zurückverweisung; Gericht muss Zumutbarkeit aufklären. VZR219/24: Erstherstellungsbegehren teilweise zugesprochen, zusätzliche Fenster zur weiteren Prüfung zurückverwiesen.",
+    "newer_search": {
+      "queries": [
+        "\"V ZR 243/23\" \"V ZR 219/24\" 2026"
+      ],
+      "outcome": "2026-Urteil im Original als Konkretisierung des2024-Ankers geprüft. Weiteres Zitat in VZR162/25 betrifft bauliche Veränderungen und deren Kosten, keine Aufhebung der Erstherstellungslinie."
+    },
+    "corrections_required": [
+      "Die SE-Erstherstellungskosten verbleiben nach219/24Rn35 beim jeweiligen Eigentümer; keine allgemeine Kostenvergemeinschaftung. Keine starre50-%-Grenze für Zumutbarkeit."
+    ],
+    "expanded_markdown": "### Steckengebliebener Bau und Erstherstellung\n\n**Harte Fundstelle:** BGH, Urteil vom 20.12.2024 – V ZR 243/23, Rn. 5–22, 25–41, 45, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_243-23.pdf?__blob=publicationFile&v=1; Urteil vom 27.02.2026 – V ZR 219/24, Rn. 22–35, 37–50: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR_219-24.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** Scheitert die Fertigstellung, erschöpft sich die Prüfung nicht in Ansprüchen gegen den insolventen Bauträger. V ZR 243/23 bestätigt grundsätzlich einen Anspruch auf erstmalige plangerechte Errichtung gegen die GdWE, sobald mindestens ein Erwerber Wohnungseigentümer oder werdender Wohnungseigentümer geworden ist. Für den Antragsteller sind die entsprechenden Voraussetzungen eigenständig zu prüfen; eine Vormerkung allein genügt nicht immer (Rn. 5–9). Die Wiederaufbauregel des § 22 WEG ist nicht analog anzuwenden. Statt einer starren Fertigstellungsquote begrenzt § 242 BGB den Anspruch durch Unzumutbarkeit (Rn. 10–22).\n\nHierfür sind Genehmigungsfähigkeit, realistische Gesamt-/Mehrkosten, Baufortschritt, Finanzierung, Belastungen der übrigen Eigentümer und tatsächlich erfolgversprechende anderweitige Fertigstellungsansprüche zu würdigen. Die GdWE trägt grundsätzlich die Darlegungslast für Unzumutbarkeit. Eine Kostensteigerung von mehr als 50 Prozent kann ein Gesichtspunkt sein, ist aber keine feste Ausschlussgrenze (Rn. 25–41).\n\n**Einsatz im Vertrag:** Bei Baustillstand Restleistung und Finanzierung unabhängig begutachten lassen; Erwerberstatus, gültige Pläne, Genehmigungen, Vertragserfüllungsansprüche und verfügbare Sicherheiten sichern. Die Beschlussersetzung muss ein durchführbares Herstellungs- und Finanzierungskonzept ermöglichen. Das Gericht darf die vorgelagerte Zumutbarkeitsentscheidung nicht durch bloße Beauftragung weiterer Untersuchung der Gemeinschaft überlassen.\n\n**Konkretisierung und Kostenwarnung:** V ZR 219/24 erfasst bei unvollständigen Einheiten auch nichttragende Innenwände, deren Verputz, bestimmte unter Putz liegende Elektroinstallationen und Heizungsanschlüsse einschließlich Heizkörpern, soweit die koordinierte Erstherstellung dies erfordert (Rn. 22–35). Nicht jeder Innenausbau, etwa Bad- oder Küchenausstattung, wird damit Gemeinschaftsaufgabe. Tätigkeit im Sondereigentum setzt das entsprechende Verlangen voraus; die Kosten seiner erstmaligen Herstellung trägt weiterhin der betreffende Eigentümer (Rn. 34–35). Zusätzliche, nicht im ursprünglichen Plan vorgesehene Fenster sind dagegen bauliche Veränderungen nach § 20 WEG, auch vor vollständiger Fertigstellung. Baugenehmigung ersetzt dabei keine wohnungseigentumsrechtliche Gestattung. Die Verfahren endeten nicht mit einer schrankenlosen oder vollständig kostenbezifferten Fertigstellungsgarantie."
+  },
+  {
+    "index": 37,
+    "title": "Gemeinschaftsordnung und anfängliche Mängel",
+    "dockets": [
+      "V ZR 36/24"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR__36-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR__36-24.pdf?__blob=publicationFile&v=1",
+        "scope": "11 PDF-Seiten, Rn. 1–22, Tenor und Schluss vollständig gelesen.",
+        "full_read": true,
+        "retrieval": "Amtliches BGH-PDF unmittelbar über curl geladen und mit pdftotext -layout vollständig gelesen; Ausgabekürzungen nötigenfalls durch Nachlesen geschlossen.",
+        "errors": null
+      }
+    ],
+    "pinpoints": [
+      "Rn. 8–10, 11–21"
+    ],
+    "verification_status": "Originalentscheidung vollständig gelesen; spätere Recherche als begrenzter Suchbefund dokumentiert.",
+    "procedural_status": "Revision der GdWE zurückgewiesen; angefochtene Sonderumlage wegen falschen Kostenverteilungsschlüssels unwirksam. Im2025-Urteil offen gelassene Kompetenzfrage inzwischen im benachbarten Katalogeintrag gesondert behandelt.",
+    "newer_search": {
+      "queries": [
+        "\"V ZR 36/24\" \"V ZR 102/24\"",
+        "\"V ZR 102/24\" 2026 Urteil"
+      ],
+      "outcome": "Nachfolgeentscheidung VZR102/24 vom24.04.2026 entdeckt (bereits eigener Katalogeintrag38 und Rechercheauftrag der anderen Gruppe). Hier nicht nochmals als vollständig gelesener Text ausgegeben; keine heutige Anhängigkeit dieses Verfahrens behauptet."
+    },
+    "corrections_required": [
+      "Kostenübertragung nicht mit Verlust der Beschlusskompetenz oder Wegfall von Bauträgeransprüchen verwechseln. Übertragung auf andere Bauteile nur anhand konkreter Klausel."
+    ],
+    "expanded_markdown": "### Gemeinschaftsordnung und anfängliche Mängel\n\n**Harte Fundstelle:** BGH, Urteil vom 23.05.2025 – V ZR 36/24, insbesondere Rn. 8–21, amtliches PDF: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2024/V_ZR__36-24.pdf?__blob=publicationFile&v=1.\n\n**Kernaussage für Verbraucher:** Eine Gemeinschaftsordnung aus 2004 ordnete bestimmten Eigentümern Kosten für Instandhaltung und Instandsetzung näher bezeichneter Bauteile im räumlichen Bereich ihrer Einheiten zu, darunter Fensterrahmen und Scheiben. Für die Sanierung auch anfänglicher Mängel wurde später eine Sonderumlage von 875.000 Euro nach Miteigentumsanteilen beschlossen. Der BGH bestätigte deren Beanstandung: Eine eindeutige abweichende Kostenzuordnung kann auch anfängliche Herstellungsmängel erfassen. Der Begriff Instandsetzung beschränkt sich im Zweifel nicht auf erst später entstandenen Verschleiß (Rn. 10–19).\n\nDie objektive Auslegung der im Grundbuch verankerten Regelung ist maßgeblich. Eine Trennung nach ursprünglichem Baumangel oder späterem Schadenseintritt würde häufig schwierige, für spätere Eigentümer kaum beherrschbare Ursachenfragen erzeugen. Die Gemeinschaftsordnung kann diese Kosten anders als der gesetzliche Schlüssel verteilen. Im Fall wurde der Schlüssel nicht durch einen neuen Änderungsbeschluss ersetzt, sondern bei der Umlage schlicht falsch angewandt (Rn. 8–9).\n\n**Einsatz im Vertrag:** Vor Erwerb Kosten- und Erhaltungsklauseln nicht nur als Regelung gewöhnlicher Kleinreparaturen lesen. Bauteile, räumlichen Bezug und mögliche anfängliche Sanierungsrisiken einschließlich Fenstern und Fassadenanschlüssen konkret erfassen. Kaufvertragliche Regressrechte gegen den Bauträger, Sicherheiten und Verjährungsrisiken daneben prüfen. Wer anfängliche Mängel von Erwerber-Sonderkosten ausnehmen möchte, benötigt eine klare und rechtlich passende Regelung; ein bloßes Verständnis, Neubaufehler seien „Sache der Gemeinschaft“, reicht nicht.\n\n**Grenzen und Entwicklung:** Die Entscheidung behandelt die interne Kostenlast, nicht den Wegfall vertraglicher Mängelansprüche gegen den Bauträger und nicht automatisch die Zuständigkeit für den Sanierungsbeschluss (Rn. 20). Letztere ist im folgenden Anker zur Erhaltungslast gesondert zu prüfen. Die dortige spätere Entscheidung darf nicht als im Jahr 2025 schon mitentschieden dargestellt werden. Auch die bauliche Einbindung eines Fensters in die Fassade macht eine präzise Kostenklausel nicht unbestimmt (Rn. 21); daraus folgt aber keine pauschale Zuweisung sämtlicher Fassadenkosten an den Wohnungseigentümer. Maßgeblich bleiben Wortlaut und konkret betroffene Bauteile."
+  }
+]

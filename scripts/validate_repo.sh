@@ -12,6 +12,7 @@ btv_python="${BTV_PYTHON:-python3}"
 "$btv_python" scripts/test_contract_artifacts.py
 "$btv_python" scripts/test_limitation_controls.py
 "$btv_python" scripts/test_workflow_dialogue.py
+"$btv_python" scripts/test_portable_workflow.py
 "$btv_python" scripts/test_prompt_layout.py
 "$btv_python" tests/verify_testakten.py
 "$btv_python" scripts/check_legal_anchors.py

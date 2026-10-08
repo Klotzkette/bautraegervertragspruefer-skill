@@ -1,0 +1,817 @@
+[
+  {
+    "index": 1,
+    "title": "Nutzungsausfall bei verspäteter Bauträgerleistung",
+    "dockets": [
+      "VII ZR 172/13",
+      "VII ZR 20/25"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2013/VII_ZR_172-13.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__20-25.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2013/VII_ZR_172-13.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor, Tatbestand und Gründen; lokal mit curl abgerufen und pdftotext gelesen",
+        "retrieval": "Webabruf teils HTTP403; direkter curl-Abruf erfolgreich.",
+        "errors": []
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__20-25.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor, Tatbestand und Gründen; lokal mit curl abgerufen und pdftotext gelesen",
+        "retrieval": "Webabruf teils HTTP403; direkter curl-Abruf erfolgreich.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "VII ZR172/13 Rn.10–22",
+      "VII ZR20/25 Rn.16–21"
+    ],
+    "verification_status": "amtlicher Volltext verifiziert",
+    "procedural_status": "BGH wies die Revision des Bauträgers gegen den zugesprochenen Nutzungsausfall zurück. Ergänzende Entscheidung VII ZR20/25: Aufhebung und Zurückverweisung, kein abschließender Nutzungsersatzzuspruch.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"VII ZR 172/13\" 2025 2026 Nutzungsausfall BGH",
+        "BGH \"20/25\" \"Nutzungsausfall\" \"2026\""
+      ],
+      "result": "BGH07.05.2026 VII ZR20/25 amtlich vollständig gelesen: bestätigt in Rn.16 den Schutz auch des erstmaligen vertraglichen Erhalts; Fahrzeugreparaturfall, keine neue Wohnungs-Tagespauschale.",
+      "limitation": "Gezielte Aktenzeichen- und Themenrecherche; kein Nachweis vollständiger Erfassung aller unveröffentlichten oder nicht indexierten Folgeentscheidungen."
+    },
+    "corrections_required": [],
+    "expanded_markdown": "### Nutzungsausfall bei verspäteter Bauträgerleistung\n\n**Harte Fundstelle:** BGH, Urteil vom 20.02.2014 – VII ZR 172/13, Rn. 10–22, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2013/VII_ZR_172-13.pdf?__blob=publicationFile&v=1); ergänzend BGH, Urteil vom 07.05.2026 – VII ZR 20/25, Rn. 16–21, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__20-25.pdf?__blob=publicationFile&v=1).\n\n**Fall und Entscheidung:** Eine Familie mit drei Kindern musste nach Ablauf des Fertigstellungstermins weiter in einer Wohnung von 72,6 m² leben, statt die erworbenen 136,3 m² nutzen zu können. Der BGH bestätigte den zugesprochenen Nutzungsausfall. Er schützt nicht nur den Bestand einer schon genutzten Sache, sondern auch das Interesse, vertraglich geschuldeten Wohnraum rechtzeitig zu erhalten. Dass die neue Wohnung vorher nie bewohnt werden konnte, schließt den Schaden deshalb nicht aus.\n\n**Kernaussage für Verbraucher:** Der Anspruch wegen Herstellungsverzugs setzt eine fühlbare Beeinträchtigung voraus. Entscheidend sind Nutzungswille, tatsächliche Nutzungsmöglichkeit und das Fehlen in etwa gleichwertigen Ersatzwohnraums; eine kurze Verzögerung oder gleichwertige Ersatzunterkunft kann den Anspruch ausschließen (Rn. 17–20). Gleichwertigkeit richtet sich nicht nur nach einem sozialrechtlichen Mindestbedarf. Die erhebliche Flächen- und Qualitätsdifferenz war im konkreten Familienhaushalt relevant. Umgekehrt rechtfertigt nicht jede Komfortdifferenz einen abstrakten Geldersatz. Die Bemessungsmethode war revisionsrechtlich nicht umfassend angegriffen; aus dem Urteil folgt keine allgemeine Tagespauschale.\n\n**Einsatz im Vertrag:** Stelle zugesagte Bezugsfertigkeit, tatsächliches Übergabeangebot, Verzugsvoraussetzungen und jeden Zeitraum mit seiner konkreten Wohnsituation gegenüber. Sichere Grundrisse, Bewohnerzahl, Umzugsplanung, Ersatzmietvertrag und Nachweise, wann die Erwerberin hätte einziehen können. Prüfe Aufrechnung und Doppelkompensation: Bereits ersetzte Miete und weitere konkret beanspruchte Kosten dürfen denselben Nachteil nicht nochmals abgelten (Rn. 21). Eine vermietete Kapitalanlage verlangt eine andere Schadensberechnung als persönlicher Wohngebrauch.\n\n**Fortentwicklung und Grenze:** BGH, Urteil vom 07.05.2026 – VII ZR 20/25, Rn. 16–21, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__20-25.pdf?__blob=publicationFile&v=1), bestätigt 2026 den Gedanken des erstmaligen vertraglichen Nutzungserhalts, betraf aber eine misslungene Fahrzeugreparatur. Die dortige Abgrenzung eines geliehenen Familienfahrzeugs ist nicht ohne Weiteres auf tatsächlich vorhandenen Ersatzwohnraum übertragbar. Auch dort wurde zur weiteren Feststellung zurückverwiesen, nicht jede geltend gemachte Ausfallposition zugesprochen."
+  },
+  {
+    "index": 2,
+    "title": "Mangelbedingte Nutzungsbeeinträchtigung und Folgeschäden nach Abnahme",
+    "dockets": [
+      "VII ZR 187/24"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_187-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_187-24.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor, Tatbestand und Gründen; lokal mit curl abgerufen und pdftotext gelesen",
+        "retrieval": "Webabruf teils HTTP403; direkter curl-Abruf erfolgreich.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn.14",
+      "Rn.16–23",
+      "Rn.24–28"
+    ],
+    "verification_status": "amtlicher Volltext verifiziert",
+    "procedural_status": "Urteil des OLG Oldenburg aufgehoben; zurückverwiesen wegen fehlender Feststellungen zu Anspruchsvoraussetzungen. Kein abschließender Zuspruch von66.977,40€.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"VII ZR 187/24\" 2026 BGH",
+        "\"VII ZR 187/24\" \"10 U 72/25\"",
+        "\"10 U 72/25\" site:landesrecht-bw.de"
+      ],
+      "result": "OLG Stuttgart24.03.2026 10U72/25 als spätere Anwendung auf Planungsmängel vor Abnahme gefunden (Dejure/IWW). Keine amtliche/DNotI-Volltextverifikation dieser Zusatzentscheidung erreicht; nur Recherchehinweis, keine Erweiterung des BGH-Leitsatzes. Keine aufhebende BGH-Folgeentscheidung identifiziert.",
+      "limitation": "Gezielte Aktenzeichen- und Themenrecherche; kein Nachweis vollständiger Erfassung aller unveröffentlichten oder nicht indexierten Folgeentscheidungen."
+    },
+    "corrections_required": [],
+    "expanded_markdown": "### Mangelbedingte Nutzungsbeeinträchtigung und Folgeschäden nach Abnahme\n\n**Harte Fundstelle:** BGH, Urteil vom 13.11.2025 – VII ZR 187/24, insbesondere Rn. 16–28, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_187-24.pdf?__blob=publicationFile&v=1).\n\n**Fall und Entscheidung:** Nach Abnahme einer Fahrsiloanlage beanstandete ein Landwirt Undichtigkeiten und verklebte Abläufe. Er verkaufte die Maisernte, bevor die von ihm gesetzte Nachbesserungsfrist ablief, und verlangte die Mehrkosten später zugekauften Futters. Das Berufungsgericht hatte den Anspruch wegen unterlassener Warnung vor diesem Schaden vollständig abgelehnt. Der BGH hob auf und verwies zurück; Mangel, Ursächlichkeit und weitere Anspruchsvoraussetzungen waren noch nicht ausreichend festgestellt. Die Übersendung des behördlichen Prüfberichts gehörte nach den bindenden Feststellungen nicht zur geschuldeten Leistung (Rn. 14).\n\n**Kernaussage für Verbraucher:** Ein durch mangelbedingte Nutzungsbeeinträchtigung bereits endgültig eingetretener Schaden einschließlich Folgeschäden fällt nach Abnahme unter § 634 Nr. 4, § 280 Abs. 1 BGB. Weil spätere Nacherfüllung diesen Nachteil nicht rückwirkend beseitigt, bedarf es nicht zusätzlich des Nacherfüllungsverzugs nach §§ 280 Abs. 2, 286 BGB (Rn. 24–27). Davon zu unterscheiden sind Kosten der Mangelbeseitigung selbst und Schäden bloß verspäteter Erstherstellung.\n\n**Einsatz im Vertrag:** Ordne jede Wohnungs-Schadensposition nach Ursache und Zeitraum ein: etwa zusätzliche Unterkunft während einer notwendigen Mangelbeseitigung statt einer pauschalen Forderung „wegen Verzugs“. Belege Mangel, konkrete Nutzungssperre, Erforderlichkeit der Ausgabe und fehlende kostengünstigere Möglichkeiten. Das Urteil erleichtert nicht automatisch den Nachweis abstrakten Nutzungsausfalls und verlagert Mängelrechte nicht allgemein vor die Abnahme.\n\n**Warnung und Gegenargument:** § 254 Abs. 2 Satz 1 BGB greift nicht schon, weil die Erwerberin einen möglichen Schaden nicht beziffert hat. Zu prüfen sind ungewöhnliche Schadenshöhe, rechtzeitige Kenntnis beziehungsweise Erkennbarkeit bei der Erwerberin, fehlende entsprechende Kenntnis beim Unternehmer sowie eine reale Möglichkeit, den Schaden nach Warnung abzuwenden (Rn. 16–23). Halte außergewöhnliche Risiken dennoch früh schriftlich fest. Eine Warnung ersetzt weder notwendige Schadensminderung noch den Beleg der Schadenshöhe; eine fehlende Warnung führt umgekehrt nicht ohne diese Feststellungen zum vollständigen Anspruchsverlust."
+  },
+  {
+    "index": 3,
+    "title": "Eilweise Besitzverschaffung bei Schlüsselverweigerung",
+    "dockets": [
+      "21 U 79/17"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.dnoti.de/entscheidungen/details/?cHash=9dbaf26392b8bb056987ce5e823f6c38&tx_dnotionlineplusapi_decisions%5Bnodeid%5D=62e3e808-9bd6-43a4-984a-9736cfed14fe",
+      "https://www.gesetze-bayern.de/Content/Document/Y-300-Z-BECKRS-B-2025-N-39144"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.dnoti.de/entscheidungen/details/?cHash=9dbaf26392b8bb056987ce5e823f6c38&tx_dnotionlineplusapi_decisions%5Bnodeid%5D=62e3e808-9bd6-43a4-984a-9736cfed14fe",
+        "full_read": false,
+        "scope": "Vollständig veröffentlichter gerichtlicher Text einschließlich Tenor und als 'Wesentlicher Inhalt der Gründe' bezeichnetem Gründen-Auszug; nicht ungekürzte Gerichtsakte",
+        "retrieval": "Erfolgreicher Textabruf",
+        "errors": [],
+        "published_text_read_complete": true
+      },
+      {
+        "url": "https://www.gesetze-bayern.de/Content/Document/Y-300-Z-BECKRS-B-2025-N-39144",
+        "full_read": true,
+        "scope": "Vollständiger veröffentlichter gerichtlicher HTML-Text",
+        "retrieval": "Erfolgreicher Textabruf",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "KG Gründe II.2.a–c, II.2.e, II.5 (DNotI-Text ohne durchgehende Randnummern)",
+      "OLG München Rn.14–28"
+    ],
+    "verification_status": "amtlicher Volltext verifiziert",
+    "procedural_status": "Einstweilige Schlüsselherausgabe Zug um Zug gegen weitere5.000€; weitergehende Sicherheitsanordnung abgelehnt. Keine Hauptsacheentscheidung über sämtliche Mängel.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"21 U 79/17\" Urteil DNotI",
+        "\"21 U 79/17\" 2026 einstweilige",
+        "\"9 W 1431/25\" BGH 2026"
+      ],
+      "result": "Amtlich gelesener OLG-München-Beschluss24.11.2025 lässt Übernahme der KG-Linie ausdrücklich offen und verneint konkrete Dringlichkeit; daher keine bundesweit sichere Eilübergabe.",
+      "limitation": "Gezielte Aktenzeichen- und Themenrecherche; kein Nachweis vollständiger Erfassung aller unveröffentlichten oder nicht indexierten Folgeentscheidungen."
+    },
+    "corrections_required": [],
+    "expanded_markdown": "### Eilweise Besitzverschaffung bei Schlüsselverweigerung\n\n**Harte Fundstelle:** KG, Urteil vom 04.10.2017 – 21 U 79/17, Gründe II.2 und II.5, [gerichtlicher Text bei DNotI](https://www.dnoti.de/entscheidungen/details/?cHash=9dbaf26392b8bb056987ce5e823f6c38&tx_dnotionlineplusapi_decisions%5Bnodeid%5D=62e3e808-9bd6-43a4-984a-9736cfed14fe). Die Veröffentlichung bezeichnet den Inhalt als „Wesentlicher Inhalt der Gründe“; sie ist keine vollständige Gerichtsakte.\n\n**Fall und Entscheidung:** Die Erwerber hatten eine Wohnung für 649.087 € gekauft. Bei um rund ein Jahr verspäteter Übergabe sollten 96,5 % gezahlt sein. Sie behielten zunächst über 143.000 € wegen Sicherheit, Mängeln, Terrasse und Verzögerungsschäden ein. Nach erstinstanzlicher Zahlung und Besitzverschaffung fehlten noch Haus-, Keller- und Briefkastenschlüssel. Das KG ordnete deren Herausgabe gegen weitere 5.000 € an. Es billigte im Eilverfahren nur klar feststellbare Abzüge von insgesamt 52.488,70 €: fünfprozentige Sicherheit, unstreitigen Verzugsschaden und einen wegen zwischenzeitlicher Nachbesserung reduzierten Mängeleinbehalt.\n\n**Kernaussage für Verbraucher:** Ein Verbot der Vorwegnahme der Hauptsache gilt nicht absolut. Ein eindeutig bestehender Übergabeanspruch kann durch einstweilige Verfügung durchgesetzt werden, wenn der Bauträger die Übergabe trotz ausreichenden Zahlungsangebots unberechtigt verweigert. Berechtigte Abzüge schließen dies nicht aus; erheblich überhöhte Abzüge können aber gerade die Übergabeverweigerung rechtfertigen (II.2.c). Die Korrektur des Zahlungsstands während des Verfahrens war hier entscheidend.\n\n**Einsatz im Vertrag:** Berechne den gegen Schlüssel zu leistenden Betrag einschließlich bereits geleisteter Zahlungen, abgesicherter Gegenforderungen und noch bestehender Einbehalte. Dokumentiere Übergabeangebot und Ablehnung. Ein Antrag muss alle benötigten Schlüssel und die tatsächlich verbleibende Gegenleistung vollstreckbar bezeichnen; das KG vermied die erneute Beweispflicht über längst unstreitig gezahlte Gesamtbeträge (II.2.e).\n\n**Grenzen:** Strittige, technisch aufklärungsbedürftige Mängel und ihre Kosten lassen sich nicht beliebig im Eilverfahren klären. Das KG verweigerte sowohl weitergehende Mängelabzüge als auch eine zusätzliche Sicherheit hierfür. Materiell bestehende Rechte sind damit nicht endgültig verloren. Anspruch und besondere Dringlichkeit bleiben getrennte Fragen; OLG München, 9 W 1431/25 Bau e, lässt die großzügige KG-Linie offen und verlangt konkrete eigene Nachteile. Ein Eilantrag ist daher keine risikolose Alternative zur Hauptsache."
+  },
+  {
+    "index": 4,
+    "title": "Grenzen der Dringlichkeit bei begehrter Eilübergabe",
+    "dockets": [
+      "9 W 1431/25 Bau e"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.gesetze-bayern.de/Content/Document/Y-300-Z-BECKRS-B-2025-N-39144"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.gesetze-bayern.de/Content/Document/Y-300-Z-BECKRS-B-2025-N-39144",
+        "full_read": true,
+        "scope": "Vollständiger veröffentlichter gerichtlicher HTML-Text",
+        "retrieval": "Erfolgreicher Textabruf",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn.14–19",
+      "Rn.20–28",
+      "Rn.30"
+    ],
+    "verification_status": "amtlicher Volltext verifiziert",
+    "procedural_status": "Sofortige Beschwerde gegen Ablehnung der einstweiligen Verfügung zurückgewiesen; Hauptsacheanspruch nicht entschieden; Rechtsbeschwerde kraftGesetzes unstatthaft.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"9 W 1431/25\" BGH 2026",
+        "\"21 U 79/17\" 2026 einstweilige"
+      ],
+      "result": "Keine spätere Sachentscheidung im identifizierten Eilverfahren gefunden; veröffentlichte NJW2026-Fundstelle betrifft dieselbe Entscheidung, nicht eine neue Bestätigung.",
+      "limitation": "Gezielte Aktenzeichen- und Themenrecherche; kein Nachweis vollständiger Erfassung aller unveröffentlichten oder nicht indexierten Folgeentscheidungen."
+    },
+    "corrections_required": [],
+    "expanded_markdown": "### Grenzen der Dringlichkeit bei begehrter Eilübergabe\n\n**Harte Fundstelle:** OLG München, Beschluss vom 24.11.2025 – 9 W 1431/25 Bau e, Rn. 14–30, [amtlicher Volltext](https://www.gesetze-bayern.de/Content/Document/Y-300-Z-BECKRS-B-2025-N-39144).\n\n**Fall und Entscheidung:** Die Erwerber zweier zusammengelegter Wohnungen zu rund 4,9 Mio. € wollten eine einstweilige Besitzübergabe erreichen. Sie hatten erheblich gezahlt, aber die Abnahme wegen Mängeln nicht erklärt. Nach ihrer Planung sollte die Tochter mit Lebenspartner und Kind die bisherige Mietwohnung der Eltern übernehmen. Daneben wurden laufende Mietkosten, Finanzierung, mögliche Verschlechterung der neuen Wohnung und Insolvenzrisiken angeführt. Die Beschwerde blieb mangels Verfügungsgrundes erfolglos; ob der Übergabeanspruch materiell bestand, ließ das Gericht ausdrücklich offen (Rn. 28).\n\n**Kernaussage für Verbraucher:** Eine Leistungsverfügung verlangt besondere Dringlichkeit und eine Abwägung der beiderseitigen Nachteile (Rn. 14–16). Das Gericht fordert keine zwingende Existenzbedrohung. Es reicht aber nicht, nur die verspätete Erfüllung und gewöhnliche Belastungen eines Bauträgerkonflikts zu behaupten. Die Tochter war weder Vertragspartei noch sollte sie die erworbenen Räume beziehen; ihr eigener Wohnbedarf trug daher nicht den Eilanspruch der Eltern. Zudem waren zumutbare anderweitige Wohnmöglichkeiten und die Mehrbelastung gegenüber ohnehin getragenen Unterstützungskosten nicht genügend aufgeklärt (Rn. 17–19).\n\n**Einsatz im Vertrag:** Sichere für einen möglichen Antrag konkrete eigene Wohnnachteile: gekündigte Unterkunft, feste Räumungsdaten, tatsächlich fehlende Ersatzmöglichkeiten, belegte laufende Zusatzkosten und deren Gewicht für die Erwerberin. Bei drohendem Bauschaden sind Art, Zeitpunkt und Dringlichkeit glaubhaft zu machen; abstrakte Vermutungen und Folgen, für deren Vermeidung zunächst der Bauträger sorgen kann, genügen nicht. Zahlungsbelege allein beweisen keine besondere Eilbedürftigkeit.\n\n**Grenzen und Gegenargumente:** Hohe Monatskosten können erheblich sein, müssen aber im konkreten wirtschaftlichen Zusammenhang bewertet werden. Aus dem Kaufpreis folgt weder automatisch Wohlhabenheit noch automatisch Dringlichkeit; entscheidend ist der belegte Nachteil. Ebenso wenig trägt eine allgemeine Befürchtung späterer Insolvenz ohne fallbezogene Tatsachen. Das OLG entschied nicht grundsätzlich gegen die KG-Linie und ließ auch die Bedeutung längeren Zuwartens offen (Rn. 27). Der Beschluss ist deshalb ein Beleg für genaue Glaubhaftmachung, nicht für einen generellen Ausschluss der Eilübergabe."
+  },
+  {
+    "index": 5,
+    "title": "Eigentumsumschreibung trotz berechtigten Mängeleinbehalts",
+    "dockets": [
+      "11 U 7/24"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://nrwe.justiz.nrw.de/olgs/koeln/j2025/11_U_7_24_Urteil_20251217.html"
+    ],
+    "read_scope": [
+      {
+        "url": "https://nrwe.justiz.nrw.de/olgs/koeln/j2025/11_U_7_24_Urteil_20251217.html",
+        "full_read": true,
+        "scope": "Vollständiger veröffentlichter gerichtlicher HTML-Text",
+        "retrieval": "Erfolgreicher Textabruf",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn.42–46,73",
+      "Rn.84–99",
+      "Rn.110–121"
+    ],
+    "verification_status": "amtlicher Volltext verifiziert",
+    "procedural_status": "Berufung der Bauträgerin zurückgewiesen; Zustimmung zur Eigentumsumschreibung bestätigt, Zahlungsklage derzeit unbegründet; Revision nicht zugelassen. Keine externe Rechtskraftbescheinigung/NZB-Erledigung verifiziert.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"11 U 7/24\" \"2026\"",
+        "\"11 U 7/24\" BGH Revision"
+      ],
+      "result": "Amtlicher Originaltext ausgewertet; keine zugeordnete spätere BGH-Entscheidung gefunden. Im Urteil erwähnte NZB VII ZR200/24 betrifft anderes Parallelverfahren11U67/23; dessen damaliger Stand ist kein heutiger Rechtskraftbeleg.",
+      "limitation": "Gezielte Aktenzeichen- und Themenrecherche; kein Nachweis vollständiger Erfassung aller unveröffentlichten oder nicht indexierten Folgeentscheidungen."
+    },
+    "corrections_required": [],
+    "expanded_markdown": "### Eigentumsumschreibung trotz berechtigten Mängeleinbehalts\n\n**Harte Fundstelle:** OLG Köln, Urteil vom 17.12.2025 – 11 U 7/24, insbesondere Rn. 84–99 und 110–116, [amtlicher Volltext](https://nrwe.justiz.nrw.de/olgs/koeln/j2025/11_U_7_24_Urteil_20251217.html).\n\n**Fall und Entscheidung:** Erwerber mehrerer Wohnungen hielten Schlussrate und Sicherheit wegen erheblicher Tiefgaragenmängel zurück. Die Zufahrt und die Fahrgasse waren zu schmal; die sachverständig beschriebenen Probleme ließen sich nicht auf bloße Unbequemlichkeiten reduzieren. Die Bauträgerin verlangte Restzahlung und verweigerte die für den Grundbuchvollzug erforderliche Zustimmung. Nach etwa acht Jahren ohne Beseitigung bestätigte das OLG die Umschreibung und wies die Zahlungswiderklage als derzeit unbegründet ab.\n\n**Kernaussage für Verbraucher:** Eine an vollständige Zahlung geknüpfte Umschreibung darf nicht treuwidrig dadurch verhindert werden, dass der Bauträger selbst den berechtigten Einbehalt verursacht. Das Gericht wendet den Rechtsgedanken des § 162 Abs. 1 BGB an (Rn. 86–91): Deckt das Leistungsverweigerungsrecht den Restpreis, kann der Übereignungsanspruch dennoch fällig sein. Vor Abnahme ergibt sich die Einbehaltshöhe aus § 320 BGB unter Berücksichtigung von Beseitigungskosten und angemessenem Druckzuschlag, nicht unmittelbar aus § 641 Abs. 3 BGB. Die behauptete Unmöglichkeit oder Unverhältnismäßigkeit der Sanierung war gerade nicht erwiesen.\n\n**Einsatz im Vertrag:** Trenne Kaufpreisrest, noch nicht fällige Schlussrate, fünfprozentige Sicherheit und konkreten Mängeleinbehalt. Stelle Mangelkosten und Zahlungsstand für die jeweilige Erwerberin nachvollziehbar gegenüber. Prüfe den genauen Vollzugsmechanismus: Bereits erklärte Auflassung, Eintragungsbewilligung und notarielle Vorlagesperre sind verschiedene Fragen. Ermittle außerdem persönliche Nachteile einer verzögerten Eintragung, etwa einen konkret geplanten Verkauf.\n\n**Gegenargumente und Grenzen:** Das OLG ließ die AGB-Wirksamkeit der Vorlagesperre ausdrücklich offen (Rn. 84); es bestätigte nicht die dafür gegebene Begründung des Landgerichts. Eine feste Zehn-Prozent-Grenze für geringfügige Rückstände lehnte es ab. Die zusätzliche Prüfung nach § 320 Abs. 2 BGB berücksichtigte insbesondere lange Verzögerung, hohe Vorleistung und das vom Bauträger selbst beherrschbare Hindernis. Nicht jede bestrittene Mängelbehauptung erzwingt die Umschreibung. Nichtzulassung der Revision ist zudem nicht gleichbedeutend mit nachgewiesener Rechtskraft."
+  },
+  {
+    "index": 6,
+    "title": "Abnahme Gemeinschaftseigentum durch Erwerbervertreter",
+    "dockets": [
+      "VII ZR 68/24"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor, Tatbestand und Gründen; lokal mit curl abgerufen und pdftotext gelesen",
+        "retrieval": "Webabruf teils HTTP403; direkter curl-Abruf erfolgreich.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn.27–35",
+      "Rn.37–55",
+      "Rn.57–70"
+    ],
+    "verification_status": "amtlicher Volltext verifiziert",
+    "procedural_status": "OLG Stuttgart02.04.2024 10U13/23 aufgehoben; zurückverwiesen. Der begehrte Vorschuss von292.000€ ist nicht abschließend zugesprochen.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"VII ZR 68/24\" BGH 2026 Abnahme",
+        "\"VII ZR 108/24\" BGH 2026 Abnahme"
+      ],
+      "result": "Parallelurteil VII ZR108/24 vollständig amtlich gelesen; keine spätere aufhebende/abweichende BGH-Entscheidung identifiziert. Publikationen bisOktober2026 sind Besprechungen, keine zusätzliche gerichtliche Bestätigung.",
+      "limitation": "Gezielte Aktenzeichen- und Themenrecherche; kein Nachweis vollständiger Erfassung aller unveröffentlichten oder nicht indexierten Folgeentscheidungen."
+    },
+    "corrections_required": [
+      "30-Jahres-Grenze stets auf konkreten Altrechts-Kostenvorschuss ab gescheiterter Abnahme begrenzen.",
+      "Technikmaßstab bei Nachzüglern nicht pauschal auf letzten Kaufvertrag/letzte fingierte Abnahme verschieben."
+    ],
+    "expanded_markdown": "### Abnahme Gemeinschaftseigentum durch Erwerbervertreter\n\n**Harte Fundstelle:** BGH, Urteil vom 26.03.2026 – VII ZR 68/24, insbesondere Rn. 28–55 und 60–70, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1).\n\n**Fall und Entscheidung:** Bei einem sanierten und aufgestockten Mehrfamilienhaus sollten drei gewählte Erwerbervertreter das Gemeinschaftseigentum abnehmen. Spätere Verträge erklärten es bereits für abgenommen. Die Gemeinschaft verlangte Jahre später Vorschuss wegen Dachmängeln. Das OLG hatte die Ansprüche mit einer Fünfzehn-Jahres-Grenze abgeschnitten. Der BGH hob auf und verwies zurück; der Vorschuss war damit noch nicht endgültig zugesprochen.\n\n**Kernaussage für Verbraucher:** Die formularmäßige Vertretungsklausel entzog dem Einzelnen bei kundenfeindlichster Auslegung unwiderruflich die eigene Prüfung und Abnahmeentscheidung und war nach § 9 AGBG unwirksam. Auch die Nachzüglerbindung hielt nicht. Nutzung und Zahlung ersetzten keine konkludente Abnahme, solange die Erwerber irrtümlich von wirksamer Fremdabnahme ausgingen (Rn. 37–44). Der Bauträger darf den selbst verursachten Abnahmefehler nicht gleichzeitig nutzen, um Mängelrechte mangels Abnahme abzuwehren.\n\nFür den hier nach altem Schuldrecht bestehenden Kostenvorschuss beginnt die Verjährung grundsätzlich mit wirksamer Abnahme; eine Kombination aus zehnjähriger Herstellungsverjährung und weiteren fünf Jahren trägt nicht (Rn. 28–35, 45–47). Der BGH zieht eine zeitliche Obergrenze von 30 Jahren ab fehlgeschlagener Abnahme. Frühere wirksame Abnahme und konkret begründete Verwirkung bleiben möglich; bloßer Zeitablauf genügt dafür nicht (Rn. 53–59).\n\n**Einsatz im Vertrag:** Erfasse jeden Erwerbsvertrag, jede Vertretungsvollmacht, tatsächliche Abnahmeerklärung, spätere Kenntnis und den Vergemeinschaftungsbeschluss. Eine freiwillig frei gewählte Vertrauensperson ist nicht mit erzwungener ausschließlicher Vertretung gleichzusetzen. Vor einer Fristberechnung sind Anspruchsart und Übergangsrecht festzulegen; „30 Jahre Gewährleistung“ wäre falsch.\n\n**Technischer Gegencheck:** Der Bauträger kann nach Beseitigung zurechenbarer Mängel eine wirksame Abnahme erreichen, ohne zwingend altersbedingten Gebrauch in Neuzustand zurückzuversetzen (Rn. 49–50). Für bei Vertragsschluss bereits hergestellte Teile kommt bei Nachzüglern regelmäßig der technische Regelstand der Herstellung in Betracht, nicht automatisch der spätere Vertragszeitpunkt (Rn. 60–70). Spätere Kellerverkäufe oder neue Teilaufträge erweitern den ursprünglichen Herstellungsumfang deshalb nicht ohne Vertragsbeleg."
+  },
+  {
+    "index": 7,
+    "title": "Abnahme Gemeinschaftseigentum durch Sachverständigen",
+    "dockets": [
+      "VII ZR 108/24"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor, Tatbestand und Gründen",
+        "retrieval": "Direkter curl-Abruf des amtlichen PDF erfolgreich; Webtool teilweise403.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn.24–43",
+      "Rn.45–57"
+    ],
+    "verification_status": "amtlicher Volltext verifiziert",
+    "procedural_status": "Revision der Bauträgerin zurückgewiesen; OLG-Zuspruch13.120,94€Vorschuss undGutachterkosten bleibt bestehen, keine Zurückverweisung.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"VII ZR 108/24\" BGH 2026 Abnahme",
+        "\"VII ZR 68/24\" BGH 2026 Abnahme"
+      ],
+      "result": "Parallelentscheidung VII ZR68/24 amtlich vollständig gelesen; keine spätere abweichende BGH-Entscheidung gefunden.",
+      "limitation": "Gezielte indexierte Aktenzeichen-/Themenrecherche, keine Vollständigkeits- oder allgemeine Rechtskraftbestätigung."
+    },
+    "corrections_required": [
+      "Nicht als generelles Verbot jeder Sachverständigenbevollmächtigung formulieren."
+    ],
+    "expanded_markdown": "### Abnahme Gemeinschaftseigentum durch Sachverständigen\n\n**Harte Fundstelle:** BGH, Urteil vom 26.03.2026 – VII ZR 108/24, Rn. 24–57, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1).\n\n**Fall und Entscheidung:** In Verträgen aus der Zeit vor 2002 sollte ein von der Gemeinschaft auszuwählender vereidigter Sachverständiger das Gemeinschaftseigentum für die Erwerber abnehmen. Jahre nach der vermeintlichen Abnahme traten Feuchteschäden an Dachdurchführungen auf. Die Gemeinschaft verlangte unter anderem Vorschuss zur Sanierung. Anders als in VII ZR 68/24 war der Sachverhalt entscheidungsreif: Der BGH wies die Revision der Bauträgerin gegen die Verurteilung durch das OLG Stuttgart zurück.\n\n**Kernaussage für Verbraucher:** Die Sachkunde oder Wahl des Abnehmenden durch die Gemeinschaft heilt nicht den Entzug der individuellen Entscheidung. Die Klausel verpflichtete den Erwerber zur Fremdabnahme, ohne ihm eigene Prüfung, eigene Erklärung oder eine frei gewählte Vertrauensperson zu belassen. Deshalb war sie nach § 9 AGBG unwirksam (Rn. 34–40). Eine Abnahme durch langjährige Nutzung ließ sich im damaligen Irrtum über die Vertreterbefugnis ebenfalls nicht herleiten. Der Bauträger konnte weder fünfzehnjährige Verjährung noch allein wegen langer Zeit Verwirkung entgegenhalten.\n\nFür den konkreten Kostenvorschussanspruch nach § 633 Abs. 3 BGB a. F. in Verbindung mit § 242 BGB gelten der abnahmebezogene Verjährungsbeginn und die Dreißig-Jahres-Obergrenze ab gescheiterter Abnahme (Rn. 41–51). Das ist weder eine Garantiefrist noch ein allgemeines Ergebnis für sämtliche heutigen Ansprüche.\n\n**Einsatz im Vertrag:** Prüfe nicht nur, wer den Sachverständigen bezahlt oder auswählt, sondern besonders Bindungswirkung, Widerrufsmöglichkeit und verbleibende Erwerberrechte. Ein technisch hilfreicher Sachverständigenbericht muss keine rechtsgeschäftliche Abnahme sein. Dokumentiere die tatsächlichen Erklärungen getrennt von Begehung, Mängelliste und späterem Gebrauch.\n\n**Beweis und Gegenargumente:** Für Verwirkung bedarf es zusätzlichen schutzwürdigen Vertrauens und entsprechender Einrichtung des Schuldners. Frühere Nachbesserungen und ein bereits geführter Prozess sprachen hier dagegen (Rn. 52–55). Der Unternehmer kann allerdings eine wirksame Abnahme nachholen; altersbedingter Verschleiß ist nicht notwendig ursprünglicher Baumangel. Erforderliche Privatgutachterkosten waren im Fall ersatzfähig, nicht beliebige zusätzliche Gutachten. Der Kostenvorschuss bleibt zweckgebunden und ist nicht mit einer abschließend freien Schadenssumme gleichzusetzen."
+  },
+  {
+    "index": 8,
+    "title": "Sachverständigenabnahme als OLG-Instanzanker",
+    "dockets": [
+      "13 U 419/19"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.dnoti.de/entscheidungen/details/?cHash=d66e216e8ad0dd866d0318212dbe5f6e&tx_dnotionlineplusapi_decisions%5Bnodeid%5D=acfeee3d-c05e-4eaf-8bd4-6105802c372b",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.dnoti.de/entscheidungen/details/?cHash=d66e216e8ad0dd866d0318212dbe5f6e&tx_dnotionlineplusapi_decisions%5Bnodeid%5D=acfeee3d-c05e-4eaf-8bd4-6105802c372b",
+        "full_read": false,
+        "scope": "Sämtliche von DNotI wiedergegebenen gerichtlichen Gründe I–III vollständig gelesen; Tenor in dieser Reproduktion nicht enthalten",
+        "retrieval": "DNotI-Fallback nach nicht textlesbarem amtlichem Landesportal; PDF bzw. HTML-Originalreproduktion erfolgreich gelesen",
+        "errors": [
+          "Landesrecht-BW lieferte JavaScript-Hülle; keine amtliche Volltextlektüre daraus behauptet."
+        ],
+        "published_text_read_complete": true
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor, Tatbestand und Gründen",
+        "retrieval": "Direkter curl-Abruf des amtlichen PDF erfolgreich; Webtool teilweise403.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "OLG Gründe II.1.b.bb, II.1.d–e, II.2.a und III (DNotI ohne Randnummern)",
+      "BGH VII ZR108/24 Rn.34–57"
+    ],
+    "verification_status": "gerichtliche DNotI-Gründereproduktion gelesen; Ergebnis amtlich durch BGH-Nachgang verifiziert",
+    "procedural_status": "OLG Stuttgart änderte erstinstanzliche Abweisung; Revision der Bauträgerin durch BGH26.03.2026 VII ZR108/24 zurückgewiesen.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"VII ZR 108/24\" BGH 2026 Abnahme"
+      ],
+      "result": "Unmittelbarer Revisionsnachgang VII ZR108/24 amtlich vollständig gelesen und integriert.",
+      "limitation": "Gezielte indexierte Aktenzeichen-/Themenrecherche, keine Vollständigkeits- oder allgemeine Rechtskraftbestätigung."
+    },
+    "corrections_required": [
+      "OLG nur gemeinsam mit BGH-Nachgang verwenden; Druck-/Datumsfehler der Reproduktion nicht übernehmen."
+    ],
+    "expanded_markdown": "### Sachverständigenabnahme als OLG-Instanzanker\n\n**Harte Fundstelle:** OLG Stuttgart, Urteil vom 06.06.2024 – 13 U 419/19, Gründe II und III, [gerichtliche Gründe bei DNotI](https://www.dnoti.de/entscheidungen/details/?cHash=d66e216e8ad0dd866d0318212dbe5f6e&tx_dnotionlineplusapi_decisions%5Bnodeid%5D=acfeee3d-c05e-4eaf-8bd4-6105802c372b).\n\n**Fall und Entscheidung:** Die Gemeinschaft verfolgte Mängel an der Abdichtung von Dachdurchdringungen. Bei sechs geöffneten Rohrdurchführungen zeigte sich die fehlende Verbindung zur Dampfsperre; insgesamt waren achtzehn Durchführungen zu untersuchen beziehungsweise zu sanieren. Das Landgericht hatte die lang nach vermeintlicher Sachverständigenabnahme erhobenen Ansprüche wegen Verwirkung abgewiesen. Das OLG sprach einen Vorschuss von 13.120,94 € sowie erforderliche Gutachterkosten zu. Die dagegen gerichtete Revision blieb 2026 erfolglos.\n\n**Kernaussage für Verbraucher:** Der entscheidende Fehler war nicht mangelnde Neutralität des Sachverständigen, sondern die formularmäßige Ausschaltung der eigenen Abnahmeentscheidung. Selbst eine Auswahl durch die Eigentümergemeinschaft ließ diese Befugnis des einzelnen Vertragspartners nicht wiederaufleben (II.1.b.bb). Das OLG behandelte die für den Bauträger günstige Frage seiner Kostenübernahme deshalb nicht als ausschlaggebend. Eine angenommene Abnahme und der Beginn der Mängelverjährung lassen sich zudem nicht schon aus Zahlung oder jahrelanger Nutzung ableiten, wenn der Erwerber die Fremdabnahme für wirksam hielt.\n\n**Einsatz im Vertrag:** Der Fall zeigt, wie die abstrakte Klauselkontrolle mit konkretem Mängelnachweis zusammengehört. Sichere Öffnungsprotokolle, Fotos, Zuordnung der betroffenen Bauteile, Sachverständigenkosten und Beschlüsse der Gemeinschaft. Die Zahl der nachgewiesenen Fehlstellen und ihre Übertragbarkeit auf weitere Durchführungen bedürfen fachlicher Begründung. Nicht jede alte Rechnung belegt heutige Kosten; hier hielt das Gericht den älteren Ansatz jedenfalls für eine Untergrenze. Eine Sanierung ohne verlängerte Gesamtlebensdauer rechtfertigte keinen pauschalen Vorteilsausgleich.\n\n**Grenzen und Nachgang:** Aufbewahrungsverluste nach langer Zeit begründen nicht schon Verwirkung; konkrete vertrauensbedingte Nachteile müssen feststehen. Ein weiteres Privatgutachten wurde nicht automatisch erstattet, weil seine Notwendigkeit nicht ausreichend dargelegt war. Für Verjährung und äußere Haftungsgrenze ist heute der BGH-Nachgang maßgeblich. Die OLG-Gründe sind ein ergänzender Beweis- und Subsumtionsanker, kein Anlass, die Dreißig-Jahres-Grenze oder technische Standards undifferenziert auf Neubauverträge zu übertragen."
+  },
+  {
+    "index": 9,
+    "title": "Frühere 15-Jahres-Instanzlinie (dort nicht tragend)",
+    "dockets": [
+      "10 U 4/25"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.dnoti.de/download/?cHash=b6dde7c366165e3d5f93f5e04cac6c2a&tx_dnotionlineplusapi_download%5Bnodeid%5D=5656a22a-2e68-4ae3-bf62-32048b8946e3",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.dnoti.de/download/?cHash=b6dde7c366165e3d5f93f5e04cac6c2a&tx_dnotionlineplusapi_download%5Bnodeid%5D=5656a22a-2e68-4ae3-bf62-32048b8946e3",
+        "full_read": true,
+        "scope": "Vollständige DNotI-PDF-Reproduktion des gerichtlichen Entscheidungstexts; kein amtlicher Portalabruf",
+        "retrieval": "DNotI-Fallback nach nicht textlesbarem amtlichem Landesportal; PDF bzw. HTML-Originalreproduktion erfolgreich gelesen",
+        "errors": [
+          "Landesrecht-BW lieferte JavaScript-Hülle; keine amtliche Volltextlektüre daraus behauptet."
+        ]
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor, Tatbestand und Gründen",
+        "retrieval": "Direkter curl-Abruf des amtlichen PDF erfolgreich; Webtool teilweise403.",
+        "errors": []
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR_108-24.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor, Tatbestand und Gründen",
+        "retrieval": "Direkter curl-Abruf des amtlichen PDF erfolgreich; Webtool teilweise403.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "OLG B.III.1–3, besonders B.III.2.b, B.III.3.b–f; B.III.4; B.IV",
+      "BGH VII ZR68/24 Rn.45–55"
+    ],
+    "verification_status": "gerichtliche DNotI-Originalreproduktion vollständig gelesen; amtliche BGH-Korrektur des Rechtskonzepts berücksichtigt",
+    "procedural_status": "Mängelbeseitigungsbegehren an LG zurückverwiesen; Berufung hinsichtlich gesonderten1.013,11€unzulässig; Revision nicht zugelassen. Keine Rechtskraft/NZB-Folge eigenständig verifiziert.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"10 U 4/25\" Revision BGH",
+        "\"VII ZR 68/24\" BGH 2026 Abnahme"
+      ],
+      "result": "Keine unmittelbare BGH-Folge zu10U4/25 gefunden. BGH68/24 hebt andere Vorentscheidung10U13/23 auf; BGH108/24 bestätigt Gegenlinie.15-Jahres-Grenze war schon in10U4/25 wegen Zeitablaufs nicht tragend.",
+      "limitation": "Gezielte indexierte Aktenzeichen-/Themenrecherche, keine Vollständigkeits- oder allgemeine Rechtskraftbestätigung."
+    },
+    "corrections_required": [
+      "Titelhistorie beibehalten, aber tragende eigenständige Aussagen zur Abnahmeklausel und Prozessführungsbefugnis ergänzen.",
+      "10U4/25 nicht als durch68/24 selbst aufgehobenes Urteil bezeichnen; aufgehoben wurde10U13/23."
+    ],
+    "expanded_markdown": "### Frühere 15-Jahres-Instanzlinie (dort nicht tragend)\n\n**Harte Fundstelle:** OLG Stuttgart, Urteil vom 13.05.2025 – 10 U 4/25, Gründe B.III.1–4, [gerichtlicher Volltext bei DNotI](https://www.dnoti.de/download/?cHash=b6dde7c366165e3d5f93f5e04cac6c2a&tx_dnotionlineplusapi_download%5Bnodeid%5D=5656a22a-2e68-4ae3-bf62-32048b8946e3).\n\n**Fall und Entscheidung:** Die Gemeinschaft verlangte Beseitigung später entdeckter Mängel. Ein früherer Vergemeinschaftungsbeschluss erfasste diese nicht; erst ein Beschluss während des Prozesses bezog sie ein. Die Abnahmeregelung sah einen Widerspruch binnen zwei Wochen vor, berechnete diese Frist aber bereits ab Absendung der Mitteilung. Das Landgericht prüfte nur den Herstellungsanspruch und nahm Verjährung an. Das OLG verwies den Mängelbeseitigungsteil zurück, weil auch die aus demselben Sachverhalt folgenden Mängelrechte zu prüfen und erhebliche Beweise zu erheben waren.\n\n**Kernaussage für Verbraucher:** Eine Absendeanknüpfung verlagert das Zugangsrisiko auf die Erwerberin und kann ihr eine reale Widerspruchsmöglichkeit nehmen. Die Klausel hielt deshalb der Inhaltskontrolle nicht stand. Bloße Möglichkeit zum Widerspruch war auch keine ordnungsgemäße Aufforderung zur Abnahme nach dem damals geltenden § 640 BGB. Die verwenderseitig verursachte Unwirksamkeit durfte der Bauträger nicht zum Ausschluss der Mängelrechte verwenden (B.III.2–3).\n\n**Einsatz im Vertrag:** Prüfe Zugang, Belehrung, Fristbeginn, Reichweite des Vertretungsmodells und tatsächliche spätere Abnahme. Bei Gemeinschaftsklagen sind Anspruch, Mangelkatalog und Beschlussdatum exakt zuzuordnen: Ein späterer Beschluss kann die Prozessführung ermöglichen, heilt aber eine zuvor fehlende verjährungshemmende Berechtigung nicht rückwirkend. Ein sofortiges Zurückweisen der Forderung ist auch nicht ohne Weiteres eine Verhandlung nach § 203 BGB. Das Gericht ist an einen vorgetragenen Sachverhalt, nicht an eine unzutreffend gewählte Anspruchsbezeichnung gebunden.\n\n**Historische Grenze:** Das OLG erwähnte seine frühere Fünfzehn-Jahres-Linie, musste sie aber nicht anwenden, weil dieser Zeitraum nicht erreicht war. Der BGH verwarf 2026 im anderen Verfahren VII ZR 68/24 die entsprechende Abschneidung und bestimmte für die dortigen Altrechts-Kostenvorschussfälle die eng begrenzte Dreißig-Jahres-Obergrenze. Daraus folgt weder, dass 10 U 4/25 insgesamt aufgehoben wurde, noch dass alle dort behandelten heutigen Nacherfüllungsansprüche ohne weitere Prüfung dreißig Jahre bestehen."
+  },
+  {
+    "index": 10,
+    "title": "MaBV-widriger Zahlungsplan und Bereicherungsausgleich",
+    "dockets": [
+      "VII ZR 310/99",
+      "VII ZR 167/11"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/1999/VII_ZR_310-99.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2011/VII_ZR_167-11.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/1999/VII_ZR_310-99.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor, Tatbestand und Gründen",
+        "retrieval": "Direkter curl-Abruf des amtlichen PDF erfolgreich; Webtool teilweise403.",
+        "errors": []
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2011/VII_ZR_167-11.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor, Tatbestand und Gründen",
+        "retrieval": "Direkter curl-Abruf des amtlichen PDF erfolgreich; Webtool teilweise403.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "VII ZR310/99 Gründe III.2.a–d (amtliches PDF S.11–18)",
+      "VII ZR167/11 Rn.14–38"
+    ],
+    "verification_status": "amtlicher Volltext verifiziert",
+    "procedural_status": "310/99: aufgehoben/zurückverwiesen;167/11: Berufungsurteil überwiegend zugunsten Bauträger aufgehoben, nur unangegriffener geringer Teil blieb. Keine pauschale Erwerber-Rückzahlungsverurteilung.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"VII ZR 310/99\" \"2026\" BGH",
+        "\"VII ZR 167/11\" \"2025\" \"2026\"",
+        "\"21 U 73/24\" BGH Revision 2026"
+      ],
+      "result": "KG21U73/24 Originalgründe bestätigen Systematik auch für nach2017geschlosseneVerträge; VII ZR169/25 ist nur Zulassungsbeschluss. Weitere Treffer19U128/24 betreffen Sicherheit und werden nicht ohne eigene Volltextprüfung als weiterer Beleg eingesetzt.",
+      "limitation": "Gezielte indexierte Aktenzeichen-/Themenrecherche, keine Vollständigkeits- oder allgemeine Rechtskraftbestätigung."
+    },
+    "corrections_required": [
+      "167/11 enthält entscheidendes Gegenbeispiel: fehlerhafte Freistellungsklausel≠automatisch gesamte Sicherheit unwirksam. Bestehender Kurztext ist insofern unvollständig."
+    ],
+    "expanded_markdown": "### MaBV-widriger Zahlungsplan und Bereicherungsausgleich\n\n**Harte Fundstelle:** BGH, Urteil vom 22.12.2000 – VII ZR 310/99, Gründe III.2.a–d, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/1999/VII_ZR_310-99.pdf?__blob=publicationFile&v=1); BGH, Urteil vom 07.11.2013 – VII ZR 167/11, Rn. 14–38, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2011/VII_ZR_167-11.pdf?__blob=publicationFile&v=1).\n\n**Fall und tragende Unterscheidung:** VII ZR 310/99 betraf einen Zahlungsplan, der Gelder schon bei Vertragsschluss statt erst beim vorgesehenen Baufortschritt erlaubte. Die Abschlagsvereinbarung war insgesamt nichtig; die Schutzrichtung der MaBV verlangte gerade nicht die Unwirksamkeit des ganzen Erwerbsvertrags. An die Stelle der Rate trat die gesetzliche Fälligkeit nach § 641 Abs. 1 BGB. Die öffentlich-rechtliche MaBV enthält keinen automatisch einzusetzenden zivilrechtlichen Ersatzratenplan. Eine ergänzende Vertragsauslegung zugunsten vorzeitiger Abschläge schied aus.\n\n**Kernaussage für Verbraucher:** Die Unwirksamkeit kann die Fälligkeit wesentlich verändern; tatsächlich vorzeitig vereinnahmtes Geld und daraus gezogene Nutzungen sind gesondert zu prüfen. VII ZR 167/11 bestätigt den rechtlichen Ausgangspunkt für § 817 Satz 1 sowie § 818 Abs. 1, § 100 BGB. Ersparte Kreditzinsen sind mögliche Nutzungen, aber kein pauschaler gesetzlicher Zinssatz. Voraussetzungen und Höhe müssen belegt werden.\n\n**Wichtiges Gegenbeispiel:** In VII ZR 167/11 gewann überwiegend die Bauträgerin. Eine unzulässige Einschränkung der Freistellungsverpflichtung der Bank führte nicht zur Unwirksamkeit des gesamten Freistellungsversprechens. Der Schutz des Erwerbers konnte durch Wegfall der belastenden Bedingung erhalten bleiben (Rn. 15–27). Deshalb entstand nicht schon wegen dieses Fehlers ein Anspruch auf Rückabwicklung sämtlicher Raten und behauptete Zinsnutzungen. Auch fehlende Verweisung auf eine bereits bekannte Freistellungserklärung wurde nicht automatisch zum Gesamtausfall; bei gesondert bepreistem Stellplatz war die betroffene Reichweite zu unterscheiden.\n\n**Einsatz im Vertrag:** Benenne zuerst den konkreten MaBV-Verstoß: vorgezogener Baufortschritt, unzulässige Rate, ungesicherte Freistellung oder bloßer Informationsmangel. Untersuche dann Teilbarkeit, Fortbestand der Sicherheit, Abnahme, jeweilige Zahlung und Empfängerkenntnis. Eine gesamte Rückforderung darf nicht aus dem Etikett „MaBV-widrig“ abgeleitet werden. Bestehende Mängel sind außerdem nicht ohne Weiteres fehlender Baugenehmigung gleichzusetzen. Bei heutigen Verträgen sind § 650u, § 650v BGB und das jeweils maßgebliche Übergangsrecht zusätzlich einzuordnen."
+  },
+  {
+    "index": 11,
+    "title": "Vollstreckungsunterwerfung mit Fälligkeitsnachweisverzicht",
+    "dockets": [
+      "VII ZR 388/00"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2000/VII_ZR_388-00.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2000/VII_ZR_388-00.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor, Tatbestand und Gründen",
+        "retrieval": "Direkter curl-Abruf des amtlichen PDF erfolgreich; Webtool teilweise403.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Gründe I.2.a; II.2.a(1)–(2), II.2.b(1)–(3)"
+    ],
+    "verification_status": "amtlicher Volltext verifiziert",
+    "procedural_status": "Revision des Unternehmers zurückgewiesen; Vollstreckung aus formularmäßigem Titel ohneFälligkeitsnachweis nicht tragfähig.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"VII ZR 388/00\" \"2025\" \"2026\""
+      ],
+      "result": "Neuere Suchtreffer zitieren die allgemeine AGB-Mehrfachverwendungsfrage in Bankfällen; keine fallgleiche neue BGH-Korrektur der Bauträger-Unterwerfung identifiziert. Bankentscheidungen nicht als Bauträger-Fälligkeitsfreigabe übernommen.",
+      "limitation": "Gezielte indexierte Aktenzeichen-/Themenrecherche, keine Vollständigkeits- oder allgemeine Rechtskraftbestätigung."
+    },
+    "corrections_required": [],
+    "expanded_markdown": "### Vollstreckungsunterwerfung mit Fälligkeitsnachweisverzicht\n\n**Harte Fundstelle:** BGH, Urteil vom 27.09.2001 – VII ZR 388/00, Gründe I.2.a und II.2, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2000/VII_ZR_388-00.pdf?__blob=publicationFile&v=1). Die amtliche Fassung hat keine durchgehend verwendeten Randnummern; verwende die Entscheidungsabschnitte.\n\n**Fall und Entscheidung:** Erwerber eines zu errichtenden Reihenhauses hatten sich in der notariellen Urkunde wegen der Vergütung der sofortigen Vollstreckung in ihr gesamtes Vermögen unterworfen. Der Unternehmer konnte ohne weiteren Nachweis eine vollstreckbare Ausfertigung erhalten. Er betrieb wegen der fünften und sechsten Rate tatsächlich Vollstreckungsmaßnahmen, obwohl über Fälligkeit und Mängel gestritten wurde. Der BGH bestätigte die gegen den Titel gerichtete Abwehr.\n\n**Kernaussage für Verbraucher:** Die vorformulierte Kombination von umfassender Unterwerfung und Nachweisverzicht benachteiligt den Erwerber unangemessen. Der Unternehmer kann damit ohne Nachweis seines Leistungsstands auf das Vermögen zugreifen; der Erwerber muss sich aktiv wehren und trägt zusätzliche Rückabwicklungs- und Insolvenzrisiken. Eine zweiwöchige Wartefrist für die Vollstreckung beseitigte dieses strukturelle Risiko nicht. Die Begründung ist nicht schlicht eine unzulässige Beweislastumkehr, sondern die materielle Entwertung des Schutzes vor vorzeitiger Zahlung.\n\n**Einsatz im Vertrag:** Lies Unterwerfung, Erteilungsvoraussetzungen, Notaranweisung und Fälligkeitsnachweis gemeinsam. Benenne, welche Tatsachen der Unternehmer vor Titelerteilung belegen muss, wer den Beleg kontrolliert und ob Einwendungen offenbleiben. Auch eine vom Notar formulierte Klausel kann dem Unternehmer als AGB zuzurechnen sein. Das Urteil wertete die damals festgestellte Verwendung für drei gleichartige Verträge als ausreichend; daraus folgt für heutige Verbraucherverträge keine allgemeine Mindestzahl, unterhalb derer Inhaltskontrolle ausgeschlossen wäre.\n\n**Grenzen und Abwehr:** Nicht jede notarielle Vollstreckungsunterwerfung ist unwirksam. Maßgeblich ist die konkrete Gefahr, vor Erfüllung des geschützten Gegenleistungsstands zu vollstrecken. Der BGH musste die streitige unmittelbare Anwendbarkeit der MaBV nicht abschließend klären, weil die AGB-Kontrolle trug. Bei laufender Vollstreckung sind Angriffe gegen den Titel selbst, die Klausel und den materiellen Zahlungsanspruch auseinanderzuhalten. Ein außergerichtlicher Widerspruch stoppt den Zugriff nicht automatisch; Eilrechtsschutz und zuständiger Rechtsbehelf sind anhand des tatsächlich vorliegenden Titels zu prüfen."
+  },
+  {
+    "index": 12,
+    "title": "Leistungsverweigerung bei Mängeln während des Ratenlaufs",
+    "dockets": [
+      "VII ZR 84/09"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2009/VII_ZR__84-09.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__88-25.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2009/VII_ZR__84-09.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor, Tatbestand und Gründen",
+        "retrieval": "Direkter curl-Abruf des amtlichen PDF erfolgreich; Webtool teilweise403.",
+        "errors": []
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__88-25.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor, Tatbestand und Gründen",
+        "retrieval": "Direkter curl-Abruf des amtlichen PDF erfolgreich; Webtool teilweise403.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "VII ZR84/09 Rn.10–17,21–23",
+      "VII ZR88/25 Rn.23–30"
+    ],
+    "verification_status": "amtlicher Volltext verifiziert",
+    "procedural_status": "Bezugsfertigkeitsrate: aufgehoben/zurückverwiesen an anderen Berufungssenat; Schlussrate blieb im damaligenVerfahren nicht fällig.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"VII ZR 84/09\" \"2026\"",
+        "\"VII ZR 88/25\" \"Oktober\" \"2026\""
+      ],
+      "result": "BGH22.04.2026 VII ZR88/25 amtlich vollständig geprüft; bestätigt Bedeutung gesonderter Vertragsschlussraten-Auslegung. OLG Köln11U7/24 amtlich gelesen und wendet Vorabnahme-§320 an.",
+      "limitation": "Gezielte indexierte Aktenzeichen-/Themenrecherche, keine Vollständigkeits- oder allgemeine Rechtskraftbestätigung."
+    },
+    "corrections_required": [
+      "Vor Abnahme nicht mechanisch §641Abs.3 oder historischenDreifachzuschlag als aktuelle feste Formel verwenden."
+    ],
+    "expanded_markdown": "### Leistungsverweigerung bei Mängeln während des Ratenlaufs\n\n**Harte Fundstelle:** BGH, Urteil vom 27.10.2011 – VII ZR 84/09, Rn. 10–17 und 21–23, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2009/VII_ZR__84-09.pdf?__blob=publicationFile&v=1).\n\n**Fall und Entscheidung:** Der Bauträger verlangte die Bezugsfertigkeitsrate von 68.495 € und die Fertigstellungsrate von 18.025 €. Das Berufungsgericht hielt die Schlussrate wegen vorhandener Restmängel noch nicht für fällig, verurteilte den Erwerber aber zur übrigen Zahlung: Sein Mängeleinbehalt sollte auf die letzte Rate beschränkt bleiben. Diese Begrenzung verwarf der BGH und verwies zur weiteren Prüfung zurück. Der Baufortschrittszahlungsplan ist keine Verpflichtung, mangelhafte Leistung ohne Gegenrechte vorzufinanzieren.\n\n**Kernaussage für Verbraucher:** Ein erreichter Bautenstand und die grundsätzliche Fälligkeit einer Rate beantworten nicht, welcher Betrag tatsächlich durchsetzbar ist. Bereits aufgetretene Mängel können ein Leistungsverweigerungsrecht begründen. Dieses ist nicht generell durch die Höhe der noch ausstehenden Schlussrate begrenzt (Rn. 10–17). Vor Abnahme richtet sich die Begrenzung nach § 320 BGB und Treu und Glauben; § 641 Abs. 3 BGB ist nicht unmittelbar die Anspruchsgrundlage für eine starre Vorabnahmeformel.\n\n**Einsatz im Vertrag:** Berechne zunächst die wirksam vereinbarte und nachgewiesene Rate, danach den wegen konkret bezeichneter Mängel gerechtfertigten Einbehalt. Halte Mangelerscheinung, örtliche Zuordnung, Nachbesserungsverlangen und voraussichtlichen Beseitigungsaufwand fest. Einbehalt, fünfprozentige Fertigstellungssicherheit und aufgerechneter Schaden erfüllen unterschiedliche Funktionen; dieselbe Position darf nicht mehrfach abgezogen werden. Umgekehrt ist die Verweisung „dafür reicht die Schlussrate“ kein gesetzlicher Ausschluss weitergehender Rechte.\n\n**Gegenargumente und Grenzen:** Nicht jeder Mangel verhindert schon den jeweiligen Baufortschritt. Das Gegenrecht muss dem Durchsetzungsinteresse angemessen bleiben. Der BGH ließ besondere Begrenzungen bei vollständig abrechenbarer Leistung und nur geringfügigen Restmängeln offen; er schuf keinen stets unbegrenzten Gesamteinbehalt. Jahrelanger Streit macht eine vertraglich noch nicht verdiente Fertigstellungsrate nicht automatisch fällig, insbesondere wenn der Unternehmer die Beseitigung hartnäckig verweigert (Rn. 21–23). Die Vertragsauslegung aus VII ZR 88/25 ist zusätzlich zu berücksichtigen, bevor nur ein betragsmäßiger Mängeleinbehalt berechnet wird."
+  },
+  {
+    "index": 13,
+    "title": "Schlussrate und vollständige Fertigstellung",
+    "dockets": [
+      "VII ZR 88/25"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__88-25.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__88-25.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor und sämtlicher Gründe",
+        "retrieval": "Direkter curl-Abruf des amtlichen PDF erfolgreich.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn.19–30",
+      "Rn.32–33"
+    ],
+    "verification_status": "amtlicher Volltext verifiziert",
+    "procedural_status": "KG27.05.2025 21U44/22 aufgehoben; Berufung Bauträgerin zurückgewiesen; landgerichtliche Abweisung der Zahlungsklage als derzeit unbegründet wiederhergestellt, nicht Forderung endgültig vernichtet.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"VII ZR 88/25\" \"Oktober\" \"2026\"",
+        "\"VII ZR 84/09\" \"2026\""
+      ],
+      "result": "Keine weitere abändernde BGH-Entscheidung identifiziert. Direktes Revisionsverhältnis zur alten KG-Linie amtlich belegt.",
+      "limitation": "Gezielte öffentlich indexierte Aktenzeichen-/Themenrecherche; fehlender Treffer beweist weder Rechtskraft noch Fehlen unveröffentlichter Folgeverfahren."
+    },
+    "corrections_required": [
+      "KG21U44/22 als aufgehobene Vorinstanz kennzeichnen, nicht nur 'Relativierung'.",
+      "Korrektivabsatz außerhalb Einzelrecord: Eine Gegenposition aus aufgehobenem KG21U44/22 darf nicht gleichrangig als fortgeltende Instanzlösung für andere Verträge freigegeben werden; tragend zunächst konkrete BGH-Vertragsauslegung."
+    ],
+    "expanded_markdown": "### Schlussrate und vollständige Fertigstellung\n\n**Harte Fundstelle:** BGH, Urteil vom 22.04.2026 – VII ZR 88/25, Rn. 19–33, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__88-25.pdf?__blob=publicationFile&v=1).\n\n**Fall und Entscheidung:** Nach Abnahme einer Wohnung mit vorbehaltenen Mängeln verlangte die Bauträgerin 12.800 € aus der letzten Rate. Das KG hatte vollständige Fertigstellung mit Abnahmereife gleichgesetzt und teilweise zur Zahlung, teilweise Zug um Zug gegen Mängelbeseitigung verurteilt. Der BGH hob gerade dieses Urteil – KG 21 U 44/22 – auf. Die Zahlungsklage blieb derzeit unbegründet. Die Restforderung erlosch nicht, war aber noch nicht fällig.\n\n**Kernaussage für Verbraucher:** Maßgeblich ist zunächst die objektive Auslegung des konkreten Vertrags, nicht eine abstrakte Formel zur MaBV. Die sprachliche Übereinstimmung der Klausel mit § 3 Abs. 2 MaBV rechtfertigte hier keinen automatischen Gleichlauf, zumal die Verordnung im Vertrag nicht erwähnt war (Rn. 23–26). Für die vorletzte Rate genügte schon die besonders definierte Bezugsfertigkeit; die letzte Rate musste deshalb ein weitergehendes Leistungsstadium voraussetzen. Hinzu kam die ausdrückliche Verpflichtung, die im Abnahmeprotokoll festgehaltenen Mängel und Restarbeiten zu erledigen. Bestehende festgestellte Protokollmängel verhinderten dieses Stadium.\n\n**Einsatz im Vertrag:** Lege Zahlungsplan, Bezugsfertigkeitsdefinition, Abnahmeregelung und Protokoll nebeneinander. Benenne den konkreten unerledigten Mangel und die entsprechende Vertragspflicht. Prüfe erst die Fälligkeit der ganzen Rate und erst danach hilfsweise ein betragsmäßiges Leistungsverweigerungsrecht; diese Ebenen dürfen nicht vertauscht werden. Eine zusätzlich vorhandene Fünf-Prozent-Sicherheit macht die vertragliche Fertigstellungsbedingung nicht bedeutungslos (Rn. 29).\n\n**Grenzen und Gegenargumente:** Der BGH ließ ausdrücklich offen, wie vollständige Fertigstellung in der MaBV abstrakt zu verstehen ist. Ebenso musste er nicht entscheiden, welche später neu gerügten Mängel die Rate hindern, weil die festgestellten Protokollmängel bereits genügten. Das Urteil erlaubt deshalb weder „jede Bagatelle sperrt immer“ noch „Abnahme macht immer alles fällig“. Die vom KG behandelte Hilfsaufrechnung wegen Wohnflächenabweichung wurde prozessual gegenstandslos (Rn. 33). Eine höchstrichterliche Billigung der dortigen Wohnflächenklausel lässt sich aus diesem Verfahren gerade nicht ableiten."
+  },
+  {
+    "index": 14,
+    "title": "Verjährung des einheitlichen Bauträgervergütungsanspruchs",
+    "dockets": [
+      "VII ZR 231/22"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2022/VII_ZR_231-22.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2022/VII_ZR_231-22.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor und sämtlicher Gründe",
+        "retrieval": "Direkter curl-Abruf des amtlichen PDF erfolgreich.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Rn.19–22",
+      "Rn.27–38"
+    ],
+    "verification_status": "amtlicher Volltext verifiziert",
+    "procedural_status": "OLG-Klageabweisung wegen dreijähriger Verjährung aufgehoben, Sache zurückverwiesen; Gegenrechte/Einreden noch zu prüfen.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"VII ZR 231/22\" BGH 2025 2026 Verjährung"
+      ],
+      "result": "Keine spätere aufhebende BGH-Entscheidung in gezielter Suche identifiziert. Unzutreffende Datumsangabe06.12.2023bei privatem Treffer nicht übernommen; Originaldatum07.12.2023.",
+      "limitation": "Gezielte öffentlich indexierte Aktenzeichen-/Themenrecherche; fehlender Treffer beweist weder Rechtskraft noch Fehlen unveröffentlichter Folgeverfahren."
+    },
+    "corrections_required": [],
+    "expanded_markdown": "### Verjährung des einheitlichen Bauträgervergütungsanspruchs\n\n**Harte Fundstelle:** BGH, Urteil vom 07.12.2023 – VII ZR 231/22, Rn. 19–38, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2022/VII_ZR_231-22.pdf?__blob=publicationFile&v=1).\n\n**Fall und Entscheidung:** Eine Bauträgerin verlangte die im Wesentlichen noch offene Schlussrate für eine 2013 verkaufte Eigentumswohnung. Nach Abnahme mit Mängelprotokoll und Zahlungsanforderung 2014 folgten Mahnverfahren und späterer Prozess. Die Vorinstanzen nahmen dreijährige Regelverjährung an. Der BGH hob auf: Bei einheitlich vereinbarter Vergütung für Grundstücksanteil und Herstellung gilt § 196 BGB mit zehnjähriger Frist. Ob die Erwerber aus anderen Gründen nicht zahlen mussten, war noch zu klären.\n\n**Kernaussage für Verbraucher:** Der Bauträgervergütungsanspruch wird nicht allein deshalb in unterschiedlich verjährende Teile zerlegt, weil der Vertrag Grundstücksübertragung und Bauleistung verbindet. § 196 BGB erfasst die Gegenleistung für die Grundstücksübertragung; bei einheitlicher Preisabrede prägt deren Bedeutung den gesamten Anspruch (Rn. 27–34). Der wirtschaftliche Schwerpunkt der Bauarbeiten führt deshalb nicht zur dreijährigen Frist. Eine ältere abweichende Betrachtung hielt der Senat insoweit nicht aufrecht.\n\n**Einsatz im Vertrag:** Bei alten Restforderungen beginne nicht mit „mehr als drei Jahre her“. Ermittle einheitliche oder tatsächlich gesonderte Vergütungsabrede, Zeitpunkt der Anspruchsentstehung, Fälligkeit der konkreten Rate sowie Mahn-, Klage-, Verhandlungs- und Hemmungsdaten. Nach § 200 Satz 1 BGB ist nicht pauschal das Jahresende maßgeblich. Ein Anspruch entsteht für diesen Zweck, wenn er geltend gemacht werden kann; das setzt regelmäßig Fälligkeit voraus (Rn. 36–37). Eine Schlussrate, deren vertragliche Voraussetzungen noch fehlen, kann daher nicht einfach ab Abnahme datiert werden.\n\n**Gegenargumente und Grenzen:** Der BGH ließ ausdrücklich offen, wie tatsächlich getrennt vereinbarte Teilvergütungen zu behandeln wären (Rn. 21). Eine im Ratenplan rechnerisch bezeichnete Grundstückskomponente ist nicht ohne Weiteres eine solche rechtlich selbständige Vergütungsabrede. Die Zehn-Jahres-Frist betrifft außerdem den Zahlungsanspruch des Bauträgers, nicht die Mängelrechte der Erwerberin. Lange Durchsetzbarkeit bedeutet weder nachgewiesene Fälligkeit noch Wegfall eines Einbehalts, einer Aufrechnung oder sonstiger Gegenrechte. Der Revisionssieg der Bauträgerin war deshalb noch kein endgültiger Zahlungstitel."
+  },
+  {
+    "index": 15,
+    "title": "Aufgehobene KG-Entscheidung zur Schlussrate",
+    "dockets": [
+      "21 U 44/22"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.dnoti.de/download/?cHash=c1231dffa87d1f398acf0fde3eed062b&tx_dnotionlineplusapi_download%5Bnodeid%5D=fe912c47-65a4-4f0a-bba9-bed057b33660&tx_dnotionlineplusapi_download%5Bpreview%5D=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__88-25.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.dnoti.de/download/?cHash=c1231dffa87d1f398acf0fde3eed062b&tx_dnotionlineplusapi_download%5Bnodeid%5D=fe912c47-65a4-4f0a-bba9-bed057b33660&tx_dnotionlineplusapi_download%5Bpreview%5D=1",
+        "full_read": false,
+        "scope": "Vollständige DNotI-PDF-Reproduktion der veröffentlichten gerichtlichen Gründe I–IV samt Sachverhalt; kein separat wiedergegebener Tenor",
+        "retrieval": "DNotI-Originalreproduktion erfolgreich; amtliches Berlin-Portal im verfügbaren Zugriff nicht textlesbar",
+        "errors": [
+          "Amtlicher Berlin-Volltextzugriff nicht erfolgreich."
+        ],
+        "published_text_read_complete": true
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__88-25.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor und sämtlicher Gründe",
+        "retrieval": "Direkter curl-Abruf des amtlichen PDF erfolgreich.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "KG Gründe II.1.a–e, II.2, II.4, IV",
+      "BGH VII ZR88/25 Rn.19–33"
+    ],
+    "verification_status": "DNotI-Gründereproduktion vollständig gelesen; Aufhebung amtlich verifiziert",
+    "procedural_status": "Unmittelbar aufgehoben durch BGH22.04.2026 VII ZR88/25; Berufung Bauträgerin endgültig erfolglos bezüglich damals geltend gemachter Schlussrate.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"VII ZR 88/25\" \"Oktober\" \"2026\""
+      ],
+      "result": "Aufhebung nicht bloß ähnliche spätere Rechtsprechung: identischer Verfahrensgang im amtlichen BGH-Tenor undVorinstanzenangaben.",
+      "limitation": "Gezielte öffentlich indexierte Aktenzeichen-/Themenrecherche; fehlender Treffer beweist weder Rechtskraft noch Fehlen unveröffentlichter Folgeverfahren."
+    },
+    "corrections_required": [
+      "Alten Satz 'nur ein Instanzargument für Verträge ohne besondere Protokoll-/Restarbeitsbindung' entfernen; Urteil aufgehoben.",
+      "Wohnflächen- und Bauabschnittsausführungen nicht als BGH-bestätigt behandeln.",
+      "Auch fachlicher Querschnitt/KG-/OLG-Korrektivabsatz muss die konkrete Aufhebung nennen."
+    ],
+    "expanded_markdown": "### Aufgehobene KG-Entscheidung zur Schlussrate\n\n**Harte Fundstelle:** KG, Urteil vom 27.05.2025 – 21 U 44/22, Gründe II.1–4 und IV, [gerichtliche Gründe bei DNotI](https://www.dnoti.de/download/?cHash=c1231dffa87d1f398acf0fde3eed062b&tx_dnotionlineplusapi_download%5Bnodeid%5D=fe912c47-65a4-4f0a-bba9-bed057b33660&tx_dnotionlineplusapi_download%5Bpreview%5D=1). Die Aufhebung ist im nachstehend erläuterten Revisionsnachgang zu beachten.\n\n**Fall und damalige Begründung:** Die Erwerberin hatte Sonder- und Gemeinschaftseigentum unter Mängelvorbehalt abgenommen. Von der letzten Rate waren 12.800 € offen. Das KG hielt diese insgesamt für fällig und billigte für sechs festgestellte Mängel lediglich 5.831 € Leistungsverweigerung zu. Es wollte vollständige Fertigstellung mit Abnahme beziehungsweise Abnahmereife gleichsetzen: Eine solche Lösung ermögliche die gemeinsame Klärung aller Mängel in einem Zahlungsprozess statt wiederholter Klagen wegen jeweils noch fehlender Fälligkeit. Den Erwerberschutz sah es durch § 641 Abs. 3 BGB gewahrt.\n\n**Kernaussage für Verbraucher:** Diese Begründung ist heute als Verfahrenshistorie zu behandeln, nicht als daneben unverändert fortgeltender Rechtssatz. Der BGH hob genau dieses Urteil durch [VII ZR 88/25 vom 22.04.2026](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__88-25.pdf?__blob=publicationFile&v=1) auf, weil das KG den Gesamtzusammenhang des konkreten Vertrags vernachlässigt hatte. Vorletzte Bezugsfertigkeitsrate, weitergehende Schlussrate und Verpflichtung zur Erledigung der Protokollmängel durften nicht gleichgesetzt werden. Die abstrakte MaBV-Auslegung ließ der BGH offen.\n\n**Einsatz im Vertrag:** Wird der Erwerberin dieser KG-Fall als Zahlungsargument vorgelegt, benenne Aktenzeichen und Datum der unmittelbaren Aufhebung. Erläutere anschließend die Parallelen oder Unterschiede des eigenen Vertrags. Nicht nur einen gegenteiligen Leitsatz gegenüberstellen: Welche letzte Leistung sollte die Schlussrate nach Wortlaut und Systematik noch absichern? Welche Protokollmängel bestehen tatsächlich?\n\n**Weitere Grenzen:** Das KG befasste sich auch mit modifizierter Wohnflächenberechnung und einer Begrenzung der Herstellungspflicht auf einen Bauabschnitt. Daraus folgt keine höchstrichterliche Freigabe solcher Klauseln. Die Ausführungen zur Wohnflächen-Hilfsaufrechnung wurden nach der BGH-Entscheidung prozessual gegenstandslos. Für andere Verträge können einzelne Argumente wissenschaftlich diskutiert werden; die aufgehobene Entscheidung ist aber kein belastbarer Ersatz für eigenständige Inhaltskontrolle und aktuelle obergerichtliche beziehungsweise höchstrichterliche Belege."
+  },
+  {
+    "index": 16,
+    "title": "Bezugsfertigkeit und wesentlicher optischer Mangel",
+    "dockets": [
+      "21 U 156/24"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://fundstellensuche.de/urteil.php?id=318853",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__88-25.pdf?__blob=publicationFile&v=1",
+      "https://gesetze.berlin.de/jportal/perma?d=NJRE001612362&portal=bsbe"
+    ],
+    "read_scope": [
+      {
+        "url": "https://fundstellensuche.de/urteil.php?id=318853",
+        "full_read": false,
+        "scope": "Privater als gerichtlicher Volltext gekennzeichneter Text einschließlich Tenor/Rn.1–86 vollständig gelesen; nicht amtlich oder DNotI-verifiziert, deshalb full_read=false im qualifizierten Primärquellennachweis",
+        "retrieval": "Private Reproduktion erfolgreich; amtliches Berlin-Portal mehrfach nur JavaScript/kein Entscheidungstext. Browser nicht verfügbar. Exakte Aktenzeichensuche und DNotI-Suche ohne qualifiziertes Ersatzoriginal.",
+        "errors": [
+          "Amtlicher Berlin-Volltextzugriff nicht erfolgreich."
+        ],
+        "published_text_read_complete": true
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__88-25.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor und sämtlicher Gründe",
+        "retrieval": "Direkter curl-Abruf des amtlichen PDF erfolgreich.",
+        "errors": []
+      },
+      {
+        "url": "https://gesetze.berlin.de/jportal/perma?d=NJRE001612362&portal=bsbe",
+        "full_read": false,
+        "scope": "Kein lesbarer Entscheidungstext",
+        "retrieval": "Mehrere HTTP-/Webzugriffe auf Berlin-Portal lieferten nur JavaScript-Hülle; Browserzugriff nicht verfügbar",
+        "errors": [
+          "Amtliche Originalverifikation offen"
+        ]
+      }
+    ],
+    "pinpoints": [
+      "Private gerichtliche Reproduktion: Rn.27–47,48–62,64–83; amtlich nicht bestätigt",
+      "BGH VII ZR88/25 Rn.25–30"
+    ],
+    "verification_status": "Beleglücke: kein amtlicher/DNotI-Volltext; private gerichtliche Reproduktion gelesen, Kern nicht als vollständig primärverifiziert freigegeben",
+    "procedural_status": "Laut privater Volltextreproduktion Berufung gegen208.351,25€Schadensersatzzuspruch zurückgewiesen; Revision nicht zugelassen. Aktuelle Rechtskraft/NZB nicht verifiziert. Erwähnte VII ZR149/19 betrifft Vorprozess, nicht dieses Urteil.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"21 U 156/24\" Urteil Volltext",
+        "\"21 U 156/24\" \"DNotI\"",
+        "\"21 U 156/24\" \"Revision\" \"BGH\""
+      ],
+      "result": "Amtlicher Permalink gefunden, Entscheidungstext im verfügbaren Zugriff nicht auslesbar; privaterVolltextkomplettgelesen. KeinDNotI-Ersatz/keinezugeordnete spätereBGH-Entscheidung gefunden. BGH88/25 hebt den inRn.33zit.21U44/22 auf, aber nichtnachweislich21U156/24 selbst.",
+      "limitation": "Gezielte öffentlich indexierte Aktenzeichen-/Themenrecherche; fehlender Treffer beweist weder Rechtskraft noch Fehlen unveröffentlichter Folgeverfahren."
+    },
+    "corrections_required": [
+      "Harte-Fundstelle-Text darf amtlichenPermalink nicht als tatsächlich gelesen/verifiziert ausgeben.",
+      "Nicht jeder wesentliche optischeMangel stetsfehlendeBezugsfertigkeit: hier dauerhafterBezug/SanierungFreizug/Bauordnungsfragen und unklareSanierungsentscheidung maßgeblich.",
+      "Rn.33 beruft sich auf späteraufgehobenes21U44/22; aktualisierendeAbgrenzung erforderlich.",
+      "Unverhältnismäßigkeit nicht als automatische vollständigeFälligkeit darstellen."
+    ],
+    "expanded_markdown": "### Bezugsfertigkeit und wesentlicher optischer Mangel\n\n**Harte Fundstelle:** KG, Urteil vom 24.06.2025 – 21 U 156/24, [amtlicher Nachweis](https://gesetze.berlin.de/jportal/perma?d=NJRE001612362&portal=bsbe). **Quellengrenze:** Der amtliche Entscheidungstext ließ sich bei der Prüfung am 08.10.2026 nicht auslesen; eine [private gerichtliche Volltextreproduktion](https://fundstellensuche.de/urteil.php?id=318853) wurde vollständig gelesen, ist aber nicht gleichwertig amtlich verifiziert. Die folgende Auswertung bleibt deshalb ein qualifiziert nachzuprüfender Instanzhinweis.\n\n**Fall und Begründung nach dieser Reproduktion:** Eine gestalterisch zentrale Wohnzimmertreppe war abweichend von der Vereinbarung nicht in Sichtbeton und mit anderer Steigung ausgeführt. Die Erwerber nutzten ihre bisherigen Wohnungen weiter und verlangten insbesondere dadurch entgangene Vermietungseinnahmen. Das KG betrachtete nicht allein die faktische Bewohnbarkeit, sondern die Zumutbarkeit dauerhaften Bezugs. Ungeklärte Bauordnungsfragen und eine möglicherweise nur nach erneutem Freizug mögliche Sanierung standen dabei im Mittelpunkt (Rn. 27–47).\n\n**Kernaussage für Verbraucher:** Optisch bedeutet nicht automatisch unwesentlich. Umgekehrt folgt aus einer erheblichen Gestaltungsabweichung nicht ohne Vertragsauslegung und Folgenprüfung stets fehlende Bezugsfertigkeit. Entscheidend sind versprochene Beschaffenheit, Gewicht der Abweichung, sichere und dauerhafte Nutzung sowie die konkrete Sanierungsperspektive. Ein pauschaler Hinweis auf hohe Nachbesserungskosten belegt noch keine berechtigte Unverhältnismäßigkeitseinrede.\n\n**Einsatz im Vertrag:** Sichere Visualisierung, Baubeschreibung, Änderungen, technischen Nachweis und sämtliche Erklärungen zur Sanierung. Für eine verweigerte Bezugsfertigkeitsrate sind fehlende Fälligkeit und hilfsweise der konkrete Mängeleinbehalt getrennt zu begründen. Entgangene Miete bisher selbst genutzter Wohnungen verlangt belastbare Vermietungsabsicht, realistische Vermietbarkeit und Höhe; derselbe Nachteil darf nicht zusätzlich als abstrakter Nutzungsausfall berechnet werden.\n\n**Aktualitäts- und Übertragungsgrenze:** Der Text verweist für die Schlussrate auf KG 21 U 44/22, das der BGH später aufgehoben hat. Das hebt diesen Bezugsfertigkeitsfall nicht automatisch auf, verhindert aber eine unkritische Übernahme seiner Gleichsetzung mit Abnahmereife. Auch die besondere Lage nach dem vom Bauträger erklärten unwirksamen Rücktritt – fehlende eigene Erfüllungsbereitschaft bei Berufung auf § 320 BGB – ist nicht mit einer gewöhnlichen Übergabeverweigerung gleichzusetzen."
+  },
+  {
+    "index": 17,
+    "title": "Flexibler MaBV-Ratenplan",
+    "dockets": [
+      "21 U 73/24"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.dnoti.de/entscheidungen/details/?cHash=b815e4cee0e1b8dcd6977bc34b7bc5c5&tx_dnotionlineplusapi_decisions%5Bnodeid%5D=bfc555e6-f2db-480e-99ec-41ce1d39d691",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR_169-25.pdf?__blob=publicationFile&v=1",
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__88-25.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.dnoti.de/entscheidungen/details/?cHash=b815e4cee0e1b8dcd6977bc34b7bc5c5&tx_dnotionlineplusapi_decisions%5Bnodeid%5D=bfc555e6-f2db-480e-99ec-41ce1d39d691",
+        "full_read": false,
+        "scope": "Sämtliche veröffentlichten gerichtlichen Gründe A und B I–V einschließlich Leitsätze; DNotI-Reproduktion, kein separat abgebildeter Tenor",
+        "retrieval": "DNotI-Originalreproduktion erfolgreich; amtliches Berlin-Portal im verfügbaren Zugriff nicht textlesbar",
+        "errors": [
+          "Amtlicher Berlin-Volltextzugriff nicht erfolgreich."
+        ],
+        "published_text_read_complete": true
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR_169-25.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor und sämtlicher Gründe",
+        "retrieval": "Direkter curl-Abruf des amtlichen PDF erfolgreich.",
+        "errors": []
+      },
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR__88-25.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor und sämtlicher Gründe",
+        "retrieval": "Direkter curl-Abruf des amtlichen PDF erfolgreich.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "KG Gründe B.I.1.a–b, B.I.3–6, B.II.2, B.V",
+      "BGH VII ZR169/25 Rn.1–5"
+    ],
+    "verification_status": "DNotI-Originalgründe vollständig gelesen; amtliche BGH-Korrektive separat geprüft",
+    "procedural_status": "KG ändert LG teilweise; Ratenplanfeststellung abgewiesen, Mietausfallschaden zeitlich begrenzt; Bauträgerrücktritt mangels Nachfrist unwirksam. Revision nicht zugelassen; keine anschließende Rechtskraft/NZB amtlichbelegt.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"21 U 73/24\" BGH Revision 2026",
+        "\"21 U 73/24\" \"VII\" \"2026\" \"BGH\"",
+        "\"VII ZR 169/25\" 2026"
+      ],
+      "result": "Keine direkte Folgeentscheidung sicher zugeordnet. VII ZR169/25 stammt aus27U153/24 und Vertrag11.07.2019, nicht aus21U73/24 mit Vertrag05.07.2019. Nur gesondertesRadar. BGH88/25 ist Schlussraten-Korrektiv, entscheidetnichtFlexibilität selbst.",
+      "limitation": "Gezielte öffentlich indexierte Aktenzeichen-/Themenrecherche; fehlender Treffer beweist weder Rechtskraft noch Fehlen unveröffentlichter Folgeverfahren."
+    },
+    "corrections_required": [
+      "Kein pauschales AGB-Wirksamkeitsurteil für sämtlicheNebenregelungen: KG ließ §307Problem derMängelklausel teilweiseoffen.",
+      "VII169/25 nicht als direkteRevision diesesFalls oder materielleBestätigung deklarieren."
+    ],
+    "expanded_markdown": "### Flexibler MaBV-Ratenplan\n\n**Harte Fundstelle:** KG, Urteil vom 20.05.2025 – 21 U 73/24, insbesondere Gründe B.I.1, B.I.3–6 und B.V, [gerichtliche Gründe bei DNotI](https://www.dnoti.de/entscheidungen/details/?cHash=b815e4cee0e1b8dcd6977bc34b7bc5c5&tx_dnotionlineplusapi_decisions%5Bnodeid%5D=bfc555e6-f2db-480e-99ec-41ce1d39d691).\n\n**Fall und Entscheidung:** Der Erwerber einer vermieteten Wohnung in einem teilsanierten Gebäude zahlte keine Rate und hielt den Zahlungsplan insgesamt für nichtig. Nach der ersten Rate durfte die Bauträgerin aus den einzelnen MaBV-Bautenständen höchstens sechs weitere Abrufe zusammenstellen. Der Vertrag legte deren Bündelung noch nicht fest. Das KG verneinte eine Gesamtnichtigkeit des Zahlungsplans. Ein Rücktritt der Bauträgerin scheiterte dennoch, weil trotz teilweise einredefreier Forderung die erforderliche Nachfrist fehlte.\n\n**Kernaussage für Verbraucher:** Die höchstens sieben Raten müssen nach Auffassung des KG nicht bereits im Vertrag abschließend aus allen Teilprozentsätzen gebündelt sein. Entscheidend ist, dass die Begrenzung bei Durchführung eingehalten wird. Nach sechs vereinnahmten Raten darf der Rest erst mit der Schlussrate verlangt werden (B.I.1.b.aa). Eine ausdrückliche Erlaubnis von mehr als sieben Raten wäre etwas anderes. Flexibilität beseitigt weder Baufortschrittsvoraussetzungen noch Einbehalte.\n\n**Einsatz im Vertrag:** Führe sämtliche tatsächlichen Abrufe und Zahlungen mit Bautenstand, Prozentbasis und laufender Ratennummer zusammen. Prüfe Teilabrechnungen und Sonderwünsche darauf, ob sie wirtschaftlich eine versteckte zusätzliche Rate enthalten. Für jede Forderung bleiben Grundvoraussetzungen, wirksame Freistellung, Sicherheit und Gegenrechte eigenständige Fragen. Für die Bezugsfertigkeits- und Schlussrate darf nicht ungeprüft die Bewertung gewöhnlicher Abschlagsstufen übernommen werden.\n\n**Nebenfragen und Gegenargumente:** Das KG verneinte bei einer Mängelklausel vor allem eine MaBV-widrige Gesamtnichtigkeit; ihre mögliche Unwirksamkeit nach § 307 BGB ließ es teilweise offen (B.I.1.b.bb). Auch die Verknüpfung von Übergabe und Teilabnahme ist eine begründete Instanzposition gegen ausdrücklich genannte Münchener Entscheidungen, keine unbestrittene höchstrichterliche Freigabe. BGH VII ZR 88/25 verlangt für die Schlussrate weiterhin konkrete Vertragsauslegung.\n\nDer Fall zeigt zudem, dass eine später fällig werdende einredefreie Gegenforderung den Übergabeverzug zeitlich beenden kann. Eine Übergabe- oder Mietanspruchsabtretungspflicht ist selbst keine Geldschuld; Zinsen auf Schadensersatz setzen dessen eigene Verzugsprüfung voraus. VII ZR 169/25 betrifft ein anderes KG-Verfahren und entscheidet bislang keine dieser materiellen Fragen."
+  },
+  {
+    "index": 18,
+    "title": "Ratenplan-Revisionsradar (keine Sachentscheidung)",
+    "dockets": [
+      "VII ZR 169/25"
+    ],
+    "checked_on": "2026-10-08",
+    "source_urls": [
+      "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR_169-25.pdf?__blob=publicationFile&v=1"
+    ],
+    "read_scope": [
+      {
+        "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR_169-25.pdf?__blob=publicationFile&v=1",
+        "full_read": true,
+        "scope": "Amtliches PDF vollständig einschließlich Tenor und sämtlicher Gründe",
+        "retrieval": "Direkter curl-Abruf des amtlichen PDF erfolgreich.",
+        "errors": []
+      }
+    ],
+    "pinpoints": [
+      "Tenor; Rn.1–5"
+    ],
+    "verification_status": "amtlicher Volltext verifiziert",
+    "procedural_status": "Revision wirksam aufFeststellungNichtigkeitRatenplan beschränkt; NZB gegenübrigeTeile zurückgewiesen; KostenSchlussentscheidungvorbehalten. Stand08.10.2026keineveröffentlichteSachentscheidung gefunden; nichtbehauptet,dasskeineunveröffentlichteEntscheidungexistiert.",
+    "newer_search": {
+      "checked_on": "2026-10-08",
+      "queries": [
+        "\"VII ZR 169/25\" 2026",
+        "\"VII ZR 169/25\" Urteil September Oktober 2026"
+      ],
+      "result": "Nur Beschluss08.07.2026 undReproduktionen gefunden. VorinstanzKG18.09.2025 27U153/24; keinSachurteil gefunden. MaterielleNichtigkeit bleibt durchdiesesDokument unbeantwortet.",
+      "limitation": "Gezielte öffentlich indexierte Aktenzeichen-/Themenrecherche; fehlender Treffer beweist weder Rechtskraft noch Fehlen unveröffentlichter Folgeverfahren."
+    },
+    "corrections_required": [
+      "Radar nicht zu materiellerBGH-BestätigungderRatenplan-Nichtigkeitoder-Wirksamkeit aufwerten."
+    ],
+    "expanded_markdown": "### Ratenplan-Revisionsradar (keine Sachentscheidung)\n\n**Harte Fundstelle:** BGH, Beschluss vom 08.07.2026 – VII ZR 169/25, Tenor und Rn. 1–5, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR_169-25.pdf?__blob=publicationFile&v=1).\n\n**Verfahrensgegenstand:** Der Beschluss betrifft KG, Urteil vom 18.09.2025 – 27 U 153/24, und einen Bauträgervertrag vom 11.07.2019. Das KG hatte die Revision nur hinsichtlich der Feststellung der Nichtigkeit des Ratenzahlungsplans zugelassen. Die Bauträgerin wollte daneben weitere Teile über eine Nichtzulassungsbeschwerde zur Überprüfung stellen.\n\n**Kernaussage für Verbraucher:** Der BGH bestätigte lediglich, dass die Ratenplanfeststellung einen tatsächlich und rechtlich selbständigen Streitteil bildet und die Revisionszulassung deshalb wirksam beschränkt werden konnte (Rn. 2–3). Für die Zulässigkeit der zusätzlichen Beschwerde waren die Werte beider Rechtsmittel zusammenzurechnen; inhaltlich blieb sie ohne Erfolg. Die Zurückweisung wurde nach § 544 Abs. 6 ZPO nicht näher begründet. Darin liegt keine Billigung jedes materiellen Arguments der Vorinstanz.\n\n**Einsatz im Vertrag:** Verwende diesen Beschluss ausschließlich zur Einordnung des Verfahrensstands. Er beantwortet weder, ob der betreffende Zahlungsplan nichtig ist, noch, welche konkrete Klausel den Ausschlag geben würde. Die Kostenentscheidung wurde der Schlussentscheidung vorbehalten. Ein Zahlungsstopp oder eine Klauselfreigabe darf nicht auf diesen Beschluss allein gestützt werden.\n\n**Recherchestand:** Die gezielte Suche bis 08.10.2026 hat keine veröffentlichte anschließende Sachentscheidung ergeben. Das ist keine Gewissheit über unveröffentlichte Vorgänge. Bei erneutem Einsatz sind Aktenzeichen und unmittelbarer Verfahrensgang nachzuprüfen. Insbesondere darf das Verfahren nicht mit KG 21 U 73/24 verwechselt werden; die ähnliche Thematik ersetzt weder denselben Vertrag noch denselben Instanzenzug."
+  }
+]

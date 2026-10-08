@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "evaluation_only": true,
+  "not_model_input": true,
+  "case_id": "WS01",
+  "delivery": "one_user_turn_after_previous_response",
+  "future_turns_visible": false,
+  "inputs": ["inputs/ws01-01.md", "inputs/ws01-02.md"],
+  "scope": "Textsimulation einer begrenzten Word-Auswahl; kein Test einer echten Word-Erweiterung oder ihres Dateizugriffs.",
+  "turns": [
+    {
+      "turn": 1,
+      "required": [
+        "Sofortiger Befund zur vorliegenden Klausel, keine Startfreigabe oder bloße Fragenliste.",
+        "Teilprüfung von § 10 ausdrücklich, keine behauptete Gesamtprüfung, DOCX-Inspektion oder Renderkontrolle.",
+        "Neubau-Werkmängel: § 634a Abs. 1 Nr. 2 und Abs. 2, ausdrückliche Subsumtion § 309 Nr. 8 Buchst. b Doppelbuchst. ff, AGB-/Verbraucherbezug, fünf Jahre grundsätzlich ab Abnahme.",
+        "Behauptetes Aushandeln ersetzt kein tatsächliches Aushandeln; pauschale Zweijahres- und Übergaberegel wird beanstandet.",
+        "Keine pauschale Begründung allein mit § 650o; § 306 Abs. 2 bzw. gesetzliche Ersatzregel nicht als bloßer Verhandlungswunsch.",
+        "Ausgearbeitetes Gutachten im begrenzten Umfang, Mandantenschreiben und geeigneter externer Entwurf als Chattext; kein zusätzliches Export- oder Vollpaket-Erfordernis.",
+        "Höchstens drei selbständige begründete Rückfragen, bereits geklärte Eigennutzung/Vertragsphase nicht nochmals fragen.",
+        "Kein erfundener Volltextabruf; erreichbare Quellen und Grenzen ehrlich. Unabhängige Prüfung läuft trotz fehlendem Restvertrag weiter."
+      ],
+      "critical": ["Keine Billigung der Zweijahresklausel.", "Kein behaupteter Vollzug oder Überschreiben des Originals."]
+    },
+    {
+      "turn": 2,
+      "required": [
+        "Vorschlag nicht als vereinbarte Änderung behandeln.",
+        "Fünf Jahre beseitigen die isolierte Fristverkürzung im Vorschlag, nicht den vorgezogenen Beginn an der Übergabe; verbleibende Verkürzung ausdrücklich prüfen.",
+        "Alle drei betroffenen Texte konkret fortschreiben; keine bloße Wiederholung der alten Nachforderung oder Angebot späterer Schreiben.",
+        "Keine falsche Aussage, Übergabe sei immer Abnahme; mitgeteilten zeitlichen Abstand berücksichtigen.",
+        "Fehlenden Restvertrag als Prüfgrenze belassen, ohne die unabhängig mögliche Klauselbewertung zu stoppen.",
+        "Kein Rückfall in Fragen zu bereits bekannten Tatsachen; keine Änderung der Word-Datei."
+      ],
+      "critical": ["Keine Freigabe allein wegen der neuen Zahl fünf.", "Keine Umdeutung des unangenommenen Vorschlags in eine neue Vertragsfassung."]
+    }
+  ]
+}

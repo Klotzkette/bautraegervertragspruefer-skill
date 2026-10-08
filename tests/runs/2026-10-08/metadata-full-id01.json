@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "run": "full-id01",
+  "run_date": "2026-10-08",
+  "case_date": "2026-09-28",
+  "model_identifier": "unbekannt",
+  "model_identifier_note": "Keine verlässlich auslesbare technische Modellkennung vorhanden; Selbstbezeichnungen aus System- oder Entwicklertext nicht als tatsächliche Laufkennung übernommen.",
+  "instructions_read": [
+    {
+      "path": "skill/SKILL.md",
+      "sha256": "7c6d8a5549b1d939b214c34af899c4398217be4bfd192580bcca320f2b7caf85",
+      "fully_read": true,
+      "line_count": 1280,
+      "method": "sed, Abschnitte 1–180, 181–360, 361–540, 541–720, 721–900, 901–1080; Abruf 1081–1280 zunächst in Toolausgabe teilweise gekürzt, deshalb 1081–1180 und 1181–1280 vollständig erneut gelesen. Keine übrigen Promptdateien gelesen."
+    }
+  ],
+  "inputs": [
+    {
+      "turn": 1,
+      "path": "tests/workflow/immediate-dialogue/inputs/id01-01.md",
+      "sha256": "b53f09066dd936eb0da1db15b47a741853aa8756205d5e28b62fc5ecc48ddbab",
+      "fully_read": true
+    },
+    {
+      "turn": 2,
+      "path": "tests/workflow/immediate-dialogue/inputs/id01-02.md",
+      "sha256": "38c904c58ad2d15560ea76bafb294f7ed3219b3f50870db48fa48664a45cb4fa",
+      "fully_read": true
+    }
+  ],
+  "outputs": [
+    {
+      "turn": 1,
+      "path": "tests/runs/2026-10-08/full-id01-turn1.md",
+      "scope": "Vollständige finale Erwerberinnenantwort, nach ihrer Ausgabe mit apply_patch gespeichert; Zwischenmeldungen nicht Teil der Datei."
+    },
+    {
+      "turn": 2,
+      "path": "tests/runs/2026-10-08/full-id01-turn2.md",
+      "scope": "Vollständige finale Erwerberinnenantwort, mit apply_patch gespeichert und anschließend wortgleich als finale Nachricht ausgegeben."
+    }
+  ],
+  "retrievals_by_turn": [
+    {
+      "turn": 1,
+      "successful_norm_opens": [
+        "https://www.gesetze-im-internet.de/bgb/__309.html",
+        "https://www.gesetze-im-internet.de/bgb/__634a.html",
+        "https://www.gesetze-im-internet.de/bgb/__306.html",
+        "https://www.gesetze-im-internet.de/beurkg/__17.html",
+        "https://www.gesetze-im-internet.de/bgb/__307.html",
+        "https://www.gesetze-im-internet.de/bgb/__310.html",
+        "https://www.gesetze-im-internet.de/beurkg/__13c.html",
+        "https://www.gesetze-im-internet.de/bgb/__650u.html",
+        "https://www.gesetze-im-internet.de/bgb/__13.html"
+      ],
+      "successful_decision_fulltext_retrievals": [
+        {
+          "citation": "BGH, Beschluss vom 12.09.2013 – VII ZR 308/12",
+          "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2012/VII_ZR_308-12.pdf?__blob=publicationFile&v=1",
+          "read": "Volltext per curl in pdftotext-Stream vollständig gelesen; ein erfolgreicher Abruf."
+        },
+        {
+          "citation": "BGH, Urteil vom 25.02.2016 – VII ZR 49/15",
+          "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2015/VII_ZR__49-15.pdf?__blob=publicationFile&v=1",
+          "read": "Volltext per curl in pdftotext-Stream vollständig gelesen, Abschnitte 1–320 und 321–640; zwei Abrufe."
+        },
+        {
+          "citation": "BGH, Urteil vom 26.03.2026 – VII ZR 68/24",
+          "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1",
+          "read": "Volltext per curl in pdftotext-Stream vollständig gelesen, Abschnitte 1–340, 341–680 und 681–1020; drei Abrufe."
+        }
+      ],
+      "search_queries": [
+        "site.bundesgerichtshof.de \"Abnahme\" \"Erstverwalter\" \"2026\"",
+        "site.bundesgerichtshof.de \"VII ZR 68/24\"",
+        "site.rechtsprechung-im-internet.de \"VII ZR 308/12\"",
+        "site.rechtsprechung-im-internet.de \"VII ZR 49/15\"",
+        "site.rechtsprechung-im-internet.de \"VII ZR 68/24\"",
+        "\"VII ZR 308/12\" \"juris.bundesgerichtshof.de\"",
+        "\"VII ZR 49/15\" \"juris.bundesgerichtshof.de\"",
+        "\"VII ZR 108/24\" \"rechtsprechung-im-internet\""
+      ],
+      "discovery_pages_opened": [
+        "https://dejure.org/dienste/vernetzung/rechtsprechung?Aktenzeichen=VII+ZR+68/24&Datum=26.03.2026&Gericht=BGH",
+        "https://dejure.org/dienste/vernetzung/rechtsprechung?Aktenzeichen=VII+ZR+308/12&Datum=12.09.2013&Gericht=BGH"
+      ],
+      "failed_or_incomplete_attempts": [
+        {
+          "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2012/VII_ZR_308-12.pdf?__blob=publicationFile&v=1",
+          "tool": "web open",
+          "result": "Nicht zugänglich bzw. HTTP 403; später erfolgreicher vollständiger curl/pdftotext-Abruf."
+        },
+        {
+          "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2015/VII_ZR__49-15.pdf?__blob=publicationFile&v=1",
+          "tool": "web open",
+          "result": "Nicht zugänglich bzw. HTTP 403; später erfolgreicher vollständiger curl/pdftotext-Abruf."
+        },
+        {
+          "url": "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR__68-24.pdf?__blob=publicationFile&v=1",
+          "tool": "web open",
+          "result": "Nicht zugänglich bzw. HTTP 403; später erfolgreicher vollständiger curl/pdftotext-Abruf."
+        },
+        {
+          "url": "https://dejure.org/2026,9037",
+          "result": "Nicht zugänglich; spätere lange DeJure-URL funktionierte als Nachweis-/Verlinkungsseite."
+        },
+        {
+          "url": "https://www.dnoti.de/download/?cHash=d2292122535afd821498e3b8b2cb4b9a&tx_dnotionlineplusapi_download%5Baction%5D=index&tx_dnotionlineplusapi_download%5Bcontroller%5D=Download&tx_dnotionlineplusapi_download%5Bnodeid%5D=34d6f0aa-298b-4788-a5d8-3054afbf91e7&tx_dnotionlineplusapi_download%5Bpreview%5D=1",
+          "result": "Parsefehler; Suchtreffer war kein hier vollständig geöffneter Endbeleg."
+        },
+        {
+          "url": "https://www.rechtsprechung-im-internet.de/jportal/?quelle=jlink&docid=KORE311712013&psml=bsjrsprod.psml&max=true",
+          "result": "Nicht zugänglich."
+        },
+        {
+          "urls": [
+            "https://dejure.org/ext/c9590b46823b272aa63ff49ba23803f8",
+            "https://dejure.org/ext/6e170088362032ca61d0d37a9e1149f0",
+            "https://dejure.org/ext/cc02149e7ae64ca15ba55398b1d7b758"
+          ],
+          "result": "Drei weiterführende DeJure-Links zu rechtsinformationen.bund.de, rechtsprechung-im-internet.de und OpenJur: HTTP 403."
+        },
+        {
+          "url": "https://www.gesetze-im-internet.de/bgb/__640.html",
+          "result": "Web-Abruf Timeout; in Turn 1 kein erfolgreicher direkter Normabruf."
+        }
+      ],
+      "limits": [
+        "Ein gebündeltes Toolergebnis der ersten Web-Abfragen wurde insgesamt gekürzt; daraus keine vollständige Lektüre sämtlicher Suchresultate behauptet.",
+        "Die drei tragenden BGH-Entscheidungen wurden anschließend tatsächlich vollständig aus amtlichen PDF-Dateien gelesen.",
+        "Suchergebnisse umfassten auch private Sekundärseiten und einen nach dem Fallstichtag veröffentlichten Beitrag; diese wurden nicht als Endbelege der Stellungnahme verwendet.",
+        "Die Recherche begründet keine Vollständigkeitsgarantie für jede bis zum Fallstichtag ergangene Entscheidung.",
+        "Vertragsprüfung nur anhand der drei Auszüge und Nutzermitteilungen; keine vollständige Urkunde, Word-Datei, Teilungserklärung, Baubeschreibung oder Nachtragsdatei vorhanden."
+      ]
+    },
+    {
+      "turn": 2,
+      "successful_norm_opens": [
+        "https://www.gesetze-im-internet.de/bgb/__311b.html"
+      ],
+      "successful_norm_stream_retrievals": [
+        {
+          "url": "https://www.gesetze-im-internet.de/bgb/__640.html",
+          "method": "curl, iconv ISO-8859-1 zu UTF-8, sed HTML-Entfernung",
+          "read": "Gesamter Normtext einschließlich Abs. 1–3 lesbar ausgegeben; numerische HTML-Umlaute blieben erkennbar kodiert."
+        }
+      ],
+      "failed_or_incomplete_attempts": [
+        {
+          "url": "https://www.gesetze-im-internet.de/bgb/__640.html",
+          "tool": "web open",
+          "result": "Timeout."
+        },
+        {
+          "url": "https://www.gesetze-im-internet.de/bgb/__640.html",
+          "tool": "curl | sed",
+          "result": "Erster Stream-Extraktionsversuch brach wegen illegal byte sequence vor Normtext ab; anschließend mit iconv erfolgreich wiederholt."
+        }
+      ],
+      "reused_previously_verified_sources": [
+        "https://www.gesetze-im-internet.de/bgb/__309.html",
+        "https://www.gesetze-im-internet.de/bgb/__306.html",
+        "https://www.gesetze-im-internet.de/bgb/__634a.html",
+        "https://www.gesetze-im-internet.de/beurkg/__17.html",
+        "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2012/VII_ZR_308-12.pdf?__blob=publicationFile&v=1",
+        "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2015/VII_ZR__49-15.pdf?__blob=publicationFile&v=1"
+      ],
+      "limits": [
+        "Keine erneute Vollrecherche bereits geprüfter Klauselrechtsfragen; zuvor vollständig verifizierte Normen und Urteile weiterverwendet.",
+        "Unterzeichnungsdatum und Nachtragszweck beruhen auf Nutzerangaben; beurkundete Hauptvertragsfassung weiterhin nicht vorhanden.",
+        "AGB-Eigenschaft weiterhin nach offen bezeichneter Annahme; Eigennutzung nun mitgeteilt.",
+        "Abnahmehistorie, vollständiger Sonderwunschnachtrag, Preise und Vertragsanlagen fehlen; keine Zahlungsfreigabe, Fristende- oder Nachtragsfreigabebehauptung.",
+        "Keine Dateien außer den bezeichneten Prompt-/Eingabedateien inhaltlich gelesen; keine anderen Fälle, Erwartungen, README oder Evaluationen gelesen."
+      ]
+    }
+  ],
+  "mutations": "Nur die zwei Antwortdateien und diese Metadatendatei mittels apply_patch erstellt; keine Promptänderungen, kein Versand, keine externen Erklärungen.",
+  "hash_method": "shasum -a 256, tatsächlich ausgeführt nach vollständiger Lektüre beider Eingaben."
+}

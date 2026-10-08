@@ -1,0 +1,327 @@
+{
+  "case": "word-selection/ws01",
+  "run_date": "2026-10-08",
+  "model_identifier": "unbekannt",
+  "model_identifier_note": "Keine verlässlich auslesbare konkrete Laufzeit-Modellkennung verfügbar; allgemeine Rollenbeschreibungen wurden nicht als Modellnachweis verwendet.",
+  "environment": {
+    "mode": "Textsimulation",
+    "real_word_integration": false,
+    "docx_read": false,
+    "word_rendering_or_visual_inspection": false,
+    "original_word_file_modified": false,
+    "file_export_claimed": false,
+    "response_files": [
+      "word-ws01-turn1.md",
+      "word-ws01-turn2.md"
+    ],
+    "note": "Die in den Eingaben behauptete Word-Auswahl wurde als übermittelter Klartext behandelt. Erst nach Turn 1 wurde ausdrücklich autorisiert, die tatsächlichen Antworten und Metadaten lokal zu speichern."
+  },
+  "hashes_algorithm": "SHA256",
+  "hashes_collected": "Nach Lesen von ws01-02.md, vor Abschluss von Turn 2.",
+  "prompt_and_reference_files_read": [
+    {
+      "path": "plugins/bautraegervertragspruefer/skills/bautraeger-word-entwurf-pruefen/SKILL.md",
+      "sha256": "b794fede09d0e3dc5c0626578a0b01a967a2daf4576bb2ee73e099417bbd4aeb",
+      "turn": 1,
+      "scope": "Vollständig gelesen; erster Dateiaufruf."
+    },
+    {
+      "path": "plugins/bautraegervertragspruefer/skills/bautraegervertrag-pruefen/SKILL.md",
+      "sha256": "930ed4e56d0c6379caaf5daed9c601ccae2310d5fdc66f0ba5450f93b4c72644",
+      "turn": 1,
+      "scope": "Vollständig über den Verweis im Word-Skill gelesen."
+    },
+    {
+      "path": "plugins/bautraegervertragspruefer/skills/bautraegervertrag-pruefen/references/werkstatt.md",
+      "sha256": "7c6d8a5549b1d939b214c34af899c4398217be4bfd192580bcca320f2b7caf85",
+      "turn": 1,
+      "scope": "Ein vollständiger cat-Aufruf wurde ausgeführt, seine Ausgabe war jedoch abgeschnitten. Sichtbar waren insbesondere Anfang und Ende; keine vollständige Lektüre des Gesamttextes behauptet. Danach Überschriften und Stichwörter per rg gesucht sowie einschlägige Abschnitte gezielt gelesen.",
+      "targeted_line_ranges": [
+        "104-193",
+        "265-291",
+        "337-379",
+        "440-515"
+      ],
+      "limits": "Ein gebündelter Lese-/Rechercheaufruf wurde seinerseits in der Gesamtausgabe abgeschnitten. Die relevanten Abschnitte 265-291, 337-379 und 440-515 wurden deshalb anschließend separat erneut vollständig abgerufen. Abschnitte 1.1 bis 1.5 waren im Anfang der ersten Ausgabe sichtbar."
+    }
+  ],
+  "input_files_read": [
+    {
+      "path": "tests/workflow/word-selection/inputs/ws01-01.md",
+      "sha256": "73c308771c239b40222bc508d69673c298e0e55d827d7e0b601235e08d908e93",
+      "turn": 1,
+      "scope": "Vollständig nach dem Word-Skill gelesen."
+    },
+    {
+      "path": "tests/workflow/word-selection/inputs/ws01-02.md",
+      "sha256": "f8ca74d462727fe1cd669b3c8befcccd29868bcc7bc2368db579f5c07ab9cb93",
+      "turn": 2,
+      "scope": "Vollständig erst nach Speicherung der ersten tatsächlichen Antwort gelesen."
+    }
+  ],
+  "excluded_material": "Keine Erwartungen, README, anderen Testeingaben, fremden Rohantworten, Mini-Datei oder Stammdatei skill/SKILL.md gelesen. Keine Evaluation angefertigt. Keine Promptänderungen vorgenommen.",
+  "research_by_turn": [
+    {
+      "turn": 1,
+      "tool": "web__run",
+      "source_scope": "Gesetzestexte und Rechtsprechung zu AGB, Aushandeln und Mängelverjährung; ergänzend notarielle Vorbereitungszeit. Suchtreffer waren Recherchehinweise, keine pauschale Volltextbestätigung.",
+      "actual_requests": [
+        {
+          "call": 1,
+          "operations": [
+            {
+              "type": "open",
+              "urls": [
+                "https://www.gesetze-im-internet.de/bgb/__634a.html",
+                "https://www.gesetze-im-internet.de/bgb/__309.html",
+                "https://www.gesetze-im-internet.de/bgb/__305.html",
+                "https://www.gesetze-im-internet.de/bgb/__306.html"
+              ]
+            }
+          ],
+          "result": "Alle vier amtlichen Normtexte erfolgreich und vollständig ausgegeben."
+        },
+        {
+          "call": 2,
+          "operations": [
+            {
+              "type": "search",
+              "queries": [
+                "site.bundesgerichtshof.de \"ausgehandelt\" \"ernsthaft zur Disposition\" \"2014\"",
+                "site.bundesgerichtshof.de \"25.02.2016\" \"VII ZR 49/15\""
+              ]
+            },
+            {
+              "type": "open",
+              "urls": [
+                "https://www.gesetze-im-internet.de/bgb/__650u.html",
+                "https://www.gesetze-im-internet.de/beurkg/__17.html"
+              ]
+            }
+          ],
+          "result": "Treffer und Normabrufe erhalten. Gesamtausgabe war zusammen mit mehreren Dateilesungen abgeschnitten; Normtexte später nochmals offen abgerufen."
+        },
+        {
+          "call": 3,
+          "operations": [
+            {
+              "type": "search",
+              "queries": [
+                "site.bundesgerichtshof.de \"VII ZR 248/13\" \"20. März 2014\"",
+                "site.bundesgerichtshof.de \"VII ZR 49/15\" \"25. Februar 2016\"",
+                "site.bundesgerichtshof.de Verjährung Bauwerk AGB ausgehandelt 2025 2026"
+              ]
+            }
+          ],
+          "result": "Gemischte Treffer, darunter ältere Entscheidungen und Hinweise auf 2026-Entscheidungen. Kein Nachweis einer umfassenden aktuellen Rechtsprechungsübersicht; diese neueren Suchtreffer wurden nicht als geprüfte Entscheidungen in der Antwort verwendet."
+        },
+        {
+          "call": 4,
+          "operations": [
+            {
+              "type": "open",
+              "urls": [
+                "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2015/VII_ZR__49-15.pdf?__blob=publicationFile&v=1"
+              ]
+            },
+            {
+              "type": "search",
+              "query": "\"VII ZR 248/13\" Urteil pdf",
+              "domains": [
+                "bundesgerichtshof.de"
+              ]
+            }
+          ],
+          "result": "Direkter BGH-PDF-Abruf VII ZR 49/15 nicht zugänglich. Suche lieferte unter anderem amtlichen Treffer VII ZR 248/13."
+        },
+        {
+          "call": 5,
+          "operations": [
+            {
+              "type": "open",
+              "urls": [
+                "https://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Art=en&Blank=1.pdf&Datum=2014-3-20&Gericht=bgh&Sort=1&anz=30&nr=67527&pos=21"
+              ]
+            },
+            {
+              "type": "search",
+              "query": "\"VII ZR 49/15\" \"document.py\"",
+              "domains": [
+                "bundesgerichtshof.de"
+              ]
+            }
+          ],
+          "result": "PDF-Abruf mit 403 Forbidden gescheitert; Suchabfrage ohne Treffer."
+        },
+        {
+          "call": 6,
+          "operations": [
+            {
+              "type": "open",
+              "urls": [
+                "https://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Gericht=bgh&Art=en&nr=67527&pos=0&anz=1"
+              ]
+            },
+            {
+              "type": "search",
+              "queries": [
+                "\"VII ZR 49/15\" bundesgerichtshof",
+                "\"VII ZR 248/13\" rechtsprechung im internet"
+              ]
+            }
+          ],
+          "result": "Amtlicher HTML-Abruf fehlgeschlagen; Suche lieferte u. a. DeJure-Verknüpfungen und Dokumentkennungen für die amtliche Datenbank."
+        },
+        {
+          "call": 7,
+          "operations": [
+            {
+              "type": "open",
+              "urls": [
+                "https://www.rechtsprechung-im-internet.de/jportal/?quelle=jlink&docid=KORE315772014&psml=bsjrsprod.psml&max=true",
+                "https://www.rechtsprechung-im-internet.de/jportal/?quelle=jlink&docid=KORE307992016&psml=bsjrsprod.psml&max=true",
+                "https://www.gesetze-im-internet.de/beurkg/__17.html",
+                "https://www.gesetze-im-internet.de/bgb/__650u.html"
+              ]
+            }
+          ],
+          "result": "Beide Rechtsprechungsabrufe nicht zugänglich; beide Normtexte erfolgreich vollständig gelesen."
+        },
+        {
+          "call": 8,
+          "operations": [
+            {
+              "type": "open",
+              "urls": [
+                "https://dejure.org/2014,7816",
+                "https://dejure.org/2016,3470"
+              ]
+            }
+          ],
+          "result": "Beide DeJure-Verknüpfungsseiten zugänglich; Verweise und Auszüge, keine eigene Volltextprüfung allein aufgrund dieser Seiten."
+        },
+        {
+          "call": 9,
+          "operations": [
+            {
+              "type": "click",
+              "source": "DeJure VII ZR 248/13",
+              "targets": [
+                "rechtsinformationen.bund.de, Link 12",
+                "openjur.de, Link 9"
+              ]
+            },
+            {
+              "type": "open",
+              "source": "DeJure VII ZR 49/15",
+              "line": 20
+            }
+          ],
+          "result": "Beide Zielabrufe fehlgeschlagen. DeJure-Seite VII ZR 49/15 mit weiteren Verweisen erfolgreich gelesen."
+        },
+        {
+          "call": 10,
+          "operations": [
+            {
+              "type": "click",
+              "source": "DeJure VII ZR 248/13",
+              "target": "DNotI, Link 18",
+              "resolved_redirect": "https://dejure.org/ext/2256254abcb966b3531c4c77ec341a14"
+            },
+            {
+              "type": "click",
+              "source": "DeJure VII ZR 49/15",
+              "target": "DNotI, Link 21",
+              "resolved_redirect": "https://dejure.org/ext/14e4389fbdba0f24d65bdfb5848c0ce9"
+            },
+            {
+              "type": "click",
+              "source": "DeJure VII ZR 49/15",
+              "target": "bundesgerichtshof.de, Link 10",
+              "resolved_redirect": "https://dejure.org/ext/31c770ba3b7df9d6896a1ff7e7a6fd1f"
+            }
+          ],
+          "result": "Alle drei Weiterleitungen mit 403 Forbidden gescheitert."
+        },
+        {
+          "call": 11,
+          "operations": [
+            {
+              "type": "search",
+              "query": "\"VII ZR 248/13\"",
+              "domains": [
+                "dnoti.de"
+              ]
+            },
+            {
+              "type": "search",
+              "query": "\"VII ZR 49/15\"",
+              "domains": [
+                "dnoti.de"
+              ]
+            }
+          ],
+          "result": "DNotI-Entscheidungsseiten und Downloadziele gefunden."
+        },
+        {
+          "call": 12,
+          "operations": [
+            {
+              "type": "open",
+              "urls": [
+                "https://www.dnoti.de/download/?cHash=e56e75903f357f78f13d6e81279e402a&tx_dnotionlineplusapi_download%5Bnodeid%5D=cbd4f35f-b101-404b-9c42-5b0049d7369a&tx_dnotionlineplusapi_download%5Bpreview%5D=1",
+                "https://www.dnoti.de/entscheidungen/details/?cHash=c46a83e584282bc2c12286796af387e9&tx_dnotionlineplusapi_decisions%5Bnodeid%5D=e6b6e26e-ea28-4f8d-b157-1f6751f873a2"
+              ]
+            }
+          ],
+          "result": "PDF VII ZR 248/13 nicht parsebar. DNotI-Seite VII ZR 49/15 erfolgreich gelesen, aber dort nur redaktionelle Darstellung; nicht als geprüfter Urteilsvolltext verwendet."
+        },
+        {
+          "call": 13,
+          "operations": [
+            {
+              "type": "open",
+              "urls": [
+                "https://www.dnoti.de/entscheidungen/details/?cHash=2431e19663eeda7c28f24e46a794b7f4&tx_dnotionlineplusapi_decisions%5Bnodeid%5D=cbd4f35f-b101-404b-9c42-5b0049d7369a"
+              ]
+            }
+          ],
+          "result": "DNotI-Seite mit BGH-Entscheidungsabdruck VII ZR 248/13 erfolgreich gelesen. Insbesondere Gründe II.2.a.cc–dd tatsächlich zugänglich. Erste Ausgabe ließ einen mittleren Abschnitt aus; Folgeabruf ergänzte diesen."
+        },
+        {
+          "call": 14,
+          "operations": [
+            {
+              "type": "open",
+              "url": "https://www.dnoti.de/entscheidungen/details/?cHash=2431e19663eeda7c28f24e46a794b7f4&tx_dnotionlineplusapi_decisions%5Bnodeid%5D=cbd4f35f-b101-404b-9c42-5b0049d7369a",
+              "line": 175
+            },
+            {
+              "type": "click",
+              "source": "DNotI VII ZR 49/15",
+              "target": "PDF Vorschau, Link 30"
+            }
+          ],
+          "result": "Ergänzender Abruf VII ZR 248/13 erfolgreich; gemeinsam mit vorherigem Abruf wurden Tatbestand und Entscheidungsgründe gelesen. PDF-Vorschau VII ZR 49/15 gescheitert."
+        }
+      ],
+      "supporting_sources_used_in_final": [
+        "https://www.gesetze-im-internet.de/bgb/__634a.html",
+        "https://www.gesetze-im-internet.de/bgb/__650u.html",
+        "https://www.gesetze-im-internet.de/bgb/__305.html",
+        "https://www.gesetze-im-internet.de/bgb/__309.html",
+        "https://www.gesetze-im-internet.de/bgb/__306.html",
+        "https://www.gesetze-im-internet.de/beurkg/__17.html",
+        "https://www.dnoti.de/entscheidungen/details/?cHash=2431e19663eeda7c28f24e46a794b7f4&tx_dnotionlineplusapi_decisions%5Bnodeid%5D=cbd4f35f-b101-404b-9c42-5b0049d7369a"
+      ],
+      "limits": "Keine amtliche BGH-Volltextabfrage erfolgreich; für VII ZR 248/13 wurde der tatsächlich gelesene Entscheidungsabdruck beim DNotI verwendet. VII ZR 49/15 wurde wegen fehlender Volltextprüfung nicht als tragende Rechtsprechung in der finalen Antwort zitiert. Keine Behauptung einer lückenlosen Aktualitätsrecherche."
+    },
+    {
+      "turn": 2,
+      "new_web_requests": [],
+      "reused_sources": "Die in Turn 1 tatsächlich geprüften Normtexte sowie der DNotI-Entscheidungsabdruck VII ZR 248/13 wurden für die Fortschreibung wiederverwendet.",
+      "reason": "Unmittelbare Fortschreibung derselben Klausel anhand neuer Tatsachen; keine neue Rechtsfrage, die einen weiteren umfassenden Recherchelauf erforderte.",
+      "limits": "Keine erneuten Quellenabrufe und kein neuer Aktualitätsnachweis. Der übrige Vertrag und die Abnahme-/Übergabeklauseln bleiben unzugänglich; die Zweimonatsangabe ist nach der Eingabe eine Planung, kein festes Ereignisdatum."
+    }
+  ]
+}

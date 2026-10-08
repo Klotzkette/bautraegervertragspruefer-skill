@@ -1,5 +1,16 @@
 # Änderungsprotokoll
 
+## 4.8.0 — 8. Oktober 2026
+
+1. Die Langfassung wächst von 137.497 auf 244.797 Zeichen und von 47 auf 76 gerenderte Word-Seiten. Der Einstieg erklärt den Auftrag in verständlicher anwaltlicher Sprache; Technik- und Umgebungsfragen folgen erst im Arbeitsablauf. Der Mini bleibt eigenständig mit 21.924 Zeichen und sieben Word-Seiten.
+2. Alle 55 Rechtsprechungsthemen erneut recherchiert und deutlich vertieft: Sachverhalt, tragende Gründe, Verfahrensausgang, Gegenargumente, konkrete Prüffragen und Übertragungsgrenzen. Fünf zusätzliche Originalentscheidungen ergänzen den Bestand auf 64 Hauptaktenzeichen. 54 amtliche Originale vollständig gelesen; Reproduktionen, Auszüge und offene Beleglücken werden getrennt ausgewiesen, nicht als lückenlose Volltextprüfung ausgegeben.
+3. Materielle Berichtigungen unter anderem zur Aufhebung von KG 21 U 44/22 durch VII ZR 88/25, zur begrenzten Rückforderungswirkung von VII ZR 167/11, zu den Altrechtsfällen VII ZR 68/24 und 108/24, zum Verwalteranspruch nach dem WEMoG und zur ausdrücklich aufgegebenen Unternehmerqualifikation anhand der Umsatzsteueroption. OLG München 27 U 3495/25 Bau e ergänzt die persönliche Sicherheitsstellungshaftung ohne pauschalen Barauszahlungsanspruch.
+4. Webchat, Plugin und Word-Auswahl erhalten ausdrücklich denselben fachlichen Ablauf mit ihren tatsächlichen Zugriffsgrenzen. Kein Exportzwang vor der Ausgabe, keine behauptete Gesamtprüfung aus einer Auswahl, kein automatisches Überschreiben des Originals. Nachträge und positive Nachweise ändern alle betroffenen Ergebnisse und Schreiben.
+5. Rückfragen werden nach selbständigen Anliegen gezählt, nicht nur nach nummerierten Absätzen. Die Verjährungsprüfung verlangt ausdrücklich § 309 Nr. 8 Buchst. b Doppelbuchst. ff BGB und die gesetzliche Ersatzfolge. Interne Bearbeitungsvermerke gehören nicht in externe Schreiben.
+6. Neue getrennte WS01-Probe: Zweijahresklausel mit Aushandlungsbehauptung, danach unangenommener Fünfjahresvorschlag mit unverändert vorgezogenem Beginn. Acht neue statische Ablaufkontrollen und vier zusätzliche Quellen-/Layouttests; insgesamt 99 Unit-/Regressionstests. Diese Tests sind kein Modellleistungsnachweis.
+7. Drei tatsächliche Zweirunden-Proben mit eingefrorenen Instruktionen: Langfassung mit ID01 sowie Mini und Word-Skill mit WS01. Sechs Antworten unverändert archiviert; sofortige Produkte und konkrete Fortschreibung beobachtet. Quellenabrufe, Hashes und Auswertungsgrenzen gesondert dokumentiert. Kein neuer vollständiger Gesamtvertragslauf, kein fremder KI-Anbietervergleich und kein realer Word-Integrationstest.
+8. Beide vollständigen Word-Prompts verlustfrei exportiert, alle 76 beziehungsweise sieben Seiten einzeln visuell geprüft. Plugin-Paket, Spiegel und Downloadseite synchronisiert. Unveränderte Vertragsvorlagen erneut technisch geprüft: Entwurf, eigene Urkundennummer frei, kein KI-Herkunftshinweis im Vertrag.
+
 ## 4.7.0 — 28. September 2026
 
 1. Werkstatt, Mini und drei Plugin-Einstiege beginnen unmittelbar am vorhandenen Material: konkreter Erstbefund, nächste Prüfung und bereits mögliche Entwürfe, auch bei bloßen Auszügen.

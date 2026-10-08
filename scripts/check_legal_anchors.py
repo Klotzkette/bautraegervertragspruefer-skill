@@ -44,6 +44,8 @@ ALLOWED_HOSTS = {
     "www.recht.bund.de",
     "www.gesetze-im-internet.de",
     "www.bundestag.de",
+    "www.dnoti.de",  # Gerichtliche Entscheidungsabdrucke; keine redaktionellen Ersatzleitsätze.
+    "fundstellensuche.de",  # Private Gerichtsreproduktion; Beleggrenze bleibt im Eintrag sichtbar.
 }
 
 OFFICIAL_BGH_HOSTS = {
@@ -74,6 +76,11 @@ FORBIDDEN = (
 )
 
 REQUIRED_DOCKETS = {
+    "VII ZR 20/25",  # Nutzungserhalt: ergänzender Werkvertragsfall, keine Wohnungspauschale
+    "VII ZR 54/07",  # Geschuldeter Schallschutz und Aufklärung über abgesenkten Standard
+    "V ZR 128/23",  # Kostenverteilung, Rücklagenzuführung und ungerechtfertigte Privilegien
+    "V ZR 34/24",  # Keine Schutzwirkung des Verwaltervertrags für einzelne Eigentümer
+    "27 U 3495/25",  # Persönliche Sicherheitsstellungshaftung mit Übertragungsgrenzen
     "VII ZR 187/24",  # Mangelbedingter Nutzungsschaden nach Abnahme ohne Nacherfüllungsverzug
     "11 U 7/24",  # Eigentumsumschreibung trotz berechtigten Mängeleinbehalts
     "12 U 12/24",  # Beurkundung eines zusätzlichen Ausbauvertrags: Verknüpfungswille
@@ -104,7 +111,7 @@ REQUIRED_LEGISLATION_TOKENS = (
     "BGBl. 2026 I Nr. 192",
     "BGBl. 2026 I Nr. 215",
     "BGBl. 2026 I Nr. 229",
-    "§§ 3, 7 und 12 MaBV wurden nicht geändert",
+    "§§ 3, 7 und 12 MaBV wurden durch diese beiden Änderungen nicht geändert",
     "Gebäudetyp E",
     "§ 650a BGB",
 )
@@ -143,7 +150,24 @@ def extract_legislation_section(text: str) -> str:
 
 
 def extract_urls(citation: str) -> list[str]:
-    return [match.rstrip(".,;") for match in URL_RE.findall(citation)]
+    # URLs may be readable Markdown links as well as bare citations. Strip the
+    # link delimiter, not balanced parentheses belonging to an actual URL.
+    result = []
+    for match in URL_RE.findall(citation):
+        url = match.rstrip(".,;")
+        while url.endswith(")") and url.count(")") > url.count("("):
+            url = url[:-1]
+        result.append(url)
+    return result
+
+
+def unanchored_cases_outside_catalog(text: str, primary_cases: set[str]) -> set[str]:
+    """Operational advice needs a primary record; narrative procedural history
+    may identify a lower court through its reviewed appellate judgment. Such
+    contextual dockets are not counted as independently reviewed originals.
+    """
+    outside = text.replace(extract_section(text), "", 1)
+    return set(CASE_RE.findall(outside)) - primary_cases
 
 
 def extract_case_records(section: str) -> list[tuple[int, list[str]]]:
@@ -298,7 +322,7 @@ def main() -> None:
             fail(f"line {line_number} has no docket number: {topic}")
         if not dates:
             fail(f"line {line_number} has no decision date: {topic}")
-        if "Urteil" not in citation and "Beschluss" not in citation:
+        if "urteil" not in citation.lower() and "beschluss" not in citation.lower():
             fail(f"line {line_number} has no decision form: {topic}")
         if not urls:
             fail(f"line {line_number} has no source URL: {topic}")
@@ -336,7 +360,7 @@ def main() -> None:
     if missing_required:
         fail(f"missing required case-law anchors: {', '.join(missing_required)}")
 
-    unanchored = sorted(set(CASE_RE.findall(text)) - set(seen_cases))
+    unanchored = sorted(unanchored_cases_outside_catalog(text, set(seen_cases)))
     if unanchored:
         fail(f"case-law references outside the anchor records: {', '.join(unanchored)}")
 
