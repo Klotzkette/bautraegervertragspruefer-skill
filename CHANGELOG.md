@@ -1,5 +1,12 @@
 # Änderungsprotokoll
 
+## 4.9.0 — 21. November 2026
+
+1. Bei einer rechtlichen Prüfung klären Werkstatt, Mini und die drei Plugin-Einstiege zuerst die Urkunde, die betroffene Einheit, den Schuldner der Bauleistung und die Rechtsverschaffung. Unklare oder widersprüchliche Vertragsmerkmale führen zu gezielten Rückfragen. Nachreichungen werden in Gutachten und Schreiben eingearbeitet. Ein rein technischer Word-Auftrag bleibt auf den Dokumentbefund beschränkt.
+2. Die Fachprüfung unterscheidet Neubau, Erbbaurecht, Altbausanierung, späteren Erwerb einer fertigen Einheit, Bau auf eigenem Grund, verbundene Verträge und Baugruppe. Zahlungsmodell, Verbraucherstatus, Vertragszeitpunkt sowie Sonder- und Gemeinschaftseigentum steuern die weitere Prüfung.
+3. Die Nachrecherche berücksichtigt die BGH-Urteile vom Oktober 2026 zur Schlussrate bei wesentlichen Mängeln und zur Abnahme des Gemeinschaftseigentums.
+4. Der MaBV-Rechner weist das für die Berechnung angesetzte Grundstücksrecht aus. Die [Fallproben und Word-Exporte](tests/QA-4.9.0.md) dokumentieren den geprüften Stand.
+
 ## 4.8.0 — 8. Oktober 2026
 
 1. Die Langfassung wächst von 137.497 auf 244.797 Zeichen und von 47 auf 76 gerenderte Word-Seiten. Der Einstieg erklärt den Auftrag in verständlicher anwaltlicher Sprache; Technik- und Umgebungsfragen folgen erst im Arbeitsablauf. Der Mini bleibt eigenständig mit 21.924 Zeichen und sieben Word-Seiten.

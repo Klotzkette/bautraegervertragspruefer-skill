@@ -1,0 +1,1 @@
+Zwei Entwürfe: A verkauft die alte Fabrik. B verpflichtet sich zum Umbau in Wohnungen, sobald der Kauf beurkundet ist. A hat beide Verträge gemeinsam angeboten. Ob A den Umbau oder B die Übereignung mitsichert, ist unklar. Nur die Einordnung und der noch nötige Beleg bitte.

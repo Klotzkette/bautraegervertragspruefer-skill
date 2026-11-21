@@ -1,0 +1,1 @@
+Auf dem Deckblatt meiner Unterlagen steht „Bauträgerprojekt“. Der Anbieter hat mir eine erste Zahlungsanfrage geschickt. Ich möchte zunächst nur wissen, welche Vertragsart hier maßgeblich ist und ob die Zahlungsanfrage dazu passt. Den Vertragstext kann ich nachreichen. Welche Angabe benötigen Sie?

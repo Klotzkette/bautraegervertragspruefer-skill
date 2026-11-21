@@ -1,0 +1,338 @@
+{
+  "schema_version": 1,
+  "evaluation_only": true,
+  "not_model_input": true,
+  "cases": [
+    {
+      "id": "VT01",
+      "turns": [
+        {
+          "turn": 1,
+          "required": [
+            "Zuweisung und konkrete Fälligkeit offenhalten. Gezielt nach dem Schuldner der Bau- und Grundstücksleistung bzw. dem tatsächlichen Projektmodell fragen."
+          ],
+          "forbidden": [
+            "Die Nutzerin nach einer juristischen Selbstklassifikation fragen."
+          ],
+          "critical": [
+            "Vertragsregime oder konkrete Rate nur aus dem Deckblatt verbindlich ableiten."
+          ]
+        },
+        {
+          "turn": 2,
+          "required": [
+            "Erbbaurecht mit Errichtung prüfen. 20 Prozent von 300.000 Euro sind 60.000 Euro, 30.000 Euro weniger als berechnet. Voraussetzungen nach § 3 Abs. 1 MaBV und Verbrauchersicherheit getrennt behandeln."
+          ],
+          "forbidden": [
+            "Den bereits beantworteten Erhebungsbogen erneut abarbeiten."
+          ],
+          "critical": [
+            "60.000 Euro als ungeprüft fällige Ersatzrate freigeben."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT02",
+      "turns": [
+        {
+          "turn": 1,
+          "required": [
+            "Zuweisung und konkrete Fälligkeit offenhalten. Gezielt nach dem Schuldner der Bau- und Grundstücksleistung bzw. dem tatsächlichen Projektmodell fragen."
+          ],
+          "forbidden": [
+            "Die Nutzerin nach einer juristischen Selbstklassifikation fragen."
+          ],
+          "critical": [
+            "Vertragsregime oder konkrete Rate nur aus dem Deckblatt verbindlich ableiten."
+          ]
+        },
+        {
+          "turn": 2,
+          "required": [
+            "Bauträgervertrag über Neubau und Eigentum sowie alleinige Endzahlung feststellen. Fehlen der vereinbarten Fälligkeitsvoraussetzungen am Wortlaut prüfen."
+          ],
+          "forbidden": [
+            "Den bereits beantworteten Erhebungsbogen erneut abarbeiten."
+          ],
+          "critical": [
+            "§ 3 MaBV einen eigenständigen Anspruch auf eine 30-Prozent-Rate entnehmen."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT03",
+      "turns": [
+        {
+          "turn": 1,
+          "required": [
+            "Zuweisung und konkrete Fälligkeit offenhalten. Gezielt nach dem Schuldner der Bau- und Grundstücksleistung bzw. dem tatsächlichen Projektmodell fragen."
+          ],
+          "forbidden": [
+            "Die Nutzerin nach einer juristischen Selbstklassifikation fragen."
+          ],
+          "critical": [
+            "Vertragsregime oder konkrete Rate nur aus dem Deckblatt verbindlich ableiten."
+          ]
+        },
+        {
+          "turn": 2,
+          "required": [
+            "Den privaten Neubau aus einer Hand als Verbraucherbauvertrag einordnen. Die Abschlagsgrundlage nach Bauvertrag und §§ 632a, 650m BGB prüfen."
+          ],
+          "forbidden": [
+            "Den bereits beantworteten Erhebungsbogen erneut abarbeiten."
+          ],
+          "critical": [
+            "MaBV-Raten automatisch auf den Bauauftrag übertragen."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT04",
+      "turns": [
+        {
+          "turn": 1,
+          "required": [
+            "Zuweisung und konkrete Fälligkeit offenhalten. Gezielt nach dem Schuldner der Bau- und Grundstücksleistung bzw. dem tatsächlichen Projektmodell fragen."
+          ],
+          "forbidden": [
+            "Die Nutzerin nach einer juristischen Selbstklassifikation fragen."
+          ],
+          "critical": [
+            "Vertragsregime oder konkrete Rate nur aus dem Deckblatt verbindlich ableiten."
+          ]
+        },
+        {
+          "turn": 2,
+          "required": [
+            "Einzelgewerk als Werk-/Bauvertrag erkennen. Das einzelne Gewerk übernimmt keinen gesamten Neubau. Das allgemeine Verbraucherschutzrecht bleibt zu prüfen."
+          ],
+          "forbidden": [
+            "Den bereits beantworteten Erhebungsbogen erneut abarbeiten."
+          ],
+          "critical": [
+            "§ 650i BGB allein aus einem neuen Haus und privaten Auftraggebern ableiten."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT05",
+      "turns": [
+        {
+          "turn": 1,
+          "required": [
+            "Zuweisung und konkrete Fälligkeit offenhalten. Gezielt nach dem Schuldner der Bau- und Grundstücksleistung bzw. dem tatsächlichen Projektmodell fragen."
+          ],
+          "forbidden": [
+            "Die Nutzerin nach einer juristischen Selbstklassifikation fragen."
+          ],
+          "critical": [
+            "Vertragsregime oder konkrete Rate nur aus dem Deckblatt verbindlich ableiten."
+          ]
+        },
+        {
+          "turn": 2,
+          "required": [
+            "Echte Bauherrenorganisation und Steuerungsvertrag anhand von Risiko und Leistung feststellen. Prüfgrundlage für das Honorar benennen."
+          ],
+          "forbidden": [
+            "Den bereits beantworteten Erhebungsbogen erneut abarbeiten."
+          ],
+          "critical": [
+            "Eine Bauträgerrate allein aus dem gemeinsamen Projekt oder der Rechnungsüberschrift ableiten."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT06",
+      "turns": [
+        {
+          "turn": 1,
+          "required": [
+            "Zuweisung und konkrete Fälligkeit offenhalten. Gezielt nach dem Schuldner der Bau- und Grundstücksleistung bzw. dem tatsächlichen Projektmodell fragen."
+          ],
+          "forbidden": [
+            "Die Nutzerin nach einer juristischen Selbstklassifikation fragen."
+          ],
+          "critical": [
+            "Vertragsregime oder konkrete Rate nur aus dem Deckblatt verbindlich ableiten."
+          ]
+        },
+        {
+          "turn": 2,
+          "required": [
+            "Getrennte Schuldner für Erwerb und Umbau bestimmen. Formverbund/Kopplung und eine etwaige Übernahme beider Pflichten prüfen, maßgebliche Klauseln erfragen."
+          ],
+          "forbidden": [
+            "Den bereits beantworteten Erhebungsbogen erneut abarbeiten."
+          ],
+          "critical": [
+            "Aus dem verbundenen Angebot allein einen einheitlichen Bauträgervertrag herstellen."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT07",
+      "turns": [
+        {
+          "turn": 1,
+          "required": [
+            "Zuweisung und konkrete Fälligkeit offenhalten. Gezielt nach dem Schuldner der Bau- und Grundstücksleistung bzw. dem tatsächlichen Projektmodell fragen."
+          ],
+          "forbidden": [
+            "Die Nutzerin nach einer juristischen Selbstklassifikation fragen."
+          ],
+          "critical": [
+            "Vertragsregime oder konkrete Rate nur aus dem Deckblatt verbindlich ableiten."
+          ]
+        },
+        {
+          "turn": 2,
+          "required": [
+            "Bestandskauf ohne Baupflicht anhand von § 4 einordnen. Kaufpreis und Fälligkeit aus Kaufvertrag, Sicherung und Notarmitteilung prüfen."
+          ],
+          "forbidden": [
+            "Den bereits beantworteten Erhebungsbogen erneut abarbeiten."
+          ],
+          "critical": [
+            "Die MaBV als Rechtsgrund für einen gesonderten Abschlag behandeln."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT08",
+      "turns": [
+        {
+          "turn": 1,
+          "required": [
+            "Zuweisung und konkrete Fälligkeit offenhalten. Gezielt nach dem Schuldner der Bau- und Grundstücksleistung bzw. dem tatsächlichen Projektmodell fragen."
+          ],
+          "forbidden": [
+            "Die Nutzerin nach einer juristischen Selbstklassifikation fragen."
+          ],
+          "critical": [
+            "Vertragsregime oder konkrete Rate nur aus dem Deckblatt verbindlich ableiten."
+          ]
+        },
+        {
+          "turn": 2,
+          "required": [
+            "Umbaupflicht und Rechtsverschaffung desselben Unternehmers einordnen. Noch nicht ausgeführte Dacharbeit und lediglich zu reinigende Bestandssubstanz getrennt an der Leistungsbeschreibung prüfen."
+          ],
+          "forbidden": [
+            "Den bereits beantworteten Erhebungsbogen erneut abarbeiten."
+          ],
+          "critical": [
+            "Den unveränderten Dachstuhl als fertig abrechnen oder den Austausch jeder Altstufe allein wegen des sonstigen Umbaus schulden lassen."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT09",
+      "turns": [
+        {
+          "turn": 1,
+          "required": [
+            "Zuweisung und konkrete Fälligkeit offenhalten. Gezielt nach dem Schuldner der Bau- und Grundstücksleistung bzw. dem tatsächlichen Projektmodell fragen."
+          ],
+          "forbidden": [
+            "Die Nutzerin nach einer juristischen Selbstklassifikation fragen."
+          ],
+          "critical": [
+            "Vertragsregime oder konkrete Rate nur aus dem Deckblatt verbindlich ableiten."
+          ]
+        },
+        {
+          "turn": 2,
+          "required": [
+            "Herstellungsversprechen der fertigen Optik gegenüberstellen. Nachzüglerklausel, eigene Vertretung/Abnahme und möglicher Verjährungsbeginn gesondert prüfen."
+          ],
+          "forbidden": [
+            "Den bereits beantworteten Erhebungsbogen erneut abarbeiten."
+          ],
+          "critical": [
+            "Vom früheren fremden Abnahmedatum die eigene verbindliche Abnahme/Verjährung ungeprüft ableiten."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT10",
+      "turns": [
+        {
+          "turn": 1,
+          "required": [
+            "Zuweisung und konkrete Fälligkeit offenhalten. Gezielt nach dem Schuldner der Bau- und Grundstücksleistung bzw. dem tatsächlichen Projektmodell fragen."
+          ],
+          "forbidden": [
+            "Die Nutzerin nach einer juristischen Selbstklassifikation fragen."
+          ],
+          "critical": [
+            "Vertragsregime oder konkrete Rate nur aus dem Deckblatt verbindlich ableiten."
+          ]
+        },
+        {
+          "turn": 2,
+          "required": [
+            "Beide Vorgänge anhand von Urkunde, Einheit und Schuld getrennt zuordnen. Widerspruch aufklären lassen und unabhängig von der Rechnung laufende Fristen identifizieren."
+          ],
+          "forbidden": [
+            "Den bereits beantworteten Erhebungsbogen erneut abarbeiten."
+          ],
+          "critical": [
+            "Die Rechnung ohne Zuordnung als Bauträgerrate anerkennen."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT11",
+      "turns": [
+        {
+          "turn": 1,
+          "required": [
+            "Zuweisung und konkrete Fälligkeit offenhalten. Gezielt nach dem Schuldner der Bau- und Grundstücksleistung bzw. dem tatsächlichen Projektmodell fragen."
+          ],
+          "forbidden": [
+            "Die Nutzerin nach einer juristischen Selbstklassifikation fragen."
+          ],
+          "critical": [
+            "Vertragsregime oder konkrete Rate nur aus dem Deckblatt verbindlich ableiten."
+          ]
+        },
+        {
+          "turn": 2,
+          "required": [
+            "Vereinbarte Rückgewährsicherheit, Besicherungsdauer, Zugang und Deckung prüfen. Der angebotene Betrag liegt bereits 30.000 Euro unter der Vorauszahlung; zusätzlich ist die Sicherungsart offen."
+          ],
+          "forbidden": [
+            "Die §-3-Stufen als Fälligkeitsgrund auf den konkreten §-7-Vertrag übertragen."
+          ],
+          "critical": [
+            "Eine bloß angebotene Fertigstellungsbürgschaft über 50.000 Euro als vollständige Absicherung von 80.000 Euro freigeben."
+          ]
+        }
+      ]
+    }
+  ],
+  "mustervertrag": {
+    "id": "MW01",
+    "inputs": [
+      "tests/workflow/vertragsmodelle/marewald-einstieg.md",
+      "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md"
+    ],
+    "required": [
+      "Ordnet den Entwurf ohne eigene UR-Nummer (vorgesehener Termin 12. Juni 2026) der Wohnung C-2.14 im Haus C zu. Verwechselt den Entwurf nicht mit der beurkundeten Teilungserklärung.",
+      "Marewald Wohnbau GmbH & Co. KG schuldet Grundstücks-/Wohnungseigentum und Herstellung. Nennt Vertragsziffern für beide Verpflichtungen.",
+      "Leitet aus der Urkunde das Neubau-/Wohnungseigentumsprogramm mit gesonderten Prüfungen für Eigentumsverschaffung, Bauleistung und Sicherung/Raten ab. Keine vollständige Vertragsprüfung oder Behauptung bereits erfolgter Beurkundung."
+    ]
+  }
+}

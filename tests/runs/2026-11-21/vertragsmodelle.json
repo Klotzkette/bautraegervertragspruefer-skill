@@ -1,0 +1,268 @@
+{
+  "datum": "2026-11-21",
+  "fassung": "4.9.0",
+  "client": "Codex CLI",
+  "modell": "gpt-6.2-astra",
+  "modus": "Pro Fall frische ephemere Textsitzung mit vollständiger genannter Einstiegsdatei. Bei Folgerunden wurden die erste Anfrage und die tatsächliche erste Antwort zusammen mit der neuen Nachricht übergeben. Keine Werkzeuge, keine vorher mitgelieferten Bewertungskriterien und keine anderen Fälle im Modellkontext.",
+  "auswertung": "Fachliche Sichtprüfung der Antwort zur anfänglichen Klärung und späteren Fallzuordnung. Stichprobe in einem einzelnen Modell. Beim Plugin wurde der bezeichnete Skilltext geladen. Testergebnisse zur Installation, zu Word oder zur aktuellen Recherche lassen sich aus diesen Textläufen nicht ableiten.",
+  "faelle": [
+    {
+      "fall": "VT01",
+      "einstieg": "plugins/bautraegervertragspruefer/skills/bautraeger-zahlungsrate-pruefen/SKILL.md",
+      "einstieg_sha256": "83d98fe20c235a98995911d70162e91b529d57582826368cb724f6c06a292f7a",
+      "dialog": [
+        {
+          "turn": 1,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md": "520b4ec59f2e3c9ca9b2ba41d36e1ea9ba90c8f32aee85fdfa93bdb851ade886"
+          },
+          "antwort": "**Ergebnis:** Die Bezeichnung „Bauträgerprojekt“ auf dem Deckblatt reicht für die Einordnung nicht aus. Ob die erste Zahlungsanfrage zum Vertrag passt, ist daher noch offen.\n\nBitte schicken Sie mir zunächst diese drei Auszüge:\n\n1. **Die Klausel zu den Vertragspflichten.** Wer schuldet Ihnen die Errichtung oder den Umbau, und wer schuldet Ihnen die Übertragung des Grundstücks- oder Wohnungseigentums oder die Bestellung bzw. Übertragung eines Erbbaurechts? Stehen diese Pflichten in verschiedenen Urkunden, schicken Sie bitte die betreffenden Passagen mit der jeweiligen Vertragspartei. Namen können Sie durch eindeutige Kürzel ersetzen.\n2. **Die Klausel zur ersten Zahlung.** Daraus sollte hervorgehen, in welcher Höhe und unter welchen Voraussetzungen die erste Zahlung verlangt werden darf. Bitte geben Sie an, falls der Text aus einem Entwurf stammt.\n3. **Die Zahlungsanfrage selbst.** Der Abschnitt mit Betrag, Zahlungsgrund und gegebenenfalls genannter Frist genügt. Damit lässt sich der Abruf mit der vereinbarten ersten Zahlung vergleichen.\n\nSchuldet derselbe Unternehmer sowohl die Bauleistung als auch die Eigentumsübertragung oder das Erbbaurecht, spricht das für einen Bauträgervertrag. Gehört Ihnen das Grundstück bereits und schuldet der Anbieter allein die Bauleistung, spricht das für einen Bauvertrag."
+        },
+        {
+          "turn": 2,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/erbbaurecht.md": "d9a471512ceaaee6ab8f7b09120226b62f62e628788bc889628bbe77f2654377"
+          },
+          "antwort": "**Ergebnis:** Die unterschriebene Urkunde ist ein **Bauträgervertrag** im Sinne von § 650u Abs. 1 BGB. Dieselbe Gesellschaft schuldet Ihnen nach § 2 die Bestellung des Erbbaurechts und nach § 5 die Errichtung des Hauses. Der Abruf über **90.000 Euro** passt der Höhe nach nicht zu der in § 8 vereinbarten Zahlung nach § 3 MaBV. Ob die zulässige erste Rate bereits fällig ist, bleibt offen.\n\n**Höhe der ersten Rate.** Bei einem Erbbaurecht darf die Gesellschaft nach Beginn der Erdarbeiten höchstens **20 % von 300.000 Euro, also 60.000 Euro**, als erste Rate verlangen (§ 3 Abs. 2 MaBV). Die geforderten 90.000 Euro entsprechen 30 %. Damit übersteigt der Abruf die zulässige erste Rate um **30.000 Euro**.\n\n**Fälligkeit.** Auch tatsächlich begonnene Erdarbeiten genügen allein nicht. Zusätzlich müssen die allgemeinen Voraussetzungen des § 3 Abs. 1 MaBV erfüllt sein. Die fehlenden Unterlagen lassen offen, ob das bereits der Fall ist. Zahlen Sie die 90.000 Euro daher nicht auf diesen Abruf hin. Auch für eine Zahlung von 60.000 Euro fehlt derzeit die Grundlage für eine Freigabe.\n\n**Verbrauchersicherheit.** Bei der ersten Abschlagszahlung steht Ihnen als privater Erwerberin eine Sicherheit für die rechtzeitige Herstellung ohne wesentliche Mängel in Höhe von **5 % der vereinbarten Gesamtvergütung, also 15.000 Euro**, zu (§ 650m Abs. 2 BGB). Wird die Sicherheit vollständig durch Einbehalt erbracht, verbleiben bei einer später fälligen ersten Rate von 60.000 Euro **45.000 Euro** zur Überweisung. Stellt die Gesellschaft die Sicherheit vollständig durch eine wirksame Bürgschaft, entfällt dieser Einbehalt.\n\n**Noch benötigt.** Fordern Sie einen auf höchstens 60.000 Euro berichtigten Abruf an. Für die Fälligkeitsprüfung bitten Sie um folgende drei Belege:\n\n1. **Die notarielle Fälligkeitsmitteilung.** Sie zeigt, welche rechtlichen Voraussetzungen der Notar bestätigt hat. Prüfen Sie bei Zugang auch, ob nach § 8 damit eine Zahlungsfrist beginnt. Die Bitte um Rechnungsberichtigung verlängert eine bereits laufende Frist nicht.\n2. **Den Grundbuchnachweis über die ranggerechte Vormerkung.** Er zeigt, ob Ihr Anspruch auf Bestellung des Erbbaurechts gesichert ist.\n3. **Die Freistellungsunterlagen für etwaige vorrangige oder gleichrangige Grundpfandrechte, die Sie nicht übernehmen.** Ergibt sich aus dem Grundbuchnachweis, dass solche Belastungen fehlen, erübrigt sich dieser Beleg."
+        }
+      ],
+      "befund": "Erkennt Neubau und Erbbaurecht. 60.000 Euro Obergrenze, 30.000 Euro Differenz und 15.000 Euro Verbrauchersicherheit werden getrennt von der konkreten Fälligkeit geprüft."
+    },
+    {
+      "fall": "VT02",
+      "einstieg": "skill/MINI_SKILL.md",
+      "einstieg_sha256": "8ae75c17c887fd36651b21c8715c90e086c3c6d4e2014dc6f6956647dffd2db8",
+      "dialog": [
+        {
+          "turn": 1,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md": "520b4ec59f2e3c9ca9b2ba41d36e1ea9ba90c8f32aee85fdfa93bdb851ade886"
+          },
+          "antwort": "Entscheidend ist, **wer Ihnen den Bau schuldet und wer Ihnen nach welcher Urkunde das Grundstück, das Wohnungseigentum oder ein Erbbaurecht übertragen muss**. Die Bezeichnung „Bauträgerprojekt“ auf dem Deckblatt lässt das offen. Schuldet derselbe Anbieter in einem Vertrag sowohl die Errichtung oder den Umbau als auch die Übertragung des Rechts, spricht das für einen Bauträgervertrag nach § 650u BGB. Bauen Sie auf eigenem Grund, kommt ein Bauvertrag in Betracht. Bei getrennten Kauf- und Bauverträgen ist zusätzlich zu prüfen, wie beide Geschäfte zusammenhängen.\n\nFür die erste Zahlungsanfrage genügen zunächst drei Angaben oder Auszüge. Namen und Kontodaten können Sie schwärzen.\n\n1. **Welche Leistung hat welcher Vertragspartner für Ihre Einheit übernommen?** Bitte senden Sie die Klausel zum Vertragsgegenstand mit der Bauverpflichtung und der Regelung zur Eigentumsübertragung oder zum Erbbaurecht. Bei mehreren Verträgen genügt zunächst die entsprechende Stelle aus jedem Vertrag. Geben Sie je Dokument an, ob es ein Entwurf oder ein geschlossener Vertrag ist, möglichst mit Datum und Urkundennummer.\n2. **Was regelt der Vertrag zur ersten Zahlung?** Bitte senden Sie die Klausel aus dem Zahlungsplan mit Höhe, Berechnungsgrundlage, Fälligkeitsvoraussetzungen und etwaiger Sicherheit sowie den vereinbarten Gesamtpreis.\n3. **Was fordert der Anbieter konkret und bis wann?** Bitte senden Sie den Wortlaut der Zahlungsanfrage mit Absender, Betrag, Bezug zur Einheit, genanntem Zahlungsgrund und Zahlungsfrist. Fügen Sie beigefügte Nachweise bei, etwa eine notarielle Fälligkeitsmitteilung oder eine Bürgschaft.\n\nDer nächste zeitliche Anhaltspunkt ist die in der Anfrage gesetzte Frist, sofern sie eine nennt. Die Frist allein begründet keine Fälligkeit. Ob die erste Zahlung zur Vertragsart passt und der verlangte Betrag bereits geschuldet ist, lässt sich erst durch den Abgleich der Vertragsklausel mit der Anfrage und ihren Nachweisen beurteilen."
+        },
+        {
+          "turn": 2,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/endzahlung.md": "369a33886f0eadbeb1518d4ce002b83ee3d40c9b21b0a8f45106f8cb83cc0f2d"
+          },
+          "antwort": "**Die geforderten 30 Prozent sind nicht fällig. Sie müssen auf diese Zahlungsanfrage derzeit nichts zahlen.**\n\nNach § 2 schuldet dieselbe Anbieterin Ihnen sowohl die Übertragung des Grundstücks als auch die Errichtung des Hauses. Damit liegt ein Bauträgervertrag nach § 650u Abs. 1 BGB vor.\n\nFür Ihre Zahlung ist § 8 entscheidend. Der gesamte Preis wird erst nach **vollständiger Fertigstellung und Abnahme** fällig. Abschläge sind ausdrücklich ausgeschlossen. Die 30-Prozent-Stufe nach § 3 Abs. 2 MaBV begründet keinen eigenen Zahlungsanspruch. Sie begrenzt, was bei einem vereinbarten Ratenplan nach Beginn der Erdarbeiten verlangt werden darf. Selbst wenn die Erdarbeiten begonnen haben, bleibt es bei der vereinbarten Endzahlung. Solange das Haus noch nicht errichtet ist, fehlt bereits die vollständige Fertigstellung.\n\n**Antwortentwurf an die Anbieterin**\n\n> Sehr geehrte Damen und Herren,  \n> nach § 8 unseres notariellen Vertrags ist der gesamte Preis erst nach vollständiger Fertigstellung und Abnahme fällig. Vorauszahlungen und Abschläge sind ausdrücklich ausgeschlossen. Ich weise die Forderung über 30 Prozent daher als derzeit nicht fällig zurück und bitte Sie, die Zahlungsanfrage zurückzunehmen.  \n> Mit freundlichen Grüßen"
+        }
+      ],
+      "befund": "Ordnet die vereinbarte reine Endzahlung zu. Verneint einen Abschlag aus dem Baubeginn."
+    },
+    {
+      "fall": "VT03",
+      "einstieg": "skill/SKILL.md",
+      "einstieg_sha256": "bf9f8d92486167a771153b0f60e1a5d9f486dc0d642ea1e53d54d2a9fe20b882",
+      "dialog": [
+        {
+          "turn": 1,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md": "520b4ec59f2e3c9ca9b2ba41d36e1ea9ba90c8f32aee85fdfa93bdb851ade886"
+          },
+          "antwort": "Entscheidend ist, **wer Ihnen welche Leistung schuldet**. Muss derselbe Vertragspartner das Gebäude errichten oder umbauen und Ihnen das Grundstücks- oder Wohnungseigentum beziehungsweise ein Erbbaurecht verschaffen? Die Bezeichnung „Bauträgerprojekt“ auf dem Deckblatt lässt das offen.\n\nBitte reichen Sie zunächst zwei Auszüge nach:\n\n1. **Aus dem Vertrag** die Stellen, an denen die Parteien und ihre Bau- und Übertragungspflichten genannt sind. Gibt es einen gesonderten Grundstückskaufvertrag und einen Bauvertrag, genügen zunächst die entsprechenden Passagen aus beiden. Bitte geben Sie an, ob die Texte Entwürfe oder bereits geschlossene Verträge sind.\n2. **Aus der Zahlungsanfrage** den Wortlaut mit Absender, Betrag, Zahlungsgrund, genanntem Bautenstand und etwaiger Zahlungsfrist. Zum Abgleich brauche ich außerdem die Zahlungsregelung, auf die sich der Anbieter beruft.\n\nSchuldet derselbe Unternehmer Bauleistung und Rechtsverschaffung, spricht das für einen **Bauträgervertrag nach § 650u BGB**. Dann ist die erste Forderung am vereinbarten Zahlungsmodell und seinen Fälligkeitsvoraussetzungen zu prüfen. Bauen Sie auf Ihrem eigenen Grundstück und schuldet der Anbieter ausschließlich Bauleistungen, richtet sich ein Abschlag grundsätzlich nach dem **Bauvertrag und § 632a BGB**. Bei getrennten Verträgen kommt es zusätzlich darauf an, aus welchem Vertrag der Absender Zahlung verlangt und wie die Verträge miteinander verknüpft sind.\n\nOb die konkrete Zahlungsanfrage zum Vertrag passt oder der Betrag bereits fällig ist, bleibt bis zu diesem Abgleich offen."
+        },
+        {
+          "turn": 2,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/eigener-grund.md": "6ff9d89fbd6e5c80d1f0ef89d4f9ece9286bba918863392faf65ef7f48a0e7e9"
+          },
+          "antwort": "Nach Ihren Angaben liegt ein **Verbraucherbauvertrag nach § 650i Abs. 1 BGB** vor. Der Generalunternehmer schuldet Ihnen als privater Bauherrin die schlüsselfertige Errichtung des ganzen Wohnhauses. Das Grundstück gehört Ihnen bereits seit 2018. Damit fehlt die für einen Bauträgervertrag nach § 650u BGB erforderliche Verpflichtung, Ihnen ein Recht am Grundstück zu verschaffen.\n\n**Der Verweis auf eine „erste Bauträgerrate“ trägt die Rechnung für sich genommen nicht.** Insbesondere werden mit dem Beginn der Erdarbeiten nicht automatisch 30 % des Vertragspreises nach der MaBV fällig. Die falsche Bezeichnung schließt allerdings einen berechtigten Abschlag für bereits erbrachte Bauleistungen nicht aus.\n\nFür die Zahlungsprüfung sind drei Punkte entscheidend:\n\n1. **Vertragliche Grundlage.** Was bestimmt die Zahlungsregelung des geschlossenen Bauvertrags, gegebenenfalls einschließlich Zahlungsplan? Zu prüfen ist, ob eine wirksame Vereinbarung die erste Rate an einen bestimmten Leistungsstand knüpft oder erst eine Schlusszahlung vorsieht. Auch ein vertraglich genannter Prozentsatz ist auf eine unangemessene Vorleistung zu prüfen.\n2. **Leistung und Höhe.** Nach § 632a Abs. 1 BGB kann der Unternehmer grundsätzlich einen Abschlag in Höhe des vertraglichen Werts der bereits erbrachten und geschuldeten Leistungen verlangen. Er muss sie so aufstellen, dass Sie Umfang und Wert rasch und sicher beurteilen können. Nennt die Rechnung allein einen Prozentsatz und „erste Bauträgerrate“, lässt sich der Betrag daraus nicht nachvollziehen.\n3. **Verbraucherschutz.** Sämtliche Abschläge zusammen dürfen nach § 650m Abs. 1 BGB höchstens 90 % der vereinbarten Gesamtvergütung einschließlich Nachtragsleistungen erreichen. Bei der ersten Abschlagszahlung steht Ihnen außerdem eine Sicherheit von 5 % der vereinbarten Gesamtvergütung für die rechtzeitige Herstellung ohne wesentliche Mängel zu (§ 650m Abs. 2 BGB). Die 5 % beziehen sich auf die Gesamtvergütung. Auf Verlangen des Unternehmers wird die Sicherheit durch Einbehalt aus den Abschlägen geleistet.\n\n**Eine Zahlung in der angeforderten Höhe lässt sich derzeit nicht bestätigen.** Für die konkrete Prüfung genügen zunächst die Zahlungsregelung samt Gesamtvergütung, die vollständige Rechnung mit etwaiger Leistungsaufstellung und die Angabe, welche der abgerechneten Arbeiten beim Abruf tatsächlich ausgeführt waren. Eine bereits erhaltene Sicherheitsurkunde reichen Sie bitte ebenfalls ein."
+        }
+      ],
+      "befund": "Erkennt den privaten Gesamtneubau auf eigenem Boden als Verbraucherbauvertrag und prüft dessen Abschlagsgrundlagen."
+    },
+    {
+      "fall": "VT04",
+      "einstieg": "plugins/bautraegervertragspruefer/skills/bautraegervertrag-pruefen/SKILL.md",
+      "einstieg_sha256": "2845480ba4425ad4ea49ac17697b80728f045a54a4a7a69956450246f826a484",
+      "dialog": [
+        {
+          "turn": 1,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md": "520b4ec59f2e3c9ca9b2ba41d36e1ea9ba90c8f32aee85fdfa93bdb851ade886"
+          },
+          "antwort": "Der erste Zahlungsabruf liegt bereits vor. Die Bezeichnung „Bauträgerprojekt“ auf dem Deckblatt lässt offen, wer Ihnen die Bauleistung und wer Ihnen das Recht am Grundstück schuldet. Für die Einordnung und den Abgleich benötige ich zunächst drei Angaben:\n\n1. **Wer schuldet welche Leistung?** Bitte schicken Sie aus jeder einschlägigen Urkunde die Vertragsparteien und den Wortlaut der Klauseln zur Errichtung oder zum Umbau sowie zur Übertragung des Grundstücks- oder Wohnungseigentums oder zur Bestellung oder Übertragung eines Erbbaurechts. Gehört Ihnen das Baugrundstück bereits, genügt dazu zunächst ein kurzer Hinweis. Schuldet derselbe Unternehmer Bauleistung und Rechtsverschaffung, spricht das für einen Bauträgervertrag (§ 650u BGB). Baut er auf Ihrem eigenen Grund, kommt ein Bauvertrag in Betracht. Bei getrennten Verträgen ist auch deren Verknüpfung zu prüfen.\n2. **Welchen Stand hat die betreffende Urkunde?** Bitte geben Sie je Vertrag an, ob er als Entwurf vorliegt oder bereits geschlossen wurde, möglichst mit Datum und bei erfolgter Beurkundung mit Urkundennummer. So lässt sich die Anfrage der maßgeblichen Fassung zuordnen.\n3. **Was wird auf welcher Grundlage verlangt?** Bitte schicken Sie die Zahlungsanfrage samt beigefügten Nachweisen und die zugehörige Zahlungs- oder Ratenklausel. Wichtig sind Absender, Betrag, genannter Zahlungsgrund oder Bautenstand sowie die Zahlungsfrist. Läuft die Frist bereits, nennen Sie das Datum bitte gleich, auch wenn Sie den Vertragstext erst später nachreichen.\n\nMit diesen Auszügen lässt sich prüfen, ob der Absender die verlangte Rate nach dem maßgeblichen Vertrag beanspruchen kann und welche Fälligkeitsvoraussetzungen belegt sind. Aus dem Deckblatt und dem Eingang der Anfrage allein lässt sich eine Zahlungspflicht derzeit nicht ableiten."
+        },
+        {
+          "turn": 2,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/einzelgewerk.md": "75c0fbc773edf1a459ab9cebb3ed230fcddc0ee13706b9e8915f730ad08be634"
+          },
+          "antwort": "Für die Dachdeckerarbeiten gilt ein **Bauvertrag über ein einzelnes Gewerk nach § 650a Abs. 1 BGB**. Das Grundstück gehört Ihnen bereits. Der Dachdecker schuldet Ihnen die Arbeiten am Dach und hat keine Verpflichtung, Ihnen Eigentum oder ein Erbbaurecht zu verschaffen. Damit fehlt eine Voraussetzung des Bauträgervertrags nach § 650u BGB. Obwohl Sie als Verbraucher handeln, ist der einzelne Dachdeckerauftrag auch kein Verbraucherbauvertrag nach § 650i BGB. Dafür müsste der Dachdecker den Bau des gesamten neuen Gebäudes übernommen haben (BGH, Urteil vom 16. März 2023 – VII ZR 94/22).\n\n**Die Bezeichnung „Bauträgerrate“ passt daher nicht.** Sie macht den Ratenplan für Bauträger nicht anwendbar. Die Rechnung kann dennoch als Abschlagsrechnung berechtigt sein. Maßgeblich sind die Zahlungsvereinbarung Ihres Dachdeckerauftrags und der erreichte Leistungsstand. Nach § 632a Abs. 1 BGB kann der Dachdecker grundsätzlich einen Abschlag in Höhe des Werts der bereits erbrachten, vertraglich geschuldeten Leistungen verlangen. Diese muss er so aufstellen, dass Sie die Berechnung rasch und sicher beurteilen können.\n\nFür den konkreten Abgleich schicken Sie bitte **die Zahlungsvereinbarung und die Rechnung einschließlich eines etwaigen Aufmaßes oder Leistungsnachweises** und geben Sie kurz an, welche Dacharbeiten bei Rechnungsstellung tatsächlich ausgeführt waren. Die Vertragsart ist nach Ihren Angaben geklärt. Offen sind Höhe und Fälligkeit des Abschlags. Ein Abgleich der genannten Vorschriften und der Entscheidung mit den amtlichen Volltexten war in diesem Textchat nicht möglich."
+        }
+      ],
+      "befund": "Ordnet den einzelnen Dachauftrag dem Bauvertragsrecht zu; Herkunft der Zahlungsanforderung entscheidet nicht."
+    },
+    {
+      "fall": "VT05",
+      "einstieg": "skill/MINI_SKILL.md",
+      "einstieg_sha256": "8ae75c17c887fd36651b21c8715c90e086c3c6d4e2014dc6f6956647dffd2db8",
+      "dialog": [
+        {
+          "turn": 1,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md": "520b4ec59f2e3c9ca9b2ba41d36e1ea9ba90c8f32aee85fdfa93bdb851ade886"
+          },
+          "antwort": "**Entscheidend ist, wer Ihnen welche Leistung schuldet.** Die Bezeichnung „Bauträgerprojekt“ auf dem Deckblatt lässt das offen. Für die erste Zahlungsanfrage benötige ich drei Angaben. Kurze Auszüge im Wortlaut genügen.\n\n1. **Was schuldet Ihnen welcher Vertragspartner?** Bitte schicken Sie die Stelle zum Vertragsgegenstand Ihrer Einheit. Daraus sollte hervorgehen, wer den Bau oder Umbau schuldet und wer Ihnen das Grundstück, das Wohnungseigentum oder ein Erbbaurecht übertragen soll. Falls das Grundstück Ihnen bereits gehört oder Kauf und Bau in getrennten Verträgen stehen, geben Sie das bitte an.\n2. **Welche Zahlungsregel gilt für Ihre Einheit?** Bitte schicken Sie die Klausel zur ersten Zahlung samt Gesamtpreis und geben Sie an, ob sie aus einem Entwurf oder dem abgeschlossenen Vertrag stammt. Bei mehreren Urkunden hilft die jeweilige Urkundennummer oder das Entwurfsdatum.\n3. **Was genau fordert der Anbieter jetzt?** Bitte schicken Sie die Zahlungsanfrage mit Absender, Betrag, Zahlungsgrund, genanntem Bautenstand und Zahlungsfrist sowie etwaige beigefügte Nachweise.\n\nSchuldet derselbe Vertragspartner sowohl den Bau oder Umbau als auch die Eigentumsübertragung oder die Bestellung oder Übertragung eines Erbbaurechts, spricht das für einen Bauträgervertrag nach § 650u BGB. Bei einem reinen Bauauftrag auf Ihrem eigenen Grundstück richtet sich die erste Abschlagszahlung grundsätzlich nach dem Wert der bereits erbrachten vertragsgemäßen Leistungen (§ 632a BGB). Ob die konkrete Anfrage zur Vertragsart passt und der Betrag bereits fällig ist, bleibt bis zum Abgleich der Auszüge offen."
+        },
+        {
+          "turn": 2,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/baugruppe.md": "9afba973461a7842d8d21eefda830d9882cc7b992b717ac3271826d2aef02cc2"
+          },
+          "antwort": "**Nein. Nach Ihrer Schilderung ist die verlangte Zahlung ein Projektsteuerungshonorar. Die Bezeichnung „Bauträgerrate“ ist unzutreffend.**\n\nIhre eGbR ist selbst Bauherrin. Sie hat das Grundstück erworben, entscheidet über die Vergaben und trägt mit den Nachschüssen das Kostenrisiko. Ein Bauträgervertrag nach § 650u Abs. 1 BGB setzt voraus, dass derselbe Unternehmer sowohl den Bau oder Umbau als auch die Übertragung des Grundstückseigentums oder die Bestellung oder Übertragung eines Erbbaurechts schuldet. Der unabhängige Projektsteuerer schuldet Ihnen nach Ihrer Beschreibung allein die Koordination. Für sein Honorar gilt daher kein Bauträgerratenplan nach der MaBV.\n\n**Ob Sie jetzt zahlen müssen, hängt vom Projektsteuerungsvertrag ab.** Die falsche Rechnungsbezeichnung macht ein verdientes Honorar weder fällig noch beseitigt sie den Anspruch. Für die Einordnung als Dienst- oder Werkvertrag kommt es darauf an, ob der Projektsteuerer nur laufende Koordination oder einen bestimmten, überprüfbaren Erfolg schuldet. Ist die erste Zahlung etwa an die Vorlage eines Terminplans geknüpft, kommt es darauf an, ob er diesen wie vereinbart vorgelegt hat. Der Baubeginn allein genügt dafür nicht.\n\nBitte reichen Sie die **Leistungsbeschreibung und die Klausel zur ersten Honorarzahlung** aus dem abgeschlossenen Projektsteuerungsvertrag sowie die **Zahlungsanfrage mit Betrag, Frist und etwaigem Leistungsnachweis** nach. Damit lässt sich prüfen, ob der verlangte Betrag trotz der falschen Bezeichnung bereits fällig ist."
+        }
+      ],
+      "befund": "Bestimmt Bauherreneigenschaft und Kostenrisiko der eGbR und prüft das Honorar nach dem Steuerungsauftrag."
+    },
+    {
+      "fall": "VT06",
+      "einstieg": "skill/SKILL.md",
+      "einstieg_sha256": "bf9f8d92486167a771153b0f60e1a5d9f486dc0d642ea1e53d54d2a9fe20b882",
+      "dialog": [
+        {
+          "turn": 1,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md": "520b4ec59f2e3c9ca9b2ba41d36e1ea9ba90c8f32aee85fdfa93bdb851ade886"
+          },
+          "antwort": "**Entscheidend ist, wer Ihnen den Bau schuldet und ob derselbe Vertragspartner Ihnen auch das Grundstücks- oder Wohnungseigentum oder ein Erbbaurecht verschaffen muss.** Das Deckblatt „Bauträgerprojekt“ allein klärt das nicht. Davon hängt ab, nach welchen Regeln die erste Zahlung verlangt werden kann.\n\nFür die erste Einordnung genügen zwei Auszüge:\n\n1. **Die Vertragsstellen zu Bauleistung und Eigentumsübertragung**, jeweils mit dem Namen der verpflichteten Partei. Schuldet derselbe Anbieter beides, spricht das für einen Bauträgervertrag nach § 650u BGB. Gehört Ihnen das Grundstück bereits und schuldet der Anbieter nur den Bau, spricht das für einen Bauvertrag. Bei getrenntem Grundstückskauf und Bauauftrag reichen zunächst die entsprechenden Stellen aus beiden Verträgen. Geben Sie bitte an, ob die Texte Entwürfe sind oder die Verträge bereits geschlossen wurden.\n2. **Die Zahlungsklausel und die erste Zahlungsanfrage** mit Absender, Betrag, Zahlungsgrund und gegebenenfalls genanntem Bautenstand oder Sicherheit. Daraus lässt sich prüfen, ob der richtige Vertragspartner die vereinbarte erste Zahlung für den vorgesehenen Zeitpunkt anfordert.\n\nOb die Anfrage zum Vertrag passt und der Betrag bereits fällig ist, bleibt bis dahin offen."
+        },
+        {
+          "turn": 2,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/umbau-mehrere-vertraege.md": "4774d979e3060e362e240ec21735a2b97e8c35f10a5a9bd052c695cee7cf4db4"
+          },
+          "antwort": "**Nach den beiden Entwürfen spricht die Aufgabenverteilung zunächst für einen Grundstückskaufvertrag mit A und einen Bauvertrag über den Umbau mit B (§ 650a BGB).** Ein Bauträgervertrag nach § 650u BGB käme in Betracht, wenn A oder B sowohl den Umbau als auch die Eigentumsverschaffung als eigene Leistung schuldet. Eine bloße Bürgschaft für die Pflicht des anderen genügt dafür nicht.\n\n**Die Verträge können dennoch eine rechtliche Einheit bilden.** Das gemeinsame Angebot von A ist dafür ein Indiz. Die Klausel im Entwurf von B belegt bislang nur, dass der Umbau den beurkundeten Kauf voraussetzt. Für die Frage, ob auch der Bauvertrag mitbeurkundet werden muss (§ 311b Abs. 1 BGB), kommt es darauf an, ob nach dem Willen der Beteiligten **auch der Kauf vom Abschluss des Bauvertrags mit B abhängt**.\n\n**Als Beleg genügen zunächst die einschlägigen Passagen aus beiden Entwürfen und dem gemeinsamen Angebot:** die Klauseln zur Übereignung und zum Umbau einschließlich etwaiger Mithaftungs- oder Garantieerklärungen sowie die Passage, aus der hervorgeht, ob A die Fabrik auch ohne Beauftragung von B verkaufen würde. Falls die Entwürfe dazu schweigen, ist eine schriftliche Aussage von A zu genau diesem Punkt der nächste sinnvolle Beleg."
+        }
+      ],
+      "befund": "Trennt Verkäufer und Umbauunternehmer, bezeichnet die rechtliche Abhängigkeit als offene Frage und fordert Nachweise für Kopplung und Einstandspflichten."
+    },
+    {
+      "fall": "VT07",
+      "einstieg": "plugins/bautraegervertragspruefer/skills/bautraegervertrag-pruefen/SKILL.md",
+      "einstieg_sha256": "2845480ba4425ad4ea49ac17697b80728f045a54a4a7a69956450246f826a484",
+      "dialog": [
+        {
+          "turn": 1,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md": "520b4ec59f2e3c9ca9b2ba41d36e1ea9ba90c8f32aee85fdfa93bdb851ade886"
+          },
+          "antwort": "Entscheidend ist, **wer Ihnen die Bauleistung schuldet und wer Ihnen das Eigentum am Grundstück oder an der Wohnung verschaffen soll**. Das Deckblatt „Bauträgerprojekt“ lässt diese Zuordnung offen. Schuldet derselbe Vertragspartner beides, spricht das für einen Bauträgervertrag nach § 650u BGB. Das gilt auch, wenn er Ihnen anstelle des Eigentums ein Erbbaurecht bestellen oder übertragen soll. Bauen Sie auf eigenem Grund oder kaufen Sie das Grundstück von einem Dritten, ist der Bauvertrag gesondert einzuordnen.\n\nFür die erste Prüfung genügen drei Angaben beziehungsweise Auszüge. Persönliche Daten können Sie schwärzen.\n\n1. **Wer schuldet welche Leistung?** Bitte schicken Sie aus jeder einschlägigen Urkunde die Passagen zur Errichtung oder zum Umbau und zur Eigentumsübertragung, jeweils mit der Bezeichnung des Vertragspartners. Falls Ihnen das Grundstück bereits gehört, genügt dazu zunächst ein Hinweis.\n2. **Welcher Vertragsstand gilt?** Bitte geben Sie je Urkunde an, ob ein Entwurf, ein unterschriebener Vertrag oder eine notarielle Beurkundung vorliegt, jeweils mit Datum. Davon hängt ab, ob der Anbieter seine Anfrage bereits auf eine verbindliche Vereinbarung stützen kann.\n3. **Was wird auf welcher Grundlage verlangt?** Bitte schicken Sie die Zahlungsklausel samt Ratenplan und die erste Zahlungsanfrage mit Absender, Betrag, Zahlungsgrund, etwaiger Frist und beigefügten Nachweisen. So lässt sich abgleichen, ob der richtige Vertragspartner die vorgesehene Zahlung verlangt und ob deren Voraussetzungen belegt sind.\n\nBis dahin bleibt offen, ob die erste Zahlung zum Vertragsmodell passt und bereits fällig ist."
+        },
+        {
+          "turn": 2,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/bestand.md": "efc457e419562bd33c4f560f46bbf903fc76034e957c06162b48d7c0ded1114c"
+          },
+          "antwort": "**Nach § 4 kaufen Sie eine Bestandswohnung. Die verlangte „MaBV-Rate“ hat nach den vorliegenden Angaben keine vertragliche Grundlage.** Der private Verkäufer verkauft die seit 2004 genutzte Wohnung „im vorhandenen Zustand“ und übernimmt ausdrücklich „keine Bau-, Umbau- oder Renovierungspflicht“. Ein Bauträgervertrag nach § 650u Abs. 1 BGB setzt voraus, dass der Verkäufer neben der Eigentumsübertragung auch die Errichtung oder den Umbau schuldet. Die Bezeichnung „Bauträgerprojekt“ im Exposé begründet für sich genommen keine solche Pflicht.\n\n**Für die aktuelle Zahlungsanfrage zählt die Kaufpreisklausel.** Der Verkäufer kann durch seine Anfrage keine zusätzliche Rate einführen. Bezeichnet er allerdings eine bereits vereinbarte und fällige Kaufpreiszahlung irrtümlich als „MaBV-Rate“, kann er den Betrag aus dem Kaufvertrag verlangen. Zahlen Sie daher nicht allein aufgrund dieser Bezeichnung. Ein unabhängig davon fälliger Kaufpreis bleibt geschuldet.\n\nFür den konkreten Abgleich fehlen noch drei Unterlagen, gern geschwärzt:\n\n1. **Die Kaufpreis- und Fälligkeitsklausel aus der maßgeblichen Fassung**, mit einem Hinweis, ob und wann der Vertrag beurkundet wurde. Daraus ergibt sich, welche Zahlung vereinbart ist.\n2. **Die Zahlungsanfrage im Wortlaut**, einschließlich Betrag, Zahlungsgrund und etwaiger Frist. Daraus lässt sich erkennen, ob der Verkäufer einen Teil des Kaufpreises oder einen zusätzlichen Betrag verlangt.\n3. **Die notarielle Fälligkeitsmitteilung**, sofern der Vertrag sie vorsieht und sie Ihnen bereits zugegangen ist. Damit lässt sich prüfen, ob die vereinbarte Zahlungsfrist bereits läuft.\n\nDie Vertragsart lässt sich anhand von § 4 einordnen. Offen bleibt, ob der konkret verlangte Betrag als Kaufpreis fällig ist. Ein Abgleich mit aktuellen amtlichen Normtexten war in diesem Textchat nicht möglich."
+        }
+      ],
+      "befund": "Ordnet die langjährig genutzte Einheit ohne Baupflicht als Bestandskauf ein und prüft den Kaufpreis nach der vereinbarten Fälligkeit."
+    },
+    {
+      "fall": "VT08",
+      "einstieg": "plugins/bautraegervertragspruefer/skills/bautraegervertrag-pruefen/SKILL.md",
+      "einstieg_sha256": "2845480ba4425ad4ea49ac17697b80728f045a54a4a7a69956450246f826a484",
+      "dialog": [
+        {
+          "turn": 1,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md": "520b4ec59f2e3c9ca9b2ba41d36e1ea9ba90c8f32aee85fdfa93bdb851ade886"
+          },
+          "antwort": "**Entscheidend ist, wer Ihnen die Bauleistung und wer Ihnen das Eigentum am Grundstück oder an der Wohnung schuldet.** Das Deckblatt „Bauträgerprojekt“ beantwortet das nicht. Ob die erste Zahlung zur Vertragsart passt, ist deshalb noch offen. Bitte reichen Sie zunächst drei Angaben nach. Die einschlägigen Auszüge genügen.\n\n1. **Wer schuldet welche Leistung?** Bitte zeigen Sie die Vertragsstellen zur Errichtung oder zum Umbau und zur Übertragung des Eigentums oder eines Erbbaurechts, jeweils mit dem Namen des Vertragspartners. Gibt es einen Grundstückskaufvertrag und einen gesonderten Bauvertrag, benötige ich die Stellen aus beiden Urkunden. Gehört Ihnen das Grundstück bereits, geben Sie das bitte an. Schuldet derselbe Anbieter Bauleistung und Rechtsübertragung, spricht das für einen Bauträgervertrag nach § 650u BGB. Baut er auf Ihrem eigenen Grundstück, kommt ein Bauvertrag in Betracht.\n2. **Welchen Stand hat der Vertrag?** Bitte geben Sie an, ob Sie nur einen Entwurf erhalten oder bereits einen Vertrag geschlossen haben und an welchem Datum er gegebenenfalls unterzeichnet oder beurkundet wurde. Davon hängt ab, ob die angeführte Zahlungsklausel bereits verbindlich ist.\n3. **Was wurde vereinbart und was wird jetzt verlangt?** Bitte senden Sie die Zahlungsklausel einschließlich der Voraussetzungen für die erste Rate sowie den Wortlaut der Zahlungsanfrage mit Absender, Betrag, Zahlungsgrund und genanntem Zahlungstermin. Damit lässt sich prüfen, ob der richtige Vertragspartner die vereinbarte Rate verlangt und ob der angegebene Anlass die Anforderung trägt.\n\nAus dem Deckblatt und dem Eingang der Anfrage allein lässt sich keine Fälligkeit ableiten."
+        },
+        {
+          "turn": 2,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/umbau-altbausubstanz.md": "462c19a9926e5d6aca25210f2f97ef01f9b82d8892c4fb4fbfe89856b3a92ccd"
+          },
+          "antwort": "**Nach Ihren Angaben ist die Dachstuhlrate derzeit nicht fällig. Einen Austausch jeder alten Treppenstufe schuldet die Projektgesellschaft allein aufgrund der vereinbarten Reinigung ebenfalls nicht.**\n\nDie Projektgesellschaft schuldet Ihnen sowohl die Eigentumsübertragung an der Wohnung als auch den Umbau. Damit liegt nach Ihrer Schilderung ein **Bauträgervertrag über eine Altbausanierung** im Sinne von § 650u Abs. 1 BGB vor. Welcher Zustand geschuldet ist, richtet sich für jedes Bauteil nach dem vereinbarten Leistungsumfang.\n\n**Dachstuhl und Zahlung.** Der Zahlungsplan knüpft die Rate ausdrücklich an den „erneuerten Dachstuhl“. Solange der alte Dachstuhl unverändert steht, fehlt dieser vereinbarte Bautenstand. Die Anforderung passt also ihrem Gegenstand nach zum Vertrag, kommt aber zu früh. Sie müssen die angeforderte Dachstuhlrate jetzt nicht zahlen. Sie können der Projektgesellschaft schreiben: „Der Zahlungsplan setzt für diese Rate den erneuerten Dachstuhl voraus. Der alte Dachstuhl steht unverändert. Bitte stellen Sie die Zahlungsanforderung zurück und weisen Sie mir bei einer erneuten Anforderung die vereinbarte Erneuerung nach.“\n\n**Historisches Treppenhaus.** Für das Treppenhaus ist nach Ihrer Schilderung nur Reinigung vereinbart. Alter und übliche Gebrauchsspuren einer Stufe begründen für sich genommen keinen Anspruch auf Austausch. Ist eine bestimmte Stufe etwa lose oder bruchgefährdet, ist gesondert zu prüfen, ob die Treppe sicher nutzbar ist und welche Abhilfe erforderlich ist. Auch dann kann eine fachgerechte Reparatur genügen.\n\nFür die abschließende Prüfung genügen die Zahlungsklausel und die Baubeschreibung zu Dachstuhl und Treppenhaus aus der maßgeblichen Vertragsfassung. Bitte geben Sie beim Nachreichen an, ob und wann diese Fassung beurkundet wurde. Die Einordnung oben beruht auf Ihrer Wiedergabe. Die Urkunde und aktuelle amtliche Volltexte lagen mir im Textchat nicht zur Prüfung vor."
+        }
+      ],
+      "befund": "Unterscheidet zu erneuernden Dachstuhl und bloße Reinigung der Bestandstreppe. Hält die nicht erreichte Rate zurück."
+    },
+    {
+      "fall": "VT09",
+      "einstieg": "skill/MINI_SKILL.md",
+      "einstieg_sha256": "8ae75c17c887fd36651b21c8715c90e086c3c6d4e2014dc6f6956647dffd2db8",
+      "dialog": [
+        {
+          "turn": 1,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md": "520b4ec59f2e3c9ca9b2ba41d36e1ea9ba90c8f32aee85fdfa93bdb851ade886"
+          },
+          "antwort": "Entscheidend ist, **wer Ihnen für die konkrete Einheit welche Bauleistung schuldet und wer Ihnen das Eigentum übertragen oder ein Erbbaurecht bestellen bzw. übertragen soll**. „Bauträgerprojekt“ auf dem Deckblatt lässt das offen. Schuldet derselbe Vertragspartner sowohl die Errichtung oder den Umbau als auch die Rechtsverschaffung, spricht das für einen Bauträgervertrag (§ 650u Abs. 1 BGB). Bauen Sie auf eigenem Grund, kann die Anfrage dagegen einen Abschlag aus einem Bauvertrag betreffen.\n\nDie erste Zahlungsanfrage liegt bereits vor. Ob sie zum Vertrag passt und der Betrag fällig ist, lässt sich anhand des Deckblatts noch nicht beurteilen. Bitte reichen Sie für diese begrenzte Prüfung drei Angaben nach. Persönliche Daten können Sie schwärzen.\n\n1. **Vertragsstelle zum Vertragsgegenstand.** Bitte senden Sie den Wortlaut zu den Parteien, der Einheit, der Bauleistung und der Eigentumsübertragung bzw. dem Erbbaurecht. Gibt es getrennte Kauf- und Bauverträge, bitte die entsprechenden Auszüge aus beiden. Geben Sie jeweils Urkundennummer und Datum oder den Entwurfsstand an.\n2. **Zahlungsregelung.** Bitte senden Sie die Klausel über Preis, erste Rate und Fälligkeitsvoraussetzungen einschließlich eines dort genannten Zahlungsplans.\n3. **Zahlungsanfrage mit Frist.** Bitte senden Sie den Wortlaut mit Absender, Betrag, Zahlungsgrund, genanntem Bautenstand und verlangtem Zahlungstermin. Legen Sie die mitgesandten oder bereits gesondert erhaltenen Nachweise bei, etwa eine notarielle Fälligkeitsmitteilung.\n\nDamit lässt sich zuerst die Forderung dem richtigen Vertrag zuordnen und anschließend prüfen, ob der Absender den verlangten Betrag bereits beanspruchen kann."
+        },
+        {
+          "turn": 2,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/nachzuegler.md": "6a6b31648b119838b3c7e8da80251e1cfd420620aac264494c5e4d1289fc96a9"
+          },
+          "antwort": "**Nach Ihrer Schilderung bindet Sie die frühere Abnahme durch den Erstverwalter nicht.** Er hat für andere Erwerber gehandelt. Sie haben ihm keine Vollmacht erteilt. Die Formularklausel, nach der diese Abnahme „auch mich binden“ soll, ersetzt Ihre eigene Abnahmeentscheidung nicht. Sie nimmt Ihnen die Möglichkeit, das Gemeinschaftseigentum an der Ihnen geschuldeten Leistung zu messen und die Abnahme bei einem wesentlichen Mangel zu verweigern. Eine solche vorformulierte Bindung benachteiligt Sie unangemessen und ist nach § 307 Abs. 1 BGB unwirksam. Dafür ist unerheblich, ob die damalige Abnahme für die anderen Käufer wirksam war.\n\nFür Ihre Abnahme zählt der **ausdrücklich zugesagte Schallschutz**. Dass die letzte Wohnung äußerlich fertig erscheint, sagt über die Erfüllung dieser Zusage nichts aus. Soweit sie das Gemeinschaftseigentum betrifft, können Sie dessen Abnahme bei einer wesentlichen Abweichung vom vereinbarten Schallschutz verweigern. Ist die Abweichung nur unwesentlich, müssen Sie grundsätzlich abnehmen. Einen bekannten Mangel sollten Sie dann im Protokoll konkret bezeichnen und sich Ihre Mängelrechte ausdrücklich vorbehalten (§ 640 Abs. 1 und 3 BGB).\n\nDie fünfjährige Verjährungsfrist für Ihre werkvertraglichen Mängelansprüche am Gemeinschaftseigentum beginnt grundsätzlich mit einer **für Sie wirksamen Abnahme** (§ 634a Abs. 1 Nr. 2, Abs. 2 BGB). Der Jahre zurückliegende Termin setzt diese Frist für Sie nicht in Gang. Eine spätere eigene Abnahme wäre gesondert zu beurteilen. Die Einschätzung beruht auf Ihrer Wiedergabe der Klausel. Der vollständige Wortlaut und aktuelle Entscheidungsvolltexte lagen mir nicht zur Prüfung vor."
+        }
+      ],
+      "befund": "Ordnet den Nachzüglererwerb anhand des eigenen Herstellungsversprechens ein. Frühere Vertreterabnahme und Beginn der eigenen Verjährungsfrist werden getrennt geprüft."
+    },
+    {
+      "fall": "VT10",
+      "einstieg": "plugins/bautraegervertragspruefer/skills/bautraeger-zahlungsrate-pruefen/SKILL.md",
+      "einstieg_sha256": "83d98fe20c235a98995911d70162e91b529d57582826368cb724f6c06a292f7a",
+      "dialog": [
+        {
+          "turn": 1,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md": "520b4ec59f2e3c9ca9b2ba41d36e1ea9ba90c8f32aee85fdfa93bdb851ade886"
+          },
+          "antwort": "**Ergebnis:** Die Bezeichnung „Bauträgerprojekt“ auf dem Deckblatt reicht für die Einordnung nicht aus. Entscheidend ist, welche Leistungen der Anbieter Ihnen vertraglich schuldet.\n\nBitte schicken Sie zunächst **die Klausel zum Vertragsgegenstand**. Daraus sollte hervorgehen, wer sich Ihnen gegenüber zum Bau oder Umbau verpflichtet und ob dieselbe Vertragspartei Ihnen auch das Grundstücks- oder Wohnungseigentum übertragen oder ein Erbbaurecht bestellen oder übertragen muss. Sind diese Pflichten in getrennten Klauseln geregelt, genügen beide Auszüge mit den jeweiligen Parteibezeichnungen.\n\nSchuldet dieselbe Partei beide Leistungen, spricht das für einen Bauträgervertrag. Schuldet der Anbieter ausschließlich Bauleistungen auf Ihrem eigenen Grundstück, spricht das für einen Bauvertrag. Sind verschiedene Parteien beteiligt, kommt es darauf an, wie die Verträge miteinander verknüpft sind.\n\n**Für den Abgleich mit der ersten Zahlungsanfrage** brauche ich anschließend die Zahlungsklausel zur ersten Rate und den Wortlaut der Anfrage. Dann lässt sich prüfen, ob der Anbieter die Zahlung bei dem vertraglich vorgesehenen Anlass verlangt."
+        },
+        {
+          "turn": 2,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/widerspruch-urkunden.md": "9ec3a31d0c89b8dbac7223133c2acc07447ad2ef63f5185a990f285ce70623cd"
+          },
+          "antwort": "**Ergebnis:** Die Fälligkeit der verlangten 30 % ist noch offen. Die Rechnung nennt mit „Wohnung 1“ den Gegenstand der Urkunde 38, mit „Urkunde 39“ aber den Vertrag über Wohnung 2. Welche Zahlung die Gesellschaft verlangt, muss sie klarstellen. Unabhängig davon kann aus jeder Urkunde bereits eine eigene Zahlungsfrist laufen.\n\n- **Urkunde 38 – Wohnung 1:** Das ist ein Kaufvertrag über eine Bestandswohnung. Für die Fälligkeit gilt die Kaufpreisklausel dieser Urkunde. Ein Baufortschritt löst hier keine Zahlung aus. Ob 30 % geschuldet sind, hängt davon ab, ob die Urkunde eine solche Teilzahlung vorsieht und deren Voraussetzungen erfüllt sind.\n- **Urkunde 39 – Wohnung 2:** Nach Ihren Angaben liegt ein Bauträgervertrag vor, weil dieselbe Gesellschaft die Eigentumsübertragung und den umfassenden Umbau schuldet. Ob 30 % als erste Rate passen, richtet sich nach der Zahlungsabrede. Knüpft sie an den Baufortschritt an, kommt es beim Altbau darauf an, welche Leistungen bereits erbracht sind und welchen Stand der Umbau für diese Rate erreicht haben muss. Die Prozentangabe allein belegt die Fälligkeit nicht.\n\n**Für die Klärung brauche ich drei Angaben:**\n\n1. Die schriftliche Bestätigung der Gesellschaft, für welche Wohnung und aus welcher Urkunde sie die 30 % verlangt. Bitten Sie um eine entsprechend berichtigte Rechnung.\n2. Den Wortlaut der Kaufpreisfälligkeitsklausel aus Urkunde 38. Damit lässt sich prüfen, ob für Wohnung 1 unabhängig von der Rechnung eine Frist läuft.\n3. Den Wortlaut der Zahlungsklausel zur ersten Rate aus Urkunde 39. Daraus ergibt sich, welcher Anlass die Rate für Wohnung 2 auslöst und wie der Betrag bemessen wird.\n\n**Bis dahin:** Veranlassen Sie allein aufgrund der widersprüchlichen Rechnung keine Überweisung. Prüfen Sie jetzt für jede Urkunde, ob Ihnen bereits eine notarielle Fälligkeitsmitteilung zugegangen ist, und halten Sie das jeweilige Zugangsdatum fest. Die Bitte um Rechnungsberichtigung verlängert eine bereits laufende Vertragsfrist nicht."
+        }
+      ],
+      "befund": "Ordnet Urkunde 38/Einheit 1 und Urkunde 39/Einheit 2 unterschiedlichen Programmen zu. Fordert eindeutige Zuordnung der widersprüchlichen Rechnung. Prüft je Urkunde den Zugang der notariellen Fälligkeitsmitteilung und nennt ausdrücklich fortlaufende, durch die Berichtigungsbitte unberührte Fristen."
+    },
+    {
+      "fall": "VT11",
+      "einstieg": "plugins/bautraegervertragspruefer/skills/bautraeger-zahlungsrate-pruefen/SKILL.md",
+      "einstieg_sha256": "83d98fe20c235a98995911d70162e91b529d57582826368cb724f6c06a292f7a",
+      "dialog": [
+        {
+          "turn": 1,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md": "520b4ec59f2e3c9ca9b2ba41d36e1ea9ba90c8f32aee85fdfa93bdb851ade886"
+          },
+          "antwort": "**Ergebnis**  \nDie Bezeichnung „Bauträgerprojekt“ auf dem Deckblatt reicht für die Einordnung nicht aus. Ob die erste Zahlungsanfrage zur Vertragsart passt, ist deshalb noch offen.\n\nBitte reichen Sie zunächst **die Vertragsklausel zu den Leistungspflichten** im Wortlaut nach, einschließlich der Bezeichnung der verpflichteten Vertragsparteien. Entscheidend ist, wer Ihnen die Errichtung oder den Umbau schuldet und wer sich verpflichtet, Ihnen das Grundstücks- oder Wohnungseigentum zu übertragen oder ein Erbbaurecht zu bestellen oder zu übertragen.\n\nSchuldet Ihnen derselbe Vertragspartner beides in einem Vertrag, spricht das für einen Bauträgervertrag nach § 650u BGB. Gehört Ihnen das Grundstück bereits und schuldet der Anbieter allein die Bauleistung, spricht das für einen Bauvertrag. Sind zwei verschiedene Vertragspartner genannt, kommt es darauf an, wie die Verträge miteinander verknüpft sind.\n\nFür den anschließenden Abgleich reichen die **Zahlungsklausel zur ersten Zahlung** und der **Wortlaut der Zahlungsanfrage**. Damit lässt sich prüfen, ob der Anbieter die vertraglich vorgesehene Zahlung aus dem vereinbarten Anlass anfordert."
+        },
+        {
+          "turn": 2,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/inputs/vorauszahlung-buergschaft.md": "b301ae9e9443a3e006c364e8774d8d60d6660d556e6fe5464bd5ad7bab4c74e0"
+          },
+          "antwort": "**Ergebnis**  \nNein. Nach Ihren Angaben schuldet Ihnen dieselbe Projektgesellschaft die Übertragung des Grundstückseigentums und die Errichtung des Hauses. Damit liegt ein Bauträgervertrag nach § 650u BGB vor. Die vereinbarten **80.000 Euro Vorauszahlung** setzen eine Sicherheit nach § 7 MaBV voraus. Das beschriebene Bankangebot erfüllt diese Bedingung nicht. **Aus diesem Abruf sind derzeit 0 Euro zu zahlen.** Der Baubeginn ersetzt die Sicherheit nicht.\n\n**Begründung**  \nDas Angebot der Bank gibt Ihnen noch keinen durchsetzbaren Anspruch gegen die Bank. Die vereinbarte Sicherheit muss Ihre Ansprüche auf Rückgewähr oder Auszahlung der vorab geleisteten 80.000 Euro im gesetzlichen Umfang absichern. Die Angabe „für Fertigstellung“ weist diese Rückzahlungsdeckung nicht aus. Selbst wenn die Bank ihr Angebot verbindlich und mit dem erforderlichen Sicherungszweck umsetzte, fehlten bei **50.000 Euro** noch **30.000 Euro** Deckung. Auch eine Teilzahlung von 50.000 Euro lässt sich daraus nicht ableiten.\n\n**Für Ihre nächsten Schritte**  \nLassen Sie die 80.000 Euro vorerst unbezahlt. Bitte reichen Sie den vollständigen Wortlaut der Vorauszahlungsklausel nach, damit sich Auslöser und Frist bestimmen lassen. Falls die Bank inzwischen eine verbindliche Sicherungsurkunde erteilt hat, reichen Sie bitte auch diese mit ihrem Zugangsdatum nach. Dann lassen sich Umfang, Laufzeit und eine mögliche Fälligkeit prüfen. Antworten Sie möglichst vor Ablauf einer im Abruf genannten Frist. Die Bitte um Nachweise verlängert eine vertragliche Frist nicht.\n\n**Antwortentwurf an die Projektgesellschaft**\n\nSehr geehrte Damen und Herren,\n\nnach unserer Urkunde sind die angeforderten 80.000 Euro gegen Sicherheit nach § 7 MaBV zu zahlen. Mir liegt bislang lediglich ein Bankangebot über 50.000 Euro „für Fertigstellung“ vor. Eine verbindliche Absicherung meiner Rückzahlungsansprüche ist daraus nicht ersichtlich. Zudem unterschreitet der angebotene Betrag die Vorauszahlung um 30.000 Euro.\n\nBitte übermitteln Sie mir die verbindliche Sicherungsurkunde, aus der die Deckung meiner Rückzahlungsansprüche für die gesamten 80.000 Euro und die Dauer des Schutzes hervorgehen. Bitte benennen Sie außerdem die Vertragsbestimmung, aus der Sie die Fälligkeit mit Baubeginn und die geltend gemachte Zahlungsfrist ableiten. Solange die vereinbarte Sicherheit aussteht, leiste ich auf diesen Abruf keine Zahlung.\n\nMit freundlichen Grüßen  \n[Name]"
+        }
+      ],
+      "befund": "Erkennt fehlende Rückgewährdeckung, das bloße Angebot, die 30.000-Euro-Lücke und die vom Baufortschritt unabhängige §-7-Sicherung."
+    },
+    {
+      "fall": "MW01",
+      "einstieg": "plugins/bautraegervertragspruefer/skills/bautraegervertrag-pruefen/SKILL.md",
+      "einstieg_sha256": "2845480ba4425ad4ea49ac17697b80728f045a54a4a7a69956450246f826a484",
+      "dialog": [
+        {
+          "turn": 1,
+          "eingaben": {
+            "tests/workflow/vertragsmodelle/marewald-einstieg.md": "992d35e8b6126cdd544791e1a57ef7d54d43c083dbf77cea7cb5c7ad732c432b",
+            "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md": "51418ae0399cdaf5583a0d8b814a166ae107ef266512acab04636d667cbd1820"
+          },
+          "antwort": "**Ja. Der Text genügt, um den Entwurf als Bauträgervertrag über den Erwerb einer neu zu errichtenden Eigentumswohnung nach § 650u Abs. 1 BGB einzuordnen.** Die Marewald Wohnbau GmbH & Co. KG soll gegenüber Dr. Henrike Salentin-Voßkamp in derselben Urkunde sowohl die Herstellung als auch die Eigentumsverschaffung übernehmen. Als Beurkundungstermin war der 12. Juni 2026 vorgesehen. Ob die Beurkundung stattgefunden hat, bleibt offen. Die vorliegende Fassung trägt eine freie UR-Nummer und freie Unterschriftsfelder.\n\n**Einheit.** § 1.1 bezeichnet die Wohnung **C-2.14 im 2. Obergeschoss von Haus C** mit Kellerabteil K-C14 und Sondernutzungsrechten an Balkon B-C14 und Tiefgaragenstellplatz TG-58. Das Wohnungseigentum besteht aus einem Miteigentumsanteil von 312/100.000 am Grundstück Gemarkung Eilbek, Flur 12, Flurstück 344/9, verbunden mit dem Sondereigentum an der Wohnung. Angegeben ist das Wohnungsgrundbuch des Amtsgerichts Hamburg von Eilbek, Blatt 9 318.\n\n**Die beiden tragenden Leistungspflichten der KG**\n\n1. **Herstellung.** Nach § 5.1 verpflichtet sich die Verkäuferin, „den Kaufgegenstand entsprechend der mitbeurkundeten Anlage Baubeschreibung (Fassung Mai 2026, Version 3.0), den genehmigten Plänen und den anerkannten Regeln der Technik herzustellen“. Vorbemerkung 0.1 beschreibt die Errichtung des Wohnquartiers. Damit ist die Bauleistung für die zu erwerbende Neubauwohnung ausdrücklich vereinbart.\n2. **Eigentumsverschaffung.** § 10.1 bezeichnet ausdrücklich den „Anspruch des Käufers auf Eigentumsverschaffung“ und sieht zu dessen Sicherung eine Auflassungsvormerkung vor. § 11 enthält die zugehörige Auflassung mit den Worten „Verkäufer und Käufer sind über den Eigentumsübergang einig und bewilligen und beantragen die Eintragung.“ Gegenstand der Übertragung ist das in § 1.1 bezeichnete Wohnungseigentum.\n\n**Prüfprogramm.** Maßgeblich ist das Programm für den **Neubau mit Erwerb von Wohnungseigentum**. Eine spätere Sachprüfung würde das werkvertragliche Bausoll anhand von § 5, Baubeschreibung und Plänen sowie die Abnahme von Sonder- und Gemeinschaftseigentum nach §§ 6.2 und 6.3 erfassen. Für die kaufrechtliche Eigentumsverschaffung wären die Zuordnung der Einheit und der Sondernutzungsrechte anhand von Grundbuch, Teilungserklärung samt Nachtrag und Aufteilungsplan sowie Vormerkung, Lastenfreistellung und Umschreibung zu prüfen. Für die Zahlung sieht § 3.2 sieben Raten nach Baufortschritt gemäß § 3 MaBV vor. Für die hier erbetene Einordnung sind weitere Unterlagen entbehrlich."
+        }
+      ],
+      "befund": "Ordnet C-2.14 in Haus C, § 5.1 und §§ 10.1/11 sowie den §-3.2-Ratenplan korrekt zu. Führt den Plan als Entwurf mit freier UR-Nummer und erkennt den getrennten Kauf- und Herstellungsteil samt WEG-Bezug ohne neue Tatsachenfrage."
+    }
+  ]
+}

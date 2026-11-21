@@ -249,6 +249,52 @@ class DialogueFixtureTests(unittest.TestCase):
             self.assertIsNone(turn["raw_response_file"])
 
 
+class ContractModelFixtureTests(unittest.TestCase):
+    """Each continuation changes only the evidence available after the first answer."""
+
+    directory = WORKFLOW / "vertragsmodelle"
+
+    def test_legal_entrypoints_identify_acquisition_and_payment_model(self):
+        for path in (*PROMPTS, *SKILLS[:2]):
+            with self.subTest(entrypoint=path):
+                text = normalize(path.read_text(encoding="utf-8")).casefold()
+                for term in ("vertragstyp", "erbbaurecht", "endzahlung", "§ 7"):
+                    self.assertIn(term, text)
+                self.assertRegex(text, r"eigene[mnr]? (?:grund|grundstück)")
+                self.assertRegex(text, r"urkunde|vertragsfassung")
+
+    def test_disputed_invoice_reference_preserves_contractual_deadlines(self):
+        payment = normalize(SKILLS[1].read_text(encoding="utf-8")).casefold()
+        self.assertRegex(payment, r"unabhängig von der rechnung.{0,140}fälligkeitsmitteilung")
+        self.assertRegex(payment, r"berichtigung.{0,40}verlängert.{0,40}nicht")
+
+    def test_technical_word_scope_keeps_legal_classification_conditional(self):
+        word = normalize(SKILLS[2].read_text(encoding="utf-8")).casefold()
+        for term in ("rein technischen auftrag", "einheit", "bauleistung", "erbbaurecht"):
+            self.assertIn(term, word)
+
+    def test_model_dialogues_and_distinct_supplements(self):
+        registry = json.loads((self.directory / "dialoge.json").read_text(encoding="utf-8"))
+        expectations = json.loads((self.directory / "erwartungen.json").read_text(encoding="utf-8"))
+        case_ids = [f"VT{number:02}" for number in range(1, 12)]
+        self.assertEqual(validate_dialogues(registry, expectations, case_ids=case_ids,
+                                           turn_numbers=(1, 2)), [])
+
+        first_input = self.directory / "inputs/offener-einstieg.md"
+        registered = set()
+        for case in registry["cases"]:
+            with self.subTest(case=case["id"]):
+                first, followup = case["turns"]
+                self.assertEqual(first["inputs"], [str(first_input.relative_to(ROOT))])
+                self.assertEqual(len(followup["inputs"]), 1)
+                path = ROOT / followup["inputs"][0]
+                self.assertEqual(path.parent, first_input.parent)
+                self.assertNotEqual(path, first_input)
+                self.assertNotIn(path, registered)
+                registered.add(path)
+        self.assertEqual(registered | {first_input}, set(first_input.parent.glob("*.md")))
+
+
 class DefaultPackageFixtureTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

@@ -1,0 +1,1 @@
+Die Projektgesellschaft überträgt mir eine Altbauwohnung und schuldet die komplette Erneuerung von Dachstuhl und Haustechnik. Beim historischen Treppenhaus ist nur Reinigung vereinbart. Die Rate knüpft ausdrücklich an den erneuerten Dachstuhl an; der alte Dachstuhl steht noch unverändert. Kann sie diese Rate jetzt verlangen und muss sie jede alte Treppenstufe ersetzen?

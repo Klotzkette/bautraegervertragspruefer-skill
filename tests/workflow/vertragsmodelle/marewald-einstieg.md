@@ -1,0 +1,1 @@
+Ich habe den beigefügten Mustervertrag vorliegen. Bitte ordnen Sie nur den Vertrag und die Einheit zu, benennen Sie die beiden tragenden Leistungspflichten mit Fundstellen in der Urkunde und sagen Sie, welches Prüfprogramm sich daraus ergibt. Genügt der vorliegende Text für diese Einordnung? Noch keine vollständige Vertragsprüfung.

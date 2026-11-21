@@ -1,0 +1,1 @@
+Wir sechs haben als eGbR das Grundstück selbst gekauft, beschließen jede Vergabe und tragen Nachschüsse. Der Vertrag eines unabhängigen Projektsteuerers verspricht uns nur Koordination. Er schuldet weder eine Wohnung noch die Übertragung des Eigentums. Sein Honorar nennt er jetzt „Bauträgerrate“. Ist das zutreffend?
