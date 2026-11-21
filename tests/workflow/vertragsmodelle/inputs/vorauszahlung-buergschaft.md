@@ -1,0 +1,1 @@
+Die Projektgesellschaft verschafft mir das Grundstück und errichtet mein Haus. Laut Urkunde soll ich 80.000 Euro gegen „Sicherheit nach § 7 MaBV“ vorab zahlen. Die Bank hat nur ein Angebot über 50.000 Euro „für Fertigstellung“ gemacht. Jetzt sei mit Baubeginn angeblich alles fällig. Ist meine Vorauszahlung so gedeckt?

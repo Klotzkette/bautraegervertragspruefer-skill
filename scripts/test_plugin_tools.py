@@ -2,6 +2,9 @@
 """Behavioral tests for local tools; does not claim to evaluate an LLM."""
 
 import importlib.util
+import json
+import subprocess
+import sys
 import tempfile
 import unittest
 from decimal import Decimal
@@ -32,6 +35,22 @@ class PaymentTests(unittest.TestCase):
         self.assertEqual(lease["mabv_stufen"][1]["betrag_eur"], "32000.00")
         self.assertEqual(land["mabv_stufen"][-1]["betrag_eur"], "3500.00")
         self.assertEqual(lease["mabv_stufen"][-1]["betrag_eur"], "4000.00")
+
+    def test_cli_identifies_explicit_right_and_legacy_assumption(self):
+        command = [sys.executable, rates.__file__, "--preis", "300000"]
+        for options, model, first_rate, assumed in (
+            ([], "Grundstückseigentum", "90000.00", True),
+            (["--grundstueckseigentum"], "Grundstückseigentum", "90000.00", False),
+            (["--erbbaurecht"], "Erbbaurecht", "60000.00", False),
+        ):
+            with self.subTest(options=options):
+                result = json.loads(subprocess.check_output(command + options))
+                self.assertEqual(result["rechtsmodell"], model)
+                self.assertEqual(result["mabv_stufen"][0]["betrag_eur"], first_rate)
+                self.assertEqual("modellannahme" in result, assumed)
+        conflict = subprocess.run(command + ["--grundstueckseigentum", "--erbbaurecht"], capture_output=True)
+        self.assertNotEqual(conflict.returncode, 0)
+        self.assertEqual(conflict.stdout, b"")
 
     def test_three_case_amounts(self):
         for price, expected in (("828000", "156492.00"), ("674000", "127386.00"), ("742000", "140238.00")):

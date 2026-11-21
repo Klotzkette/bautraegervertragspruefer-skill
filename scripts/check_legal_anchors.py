@@ -44,6 +44,7 @@ ALLOWED_HOSTS = {
     "www.recht.bund.de",
     "www.gesetze-im-internet.de",
     "www.bundestag.de",
+    "dserver.bundestag.de",
     "www.dnoti.de",  # Gerichtliche Entscheidungsabdrucke; keine redaktionellen Ersatzleitsätze.
     "fundstellensuche.de",  # Private Gerichtsreproduktion; Beleggrenze bleibt im Eintrag sichtbar.
 }
@@ -99,7 +100,11 @@ REQUIRED_DOCKETS = {
     "V ZR 132/23",  # Gesamt-GdWE bündelt Ansprüche auch bei Untergemeinschaften
     "V ZR 75/18",  # Warnpflichten des bauträgernahen Verwalters
     "VII ZR 388/00",  # Vollstreckungsunterwerfung mit Nachweisverzicht
-    "VII ZR 169/25",  # Verfahrensradar: keine Sachentscheidung zum Ratenplan
+    "VII ZR 169/25",  # Wesentliche Mängel, Schlussrate und Nichtigkeit des Zahlungsplans
+    "VII ZR 119/23",  # Vorschuss und Folgeschaden nach unwirksamer Erstverwalterabnahme
+    "VII ZR 4/24",  # Unwiderrufliche Vollmacht und spätere konkludente Abnahme
+    "VII ZR 210/05",  # Neubaugleiche Altbausanierung
+    "VII ZR 156/13",  # Bereits langjährig fertiggestellte und vermietete Wohnungen
     "XI ZR 12/25",  # Verfahrensradar: keine materielle §-7-MaBV-Klärung
     "V ZR 189/24",  # Stimmrechtsbeschränkungen in der Gemeinschaftsordnung
     "V ZR 98/25",  # Feststellung/Beschlussersetzung zur Gemeinschaftsordnung
@@ -376,7 +381,7 @@ def main() -> None:
         if parsed.scheme != "https":
             fail(f"legislation gate uses non-HTTPS URL: {url}")
         host = (parsed.hostname or "").lower()
-        if host not in {"www.recht.bund.de", "www.gesetze-im-internet.de", "www.bundestag.de"}:
+        if host not in {"www.recht.bund.de", "www.gesetze-im-internet.de", "www.bundestag.de", "dserver.bundestag.de"}:
             fail(f"legislation gate uses disallowed host {host}: {url}")
         if url in seen_urls:
             fail(f"legislation URL duplicates a case-law source: {url}")

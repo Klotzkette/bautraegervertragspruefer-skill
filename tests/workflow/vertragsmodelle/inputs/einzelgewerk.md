@@ -1,0 +1,1 @@
+Das Grundstück gehört uns. Wir privaten Bauherren vergeben jeden Auftrag selbst. Unser Vertragspartner macht nur die Dachdeckerarbeiten am Neubau. Seine erste Rechnung heißt „Bauträgerrate“. Welcher Vertrag gilt?

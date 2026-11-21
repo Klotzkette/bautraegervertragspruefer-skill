@@ -1,0 +1,1 @@
+Das Grundstück steht bereits seit 2018 in meinem Namen. Ich lasse dort privat ein ganzes neues Wohnhaus von einem Generalunternehmer schlüsselfertig bauen. Er schuldet mir keinerlei Recht am Grundstück. Seine Rechnung verweist auf eine erste Bauträgerrate. Wie prüfen Sie die Zahlungsgrundlage?

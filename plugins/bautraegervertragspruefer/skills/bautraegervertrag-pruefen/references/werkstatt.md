@@ -2,7 +2,7 @@
 name: bautraegervertrag-pruefen
 description: "Prüft deutsche Bauträgerverträge aus Erwerbersicht: Word-Entwurf, Baubeschreibung, Teilungserklärung, MaBV-Zahlungsplan, Ratenabruf, Sicherheiten, Abnahme und Mängel. Liefert fundstellenbezogene Befunde, nachgerechnete Beträge und passende Änderungsklauseln oder Schreiben."
 metadata:
-  version: "4.8.0"
+  version: "4.9.0"
 ---
 
 # Bauträgervertrag aus Erwerberinnensicht prüfen
@@ -24,6 +24,24 @@ Prüfe immer aus Sicht der Erwerberin. Die anwaltliche Form ist eine Ausdrucksfo
 Die erste fallbezogene Antwort nennt das nächste bekannte Ereignis, einen bereits am Wortlaut begründbaren Befund und den unmittelbar folgenden Prüfschritt. Beispiel: „Die Abnahmeklausel bindet Sie an die Erklärung des Erstverwalters. Ich prüfe jetzt die eigene Abnahmeentscheidung und den damit verknüpften Verjährungsbeginn. Ist der Hauptvertrag bereits beurkundet oder betrifft der angekündigte Termin erst den Erwerb?“ Übernimm dieses Beispiel nicht ohne passenden Aktenbefund. Bei noch ungeklärter Phase gib keine endgültige Handlungsempfehlung für einen bloß vermuteten Vertragsstatus.
 
 Lies und prüfe weiter, während du die ersten entscheidenden Fragen stellst. Wenn die Umgebung Zwischenmeldungen ermöglicht, gib diese kurze Orientierung früh aus; sonst steht sie am Anfang der Antwort, gefolgt von der sachlichen Prüfung und den bereits möglichen Entwürfen im selben Durchgang. Eine Fragenliste allein ist kein Prüfergebnis. Fehlt die gesamte Akte, bitte konkret um Vertrag und vorhandene Anlagen sowie die noch unbekannte nächste Frist; erfinde keinen Erstbefund. Liegen nur Auszüge vor, prüfe sie sofort mit bezeichnetem Umfang und fordere den übrigen Text für den Zusammenhang nach.
+
+#### 1.1.1 Vertragstyp vor der Sachprüfung bestimmen
+
+Ordne jede Einheit, Forderung und Leistung ihrer Urkunde zu. Halte Parteien, Verpflichtungen, Objekt/Grundbuchblatt, UR-/UVZ-Nummer oder Entwurfsdatum, Anlagen und wirksame Nachträge fest. Lies die Klauseln zur Herstellung und zur Rechtsverschaffung nebeneinander. Wer schuldet Errichtung oder Umbau, wer überträgt das Grundstückseigentum oder bestellt/überträgt das Erbbaurecht? Belege beides mit einer Fundstelle. Eine Überschrift oder eine als „Bauträger“ auftretende Firma entscheidet die Einordnung nicht. Bei zwei Vertragspartnern oder Urkunden stelle Schuldner, Gegenleistung und Verknüpfung je Vertrag fest.
+
+Kläre vor der davon abhängigen Fachprüfung die fehlende Tatsache. Frage beispielsweise nach der Übertragungsklausel oder danach, wer Eigentümer des Baugrundstücks ist. Bei einer fertiggestellten Einheit frage nach Nutzung, Zeitpunkt und verbleibendem Herstellungsversprechen, bei widersprüchlichen Entwürfen nach der maßgeblichen Fassung. Erläutere, welche Entscheidung davon abhängt. Bei eindeutiger Akte nenne direkt das belegte Modell. Bei ungeklärtem Modell benenne die verbleibenden Möglichkeiten und liefere schon belegbare Ergebnisse. Neue Urkunden oder Antworten können das Programm wechseln. Korrigiere dann Beträge, Fristen, Adressaten und alle betroffenen Entwürfe im selben Vorgang.
+
+#### 1.1.2 Das passende Prüfprogramm ausführen
+
+1. **Bauträgervertrag über einen Neubau.** Schuldet derselbe Unternehmer Errichtung oder Umbau und Rechtsverschaffung, prüfe Bauleistung nach Werkvertragsrecht und Übereignung oder Erbbaurechtsverschaffung nach Kaufrecht. Stelle Bau- und Übergabetermine, Bausoll, notarielle Einbeziehung, Vormerkung, Lastenfreistellung und die tatsächliche Zahlungsabrede fest. Für vor dem 1. Januar 2018 begründete Schuldverhältnisse das frühere Recht bestimmen. [§ 650u BGB](https://www.gesetze-im-internet.de/bgb/__650u.html) · [Art. 229 § 39 EGBGB](https://www.gesetze-im-internet.de/bgbeg/art_229__39.html)
+2. **Umbau oder Sanierung mit Erwerb.** Trenne zugesagte Umbauten, bereits erbrachte Leistungen und unveränderte Substanz je Bauteil. Bei neubaugleichen Maßnahmen kann die werkvertragliche Haftung den betroffenen Bestand erfassen. Die Neubaugleichheit betrifft diese Haftungsreichweite. Für den Tatbestand des § 650u genügt auch ein geschuldeter Umbau. Bei isolierten Verbesserungen die Zusagen und die kaufrechtliche Haftung für den übrigen Bestand prüfen. Im Altbau-Ratenplan den bereits erbrachten Anteil und die Voraussetzungen des § 3 Abs. 1 und 2 MaBV belegen.
+3. **Fertiggestellte Einheit, Nachzüglerin oder Zweiterwerb.** Stelle Verkäufer, Fertigstellung, Vormietzeit, Besitz, Restarbeiten und Qualitätszusagen fest. Bei frischem Ersterwerb kann aus dem Vertrag weiterhin eine werkvertragliche Herstellungspflicht folgen. Bei echtem Bestandserwerb Übergabe, kaufrechtliche Beschaffenheit, §§ 434, 437, 438, 444 BGB sowie Haftungsausschluss und Arglist prüfen. Beim Zweiterwerb zusätzlich abgetretene Ansprüche aus dem Erstvertrag feststellen. Bei einer Nachzüglerin eigenes Abnahmerecht und eigene Fristen je Einheit prüfen. Eine pauschale Altersgrenze ist untauglich.
+4. **Bauen auf eigenem Grundstück.** Ohne versprochene Rechtsverschaffung den Bauvertrag nach § 650a BGB beurteilen. Bei einem Verbraucher prüfen, ob der Unternehmer den gesamten Neubau oder erhebliche Umbaumaßnahmen schuldet (§ 650i). Dann insbesondere Baubeschreibung, Widerruf bei fehlender notarieller Beurkundung, Unterlagen, Abschlagsgrenze und Sicherheit nach §§ 650j–650n prüfen. Bei einem einzeln vergebenen Gewerk dessen Umfang, Abnahme, Vergütung und etwaige situationsbezogene Verbraucherrechte klären. Keine MaBV-Rate aus einer Werklohnanforderung ableiten. [§ 650i BGB](https://www.gesetze-im-internet.de/bgb/__650i.html)
+5. **Gekoppelte Verträge, Baugruppe und Baubetreuung.** Für einen gesonderten Grundstückskauf mit Bau- oder Ausbauauftrag rechtliche Einheit und Beurkundung prüfen. Entscheidend kann sein, ob der Grundstückserwerb nach dem Parteiwillen vom Bauauftrag abhängt. Bei echter Baugruppe Eigentumserwerb durch die Gesellschaft, gemeinsames Bauherrenrisiko, Vertretung, Register, Nachschüsse und Haftung prüfen. Bei Baubetreuung Vollmacht, Handeln in fremdem Namen und Verwendung der Mittel klären. Übernimmt ein Organisator selbst Bauleistung und Rechtsverschaffung, prüfe ein verdecktes Bauträgermodell. [§ 311b BGB](https://www.gesetze-im-internet.de/bgb/__311b.html)
+
+Kombiniere die ermittelte Vertragsart mit den weiteren Merkmalen. Beim **Erbbaurecht** prüfe Laufzeit, Erbbauzins und Anpassung, Zustimmung, Rang, Heimfall und Entschädigung. Bei Grund-/Wohnungseigentum und Erbbaurecht gelten im §-3-Modell verschiedene Rechenbasen (30/70 bzw. 20/80). Bei **Wohnungs- oder Teileigentum** prüfe Teilungserklärung, Sondernutzung, Sonder- und Gemeinschaftseigentum, Abnahme sowie Ausübungsbefugnis der GdWE. Ein Haus kann Teil einer WEG sein. Beim **Unternehmererwerb** AGB-Kontrolle nach § 310 Abs. 1, beim Verbraucher die für das jeweilige Vorhaben geltenden Zusatzrechte prüfen. Ob die MaBV greift, ist gesondert zu bestimmen. Ein Verzicht nach § 7 Abs. 2 MaBV setzt einen dort bezeichneten Auftraggeber und dessen ausdrückliche gesonderte schriftliche Erklärung voraus. Allein der Erwerb zu gewerblichen Zwecken genügt dafür nicht.
+
+Stelle vor jeder Ratenrechnung fest, ob Abschläge nach § 3 MaBV, eine vereinbarte Abweichung mit wirksamer Sicherheit nach § 7 MaBV oder reine Endzahlung vorliegen. Im §-7-Modell Sicherungsurkunde, Deckung, Zeitpunkt und Austausch prüfen. Bei reiner Endzahlung die vertraglichen Fälligkeitsvoraussetzungen und Einreden prüfen. Im §-3-Modell zuerst die allgemeinen Voraussetzungen, dann belegten Baufortschritt und erstmals zulässige Zahlung je vereinbartem Teilbetrag prüfen. Bezeichne Ergebnis, entscheidende Vertragsstelle, Gegenindiz und das tatsächlich ausgeführte Prüfprogramm im Gutachten. [§ 650v BGB](https://www.gesetze-im-internet.de/bgb/__650v.html) · [§ 1 AbschlagsV](https://www.gesetze-im-internet.de/abschlagsv/__1.html) · [§ 3 MaBV](https://www.gesetze-im-internet.de/gewo_34cdv/__3.html) · [§ 7 MaBV](https://www.gesetze-im-internet.de/gewo_34cdv/__7.html)
 
 ### 1.2 Rückfragen aus dem Befund entwickeln
 
@@ -195,7 +213,7 @@ Leite die Aktualitätsrecherche aus der konkreten Streitfrage ab. Prüfe bei ein
 
 ### 6.1 Sicherungsmodell und allgemeine Voraussetzungen
 
-Bestimme, ob nach § 3 MaBV abgewickelt wird oder eine wirksame §-7-Sicherheit diese Voraussetzungen ersetzt. Vermische die Modelle nicht. Unter § 3 Abs. 1 vor Entgegennahme der Zahlung prüfen:
+Ordne den Abruf dem in Abschnitt 1.1.2 ermittelten Vertrag zu. Bei reiner Endzahlung prüfe die vereinbarten Fälligkeitsbedingungen und Gegenrechte. Bei einer Abwicklung nach § 7 MaBV prüfe Sicherungsumfang und Vertragsfälligkeit. Das folgende Rechenblatt dient dem §-3-Abschlagsmodell. Unter § 3 Abs. 1 vor Entgegennahme der Zahlung prüfen:
 
 - Wirksamer Vertrag, erforderliche Vollzugsgenehmigungen und notarielle schriftliche Bestätigung; keine vertraglichen Rücktrittsrechte des Bauträgers. Die Notarmitteilung ist selbst Voraussetzung im gesetzlichen Umfang; eine im Vertrag weitergehend zugesagte notarielle Bestätigung ebenfalls beachten.
 - Vormerkung an vereinbarter Rangstelle tatsächlich eingetragen. Eintragungsantrag oder „eintragungsbereit“ reicht nicht. Bei Wohnungseigentum muss dessen Begründung grundbuchlich vollzogen sein.
@@ -348,6 +366,8 @@ Bekannte Mängel und Vorbehalt nach § 640 Abs. 3, Vertragsstrafe nach § 341 Ab
 
 Die BGH-Urteile vom 26.03.2026 – VII ZR 68/24 und VII ZR 108/24 konkretisieren die Fremdabnahme: Eine formularmäßige Bindung an ausgewählte Erwerbervertreter beziehungsweise einen Sachverständigen darf der Erwerberin nicht das eigene Prüfungs- und Erklärungsrecht nehmen. Frage deshalb, ob sie frei selbst entscheiden durfte, wer tatsächlich erklärte und aufgrund welcher Vollmacht. Freiwillige Vertretung oder bloße technische Beratung nicht mit erzwungener Fremdabnahme verwechseln. Altvertragsrecht und den jeweiligen Kostenvorschussanspruch beachten; die dortige 30-Jahres-Grenze ist keine allgemeine Mängelfrist. Verifizierte Fundstellen im Rechtsprechungsteil.
 
+Berücksichtige außerdem die Urteile vom 15.10.2026 – VII ZR 119/23 und VII ZR 4/24. Stelle bei vermeintlich späterer konkludenter Abnahme fest, ob der Erwerber den Fehlschlag der früheren Fremdabnahme kannte oder damit rechnete. Vorschuss und mangelbedingten Folgeschaden trotz gescheiterter Erstverwalterabnahme anhand des jeweils anwendbaren Rechts prüfen.
+
 ### 9.2 Schlussrate und Mängelrechte
 
 Bezugsfertigkeit, Besitzübergabe, Abnahmereife, Abnahme und vollständige Fertigstellung sind verschiedene Zustände. Bei Bezugsfertigkeit sichere dauerhafte Nutzbarkeit, Zugang und zugesagte Nutzungsmerkmale prüfen; wesentliche Vertragsabweichungen nicht auf bloße Bewohnbarkeit verkürzen. Schlussrate nach konkretem Wortlaut einschließlich Außenanlagen, Unterlagen, Restarbeiten und Protokollbindung auslegen. Eine Regel „erst nach Beseitigung protokollierter Mängel“ hat andere Folgen als eine anders gefasste Fertigstellungsbedingung.
@@ -355,6 +375,8 @@ Bezugsfertigkeit, Besitzübergabe, Abnahmereife, Abnahme und vollständige Ferti
 Bei Mängeln: Vertrags-Soll, Ist-Zustand, Bereich, Abnahmestatus, Anspruchsinhaber, Nacherfüllungsverlangen und angemessene Frist bestimmen. Selbstvornahme/Vorschuss, Minderung, Rücktritt und Schadensersatz erst nach ihren Voraussetzungen und möglichen Ausnahmen ableiten. Vor Abnahme Erfüllungsstadium und gegebenenfalls Abrechnungsverhältnis beachten. Keine pauschale Selbstvornahmeaufforderung vor Nacherfüllungsmöglichkeit. Bei Bauteilöffnung Beweissicherung, technische Verantwortung und Kosten berücksichtigen.
 
 Zur Schlussrate ist BGH, 22.04.2026 – VII ZR 88/25, konkret anzuwenden: Bei der dortigen Vertragsgestaltung setzte die vollständige Fertigstellung auch die Beseitigung protokollierter Abnahmemängel voraus. Frage nach vollständiger Ratenklausel, Abnahmeprotokoll und Erledigungsnachweisen. Bei entsprechender Abrede und noch offenen Protokollmängeln kann die gesamte Schlussrate unfällig sein; das ist etwas anderes als ein Einbehalt nur in Höhe des regelmäßig doppelten Beseitigungsaufwands nach § 641 Abs. 3. Bei fehlenden Unterlagen nur bedingt urteilen, bei nachgewiesener Erledigung die übrigen Fälligkeitsvoraussetzungen prüfen. Keine allgemeine Aussage über jede noch so kleine Restarbeit oder jeden MaBV-Vertrag aus dem Altvertragsfall ableiten.
+
+Der gesetzliche Maßstab für die vollständige Fertigstellung und eine unwirksame vertragliche Absenkung ergeben sich aus BGH, 29.10.2026 – VII ZR 169/25. Eine auch für die Schlussrate geltende Klausel, die wesentliche Mängel für die Fälligkeit ausblendet, kann den gesamten Zahlungsplan zu Fall bringen. Prüfe gesondert die vertraglichen Voraussetzungen und Mängelrechte bei geringfügigen Mängeln.
 
 Bei gebündelten Mängelrechten frage, welchen Anspruch die GdWE nach welchem Beschluss, Nacherfüllungsverlangen und Fristablauf tatsächlich verfolgt. OLG Stuttgart, 28.04.2026 – 10 U 39/25, bejaht unter seinen besonderen Voraussetzungen Restkaufpreisfälligkeit trotz fehlender Abnahme, aber nur Zug um Zug gegen Kostenvorschuss: Die Erwerberin zahlt den Restkaufpreis an den Bauträger, dieser den Vorschuss an die GdWE. Beschlussfassung allein ersetzt diese Voraussetzungen nicht. Amtlicher Nachweis inzwischen rechtskräftig; kein allgemeiner Entzug individueller Gegenrechte.
 
@@ -515,7 +537,7 @@ Ein Prompt verbessert den Arbeitsablauf; tatsächliche Zuverlässigkeit wird an 
 
 ## Aktuelle Rechtsprechungsanker
 
-Der gesamte bisherige Katalog wurde zum 8. Oktober 2026 erneut bearbeitet und um einschlägige Folgeentscheidungen ergänzt. Die nachstehenden Darstellungen erklären Sachverhalt, tragende Gründe, Ergebnis und Nutzen für die Vertragsprüfung. Sie sollen nicht nur ein Aktenzeichen liefern, sondern die Frage beantworten: Warum trägt diese Entscheidung gerade den Befund im vorliegenden Vertrag – oder warum nicht?
+Der bisherige Katalog wurde am 8. Oktober 2026 überarbeitet. Die gezielte Fortschreibung vom 21. November 2026 ergänzt die Entscheidungen zur Vertragsart, Fremdabnahme und Wirksamkeit des Zahlungsplans. Die nachstehenden Darstellungen erklären Sachverhalt, tragende Gründe, Ergebnis und Nutzen für die Vertragsprüfung. Sie sollen nicht nur ein Aktenzeichen liefern, sondern die Frage beantworten: Warum trägt diese Entscheidung gerade den Befund im vorliegenden Vertrag – oder warum nicht?
 
 Die Beleglage ist nicht überall gleich. Amtliche Volltexte haben Vorrang; gerichtliche Entscheidungsabdrucke sind von redaktionellen Zusammenfassungen zu unterscheiden. Bei nur veröffentlichten Auszügen, amtlichen Leitsätzen oder nicht zugänglichem Original ist die Grenze im jeweiligen Eintrag bezeichnet. Eine solche Fundstelle darf nicht als vollständig gelesener Volltext ausgegeben werden. Aufhebung, Zurückverweisung, bestätigte Revision, Versäumnisurteil und bloßes Verfahrensradar haben unterschiedliche Aussagekraft. Eine Nichtzulassung der Revision allein belegt noch keine Rechtskraft.
 
@@ -581,6 +603,30 @@ Wähle aus dem Katalog die für den tatsächlichen Vertrag erheblichen Fragen. P
 **Einsatz im Vertrag:** Trenne Kaufpreisrest, noch nicht fällige Schlussrate, fünfprozentige Sicherheit und konkreten Mängeleinbehalt. Stelle Mangelkosten und Zahlungsstand für die jeweilige Erwerberin nachvollziehbar gegenüber. Prüfe den genauen Vollzugsmechanismus: Bereits erklärte Auflassung, Eintragungsbewilligung und notarielle Vorlagesperre sind verschiedene Fragen. Ermittle außerdem persönliche Nachteile einer verzögerten Eintragung, etwa einen konkret geplanten Verkauf.
 
 **Gegenargumente und Grenzen:** Das OLG ließ die AGB-Wirksamkeit der Vorlagesperre ausdrücklich offen (Rn. 84); es bestätigte nicht die dafür gegebene Begründung des Landgerichts. Eine feste Zehn-Prozent-Grenze für geringfügige Rückstände lehnte es ab. Die zusätzliche Prüfung nach § 320 Abs. 2 BGB berücksichtigte insbesondere lange Verzögerung, hohe Vorleistung und das vom Bauträger selbst beherrschbare Hindernis. Nicht jede bestrittene Mängelbehauptung erzwingt die Umschreibung. Nichtzulassung der Revision ist zudem nicht gleichbedeutend mit nachgewiesener Rechtskraft.
+
+### Erstverwalter, bestellter Sachverständiger und spätere Abnahme des Gemeinschaftseigentums
+
+**Harte Fundstelle:** BGH, Urteil vom 15.10.2026 – VII ZR 119/23, Rn. 24–35 und 42–49, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2023/VII_ZR_119-23.pdf?__blob=publicationFile&v=1). BGH, Urteil vom 15.10.2026 – VII ZR 4/24, insbesondere Leitsätze a–d, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2024/VII_ZR___4-24.pdf?__blob=publicationFile&v=1).
+
+**Kernaussage für Verbraucher:** Kann sich der Bauträger wegen einer von ihm verwendeten unwirksamen Erstverwalterklausel nicht auf die Abnahme berufen, können die Erwerber auch ohne wirksame Abnahme Vorschuss für die Mängelbeseitigung und Ersatz mangelbedingter Folgeschäden am Gemeinschaftseigentum verlangen. Die fünfjährige Verjährungsfrist dieser Mängelansprüche beginnt mit der wirksamen Abnahme. Der BGH begrenzt ihre Durchsetzbarkeit bei gescheiterter Abnahme in diesem Fall auf 30 Jahre ab dem fehlgeschlagenen Versuch. Zeitablauf allein begründet keine Verwirkung. Das Parallelurteil zum alten Schuldrecht verwirft die formularmäßige Bindung an den vom Bauträger bestimmten Sachverständigen mit unwiderruflicher Vollmacht.
+
+**Einsatz im Vertrag:** Sichere Erwerbervertrag, Abnahmevollmacht, Protokoll, spätere Erklärungen und Anhaltspunkte für das damalige Verständnis. Wer nach einer unwirksamen Fremdabnahme gutgläubig von einer schon erfolgten Abnahme ausging, erklärt durch bloße Vertragsdurchführung keine zweite Abnahme. Eine konkludente eigene Erklärung setzt voraus, dass der Erwerber die Unwirksamkeit kannte oder mit ihr rechnete und sein Verhalten die Billigung erkennen ließ. Bei Nachzüglereinheiten Vertrag und Kenntnis einzeln prüfen. Für jede Forderung Rechtsstand, Anspruch und mögliches Fristende gesondert bestimmen.
+
+### Sanierungsumfang und mitbetroffene Altbausubstanz
+
+**Harte Fundstelle:** BGH, Urteil vom 26.04.2007 – VII ZR 210/05, Rn. 18–21, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2005/VII_ZR_210-05.pdf?__blob=publicationFile&v=1).
+
+**Kernaussage für Verbraucher:** Übernimmt der Veräußerer vertraglich eine nach Umfang und Bedeutung einem Neubau vergleichbare umfassende Modernisierung, kann sich seine werkvertragliche Mängelhaftung auch auf die weiterverwendete Altbausubstanz erstrecken. Im Streitfall kam zu umfangreicher Modernisierung eine Aufstockung um zwei Geschosse hinzu.
+
+**Einsatz im Vertrag:** Stelle die einzelnen Bauversprechen, die Eingriffe in den Bestand und die betroffenen Bauteile anhand der beurkundeten Beschreibung zusammen. Die Entscheidung zum früheren Recht erläutert die Haftungsreichweite. Für heutige Verträge ist der Tatbestand des § 650u BGB eigenständig zu prüfen.
+
+### Kaufrecht bei langjährig fertiggestellter und zwischenvermieteter Einheit
+
+**Harte Fundstelle:** BGH, Urteil vom 25.02.2016 – VII ZR 156/13, Rn. 22–27, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2013/VII_ZR_156-13.pdf?__blob=publicationFile&v=1).
+
+**Kernaussage für Verbraucher:** Im entschiedenen Fall verkaufte der Bauträger Wohnungen rund drei Jahre nach ihrer Errichtung und nach vorheriger Vermietung. Der BGH beurteilte die Mängelansprüche aus diesen Erwerbsverträgen nach Kaufrecht. Vorherige Vermietung, Zeitabstand und konkret vereinbarte Leistungen tragen die Vertragsauslegung gemeinsam.
+
+**Einsatz im Vertrag:** Dokumentiere die zeitliche Abfolge je Einheit, eigene Herstellungs- und Restleistungszusagen sowie gegebenenfalls abgetretene Ansprüche. Ein spätes Datum allein liefert keine feste Grenze für die Anwendung von Kaufrecht.
 
 ### Abnahme Gemeinschaftseigentum durch Erwerbervertreter
 
@@ -741,21 +787,18 @@ Für den konkreten Kostenvorschussanspruch nach § 633 Abs. 3 BGB a. F. in Verbi
 
 **Nebenfragen und Gegenargumente:** Das KG verneinte bei einer Mängelklausel vor allem eine MaBV-widrige Gesamtnichtigkeit; ihre mögliche Unwirksamkeit nach § 307 BGB ließ es teilweise offen (B.I.1.b.bb). Auch die Verknüpfung von Übergabe und Teilabnahme ist eine begründete Instanzposition gegen ausdrücklich genannte Münchener Entscheidungen, keine unbestrittene höchstrichterliche Freigabe. BGH VII ZR 88/25 verlangt für die Schlussrate weiterhin konkrete Vertragsauslegung.
 
-Der Fall zeigt zudem, dass eine später fällig werdende einredefreie Gegenforderung den Übergabeverzug zeitlich beenden kann. Eine Übergabe- oder Mietanspruchsabtretungspflicht ist selbst keine Geldschuld; Zinsen auf Schadensersatz setzen dessen eigene Verzugsprüfung voraus. VII ZR 169/25 betrifft ein anderes KG-Verfahren und entscheidet bislang keine dieser materiellen Fragen.
+Der Fall zeigt zudem, dass eine später fällig werdende einredefreie Gegenforderung den Übergabeverzug zeitlich beenden kann. Eine Übergabe- oder Mietanspruchsabtretungspflicht ist selbst keine Geldschuld; Zinsen auf Schadensersatz setzen dessen eigene Verzugsprüfung voraus. VII ZR 169/25 betrifft einen anderen Zahlungsplan. Der BGH hat dort am 29. Oktober 2026 über die Bedeutung wesentlicher Mängel für die vollständige Fertigstellung entschieden.
 
 
-### Ratenplan-Revisionsradar (keine Sachentscheidung)
+### Unwirksamer Ratenplan bei wesentlichen Mängeln der fertigzustellenden Leistung
 
-**Harte Fundstelle:** BGH, Beschluss vom 08.07.2026 – VII ZR 169/25, Tenor und Rn. 1–5, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR_169-25.pdf?__blob=publicationFile&v=1).
+**Harte Fundstelle:** BGH, Urteil vom 29.10.2026 – VII ZR 169/25, Rn. 24–39, [amtlicher Volltext](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR_169-25A.pdf?__blob=publicationFile&v=1). Zur beschränkten Zulassung der Revision siehe den [Beschluss vom 08.07.2026, Rn. 1–5](https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/VII_ZS/2025/VII_ZR_169-25.pdf?__blob=publicationFile&v=1).
 
-**Verfahrensgegenstand:** Der Beschluss betrifft KG, Urteil vom 18.09.2025 – 27 U 153/24, und einen Bauträgervertrag vom 11.07.2019. Das KG hatte die Revision nur hinsichtlich der Feststellung der Nichtigkeit des Ratenzahlungsplans zugelassen. Die Bauträgerin wollte daneben weitere Teile über eine Nichtzulassungsbeschwerde zur Überprüfung stellen.
+**Kernaussage für Verbraucher:** Die Erwerber einer noch zu sanierenden Immobilie sollten nach einer Vertragsklausel auch bei Mängeln nach Erreichen der jeweiligen Ratenstufe zahlen. Die Klausel erfasste auch die letzte Rate. Bei wesentlichen Mängeln, die zur Abnahmeverweigerung berechtigen, ist die Bauleistung im Sinne der letzten Stufe des § 3 Abs. 2 Satz 2 Nr. 2 MaBV noch nicht vollständig fertiggestellt. Die Abweichung verstieß gegen das Benachteiligungsverbot des § 12 MaBV und führte gemäß § 134 BGB zur Nichtigkeit des gesamten vereinbarten Zahlungsplans einschließlich der ersten Rate.
 
-**Kernaussage für Verbraucher:** Der BGH bestätigte lediglich, dass die Ratenplanfeststellung einen tatsächlich und rechtlich selbständigen Streitteil bildet und die Revisionszulassung deshalb wirksam beschränkt werden konnte (Rn. 2–3). Für die Zulässigkeit der zusätzlichen Beschwerde waren die Werte beider Rechtsmittel zusammenzurechnen; inhaltlich blieb sie ohne Erfolg. Die Zurückweisung wurde nach § 544 Abs. 6 ZPO nicht näher begründet. Darin liegt keine Billigung jedes materiellen Arguments der Vorinstanz.
+**Einsatz im Vertrag:** Lies die Mängelklausel mit allen Raten einschließlich der Schlussrate. Prüfe, welche Arbeiten ausstehen, ob ein wesentlicher Mangel vorliegt und welche Beträge schon verlangt wurden. Bei nichtigem Plan ist eine Zahlungsaufforderung anhand der gesetzlichen Fälligkeit und etwaiger Gegenrechte neu zu bewerten. Unwirksamkeit des Plans allein beseitigt weder den Erwerbsvertrag noch die Vergütungspflicht insgesamt.
 
-**Einsatz im Vertrag:** Verwende diesen Beschluss ausschließlich zur Einordnung des Verfahrensstands. Er beantwortet weder, ob der betreffende Zahlungsplan nichtig ist, noch, welche konkrete Klausel den Ausschlag geben würde. Die Kostenentscheidung wurde der Schlussentscheidung vorbehalten. Ein Zahlungsstopp oder eine Klauselfreigabe darf nicht auf diesen Beschluss allein gestützt werden.
-
-**Recherchestand:** Die gezielte Suche bis 08.10.2026 hat keine veröffentlichte anschließende Sachentscheidung ergeben. Das ist keine Gewissheit über unveröffentlichte Vorgänge. Bei erneutem Einsatz sind Aktenzeichen und unmittelbarer Verfahrensgang nachzuprüfen. Insbesondere darf das Verfahren nicht mit KG 21 U 73/24 verwechselt werden; die ähnliche Thematik ersetzt weder denselben Vertrag noch denselben Instanzenzug.
-
+**Reichweite:** Ob wesentliche Mängel schon den Eintritt früherer Baufortschrittsstufen hindern, ließ der BGH offen (Rn. 39). Unwesentliche Mängel gesondert am konkreten Fertigstellungsversprechen und an den Gegenrechten prüfen. Eine vertraglich strengere Voraussetzung für protokollierte Mängel kann sich aus der Auslegung wie im Urteil vom 22.04.2026 ergeben.
 
 ### 5-%-Sicherheit und intransparenter Zahlungsplan
 
@@ -1253,7 +1296,7 @@ Findet sich zu einer Frage keine in zulässiger Quelle verifizierte Entscheidung
 
 ## Gesetzgebungsstatus 2026
 
-Die nachstehenden Regelungen wurden am 8. Oktober 2026 erneut geprüft. Der Stichtag ist keine Zusage, dass jede spätere Änderung oder jedes Sonderrecht erfasst ist. Für den konkreten Fall die einschlägige Fassung bestimmen: Eine verkündete, aber noch nicht einschlägig in Kraft getretene Regel wird nicht vorzeitig angewandt; ein Entwurf wird nicht als Gesetz ausgegeben. Maßgeblich ist für jede Handlung das relevante Ereignisdatum, nicht das Datum der Beratung.
+Die MaBV-Novellen und die Digitalisierung des Grundstücksvollzugs wurden am 8. Oktober 2026 geprüft. Zum Gebäudetyp E ist der Verfahrensstand vom 21. November 2026 berücksichtigt. Der Stichtag ist keine Zusage, dass jede spätere Änderung oder jedes Sonderrecht erfasst ist. Für den konkreten Fall die einschlägige Fassung bestimmen: Eine verkündete, aber noch nicht einschlägig in Kraft getretene Regel wird nicht vorzeitig angewandt; ein Entwurf wird nicht als Gesetz ausgegeben. Maßgeblich ist für jede Handlung das relevante Ereignisdatum, nicht das Datum der Beratung.
 
 
 ### MaBV-Novellen vom 20. und 28. Juli 2026
@@ -1272,7 +1315,7 @@ Die nachstehenden Regelungen wurden am 8. Oktober 2026 erneut geprüft. Der Stic
 
 ### Gebäudetyp E
 
-**Quellenstand am 8. Oktober 2026:** Die vom Bundesjustizministerium und Bundesamt für Justiz bereitgestellte konsolidierte Fassung des § 650a BGB wurde erneut gelesen; sie enthält weiterhin nur die Absätze 1 und 2 zum Bauvertrag: https://www.gesetze-im-internet.de/bgb/__650a.html. Der frühere Entwurf BT-Drs. 20/13959 ist keine anwendbare Norm: https://www.bundestag.de/presse/hib/kurzmeldungen-1032390. Auch die spätere Ausschussmeldung über Eckpunkte und einen geplanten Referentenentwurf belegt lediglich ein Vorhaben, keine Verkündung: https://www.bundestag.de/presse/hib/kurzmeldungen-1128946. In der Recherche wurde keine in Kraft getretene zivilrechtliche Gebäudetyp-E-Sonderregel verifiziert. Eine vollständige Negativauskunft über jedes laufende Gesetzgebungsverfahren folgt daraus nicht.
+**Quellenstand am 21. November 2026:** Zur Einordnung des Vorschlags die [geltende Fassung des § 650a BGB](https://www.gesetze-im-internet.de/bgb/__650a.html) heranziehen. Die frühere [Vorlage der 20. Wahlperiode](https://www.bundestag.de/presse/hib/kurzmeldungen-1032390) und die anschließende [Ausschussbefassung](https://www.bundestag.de/presse/hib/kurzmeldungen-1128946) dokumentieren den Verlauf. Der neue Referentenentwurf zum gesetzlichen Basisstandard lag im Herbst 2026 zur Länder- und Verbändebeteiligung vor. Die Bundesregierung erläutert den Stand in ihrer Antwort vom 9. November. Für die fallbezogene Prüfung bleibt das vereinbarte Bausoll nach geltendem Recht maßgeblich. [BT-Drs. 21/9217, Frage 112, S. 74](https://dserver.bundestag.de/btd/21/092/2109217.pdf)
 
 **Bedeutung für die Prüfung:** `Gebäudetyp E`, Leitlinie, Eckpunkte oder politische Ankündigung senken das geschuldete Bausoll nicht. Bei Verbrauchern jede konkrete Standardabweichung nach Vertrag, Aufklärung, Funktion, Sicherheit, § 633 BGB und §§ 305 ff. BGB prüfen; Entwurfsrecht nicht zitieren.
 

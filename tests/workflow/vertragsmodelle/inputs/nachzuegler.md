@@ -1,0 +1,1 @@
+Ich erwerbe die letzte Wohnung vom Errichter. Sie ist äußerlich fertig; er schuldet mir ausdrücklich noch die Herstellung des vereinbarten Schallschutzes. Laut Vertragsformular soll die Jahre zuvor vom Erstverwalter für andere Käufer erklärte Abnahme des Gemeinschaftseigentums auch mich binden. Ich habe keine Vollmacht erteilt. Nur diese Abnahmefrage bitte.

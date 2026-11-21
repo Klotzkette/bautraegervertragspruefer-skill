@@ -1,0 +1,1 @@
+§ 4 meines Vertrags besagt: Die seit 2004 genutzte Eigentumswohnung wird im vorhandenen Zustand verkauft. Der private Verkäufer übernimmt keine Bau-, Umbau- oder Renovierungspflicht. Das Exposé nennt die Immobilie „Bauträgerprojekt“. Er verlangt eine neue MaBV-Rate. Was gilt für mich?

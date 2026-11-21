@@ -59,6 +59,7 @@ def berechnen(preis, erbbaurecht=False, gruppen=None, bezahlt="0", einbehalten="
     sicherheit = preis * Decimal("0.05")
     return {
         "hinweis": "Rechenhilfe; weder Baufortschritt noch allgemeine Fälligkeitsvoraussetzungen, Gruppierungszulässigkeit oder Zahlbarkeit verifiziert.",
+        "rechtsmodell": "Erbbaurecht" if erbbaurecht else "Grundstückseigentum",
         "kaufpreis_eur": geld(preis), "erste_stufe_prozent": str(erste), "restbasis_prozent": str(rest),
         "mabv_stufen": stufen, "vertragliche_raten": raten,
         "sicherheit_fuenf_prozent_eur": geld(sicherheit),
@@ -73,7 +74,9 @@ def berechnen(preis, erbbaurecht=False, gruppen=None, bezahlt="0", einbehalten="
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--preis", required=True, help="Euro ohne Tausendertrennzeichen")
-    parser.add_argument("--erbbaurecht", action="store_true")
+    recht = parser.add_mutually_exclusive_group()
+    recht.add_argument("--grundstueckseigentum", action="store_true", help="Vereinbarte Eigentumsübertragung")
+    recht.add_argument("--erbbaurecht", action="store_true", help="Vereinbarte Bestellung oder Übertragung eines Erbbaurechts")
     parser.add_argument("--gruppen", help="Vertragliche Gesamtquoten, durch Semikolon getrennt")
     parser.add_argument("--bezahlt", default="0")
     parser.add_argument("--einbehalten", default="0")
@@ -83,6 +86,8 @@ def main():
                            args.bezahlt, args.einbehalten)
     except ValueError as error:
         parser.error(str(error))
+    if not (args.erbbaurecht or args.grundstueckseigentum):
+        result["modellannahme"] = "Beispielrechnung unter Annahme von Grundstückseigentum. Vor einer Vertragsprüfung das tatsächlich verschaffte Recht klären."
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
 

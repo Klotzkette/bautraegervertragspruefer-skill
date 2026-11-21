@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "delivery": "one_user_turn_after_previous_response",
+  "fresh_conversation_per_case": true,
+  "future_turns_visible": false,
+  "contract_format": "markdown",
+  "case_date": "2026-11-21",
+  "cases": [
+    {
+      "id": "VT01",
+      "plugin_entrypoint": "bautraeger-zahlungsrate-pruefen",
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md"
+          ]
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/erbbaurecht.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT02",
+      "plugin_entrypoint": "bautraeger-zahlungsrate-pruefen",
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md"
+          ]
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/endzahlung.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT03",
+      "plugin_entrypoint": "bautraegervertrag-pruefen",
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md"
+          ]
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/eigener-grund.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT04",
+      "plugin_entrypoint": "bautraegervertrag-pruefen",
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md"
+          ]
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/einzelgewerk.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT05",
+      "plugin_entrypoint": "bautraegervertrag-pruefen",
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md"
+          ]
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/baugruppe.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT06",
+      "plugin_entrypoint": "bautraegervertrag-pruefen",
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md"
+          ]
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/umbau-mehrere-vertraege.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT07",
+      "plugin_entrypoint": "bautraegervertrag-pruefen",
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md"
+          ]
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/bestand.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT08",
+      "plugin_entrypoint": "bautraegervertrag-pruefen",
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md"
+          ]
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/umbau-altbausubstanz.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT09",
+      "plugin_entrypoint": "bautraegervertrag-pruefen",
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md"
+          ]
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/nachzuegler.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT10",
+      "plugin_entrypoint": "bautraeger-zahlungsrate-pruefen",
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md"
+          ]
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/widerspruch-urkunden.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VT11",
+      "plugin_entrypoint": "bautraeger-zahlungsrate-pruefen",
+      "turns": [
+        {
+          "turn": 1,
+          "after_response_to": null,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/offener-einstieg.md"
+          ]
+        },
+        {
+          "turn": 2,
+          "after_response_to": 1,
+          "inputs": [
+            "tests/workflow/vertragsmodelle/inputs/vorauszahlung-buergschaft.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

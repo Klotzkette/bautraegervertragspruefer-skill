@@ -1,0 +1,1 @@
+Jetzt sehe ich zwei Urkunden: Nummer 38 verkauft die gebrauchte Wohnung 1 ohne Baupflicht. Nummer 39 überträgt Wohnung 2 mit von derselben Gesellschaft geschuldetem umfassendem Umbau. Die Rechnung über 30 Prozent trägt „Wohnung 1 – Urkunde 39“. Ist damit die Rate fällig?

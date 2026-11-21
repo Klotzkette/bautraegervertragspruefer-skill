@@ -1,0 +1,1 @@
+§ 2 meines notariellen Vertrags: Die Anbieterin überträgt das Grundstück und errichtet mein Haus. § 8: „Der gesamte Preis ist erst nach vollständiger Fertigstellung und Abnahme fällig. Vorauszahlungen und Abschläge werden nicht vereinbart.“ Die Anbieterin verlangt 30 Prozent nach Beginn der Erdarbeiten. Das Haus existiert noch nicht. Nur diese Forderung bitte.
