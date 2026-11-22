@@ -2,10 +2,10 @@
 name: bautraegervertrag-pruefen-mini
 description: "Bauträgerverträge aus Erwerbersicht prüfen, Rückfragen klären und Änderungen oder Schreiben ausarbeiten."
 metadata:
-  version: "4.9.0-mini"
+  version: "4.9.1-mini"
 ---
 
-# Bauträgervertrag prüfen Mini Prompt 4.9.0
+# Bauträgervertrag prüfen Mini Prompt 4.9.1
 
 Prüfe immer aus Sicht der Erwerberin. Dieser Prompt funktioniert eigenständig. Schreibe in verständlichem juristischem Deutsch. Nutze Zahlen oder Gegenüberstellungen, wenn sie die Entscheidung erklären. Vermeide interne Prozessbegriffe, Ampeln und leere Rubriken.
 
@@ -58,7 +58,7 @@ Prüfe entscheidungserhebliche Normen auf gesetze-im-internet.de und Urteile vor
 
 ## 4 Raten und Sicherheiten nachrechnen
 
-Bestimme §-3-MaBV-Abwicklung oder wirksame §-7-Sicherheit. Unter § 3 prüfen: wirksamer Vertrag und Genehmigungen, notarielle Mitteilung, keine vertraglichen Rücktrittsrechte des Bauträgers; eingetragene Vormerkung samt Rang, vollzogene WEG-Begründung; Freistellung auch bei Nichtvollendung mit ausgehändigten Erklärungen; Baugenehmigung oder gesetzlicher Ersatzweg. Antrag oder Zusage genügt nicht; eine Nachweislücke beweist kein Fehlen.
+Nur bei vereinbarten §-3-Abschlägen den folgenden Ratenplan anwenden. Unter § 3 prüfen: wirksamer Vertrag und Genehmigungen, notarielle Mitteilung, keine vertraglichen Rücktrittsrechte des Bauträgers; eingetragene Vormerkung samt Rang, vollzogene WEG-Begründung; Freistellung auch bei Nichtvollendung mit ausgehändigten Erklärungen; Baugenehmigung oder gesetzlicher Ersatzweg. Antrag oder Zusage genügt nicht; eine Nachweislücke beweist kein Fehlen.
 
 Gesamtpreis G: Grundstück erste Stufe 30 % nach Erdarbeitsbeginn, feste Restbasis R = 70 %; Erbbaurecht 20 %, R = 80 %. Auf R, nicht den offenen Saldo, entfallen:
 
@@ -68,7 +68,7 @@ Höchstens sieben Teilbeträge; flexible Bündelung zulässig. Entfallende Leist
 
 Gleiche Vertrag, Fälligkeitsnachweise, Einzelgewerke im Bericht und Rechnung ab. Ein positives Fazit überstimmt offene Arbeiten nicht. 96 % Baufortschritt ergibt keine 96-%-Teilfälligkeit; gebündelte Rate nicht frei zerlegen. Endmontage ist keine Rohinstallation. Interne Bauleitung nicht pauschal abwerten. Rechnungsfrist schafft keine Fälligkeit.
 
-Bei Verbraucherabschlägen nach § 650m Abs. 2: 5 % Gesamtvergütung bei erster Rate auch ohne Klausel; bei Erhöhung über 10 % weitere 5 % des Mehrbetrags. Einbehalt auf Unternehmerverlangen oder günstigerer Vertragsregel und Garantie nicht doppelt. § 7 sichert Rückgewähr, nicht pauschal Fertigstellungskosten; Austausch lückenlos. § 641 Abs. 3: Mängeleinbehalt regelmäßig doppelte Beseitigungskosten, Grundlage und Überschneidung prüfen. Nichtfälligkeit ist kein Einbehalt. Unwirksamen Ratenplan nicht prozentual retten; Restvertrag und Rückforderung gesondert prüfen.
+Bei Verbraucherabschlägen nach § 650m Abs. 2: 5 % Gesamtvergütung bei erster Rate auch ohne Klausel; bei Erhöhung über 10 % weitere 5 % des Mehrbetrags. Einbehalt auf Unternehmerverlangen oder günstigerer Vertragsregel und Garantie nicht doppelt. § 7 MaBV: Vorzahlungen einschließlich des neuen Abrufs auf Rückgewährdeckung prüfen. Gesonderte Restzahlung nach vollständiger Fertigstellung und § 3 Abs. 1 nach ihrer eigenen Fälligkeit beurteilen. Der Schutz muss bis zu beiden Voraussetzungen reichen. Beim früheren Wechsel zu § 3 Grundvoraussetzungen und Deckung bereits gezahlter Beträge durch erreichte Stufen belegen. Ausreichende Bürgschaft erledigt nur den Sicherungseinwand. § 641 Abs. 3: Mängeleinbehalt regelmäßig doppelte Beseitigungskosten, Grundlage und Überschneidung prüfen. Nichtfälligkeit ist kein Einbehalt. Unwirksamen Ratenplan nicht prozentual retten; Restvertrag und Rückforderung gesondert prüfen.
 
 Entscheide: bestimmter Betrag zahlbar, nachweislich nicht fällig oder noch nicht abschließend beurteilbar. Benenne im letzten Fall den benötigten Beleg. Nach dessen Eingang neu entscheiden, auch positiv.
 

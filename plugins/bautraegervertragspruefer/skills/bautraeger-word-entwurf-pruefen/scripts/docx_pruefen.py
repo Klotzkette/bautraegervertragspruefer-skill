@@ -5,6 +5,7 @@ import argparse
 import json
 import re
 import xml.etree.ElementTree as ET
+from itertools import groupby, islice
 from pathlib import Path
 from zipfile import BadZipFile, ZipFile
 
@@ -13,6 +14,25 @@ W_STRICT = "{http://purl.oclc.org/ooxml/wordprocessingml/main}"
 R = "{http://schemas.openxmlformats.org/package/2006/relationships}"
 PART = re.compile(r"word/(?:document|header\d+|footer\d+|footnotes|endnotes|comments)\.xml$")
 MAX_TOTAL = 80 * 1024 * 1024
+
+# A number quoted in a power of attorney or reference deed is not the draft's own field.
+DEED_FIELD = re.compile(
+    r"^[ \t]*(?:Entwurf[ \t]*[-–—:][ \t]*)?"
+    r"(?:UR[- .]?Nr|UVZ(?:[- .]?Nr)?|Urkunden(?:verzeichnis|rolle)?(?:s?nummer|[ \t-]*Nr)?|Deed[ \t]+no)"
+    r"[ \t.:]*(?P<value>_{3,}|\d+)", re.I | re.M,
+)
+
+
+def document_opening(paragraphs):
+    """Count a table row once even when it contains both language columns."""
+    def block(paragraph):
+        if paragraph.get("zeile") is not None:
+            return paragraph["tabelle"], paragraph["zeile"]
+        return paragraph["fundort"]
+
+    blocks = groupby(paragraphs, key=block)
+    return "\n".join(paragraph["text_mit_einfuegungen"]
+                     for _, items in islice(blocks, 12) for paragraph in items)
 
 
 def text_of(element, deleted=False, inserted=True):
@@ -174,11 +194,12 @@ def inventory(path, vorlage=False):
         if vorlage:
             paragraphs = [p for part in result["teile"] if part["teil"] != "word/comments.xml" for p in part["absaetze"]]
             main = next(part for part in result["teile"] if part["teil"] == "word/document.xml")
-            top = "\n".join(p["text_mit_einfuegungen"] for p in main["absaetze"][:12])
+            top = document_opening(main["absaetze"])
             headers = "\n".join(p["text_mit_einfuegungen"] for part in result["teile"] if "header" in part["teil"] for p in part["absaetze"])
             if not re.search(r"\bEntwurf\b", top + "\n" + headers, re.I):
                 result["vorlagenhinweise"].append({"grund": "Entwurf im Dokumentanfang/Kopf nicht gefunden"})
-            if not re.search(r"(?:Urkunden(?:verzeichnis|rolle)?(?:snummer)?|UR[- .]?Nr|UVZ)[^\n]{0,45}_{3}", top, re.I):
+            deed_values = [field["value"] for field in DEED_FIELD.finditer(top)]
+            if not any(value.startswith("_") for value in deed_values):
                 result["vorlagenhinweise"].append({"grund": "Freies Feld für eigene Urkundennummer am Anfang nicht gefunden"})
             patterns = (
                 (r"\b(?:KI[ -]?generiert|mit KI generiert|AI[ -]?generated|generated (?:with|by) AI)\b", "KI-Hinweis in Vorlage"),
@@ -189,8 +210,7 @@ def inventory(path, vorlage=False):
                     if re.search(pattern, p["text_mit_einfuegungen"], re.I):
                         result["vorlagenhinweise"].append({"fundort": p["fundort"], "grund": reason,
                                                            "text": p["text_mit_einfuegungen"]})
-            # Only the document opening is the primary deed field; referenced deeds elsewhere are legitimate.
-            if re.search(r"(?:UR[- .]?Nr\.?|UVZ(?:[- .]?Nr\.?)?|Urkunden(?:verzeichnis|rolle)?(?:snummer)?\s*(?:Nr\.?)?)\s*[:.]?\s*\d", top, re.I):
+            if any(value[0].isdigit() for value in deed_values):
                 result["vorlagenhinweise"].append({"grund": "Möglicherweise ausgefüllte eigene Urkundennummer im Dokumentanfang"})
     result["hinweis"] = "Textaufnahme ist keine Layoutprüfung. Änderungsannahme und Beurkundungsstatus bedürfen gesonderter Feststellung."
     return result

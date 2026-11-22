@@ -2,7 +2,7 @@
 name: bautraegervertrag-pruefen
 description: "Prüft deutsche Bauträgerverträge aus Erwerbersicht: Word-Entwurf, Baubeschreibung, Teilungserklärung, MaBV-Zahlungsplan, Ratenabruf, Sicherheiten, Abnahme und Mängel. Liefert fundstellenbezogene Befunde, nachgerechnete Beträge und passende Änderungsklauseln oder Schreiben."
 metadata:
-  version: "4.9.0"
+  version: "4.9.1"
 ---
 
 # Bauträgervertrag aus Erwerberinnensicht prüfen
@@ -225,7 +225,7 @@ Eine ausgestellte, aber nur nicht vorgelegte Genehmigung ist ein anderer Befund 
 
 ### 6.2 Vollständige und nachvollziehbare Berechnung
 
-Rechne den gesamten Plan, nicht nur die nächste Rate. Nutze exakte Dezimal-/Centbeträge, rechne intern ungerundet und runde ausgewiesene Geldbeträge auf Cent. Prüfe die verbleibende Centdifferenz am Schluss, statt sie einer beliebigen Rate zuzuschlagen. Gesamtpreis G umfasst alle vereinbarten Preisbestandteile des konkreten Kaufgegenstands; Stellplatz nicht doppelt oder gar nicht zählen. Sonderwünsche, Reservierung, Entgelte, Gutschriften und bereits geleistete Zahlungen gesondert ausweisen.
+Bei vereinbarten §-3-Abschlägen rechne den gesamten Plan. Nutze exakte Dezimal-/Centbeträge, rechne intern ungerundet und runde ausgewiesene Geldbeträge auf Cent. Prüfe die verbleibende Centdifferenz am Schluss, statt sie einer beliebigen Rate zuzuschlagen. Gesamtpreis G umfasst alle vereinbarten Preisbestandteile des konkreten Kaufgegenstands; Stellplatz nicht doppelt oder gar nicht zählen. Sonderwünsche, Reservierung, Entgelte, Gutschriften und bereits geleistete Zahlungen gesondert ausweisen.
 
 Bei Grundstückseigentum beträgt die erste gesetzliche Stufe nach Beginn der Erdarbeiten 30 % von G; Restbasis R = 70 % von G. Bei Erbbaurecht sind es 20 %, Restbasis R = 80 %. Die folgenden Sätze beziehen sich auf diese einmal bestimmte Restbasis R, nicht auf den jeweils noch offenen Saldo:
 
@@ -266,7 +266,11 @@ Verkäuferabrechnung und tatsächliche Zahlung sind getrennte Belege. Reservieru
 
 § 650m Abs. 2: Bei erster Abschlagszahlung 5 % der vereinbarten Gesamtvergütung für rechtzeitige Herstellung ohne wesentliche Mängel. Vertragsschweigen hebt diesen Anspruch nicht auf. Eine eindeutige Kürzung oder Beschränkung in Verbraucher-AGB an § 309 Nr. 15 Buchst. b prüfen. Erbringung durch Einbehalt erfolgt auf Unternehmerverlangen; ein vertraglich eingeräumtes automatisches Käufer-Einbehaltsrecht kann günstiger sein. Bankgarantie/-versprechen und Einbehalt sind Alternativen, kein pauschales Doppelsicherungsrecht. Bei einer vertraglichen Vergütungserhöhung über 10 % die zusätzliche Sicherheit für den Mehrbetrag prüfen. Rückgabe nach Sicherungszweck und verbleibenden gesicherten Ansprüchen, nicht automatisch bei Schlüsselübergabe oder erst nach fünf Jahren.
 
-§ 7 MaBV verlangt Sicherheit für sämtliche erfassten Rückgewähr-/Auszahlungsansprüche, im einschlägigen Fall auch mit Blick auf Eigentumsverschaffung. Prüfe Aussteller, Einheit, Betrag, Wortlaut, Wirksamkeit, Zugriff und Dauer. Sie ist keine pauschale Garantie für Fertigstellungsmehrkosten oder jeden Verzugsschaden. Der Sicherungsaustausch ist zulässig, muss aber lückenlos sein. Vormerkung, Freistellung, §-7-Sicherheit und §-650m-Sicherheit erfüllen verschiedene Zwecke.
+§ 7 MaBV verlangt Sicherheit für sämtliche erfassten Rückgewähr-/Auszahlungsansprüche, im einschlägigen Fall auch mit Blick auf Eigentumsverschaffung. Prüfe Aussteller, Einheit, Betrag, Wortlaut, Wirksamkeit, Zugriff und Dauer. Sie ist keine pauschale Garantie für Fertigstellungsmehrkosten oder jeden Verzugsschaden. Vergleiche vor jeder Vorauszahlung die Summe aller nach ihr zu sichernden Vermögenswerte mit der tatsächlich eingeräumten Deckung. Erfasse frühere Vorauszahlungen und den neuen Abruf. Eine Restzahlung, die erst nach Eintritt der Voraussetzungen des § 3 Abs. 1 und nach vollständiger Fertigstellung zu leisten ist, erhöht diesen Vorauszahlungsbetrag nicht. Prüfe ihre eigene vertragliche Fälligkeit und Gegenrechte.
+
+Beim Grundstücks- oder Erbbaurechtserwerb muss der Schutz bis zur Erfüllung der Voraussetzungen des § 3 Abs. 1 **und** bis zur vollständigen Fertigstellung bestehen (§ 7 Abs. 1 Satz 3). Für einen früheren Austausch nach Satz 4 belege den Übergang ohne Deckungslücke. Beim Wechsel zu § 3 müssen dessen Grundvoraussetzungen vorliegen und die bereits vereinnahmten Beträge durch die erreichten zulässigen Stufen gedeckt sein. Ein bloßer Baufortschrittsbericht trägt die Rückgabe einer Bürgschaft nicht. Eine ausreichende §-7-Sicherheit erledigt nur den entsprechenden Sicherungseinwand. Bei Verbraucherabschlägen auch § 650m Abs. 2 und 3 gesondert anwenden. [§ 7 MaBV](https://www.gesetze-im-internet.de/gewo_34cdv/__7.html) · [§ 1 AbschlagsV](https://www.gesetze-im-internet.de/abschlagsv/__1.html)
+
+Vormerkung, Freistellung, §-7-Sicherheit und §-650m-Sicherheit erfüllen verschiedene Zwecke.
 
 Mängeleinbehalte auch bei laufenden Abschlägen gesondert prüfen. § 641 Abs. 3 nennt regelmäßig das Doppelte der erforderlichen Beseitigungskosten; benötigte Kostengrundlage, Anwendungsfall und Überschneidung mit anderen Gegenrechten offenlegen. Keine willkürlichen 10-/20-%-Abzüge, keine doppelte Kompensation desselben Risikos. Wenn die Rate mangels Meilenstein nicht fällig ist, beruht das Nichtzahlen zunächst auf fehlender Fälligkeit, nicht auf einem erfundenen Mängeleinbehalt.
 
@@ -274,7 +278,7 @@ Bei gesetzeswidriger Abschlagsvereinbarung Reichweite der Unwirksamkeit, § 134 
 
 ### 6.5 Entscheidung über die angeforderte Zahlung
 
-Prüfe intern den vollständigen Ratenplan, die Zuordnung von Vertrag/Fassung, Einheit, Abruf und Prüfdatum sowie Vorzahlungen, Gutschriften und Sicherheit mit ihren Belegen. Gleiche die allgemeinen Voraussetzungen, jeden angeforderten Baustein und mögliche Gegenrechte ab. Diese Prüfbreite verlangt keine gleich lange Ausgabe.
+Prüfe intern den vereinbarten Zahlungsweg, die Zuordnung von Vertrag/Fassung, Einheit, Abruf und Prüfdatum sowie Vorzahlungen, Gutschriften und Sicherheit mit ihren Belegen. Gleiche die allgemeinen Voraussetzungen, jeden angeforderten Baustein und mögliche Gegenrechte ab. Diese Prüfbreite verlangt keine gleich lange Ausgabe.
 
 Beginne mit der konkreten Zahlungsentscheidung. Zeige die Rechnung des angeforderten Abrufs, den bisherigen und danach erreichten Zahlungsstand sowie die entscheidenden Gründe und offenen Nachweise. Den gesamten Ratenplan nur bei einem dafür relevanten Fehler oder auf ausdrücklichen Wunsch wiedergeben. Keine zusätzlichen Nullbetragstabellen und keine Wiederholung derselben Rechnung oder Entscheidung unter mehreren Überschriften. Ein nicht bestimmbarer Zahlbetrag bleibt offen; eine geschätzte oder bedingte Größe ist entsprechend zu kennzeichnen.
 
@@ -495,7 +499,7 @@ Bei ausdrücklich nur einem beauftragten Folgeschreiben genügt dieses mit den e
 
 **Dokument 1 — Schreiben an die Erwerberin.** Erkläre das konkrete Ergebnis, die Bedeutung für Beurkundung, Zahlung oder weitere Durchführung und die nächsten nötigen Handlungen. Trenne notwendige Änderungen von verhandelbaren Verbesserungen. Nenne wesentliche Beträge und Termine mit Beleggrenzen. Verweise auf das nachfolgende Gutachten; „anbei“ nur bei tatsächlich erzeugter Anlage. Ein reales Mandatsverhältnis darf nicht erfunden werden.
 
-**Dokument 2 — Ausführliches Gutachten.** Enthält Auftrag, geprüfte Unterlagen und Lücken, Vertragstyp und Phase, vollständige Ratenrechnung bei Gesamtprüfung, alle entscheidungserheblichen Feststellungen mit Wortlaut, Normen, einschlägiger Rechtsprechung und konkreter Subsumtion. Würdige Gegenargumente, Beweis- und Darlegungslage, technische und WEG-rechtliche Schnittstellen sowie wirtschaftliche Folgen. Gib verwendbare Ersatzklauseln und erkläre, welche Lösung aus Erwerberinnensicht vorzugswürdig ist. Die Intensität folgt dem Fall, nicht einem pauschalen Kürzungsziel. Bloße Behauptung „AGB-rechtlich bedenklich“ oder eine Liste zu recherchierender Urteile genügt nicht.
+**Dokument 2 — Ausführliches Gutachten.** Enthält Auftrag, geprüfte Unterlagen und Lücken, Vertragstyp und Phase, vollständigen Abgleich der tatsächlich vereinbarten Zahlungen bei Gesamtprüfung, alle entscheidungserheblichen Feststellungen mit Wortlaut, Normen, einschlägiger Rechtsprechung und konkreter Subsumtion. Würdige Gegenargumente, Beweis- und Darlegungslage, technische und WEG-rechtliche Schnittstellen sowie wirtschaftliche Folgen. Gib verwendbare Ersatzklauseln und erkläre, welche Lösung aus Erwerberinnensicht vorzugswürdig ist. Die Intensität folgt dem Fall, nicht einem pauschalen Kürzungsziel. Bloße Behauptung „AGB-rechtlich bedenklich“ oder eine Liste zu recherchierender Urteile genügt nicht.
 
 **Dokument 3 — Schreiben an Bauträger beziehungsweise Notariat.** Formuliere die aus dem Gutachten folgenden rechtlich erforderlichen Änderungen, Begehren und Nachweisanforderungen mit Vertragsbezug und verwendbarem Wortlaut. Verhandlungswünsche sind als solche erkennbar und dürfen nicht als bestehender Anspruch erscheinen. Bei mehreren Adressaten trenne ihre Aufgaben. Schreibe ohne zusätzlichen Auftrag als Entwurf in der Stimme der Erwerberin; eine ausdrücklich anwaltlich gewünschte Fassung bleibt ebenfalls ausschließlich auf ihrer Seite. Kein unbeauftragter Rücktritt, Vergleich, Verzicht, Zahlungsauftrag oder fingiertes Vertretungsverhältnis.
 

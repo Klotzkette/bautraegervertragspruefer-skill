@@ -1,0 +1,25 @@
+{
+  "fall": "MW02",
+  "skill": "skill/SKILL.md",
+  "reihenfolge": "Jede Nutzerfrage erst nach Abschluss der vorherigen Antwort zustellen.",
+  "runden": [
+    {
+      "runde": 1,
+      "eingaben": [
+        "tests/workflow/aktenfortschreibung/inputs/auftrag-23-juni.md",
+        "tests/inputs/m-zahlung.md",
+        "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md",
+        "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-bautenstandsbericht.md",
+        "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-zahlungsanforderung.md"
+      ]
+    },
+    {
+      "runde": 2,
+      "eingaben": [
+        "tests/inputs/m-zahlung-ergänzt.md",
+        "tests/workflow/aktenfortschreibung/inputs/nachtrag-auszug.md",
+        "tests/workflow/aktenfortschreibung/inputs/fachpost-29-juni.md"
+      ]
+    }
+  ]
+}

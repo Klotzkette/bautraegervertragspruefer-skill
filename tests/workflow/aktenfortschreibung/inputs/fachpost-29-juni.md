@@ -1,0 +1,5 @@
+Wiedervorlage am 29. Juni 2027. Die Mandantin hat inzwischen die beim Erstauftrag fehlende notarielle Abschrift aus ihrem Schriftverkehr nachgereicht. Der in der Akte bereits vorhandene Vertragsentwurf und die Abschrift sind zwei verschiedene Dokumente. Die im Übungssachverhalt mitgeteilten Fakten zum Vollzug sowie die inzwischen erfolgte Besichtigung und Erläuterung zu den Heizkreisverteilern liegen ebenfalls bei.
+
+Aus dem Postfach der Mandantin, 28. Juni, 16:02 Uhr, Kundenbetreuung Marewald: „Der Termin 2. Juli bleibt laut unserer Abrufliste bestehen. Die Wohnungen C-2.14 und C-2.16 hatten denselben bestätigten Baufortschritt. Wir sehen deshalb keinen Anlass, den Abruf zu ändern.“ Neue Zahlungsaufforderungen sind nicht eingegangen. Das Haus befindet sich im Innenausbau. Für die Mandantin ist bislang weder das Sonder- noch das Gemeinschaftseigentum abgenommen worden. Sie hat für Wohnung C-2.16 keinen Erwerbsvertrag geschlossen.
+
+Welche Antwort kann die Mandantin jetzt geben? Bitte schicken Sie mir die aktualisierte Endfassung aller drei zuvor bestellten Texte. Es wird nichts versandt.

@@ -1,5 +1,12 @@
 # Änderungsprotokoll
 
+## 4.9.1 — 22. November 2026
+
+- Bei reiner Endzahlung prüft der Prüfer die vereinbarten Fälligkeitsvoraussetzungen. Eine MaBV-Ratenrechnung führt er bei vereinbarten Baufortschrittsraten aus.
+- Beim Sicherungsmodell nach § 7 MaBV ermittelt er die Deckung der bisherigen und neu angeforderten Vorauszahlungen, die Laufzeit und die Voraussetzungen für einen Sicherungsaustausch. Eine erst nach Fertigstellung fällige Restzahlung prüft er gesondert.
+- Der Word-Prüfer erkennt die leeren Urkundenfelder auch in den deutsch-englischen Tabellen der drei Musterverträge. Eine gesetzte Nummer in der englischen Spalte fällt bei der Vorlagenkontrolle auf.
+- Die [Praxis- und Layoutprüfung](tests/QA-4.9.1.md) dokumentiert die Arbeit mit nachgereichten Urkunden und die Kontrolle der veröffentlichten Word-Dateien.
+
 ## 4.9.0 — 21. November 2026
 
 1. Bei einer rechtlichen Prüfung klären Werkstatt, Mini und die drei Plugin-Einstiege zuerst die Urkunde, die betroffene Einheit, den Schuldner der Bauleistung und die Rechtsverschaffung. Unklare oder widersprüchliche Vertragsmerkmale führen zu gezielten Rückfragen. Nachreichungen werden in Gutachten und Schreiben eingearbeitet. Ein rein technischer Word-Auftrag bleibt auf den Dokumentbefund beschränkt.

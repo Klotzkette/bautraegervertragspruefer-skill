@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-22",
+  "purpose": "Sichtprüfung und Quellabgleich der Word-Prompts 4.9.1",
+  "exporter": "scripts/export_prompt_docx.py",
+  "renderer": "documents/render_docx.py, 120 dpi, LibreOfficeDev 26.8.0.0.alpha0",
+  "normalizations": [
+    "YAML-Metadatenblock entfällt; der vollständige lesbare Prompt wird als Word-Absätze, Überschriften, Listen, Tabellen und Links dargestellt.",
+    "Optionale Trennstelle im Tabellenlabel Vollstreckungsunterwerfung; keine inhaltliche Kürzung."
+  ],
+  "content_integrity": {
+    "status": "passed",
+    "method": "Export prüft die identische geordnete Folge aller Hauptdokument-Textknoten vor und nach Formatierung."
+  },
+  "page_count_scope": "Seitenzahl aus dem gerenderten PDF. Andere Word-Programme können Zeilen und Seiten anders umbrechen.",
+  "artifacts": [
+    {
+      "source": "skill/SKILL.md",
+      "output": "docs/downloads/werkstatt-prompt-4.9.1.docx",
+      "source_sha256": "e29088dabf951eb73587804121cb005854724303ecc14e6adb2c955f84081d71",
+      "docx_sha256": "9ad5454a5bf33ab4ea34d1fb0538bea2c36cfca8bad6b286664b1f95ab324035",
+      "pages": 79,
+      "max_pages": 100,
+      "paper": "Letter",
+      "font": {
+        "family": "Arial",
+        "body_pt": 11
+      },
+      "margins": {
+        "top_cm": 2.54,
+        "bottom_cm": 2.54,
+        "left_cm": 2.54,
+        "right_cm": 2.54
+      },
+      "visual_qa": {
+        "status": "passed",
+        "pages_checked": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79
+        ],
+        "method": "Sämtliche Seiten in Seitenansichten visuell geprüft. Zusätzlich wurden die Seiten 14, 16, 17 und 20 der Werkstatt in Originalauflösung kontrolliert.",
+        "checks": [
+          "keine Abschneidung oder Überlappung",
+          "lesbare vollständige Absätze und Quellen",
+          "Überschriften mit Folgetext",
+          "korrekte freie Fußzeilen"
+        ],
+        "notes": [
+          "Die beiden neuen Sicherungsabsätze auf Seite 16, die Fortsetzungstabellen und die Fußzeilen sind vollständig lesbar. Die Seiten 1–13 und 15 sind auch im Pixelvergleich mit 4.9.0 identisch."
+        ]
+      }
+    },
+    {
+      "source": "skill/MINI_SKILL.md",
+      "output": "docs/downloads/mini-prompt-4.9.1.docx",
+      "source_sha256": "187cbc0cad71cb88b38a151338467359ff8747539972a7720bea31ac1810fa04",
+      "docx_sha256": "598c2d49bd0398c8372e79e36525d603e97da450f5211286c66303c8822e80be",
+      "pages": 7,
+      "max_pages": 100,
+      "paper": "Letter",
+      "font": {
+        "family": "Arial",
+        "body_pt": 11
+      },
+      "margins": {
+        "top_cm": 2.54,
+        "bottom_cm": 2.54,
+        "left_cm": 2.54,
+        "right_cm": 2.54
+      },
+      "visual_qa": {
+        "status": "passed",
+        "pages_checked": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "method": "Alle sieben Seiten in Seitenansichten visuell geprüft.",
+        "checks": [
+          "keine Abschneidung oder Überlappung",
+          "lesbare vollständige Absätze und Quellen",
+          "Überschriften mit Folgetext",
+          "korrekte freie Fußzeilen"
+        ],
+        "notes": [
+          "Der Sicherungsabsatz auf Seite 4 und die letzte Seite mit der Abschlussprüfung sind vollständig sichtbar."
+        ]
+      }
+    }
+  ]
+}
