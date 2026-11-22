@@ -21,3 +21,9 @@ Die zusätzliche Probe [MW01](marewald-einstieg.md) verwendet den vollständigen
 Die Eingangsantwort muss eine haftungs- oder zahlungsrelevante Tatsache erfragen. Die zweite Antwort soll die nun belegten Vertragsverpflichtungen zuordnen und das passende Programm anwenden. Bei VT06 und VT10 bleibt auch nach der zweiten Nachricht ein wesentlicher Widerspruch offen. Hier muss der Prüfer die verbleibende Unsicherheit erläutern.
 
 `python3 scripts/test_workflow_dialogue.py ContractModelFixtureTests` prüft Eingangswege, Eingabereihenfolge und die Trennung der Testdaten. Die tatsächlichen Modellantworten und ihre Auswertung sind im [Laufprotokoll vom 21. November 2026](../../runs/2026-11-21/vertragsmodelle.json) festgehalten.
+
+## Rückgewährbürgschaft beim zweiten Abruf
+
+In der Ergänzungsprobe vom 22. November 2026 behält die Erwerberin zunächst ihre vorhandene Bürgschaft. Die zweite Urkunde erhält der Prüfer erst nach seiner tatsächlichen Antwort. Die Beurteilung soll den jeweiligen Abruf, die gesamte Vorauszahlung, die Schlussvergütung und die Laufzeit der Rückgewährdeckung in beiden Antwortentwürfen zutreffend abbilden. [Erste Anfrage](sicherungswechsel/erster-abruf.md) · [Nachgereichte Urkunde](sicherungswechsel/nachgereichte-urkunde.md) · [Erstlauf und Wiederholung mit vier Modellantworten und Bewertung](../../runs/2026-11-22/sicherungswechsel.json)
+
+Der statische Test `python3 scripts/test_workflow_dialogue.py ContractModelFixtureTests.test_advance_security_scope_and_replacement` prüft zusätzlich die Anweisungen zu Deckung, Laufzeit und Wechsel in das §-3-Modell in Werkstatt, Mini und Zahlungseinstieg. Für die rechtliche Einordnung gelten die Vorschriften für die Vorauszahlungen und die gesonderte Verbrauchersicherheit. [§ 7 MaBV](https://www.gesetze-im-internet.de/gewo_34cdv/__7.html) · [§ 1 AbschlagsV](https://www.gesetze-im-internet.de/abschlagsv/__1.html)

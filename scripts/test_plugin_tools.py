@@ -114,6 +114,29 @@ class WordTests(unittest.TestCase):
             result = word.inventory(self.fixture(tmp, body), vorlage=True)
         self.assertFalse(result["vorlagenhinweise"])
 
+    def test_published_contracts_recognise_their_blank_deed_fields(self):
+        root = ROOT / "docs/vertragsdokumente"
+        for case in ("bautraegervertrag", "bautraegervertrag-lindenhain", "bautraegervertrag-marewald"):
+            for suffix in (".docx", "-de-en.docx"):
+                path = root / case / (case + suffix)
+                with self.subTest(contract=path.name):
+                    self.assertEqual(word.inventory(path, vorlage=True)["vorlagenhinweise"], [])
+
+    def test_bilingual_deed_fields_and_nearby_reference_number(self):
+        def paragraph(text):
+            return f"<w:p><w:r><w:t>{text}</w:t></w:r></w:p>"
+
+        opening = paragraph("ENTWURF / DRAFT") + paragraph("Vollmacht laut UR-Nr. 17/2025")
+        for english, filled in (("____", False), ("123/2026", True)):
+            with self.subTest(english=english), tempfile.TemporaryDirectory() as tmp:
+                cells = ("<w:tc>" + paragraph("UR-Nr. ____") + "</w:tc>"
+                         + "<w:tc>" + paragraph("Deed no. " + english) + "</w:tc>")
+                body = opening + "<w:tbl><w:tr>" + cells + "</w:tr></w:tbl>"
+                findings = word.inventory(self.fixture(tmp, body), vorlage=True)["vorlagenhinweise"]
+                self.assertEqual(len(findings), int(filled))
+                if filled:
+                    self.assertIn("ausgefüllte eigene Urkundennummer", findings[0]["grund"])
+
     def test_paragraph_level_revisions_do_not_become_active_text(self):
         body = '<w:del><w:p><w:r><w:delText>Alte Abnahmefiktion</w:delText></w:r></w:p></w:del>'
         body += '<w:ins><w:p><w:r><w:t>Neue Abnahmeklausel</w:t></w:r></w:p></w:ins>'

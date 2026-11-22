@@ -268,6 +268,21 @@ class ContractModelFixtureTests(unittest.TestCase):
         self.assertRegex(payment, r"unabhängig von der rechnung.{0,140}fälligkeitsmitteilung")
         self.assertRegex(payment, r"berichtigung.{0,40}verlängert.{0,40}nicht")
 
+    def test_advance_security_scope_and_replacement(self):
+        for path in (*PROMPTS, SKILLS[1]):
+            with self.subTest(entrypoint=path):
+                text = normalize(path.read_text(encoding="utf-8")).casefold()
+                self.assertRegex(text, r"(?:vorzahlungen|vorauszahlungen).{0,40}neuen abruf|bisherigen und jetzt zu leistenden vorauszahlungen")
+                self.assertRegex(text, r"restzahlung.{0,120}§ 3 abs. 1|§ 3 abs. 1.{0,75}zahlbarer rest")
+                self.assertRegex(text, r"§ 3 abs. 1.{0,70}vollständige[nr]? fertigstellung|vollständige[nr]? fertigstellung.{0,80}§ 3 abs. 1")
+                self.assertRegex(text, r"wechsel zu § 3.{0,180}(?:erreichte[nr]? stufen|bautenstand|zulässigen stufen)")
+                self.assertNotIn("rechne den gesamten ratenplan intern nach.", text)
+
+        payment = normalize(SKILLS[1].read_text(encoding="utf-8")).casefold()
+        self.assertRegex(payment, r"externen antwortentwurf.{0,160}prüfung nach eingang.{0,70}fristauslöser")
+        self.assertRegex(payment, r"belegt.{0,50}fällige zahlung.{0,50}frist")
+        self.assertRegex(payment, r"zahlungszusage.{0,60}nur auf ausdrücklichen auftrag")
+
     def test_technical_word_scope_keeps_legal_classification_conditional(self):
         word = normalize(SKILLS[2].read_text(encoding="utf-8")).casefold()
         for term in ("rein technischen auftrag", "einheit", "bauleistung", "erbbaurecht"):

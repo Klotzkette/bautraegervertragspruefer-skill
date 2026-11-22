@@ -1,0 +1,50 @@
+{
+  "fall": "MW02",
+  "modell": "gpt-6.2-astra",
+  "cli": "codex-cli 0.169.0-alpha.11.1",
+  "basis_commit": "de15974dc5bcbf823aaded49940d5672f048f89c",
+  "skill": "skill/SKILL.md",
+  "skill_sha256": "e29088dabf951eb73587804121cb005854724303ecc14e6adb2c955f84081d71",
+  "runden": [
+    {
+      "runde": 1,
+      "eingaben": {
+        "tests/workflow/aktenfortschreibung/inputs/auftrag-23-juni.md": "bdf3cc684e9908a72d5b127098749f0931e6f64906cb4549499634063e08cb49",
+        "tests/inputs/m-zahlung.md": "e7863c565344b198d52eaeadb60494177f2d09781adbc2550d7c2dc854c297c0",
+        "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald.md": "51418ae0399cdaf5583a0d8b814a166ae107ef266512acab04636d667cbd1820",
+        "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-bautenstandsbericht.md": "8e554e6e5b0847989289f35f645bdc3a86f9b1aeaa87e68924bf29cf5a568883",
+        "vertragsdokumente/bautraegervertrag-marewald/bautraegervertrag-marewald-zahlungsanforderung.md": "d2999d4571e9ebbaea0774761ef068c9c13abdc300fc8853c587615f1d438581"
+      },
+      "zugestellter_text_sha256": "d283399cb48de553f3cec507487e0e1387f3415a786410a22d50290fd41a6068",
+      "antwort": "mw02-antwort-1.md",
+      "antwort_sha256": "882204e7aee965b1ed42486c3c7b38f2f5e9647fa8a89645f2aa1ebff58a89b6",
+      "werkzeugaufrufe": [],
+      "tokens": {
+        "input_tokens": 92879,
+        "cached_input_tokens": 10496,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5530,
+        "reasoning_output_tokens": 573
+      }
+    },
+    {
+      "runde": 2,
+      "eingaben": {
+        "tests/inputs/m-zahlung-ergänzt.md": "6f673fe3817a7eac942aa1b9cd4a2249a0c4d088f7298c0499a3d72ba844adba",
+        "tests/workflow/aktenfortschreibung/inputs/nachtrag-auszug.md": "e5c05d86a28b88715724ba9551f3364644107671e0b49696adf08dc504563f8c",
+        "tests/workflow/aktenfortschreibung/inputs/fachpost-29-juni.md": "89d3a0b8400b2622a78a5371269d3a734b83e02d30f89ceaf69c60e2b5113144"
+      },
+      "zugestellter_text_sha256": "0ebce707872132821a0d51348741390f8e5b35e9e14a23090786280c2dedb6c2",
+      "antwort": "mw02-antwort-2.md",
+      "antwort_sha256": "a19f298b31730e528075027f1a5ad9092cbfa98ab8726883f73bbe34c9d52cdf",
+      "werkzeugaufrufe": [],
+      "tokens": {
+        "input_tokens": 93038,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4476,
+        "reasoning_output_tokens": 423
+      }
+    }
+  ]
+}
